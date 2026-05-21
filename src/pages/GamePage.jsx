@@ -4,7 +4,7 @@ import { FRAMEWORKS } from '../data/frameworks'
 import { useProgress } from '../hooks/useProgress'
 
 const ROUND_COUNT = 10
-const TIMER_SECONDS = 10
+const TIMER_SECONDS = 30
 
 const ALL_FRAMEWORK_NAMES = FRAMEWORKS.map(f => f.name)
 
@@ -82,7 +82,7 @@ function StartScreen({ progress, onStart }) {
         <div style={{ fontSize: 48, marginBottom: 8 }}>🎯</div>
         <div style={{ fontSize: 22, fontWeight: 800, color: '#f1f5f9', marginBottom: 6 }}>Framework Match</div>
         <div style={{ fontSize: 14, color: '#64748b', lineHeight: 1.5 }}>
-          Read the scenario. Pick the right framework.<br />10 rounds · 10-second countdown each.
+          Read the scenario. Pick the right framework.<br />10 rounds · 30-second countdown each.
         </div>
       </div>
 
@@ -219,6 +219,11 @@ export default function GamePage() {
     setRevealed(true)
   }, [scenario, recordGameResult])
 
+  // Keep a ref to the latest finishRound so the timer effect doesn't
+  // need it as a dependency (avoids resetting the timer on every render)
+  const finishRoundRef = useRef(finishRound)
+  useEffect(() => { finishRoundRef.current = finishRound }, [finishRound])
+
   useEffect(() => {
     if (gameState !== 'playing' || revealed) return
     startTimeRef.current = Date.now()
@@ -227,14 +232,14 @@ export default function GamePage() {
       setSecondsLeft(s => {
         if (s <= 1) {
           clearInterval(timerRef.current)
-          finishRound(null, true)
+          finishRoundRef.current(null, true)
           return 0
         }
         return s - 1
       })
     }, 1000)
     return () => clearInterval(timerRef.current)
-  }, [gameState, roundIndex, revealed, finishRound])
+  }, [gameState, roundIndex, revealed])
 
   const startGame = () => {
     const picked = pickScenarios()
