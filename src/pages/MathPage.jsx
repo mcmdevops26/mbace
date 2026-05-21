@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import MATH_DATA from '../data/math_system.json'
 import { useProgress } from '../hooks/useProgress'
+import { track } from '../utils/analytics'
 
 const { problemBank, speedTargets } = MATH_DATA
 
@@ -247,6 +248,7 @@ export default function MathPage() {
     if (isCorrect) setSessionCorrect(c => c + 1)
     recentIds.current = [...recentIds.current.slice(-7), problem.id]
     recordMathResult({ problemId: problem.id, type: problem.type, correct: isCorrect, timeMs })
+    track('math_problem_answered', { correct: isCorrect, problem_type: problem.type, level: problem.level, time_seconds: Math.round(timeMs / 1000) })
   }
 
   const handleKeyDown = (e) => {
@@ -404,7 +406,7 @@ export default function MathPage() {
                 </div>
               )}
               <button
-                onClick={() => { setStarted(true); loadNextProblem() }}
+                onClick={() => { track('math_drill_started', { level, type_filter: typeFilter }); setStarted(true); loadNextProblem() }}
                 style={{
                   width: '100%', padding: '16px', borderRadius: 14, border: 'none',
                   background: level === 1 ? '#6366f1' : '#f59e0b',
@@ -506,7 +508,7 @@ export default function MathPage() {
                         Submit
                       </button>
                       <button
-                        onClick={() => setShowHint(h => !h)}
+                        onClick={() => { if (!showHint) track('math_hint_used', { problem_type: problem.type, level: problem.level }); setShowHint(h => !h) }}
                         style={{
                           padding: '12px 16px', borderRadius: 12,
                           border: showHint ? `1px solid #f59e0b` : '1px solid #334155',

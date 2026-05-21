@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import SCENARIOS from '../data/scenarios.json'
 import { useProgress } from '../hooks/useProgress'
+import { track } from '../utils/analytics'
 
 const DIFFICULTY_COLOR = { easy: '#22c55e', medium: '#f59e0b', hard: '#ef4444' }
 
@@ -127,7 +128,7 @@ function AudioRecorder({ scenarioId, scenarioTitle }) {
           setAudioUrl(dataUrl)
           setRecState('stopped')
           // Auto-save to IndexedDB
-          dbSave(scenarioId, dataUrl).then(() => setHasSaved(true)).catch(() => {})
+          dbSave(scenarioId, dataUrl).then(() => { setHasSaved(true); track('recording_saved', { scenario_id: scenarioId }) }).catch(() => {})
         }
         reader.readAsDataURL(blob)
       }
@@ -135,6 +136,7 @@ function AudioRecorder({ scenarioId, scenarioTitle }) {
       setRecState('recording')
       setSeconds(0)
       timerRef.current = setInterval(() => setSeconds(s => s + 1), 1000)
+      track('recording_started', { scenario_id: scenarioId })
     } catch (err) {
       if (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError') {
         alert('Microphone access denied. Go to Settings → Safari → Microphone and allow access.')
@@ -173,6 +175,7 @@ function AudioRecorder({ scenarioId, scenarioTitle }) {
 
       if (navigator.share && navigator.canShare?.({ files: [file] })) {
         await navigator.share({ files: [file], title: name })
+        track('recording_shared', { scenario_id: scenarioId, method: 'file' })
       } else if (navigator.share) {
         // Share without file (fallback for older iOS) — shares a text note instead
         await navigator.share({ title: 'MBAce Recording', text: `Practice recording for: ${scenarioTitle || scenarioId}` })
@@ -253,6 +256,7 @@ function AudioRecorder({ scenarioId, scenarioTitle }) {
         <textarea
           value={note}
           onChange={e => saveNote(e.target.value)}
+          onBlur={() => { if (note.trim()) track('note_saved', { scenario_id: scenarioId }) }}
           placeholder="What would you do differently? Key terms to review..."
           rows={3}
           style={{
@@ -278,6 +282,7 @@ function CSAIRating({ scenarioId, existing, onRate }) {
     if (!overall) return
     onRate(scenarioId, { csai: ratings, overall })
     setSaved(true)
+    track('csai_rated', { scenario_id: scenarioId, overall, ...ratings })
   }
 
   return (
@@ -461,12 +466,18 @@ function CaseCard({ scenario, viewed, selfRating, onView, onRate }) {
   const diffColor = DIFFICULTY_COLOR[scenario.difficulty] || '#64748b'
 
   const toggle = () => {
-    if (!isOpen && !viewed) onView(scenario.id)
+    if (!isOpen) {
+      if (!viewed) onView(scenario.id)
+      track('case_opened', { scenario_id: scenario.id, scenario_type: scenario.type, difficulty: scenario.difficulty })
+    }
     setIsOpen(o => !o)
   }
 
-  const toggleSection = key =>
-    setOpenSections(prev => ({ ...prev, [key]: !prev[key] }))
+  const toggleSection = (key) => {
+    const opening = !openSections[key]
+    if (opening) track('coaching_section_toggled', { section: key, scenario_id: scenario.id })
+    setOpenSections(prev => ({ ...prev, [key]: opening }))
+  }
 
   // Which sections have content?
   const hasSection = {

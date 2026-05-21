@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useProgress } from '../hooks/useProgress'
 import { FRAMEWORKS } from '../data/frameworks'
 import SCENARIOS from '../data/scenarios.json'
+import { track } from '../utils/analytics'
 
 const MATH_TYPE_LABELS = {
   fraction_to_decimal:     'Fractions → Decimals',
@@ -81,6 +82,7 @@ export default function ProgressPage() {
   const [confirmReset, setConfirmReset] = useState(false)
 
   const handleReset = async () => {
+    track('progress_reset_confirmed')
     // Clear main progress
     localStorage.removeItem('mba_prep_progress')
     // Clear all case notes

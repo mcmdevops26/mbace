@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import SCENARIOS from '../data/scenarios.json'
 import { FRAMEWORKS } from '../data/frameworks'
 import { useProgress } from '../hooks/useProgress'
+import { track } from '../utils/analytics'
 
 const ROUND_COUNT = 10
 const TIMER_SECONDS = 30
@@ -207,6 +208,7 @@ export default function GamePage() {
       correct: isCorrect,
       timeMs,
     })
+    if (timedOut) track('game_timed_out', { scenario_type: scenario.scenarioType, round: roundIndex + 1 })
 
     setRounds(prev => [...prev, {
       scenario,
@@ -250,16 +252,21 @@ export default function GamePage() {
     setRevealed(false)
     setRounds([])
     setGameState('playing')
+    track('game_started')
   }
 
   const handleChoice = (name) => {
     if (revealed) return
+    const correctFrameworks = scenario?.correctFrameworks || []
+    track('game_answer_selected', { chosen: name, correct: correctFrameworks.includes(name), scenario_type: scenario?.scenarioType, round: roundIndex + 1 })
     finishRound(name, false)
   }
 
   const nextRound = () => {
     const next = roundIndex + 1
     if (next >= ROUND_COUNT) {
+      const correct = rounds.filter(r => r.correct).length + (rounds.length < ROUND_COUNT ? 0 : 0)
+      track('game_completed', { correct_count: rounds.filter(r => r.correct).length, total: ROUND_COUNT, accuracy_pct: Math.round((rounds.filter(r => r.correct).length / ROUND_COUNT) * 100) })
       setGameState('session_end')
       return
     }

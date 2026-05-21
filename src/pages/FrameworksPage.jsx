@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FRAMEWORKS } from '../data/frameworks'
 import { useProgress } from '../hooks/useProgress'
+import { track } from '../utils/analytics'
 
 const RATINGS = [
   { key: 'know',   label: 'Know It',  emoji: '✅', color: '#22c55e' },
@@ -90,7 +91,7 @@ function FlashCard({ framework, onClose, onRate, currentRating }) {
                 {RATINGS.map(r => (
                   <button
                     key={r.key}
-                    onClick={() => { onRate(framework.id, r.key); onClose() }}
+                    onClick={() => { track('framework_rated', { framework_name: framework.name, rating: r.key }); onRate(framework.id, r.key); onClose() }}
                     style={{
                       flex: 1, padding: '10px 6px',
                       borderRadius: 12,
@@ -134,7 +135,7 @@ function FrameworkCard({ framework, rating, onExpand, onFlashcard }) {
     }}>
       {/* Card header — always visible */}
       <button
-        onClick={() => setExpanded(e => !e)}
+        onClick={() => { if (!expanded) track('framework_expanded', { framework_name: framework.name }); setExpanded(e => !e) }}
         style={{
           width: '100%', display: 'flex', alignItems: 'center', gap: 14,
           padding: '16px 16px',
@@ -234,7 +235,7 @@ function FrameworkCard({ framework, rating, onExpand, onFlashcard }) {
 
           {/* Flash card button */}
           <button
-            onClick={() => onFlashcard(framework)}
+            onClick={() => { track('flashcard_opened', { framework_name: framework.name }); onFlashcard(framework) }}
             style={{
               width: '100%',
               padding: '12px',
