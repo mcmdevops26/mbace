@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useProgress } from '../hooks/useProgress'
 import { FRAMEWORKS } from '../data/frameworks'
 import SCENARIOS from '../data/scenarios.json'
@@ -77,6 +78,22 @@ function WeakAreaRow({ label, accuracy, attempts, targetLabel, color }) {
 
 export default function ProgressPage() {
   const { progress, getWeakestMathTypes, getWeakestScenarioTypes, getGameAccuracy } = useProgress()
+  const [confirmReset, setConfirmReset] = useState(false)
+
+  const handleReset = async () => {
+    // Clear main progress
+    localStorage.removeItem('mba_prep_progress')
+    // Clear all case notes
+    Object.keys(localStorage)
+      .filter(k => k.startsWith('mbace_note_'))
+      .forEach(k => localStorage.removeItem(k))
+    // Clear audio recordings from IndexedDB
+    try {
+      indexedDB.deleteDatabase('mbace_audio')
+    } catch (_) {}
+    // Reload to reset all in-memory state
+    window.location.reload()
+  }
 
   // ── Framework stats ──────────────────────────────────────────────────────
   const cardProgress = progress.frameworks.cardProgress
@@ -372,6 +389,7 @@ export default function ProgressPage() {
 
       {/* ── Game ── */}
       <SectionHeader emoji="🃏" title="CASE GAME" />
+
       <div style={{ background: '#1e293b', borderRadius: 14, padding: '14px 16px', marginBottom: 16 }}>
         {scenariosCompleted.length === 0 ? (
           <div style={{ textAlign: 'center', color: '#334155', fontSize: 13, padding: '8px 0' }}>
@@ -421,6 +439,58 @@ export default function ProgressPage() {
           </div>
         )}
       </div>
+
+      {/* ── Reset ── */}
+      <div style={{ marginTop: 32, borderTop: '1px solid #1e293b', paddingTop: 24 }}>
+        {!confirmReset ? (
+          <button
+            onClick={() => setConfirmReset(true)}
+            style={{
+              width: '100%', padding: '12px', borderRadius: 10,
+              border: '1px solid #334155', background: 'none',
+              color: '#475569', fontSize: 13, fontWeight: 600,
+              cursor: 'pointer',
+            }}
+          >
+            Reset All Progress
+          </button>
+        ) : (
+          <div style={{
+            background: '#1e293b', borderRadius: 14, padding: '16px',
+            border: '1px solid #ef444433',
+          }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: '#f1f5f9', marginBottom: 4 }}>
+              Are you sure?
+            </div>
+            <div style={{ fontSize: 12, color: '#64748b', lineHeight: 1.6, marginBottom: 14 }}>
+              This will permanently delete all your progress, case notes, and saved recordings from this device. This cannot be undone.
+            </div>
+            <div style={{ display: 'flex', gap: 8 }}>
+              <button
+                onClick={() => setConfirmReset(false)}
+                style={{
+                  flex: 1, padding: '10px', borderRadius: 8,
+                  border: '1px solid #334155', background: 'none',
+                  color: '#94a3b8', fontSize: 13, fontWeight: 600, cursor: 'pointer',
+                }}
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleReset}
+                style={{
+                  flex: 1, padding: '10px', borderRadius: 8,
+                  border: 'none', background: '#ef4444',
+                  color: '#fff', fontSize: 13, fontWeight: 700, cursor: 'pointer',
+                }}
+              >
+                Yes, Reset Everything
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+
     </div>
   )
 }

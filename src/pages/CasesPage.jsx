@@ -160,17 +160,27 @@ function AudioRecorder({ scenarioId, scenarioTitle }) {
   const shareRecording = async () => {
     if (!audioUrl) return
     try {
-      const res  = await fetch(audioUrl)
-      const blob = await res.blob()
-      const ext  = blob.type.includes('mp4') ? 'm4a' : 'webm'
-      const file = new File([blob], `MBAce - ${scenarioTitle || scenarioId}.${ext}`, { type: blob.type })
-      if (navigator.canShare?.({ files: [file] })) {
-        await navigator.share({ files: [file], title: `MBAce — ${scenarioTitle || scenarioId}` })
+      // Convert base64 data URL → Uint8Array → Blob without fetch (works on iOS)
+      const [header, b64] = audioUrl.split(',')
+      const mime = header.match(/:(.*?);/)?.[1] || 'audio/mp4'
+      const binary = atob(b64)
+      const bytes = new Uint8Array(binary.length)
+      for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i)
+      const blob = new Blob([bytes], { type: mime })
+      const ext  = mime.includes('mp4') ? 'm4a' : 'webm'
+      const name = `MBAce - ${scenarioTitle || scenarioId}.${ext}`
+      const file = new File([blob], name, { type: mime })
+
+      if (navigator.share && navigator.canShare?.({ files: [file] })) {
+        await navigator.share({ files: [file], title: name })
+      } else if (navigator.share) {
+        // Share without file (fallback for older iOS) — shares a text note instead
+        await navigator.share({ title: 'MBAce Recording', text: `Practice recording for: ${scenarioTitle || scenarioId}` })
       } else {
-        // Fallback: trigger download
+        // Desktop fallback: trigger download
         const a = document.createElement('a')
         a.href = audioUrl
-        a.download = file.name
+        a.download = name
         a.click()
       }
     } catch (err) {
@@ -546,6 +556,9 @@ function CaseCard({ scenario, viewed, selfRating, onView, onRate }) {
             <div style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6 }}>{scenario.context}</div>
           </div>
 
+          {/* Practice Recording — above coaching so it's the first action */}
+          <AudioRecorder scenarioId={scenario.id} scenarioTitle={scenario.title} />
+
           {/* ── 7 coaching toggle buttons + content ── */}
           {COACHING_SECTIONS.map(({ key, label, emoji, color: sColor }) => (
             <div key={key}>
@@ -709,9 +722,8 @@ function CaseCard({ scenario, viewed, selfRating, onView, onRate }) {
             </div>
           )}
 
-          {/* CSAI + Audio always at bottom */}
+          {/* CSAI self-rating at bottom */}
           <CSAIRating scenarioId={scenario.id} existing={selfRating} onRate={onRate} />
-          <AudioRecorder scenarioId={scenario.id} scenarioTitle={scenario.title} />
         </div>
       )}
     </div>

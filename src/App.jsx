@@ -4,6 +4,7 @@ import GamePage from './pages/GamePage'
 import CasesPage from './pages/CasesPage'
 import MathPage from './pages/MathPage'
 import ProgressPage from './pages/ProgressPage'
+import InfoPage from './pages/InfoPage'
 
 const TABS = [
   { id: 'frameworks', label: 'Frameworks', icon: '📚' },
@@ -11,6 +12,7 @@ const TABS = [
   { id: 'cases',      label: 'Cases',      icon: '💼' },
   { id: 'math',       label: 'Math',       icon: '🧮' },
   { id: 'progress',   label: 'Progress',   icon: '📈' },
+  { id: 'info',       label: 'Info',       icon: 'ℹ️'  },
 ]
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
       case 'cases':      return <CasesPage />
       case 'math':       return <MathPage />
       case 'progress':   return <ProgressPage />
+      case 'info':       return <InfoPage />
       default:           return <FrameworksPage />
     }
   }
