@@ -62,24 +62,40 @@ function AudioRecorder({ scenarioId }) {
   }, [])
 
   const startRecording = async () => {
+    if (!navigator.mediaDevices?.getUserMedia) {
+      alert('Recording is not supported in this browser. Try Chrome or Safari 14.3+.')
+      return
+    }
+    if (typeof MediaRecorder === 'undefined') {
+      alert('Recording is not supported in this browser. Try Chrome or Safari 14.3+.')
+      return
+    }
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
-      const mr = new MediaRecorder(stream)
+      // Pick a MIME type the browser supports — iOS Safari needs mp4, Chrome prefers webm
+      const mimeType =
+        MediaRecorder.isTypeSupported('audio/mp4')  ? 'audio/mp4'  :
+        MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm' : ''
+      const mr = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream)
       mediaRef.current = mr
       chunksRef.current = []
-      mr.ondataavailable = e => chunksRef.current.push(e.data)
+      mr.ondataavailable = e => { if (e.data.size > 0) chunksRef.current.push(e.data) }
       mr.onstop = () => {
-        const blob = new Blob(chunksRef.current, { type: 'audio/webm' })
+        const blob = new Blob(chunksRef.current, { type: mr.mimeType || 'audio/mp4' })
         setAudioUrl(URL.createObjectURL(blob))
         stream.getTracks().forEach(t => t.stop())
         setState('stopped')
       }
-      mr.start()
+      mr.start(250) // collect chunks every 250ms — required on some iOS versions
       setState('recording')
       setSeconds(0)
       timerRef.current = setInterval(() => setSeconds(s => s + 1), 1000)
-    } catch {
-      alert('Microphone access denied. Enable it in browser settings.')
+    } catch (err) {
+      if (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError') {
+        alert('Microphone access denied. Go to Settings → Safari → Microphone and allow access.')
+      } else {
+        alert('Could not start recording: ' + err.message)
+      }
     }
   }
 
