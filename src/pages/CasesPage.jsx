@@ -10,7 +10,7 @@ const LEVELS = [
   { key: 'hard',   label: 'Advanced',     emoji: '🔴', desc: 'Complex math, real nuance', color: '#ef4444' },
 ]
 
-// Beena's 8 core case types — taught most frequently
+// Core marketing case categories — most frequently tested
 const BEENA_CORE = [
   'Private Label Competition',
   'Shrinking Category',
@@ -776,11 +776,11 @@ export default function CasesPage() {
             📋 All {currentLevel.label} Cases ({countByLevel(selectedLevel)})
           </button>
 
-          {/* Beena core types */}
+          {/* Core case categories */}
           {coreTypesForLevel.length > 0 && (
             <>
               <div style={{ fontSize: 10, fontWeight: 700, color: '#3b82f6', letterSpacing: 1, marginBottom: 8 }}>
-                ⭐ BEENA'S 8 CORE TYPES
+                ⭐ CORE MARKETING CASE CATEGORIES
               </div>
               {coreTypesForLevel.map(type => {
                 const color = getTypeColor(type)
