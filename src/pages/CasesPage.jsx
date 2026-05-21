@@ -3,6 +3,24 @@ import SCENARIOS from '../data/scenarios.json'
 import { useProgress } from '../hooks/useProgress'
 
 const DIFFICULTY_COLOR = { easy: '#22c55e', medium: '#f59e0b', hard: '#ef4444' }
+
+const LEVELS = [
+  { key: 'easy',   label: 'Beginner',     emoji: '🟢', desc: 'Core frameworks, clean data', color: '#22c55e' },
+  { key: 'medium', label: 'Intermediate', emoji: '🟡', desc: 'Multiple frameworks, some ambiguity', color: '#f59e0b' },
+  { key: 'hard',   label: 'Advanced',     emoji: '🔴', desc: 'Complex math, real nuance', color: '#ef4444' },
+]
+
+// Beena's 8 core case types — taught most frequently
+const BEENA_CORE = [
+  'Private Label Competition',
+  'Shrinking Category',
+  'Competitive Threat',
+  'Pricing Strategy',
+  'New Product Launch',
+  'Profit Growth/Decline',
+  'Market Sizing',
+  'Ad Evaluation',
+]
 const CSAI_LABELS = { C: 'Conclusion', S: 'Situation', A: 'Analysis', I: 'Implication' }
 
 const TYPE_COLORS = {
@@ -602,52 +620,65 @@ function CaseCard({ scenario, viewed, selfRating, onView, onRate }) {
 // ── Main Page ─────────────────────────────────────────────────────────────────
 export default function CasesPage() {
   const { progress, markCaseViewed, rateCaseSelf } = useProgress()
-  const [typeFilter, setTypeFilter] = useState('all')
-  const [statusFilter, setStatusFilter] = useState('all') // all | unrated | rated
+  const [selectedLevel, setSelectedLevel] = useState(null)  // null | 'easy' | 'medium' | 'hard'
+  const [selectedType, setSelectedType]   = useState(null)  // null | type string | 'all'
 
   const { viewed, selfRatings } = progress.cases
-
   const viewedCount = viewed.length
-  const ratedCount = Object.keys(selfRatings).length
+  const ratedCount  = Object.keys(selfRatings).length
   const nailedCount = Object.values(selfRatings).filter(r => r.overall === 3).length
 
+  // Counts by level
+  const countByLevel = (lvl) => SCENARIOS.filter(s => s.difficulty === lvl).length
+  const viewedByLevel = (lvl) => SCENARIOS.filter(s => s.difficulty === lvl && viewed.includes(s.id)).length
+
+  // Types available for selected level
+  const typesForLevel = selectedLevel
+    ? [...new Set(SCENARIOS.filter(s => s.difficulty === selectedLevel).map(s => s.type))].sort()
+    : []
+  const coreTypesForLevel = BEENA_CORE.filter(t => typesForLevel.includes(t))
+  const otherTypesForLevel = typesForLevel.filter(t => !BEENA_CORE.includes(t))
+
+  // Final filtered cases
   const filtered = SCENARIOS.filter(s => {
-    const matchType = typeFilter === 'all' || s.type === typeFilter
-    const matchStatus =
-      statusFilter === 'all' ? true :
-      statusFilter === 'rated' ? !!selfRatings[s.id] :
-      statusFilter === 'unrated' ? !selfRatings[s.id] : true
-    return matchType && matchStatus
+    if (!selectedLevel) return false
+    if (s.difficulty !== selectedLevel) return false
+    if (selectedType && selectedType !== 'all' && s.type !== selectedType) return false
+    return true
   })
+
+  const currentLevel = LEVELS.find(l => l.key === selectedLevel)
 
   return (
     <div style={{ padding: '16px 16px 24px', maxWidth: 520, margin: '0 auto' }}>
 
-      {/* Stats header */}
+      {/* Stats bar — always visible */}
       <div style={{
-        background: '#1e293b', borderRadius: 16, padding: '14px 16px',
+        background: '#1e293b', borderRadius: 16, padding: '12px 16px',
         marginBottom: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center',
       }}>
         <div>
-          <div style={{ fontSize: 13, color: '#64748b', marginBottom: 2 }}>Cases completed</div>
-          <div style={{ fontSize: 22, fontWeight: 800, color: '#f1f5f9' }}>
-            {viewedCount} <span style={{ fontSize: 14, color: '#64748b', fontWeight: 400 }}>/ {SCENARIOS.length}</span>
+          <div style={{ fontSize: 11, color: '#64748b', marginBottom: 1 }}>Cases studied</div>
+          <div style={{ fontSize: 20, fontWeight: 800, color: '#f1f5f9' }}>
+            {viewedCount} <span style={{ fontSize: 13, color: '#64748b', fontWeight: 400 }}>/ {SCENARIOS.length}</span>
           </div>
         </div>
-        <div style={{ display: 'flex', gap: 14 }}>
+        <div style={{ display: 'flex', gap: 12 }}>
+          {LEVELS.map(l => (
+            <div key={l.key} style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: 15, fontWeight: 700, color: l.color }}>{viewedByLevel(l.key)}</div>
+              <div style={{ fontSize: 9, color: '#64748b' }}>{l.label}</div>
+            </div>
+          ))}
           <div style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: 18, fontWeight: 700, color: '#3b82f6' }}>{ratedCount}</div>
-            <div style={{ fontSize: 10, color: '#64748b' }}>Rated</div>
-          </div>
-          <div style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: 18, fontWeight: 700, color: '#22c55e' }}>{nailedCount}</div>
-            <div style={{ fontSize: 10, color: '#64748b' }}>Nailed</div>
+            <div style={{ fontSize: 15, fontWeight: 700, color: '#22c55e' }}>{nailedCount}</div>
+            <div style={{ fontSize: 9, color: '#64748b' }}>Nailed</div>
           </div>
         </div>
       </div>
 
       {/* Progress bar */}
-      <div style={{ background: '#1e293b', borderRadius: 999, height: 6, marginBottom: 16, overflow: 'hidden' }}>
+      <div style={{ background: '#1e293b', borderRadius: 999, height: 5, marginBottom: 20, overflow: 'hidden' }}>
         <div style={{
           height: '100%', borderRadius: 999,
           width: `${(viewedCount / SCENARIOS.length) * 100}%`,
@@ -656,77 +687,209 @@ export default function CasesPage() {
         }} />
       </div>
 
-      {/* Status filter */}
-      <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
-        {[
-          { key: 'all', label: `All (${SCENARIOS.length})` },
-          { key: 'unrated', label: `Unrated (${SCENARIOS.length - ratedCount})` },
-          { key: 'rated', label: `Rated (${ratedCount})` },
-        ].map(tab => (
-          <button
-            key={tab.key}
-            onClick={() => setStatusFilter(tab.key)}
-            style={{
-              padding: '6px 12px', borderRadius: 999, border: 'none',
-              background: statusFilter === tab.key ? '#3b82f6' : '#1e293b',
-              color: statusFilter === tab.key ? '#fff' : '#64748b',
-              fontSize: 12, fontWeight: 600, cursor: 'pointer', whiteSpace: 'nowrap',
-            }}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
+      {/* ── STEP 1: Level picker ── */}
+      {!selectedLevel && (
+        <>
+          <div style={{ fontSize: 11, fontWeight: 700, color: '#475569', letterSpacing: 1, marginBottom: 12 }}>
+            CHOOSE YOUR LEVEL
+          </div>
+          {LEVELS.map(level => {
+            const total   = countByLevel(level.key)
+            const studied = viewedByLevel(level.key)
+            const pct     = total ? Math.round((studied / total) * 100) : 0
+            return (
+              <button
+                key={level.key}
+                onClick={() => { setSelectedLevel(level.key); setSelectedType(null) }}
+                style={{
+                  width: '100%', display: 'flex', alignItems: 'center', gap: 14,
+                  background: '#1e293b', borderRadius: 16, padding: '16px 18px',
+                  border: `1.5px solid ${level.color}33`, marginBottom: 10,
+                  cursor: 'pointer', textAlign: 'left',
+                }}
+              >
+                <div style={{
+                  width: 48, height: 48, borderRadius: 14, flexShrink: 0,
+                  background: level.color + '22', border: `2px solid ${level.color}`,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: 22,
+                }}>
+                  {level.emoji}
+                </div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: 16, fontWeight: 800, color: '#f1f5f9', marginBottom: 2 }}>
+                    {level.label}
+                  </div>
+                  <div style={{ fontSize: 12, color: '#64748b', marginBottom: 6 }}>{level.desc}</div>
+                  <div style={{ background: '#0f172a', borderRadius: 999, height: 4, overflow: 'hidden' }}>
+                    <div style={{
+                      height: '100%', borderRadius: 999, width: `${pct}%`,
+                      background: level.color, transition: 'width 0.4s',
+                    }} />
+                  </div>
+                </div>
+                <div style={{ textAlign: 'right', flexShrink: 0 }}>
+                  <div style={{ fontSize: 18, fontWeight: 800, color: level.color }}>{studied}</div>
+                  <div style={{ fontSize: 10, color: '#475569' }}>/ {total}</div>
+                </div>
+              </button>
+            )
+          })}
+        </>
+      )}
 
-      {/* Type filter */}
-      <div style={{ display: 'flex', gap: 6, marginBottom: 16, overflowX: 'auto', paddingBottom: 4 }}>
-        <button
-          onClick={() => setTypeFilter('all')}
-          style={{
-            padding: '5px 10px', borderRadius: 999, border: 'none', flexShrink: 0,
-            background: typeFilter === 'all' ? '#475569' : '#1e293b',
-            color: typeFilter === 'all' ? '#fff' : '#64748b',
-            fontSize: 11, fontWeight: 600, cursor: 'pointer',
-          }}
-        >
-          All Types
-        </button>
-        {ALL_TYPES.map(type => {
-          const color = getTypeColor(type)
-          const active = typeFilter === type
-          return (
+      {/* ── STEP 2: Category picker ── */}
+      {selectedLevel && !selectedType && (
+        <>
+          {/* Back + level label */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
             <button
-              key={type}
-              onClick={() => setTypeFilter(active ? 'all' : type)}
+              onClick={() => setSelectedLevel(null)}
               style={{
-                padding: '5px 10px', borderRadius: 999, border: 'none', flexShrink: 0,
-                background: active ? color : '#1e293b',
-                color: active ? '#fff' : color,
-                fontSize: 11, fontWeight: 600, cursor: 'pointer', whiteSpace: 'nowrap',
+                padding: '6px 12px', borderRadius: 999, border: 'none',
+                background: '#1e293b', color: '#94a3b8', fontSize: 12, fontWeight: 600, cursor: 'pointer',
               }}
             >
-              {type}
+              ← Back
             </button>
-          )
-        })}
-      </div>
+            <div style={{
+              fontSize: 13, fontWeight: 700, color: currentLevel.color,
+              background: currentLevel.color + '22', borderRadius: 999, padding: '4px 12px',
+            }}>
+              {currentLevel.emoji} {currentLevel.label}
+            </div>
+          </div>
 
-      {/* Case cards */}
-      {filtered.length === 0 ? (
-        <div style={{ textAlign: 'center', color: '#475569', padding: 40, fontSize: 14 }}>
-          No cases in this filter.
-        </div>
-      ) : (
-        filtered.map(scenario => (
-          <CaseCard
-            key={scenario.id}
-            scenario={scenario}
-            viewed={viewed.includes(scenario.id)}
-            selfRating={selfRatings[scenario.id]}
-            onView={markCaseViewed}
-            onRate={rateCaseSelf}
-          />
-        ))
+          <div style={{ fontSize: 11, fontWeight: 700, color: '#475569', letterSpacing: 1, marginBottom: 10 }}>
+            CHOOSE A CASE TYPE
+          </div>
+
+          {/* All cases option */}
+          <button
+            onClick={() => setSelectedType('all')}
+            style={{
+              width: '100%', padding: '12px 16px', borderRadius: 14, marginBottom: 14,
+              border: '1.5px solid #334155', background: '#1e293b',
+              color: '#f1f5f9', fontSize: 13, fontWeight: 700, cursor: 'pointer', textAlign: 'left',
+            }}
+          >
+            📋 All {currentLevel.label} Cases ({countByLevel(selectedLevel)})
+          </button>
+
+          {/* Beena core types */}
+          {coreTypesForLevel.length > 0 && (
+            <>
+              <div style={{ fontSize: 10, fontWeight: 700, color: '#3b82f6', letterSpacing: 1, marginBottom: 8 }}>
+                ⭐ BEENA'S 8 CORE TYPES
+              </div>
+              {coreTypesForLevel.map(type => {
+                const color = getTypeColor(type)
+                const count = SCENARIOS.filter(s => s.difficulty === selectedLevel && s.type === type).length
+                const done  = SCENARIOS.filter(s => s.difficulty === selectedLevel && s.type === type && viewed.includes(s.id)).length
+                return (
+                  <button
+                    key={type}
+                    onClick={() => setSelectedType(type)}
+                    style={{
+                      width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      padding: '12px 16px', borderRadius: 14, marginBottom: 8,
+                      border: `1.5px solid ${color}44`, background: color + '12',
+                      color: '#f1f5f9', fontSize: 13, fontWeight: 600, cursor: 'pointer', textAlign: 'left',
+                    }}
+                  >
+                    <span style={{ color }}>{type}</span>
+                    <span style={{ fontSize: 11, color: '#64748b' }}>{done}/{count}</span>
+                  </button>
+                )
+              })}
+            </>
+          )}
+
+          {/* Other types */}
+          {otherTypesForLevel.length > 0 && (
+            <>
+              <div style={{ fontSize: 10, fontWeight: 700, color: '#475569', letterSpacing: 1, marginBottom: 8, marginTop: 14 }}>
+                OTHER TYPES
+              </div>
+              {otherTypesForLevel.map(type => {
+                const color = getTypeColor(type)
+                const count = SCENARIOS.filter(s => s.difficulty === selectedLevel && s.type === type).length
+                const done  = SCENARIOS.filter(s => s.difficulty === selectedLevel && s.type === type && viewed.includes(s.id)).length
+                return (
+                  <button
+                    key={type}
+                    onClick={() => setSelectedType(type)}
+                    style={{
+                      width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      padding: '11px 16px', borderRadius: 14, marginBottom: 8,
+                      border: '1.5px solid #334155', background: '#1e293b',
+                      color: '#f1f5f9', fontSize: 13, fontWeight: 600, cursor: 'pointer', textAlign: 'left',
+                    }}
+                  >
+                    <span style={{ color: '#94a3b8' }}>{type}</span>
+                    <span style={{ fontSize: 11, color: '#475569' }}>{done}/{count}</span>
+                  </button>
+                )
+              })}
+            </>
+          )}
+        </>
+      )}
+
+      {/* ── STEP 3: Case list ── */}
+      {selectedLevel && selectedType && (
+        <>
+          {/* Breadcrumb nav */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16, flexWrap: 'wrap' }}>
+            <button
+              onClick={() => { setSelectedLevel(null); setSelectedType(null) }}
+              style={{
+                padding: '5px 10px', borderRadius: 999, border: 'none',
+                background: '#1e293b', color: '#94a3b8', fontSize: 11, fontWeight: 600, cursor: 'pointer',
+              }}
+            >
+              ← Levels
+            </button>
+            <button
+              onClick={() => setSelectedType(null)}
+              style={{
+                padding: '5px 10px', borderRadius: 999, border: 'none',
+                background: currentLevel.color + '22', color: currentLevel.color,
+                fontSize: 11, fontWeight: 600, cursor: 'pointer',
+              }}
+            >
+              {currentLevel.emoji} {currentLevel.label}
+            </button>
+            <span style={{ color: '#334155', fontSize: 11 }}>›</span>
+            <span style={{
+              fontSize: 11, fontWeight: 700, color: getTypeColor(selectedType),
+              background: getTypeColor(selectedType) + '22', borderRadius: 999, padding: '5px 10px',
+            }}>
+              {selectedType === 'all' ? 'All Cases' : selectedType}
+            </span>
+            <span style={{ fontSize: 11, color: '#475569', marginLeft: 'auto' }}>
+              {filtered.length} case{filtered.length !== 1 ? 's' : ''}
+            </span>
+          </div>
+
+          {/* Cases */}
+          {filtered.length === 0 ? (
+            <div style={{ textAlign: 'center', color: '#475569', padding: 40, fontSize: 14 }}>
+              No cases match this filter.
+            </div>
+          ) : (
+            filtered.map(scenario => (
+              <CaseCard
+                key={scenario.id}
+                scenario={scenario}
+                viewed={viewed.includes(scenario.id)}
+                selfRating={selfRatings[scenario.id]}
+                onView={markCaseViewed}
+                onRate={rateCaseSelf}
+              />
+            ))
+          )}
+        </>
       )}
     </div>
   )

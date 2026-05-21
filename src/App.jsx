@@ -31,8 +31,11 @@ function App() {
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#0f172a' }}>
       {/* Header */}
       <header style={{ flexShrink: 0, padding: '12px 16px 10px', borderBottom: '1px solid #1e293b' }}>
-        <div style={{ fontSize: 18, fontWeight: 700, color: '#f1f5f9', letterSpacing: '-0.3px' }}>
-          MBAce
+        <div style={{ fontSize: 17, fontWeight: 800, color: '#f1f5f9', letterSpacing: '-0.3px', lineHeight: 1.2 }}>
+          MBAce <span style={{ fontWeight: 400, color: '#94a3b8' }}>Marketing Case Prep</span>
+        </div>
+        <div style={{ fontSize: 11, color: '#475569', marginTop: 2 }}>
+          created by Kim McMillian · Cornell '28
         </div>
       </header>
 
