@@ -907,7 +907,7 @@
   },
   {
     "id": "scenario_008",
-    "type": "Shrinking Category / Market Share",
+    "type": "Shrinking Category",
     "company": "Campbell's Soup",
     "title": "Campbell's in a Declining Soup Category",
     "prompt": "You are the VP of Marketing for Campbell's condensed soup. The US canned condensed soup category has declined 3% annually for seven consecutive years. Campbell's holds 58% share of a shrinking pie. Millennials are the primary driver of decline — they index 60% below average for canned soup consumption and cite 'too much sodium,' 'processed feel,' and 'inconvenient to prepare' as top barriers. Campbell's total soup revenue is down 14% over the period. What is your recommendation?",
@@ -1037,7 +1037,7 @@
   },
   {
     "id": "scenario_009",
-    "type": "Shrinking Category / Market Share",
+    "type": "Shrinking Category",
     "company": "Gillette (P&G)",
     "title": "Gillette's Share Collapse in Razors",
     "prompt": "Gillette held 70% of the US men's razor market in 2010. Today it holds 49%. Dollar Shave Club and Harry's entered on price and DTC convenience, together capturing 18% of the market. Premium and subscription models have changed consumer purchasing habits fundamentally. Gillette's average revenue per razor system has declined 9% despite launching the Gillette Labs system at $14.99/blade. How do you rebuild share?",
@@ -1170,7 +1170,7 @@
   },
   {
     "id": "scenario_010",
-    "type": "Shrinking Category / Market Share",
+    "type": "Shrinking Category",
     "company": "Tropicana (PAI Partners / PepsiCo JV)",
     "title": "Tropicana in a Declining OJ Market",
     "prompt": "The US orange juice market has declined 28% in volume over the past decade. Tropicana, the category leader with 33% share, has seen unit volume fall 19% over the same period. Health concerns (sugar content), competition from other morning beverages (cold brew coffee, smoothies, sparkling water), and commodity price volatility from Florida citrus disease have created a structural headwind. In 2021, PepsiCo sold a 61% majority stake in Tropicana to private equity firm PAI Partners for approximately $3.3B, retaining a 39% minority stake. Tropicana now operates as a standalone company with PAI Partners as majority owner. What should Tropicana do?",
@@ -1303,7 +1303,7 @@
   },
   {
     "id": "scenario_011",
-    "type": "Shrinking Category / Market Share",
+    "type": "Shrinking Category",
     "company": "Kellogg's (Kellanova)",
     "title": "Kellogg's in Declining Breakfast Cereal",
     "prompt": "The US ready-to-eat breakfast cereal market has declined from $10.2B to $8.7B over eight years. Kellogg's holds 29% of the category (including Special K, Frosted Flakes, and Corn Flakes) but volume is down 14% despite the company holding share relatively steady. The primary driver: consumers are skipping breakfast more frequently and shifting to protein bars, Greek yogurt, and breakfast sandwiches when they do eat. What strategic options should Kellogg's pursue?",
@@ -1428,7 +1428,7 @@
   },
   {
     "id": "scenario_012",
-    "type": "Shrinking Category / Market Share",
+    "type": "Shrinking Category",
     "company": "Mead (ACCO Brands)",
     "title": "Mead Notebooks in a Declining Paper Category",
     "prompt": "You are the CMO of Mead, the leading brand in the US notebooks and paper products category. The K-12 school supplies market for paper notebooks has declined 6% annually for five years as tablets and Chromebooks have become standard in US schools. Mead holds 41% of the notebook market but total category revenue has dropped from $1.4B to $1.0B. Back-to-school season (which represents 60% of Mead's annual revenue) has shown the sharpest declines. What do you recommend?",
@@ -1557,7 +1557,7 @@
   },
   {
     "id": "scenario_013",
-    "type": "Shrinking Category / Market Share",
+    "type": "Shrinking Category",
     "company": "Hershey's",
     "title": "Hershey's Losing Share to Premium Chocolate",
     "prompt": "Hershey's holds 44% of the US chocolate confectionery market by volume but only 36% by dollar sales — a gap that has widened 6 points in five years. Premium chocolate brands (Lindt, Godiva, Ghirardelli) and craft brands have grown from 18% to 26% of dollar sales. Meanwhile, Hershey's core milk chocolate bars are essentially flat in volume. Price realization per pound has declined 4% as the company has relied on promotions. Where should Hershey's focus?",
@@ -2575,7 +2575,7 @@
   },
   {
     "id": "scenario_021",
-    "type": "Pricing",
+    "type": "Pricing Strategy",
     "company": "Netflix",
     "title": "Netflix Ad-Supported Tier Pricing",
     "prompt": "Netflix is launching an ad-supported tier and must set the price point. The standard ad-free plan is $15.49/month. The ad-supported plan must be priced to: (1) attract price-sensitive users who have not subscribed, (2) not cannibalize standard plan subscribers, and (3) generate equivalent or greater revenue per user when including ad revenue. Netflix estimates it will earn $6-8 per subscriber per month from advertising. What price should they set and why?",
@@ -2708,7 +2708,7 @@
   },
   {
     "id": "scenario_022",
-    "type": "Pricing",
+    "type": "Pricing Strategy",
     "company": "Starbucks",
     "title": "Starbucks Latte Price Increase in Competitive Markets",
     "prompt": "Starbucks is evaluating a $0.50 price increase on its Grande Latte from $5.45 to $5.95 across all US stores. The increase would help offset rising dairy and labor costs. Starbucks serves 8M Grande Lattes in the US daily. A test in Phoenix showed a 6% volume decline after the increase. Dutch Bros and local independent cafés are priced $0.50-$1.00 below Starbucks in most markets. Should Starbucks raise the price universally?",
@@ -2837,7 +2837,7 @@
   },
   {
     "id": "scenario_023",
-    "type": "Pricing",
+    "type": "Pricing Strategy",
     "company": "Apple",
     "title": "Apple AirPods Pro Pricing Decision",
     "prompt": "Apple is releasing the third generation of AirPods Pro. The current model is priced at $249. Manufacturing and component costs have increased $18 due to new H3 chip and upgraded ANC hardware. Apple's research shows consumers perceive 'significant improvement' in sound quality and noise cancellation. Sony's WF-1000XM5, the leading Android equivalent, is priced at $279. Samsung Galaxy Buds Pro 2 are $179. What should Apple price the new AirPods Pro?",
@@ -2952,7 +2952,7 @@
   },
   {
     "id": "scenario_024",
-    "type": "Pricing",
+    "type": "Pricing Strategy",
     "company": "Whole Foods (Amazon)",
     "title": "Whole Foods 365 Brand Pricing Strategy",
     "prompt": "Amazon is evaluating whether to lower prices on Whole Foods' 365 store brand by 15% across 800+ SKUs to drive traffic and grow basket size. Currently, 365 is priced 10-20% above conventional grocery store brands (Kroger Private Selection, Wegmans organic). Amazon Prime members get an additional 10% off at Whole Foods. The goal is to close the perceived 'Whole Foods is expensive' gap without repositioning the brand downmarket. Is this the right move?",
@@ -3081,7 +3081,7 @@
   },
   {
     "id": "scenario_025",
-    "type": "Pricing",
+    "type": "Pricing Strategy",
     "company": "Peloton",
     "title": "Peloton Bike Price Cut Decision",
     "prompt": "Peloton is considering cutting the price of its original Bike from $1,745 to $1,195 to drive hardware sales and grow the subscription base. The Bike's bill of materials is $680. Each subscriber generates $44/month in subscription revenue with 95% gross margins. The average subscriber stays for 26 months. The price cut would be permanent, not a promotion. Peloton estimates this could increase hardware sell-through by 60%. Should Peloton cut the price?",
@@ -4133,7 +4133,7 @@
   },
   {
     "id": "scenario_033",
-    "type": "Profit Growth / Decline",
+    "type": "Profit Growth/Decline",
     "company": "Keurig Dr Pepper",
     "title": "Keurig K-Cup Profit Decline Investigation",
     "prompt": "Keurig's K-Cup pod business has seen operating profit decline from $1.4B to $1.1B over three years despite revenue growing from $4.2B to $4.6B. The CEO wants to understand: Is this a revenue problem, a cost problem, or a mix problem? Walk me through your analysis.",
@@ -4261,7 +4261,7 @@
   },
   {
     "id": "scenario_034",
-    "type": "Profit Growth / Decline",
+    "type": "Profit Growth/Decline",
     "company": "McDonald's",
     "title": "McDonald's US Restaurant Profit Decline",
     "prompt": "McDonald's US company-owned restaurant average unit volume has grown from $2.9M to $3.2M annually. However, average unit operating profit has declined from $420K to $380K. McDonald's CFO says 'revenue is going in the right direction but profit isn't following.' Diagnose the problem and recommend solutions.",
@@ -4389,7 +4389,7 @@
   },
   {
     "id": "scenario_035",
-    "type": "Profit Growth / Decline",
+    "type": "Profit Growth/Decline",
     "company": "Procter & Gamble",
     "title": "P&G Beauty Division Profit Improvement",
     "prompt": "P&G's Beauty division (Pantene, Head & Shoulders, Olay) saw operating margin decline from 19% to 14% over two years despite flat revenue of $6.1B. P&G's CEO has tasked you with identifying the root cause and recommending a path to restoring 18%+ operating margin within three years. What is your analysis?",
@@ -4522,7 +4522,7 @@
   },
   {
     "id": "scenario_036",
-    "type": "Profit Growth / Decline",
+    "type": "Profit Growth/Decline",
     "company": "Chipotle",
     "title": "Chipotle Restaurant-Level Margin Improvement",
     "prompt": "Chipotle's restaurant-level operating margin is 26.2%, its highest in five years. The CEO wants to push toward 28% over the next two years without raising menu prices (which have already increased 10% in the past 18 months). How would you structure an analysis of where the additional margin can come from?",
@@ -4654,7 +4654,7 @@
   },
   {
     "id": "scenario_037",
-    "type": "Profit Growth / Decline",
+    "type": "Profit Growth/Decline",
     "company": "Snap Inc.",
     "title": "Snapchat Advertising Revenue Decline",
     "prompt": "Snapchat's quarterly advertising revenue has declined 7% YoY from $1.1B to $1.02B. Daily active users grew 12% over the same period. The CFO's summary: 'More users, less revenue.' Diagnose the profit and revenue problem and recommend a path forward.",
@@ -4786,7 +4786,7 @@
   },
   {
     "id": "scenario_038",
-    "type": "Profit Growth / Decline",
+    "type": "Profit Growth/Decline",
     "company": "Target",
     "title": "Target Private Label Margin Expansion",
     "prompt": "Target's CFO has noted that its owned brands (Good & Gather, Threshold, A New Day) generate 40% gross margins vs. 29% for national brands. However, owned brands represent only 33% of Target's revenue. If Target can shift 5 more percentage points of revenue to owned brands (from 33% to 38%), what is the profit impact and what are the risks? How would you structure this analysis?",
@@ -5842,7 +5842,7 @@
   },
   {
     "id": "scenario_046",
-    "type": "Product/Advertising Evaluation",
+    "type": "Ad Evaluation",
     "company": "Old Spice (P&G)",
     "title": "Evaluating Old Spice's 'The Man Your Man Could Smell Like' Campaign",
     "prompt": "You are a brand consultant reviewing Old Spice's viral 'The Man Your Man Could Smell Like' campaign (Isaiah Mustafa). The campaign launched with a Super Bowl ad and generated 40M YouTube views in the first week. However, Old Spice's sales in the three months following the campaign launch grew only 3% vs. a 9% growth target. How would you evaluate whether this campaign was a success or failure?",
@@ -5970,7 +5970,7 @@
   },
   {
     "id": "scenario_047",
-    "type": "Product/Advertising Evaluation",
+    "type": "Ad Evaluation",
     "company": "Bud Light",
     "title": "Post-Crisis Bud Light Advertising Evaluation",
     "prompt": "Following the Dylan Mulvaney partnership controversy in April 2023, Bud Light's sales volume declined 26% within six weeks. AB InBev's marketing team has proposed a new campaign called 'Easy to Drink, Easy to Enjoy' featuring traditional outdoor activities and sports. The campaign tests well in focus groups with core Bud Light drinkers (males 25-45, rural/suburban). Should AB InBev approve this campaign, and what would your evaluation criteria be?",
@@ -6099,7 +6099,7 @@
   },
   {
     "id": "scenario_048",
-    "type": "Product/Advertising Evaluation",
+    "type": "Ad Evaluation",
     "company": "Always (P&G)",
     "title": "Evaluating Always' 'Like a Girl' Campaign",
     "prompt": "Always launched the 'Like a Girl' campaign in 2014, which redefined the phrase 'run like a girl' as empowering rather than insulting. The campaign won a Cannes Grand Prix and generated 90M YouTube views. P&G's brand manager now needs to present a full campaign evaluation to leadership. How would you evaluate its business effectiveness, and what metrics would you look at?",
@@ -6231,7 +6231,7 @@
   },
   {
     "id": "scenario_049",
-    "type": "Product/Advertising Evaluation",
+    "type": "Ad Evaluation",
     "company": "Dove (Unilever)",
     "title": "Evaluating Dove's 'Real Beauty' Campaign Longevity",
     "prompt": "Dove's 'Real Beauty' campaign launched in 2004 and is now 20 years old. Unilever's board is questioning whether the campaign has run its course, noting that Dove's US market share in body wash has declined from 17% to 14% over the past four years despite continued 'Real Beauty' advertising. A challenger brand (Native, at 8% share) is growing 18% annually. Should Unilever refresh, extend, or retire 'Real Beauty'?",
@@ -6364,7 +6364,7 @@
   },
   {
     "id": "scenario_050",
-    "type": "Product/Advertising Evaluation",
+    "type": "Ad Evaluation",
     "company": "Nike",
     "title": "Evaluating Nike's 'Dream Crazy' Colin Kaepernick Campaign",
     "prompt": "Nike launched its 'Dream Crazy' campaign featuring Colin Kaepernick in September 2018. Within 48 hours of launch, #BoycottNike was trending, with videos of consumers burning Nike products. Nike's stock declined 3% on the day of launch. However, Nike's digital sales increased 31% in the week following the launch. You are Nike's CMO presenting a 6-month campaign evaluation. How do you frame this?",
@@ -6496,7 +6496,7 @@
   },
   {
     "id": "scenario_051",
-    "type": "Growth Strategy",
+    "type": "Profit Growth/Decline",
     "company": "Nike",
     "title": "Nike Women's Running Growth",
     "prompt": "You are a senior brand manager at Nike. Women's running apparel is growing 12% annually as a category, but Nike's women's running revenue has grown only 4% over the same period. Nike's overall women's business is $8B globally. What strategic direction would you recommend to close the gap?",
@@ -6620,7 +6620,7 @@
   },
   {
     "id": "scenario_052",
-    "type": "Growth Strategy",
+    "type": "Profit Growth/Decline",
     "company": "Hilton",
     "title": "Hilton Loyalty Program Expansion",
     "prompt": "You are a VP of marketing at Hilton. Hilton Honors has 173 million members but only 38% are active (stayed at least once in the past 12 months). The loyalty program drives 60% of Hilton's occupancy. How would you grow revenue from the existing loyalty base?",
@@ -6744,7 +6744,7 @@
   },
   {
     "id": "scenario_053",
-    "type": "Growth Strategy",
+    "type": "Profit Growth/Decline",
     "company": "Kraft Heinz",
     "title": "Kraft Mac & Cheese Premiumization",
     "prompt": "You are a brand director at Kraft Heinz. Kraft Mac & Cheese generates $1.2B in annual US retail sales but volume has declined 3% year-over-year for two consecutive years while the premium pasta category has grown 9%. How do you grow Kraft Mac & Cheese revenue?",
@@ -6868,7 +6868,7 @@
   },
   {
     "id": "scenario_054",
-    "type": "Growth Strategy",
+    "type": "Profit Growth/Decline",
     "company": "American Express",
     "title": "Amex Small Business Card Growth",
     "prompt": "You are a director of product marketing at American Express. The Amex Business Gold Card has a 14% market share among small business credit cards but only 6% among businesses with fewer than 10 employees. Small businesses under 10 employees represent 78% of all US small businesses. How do you grow penetration in this segment?",
@@ -6992,7 +6992,7 @@
   },
   {
     "id": "scenario_055",
-    "type": "Growth Strategy",
+    "type": "Profit Growth/Decline",
     "company": "Dick's Sporting Goods",
     "title": "Dick's Private Label Expansion",
     "prompt": "You are VP of merchandising strategy at Dick's Sporting Goods. Dick's private label brands (CALIA, Alpine Design, DBX) represent 14% of total revenue at $1.9B. National brand equivalents like Under Armour and The North Face carry 40-55% gross margins vs. private label's 58-62%. How do you grow private label to 20% of revenue over 3 years?",
@@ -7116,7 +7116,7 @@
   },
   {
     "id": "scenario_056",
-    "type": "Growth Strategy",
+    "type": "Profit Growth/Decline",
     "company": "Walmart",
     "title": "Walmart Grocery Delivery Growth",
     "prompt": "You are a senior director of strategy at Walmart. Walmart's grocery delivery service has 6.3 million active subscribers but monthly churn is 4.2%, significantly above the 1.8% churn rate of Walmart+ overall. Grocery delivery revenue is $4.1B annually. How do you reduce churn and grow the subscriber base?",
@@ -7240,7 +7240,7 @@
   },
   {
     "id": "scenario_057",
-    "type": "Growth Strategy",
+    "type": "Profit Growth/Decline",
     "company": "Chevron",
     "title": "Chevron EV Charging Network Growth",
     "prompt": "You are a strategy director at Chevron. Chevron has launched a pilot EV charging network at 150 of its 8,000 US gas stations. Utilization at pilot stations is 31% — below the 55% needed for profitability. How does Chevron grow this business to profitability within 3 years?",
@@ -7364,7 +7364,7 @@
   },
   {
     "id": "scenario_058",
-    "type": "New Market Entry",
+    "type": "New Product Launch",
     "company": "Kraft Heinz",
     "title": "Kraft Entry into Plant-Based Protein",
     "prompt": "You are a VP of strategy at Kraft Heinz. The plant-based protein category grew 8% annually to reach $8B in US retail sales last year. Kraft Heinz has no products in this category. Should Kraft Heinz enter the plant-based protein market, and if so, how?",
@@ -7488,7 +7488,7 @@
   },
   {
     "id": "scenario_059",
-    "type": "New Market Entry",
+    "type": "New Product Launch",
     "company": "Hilton",
     "title": "Hilton Entry into Extended Stay Segment",
     "prompt": "You are a senior director of brand strategy at Hilton. The extended stay hotel segment ($18B US market) is growing at 6.2% annually — faster than traditional hotels at 3.1%. Hilton's current extended stay brand, Homewood Suites, has 520 properties. WoodSpring Suites (economy) and Sonesta ES Suites are gaining share at the economy and mid-scale tiers. Should Hilton launch a new extended stay brand targeting the underserved upscale segment?",
@@ -7612,7 +7612,7 @@
   },
   {
     "id": "scenario_060",
-    "type": "New Market Entry",
+    "type": "New Product Launch",
     "company": "Walmart",
     "title": "Walmart Entry into Healthcare Clinics",
     "prompt": "You are a VP of strategy at Walmart. Walmart is considering expanding its in-store health clinic pilot from 32 locations to 600 locations over 4 years, investing $1.2B. The US primary care market is $260B. CVS Health's MinuteClinics operate 1,100 locations. Should Walmart scale this initiative?",
@@ -7736,7 +7736,7 @@
   },
   {
     "id": "scenario_061",
-    "type": "New Market Entry",
+    "type": "New Product Launch",
     "company": "American Express",
     "title": "Amex Entry into BNPL",
     "prompt": "You are a director of product strategy at American Express. Buy Now Pay Later (BNPL) has grown to $75B in US transaction volume, with Affirm, Klarna, and Afterpay holding 68% of the market. Amex has 133 million cards in force and processes $1.5T in annual charge volume. Should Amex launch a standalone BNPL product to compete?",
@@ -7864,7 +7864,7 @@
   },
   {
     "id": "scenario_062",
-    "type": "New Market Entry",
+    "type": "New Product Launch",
     "company": "Cardinal Health",
     "title": "Cardinal Health Entry into Specialty Pharmacy",
     "prompt": "You are a VP of strategy at Cardinal Health. The specialty pharmacy market is $300B and growing at 12% annually, driven by biologics and oncology drugs. Cardinal Health distributes $200B in pharmaceutical products annually but has minimal direct specialty pharmacy operations. Should Cardinal Health acquire or build a specialty pharmacy network?",
@@ -7992,7 +7992,7 @@
   },
   {
     "id": "scenario_063",
-    "type": "New Market Entry",
+    "type": "New Product Launch",
     "company": "Chevron",
     "title": "Chevron Entry into Green Hydrogen",
     "prompt": "You are a senior strategy director at Chevron. Green hydrogen is projected to grow from a $2B to $22B market by 2030. Chevron produces 'grey' hydrogen (from natural gas) at scale for refinery use. The US government's Inflation Reduction Act provides a $3/kg tax credit for green hydrogen production. Should Chevron enter green hydrogen production for commercial sale?",
@@ -8120,7 +8120,7 @@
   },
   {
     "id": "scenario_064",
-    "type": "New Market Entry",
+    "type": "New Product Launch",
     "company": "Citi",
     "title": "Citi Entry into Digital Banking in Southeast Asia",
     "prompt": "You are a VP of international strategy at Citi. Citi exited consumer banking in 13 international markets in 2022. Southeast Asia has 290 million unbanked adults and digital bank penetration growing at 41% annually. Grab Financial, Sea's SeaMoney, and GoTo Financial collectively hold 58% of digital banking in the region. Should Citi launch a digital-only banking product targeting underserved middle-income consumers in Indonesia and Vietnam?",
@@ -8244,7 +8244,7 @@
   },
   {
     "id": "scenario_065",
-    "type": "Profitability",
+    "type": "Profit Growth/Decline",
     "company": "Nike",
     "title": "Nike Direct-to-Consumer Margin Decline",
     "prompt": "You are a senior finance director at Nike. Nike's direct-to-consumer (DTC) business generated $21B in revenue last year but operating margin declined from 18.2% to 14.6% in 12 months — a $750M reduction in operating profit. Nike's DTC revenue grew 9% year-over-year. What is driving the margin decline and how do you fix it?",
@@ -8371,7 +8371,7 @@
   },
   {
     "id": "scenario_066",
-    "type": "Profitability",
+    "type": "Profit Growth/Decline",
     "company": "American Express",
     "title": "Amex Centurion Lounge Profitability",
     "prompt": "You are a director of product economics at American Express. The Amex Centurion Lounge network has grown to 40 locations globally, but lounge operating costs have increased approximately 230% over 3 years while the cardholder base using lounges has grown 120%. Per-visit cost is now $42 vs. $28 three years ago — a 50% increase. Overcrowding is the top cardholder complaint, with NPS scores in lounges 18 points below the overall Platinum card NPS. How do you restore profitability and experience quality?",
@@ -8499,7 +8499,7 @@
   },
   {
     "id": "scenario_067",
-    "type": "Profitability",
+    "type": "Profit Growth/Decline",
     "company": "Kraft Heinz",
     "title": "Kraft Heinz Cold Chain Cost Spike",
     "prompt": "You are VP of supply chain finance at Kraft Heinz. Kraft Heinz's refrigerated foods division (Oscar Mayer, Philadelphia Cream Cheese) saw gross margins decline from 31% to 24% over 18 months. Revenue in the refrigerated division is $6.2B. The division's volume was flat while commodity costs increased 14% and cold chain logistics costs increased 28%. How do you restore margins?",
@@ -8627,7 +8627,7 @@
   },
   {
     "id": "scenario_068",
-    "type": "Profitability",
+    "type": "Profit Growth/Decline",
     "company": "Dick's Sporting Goods",
     "title": "Dick's Golf Category Margin Erosion",
     "prompt": "You are a divisional VP at Dick's Sporting Goods. The golf category generates $1.4B in annual revenue but operating margin has declined from 19% to 13% over 2 years. Golf category revenue grew 6% year-over-year. You suspect both revenue mix and cost structure have shifted. What is causing the margin erosion and how do you fix it?",
@@ -8755,7 +8755,7 @@
   },
   {
     "id": "scenario_069",
-    "type": "Profitability",
+    "type": "Profit Growth/Decline",
     "company": "Cardinal Health",
     "title": "Cardinal Health Medical Distribution Margin Compression",
     "prompt": "You are a VP of finance at Cardinal Health. Cardinal Health's medical segment (distributing medical and surgical products to hospitals) generated $19B in revenue but operating margin has compressed from 5.1% to 3.4% over 3 years. Industry consolidation among hospital systems has increased buyer power significantly. What is driving the decline and how does Cardinal restore margin?",
@@ -8883,7 +8883,7 @@
   },
   {
     "id": "scenario_070",
-    "type": "Profitability",
+    "type": "Profit Growth/Decline",
     "company": "Citi",
     "title": "Citi Retail Banking Branch Profitability",
     "prompt": "You are a director of retail banking strategy at Citi. Citi operates 689 US retail branches. Branch-level operating costs have increased 19% over 2 years while branch transaction volume has declined 31% as customers migrate to digital banking. 220 of Citi's branches are operating below the $800K annual contribution margin threshold needed to cover allocated overhead. How do you restore branch network profitability?",
@@ -9011,7 +9011,7 @@
   },
   {
     "id": "scenario_071",
-    "type": "Profitability",
+    "type": "Profit Growth/Decline",
     "company": "Chevron",
     "title": "Chevron Downstream Refining Margin Collapse",
     "prompt": "You are a VP of refining strategy at Chevron. Chevron's downstream refining operations processed 900,000 barrels per day last year but refining margins (crack spreads) compressed from $24/barrel to $14/barrel due to new refinery capacity coming online in the Middle East and Asia. Downstream operating costs are $9/barrel. How does Chevron manage this profitability challenge?",
@@ -9147,7 +9147,7 @@
   },
   {
     "id": "scenario_072",
-    "type": "Acquisition",
+    "type": "Competitive Threat",
     "company": "Nike",
     "title": "Nike Acquisition of a Running App",
     "prompt": "You are VP of corporate development at Nike. Strava, the social fitness app with 120 million users and $200M in annual subscription revenue, is exploring strategic options and is available for acquisition at a reported $1.5B valuation. Nike's Nike Run Club app has 35 million users but poor retention after 90 days. Should Nike acquire Strava?",
@@ -9275,7 +9275,7 @@
   },
   {
     "id": "scenario_073",
-    "type": "Acquisition",
+    "type": "Competitive Threat",
     "company": "Walmart",
     "title": "Walmart Acquisition of a Last-Mile Delivery Company",
     "prompt": "You are VP of corporate strategy at Walmart. GoLocal, Walmart's in-house last-mile delivery service, handles 18% of Walmart's delivery volume. A regional last-mile logistics company with 4,200 drivers, $380M in annual revenue, and operations in 22 US markets is available for $900M. Should Walmart acquire it?",
@@ -9403,7 +9403,7 @@
   },
   {
     "id": "scenario_074",
-    "type": "Acquisition",
+    "type": "Competitive Threat",
     "company": "Hilton",
     "title": "Hilton Acquisition of a Boutique Hotel Brand",
     "prompt": "You are VP of corporate development at Hilton. A boutique lifestyle hotel brand with 48 urban properties, $280M in annual revenue, and RevPAR (revenue per available room) of $210 — 40% above the Hilton brand average — is for sale at $1.1B. The brand has a cult following among millennial business travelers. Should Hilton acquire it?",
@@ -9531,7 +9531,7 @@
   },
   {
     "id": "scenario_075",
-    "type": "Acquisition",
+    "type": "Competitive Threat",
     "company": "Amgen",
     "title": "Amgen Acquisition of a Gene Therapy Company",
     "prompt": "You are VP of corporate development at Amgen. A gene therapy biotech company with 3 pipeline assets in Phase 2 trials (cardiovascular, rare disease, oncology), no revenue, and a 12-year patent runway is available for $3.2B. Amgen's biologics portfolio faces $14B in biosimilar competition by 2030. Should Amgen acquire this company?",
@@ -9655,7 +9655,7 @@
   },
   {
     "id": "scenario_076",
-    "type": "Acquisition",
+    "type": "Competitive Threat",
     "company": "MasterCard",
     "title": "MasterCard Acquisition of an Open Banking Platform",
     "prompt": "You are a director of corporate development at MasterCard. An open banking API platform that connects 4,200 banks with 1,800 fintech apps and processes $180B in annual data-driven transaction authorizations is available for $2.8B. The platform has $220M in revenue growing at 48% annually. Should MasterCard acquire it?",
@@ -9779,7 +9779,7 @@
   },
   {
     "id": "scenario_077",
-    "type": "Acquisition",
+    "type": "Competitive Threat",
     "company": "J&J",
     "title": "J&J MedTech Acquisition of a Surgical Robotics Company",
     "prompt": "You are VP of corporate development at Johnson & Johnson MedTech. A surgical robotics startup has developed a soft-tissue robotic surgery platform with 140 installed systems in US hospitals, $95M in recurring instrument and service revenue, and FDA clearance in 3 surgical categories. It is available for $1.8B. Intuitive Surgical's da Vinci dominates robotic surgery with 68% market share. Should J&J acquire it?",
@@ -9903,7 +9903,7 @@
   },
   {
     "id": "scenario_078",
-    "type": "General Strategy",
+    "type": "Profit Growth/Decline",
     "company": "Kraft Heinz",
     "title": "Kraft Heinz Portfolio Prioritization",
     "prompt": "You are a senior director of strategy at Kraft Heinz. The company has 200+ brands across condiments, cheese, meats, beverages, and frozen foods. Revenue has been flat at $26B for 4 years. After flat revenue for 4 years, the CEO is asking you to recommend which businesses Kraft Heinz should invest in, hold, or divest to return to growth. How do you approach this?",
@@ -10027,7 +10027,7 @@
   },
   {
     "id": "scenario_079",
-    "type": "General Strategy",
+    "type": "Competitive Threat",
     "company": "Hilton",
     "title": "Hilton Long-Term Competitive Strategy",
     "prompt": "You are a senior VP of strategy at Hilton. Airbnb hosts 500 million annual guest stays globally vs. Hilton's 175 million room nights. Short-term rental platforms now represent 21% of all US lodging demand. Hilton's occupancy has recovered post-COVID to 71% but RevPAR growth has slowed from 12% to 4% annually. What is your 5-year competitive strategy to defend and grow Hilton's position?",
@@ -10151,7 +10151,7 @@
   },
   {
     "id": "scenario_080",
-    "type": "General Strategy",
+    "type": "Profit Growth/Decline",
     "company": "Citi",
     "title": "Citi Wealth Management Strategic Direction",
     "prompt": "You are a senior director of strategy at Citi. Citi's wealth management business manages $800B in client assets but has a 0.9% fee yield vs. Morgan Stanley's 1.1% and Goldman Sachs's 1.2% on comparable AUM. Citi's wealth management revenue is $7.2B vs. Morgan Stanley's $26B. The CEO wants a recommendation on whether to invest aggressively to compete with Morgan Stanley or to refocus on a differentiated segment. What do you recommend?",
@@ -10275,7 +10275,7 @@
   },
   {
     "id": "scenario_081",
-    "type": "General Strategy",
+    "type": "Profit Growth/Decline",
     "company": "Walmart",
     "title": "Walmart Advertising Business Strategy",
     "prompt": "You are a director of strategy at Walmart. Walmart Connect, Walmart's advertising business, generated $3.4B in revenue last year — growing 26% year-over-year. Amazon Advertising is a $47B business with 90% gross margins. Walmart has 150 million weekly customers in store and online. The CEO is asking whether Walmart should invest aggressively to build a $10B advertising business within 5 years. What is your recommendation?",
@@ -10399,7 +10399,7 @@
   },
   {
     "id": "scenario_082",
-    "type": "General Strategy",
+    "type": "Competitive Threat",
     "company": "Chevron",
     "title": "Chevron Energy Transition Strategy",
     "prompt": "You are VP of corporate strategy at Chevron. Chevron has committed to net zero upstream emissions by 2050. Oil and gas currently generates 94% of Chevron's $235B in annual revenue. The IEA projects peak oil demand by 2030 in a rapid energy transition scenario. Activist shareholders are pressuring Chevron to set a 2035 net zero target and divest fossil fuel assets. How does Chevron navigate the energy transition while generating returns for shareholders?",
@@ -10523,7 +10523,7 @@
   },
   {
     "id": "scenario_083",
-    "type": "General Strategy",
+    "type": "Competitive Threat",
     "company": "Amgen",
     "title": "Amgen Biosimilar Defense Strategy",
     "prompt": "You are a senior director of strategy at Amgen. Amgen's top 5 biologics (Enbrel, Neulasta, EPOGEN, Aranesp, Sensipar) generate $11B in annual revenue but face $8B in biosimilar competition by 2028 as patents expire. At the same time, Amgen has launched its own biosimilar business generating $1.9B. How does Amgen develop a coherent strategy to manage biosimilar erosion of its branded portfolio while growing its own biosimilars business?",
@@ -10655,7 +10655,7 @@
   },
   {
     "id": "scenario_084",
-    "type": "Product Management / Tech",
+    "type": "New Product Launch",
     "company": "American Express",
     "title": "Amex App Feature Prioritization",
     "prompt": "You are a director of product at American Express. The Amex mobile app has 18 million monthly active users but a 2.3-star average review citing confusing navigation and slow statement loading. You have a product roadmap with 8 potential feature investments but budget for only 3. Which features do you prioritize and how do you make the case to leadership?",
@@ -10780,7 +10780,7 @@
   },
   {
     "id": "scenario_085",
-    "type": "Product Management / Tech",
+    "type": "New Product Launch",
     "company": "Walmart",
     "title": "Walmart Scan & Go Expansion Decision",
     "prompt": "You are a director of product at Walmart. Walmart's Scan & Go mobile checkout (customers scan items as they shop and skip the checkout line) is live in 120 stores with 31% customer adoption in those locations. Shrink (theft via mis-scan) in Scan & Go stores is 1.4% of Scan & Go revenue vs. 0.8% in traditional checkout stores. Should Walmart expand Scan & Go to all 4,700 US stores?",
@@ -10904,7 +10904,7 @@
   },
   {
     "id": "scenario_086",
-    "type": "Product Management / Tech",
+    "type": "New Product Launch",
     "company": "Hilton",
     "title": "Hilton Digital Key Rollout Strategy",
     "prompt": "You are a director of product at Hilton. Hilton's Digital Key (smartphone room entry without a physical key card) is available at 6,200 of Hilton's 7,200 properties. Digital Key adoption among eligible guests is only 28%. Digital Key users have 14-point higher NPS and 19% higher likelihood to rebook. How do you increase Digital Key adoption to 60% within 18 months?",
@@ -11028,7 +11028,7 @@
   },
   {
     "id": "scenario_087",
-    "type": "Product Management / Tech",
+    "type": "New Product Launch",
     "company": "MasterCard",
     "title": "MasterCard Biometric Payment Rollout",
     "prompt": "You are a VP of product at MasterCard. MasterCard is piloting biometric payment (face recognition at POS terminals) in 9 markets with 3,200 merchants. Transaction completion rate with biometric is 94% vs. 98% for PIN entry. Biometric fraud rate is 0.02% vs. 0.08% for traditional card present transactions. Should MasterCard accelerate global rollout of biometric payments?",
@@ -11165,7 +11165,7 @@
   },
   {
     "id": "scenario_088",
-    "type": "Product Management / Tech",
+    "type": "New Product Launch",
     "company": "Cardinal Health",
     "title": "Cardinal Health AI Order Management Platform",
     "prompt": "You are VP of product at Cardinal Health. Cardinal has developed an AI-powered inventory and ordering platform for hospitals that reduces pharmaceutical stockouts by 34% and overstock by 22%. The platform is deployed in 80 pilot hospital systems. Cardinal serves 4,500 hospital customers. The platform costs $180,000 per year per hospital. Should Cardinal invest $120M to accelerate deployment to 2,000 hospitals in 3 years?",
@@ -11290,7 +11290,7 @@
   },
   {
     "id": "scenario_089",
-    "type": "Product Management / Tech",
+    "type": "New Product Launch",
     "company": "J&J",
     "title": "J&J Digital Therapeutics Investment Decision",
     "prompt": "You are a VP of product strategy at Johnson & Johnson. J&J is evaluating a $200M investment to build a digital therapeutic (app-based treatment program) for patients recovering from orthopedic surgery — targeting the 2.2 million annual US knee and hip replacement patients. The digital therapeutic would be sold to hospital systems at $800 per patient. Should J&J make this investment?",
@@ -11422,7 +11422,7 @@
   },
   {
     "id": "scenario_090",
-    "type": "Product Management / Tech",
+    "type": "New Product Launch",
     "company": "Citi",
     "title": "Citi AI-Powered Credit Underwriting Decision",
     "prompt": "You are a director of product at Citi. Citi's retail lending division is evaluating deploying an AI-powered underwriting model for personal loans. The AI model approves 23% more applications than the traditional FICO-based model with 14% lower default rates among approved applicants. Should Citi deploy this AI model?",
@@ -12447,7 +12447,7 @@
   },
   {
     "id": "scenario_098",
-    "type": "Corporate Finance",
+    "type": "Profit Growth/Decline",
     "company": "Nike",
     "title": "Nike Make vs. Buy Manufacturing Decision",
     "prompt": "You are a VP of supply chain strategy at Nike. Nike currently outsources 100% of footwear manufacturing to contract manufacturers in Vietnam and Indonesia. A consulting firm has proposed that Nike build its own manufacturing facility in the US, producing 2 million pairs annually, as a strategic investment in reshoring and premium 'Made in USA' positioning. Should Nike build this facility?",
@@ -12575,7 +12575,7 @@
   },
   {
     "id": "scenario_099",
-    "type": "Corporate Finance",
+    "type": "Profit Growth/Decline",
     "company": "Amgen",
     "title": "Amgen R&D Investment Prioritization",
     "prompt": "You are a VP of finance at Amgen. Amgen has $4.8B in annual R&D budget and must allocate funds across a portfolio of 24 pipeline assets at various stages. The CFO wants a framework for prioritizing R&D investment that balances near-term portfolio needs against long-term growth. Three assets are competing for $800M in additional funding: Asset A (Phase 2 oncology, 40% P2-3 success rate, $4B peak sales), Asset B (Phase 3 cardiovascular, 72% P3 approval rate, $2.1B peak sales), and Asset C (Preclinical obesity, high uncertainty, $12B peak sales potential). How do you allocate the $800M?",
@@ -12707,7 +12707,7 @@
   },
   {
     "id": "scenario_100",
-    "type": "Corporate Finance",
+    "type": "Profit Growth/Decline",
     "company": "Kraft Heinz",
     "title": "Kraft Heinz Pricing vs. Volume Investment Decision",
     "prompt": "You are a VP of finance at Kraft Heinz. The CFO is deciding between two strategic options for the Oscar Mayer hot dog business ($1.1B revenue, 18% EBITDA margin): Option A — take a 12% price increase, modeled to reduce volume by 19% but maintain gross profit; Option B — hold price flat and invest $85M in marketing to drive 8% volume growth. How do you analyze this decision?",
