@@ -48,31 +48,69 @@ function getTypeColor(type) {
 const ALL_TYPES = [...new Set(SCENARIOS.map(s => s.type))].sort()
 
 // ── Audio Recorder ────────────────────────────────────────────────────────────
-function AudioRecorder({ scenarioId }) {
-  const [state, setState] = useState('idle') // idle | recording | stopped
-  const [audioUrl, setAudioUrl] = useState(null)
-  const [seconds, setSeconds] = useState(0)
-  const mediaRef = useRef(null)
-  const chunksRef = useRef([])
-  const timerRef = useRef(null)
+// ── IndexedDB helpers for audio persistence ───────────────────────────────────
+const openAudioDB = () => new Promise((resolve, reject) => {
+  const req = indexedDB.open('mbace_audio', 1)
+  req.onupgradeneeded = e => e.target.result.createObjectStore('recordings')
+  req.onsuccess = e => resolve(e.target.result)
+  req.onerror = reject
+})
+const dbSave = async (key, val) => {
+  const db = await openAudioDB()
+  return new Promise((res, rej) => {
+    const tx = db.transaction('recordings', 'readwrite')
+    tx.objectStore('recordings').put(val, key)
+    tx.oncomplete = res; tx.onerror = rej
+  })
+}
+const dbLoad = async (key) => {
+  const db = await openAudioDB()
+  return new Promise((res, rej) => {
+    const tx = db.transaction('recordings', 'readonly')
+    const req = tx.objectStore('recordings').get(key)
+    req.onsuccess = e => res(e.target.result || null)
+    req.onerror = rej
+  })
+}
+const dbDelete = async (key) => {
+  const db = await openAudioDB()
+  return new Promise((res, rej) => {
+    const tx = db.transaction('recordings', 'readwrite')
+    tx.objectStore('recordings').delete(key)
+    tx.oncomplete = res; tx.onerror = rej
+  })
+}
 
-  useEffect(() => () => {
-    clearInterval(timerRef.current)
-    if (audioUrl) URL.revokeObjectURL(audioUrl)
-  }, [])
+function AudioRecorder({ scenarioId, scenarioTitle }) {
+  const [recState, setRecState] = useState('idle') // idle | recording | stopped
+  const [audioUrl, setAudioUrl]   = useState(null)
+  const [hasSaved, setHasSaved]   = useState(false)
+  const [seconds, setSeconds]     = useState(0)
+  const [note, setNote]           = useState(() => localStorage.getItem(`mbace_note_${scenarioId}`) || '')
+  const mediaRef  = useRef(null)
+  const chunksRef = useRef([])
+  const timerRef  = useRef(null)
+
+  // Load saved recording from IndexedDB on mount
+  useEffect(() => {
+    dbLoad(scenarioId).then(url => {
+      if (url) { setAudioUrl(url); setHasSaved(true); setRecState('stopped') }
+    }).catch(() => {})
+    return () => clearInterval(timerRef.current)
+  }, [scenarioId])
+
+  const saveNote = (val) => {
+    setNote(val)
+    localStorage.setItem(`mbace_note_${scenarioId}`, val)
+  }
 
   const startRecording = async () => {
-    if (!navigator.mediaDevices?.getUserMedia) {
-      alert('Recording is not supported in this browser. Try Chrome or Safari 14.3+.')
-      return
-    }
-    if (typeof MediaRecorder === 'undefined') {
-      alert('Recording is not supported in this browser. Try Chrome or Safari 14.3+.')
+    if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === 'undefined') {
+      alert('Recording is not supported in this browser. Try Safari 14.3+ or Chrome.')
       return
     }
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
-      // Pick a MIME type the browser supports — iOS Safari needs mp4, Chrome prefers webm
       const mimeType =
         MediaRecorder.isTypeSupported('audio/mp4')  ? 'audio/mp4'  :
         MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm' : ''
@@ -82,12 +120,19 @@ function AudioRecorder({ scenarioId }) {
       mr.ondataavailable = e => { if (e.data.size > 0) chunksRef.current.push(e.data) }
       mr.onstop = () => {
         const blob = new Blob(chunksRef.current, { type: mr.mimeType || 'audio/mp4' })
-        setAudioUrl(URL.createObjectURL(blob))
         stream.getTracks().forEach(t => t.stop())
-        setState('stopped')
+        const reader = new FileReader()
+        reader.onloadend = () => {
+          const dataUrl = reader.result
+          setAudioUrl(dataUrl)
+          setRecState('stopped')
+          // Auto-save to IndexedDB
+          dbSave(scenarioId, dataUrl).then(() => setHasSaved(true)).catch(() => {})
+        }
+        reader.readAsDataURL(blob)
       }
-      mr.start(250) // collect chunks every 250ms — required on some iOS versions
-      setState('recording')
+      mr.start(250)
+      setRecState('recording')
       setSeconds(0)
       timerRef.current = setInterval(() => setSeconds(s => s + 1), 1000)
     } catch (err) {
@@ -104,71 +149,111 @@ function AudioRecorder({ scenarioId }) {
     mediaRef.current?.stop()
   }
 
-  const reset = () => {
-    if (audioUrl) URL.revokeObjectURL(audioUrl)
+  const deleteRecording = () => {
+    dbDelete(scenarioId).catch(() => {})
     setAudioUrl(null)
-    setState('idle')
+    setHasSaved(false)
+    setRecState('idle')
     setSeconds(0)
+  }
+
+  const shareRecording = async () => {
+    if (!audioUrl) return
+    try {
+      const res  = await fetch(audioUrl)
+      const blob = await res.blob()
+      const ext  = blob.type.includes('mp4') ? 'm4a' : 'webm'
+      const file = new File([blob], `MBAce - ${scenarioTitle || scenarioId}.${ext}`, { type: blob.type })
+      if (navigator.canShare?.({ files: [file] })) {
+        await navigator.share({ files: [file], title: `MBAce — ${scenarioTitle || scenarioId}` })
+      } else {
+        // Fallback: trigger download
+        const a = document.createElement('a')
+        a.href = audioUrl
+        a.download = file.name
+        a.click()
+      }
+    } catch (err) {
+      if (err.name !== 'AbortError') alert('Could not share: ' + err.message)
+    }
   }
 
   const fmt = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`
 
   return (
-    <div style={{
-      background: '#0f172a',
-      borderRadius: 12,
-      padding: '12px 14px',
-      marginTop: 14,
-    }}>
+    <div style={{ background: '#0f172a', borderRadius: 12, padding: '12px 14px', marginTop: 14 }}>
       <div style={{ fontSize: 11, fontWeight: 700, color: '#64748b', letterSpacing: 1, marginBottom: 10 }}>
-        🎙 SELF ASSESSMENT RECORDING
+        🎙 PRACTICE RECORDING
       </div>
 
-      {state === 'idle' && (
-        <button
-          onClick={startRecording}
-          style={{
-            width: '100%', padding: '10px', borderRadius: 10,
-            border: '2px solid #3b82f6', background: '#3b82f622',
-            color: '#3b82f6', fontSize: 13, fontWeight: 700, cursor: 'pointer',
-          }}
-        >
+      {recState === 'idle' && (
+        <button onClick={startRecording} style={{
+          width: '100%', padding: '10px', borderRadius: 10,
+          border: '2px solid #3b82f6', background: '#3b82f622',
+          color: '#3b82f6', fontSize: 13, fontWeight: 700, cursor: 'pointer',
+        }}>
           Start Recording
         </button>
       )}
 
-      {state === 'recording' && (
+      {recState === 'recording' && (
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#ef4444', animation: 'pulse 1s infinite' }} />
           <span style={{ color: '#ef4444', fontWeight: 700, fontSize: 13, flex: 1 }}>Recording {fmt(seconds)}</span>
-          <button
-            onClick={stopRecording}
-            style={{
-              padding: '8px 16px', borderRadius: 8,
-              border: 'none', background: '#ef4444',
-              color: '#fff', fontSize: 13, fontWeight: 700, cursor: 'pointer',
-            }}
-          >
-            Stop
-          </button>
+          <button onClick={stopRecording} style={{
+            padding: '8px 16px', borderRadius: 8, border: 'none',
+            background: '#ef4444', color: '#fff', fontSize: 13, fontWeight: 700, cursor: 'pointer',
+          }}>Stop</button>
         </div>
       )}
 
-      {state === 'stopped' && audioUrl && (
+      {recState === 'stopped' && audioUrl && (
         <div>
-          <audio controls src={audioUrl} style={{ width: '100%', marginBottom: 8 }} />
-          <button
-            onClick={reset}
-            style={{
-              width: '100%', padding: '8px', borderRadius: 8,
+          {hasSaved && (
+            <div style={{ fontSize: 10, color: '#22c55e', marginBottom: 6, fontWeight: 600 }}>
+              ✓ Saved to this device
+            </div>
+          )}
+          <audio controls playsInline src={audioUrl} style={{ width: '100%', marginBottom: 8 }} />
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button onClick={shareRecording} style={{
+              flex: 1, padding: '8px', borderRadius: 8,
+              border: '1px solid #3b82f6', background: '#3b82f622',
+              color: '#3b82f6', fontSize: 12, fontWeight: 700, cursor: 'pointer',
+            }}>⬆ Share</button>
+            <button onClick={startRecording} style={{
+              flex: 1, padding: '8px', borderRadius: 8,
               border: '1px solid #334155', background: 'none',
-              color: '#64748b', fontSize: 12, cursor: 'pointer',
-            }}
-          >
-            Record Again
-          </button>
+              color: '#94a3b8', fontSize: 12, cursor: 'pointer',
+            }}>Re-record</button>
+            <button onClick={deleteRecording} style={{
+              padding: '8px 12px', borderRadius: 8,
+              border: '1px solid #334155', background: 'none',
+              color: '#475569', fontSize: 12, cursor: 'pointer',
+            }}>🗑</button>
+          </div>
         </div>
       )}
+
+      {/* Notes */}
+      <div style={{ marginTop: 12 }}>
+        <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: 1, marginBottom: 6 }}>
+          📝 NOTES
+        </div>
+        <textarea
+          value={note}
+          onChange={e => saveNote(e.target.value)}
+          placeholder="What would you do differently? Key terms to review..."
+          rows={3}
+          style={{
+            width: '100%', boxSizing: 'border-box',
+            background: '#1e293b', border: '1px solid #334155',
+            borderRadius: 8, padding: '8px 10px',
+            color: '#f1f5f9', fontSize: 12, lineHeight: 1.5,
+            resize: 'vertical', outline: 'none', fontFamily: 'inherit',
+          }}
+        />
+      </div>
     </div>
   )
 }
@@ -626,7 +711,7 @@ function CaseCard({ scenario, viewed, selfRating, onView, onRate }) {
 
           {/* CSAI + Audio always at bottom */}
           <CSAIRating scenarioId={scenario.id} existing={selfRating} onRate={onRate} />
-          <AudioRecorder scenarioId={scenario.id} />
+          <AudioRecorder scenarioId={scenario.id} scenarioTitle={scenario.title} />
         </div>
       )}
     </div>
