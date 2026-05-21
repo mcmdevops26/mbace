@@ -228,18 +228,6 @@ export default function InfoPage() {
         </Card>
       </SECTION>
 
-      {/* Footer */}
-      <div style={{ textAlign: 'center', marginTop: 8, paddingTop: 16, borderTop: '1px solid #1e293b' }}>
-        <div style={{ fontSize: 12, color: '#475569', fontWeight: 600 }}>
-          Made with intention by Kim McMillian
-        </div>
-        <div style={{ fontSize: 11, color: '#334155', marginTop: 4 }}>
-          Cornell University · MBA · Class of 2028
-        </div>
-        <div style={{ fontSize: 10, color: '#334155', marginTop: 6 }}>
-          MBAce is an independent learning tool, unaffiliated with any university or company.
-        </div>
-      </div>
 
     </div>
   )
