@@ -15,8 +15,23 @@ const TABS = [
   { id: 'info',       label: 'Info',       icon: 'ℹ️'  },
 ]
 
+function trackPage(tabId) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', 'page_view', {
+      page_title: tabId.charAt(0).toUpperCase() + tabId.slice(1),
+      page_location: window.location.href,
+      page_path: '/' + tabId,
+    })
+  }
+}
+
 function App() {
   const [activeTab, setActiveTab] = useState('frameworks')
+
+  const handleTabChange = (tabId) => {
+    setActiveTab(tabId)
+    trackPage(tabId)
+  }
 
   const renderPage = () => {
     switch (activeTab) {
@@ -53,7 +68,7 @@ function App() {
           {TABS.map(tab => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
+              onClick={() => handleTabChange(tab.id)}
               style={{
                 flex: 1,
                 display: 'flex',
