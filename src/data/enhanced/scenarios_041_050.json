@@ -1,0 +1,1284 @@
+[
+  {
+    "id": "scenario_041",
+    "type": "Market Sizing",
+    "company": "Warby Parker",
+    "title": "Sizing the US Prescription Eyeglass Market",
+    "prompt": "Warby Parker wants to size the US prescription eyeglass market to assess expansion opportunity. The CEO needs a credible estimate to present to investors. How would you structure this, and what is your estimate of the total market size?",
+    "context": "Approximately 75% of US adults need vision correction (glasses or contacts). US adult population is approximately 258M. Of those needing correction, about 64% primarily use glasses and 36% use contact lenses. Americans replace their glasses every 2.4 years on average. Average out-of-pocket spend per pair is $260 (vs. Warby Parker's $95-$200 range). Luxottica/EssilorLuxottica dominates the optical retail market with $10B+ in US revenue.",
+    "correctFrameworks": ["SPEAK", "Market Sizing"],
+    "whyThisFramework": "SPEAK guides the estimate: State that 75% of 258M adults need correction; of those, 64% use glasses (124M people); glasses are replaced every 2.4 years, so annual 'replacement demand' = 124M ÷ 2.4 = 52M pairs/year; at $260 average ASP = $13.5B TAM. Cross-check against reported $16B US optical market to validate order of magnitude.",
+    "keyConsiderations": [
+      "75% of 258M adults = 194M needing correction; 64% using glasses = 124M glasses wearers",
+      "Annual replacement: 124M ÷ 2.4 years = 52M pairs per year",
+      "Revenue: 52M pairs × $260 average = $13.5B annual market",
+      "Warby Parker at $95-200 ASP serves a mid-market segment — their realistic SAM is about $4-5B"
+    ],
+    "difficulty": "easy",
+    "clarifyingQuestions": [
+      "Are we sizing total retail value (consumer out-of-pocket) or wholesale/manufacturer revenue — and should insurance reimbursements be included or excluded?",
+      "Should we include premium frames-only purchases by people who already have a current prescription, or only new prescription-driven purchases?",
+      "Are we sizing the full US adult market or just Warby Parker's serviceable addressable market given their $95-$200 price range?",
+      "Should we account for first-time glasses wearers entering the market, or model this as a pure replacement cycle?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Glasses-Wearing Population",
+        "subIssues": [
+          "How many US adults need vision correction of any kind?",
+          "Of those, what share primarily use glasses vs. contact lenses?",
+          "Are there demographic segments (age, income) that skew toward glasses vs. contacts?"
+        ]
+      },
+      {
+        "block": "Annual Purchase Frequency",
+        "subIssues": [
+          "What is the average replacement cycle for prescription glasses?",
+          "How many first-time buyers enter the market each year (e.g., new prescriptions for aging adults)?",
+          "Do multi-pair buyers materially change the unit volume calculation?"
+        ]
+      },
+      {
+        "block": "Revenue per Transaction",
+        "subIssues": [
+          "What is the average out-of-pocket spend per pair across all retail channels?",
+          "How does ASP differ across price segments (budget, mid-market like Warby, luxury)?",
+          "What portion of revenue is frames vs. lenses vs. coatings?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Anchor the addressable population",
+        "detail": "Start with the 258M US adults, apply 75% needing correction = 194M, then the 64% glasses split = 124M active glasses wearers. State these numbers explicitly and ask if the interviewer wants you to refine any assumption."
+      },
+      {
+        "step": 2,
+        "title": "Calculate annual unit demand",
+        "detail": "Divide 124M wearers by the 2.4-year replacement cycle to get ~52M pairs purchased annually. Note that first-time buyers add a small increment (~2-3M/year from aging population) but are secondary to replacement demand."
+      },
+      {
+        "step": 3,
+        "title": "Apply average selling price",
+        "detail": "Multiply 52M pairs × $260 average out-of-pocket ASP to reach ~$13.5B TAM. Flag that this is consumer-paid retail value; wholesale revenue would be 40-50% lower."
+      },
+      {
+        "step": 4,
+        "title": "Sanity check against known data",
+        "detail": "Cross-check: Luxottica's US revenue is $10B+; the US optical retail market is widely cited at $16B. Your $13.5B estimate is directionally consistent — it likely understates because it excludes vision insurance flows and premium/luxury spend."
+      },
+      {
+        "step": 5,
+        "title": "Identify Warby Parker's SAM",
+        "detail": "Warby Parker targets mid-market at $95-$200 vs. $260 average. Estimate ~35% of the market falls in this price tier = ~$4.7B SAM. This is the number most relevant to the investor presentation."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "TAM",
+        "definition": "Total Addressable Market — the full revenue opportunity if every potential buyer were captured; here, the entire US prescription eyeglass market (~$13.5B)"
+      },
+      {
+        "term": "SAM",
+        "definition": "Serviceable Addressable Market — the subset of TAM reachable given a company's price point, geography, and distribution; Warby Parker's SAM is ~$4-5B"
+      },
+      {
+        "term": "ASP",
+        "definition": "Average Selling Price — the average revenue per unit transaction; the US eyeglass ASP is ~$260 out-of-pocket per pair"
+      },
+      {
+        "term": "Replacement Cycle",
+        "definition": "How often customers repurchase — glasses average 2.4 years, which drives annual unit volume even without population growth"
+      },
+      {
+        "term": "Vision Correction Penetration",
+        "definition": "The share of the population requiring corrective lenses; approximately 75% of US adults, split 64% glasses / 36% contacts"
+      }
+    ],
+    "interviewerExpectations": "A strong answer segments the population cleanly (needs correction → glasses vs. contacts → annual pairs), applies the replacement cycle correctly, and cross-checks the output against the known $16B optical market. A weak answer skips the glasses/contacts split, fails to use the replacement cycle, or cannot articulate what portion of the market Warby Parker can actually serve.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Great question. Before I dive in, I want to confirm one assumption: we're sizing the consumer retail market in terms of out-of-pocket spend, and we're focused on prescription glasses rather than the full optical market including contacts and sunglasses. I'll use a bottom-up demand-side build — start with the population that needs glasses, model how often they buy, and multiply by the average price. Then I'll cross-check against known market data. Does that sound right?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two quick questions before I build the math. First — should I include vision insurance reimbursements in the revenue estimate, or just out-of-pocket consumer spend? The prompt mentions $260 average out-of-pocket, so I'll use that. Second — are we sizing Warby Parker's specific opportunity, or the full US prescription glasses market? I'll size the full market first, then flag Warby's serviceable segment."
+      },
+      {
+        "label": "Step 1 — Population Segmentation",
+        "script": "Starting with the US adult population: 258 million adults. We know about 75% need some form of vision correction — that's roughly 194 million people. Of those, 64% primarily use glasses versus 36% who use contacts. So our glasses-wearing population is 194 million times 64%, which is approximately 124 million people actively wearing prescription glasses."
+      },
+      {
+        "label": "Step 2 — Annual Purchase Volume",
+        "script": "Now, how many pairs are bought each year? Americans replace glasses every 2.4 years on average. So I take 124 million wearers divided by 2.4 years — that gives me roughly 52 million pairs purchased annually. I'll add a small increment for first-time buyers, maybe 2 to 3 million from the aging population entering the glasses market each year, but replacement demand dominates, so I'll round to about 52 to 54 million pairs per year."
+      },
+      {
+        "label": "Step 3 — Revenue Calculation",
+        "script": "At $260 average out-of-pocket spend per pair, I get 52 million pairs times $260, which equals approximately $13.5 billion in annual consumer spend. That's my TAM estimate for the US prescription eyeglass market."
+      },
+      {
+        "label": "Step 4 — Sanity Check",
+        "script": "Let me validate that. EssilorLuxottica — the dominant player — reports over $10 billion in US revenue. Industry sources cite the total US optical retail market at around $16 billion, which includes contacts and premium luxury frames. My $13.5 billion for prescription glasses alone is directionally consistent — slightly conservative because it excludes vision insurance flows and luxury segment spend above $260. I'm comfortable the estimate is in the right order of magnitude."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize: the US prescription eyeglass market is approximately $13.5 billion in annual consumer spend. Warby Parker, priced at $95 to $200 versus the $260 average, targets the mid-market tier. If roughly 35% of purchases fall in that price band, Warby's serviceable addressable market is approximately $4.7 billion. That's the number most relevant for the investor presentation — it shows meaningful scale while honestly reflecting where Warby competes rather than overclaiming the full $13.5 billion."
+      }
+    ]
+  },
+  {
+    "id": "scenario_042",
+    "type": "Market Sizing",
+    "company": "Lyft",
+    "title": "Sizing the US Rideshare Market",
+    "prompt": "A venture capital firm is evaluating a Lyft competitor focused on the suburbs. Before pitching, they need a defensible estimate of the total US rideshare market size. How would you build the estimate, and what is your conclusion?",
+    "context": "US population is 335M. The adult population (18+) is approximately 258M. Rideshare usage requires smartphone ownership (approximately 85% of US adults). Urban and suburban rideshare usage differs significantly — urban users average 4.2 rides per month, suburban users 1.1 rides per month. Average rideshare transaction is $18-22. Major urban areas (top 50 cities) account for approximately 72% of rideshare volume.",
+    "correctFrameworks": ["SPEAK", "Market Sizing"],
+    "whyThisFramework": "SPEAK drives segmented estimation: urban users (top 50 cities = roughly 40% of adult population × 85% smartphone penetration × 30% rideshare users at high frequency) vs. suburban/rural (60% of adults × 85% smartphone × 12% rideshare usage at lower frequency). Sum ride counts, multiply by average fare, sanity-check against reported $16B Uber + Lyft annual US GMV.",
+    "keyConsiderations": [
+      "Urban adult rideshare users: 258M × 40% urban × 85% smartphone × 30% rideshare = ~26M users",
+      "Suburban/rural: 258M × 60% × 85% × 12% = ~16M occasional users",
+      "Urban: 26M × 4.2 rides/month × $20 × 12 = $26B GMV; Suburban: 16M × 1.1 × $20 × 12 = $4.2B",
+      "Total ~$30B GMV gross market; net revenue to Lyft/Uber after driver pay is approximately 25-28% = $7.5-8.4B"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Are we sizing gross merchandise value (total fares paid) or net platform revenue after driver payouts — this changes the answer by roughly 75%?",
+      "Should we include airport rides, corporate accounts, and food delivery as part of the rideshare market, or strictly peer-to-peer rides?",
+      "Is this a current-state market size or a 3-5 year projection, given the suburban competitor is still a startup?",
+      "Are we including all US adult rideshare users or limiting to the suburban segment relevant to this competitor's pitch?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Urban Rideshare Demand",
+        "subIssues": [
+          "How many adults live in major US urban markets (top 50 cities)?",
+          "What share of urban adults use rideshare and at what frequency?",
+          "What is the average urban fare and how does it differ by city tier?"
+        ]
+      },
+      {
+        "block": "Suburban & Rural Rideshare Demand",
+        "subIssues": [
+          "How many adults live in suburban and rural markets?",
+          "What share use rideshare in these markets and how often?",
+          "What are the characteristics of suburban rides — longer distance, lower frequency?"
+        ]
+      },
+      {
+        "block": "Revenue Translation",
+        "subIssues": [
+          "What is the gross fare per ride across both segments?",
+          "What is the platform take rate that converts GMV to net revenue?",
+          "How does driver supply constraint affect market size in suburban areas?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Segment the addressable adult population",
+        "detail": "Split 258M adults into urban (40% = 103M) and suburban/rural (60% = 155M). Apply 85% smartphone penetration to each segment to establish the rideshare-eligible base."
+      },
+      {
+        "step": 2,
+        "title": "Apply rideshare adoption rates by segment",
+        "detail": "Urban: 103M × 85% smartphone × 30% active rideshare users = ~26M urban rideshare users. Suburban/rural: 155M × 85% × 12% = ~16M occasional suburban users. Justify the 30% vs. 12% differential with the car-ownership and public transit context."
+      },
+      {
+        "step": 3,
+        "title": "Model annual ride volume by segment",
+        "detail": "Urban: 26M users × 4.2 rides/month × 12 months = ~1.31B rides. Suburban: 16M users × 1.1 rides/month × 12 = ~211M rides. Total: approximately 1.52 billion rides annually."
+      },
+      {
+        "step": 4,
+        "title": "Calculate GMV and net revenue",
+        "detail": "At $20 average fare: 1.52B rides × $20 = $30.4B GMV. Platform take rate of 25-28% yields $7.6-8.5B net revenue to Uber/Lyft combined. State which metric is most relevant to the VC pitch (GMV for market scale, net revenue for unit economics)."
+      },
+      {
+        "step": 5,
+        "title": "Sanity check and suburban opportunity flag",
+        "detail": "Cross-check: Uber and Lyft report combined US GMV around $28-32B — consistent. For the suburban competitor, the 211M suburban rides × $20 = ~$4.2B GMV is the addressable opportunity, with take-rate revenue of approximately $1B — a defensible venture-scale opportunity."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "GMV",
+        "definition": "Gross Merchandise Value — the total dollar value of all transactions on a platform before subtracting driver payouts; the rideshare market's ~$30B figure is GMV, not platform revenue"
+      },
+      {
+        "term": "Take Rate",
+        "definition": "The percentage of GMV retained as platform revenue after paying drivers; Uber and Lyft typically take 25-28%, meaning net revenue is roughly one-quarter of gross fares"
+      },
+      {
+        "term": "Rideshare Penetration",
+        "definition": "The share of smartphone-owning adults who actively use rideshare — approximately 30% in urban markets and 12% in suburban markets due to car-ownership differences"
+      },
+      {
+        "term": "SAM (Suburban Rideshare)",
+        "definition": "The specific market the Lyft competitor targets: ~$4.2B GMV from suburban riders averaging 1.1 rides per month, largely underserved by current platforms"
+      },
+      {
+        "term": "Driver Supply Constraint",
+        "definition": "In suburban markets, the scarcity of drivers limits both ride frequency and rider adoption — a structural limit on market size that pure demand modeling would overstate"
+      }
+    ],
+    "interviewerExpectations": "A strong answer segments urban vs. suburban with distinct adoption rates and ride frequencies, correctly distinguishes GMV from net platform revenue, and closes with a crisp suburb-specific number relevant to the VC's question. A weak answer applies a single national average rideshare rate to all adults and fails to connect the analysis to the suburban competitor's opportunity.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "To size the US rideshare market, I'm going to use a segmented bottom-up approach — separating urban and suburban rideshare behavior because the data shows they differ dramatically in frequency. I'll also want to be clear upfront whether we're discussing gross fares or net platform revenue, since those numbers differ by about 75%. My working assumption is we're sizing total GMV for market scale purposes, then I'll convert to net revenue. Shall I proceed?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two quick clarifications: First, are we including ride-hailing only, or also the food delivery and freight segments that Uber operates? I'll assume ride-hailing only to keep this focused. Second, is this current-state or a 3-year projection? I'll size the current market, but I can talk through the suburban growth curve afterward."
+      },
+      {
+        "label": "Step 1 — Population Segmentation",
+        "script": "Starting with 258 million US adults. Rideshare requires a smartphone, and about 85% of US adults own one — so the eligible base is roughly 219 million. I'll split this into urban, which I'll define as residents of the top 50 metro areas, representing about 40% of adults — so 103 million urban adults. The remaining 60%, about 155 million, are suburban or rural."
+      },
+      {
+        "label": "Step 2 — Adoption Rates by Segment",
+        "script": "Of urban smartphone-owning adults, I estimate about 30% are active rideshare users — that's roughly 26 million people. In urban markets, you have limited parking, easy driver supply, and lower car-ownership rates, so 30% feels defensible. In suburban markets, car ownership is much higher and driver supply is thin, so I'll use 12% — giving us about 16 million suburban rideshare users."
+      },
+      {
+        "label": "Step 3 — Annual Ride Volume",
+        "script": "Urban riders average 4.2 rides per month from the data given, so: 26 million users times 4.2 rides times 12 months equals roughly 1.31 billion rides annually. Suburban users average 1.1 rides per month: 16 million times 1.1 times 12 equals about 211 million rides. Total rides in the US: approximately 1.52 billion per year."
+      },
+      {
+        "label": "Step 4 — Revenue Calculation",
+        "script": "At an average fare of $20, 1.52 billion rides gives us $30.4 billion in gross merchandise value. At a 25 to 28 percent platform take rate, net revenue to Uber and Lyft combined is approximately $7.6 to $8.5 billion. The $30 billion GMV number is what you'd use to describe market scale in a pitch deck; the $8 billion is what matters for unit economics discussions."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize: the total US rideshare market is approximately $30 billion in GMV, or about $8 billion in net platform revenue. The cross-check holds — Uber and Lyft's combined reported US GMV is in the $28 to $32 billion range. For the suburban competitor specifically: 211 million suburban rides at $20 average is a $4.2 billion GMV opportunity, translating to roughly $1 billion in net revenue at scale. That's a legitimate venture-scale market, particularly if driver supply challenges can be solved, which is the real moat question for this startup."
+      }
+    ]
+  },
+  {
+    "id": "scenario_043",
+    "type": "Market Sizing",
+    "company": "Liquid Death",
+    "title": "Sizing the Premium Canned Water Market",
+    "prompt": "Liquid Death is pitching to expand into the UK market and needs to size the premium water opportunity there. UK population is 67M. Estimate the UK market for premium canned/bottled water (defined as water priced above £1.50/unit) and how large a share Liquid Death could realistically capture in three years.",
+    "context": "UK adults drink approximately 9.2L of water per week on average, with approximately 30% of that from packaged sources. UK bottled water market is approximately £2.8B. Premium water (Evian, Volvic, Highland Spring) holds 38% of the bottled water market. Canned beverages in the UK represent only 22% of the premium water format mix (vs. 60% in the US). Sustainability resonates strongly in the UK — 71% of UK consumers actively avoid single-use plastic.",
+    "correctFrameworks": ["SPEAK", "Market Sizing"],
+    "whyThisFramework": "SPEAK: State that the UK bottled water market is £2.8B; apply 38% premium penetration = £1.06B premium water market; canned format at 22% = £234M current canned premium water market; project TAM expansion as canned format grows with sustainability trend; estimate Liquid Death's 3-year share at 5-8% = £12-19M based on DTC + retail rollout pace.",
+    "keyConsiderations": [
+      "Premium water TAM: £2.8B × 38% premium = £1.06B; canned subset = 22% × £1.06B = £234M",
+      "Sustainability tailwind: UK's plastic ban trajectory could shift canned format to 35-40% in 3 years",
+      "Liquid Death's positioning ('murder your thirst,' punk aesthetic) may need UK cultural calibration",
+      "Realistic 3-year market share: 5-8% of £400M projected canned premium = £20-32M revenue target"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Are we sizing the current canned premium water market or a projected 3-year TAM that accounts for format shift from plastic to cans — since the sustainability trend is a key driver?",
+      "Is Liquid Death's UK pricing expected to match their US price point (~$2-3 per can), which translates to £1.70-2.50 — well above the £1.50 premium threshold?",
+      "Should market share be estimated for Liquid Death as a standalone brand, or are we including a potential partnership with an existing UK distributor?",
+      "Are we measuring retail volume (cans sold) or retail value (£ revenue), and should we include DTC channels like Amazon UK?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Current Premium Canned Water Market",
+        "subIssues": [
+          "What is the total UK bottled water market in £?",
+          "What share qualifies as premium (above £1.50/unit)?",
+          "Of premium water, what share is currently in canned vs. plastic/glass format?"
+        ]
+      },
+      {
+        "block": "Format Shift Projection (3-Year TAM)",
+        "subIssues": [
+          "How fast is the UK shifting from plastic bottles to canned beverages?",
+          "What regulatory or sustainability trends accelerate canned water adoption?",
+          "What will the canned format share of premium water be in 3 years?"
+        ]
+      },
+      {
+        "block": "Liquid Death's Capturable Share",
+        "subIssues": [
+          "What share of the projected canned premium market can a new entrant realistically capture in 3 years?",
+          "How does Liquid Death's brand positioning translate to the UK consumer?",
+          "What distribution channels and investment level are assumed?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Establish the current premium water TAM",
+        "detail": "Start with the given £2.8B UK bottled water market. Apply 38% premium penetration to get £1.06B in premium water. This is the total opportunity for brands like Liquid Death, Evian, and Highland Spring."
+      },
+      {
+        "step": 2,
+        "title": "Isolate the canned format subset",
+        "detail": "Canned beverages represent only 22% of the premium water format mix in the UK today. Apply 22% to £1.06B = £234M current canned premium water market. This is the beachhead opportunity, but it understates the 3-year opportunity given format shift."
+      },
+      {
+        "step": 3,
+        "title": "Project 3-year format shift",
+        "detail": "UK sustainability pressure (71% plastic avoidance, potential plastic bans) could push canned format share from 22% to 35-40% over 3 years. Apply 37% (midpoint) to a slightly grown £1.06B premium market (~£1.15B at 3% category growth) = £425M projected 3-year canned premium TAM."
+      },
+      {
+        "step": 4,
+        "title": "Estimate realistic Liquid Death market share",
+        "detail": "A new entrant in a developed beverage market typically achieves 5-8% share within 3 years with strong distribution and brand investment. Apply 6% to £425M = ~£25M. Cross-check: this implies roughly 12-14 million cans sold at £1.80 average — a plausible retail scale for a year-3 challenger brand."
+      },
+      {
+        "step": 5,
+        "title": "Flag cultural and operational risks",
+        "detail": "Raise two risks the interviewer will expect: (1) Liquid Death's punk/irreverent US aesthetic may require UK brand calibration — British consumers respond differently to American 'edgy' marketing; (2) UK retail distribution requires major grocery partnerships (Tesco, Sainsbury's) which take 12-18 months to establish."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Premium Water",
+        "definition": "Packaged water priced above £1.50/unit, encompassing brands like Evian, Volvic, and Highland Spring; currently 38% of the UK bottled water market by value"
+      },
+      {
+        "term": "Format Mix",
+        "definition": "The share of a product category sold in each packaging type (can, plastic bottle, glass); canned water is only 22% of UK premium water vs. 60% in the US — indicating significant upside"
+      },
+      {
+        "term": "TAM Expansion",
+        "definition": "Growth in the total addressable market driven by structural trends rather than just category growth — here, the shift from plastic to cans driven by sustainability regulation"
+      },
+      {
+        "term": "DTC Channel",
+        "definition": "Direct-to-Consumer — selling via brand website or Amazon, bypassing traditional retail; critical for Liquid Death's early UK entry before securing major grocery listings"
+      },
+      {
+        "term": "Category Penetration Rate",
+        "definition": "The share of a target market's purchases captured by a new entrant; 5-8% in 3 years is typical for a well-funded challenger brand in an established beverage category"
+      }
+    ],
+    "interviewerExpectations": "A strong answer layers the sizing correctly — current TAM, then format-shift projection, then realistic share — and proactively addresses brand localization risk. A weak answer takes the current £234M canned market at face value without projecting the sustainability-driven format shift, or claims an unrealistically high share for a new entrant.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "To size this opportunity, I'm going to do a two-stage build: first, the current UK premium canned water market; second, a 3-year projected TAM that accounts for the format shift from plastic to cans, which the sustainability data suggests is accelerating. Then I'll estimate Liquid Death's realistic share capture. My numbers will be in pounds, retail value basis. Sound good?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I start: two questions. First, is Liquid Death's UK pricing expected to stay consistent with their US positioning — roughly £1.80 to £2.50 per can — which puts them firmly in the premium tier above the £1.50 threshold? I'll assume yes. Second, should I assume Liquid Death enters through traditional retail, DTC, or both? I'll model retail-led with DTC as secondary, since that's the highest-impact route for reaching scale in year three."
+      },
+      {
+        "label": "Step 1 — Current Premium Water TAM",
+        "script": "Starting with the given data: the UK bottled water market is £2.8 billion. Premium water — brands above £1.50 per unit — holds 38% of that market, which gives us £1.06 billion as the current premium water TAM. That's the full opportunity for any premium water brand in the UK today."
+      },
+      {
+        "label": "Step 2 — Canned Format Subset",
+        "script": "Now, Liquid Death is specifically a canned water brand. In the UK, cans represent only 22% of the premium water format mix — much lower than the 60% in the US where Liquid Death operates. Applying 22% to £1.06 billion gives us £234 million as the current canned premium water market. That's the immediate beachhead, but I think it significantly understates the 3-year opportunity."
+      },
+      {
+        "label": "Step 3 — 3-Year TAM Projection",
+        "script": "Here's why: 71% of UK consumers actively avoid single-use plastic, and the UK government has been progressing toward extended plastic packaging restrictions. I'd project the canned format share of premium water growing from 22% today to roughly 35-37% within three years — a conservative estimate given the regulatory and consumer trends. Applying 37% to a slightly grown premium market — call it £1.15 billion at 3% annual category growth — gives us approximately £425 million as the 3-year canned premium water TAM. That's nearly double the current market."
+      },
+      {
+        "label": "Step 4 — Liquid Death's Market Share",
+        "script": "For a new challenger brand entering a developed beverage market with strong distribution investment, 5 to 8 percent share in three years is realistic based on analogous US launches. I'll use 6 percent as my base case. Six percent of £425 million is approximately £25 million in retail revenue by year three. Cross-checking that: at £1.80 average retail price, that's about 14 million cans sold annually — the kind of volume a brand can reach with listings in Tesco and Sainsbury's plus meaningful DTC and online presence."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize: the current UK canned premium water market is £234 million, but the 3-year TAM — accounting for the shift away from plastic — is approximately £425 million. Liquid Death's realistic year-three revenue target is approximately £25 million, assuming 6% market share. Two risks I'd flag for the pitch: first, the punk aesthetic may need some cultural calibration for the UK market — British consumers are skeptical of American irony-as-branding. Second, major UK grocery listings take 12 to 18 months to secure, so the distribution timeline needs to be built into the financial model. The opportunity is real and strategically sound; execution timing is the key variable."
+      }
+    ]
+  },
+  {
+    "id": "scenario_044",
+    "type": "Market Sizing",
+    "company": "Instacart",
+    "title": "Sizing the US Alcohol Delivery Market",
+    "prompt": "Instacart is evaluating launching an alcohol delivery service in partnership with Total Wine and local liquor stores. Before investing in licensing and infrastructure, they need to size the total addressable market for on-demand alcohol delivery in the US. Build the estimate.",
+    "context": "The US alcohol market is approximately $130B in total (retail + on-premise). Retail alcohol (off-premise) is approximately $70B. Current alcohol delivery penetration is approximately 4% of retail alcohol, concentrated in major metropolitan areas. Legal frameworks vary by state — 38 states allow alcohol delivery. Alcohol delivery orders average $65-85 per transaction. Drizly (acquired by Uber) was the market leader before being shut down in 2024.",
+    "correctFrameworks": ["SPEAK", "Market Sizing"],
+    "whyThisFramework": "SPEAK: State retail alcohol TAM is $70B; apply the 38-state legal availability filter (approximately 82% of US adult population); apply current 4% delivery penetration as baseline and project potential to 12-15% at maturity based on grocery delivery analogy. Calculate addressable revenue at multiple penetration scenarios and sanity-check against Drizly's reported $750M peak GMV.",
+    "keyConsiderations": [
+      "Legal TAM: $70B retail × 82% population in legal states = $57.4B legal opportunity",
+      "Current penetration: $57.4B × 4% = $2.3B current market; mature potential at 12% = $6.9B",
+      "Instacart's existing grocery infrastructure reduces incremental investment cost significantly",
+      "Key risks: licensing complexity by state, liability insurance, age verification technology required"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Are we sizing the current alcohol delivery market or the potential market at delivery penetration parity with grocery (approximately 12-15%)?",
+      "Is Instacart's fee revenue (take rate) the relevant metric, or gross merchandise value of alcohol delivered?",
+      "Should we include the on-premise market ($60B in bars/restaurants) as out of scope, or are there delivery-adjacent use cases like restaurant alcohol delivery?",
+      "Are we limited to the 38 states that currently allow alcohol delivery, or should we project a regulatory pathway to more states?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Legal Addressable Market",
+        "subIssues": [
+          "What is the total US retail alcohol market in dollar value?",
+          "What share of the US adult population lives in the 38 states that permit alcohol delivery?",
+          "Are there meaningful city or county-level restrictions within legal states that further narrow the TAM?"
+        ]
+      },
+      {
+        "block": "Delivery Penetration Scenario",
+        "subIssues": [
+          "What is the current delivery penetration rate for alcohol?",
+          "What penetration rate is reasonable at market maturity based on grocery delivery analogy?",
+          "What are the barriers to penetration growth — cost, convenience, regulatory, consumer behavior?"
+        ]
+      },
+      {
+        "block": "Revenue to Instacart",
+        "subIssues": [
+          "What is Instacart's take rate on alcohol delivery orders vs. grocery?",
+          "How does average order value for alcohol ($65-85) compare to Instacart's grocery AOV, and how does that affect fee economics?",
+          "What incremental infrastructure and licensing costs must be netted against gross revenue?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Establish the legal TAM",
+        "detail": "Start with $70B retail alcohol market. Apply the 38-state legal filter: these states contain approximately 82% of the US adult population, giving a legal TAM of $70B × 82% = $57.4B. This is the outer bound of the addressable market."
+      },
+      {
+        "step": 2,
+        "title": "Apply current delivery penetration",
+        "detail": "At 4% current delivery penetration, the current alcohol delivery market is $57.4B × 4% = ~$2.3B GMV. Cross-check: Drizly at peak was the leader with ~$750M GMV; add Gopuff, Minibar, and others and ~$2-2.5B current market feels right."
+      },
+      {
+        "step": 3,
+        "title": "Project maturity penetration",
+        "detail": "Grocery delivery reached ~12-15% penetration at maturity (pre-COVID baseline, post-COVID normalization). Alcohol delivery faces additional regulatory friction, so a conservative 10-12% maturity penetration is reasonable. At 12%: $57.4B × 12% = $6.9B mature GMV."
+      },
+      {
+        "step": 4,
+        "title": "Calculate Instacart's revenue opportunity",
+        "detail": "Instacart's take rate on grocery is typically 10-15% including delivery fees and service fees. Alcohol may carry a slight premium for liability reasons — call it 12-15%. Apply 13% to the $6.9B mature GMV = ~$897M annual revenue opportunity for Instacart at full maturity."
+      },
+      {
+        "step": 5,
+        "title": "Flag key risks",
+        "detail": "Three investor-level risks: (1) State-by-state licensing is expensive and slow; (2) Age verification requirements create liability exposure; (3) With Drizly shut down, Instacart must educate the market again, which extends the adoption curve."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Off-Premise Alcohol",
+        "definition": "Alcohol sold through retail channels (liquor stores, grocery, convenience) for consumption off-site — the $70B market relevant to delivery; excludes $60B in on-premise bar and restaurant sales"
+      },
+      {
+        "term": "Delivery Penetration Rate",
+        "definition": "The share of a retail category's total sales that occur via on-demand delivery; alcohol is currently at 4% penetration vs. grocery's 12-15% at maturity"
+      },
+      {
+        "term": "GMV",
+        "definition": "Gross Merchandise Value — total retail value of alcohol delivered; Instacart's actual revenue is ~13% of GMV via take rate"
+      },
+      {
+        "term": "Take Rate",
+        "definition": "Platform fee as a percentage of GMV; Instacart charges approximately 10-15% on grocery orders, likely 12-15% on alcohol given liability considerations"
+      },
+      {
+        "term": "Age Verification Technology",
+        "definition": "Digital or in-person ID verification required to legally complete alcohol delivery; a compliance cost and consumer friction point that depresses penetration relative to grocery delivery"
+      }
+    ],
+    "interviewerExpectations": "A strong answer correctly applies the legal state filter before the penetration rate, builds both a current-state and mature-market scenario, and translates GMV to Instacart's actual revenue. A weak answer applies national penetration data without the legal constraint, or conflates GMV with Instacart's take-rate revenue.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "I'm going to size this in two scenarios: the current alcohol delivery market, and the mature-state opportunity that Instacart would be building toward. I'll use a top-down approach — starting from total retail alcohol, applying the legal availability filter, then penetration rates. I'll also separate GMV from Instacart's actual revenue since those are very different numbers. Is that the right framing?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two quick questions. First — should I focus on GMV, or does leadership want to see Instacart's take-rate revenue? I'll build both. Second — are we assuming alcohol delivery is offered as an add-on to existing grocery orders, or as a standalone service? I'll model it as standalone to be conservative, since basket dynamics differ."
+      },
+      {
+        "label": "Step 1 — Legal TAM",
+        "script": "Starting point: the US retail alcohol market is $70 billion — that's off-premise, the part accessible to delivery. Not all of that is legally addressable. Thirty-eight states permit alcohol delivery, and those states contain approximately 82% of the US adult population. So my legal TAM is $70 billion times 82%, which is $57.4 billion. That's the outer bound of what any US alcohol delivery platform could address today."
+      },
+      {
+        "label": "Step 2 — Current Market Size",
+        "script": "Current alcohol delivery penetration is 4%, which is given. So: $57.4 billion times 4% equals approximately $2.3 billion in current gross alcohol delivery GMV. Quick sanity check — Drizly was the market leader before being shut down in 2024 and peaked at around $750 million in GMV. Add Gopuff, Minibar, and grocery apps already doing alcohol, and $2 to $2.5 billion feels about right. My number holds."
+      },
+      {
+        "label": "Step 3 — Mature Market Projection",
+        "script": "The key strategic question is: what does penetration look like at maturity? Grocery delivery reached 12 to 15 percent penetration after normalizing from COVID. Alcohol has additional friction — regulatory compliance, age verification, liability — so I'll be conservative and model a mature penetration of 10 to 12 percent. At 12%, the mature alcohol delivery market is $57.4 billion times 12%, which equals $6.9 billion in GMV."
+      },
+      {
+        "label": "Step 4 — Instacart Revenue",
+        "script": "Instacart's take rate on grocery is roughly 10 to 15 percent including service fees and delivery margin. Alcohol may carry a slight premium because of liability and compliance costs — I'll use 13%. At $6.9 billion GMV times 13%, Instacart's annual revenue opportunity at full market maturity is approximately $897 million — call it roughly $900 million."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize: the current US alcohol delivery market is approximately $2.3 billion in GMV, and the mature opportunity — which is what Instacart would be building toward — is approximately $6.9 billion in GMV, translating to roughly $900 million in net Instacart revenue. Three risks I'd want leadership to weigh before approving the investment: state-by-state licensing is expensive and slow, age verification creates both liability and consumer friction, and with Drizly now shut down, Instacart will need to re-educate the market on alcohol delivery as a habit, which extends the adoption curve by at least 12 to 18 months."
+      }
+    ]
+  },
+  {
+    "id": "scenario_045",
+    "type": "Market Sizing",
+    "company": "ClassPass",
+    "title": "Sizing the US Boutique Fitness Studio Market",
+    "prompt": "ClassPass is pitching to a strategic investor and needs to quantify the total US boutique fitness market (yoga studios, cycling studios, barre, boxing, HIIT) and the addressable share that passes through ClassPass's aggregator model. How would you size this?",
+    "context": "US gym and fitness studio industry total revenue is approximately $32B. The boutique fitness segment (non-traditional, class-based studios) represents approximately 37% of studio locations but only 28% of total industry revenue due to smaller unit economics. Average boutique class price: $22-35. Active boutique fitness participants nationally: approximately 12M. ClassPass takes 25-30% of each class booking as its fee.",
+    "correctFrameworks": ["SPEAK", "Market Sizing"],
+    "whyThisFramework": "SPEAK: State that 12M active boutique participants × average 2.1 classes/week × $28 average price × 52 weeks = $37B gross class spend (cross-check against $32B total fitness market, noting overlap with traditional gyms). ClassPass's monetizable TAM = share of participants open to aggregator vs. studio-direct booking × 25-30% take rate.",
+    "keyConsiderations": [
+      "12M participants × 2.1 classes/week × $28/class × 52 weeks = ~$36.6B boutique fitness gross spend",
+      "Adjust for overlap with traditional gym estimate: boutique is 28% of $32B = $8.96B — use this as cross-check",
+      "ClassPass penetration of boutique spend: assume 18-22% of classes booked through aggregators",
+      "Revenue to ClassPass: $8.96B × 20% aggregator share × 27% take rate = ~$484M revenue TAM"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Are we sizing gross consumer spend on boutique fitness classes, or ClassPass's specific revenue opportunity (which is a small fraction of that)?",
+      "Should 'boutique fitness' include only studio classes, or also app-based fitness subscriptions like Peloton that compete for the same consumer wallet?",
+      "Is the 12M active participant figure current, or pre-COVID — and how much has the market recovered post-2020?",
+      "Are we modeling ClassPass's current market share of boutique bookings, or the theoretical TAM if ClassPass expanded its studio network and consumer penetration?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Total Boutique Fitness Market",
+        "subIssues": [
+          "How many active boutique fitness participants are there nationally?",
+          "What is the average class frequency and price per class?",
+          "Does the consumer spend estimate reconcile with the top-down industry revenue figure?"
+        ]
+      },
+      {
+        "block": "Aggregator-Addressable Portion",
+        "subIssues": [
+          "What share of boutique class bookings happen through aggregator platforms vs. direct studio booking?",
+          "Which consumer segments are most likely to use ClassPass vs. studio memberships?",
+          "Which studio types accept aggregator bookings vs. protect their direct relationships?"
+        ]
+      },
+      {
+        "block": "ClassPass Revenue Translation",
+        "subIssues": [
+          "What is ClassPass's take rate on each class booking?",
+          "How does ClassPass's pricing model (monthly credits) affect realized take rate vs. nominal?",
+          "What is ClassPass's current penetration of the aggregator-addressable market?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Build bottom-up consumer spend estimate",
+        "detail": "12M active boutique participants × 2.1 classes/week × $28 average class price × 52 weeks = approximately $36.6B in gross boutique class spend. State this clearly, then immediately flag you'll cross-check it against the industry top-down figure."
+      },
+      {
+        "step": 2,
+        "title": "Cross-check with top-down industry data",
+        "detail": "The $32B total fitness industry × 28% boutique share = $8.96B. The $36.6B bottom-up estimate is 4x larger — this is the key reconciliation moment. The bottom-up figure likely overcounts frequency (serious enthusiasts skew the average up) and may include duplication with traditional gym members who take occasional boutique classes."
+      },
+      {
+        "step": 3,
+        "title": "Reconcile and choose best estimate",
+        "detail": "A reconciled estimate of $10-12B is likely most accurate — use the top-down $8.96B as the floor and the bottom-up as a ceiling. State you'll proceed with ~$9B as the conservative boutique fitness TAM and explain the discrepancy."
+      },
+      {
+        "step": 4,
+        "title": "Identify ClassPass's addressable portion",
+        "detail": "Not all boutique classes are bookable through aggregators. Estimate 20% of boutique spend passes through aggregator platforms (ClassPass, Mindbody-adjacent apps) vs. direct studio booking or memberships. 20% of $9B = $1.8B in aggregator-mediated spend."
+      },
+      {
+        "step": 5,
+        "title": "Calculate ClassPass revenue",
+        "detail": "ClassPass takes 25-30% of each booking — use 27% midpoint. $1.8B × 27% = ~$486M as ClassPass's total revenue TAM if it captured all aggregator-mediated boutique spend. ClassPass's actual share of that aggregator market is approximately 60-70%, implying ~$290-340M in current revenue. This is what to present to the strategic investor."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Boutique Fitness",
+        "definition": "Class-based fitness studios offering specialized formats (yoga, cycling, barre, boxing, HIIT) typically priced at $22-35 per class; distinct from traditional gyms in their class structure and premium positioning"
+      },
+      {
+        "term": "Aggregator Model",
+        "definition": "A platform that bundles access to multiple studios under a single subscription, like ClassPass; the studio gives up direct pricing control in exchange for ClassPass-sourced members"
+      },
+      {
+        "term": "Take Rate",
+        "definition": "ClassPass's fee as a percentage of each class booking value; at 25-30%, ClassPass retains roughly $6-8 of a $28 class booking"
+      },
+      {
+        "term": "Studio-Direct Booking",
+        "definition": "A consumer booking directly with the studio — either as a single purchase or membership — bypassing aggregators; the majority of boutique fitness spend still flows this way"
+      },
+      {
+        "term": "Bottom-Up vs. Top-Down Reconciliation",
+        "definition": "A critical market sizing discipline — building the estimate two ways (population × behavior × price vs. total industry revenue × segment share) to test internal consistency and identify overcount"
+      }
+    ],
+    "interviewerExpectations": "A strong answer explicitly reconciles the bottom-up and top-down estimates, explains the discrepancy (frequency overcounting), and builds to ClassPass's specific revenue TAM — not just the gross consumer spend figure. A weak answer stops at the $36B bottom-up number without cross-checking it against the $32B industry total, or fails to translate gross market size into ClassPass's actual monetizable opportunity.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "I'm going to size this in three layers: first, total boutique fitness consumer spend using both a bottom-up and top-down approach; second, the portion of that spend that flows through aggregator platforms like ClassPass; and third, ClassPass's specific revenue opportunity at its take rate. The interesting tension here is reconciling the two approaches, so I'll walk through that explicitly. Ready to proceed?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Quick clarifications: First, are we sizing ClassPass's revenue opportunity, or the total boutique fitness consumer spend? The investor will probably want to see both — the market context and the monetizable slice. Second, should I include app-based competitors like Peloton in my boutique fitness TAM, or just physical studios? I'll stick to physical studios since that's ClassPass's core network."
+      },
+      {
+        "label": "Step 1 — Bottom-Up Consumer Spend",
+        "script": "Starting from the demand side. We're told there are 12 million active boutique fitness participants nationally. A typical enthusiast takes roughly 2.1 classes per week — that's what the data suggests for active participants. At an average class price of $28, which is the midpoint of the $22 to $35 range given, times 52 weeks, I get: 12 million times 2.1 times $28 times 52, which equals approximately $36.6 billion in gross boutique fitness consumer spend."
+      },
+      {
+        "label": "Step 2 — Top-Down Cross-Check",
+        "script": "But let me check that against the top-down data. The US fitness industry is $32 billion total, and boutique fitness is 28% of total industry revenue — so that's $32 billion times 28%, which equals approximately $9 billion. There's a major discrepancy: my bottom-up says $36 billion, my top-down says $9 billion. I need to explain this. The bottom-up is almost certainly overcounting frequency — the 12 million 'active participants' likely skews toward super-users who take classes daily, pulling the average up significantly. Most casual participants probably take 3 to 4 classes a month, not 8 to 9. I'm going to use the $9 billion top-down figure as the more defensible boutique fitness TAM."
+      },
+      {
+        "label": "Step 3 — Aggregator-Addressable Portion",
+        "script": "Of that $9 billion in boutique class spend, not all of it flows through aggregators. Most participants either buy studio memberships directly or drop in at the door. I'd estimate roughly 20% of boutique spend is aggregator-mediated — that's classes booked through ClassPass, Mindbody partner apps, and similar platforms. Twenty percent of $9 billion equals $1.8 billion in aggregator-addressable spend."
+      },
+      {
+        "label": "Step 4 — ClassPass Revenue TAM",
+        "script": "ClassPass takes 25 to 30 percent of each booking — I'll use 27% as the midpoint. Applying that to $1.8 billion gives approximately $486 million as ClassPass's revenue TAM if it captured all aggregator-mediated boutique spend. ClassPass is the dominant aggregator and probably holds 60 to 70 percent of that market, which implies current revenue of roughly $290 to $340 million."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize for the strategic investor: the US boutique fitness market is approximately $9 billion in consumer spend. The aggregator-addressable portion — classes where consumers are willing to book through a platform rather than direct — is roughly $1.8 billion. ClassPass's revenue TAM within that is approximately $486 million at 27% take rate, and ClassPass likely captures $290 to $340 million of that today. The growth story is either expanding aggregator penetration from 20% to 30% of boutique spend, or expanding ClassPass's share of aggregator bookings. Both are viable, but expanding aggregator penetration requires changing studio behavior — which is the harder and more defensible lever."
+      }
+    ]
+  },
+  {
+    "id": "scenario_046",
+    "type": "Product/Advertising Evaluation",
+    "company": "Old Spice (P&G)",
+    "title": "Evaluating Old Spice's 'The Man Your Man Could Smell Like' Campaign",
+    "prompt": "You are a brand consultant reviewing Old Spice's viral 'The Man Your Man Could Smell Like' campaign (Isaiah Mustafa). The campaign launched with a Super Bowl ad and generated 40M YouTube views in the first week. However, Old Spice's sales in the three months following the campaign launch grew only 3% vs. a 9% growth target. How would you evaluate whether this campaign was a success or failure?",
+    "context": "Old Spice's primary target was women purchasing body wash for male partners — a demographic the brand had previously ignored. Brand awareness increased from 62% to 81% among women 18-34. Trial rate (new purchasers) increased 27% in the campaign window. However, repeat purchase rate among new trial buyers was only 34% at 90 days. The product formulation had not changed; the repositioning was entirely through marketing.",
+    "correctFrameworks": ["Ad Evaluation", "3C's"],
+    "whyThisFramework": "Ad Evaluation: reverse-engineer the message ('if he used Old Spice, you'd want him') — was it delivered effectively? Yes, 40M views and awareness lift confirm delivery. But sales underperformance reveals the framework's second question: did the creative work drive purchase behavior or just entertainment? 3C's examines whether the consumer insight (women buy for men) was correct and fully activated.",
+    "keyConsiderations": [
+      "Viral awareness does not equal purchase — the awareness-to-trial gap must be diagnosed",
+      "27% trial increase is strong; the 34% repeat rate is the real problem — product must match the promise",
+      "The campaign correctly identified women as purchasers — a valid insight well executed creatively",
+      "Long-term brand health metrics (awareness, consideration) improved significantly — not just a short-term play"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "What was Old Spice's baseline sales growth rate before this campaign — is 3% growth acceleration or deceleration relative to trend?",
+      "Is the 9% target a brand-new goal set for this campaign specifically, or a pre-existing business target that would have required strong execution regardless?",
+      "Were there any distribution, pricing, or retail execution changes during this period that could explain the sales miss independent of the campaign?",
+      "How does the 27% trial rate increase translate to absolute new buyers — what was the base trial rate before the campaign?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Message Effectiveness",
+        "subIssues": [
+          "Was the campaign's core message — 'women should buy Old Spice for their men' — clear and correctly decoded by the target audience?",
+          "Did the humor and virality serve the message, or distract from the purchase trigger?",
+          "Did the campaign accurately represent what the product delivers?"
+        ]
+      },
+      {
+        "block": "Reach & Delivery",
+        "subIssues": [
+          "Did the campaign reach the intended target (women 18-34 purchasing body wash)?",
+          "Did the 40M YouTube views translate to awareness lift among the right demographic?",
+          "Were retail touchpoints (in-store, online) coordinated with the campaign to capture the awareness spike?"
+        ]
+      },
+      {
+        "block": "Business Outcomes",
+        "subIssues": [
+          "Did the campaign drive trial among new buyers?",
+          "Did trial buyers repeat purchase, or was the campaign a one-time curiosity purchase?",
+          "Is the 3% sales growth vs. 9% target a campaign failure or a product delivery failure?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Assess message clarity and targeting",
+        "detail": "The campaign targeted women who buy body wash for male partners — a correct and novel insight. The message 'look at your man, now at me' directly called out this buyer and made the benefit explicit. Awareness jump from 62% to 81% among women 18-34 confirms the message reached and registered with the right audience."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate delivery effectiveness",
+        "detail": "40M YouTube views in week one and $163M+ in estimated earned media are exceptional delivery metrics. The Super Bowl placement amplified reach. Creative delivery worked — this was not a case of a good ad running in the wrong place."
+      },
+      {
+        "step": 3,
+        "title": "Diagnose the trial-to-repeat gap",
+        "detail": "27% trial rate increase is strong — the campaign moved people to the shelf. But only 34% of new trial buyers repeated within 90 days. This is the key diagnostic: trial was driven by the campaign, but the product experience failed to retain buyers. The marketing overpromised what the product delivered."
+      },
+      {
+        "step": 4,
+        "title": "Assess long-term brand equity gains",
+        "detail": "Even with the 90-day sales miss, awareness among women 18-34 increased 19 points — this is a durable asset. Old Spice's brand health improved structurally, setting up long-term category leadership. The campaign should be evaluated on a 12-month sales window, not just the initial 90 days."
+      },
+      {
+        "step": 5,
+        "title": "Deliver a verdict with nuance",
+        "detail": "The campaign was a brand success and a partial sales failure. The marketing execution was excellent; the product-market fit problem (low repeat rate) is a product and product-experience issue, not an advertising issue. Recommendation: fix product formulation or set, not the advertising."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Trial Rate",
+        "definition": "The percentage of new buyers who purchase a product for the first time during a campaign window; Old Spice's trial rate increased 27% — a strong indicator of campaign-driven purchase intent"
+      },
+      {
+        "term": "Repeat Purchase Rate",
+        "definition": "The share of trial buyers who repurchase within a defined window (here, 90 days); Old Spice's 34% repeat rate is the key warning sign — a healthy CPG repeat rate is typically 40-60%"
+      },
+      {
+        "term": "Brand Awareness",
+        "definition": "The percentage of a target audience that recognizes a brand; Old Spice's jump from 62% to 81% among women 18-34 is a 19-point lift — a significant and durable equity gain"
+      },
+      {
+        "term": "Earned Media",
+        "definition": "Media coverage and social amplification generated organically by a campaign without additional paid placement; Old Spice's viral moment produced an estimated $163M in earned media value"
+      },
+      {
+        "term": "Product-Market Fit (in CPG)",
+        "definition": "Whether the physical product experience lives up to the brand promise created by advertising; Old Spice's low repeat rate suggests the product experience did not match the aspirational campaign message"
+      }
+    ],
+    "interviewerExpectations": "A strong answer separates the campaign's marketing performance (excellent) from the business outcome failure (product repeat issue) and correctly identifies that a 34% repeat rate is the root cause of the sales miss, not the advertising itself. A weak answer simply declares the campaign a failure because sales missed 9%, without diagnosing why.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I declare this a success or failure, I want to frame the evaluation properly. I'm going to look at three dimensions: was the message right, was it delivered effectively, and did it drive the right business outcome? I'll use the ad evaluation framework — which reverses engineers whether the creative idea matched what the target audience needed to hear — and I'll layer in 3C's to stress-test whether the consumer insight was correct. My hunch is that this campaign succeeded on marketing effectiveness but exposed a product problem. Let me walk through the evidence."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I finalize my view, two questions: First, what was Old Spice's sales growth trend before the campaign — was 3% an acceleration or deceleration? If Old Spice was declining before, 3% growth is actually a turnaround. Second, were there any in-store execution changes — shelf placement, promotional pricing, end-cap support — that might have dragged against the campaign? I want to isolate the advertising effect."
+      },
+      {
+        "label": "Step 1 — Message Evaluation",
+        "script": "Let's start with the message. Old Spice correctly identified that women, not men, make the majority of body wash purchase decisions for households. The campaign spoke directly to that buyer with the line 'look at your man, now back to me.' That's a sharp consumer insight, and it was clearly decoded — brand awareness among women 18-34 jumped 19 points, from 62% to 81%. The right audience heard the right message. That part worked."
+      },
+      {
+        "label": "Step 2 — Delivery Evaluation",
+        "script": "On delivery: 40 million YouTube views in the first week plus a Super Bowl launch is exceptional. Earned media was estimated at $163 million in week one alone. The campaign was seen and talked about. This is not a case of a good ad running in the wrong place or to the wrong audience. Delivery was executed nearly perfectly."
+      },
+      {
+        "label": "Step 3 — Business Outcome Diagnosis",
+        "script": "Now here's where it gets complicated. Trial increased 27% — so the campaign successfully moved women to the shelf and into the purchase. That's the marketing job, and it was done. But only 34% of those new buyers repurchased within 90 days. A healthy repeat rate for a CPG body wash is typically 45 to 60%. Old Spice's 34% means two-thirds of the new buyers they worked so hard to acquire tried the product once and didn't come back. That is not a marketing problem. That is a product experience problem. The ad promised an aspirational, premium experience. The scent formulation and product experience apparently didn't deliver on that promise for enough buyers."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My verdict: this campaign was a marketing success and a partial business failure — but the failure is not the campaign's fault. Old Spice should not change the advertising. They should change the product. The awareness gain is durable — 19 points among the target demographic doesn't disappear in 90 days. The long-term equity foundation is strong. The action items are: first, conduct product experience research to identify why repeat rates are below benchmark; second, evaluate whether a premium product reformulation or premium SKU extension can retain the new buyers the campaign acquired; third, measure total 12-month sales impact rather than just the 90-day window, because the awareness and trial gains compound over time. Verdict: don't pull the campaign — invest in the product."
+      }
+    ]
+  },
+  {
+    "id": "scenario_047",
+    "type": "Product/Advertising Evaluation",
+    "company": "Bud Light",
+    "title": "Post-Crisis Bud Light Advertising Evaluation",
+    "prompt": "Following the Dylan Mulvaney partnership controversy in April 2023, Bud Light's sales volume declined 26% within six weeks. AB InBev's marketing team has proposed a new campaign called 'Easy to Drink, Easy to Enjoy' featuring traditional outdoor activities and sports. The campaign tests well in focus groups with core Bud Light drinkers (males 25-45, rural/suburban). Should AB InBev approve this campaign, and what would your evaluation criteria be?",
+    "context": "Bud Light's share of the light beer category fell from 17.1% to 10.3% within four months. Coors Light and Miller Lite captured most of the defectors. The 'Easy to Drink, Easy to Enjoy' campaign is deliberately low-risk and nostalgic, avoiding any cultural commentary. The estimated campaign budget is $400M. Bud Light's research shows 61% of lapsed buyers say they are 'unlikely to return in the next 12 months.'",
+    "correctFrameworks": ["Ad Evaluation", "3C's", "4P's"],
+    "whyThisFramework": "Ad Evaluation reverses engineers the message: 'Bud Light is for regular guys having fun outdoors' — is this the right message for a brand in crisis? 3C's examines whether the lapsed buyer can be won back with nostalgia or has permanently defected. 4P's asks whether advertising alone can solve what is also a distribution (some retailers delisted) and pricing (promotional discounting damaged brand) problem.",
+    "keyConsiderations": [
+      "The message is safe but may be insufficient — lapsed buyers need a reason to forgive and return",
+      "61% saying 'unlikely to return' suggests advertising alone won't solve the problem",
+      "$400M campaign budget must be evaluated against the $1.4B revenue decline — is ROI positive?",
+      "Risk of the low-risk campaign: no emotional hook means no incremental consideration lift"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "What does AB InBev define as success for this campaign — share recovery to 17.1%, stopping the decline at 10.3%, or something in between?",
+      "Has Bud Light addressed the distribution gaps — some retailers that delisted Bud Light — before spending $400M on advertising to consumers who can't find it on shelf?",
+      "Is this campaign intended to win back lapsed buyers (a retention/re-engagement problem) or to hold the remaining 10.3% share and prevent further defection?",
+      "What is Coors Light and Miller Lite doing competitively — are they investing to lock in the defectors, or have they gone quiet?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Message Effectiveness for Recovery",
+        "subIssues": [
+          "Does 'Easy to Drink, Easy to Enjoy' give lapsed buyers a reason to return, or just remind loyalists why they used to drink Bud Light?",
+          "Is nostalgia sufficient to overcome an active brand rejection, or does recovery require an explicit acknowledgment of the controversy?",
+          "Is the campaign's message differentiated from what Coors Light and Miller Lite are already saying?"
+        ]
+      },
+      {
+        "block": "Non-Advertising Factors (4P's)",
+        "subIssues": [
+          "Are there distribution gaps (retailer delistings) that advertising cannot solve?",
+          "Has promotional discounting damaged Bud Light's price positioning in a way that signals brand distress?",
+          "Has the product itself or its retail presentation changed in a way that is relevant to lapsed buyers?"
+        ]
+      },
+      {
+        "block": "Budget ROI",
+        "subIssues": [
+          "Is $400M a sufficient spend to move the needle on 61% of lapsed buyers who say they won't return?",
+          "What share recovery is required to break even on the $400M investment?",
+          "Is there a better allocation of $400M — promotions, distribution incentives, events — that would drive faster share recovery?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Define success criteria before evaluating the campaign",
+        "detail": "Before approving or rejecting, establish what 'success' looks like. Is the goal full recovery to 17.1% share? Stopping decline? Winning back a defined subset of lapsed buyers? The evaluation criteria must be anchored to the objective. If the goal is full recovery, this campaign is likely insufficient. If it's to stabilize and hold remaining share, it may be adequate."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate the message for the recovery objective",
+        "detail": "'Easy to Drink, Easy to Enjoy' is brand maintenance messaging — it tells existing drinkers they were right to drink Bud Light. It gives lapsed buyers no specific reason to return. For a brand in crisis, recovery advertising typically requires either acknowledging the controversy (the brave path) or making a compelling new reason-to-believe offer. This campaign does neither."
+      },
+      {
+        "step": 3,
+        "title": "Apply 4P's to identify non-advertising problems",
+        "detail": "Request data on: (a) distribution recovery — how many retailers that delisted Bud Light have restored it? Advertising to consumers who can't find the product is wasteful. (b) Price — has promotional discounting damaged brand perception? Advertising reinforcing quality while the product is on promotion is contradictory. (c) Product/format — any SKU changes that could signal brand renewal?"
+      },
+      {
+        "step": 4,
+        "title": "Stress-test the budget ROI",
+        "detail": "Bud Light lost approximately $1.4B in annual revenue (6.8-point share loss × estimated $200M revenue per point). A $400M campaign budget is significant. To break even on that spend, Bud Light needs to recover roughly 2-3 share points. With 61% of lapsed buyers unlikely to return, recovery from the existing base is unlikely to be sufficient — new recruitment would be needed."
+      },
+      {
+        "step": 5,
+        "title": "Deliver a conditional recommendation",
+        "detail": "Conditionally approve the campaign with three modifications: (1) Confirm full distribution restoration before media flights launch; (2) Add a grassroots/experiential element — brand ambassadors at events — that creates personal re-engagement moments rather than passive TV impressions; (3) Set a 6-month share recovery milestone (e.g., 12% share) as a campaign checkpoint to evaluate spend continuation."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Category Share",
+        "definition": "A brand's percentage of total category volume or revenue; Bud Light's share fell from 17.1% to 10.3% — a 6.8-point loss representing approximately $1.4B in annual revenue"
+      },
+      {
+        "term": "Lapsed Buyer",
+        "definition": "A former purchaser who has stopped buying a brand; Bud Light's 61% of lapsed buyers unlikely to return in 12 months means the defection is behavioral, not just attitudinal"
+      },
+      {
+        "term": "Brand Crisis Recovery",
+        "definition": "The marketing playbook for restoring brand health after a reputational incident; typically requires both message and product action, not advertising alone"
+      },
+      {
+        "term": "Distribution Restoration",
+        "definition": "Getting a product relisted in retail channels that removed it during a brand crisis; a prerequisite for advertising ROI — ads that drive store visits where the product isn't stocked destroy consumer goodwill"
+      },
+      {
+        "term": "Price Positioning Damage",
+        "definition": "When promotional discounting during a crisis trains consumers to expect a lower price, signaling the brand has been permanently devalued; a risk for Bud Light if deep discounts were used to defend volume"
+      }
+    ],
+    "interviewerExpectations": "A strong answer does not simply approve or reject the campaign — it reframes the question by identifying what advertising can and cannot solve (distribution gaps, price damage) and proposes specific success criteria and milestones. A weak answer evaluates only the creative concept without raising the 4P's issues or stress-testing whether $400M spend has a positive ROI given 61% lapsed buyer resistance.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I say yes or no to this campaign, I want to reframe the question. The real issue isn't whether this is a good ad — it may be. The issue is whether advertising is the right tool for this stage of brand recovery, and whether this particular message is sufficient. I'm going to evaluate this using ad evaluation to assess the message, 3C's to understand the buyer dynamics, and 4P's to flag whether there are non-advertising problems that $400M in media won't fix. Ready?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Three questions before I go further. One: has distribution been fully restored — are all retailers that delisted Bud Light carrying it again? Because advertising to consumers who can't find the product is worse than not advertising at all. Two: what is the share target for this campaign — stabilize at 10.3%, or begin recovering toward 17.1%? Those require very different campaign strategies. Three: what are Coors Light and Miller Lite spending right now? If they're actively running conquest campaigns targeting Bud Light lapsed buyers, a passive 'Easy to Drink' message won't compete."
+      },
+      {
+        "label": "Step 1 — Message Evaluation",
+        "script": "Let me evaluate the message. 'Easy to Drink, Easy to Enjoy' is a brand maintenance message. It tells existing Bud Light drinkers they made the right choice. It does not give lapsed buyers a reason to return. When 61% of your lapsed buyers say they are unlikely to return in 12 months, you have an active brand rejection on your hands — not passive forgetting. Maintenance messaging doesn't break through active rejection. The campaign is not wrong, it's just insufficient as a recovery play."
+      },
+      {
+        "label": "Step 2 — 3C's: Consumer Analysis",
+        "script": "From the consumer side: lapsed buyers defected to Coors Light and Miller Lite. Those brands are functionally identical to Bud Light in terms of product. This means the defection is not about product — it's about social signaling. Drinking Bud Light meant something to the core consumer that it no longer means in the same way. A nostalgic outdoor-activities campaign is trying to reclaim that signal, which is the right strategic instinct. The question is whether it's executed with enough emotional intensity to actually move behavior — and a deliberately low-risk, focus-group-safe campaign is unlikely to move people who made an emotionally charged decision to leave."
+      },
+      {
+        "label": "Step 3 — 4P's: Non-Advertising Problems",
+        "script": "This is the part that concerns me most. Let me run through the four P's quickly. Product — unchanged, so no signal of renewal. Price — if Bud Light has been running deep promotional discounts to protect volume, that's trained consumers to expect a lower price, which signals brand distress and undermines any premium-adjacency in the advertising. Place — if any retailers still haven't relisted Bud Light, launching $400M of advertising creates consumer demand that cannot be fulfilled at retail, which damages trust further. Promotion — the campaign itself. We're spending $400M on promotion while potentially having unresolved product, price, and place issues. That's a misallocated recovery playbook."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "Here's my recommendation: conditionally approve, with three mandatory gates before launch. First, confirm full distribution restoration in all major retail chains — no flight should launch until Bud Light is back on every shelf. Second, do not run this alongside promotional pricing — pick one signal and commit to it; advertising quality while discounting price is contradictory. Third, add a grassroots experiential layer — sponsorships at regional sports events, tailgate activations, local community tie-ins — because passive TV impressions won't move a buyer who made an emotionally active decision to leave. You need personal re-engagement moments. Finally, set a hard 6-month checkpoint: if share has not recovered to 12% by month six, reassess the budget allocation — shift dollars from media to retail incentives and on-premise activation, where conversion rates are faster. The $400M budget is appropriate in scale, but only if the non-advertising fundamentals are fixed first."
+      }
+    ]
+  },
+  {
+    "id": "scenario_048",
+    "type": "Product/Advertising Evaluation",
+    "company": "Always (P&G)",
+    "title": "Evaluating Always' 'Like a Girl' Campaign",
+    "prompt": "Always launched the 'Like a Girl' campaign in 2014, which redefined the phrase 'run like a girl' as empowering rather than insulting. The campaign won a Cannes Grand Prix and generated 90M YouTube views. P&G's brand manager now needs to present a full campaign evaluation to leadership. How would you evaluate its business effectiveness, and what metrics would you look at?",
+    "context": "Always holds 26% of the US feminine care market (vs. competitor Kotex at 19%). Among girls under 18, Always' brand consideration increased from 44% to 71% following the campaign. Purchase intent among mothers buying for daughters increased 19%. The campaign launched alongside product unchanged. Always' market share grew from 26% to 28% in the 18 months following the campaign. The feminine care category grew 4% in the period.",
+    "correctFrameworks": ["Ad Evaluation", "3C's"],
+    "whyThisFramework": "Ad Evaluation framework: (1) reverse-engineer the message — 'Always aligns with female empowerment' — was it credibly delivered? The Cannes win and cultural impact confirm yes. (2) Evaluate delivery effectiveness: 90M views, brand metrics lift. (3) Assess business outcomes: share grew 2 points = approximately $160M in incremental revenue. 3C's validates that the competitive framing (vs. Kotex) was sound.",
+    "keyConsiderations": [
+      "The message was purpose-driven but earned a business result — 2-share-point gain is significant",
+      "Brand consideration among teens (future lifetime buyers) is a long-term strategic win",
+      "Creative bravery was rewarded — the campaign reframed cultural language, not just product benefits",
+      "Success metrics beyond sales: cultural impact, PR value, award credibility all build equity"
+    ],
+    "difficulty": "easy",
+    "clarifyingQuestions": [
+      "How should we attribute the 2-share-point gain — entirely to the campaign, or also to distribution changes or trade promotions during the period?",
+      "Is the primary success metric brand equity (awareness, consideration) or pure sales/share growth — since the campaign seems to have achieved both?",
+      "Should we evaluate this campaign on its 18-month results, or does the long-term investment in teen consideration (ages under 18) require a longer measurement window?",
+      "How does Always define 'category growth' — unit volume or dollar value — given the 4% category growth in the period?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Message Effectiveness",
+        "subIssues": [
+          "Was 'Like a Girl' as empowerment the right message for Always to own credibly?",
+          "Did the campaign's purpose-driven message align with Always' product category and brand position?",
+          "Was the emotional insight — that puberty damages girls' confidence — relevant to Always' core buyer?"
+        ]
+      },
+      {
+        "block": "Reach & Delivery Metrics",
+        "subIssues": [
+          "Did the 90M YouTube views reach the intended audience — teen girls and mothers?",
+          "Did the Cannes Grand Prix amplify credibility with media buyers and retail partners?",
+          "Was the earned media coverage proportionate to the paid media investment?"
+        ]
+      },
+      {
+        "block": "Business Outcomes",
+        "subIssues": [
+          "Did share grow, and by how much in absolute dollar terms?",
+          "Was the share gain organic (incremental buyers) or defensive (retained at-risk buyers)?",
+          "Did the campaign drive disproportionate gains among teens — the future lifetime value cohort?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Evaluate the strategic message choice",
+        "detail": "Always chose to connect to female empowerment at a category-defining moment — puberty. This is a genuine brand truth: Always is there for girls at their most vulnerable moment. The message 'Like a Girl = strength' is credible from Always in a way it wouldn't be from a snack brand. Message-category fit is excellent."
+      },
+      {
+        "step": 2,
+        "title": "Assess delivery effectiveness",
+        "detail": "90M YouTube views plus Cannes Grand Prix equals exceptional delivery. Cultural penetration — the phrase 'like a girl' was permanently reclaimed — is a rare campaign outcome. The earned media value of this cultural moment far exceeds any paid media investment. Delivery grade: exceptional."
+      },
+      {
+        "step": 3,
+        "title": "Quantify the business outcome",
+        "detail": "Market share moved from 26% to 28% in 18 months — a 2-point gain in a $8B category = approximately $160M in incremental annual revenue. The feminine care category grew 4% overall, so Always' gain exceeds category growth, meaning it took share from competitors (primarily Kotex, at 19%)."
+      },
+      {
+        "step": 4,
+        "title": "Evaluate the long-term equity investment",
+        "detail": "Brand consideration among girls under 18 jumped from 44% to 71% — a 27-point gain in the future lifetime buyer cohort. If these girls remain Always customers for 30+ years, the LTV of that cohort is worth multiples of the campaign's media spend. This is the most important metric for a feminine care brand."
+      },
+      {
+        "step": 5,
+        "title": "Deliver a clear verdict",
+        "detail": "The campaign is a clear success on all dimensions: message credibility, delivery reach, short-term share gain, and long-term equity investment in the next generation of buyers. The only risk to flag: maintaining campaign relevance over time — purpose-driven campaigns can become formulaic if not evolved. Recommend extending the platform with fresh executions rather than repeating the original."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Brand Consideration",
+        "definition": "The percentage of target buyers who would consider purchasing a brand — a leading indicator of future sales; Always' teen consideration jumped 27 points to 71%"
+      },
+      {
+        "term": "Share of Market (SOM)",
+        "definition": "A brand's percentage of total category sales; Always grew from 26% to 28% share — a 2-point gain worth approximately $160M in annual incremental revenue"
+      },
+      {
+        "term": "Purpose-Driven Marketing",
+        "definition": "Advertising that connects a brand to a social value or cause beyond product benefits; 'Like a Girl' was purpose-driven because it addressed female confidence at puberty — a real tension the brand's category is adjacent to"
+      },
+      {
+        "term": "Lifetime Value (LTV) Cohort",
+        "definition": "The long-term revenue from a group of buyers acquired at the same time; teen girls recruited as Always buyers at age 13-17 represent 30+ years of purchase loyalty — making the consideration gain among under-18s the highest-value metric in this campaign"
+      },
+      {
+        "term": "Earned Media",
+        "definition": "Organic press coverage, social sharing, and cultural conversation generated by a campaign without additional paid distribution; the 'Like a Girl' cultural moment generated earned media far exceeding the paid campaign investment"
+      }
+    ],
+    "interviewerExpectations": "A strong answer correctly identifies the teen consideration metric as the most strategically important result — not just the share gain — and frames the campaign as a long-term equity investment in addition to a short-term sales win. A weak answer focuses only on the Cannes award and YouTube views without calculating the revenue impact of the 2-share-point gain or identifying the LTV implications of the teen consideration lift.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "I'm going to evaluate this campaign on three dimensions: was the message right for Always to own, was it delivered effectively, and what were the business outcomes — both short-term share and long-term equity? I'll use the ad evaluation framework to structure this, and I'll bring in 3C's to check the competitive framing. My thesis going in: this campaign succeeded on all three dimensions, which is rare — and I want to be precise about what 'success' means in dollar terms."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two questions before I begin. First — should I attribute the full 2-share-point gain to the campaign, or are there confounding factors like distribution gains or promotions during the same period? For now, I'll assume it was primarily campaign-driven and flag if I need to hedge. Second — is leadership most interested in the short-term business results, the long-term brand equity play, or both? I'll cover both since they tell different stories."
+      },
+      {
+        "label": "Step 1 — Message Credibility",
+        "script": "Start with the message: 'Always aligns with female empowerment by reclaiming the phrase Like a Girl.' The critical question in purpose-driven campaigns is whether the brand has the right to own the message. Always absolutely does. This is a brand that is with girls at their most vulnerable moment — the beginning of puberty. The insight that confidence drops dramatically in girls at that age is both true and directly adjacent to the category occasion Always serves. The message is credible in a way that it wouldn't be from, say, a snack brand running a female empowerment campaign. Message-category fit: excellent."
+      },
+      {
+        "label": "Step 2 — Delivery Effectiveness",
+        "script": "On delivery: 90 million YouTube views plus a Cannes Grand Prix. But more importantly, the campaign achieved something very rare — it permanently changed cultural language. The phrase 'like a girl' has been reclaimed in everyday conversation, in media, in sports commentary. That level of cultural penetration is nearly impossible to buy with paid media. The earned media value — press coverage, social sharing, cultural commentary — likely dwarfs the paid campaign investment. Delivery: exceptional."
+      },
+      {
+        "label": "Step 3 — Business Outcomes",
+        "script": "Now the financial results. Market share grew from 26% to 28% in 18 months — that's 2 points of share. The US feminine care category is approximately $8 billion. Two points of share equals approximately $160 million in incremental annual revenue. The category also grew 4% in this period, meaning Always' gain exceeds category growth — it took share from competitors, not just rode the category tide. The most likely donor: Kotex, which sits at 19% share. A $160 million revenue contribution from a single campaign platform is a strong business result."
+      },
+      {
+        "label": "Step 4 — Long-Term Equity: The Teen Cohort",
+        "script": "But here's the metric I'd actually lead with in the leadership presentation: brand consideration among girls under 18 jumped from 44% to 71% — a 27-point gain. Why is this the most important number? Because a girl who forms brand loyalty to Always at age 14 is likely to remain a customer for 30-plus years. At an average annual spend of, let's say, $50, that's $1,500 in lifetime value per acquired teen. The consideration gain of 27 points across millions of teenage girls represents a future revenue asset worth potentially hundreds of millions in LTV — which makes the campaign's media investment look modest by comparison."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "Verdict: this campaign is an unqualified success across all dimensions. Message credibility is high, delivery is exceptional, short-term share gained $160 million in incremental annual revenue, and the long-term teen equity investment may be the most valuable outcome of all. The one risk I'd flag for leadership: purpose-driven platforms can become formulaic if recycled without evolution. 'Like a Girl' worked because it felt surprising and genuine in 2014. Future executions must evolve the platform rather than repeat it, or it will feel performative. My recommendation is to extend the platform with fresh creative executions — new settings, new athletes, new moments — rather than retreating to product-benefit advertising that would abandon the equity built."
+      }
+    ]
+  },
+  {
+    "id": "scenario_049",
+    "type": "Product/Advertising Evaluation",
+    "company": "Dove (Unilever)",
+    "title": "Evaluating Dove's 'Real Beauty' Campaign Longevity",
+    "prompt": "Dove's 'Real Beauty' campaign launched in 2004 and is now 20 years old. Unilever's board is questioning whether the campaign has run its course, noting that Dove's US market share in body wash has declined from 17% to 14% over the past four years despite continued 'Real Beauty' advertising. A challenger brand (Native, at 8% share) is growing 18% annually. Should Unilever refresh, extend, or retire 'Real Beauty'?",
+    "context": "Dove's brand equity scores on 'stands for something meaningful' remain high (81% agree) but 'brand feels fresh and current' has declined from 74% to 61% in four years. Gen Z (18-26) shows 38% lower Dove brand affinity than Millennials. Native's success is driven by ingredient transparency and DTC model. Dove's Real Beauty messaging still resonates strongly with 35-55 year old women. Unilever has invested $60M annually in Real Beauty advertising.",
+    "correctFrameworks": ["Ad Evaluation", "3C's", "STP"],
+    "whyThisFramework": "Ad Evaluation diagnoses the campaign: message (empowering authentic beauty) is still resonating with core 35-55 consumers, but delivery is failing with Gen Z — they find it dated or preachy. 3C's identifies Native as the competitive threat with a different value proposition (ingredients > body image). STP asks whether Dove needs to segment its messaging by generation rather than a single universal Real Beauty narrative.",
+    "keyConsiderations": [
+      "20-year campaigns can win loyalty among core users but fail to recruit next-generation buyers",
+      "Gen Z cares about ingredients and sustainability more than body image empowerment — different insight needed",
+      "The campaign itself is not failing; it is aging out of relevance with new entrants",
+      "Strategic options: segment messaging (Real Beauty for 35+, ingredient-led for Gen Z), or refresh platform entirely"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is Dove's 3-point share loss driven by losing existing buyers to competitors, or by failing to recruit new Gen Z buyers as they enter the category?",
+      "Does Unilever's $60M annual Real Beauty budget cover all body wash advertising, or is there additional product/ingredient-focused media running alongside the brand platform?",
+      "What is Native's price positioning relative to Dove — is the share loss a value trade-down or a premium trade-up?",
+      "Has Dove tested any ingredient-focused or sustainability-led messaging with Gen Z, or has the entire brand voice been 'Real Beauty' for the past 20 years?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Campaign Performance by Segment",
+        "subIssues": [
+          "Is 'Real Beauty' still resonating with Dove's core 35-55 consumer, and driving purchase retention?",
+          "Is 'Real Beauty' failing to recruit Gen Z buyers, and why specifically?",
+          "Is the campaign's message being delivered in the channels Gen Z actually uses?"
+        ]
+      },
+      {
+        "block": "Competitive Threat Diagnosis",
+        "subIssues": [
+          "Is Native winning on a different value proposition (ingredients, sustainability) rather than competing on body image messaging?",
+          "Are Dove's share losses concentrated among younger buyers who skew toward Native?",
+          "Can Dove address the Native threat within 'Real Beauty' or does it require a new platform?"
+        ]
+      },
+      {
+        "block": "Strategic Response Options",
+        "subIssues": [
+          "Should Dove segment messaging — maintain 'Real Beauty' for 35-55, launch an ingredient-led platform for Gen Z?",
+          "Should Dove refresh 'Real Beauty' with Gen Z-relevant executions while keeping the platform?",
+          "Should Dove retire 'Real Beauty' and build an entirely new brand platform for the next decade?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Diagnose whether the campaign or the strategy is the problem",
+        "detail": "Separate the question: is 'Real Beauty' failing (wrong message) or aging (right message for the wrong segment)? Data shows it still resonates at 81% on 'stands for something meaningful' — so the message is not wrong. But 'brand feels fresh' dropped 13 points, and Gen Z affinity is 38% lower than Millennials. The platform is correct; the targeting and execution are the problem."
+      },
+      {
+        "step": 2,
+        "title": "Apply STP: is Dove trying to be all things to all women?",
+        "detail": "A 20-year-old campaign that was built on Millennial and Gen X insights is now running to Gen Z with the same message. STP asks: who is the target, what do they want, and how is Dove positioned against that need? Gen Z wants ingredient transparency and sustainability — not a body image conversation. Real Beauty doesn't speak to that."
+      },
+      {
+        "step": 3,
+        "title": "Analyze the Native threat through 3C's",
+        "detail": "Native (8% share, 18% growth) is winning on a completely different value proposition: ingredient clarity ('no parabens, no sulfates'), DTC transparency, and sustainability ethos. This is not a Real Beauty vs. Real Beauty competition — it's an entirely different conversation. Dove cannot out-Native Native with Real Beauty messaging."
+      },
+      {
+        "step": 4,
+        "title": "Build the strategic options and evaluate",
+        "detail": "Three options: (1) Retire Real Beauty — highest risk, destroys equity with loyal 35-55 core; (2) Segment messaging — maintain Real Beauty for 35-55, launch an ingredient-transparency platform for Gen Z under the Dove masterbrand; (3) Refresh Real Beauty executions for Gen Z channels (TikTok, Instagram) while keeping the brand theme. Option 2 is most defensible: protect core equity while recruiting the next generation."
+      },
+      {
+        "step": 5,
+        "title": "Recommend with investment allocation",
+        "detail": "Recommend Option 2 with a 60/40 budget split: $36M maintaining Real Beauty for the core 35-55 segment, $24M launching an ingredient-transparency and sustainability platform for Gen Z. Measure Gen Z trial and consideration at 12 months. Do not retire Real Beauty — the equity score of 81% for 'stands for something meaningful' is too valuable to abandon."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Brand Platform Longevity",
+        "definition": "How long a campaign idea remains effective before it becomes either dated or so familiar it loses impact; 'Real Beauty' at 20 years is one of the longest-running brand platforms in CPG history"
+      },
+      {
+        "term": "Generational Equity Gap",
+        "definition": "The difference in brand affinity between younger and older cohorts; Dove's 38% Gen Z affinity gap vs. Millennials signals a recruitment failure that compounds as older loyalists age out of the category"
+      },
+      {
+        "term": "Ingredient-Led Marketing",
+        "definition": "Brand positioning built on product formula transparency ('no parabens, sulfate-free, naturally derived') rather than emotional or social benefit; Native's primary competitive weapon against Dove"
+      },
+      {
+        "term": "Brand Segmentation",
+        "definition": "Running distinct messages to different consumer segments under the same masterbrand; the recommended strategy for Dove — Real Beauty for 35-55, ingredient-transparency for Gen Z"
+      },
+      {
+        "term": "Masterbrand",
+        "definition": "The overarching parent brand (Dove) under which different product lines or messaging platforms exist; maintaining masterbrand equity while evolving segment messaging is the core strategic challenge"
+      }
+    ],
+    "interviewerExpectations": "A strong answer clearly distinguishes between the campaign message failing and the campaign aging out of relevance with a new generation, proposes a concrete segmentation strategy, and does not simply say 'retire' or 'keep' without reasoning. A weak answer treats the 3-point share loss as proof the campaign has failed without diagnosing whether Gen Z recruitment or existing buyer defection is the driver.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I recommend retiring, refreshing, or extending, I want to separate two questions: is Real Beauty the wrong message, or is it the right message aging out of relevance with a new generation of buyers? Those have very different strategic responses. I'll use ad evaluation to diagnose the campaign's performance by segment, STP to understand whether Dove is trying to be all things to all women, and 3C's to understand the Native competitive threat specifically. Ready?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Three questions. First: is Dove's 3-point share loss driven by existing buyers leaving, or by failing to recruit Gen Z as they enter the category? The distinction matters — retention and acquisition require different fixes. Second: has Dove tested any ingredient-focused messaging with Gen Z, or has the entire brand been 'Real Beauty' for 20 years? Third: is Native winning on price, ingredients, or both — because if it's a value trade-down, that's a different problem than a premium trade-up."
+      },
+      {
+        "label": "Step 1 — Is Real Beauty Failing or Aging?",
+        "script": "Let me start with the data. Dove's 'stands for something meaningful' score is still 81% — that is an exceptionally strong equity score for any brand after 20 years. The message is not broken. But 'brand feels fresh and current' dropped from 74% to 61% in four years, and Gen Z affinity is 38% below Millennials. That tells me Real Beauty is not a failed campaign — it's an aging campaign. It built profound equity with its original audience and is now failing to recruit the next generation. The campaign itself is correct; the targeting and channel execution are the problem."
+      },
+      {
+        "label": "Step 2 — STP: Is Dove Targeting Everyone and Reaching No One?",
+        "script": "Here's the STP issue. A campaign built on 2004 insights about Millennial and Gen X women's relationship with beauty standards is now running on TikTok to Gen Z buyers as if nothing has changed. But Gen Z's relationship with beauty is different — they care about ingredient transparency, sustainability, and brand authenticity defined by supply chain ethics, not body image. Real Beauty speaks to 'your body is beautiful as it is.' Gen Z is asking 'what's actually in this bottle?' Those are different conversations, and Dove is answering the wrong question for the younger segment."
+      },
+      {
+        "label": "Step 3 — 3C's: The Native Threat",
+        "script": "Native is at 8% share and growing 18% annually. That's a brand that will be at approximately 17% share within five years if the trajectory holds — which would match Dove today. But Native is not competing on Real Beauty's terms. Native is winning on ingredient lists: no parabens, no sulfates, naturally derived, cruelty-free. That's a completely different value proposition. Dove cannot defeat Native by running more Real Beauty campaigns. Dove needs an ingredient-transparency response — which means either a product reformulation story or a new communication platform."
+      },
+      {
+        "label": "Step 4 — Strategic Options",
+        "script": "Three options on the table. Option one: retire Real Beauty. High risk — Dove's 81% equity score on 'stands for something meaningful' is a 20-year asset you cannot recreate. Retiring it abandons the 35-55 core who still respond and still buy. I'd rule this out. Option two: refresh Real Beauty for Gen Z channels — run the same brand platform but with new executions, new talent, new formats built for TikTok and Instagram. Moderate effectiveness — Gen Z may still find the body-image conversation dated or performative regardless of format. Option three: segment the messaging. Maintain Real Beauty for the 35-55 core, invest in an ingredient-transparency and sustainability platform for Gen Z under the Dove masterbrand. Different messages, same brand. This is what I recommend."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is Option Three: segment the brand messaging. Allocate the $60 million annual budget as 60-40 — $36 million maintaining Real Beauty for the 35-55 core consumer, and $24 million launching a new Gen Z platform built on ingredient transparency, sustainability credentials, and DTC-native formats. The Gen Z platform should explicitly address the Native threat: Dove's ingredients, Dove's supply chain, Dove's commitment to no harmful chemicals. Measure Gen Z trial and brand consideration at 12 months post-launch as the success gate. Do not retire Real Beauty — an 81% equity score for 'stands for something meaningful' is irreplaceable. Evolve the brand, don't abandon it."
+      }
+    ]
+  },
+  {
+    "id": "scenario_050",
+    "type": "Product/Advertising Evaluation",
+    "company": "Nike",
+    "title": "Evaluating Nike's 'Dream Crazy' Colin Kaepernick Campaign",
+    "prompt": "Nike launched its 'Dream Crazy' campaign featuring Colin Kaepernick in September 2018. Within 48 hours of launch, #BoycottNike was trending, with videos of consumers burning Nike products. Nike's stock declined 3% on the day of launch. However, Nike's digital sales increased 31% in the week following the launch. You are Nike's CMO presenting a 6-month campaign evaluation. How do you frame this?",
+    "context": "Nike's sales in the six months following the campaign grew 10% YoY vs. 7% in the prior period. Nike's brand consideration among 15-24 year olds increased 5 points. Among consumers 45+, brand consideration declined 4 points. Nike's research shows the target of 'the next generation of athletes' (15-25 year olds) responded overwhelmingly positively. Earned media from the campaign was valued at $163M in the first week alone.",
+    "correctFrameworks": ["Ad Evaluation", "STP"],
+    "whyThisFramework": "Ad Evaluation: reverse-engineer the message — 'Believe in something, even if it means sacrificing everything' positions Nike as a brand with conviction, aligning with Gen Z/young Millennial values. Was it delivered effectively? Boycotts from an unintended audience prove it cut through. STP is the second lens: the campaign was precisely targeted at youth athletes, and for that segment, it worked measurably.",
+    "keyConsiderations": [
+      "Short-term stock decline and boycott noise are not campaign failure metrics — they are signal",
+      "The campaign succeeded for its intended target (15-25 year olds) and failed with non-targets (45+)",
+      "Earned media at $163M in week one far exceeds the paid media investment",
+      "The willingness to alienate some consumers to deeply connect with the target is the strategic insight"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is Nike's CMO presenting this as a success or is leadership genuinely uncertain — because the framing of this presentation requires knowing what narrative we're defending?",
+      "How much was the paid media investment for this campaign — because the $163M earned media comparison only makes sense with the paid budget as a reference point?",
+      "Is the 3% stock decline on launch day an isolated data point, or did Nike's stock recover and exceed pre-campaign levels within the 6-month evaluation window?",
+      "Should we isolate the Kaepernick campaign's effect on the 10% revenue growth, or is there product line momentum (Jordan Brand, new shoe launches) that is confounding the attribution?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Message Effectiveness for Target",
+        "subIssues": [
+          "Was 'Believe in something even if it means sacrificing everything' the right message for Nike to own, given its brand heritage?",
+          "Did the message resonate with the 15-25 target in measurable ways (consideration, intent, purchase)?",
+          "Was Kaepernick the right messenger — credible, admired, and relevant to the target's values?"
+        ]
+      },
+      {
+        "block": "Non-Target Reaction Management",
+        "subIssues": [
+          "Was the boycott from 45+ consumers a predictable and acceptable cost of the campaign?",
+          "Did the stock decline reflect permanent value destruction or a temporary noise reaction?",
+          "Did Nike manage the controversy in a way that deepened target loyalty rather than retreating?"
+        ]
+      },
+      {
+        "block": "Business Outcomes Attribution",
+        "subIssues": [
+          "Did 6-month revenue growth of 10% exceed baseline trend, and what portion is attributable to the campaign?",
+          "Did the 31% digital sales spike in week one convert to sustained purchase behavior?",
+          "Is the consideration gain among 15-24 year olds a durable asset or a short-term spike?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Frame the evaluation lens correctly",
+        "detail": "Open by establishing the right evaluation criteria: a campaign should be judged by its performance with the intended target, not its reception by non-targets. Nike's target was 15-25 year old athletes. All metrics should be anchored to that group. The boycott from 45+ consumers is not a campaign failure — it is evidence the campaign had sharp targeting."
+      },
+      {
+        "step": 2,
+        "title": "Evaluate message credibility",
+        "detail": "'Believe in something, even if it means sacrificing everything.' This message required Nike to actually take a position — sacrificing short-term sales with some consumers. Nike's willingness to do so made the message credible. A brand that says 'believe' but doesn't show belief is performative. Nike showed belief, which is why the target trusted it."
+      },
+      {
+        "step": 3,
+        "title": "Assess campaign delivery and earned media ROI",
+        "detail": "$163M in earned media in week one alone. The controversy was the amplification. Without the boycott noise, the campaign would have received normal media coverage. The controversy — which Nike anticipated — turned a campaign into a cultural moment. This is a sophisticated use of polarization as earned media strategy."
+      },
+      {
+        "step": 4,
+        "title": "Quantify business outcomes by segment",
+        "detail": "Target segment (15-24): brand consideration up 5 points — a durable asset. Non-target (45+): consideration down 4 points — an acceptable cost, particularly since this segment has lower lifetime value and lower athletic product purchase frequency. 6-month revenue: 10% growth vs. 7% prior period baseline = 3 points of incremental growth. Digital spike of 31% in week one shows purchase intent was immediate."
+      },
+      {
+        "step": 5,
+        "title": "Address the stock decline and close",
+        "detail": "The 3% stock decline was a one-day market reaction to controversy noise — an efficient market overreacting to social media sentiment. Present the 6-month stock recovery data (Nike stock recovered and exceeded pre-campaign levels) as evidence that the market ultimately agreed with Nike's strategic judgment. Revenue and long-term brand equity tell the real story."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Polarization as Strategy",
+        "definition": "The deliberate choice to take a position that will alienate some consumers in order to deeply connect with the intended target; Nike's Kaepernick campaign accepted 45+ consumer backlash to win deep loyalty among 15-25 year old athletes"
+      },
+      {
+        "term": "Earned Media Multiplier",
+        "definition": "The ratio of organic media coverage generated by a campaign to its paid media investment; $163M in earned media in week one vastly multiplied Nike's paid investment through controversy-driven coverage"
+      },
+      {
+        "term": "Brand Consideration",
+        "definition": "The share of a target audience that would consider purchasing a brand; Nike's 5-point gain among 15-24 year olds and 4-point loss among 45+ shows precise targeting effectiveness"
+      },
+      {
+        "term": "Short-Termism vs. Long-Term Equity",
+        "definition": "The tension between immediate sales/stock performance and durable brand equity; the Kaepernick campaign sacrificed short-term stock price for long-term positioning as the brand of the next generation of athletes"
+      },
+      {
+        "term": "STP in Campaign Evaluation",
+        "definition": "Applying Segmentation-Targeting-Positioning to assess whether a campaign served its intended segment; Nike's campaign was precisely targeted at 15-25 year olds and the metrics confirm it succeeded with exactly that group"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately reframes the 'failure' narrative by anchoring evaluation to the intended target, correctly interprets the 45+ backlash as evidence of sharp targeting rather than a problem, and translates the business outcomes into a clear ROI case. A weak answer treats the stock decline and #BoycottNike as evidence of campaign failure without distinguishing target vs. non-target reactions.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I present the 6-month results, I want to establish the right evaluation frame — because some of you will have walked in here thinking the boycott proves this was a mistake. It doesn't. A campaign should be judged by its performance with the intended target, not its reception by people who were never the target. Nike's target was the next generation of athletes: 15 to 25 year olds. Every metric I'm about to present is measured against that audience. The 45-and-over consumer reaction is a separate signal — and I'll address it, but it's not the evaluation criteria. I'll use the ad evaluation framework to assess message, delivery, and business outcomes, and I'll use STP to validate that the targeting was precise. Let's go."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two questions before I present. First — does leadership have the 6-month stock price data? The 3% launch-day decline is the metric the board fixates on, but I want to show the full recovery curve. Second — do we have the paid media investment figure, so I can calculate the earned media multiplier? $163 million in earned media in week one is the headline number, but it's even more powerful when set against the paid spend."
+      },
+      {
+        "label": "Step 1 — Was the Message Right?",
+        "script": "Let's start with the message: 'Believe in something, even if it means sacrificing everything.' This is not a product campaign — it's a values campaign. The question is whether Nike had the credibility to own a values statement. I'd argue yes, for two reasons. First, Nike's entire brand DNA is built on the athlete who pushes past limits — Just Do It. Believing in something despite sacrifice is the athletic metaphor extended to civil life. Second — and this is the critical part — Nike actually demonstrated belief by running this campaign despite knowing it would cost them something. A brand that says 'believe' but never believes itself is hollow. Nike believed, and that made the message credible to the target."
+      },
+      {
+        "label": "Step 2 — Delivery and Earned Media",
+        "script": "On delivery: $163 million in earned media in the first week alone. Let me put that in context. A typical media buy of that scale would cost Nike tens of millions in paid placements. The controversy — #BoycottNike, the burning products, the cable news coverage — didn't hurt delivery. It was the delivery. Nike anticipated that a polarizing position would generate polarizing coverage, and polarizing coverage is free media at scale. The burning shoes looked like destruction; to a 17-year-old athlete watching, it looked like adults who don't understand them proving that Nike does."
+      },
+      {
+        "label": "Step 3 — Target Segment Results",
+        "script": "Results for the intended target: 15 to 24 year olds, brand consideration up 5 points. That is a significant, durable brand equity gain in the highest-value future buyer cohort. Digital sales up 31% in the week of launch — purchase intent was immediate and expressed at the register, not just in surveys. Six-month revenue growth of 10% year-over-year versus 7% in the prior period — that's 3 points of incremental growth, and at Nike's revenue scale, 3 points is worth hundreds of millions of dollars in absolute terms."
+      },
+      {
+        "label": "Step 4 — Non-Target Reaction in Context",
+        "script": "Now the 45-plus consumer: brand consideration down 4 points. I want to be direct: this was expected, it was acceptable, and it is not a symmetric loss. The 45-plus consumer purchases athletic apparel at lower frequency and has lower long-term value to Nike's growth equation. The 15-24 year old is the buyer Nike needs to lock in for the next 30 years. Trading 4 points of consideration with the non-target for 5 points of consideration with the target is a net-positive exchange. If we had run a campaign that held flat with 45-plus and moved nothing with 15-24, that would have been the failure. As for the stock: the 3-percent launch-day decline was market noise — an overreaction to social media sentiment. The stock recovered within two weeks and exceeded pre-campaign levels within a month. The market's final verdict agrees with ours."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My six-month verdict: this campaign is a clear success by every metric that matters. Message credibility: earned. Delivery: $163M in earned media in week one. Target performance: 5-point consideration gain, 31% digital sales spike, 10% six-month revenue growth. The controversy was not collateral damage — it was the mechanism. Nike took a position, the market tested that position, and the target responded with their wallets. The recommendation going forward: do not walk this back, do not soften the brand voice, and do not chase the 45-plus consumer with follow-up campaigns that signal retreat. That would signal to the 15-24 year old that Nike's conviction was a marketing stunt. Stay the course, deepen the athlete partnership pipeline, and measure 24-month consideration trends to confirm the equity gain is compounding. This campaign will be in marketing case studies for the next 20 years — and not as a cautionary tale."
+      }
+    ]
+  }
+]

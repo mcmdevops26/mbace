@@ -1,0 +1,1274 @@
+[
+  {
+    "id": "scenario_011",
+    "type": "Shrinking Category / Market Share",
+    "company": "Kellogg's (Kellanova)",
+    "title": "Kellogg's in Declining Breakfast Cereal",
+    "prompt": "The US ready-to-eat breakfast cereal market has declined from $10.2B to $8.7B over eight years. Kellogg's holds 29% of the category (including Special K, Frosted Flakes, and Corn Flakes) but volume is down 14% despite the company holding share relatively steady. The primary driver: consumers are skipping breakfast more frequently and shifting to protein bars, Greek yogurt, and breakfast sandwiches when they do eat. What strategic options should Kellogg's pursue?",
+    "context": "Kellogg's cereal brands span kids' (Frosted Flakes), adult (Special K, Raisin Bran), and family (Corn Flakes) segments. The kids' cereal segment has been resilient, declining only 4%, while adult cereal is down 18%. Private label cereal holds 19% of the market. The average household with children eats cereal 3.1 times per week vs. 1.8 times per week for childless households.",
+    "correctFrameworks": [
+      "Market Share Matrix",
+      "STP",
+      "4P's"
+    ],
+    "whyThisFramework": "Market Share Matrix is the entry point \u2014 Kellogg's is holding share in a declining market, meaning the category is the problem. STP then segments the portfolio: kids' vs. adult have different dynamics and different strategic options. 4P's executes \u2014 different mixes for different segments, potentially including meal occasion expansion beyond breakfast.",
+    "keyConsiderations": [
+      "Kids' cereal is more defensible \u2014 target households with children as the core",
+      "Adult cereal faces competition from protein-forward alternatives \u2014 need to reformulate or reposition",
+      "Occasion expansion: cereal as a snack, as a topping, as an evening treat",
+      "Brand portfolio management \u2014 which brands to invest in vs. harvest?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is the 14% volume decline concentrated in one segment \u2014 adult, kids', or family \u2014 or spread evenly across the portfolio?",
+      "What is Kellogg's current gross margin by brand, and are kids' brands meaningfully more profitable than adult brands?",
+      "Has Kellogg's tested occasion expansion (cereal as snack, as topping) in any markets, and what were the results?",
+      "What is the private label trend \u2014 is the 19% share stable or growing, and is private label taking from adult or kids' cereal disproportionately?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Defend the resilient segments",
+        "subIssues": [
+          "Which specific kids' brands (Frosted Flakes, Froot Loops) can sustain or grow their 3.1x/week household frequency?",
+          "How do Kellogg's household-with-children brands compare on pricing and shelf presence vs. private label?",
+          "What marketing investment is needed to maintain the 4% kids' decline rate vs. the 18% adult rate?"
+        ]
+      },
+      {
+        "block": "Reposition or harvest adult brands",
+        "subIssues": [
+          "Can Special K be reformulated to 20g+ protein per serving to compete with Greek yogurt and bars?",
+          "Should Kellogg's exit low-margin adult commodity SKUs (Corn Flakes, Crispix) and harvest profitably?",
+          "What is the ROI on repositioning adult cereal for evening snacking or topping occasions?"
+        ]
+      },
+      {
+        "block": "Expand occasion beyond breakfast",
+        "subIssues": [
+          "What is the market size and pricing potential of cereal used as a snack between meals?",
+          "Can Kellogg's partner with retailers (snack aisles vs. breakfast aisles) to drive occasion expansion?",
+          "What pack sizes and price points are needed to win the snacking occasion vs. chips and granola bars?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Diagnose where the decline is concentrated",
+        "detail": "Separate the $1.5B category decline ($10.2B to $8.7B) across kids', adult, and family segments using the data provided. Adult at -18% and kids' at -4% means adult is driving most of the decline; quantify the dollar impact of each to prioritize response."
+      },
+      {
+        "step": 2,
+        "title": "Segment the portfolio with Market Share Matrix",
+        "detail": "Plot each brand on a 2x2 of category growth vs. Kellogg's brand share. Kids' brands in a slowly declining but defensible segment are 'cash cows to protect.' Adult brands in steep decline are candidates for harvest or repositioning \u2014 commit to one path per brand."
+      },
+      {
+        "step": 3,
+        "title": "Define the target consumer for each segment via STP",
+        "detail": "Households with children (3.1x/week) are the core defend target. For adult brands, identify whether the lost consumer is the 25-40 protein-seeker (reformulate toward protein) or the 50+ occasional eater (harvest at current margin). Different STP for each brand cluster."
+      },
+      {
+        "step": 4,
+        "title": "Design the 4P's response for the top two brands",
+        "detail": "For Frosted Flakes (kids' defend): Product stays the same, Price holds, Place focuses on eye-level placement in family grocery, Promotion shifts to 'family breakfast ritual' messaging. For Special K (adult reposition): Product reformulation to 18g+ protein, Price at $5.49 vs. current $4.29 to justify premium, Promotion against Greek yogurt and bars."
+      },
+      {
+        "step": 5,
+        "title": "Recommend portfolio pruning and occasion expansion",
+        "detail": "Harvest or discontinue Corn Flakes and Crispix \u2014 low margin, no differentiation from private label. Redirect those resources toward occasion expansion (snack-size bags, cereal-as-topping retail placement) where the format can attract new use cases without cannibalizing breakfast volume."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Market Share Matrix",
+        "definition": "A tool that plots a company's relative market share against category growth rate to guide invest, hold, or harvest decisions on each brand or product"
+      },
+      {
+        "term": "Occasion expansion",
+        "definition": "Growing consumption by adding new use moments (e.g., snacking, toppings) beyond the product's traditional context (breakfast), without requiring a new consumer segment"
+      },
+      {
+        "term": "Portfolio harvesting",
+        "definition": "Deliberately reducing investment in a low-growth brand to maximize short-term cash flow before eventual discontinuation \u2014 the opposite of investing to grow"
+      },
+      {
+        "term": "Private label pressure",
+        "definition": "Competition from retailer-owned store brands (e.g., Kroger cereal) that undercut on price, particularly damaging to commodity-positioned national brands with limited differentiation"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately separates the kids' and adult segments rather than treating 'cereal' as one problem, and recommends both a defend strategy (kids') and a reposition-or-harvest decision (adult). A weak answer proposes a single solution \u2014 'innovate the product' or 'increase marketing' \u2014 without acknowledging the structural category decline or portfolio tradeoffs.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I dive in, I want to make sure I understand the situation. We're looking at a $10.2B to $8.7B decline over eight years \u2014 that's about a 15% category contraction \u2014 but Kellogg's has held its 29% share. So the core problem is the category itself shrinking, not Kellogg's losing to competitors. That tells me I should use a Market Share Matrix to separate brands by growth trajectory, then STP to understand which consumer segments are leaving and why, and then 4P's to design specific responses. The key insight is that kids' cereal is down only 4% while adult cereal is down 18% \u2014 those are two completely different problems that need two different strategies. May I walk you through the framework?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few quick questions before I structure my answer. First, is the 14% volume decline roughly proportional to the overall category, or is Kellogg's disproportionately exposed to adult cereal where the decline is sharpest? Second, what's the margin profile \u2014 are kids' brands like Frosted Flakes more profitable than adult brands like Special K? And third, has Kellogg's tested any occasion expansion \u2014 like snack-size bags or cereal as a yogurt topping \u2014 in any test markets, so I can assess feasibility?"
+      },
+      {
+        "label": "Step 1 \u2014 Market Share Matrix: Segment the Portfolio",
+        "script": "Let me start with the Market Share Matrix. Kellogg's has three clusters: kids' brands like Frosted Flakes are in a slowly declining category \u2014 down only 4% \u2014 but those households eat cereal 3.1 times per week versus 1.8 times for childless households. These are the cash cows to protect. Adult brands like Special K and Raisin Bran are in a category down 18% \u2014 these are the burning platform. Family brands like Corn Flakes sit somewhere in between but face heavy private label pressure at 19% share. So my immediate recommendation is: don't manage these three clusters the same way."
+      },
+      {
+        "label": "Step 2 \u2014 STP: Define the Defend vs. Reposition Targets",
+        "script": "On the STP side, I want to segment by who we're fighting to keep. For kids' cereal, the target is households with children \u2014 they're still buying cereal 3.1 times per week, so this is a retention and penetration story. The positioning stays: fun, breakfast ritual, family bonding. For adult cereal, the consumer leaving is the 25-45 health-conscious adult who has switched to Greek yogurt, protein bars, or breakfast sandwiches. Raisin Bran and Corn Flakes can't win that fight at current specs. But Special K has brand permission to go after the protein occasion if reformulated to 18+ grams of protein per serving."
+      },
+      {
+        "label": "Step 3 \u2014 4P's: Build the Response by Brand",
+        "script": "For Frosted Flakes and kids' brands: Product stays the same \u2014 don't mess with a winner. Price holds at current levels to stay accessible. Place should focus on maintaining eye-level shelf position in family-format stores like Walmart and Kroger. Promotion shifts to reinforcing the family breakfast ritual, and I'd add occasion expansion \u2014 snack-size bags positioned in the snack aisle \u2014 because the 3.1 times per week household already loves the product. For Special K: reformulate the product to compete on protein \u2014 at least 18 grams \u2014 and raise the price to $5.49 from the current $4.29 to signal premium. Promote it against Greek yogurt and bars with a direct 'same protein, lower cost' claim."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize: this is fundamentally a category decline problem, not a Kellogg's-specific share problem. My recommendation is three-part. First, defend kids' brands aggressively \u2014 that's the most defensible 29% of Kellogg's portfolio. Second, reposition Special K as a high-protein adult breakfast competing with bars and Greek yogurt \u2014 don't try to save all adult brands, just the one with the most brand equity. Third, harvest Corn Flakes and similar commodity family brands \u2014 take the cash, reduce investment, and redeploy those dollars into occasion expansion for kids' brands and Special K's reformulation. The biggest risk is trying to save everything and investing too thinly across the portfolio. I'd recommend concentrating resources."
+      }
+    ]
+  },
+  {
+    "id": "scenario_012",
+    "type": "Shrinking Category / Market Share",
+    "company": "Mead (ACCO Brands)",
+    "title": "Mead Notebooks in a Declining Paper Category",
+    "prompt": "You are the CMO of Mead, the leading brand in the US notebooks and paper products category. The K-12 school supplies market for paper notebooks has declined 6% annually for five years as tablets and Chromebooks have become standard in US schools. Mead holds 41% of the notebook market but total category revenue has dropped from $1.4B to $1.0B. Back-to-school season (which represents 60% of Mead's annual revenue) has shown the sharpest declines. What do you recommend?",
+    "context": "Mead's research shows note-taking on paper is still preferred by 61% of college students for 'memory retention.' Adult notebook use (journaling, professional note-taking) is actually growing 8% annually, driven by the premium journaling trend. Moleskine and Leuchtturm1917 command $20-30 price points in the premium segment. Mead's Five Star brand targets students while Mead Five Star is priced at $5.99.",
+    "correctFrameworks": [
+      "3C's",
+      "STP",
+      "Market Entry Framework"
+    ],
+    "whyThisFramework": "3C's identifies the structural category decline and a growing adjacent market (premium adult journaling). Market Entry Framework evaluates whether Mead should enter the premium adult segment with existing brands or new ones. STP designs the targeting and positioning for the new growth segment \u2014 this is effectively a new market entry decision.",
+    "keyConsiderations": [
+      "K-12 decline is structural \u2014 cannot fight tablet adoption in schools",
+      "Premium adult journaling is the high-growth adjacency; Mead has manufacturing expertise",
+      "Five Star brand equity is student-oriented and may not stretch to premium adult",
+      "Could Mead acquire a premium brand rather than build? (Leuchtturm1917 model)"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "What is Mead's current gross margin on Five Star student notebooks versus what premium brands like Moleskine earn \u2014 is the profitability gap significant enough to justify pivoting resources?",
+      "Does Mead have an existing premium notebook line, or would entering the $20-30 price tier require a new product development cycle?",
+      "What is the college segment size and trajectory \u2014 the 61% paper preference among college students suggests a pocket of defense; how large is that revenue stream?",
+      "Has Mead evaluated acquiring a premium brand versus building one from scratch, and what is the budget available for M&A or organic investment?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Defend the remaining structural demand",
+        "subIssues": [
+          "What is the college student notebook market size, and is Mead winning or losing there relative to the K-12 decline?",
+          "Can Mead command a higher price from college students given the 61% paper-preference data \u2014 is there a $8-10 Five Star premium tier?",
+          "How does Mead's 41% share translate across K-12 vs. college \u2014 is one segment more defensible than the other?"
+        ]
+      },
+      {
+        "block": "Enter the growing premium adult segment",
+        "subIssues": [
+          "Can the Five Star or Mead brand credibly stretch from $5.99 student notebooks to $20-30 premium journals, or does the brand equity not transfer?",
+          "What is the build vs. buy analysis for entering the premium adult segment \u2014 can Mead acquire a Leuchtturm1917-style brand?",
+          "What channels does premium adult journaling sell through \u2014 specialty retail, DTC, Amazon \u2014 and does Mead have access to those channels?"
+        ]
+      },
+      {
+        "block": "Manage the K-12 decline profitably",
+        "subIssues": [
+          "Should Mead reduce marketing investment in K-12 and harvest the remaining volume at higher margin?",
+          "Can Mead use its 41% share position to consolidate private label manufacturing and maintain revenue as the category shrinks?",
+          "What is the exit cost of reducing K-12 focus \u2014 manufacturing footprint, retailer relationships, back-to-school promotional commitments?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the two markets",
+        "detail": "The K-12 market has fallen from $1.4B to $1.0B and is still declining at 6% annually \u2014 in five more years it's a $735M market. The premium adult journaling segment: Moleskine alone does ~$200M globally; US premium journaling growing 8% annually. Establish these sizing numbers to justify the resource allocation recommendation."
+      },
+      {
+        "step": 2,
+        "title": "Apply 3C's to the competitive landscape",
+        "detail": "Company: Mead has manufacturing scale and retailer relationships but its brand is student-positioned. Competitors: Moleskine and Leuchtturm1917 own the premium adult segment with strong brand equity. Consumer: the adult journaler is 28-45, values aesthetic and quality, shops at specialty retail and Amazon, and pays $20-30 with no hesitation. Mead is not currently positioned for this consumer."
+      },
+      {
+        "step": 3,
+        "title": "Run Market Entry Framework for premium adult",
+        "detail": "Assess attractiveness ($8% growth, $200M+ US opportunity, premium margins), feasibility (Mead has manufacturing but lacks brand credibility), and timing (the trend is established, not nascent). Entry mode decision: building a new brand takes 3-5 years; acquiring Leuchtturm1917 or a comparable brand buys immediate credibility. Recommend acquisition if budget allows, new brand if not."
+      },
+      {
+        "step": 4,
+        "title": "Design STP for the new segment",
+        "detail": "Target: adult journalers and professionals 28-45 who treat notebooks as a personal expression tool. Positioning: 'Premium craftsmanship at an accessible price' \u2014 $18-22 vs. Moleskine's $25-30, positioned as quality without pretension. Channels: specialty retail (Barnes & Noble, Paper Source), Amazon premium search, DTC subscription. Do NOT put this under the Five Star brand \u2014 create or acquire a distinct identity."
+      },
+      {
+        "step": 5,
+        "title": "Recommend harvest approach for K-12",
+        "detail": "Reduce marketing spend on K-12 by 40% over two years, focusing only on back-to-school promotional windows where Mead's scale (41% share) still drives efficient volume. Use the freed cash flow to fund the premium adult entry. Maintain private label manufacturing relationships to hold the distribution infrastructure as a revenue floor."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Market Entry Framework",
+        "definition": "A structured approach to evaluating whether and how to enter a new market: assessing attractiveness, feasibility, and entry mode (build, buy, or partner)"
+      },
+      {
+        "term": "Brand stretch",
+        "definition": "The degree to which a brand's existing equity and associations can credibly extend to a new product category or price tier \u2014 limited when the brand is strongly associated with a specific consumer or occasion"
+      },
+      {
+        "term": "Cash cow harvest",
+        "definition": "Reducing investment in a declining but still-profitable business to maximize cash extraction, typically to fund growth in a more attractive segment"
+      },
+      {
+        "term": "Back-to-school seasonality",
+        "definition": "The July-September retail window representing the peak school supply purchasing season; at 60% of Mead's annual revenue, any acceleration in K-12 decline hits cash flow disproportionately"
+      },
+      {
+        "term": "Premium adjacency",
+        "definition": "A neighboring market segment that operates at higher price points and margins, often growing while the core category declines \u2014 here, the adult journaling trend adjacent to student notebooks"
+      }
+    ],
+    "interviewerExpectations": "A strong answer recognizes that K-12 decline is structural and unwinnable, pivots to the premium adult journaling opportunity as the growth thesis, and addresses the brand-stretch problem head-on (Five Star can't go premium without a new brand). A weak answer recommends doubling down on back-to-school marketing or adding digital features to notebooks without acknowledging the structural tablet adoption shift.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is fundamentally a structural category decline problem \u2014 tablet and Chromebook adoption in K-12 is not reversible, so trying to defend the student notebook market is a losing battle. The real question is what Mead does with the cash flow it still generates from its 41% share while the market shrinks. I'll use 3C's to map the landscape, then a Market Entry Framework to evaluate the premium adult journaling adjacency, and STP to design the positioning for any new segment we enter. Let me start by sizing the two markets."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I go further \u2014 a few questions. First, what's the gross margin difference between a $5.99 Five Star notebook and what Moleskine earns on a $25 journal? That profitability gap will drive the urgency of the pivot. Second, is the college segment \u2014 where 61% still prefer paper for memory retention \u2014 separately trackable, and how is Mead performing there? And third, does ACCO Brands have appetite for M&A, or is this an organic-only conversation?"
+      },
+      {
+        "label": "Step 1 \u2014 3C's: Map the Situation",
+        "script": "Starting with 3C's. On the company side, Mead has real manufacturing scale and 41% share \u2014 that's a strong cost position \u2014 but the Five Star brand is firmly student-positioned. At $5.99, it has zero credibility at $20-30. On the competitor side, Moleskine and Leuchtturm1917 own the premium adult segment and have strong brand equity built over decades. On the consumer side, two very different people: the K-12 student buying based on price and parent purchasing \u2014 that market is structurally shrinking. And the adult journaler, 28-45, who sees a notebook as a personal expression tool and willingly pays $25 for the right product \u2014 that market is growing 8% annually."
+      },
+      {
+        "label": "Step 2 \u2014 Market Entry: Premium Adult Journaling",
+        "script": "The premium adult journaling market is attractive: 8% growth, $200M-plus US opportunity, margins likely 60%+ versus the commodity notebook margins Mead earns today. Is it feasible for Mead? Operationally yes \u2014 Mead knows how to make notebooks at scale. But brand credibility is the gap. The Five Star name does not stretch to $22 premium journals. So the entry mode question is: build a new brand, or acquire one? Building takes three to five years and risks failure in a segment where aesthetics and brand identity matter enormously. Acquiring a Leuchtturm1917-type brand buys immediate credibility. My recommendation is to pursue acquisition if the budget exists \u2014 and given Mead's 41% share in a $1B category, there's real cash flow to deploy."
+      },
+      {
+        "label": "Step 3 \u2014 STP: Design the Premium Positioning",
+        "script": "If Mead enters premium adult \u2014 either through acquisition or a new sub-brand \u2014 here's the STP. Target: adult journalers and working professionals 28-45, predominantly female, who treat notebooks as a daily ritual. Positioning: premium craftsmanship at an accessible price \u2014 call it $18-22, which undercuts Moleskine's $25-30 while clearly above Five Star's $5.99. The channel is not Walmart back-to-school \u2014 it's Barnes & Noble, Paper Source, Amazon premium tier, and a DTC subscription model. Critically, this needs its own brand identity \u2014 do NOT call it Mead Premium or Five Star Elite. Those names will kill it before launch."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is three-part. One: accept the K-12 decline as structural and reduce marketing investment there by 40% over the next two years, harvesting the cash flow from Mead's 41% share position rather than fighting for a declining market. Two: use that freed cash to fund entry into premium adult journaling \u2014 prioritize acquiring an established brand over building from scratch, as brand credibility is the key purchase driver in this segment. Three: protect the college segment, where 61% still prefer paper, as a near-term defensive play \u2014 this is addressable with a slightly upgraded Five Star at $8-10 positioned on the memory retention benefit. The risk of inaction is that Mead becomes a commodity manufacturer in a structurally declining market. The opportunity in premium adult is real and time-sensitive."
+      }
+    ]
+  },
+  {
+    "id": "scenario_013",
+    "type": "Shrinking Category / Market Share",
+    "company": "Hershey's",
+    "title": "Hershey's Losing Share to Premium Chocolate",
+    "prompt": "Hershey's holds 44% of the US chocolate confectionery market by volume but only 36% by dollar sales \u2014 a gap that has widened 6 points in five years. Premium chocolate brands (Lindt, Godiva, Ghirardelli) and craft brands have grown from 18% to 26% of dollar sales. Meanwhile, Hershey's core milk chocolate bars are essentially flat in volume. Price realization per pound has declined 4% as the company has relied on promotions. Where should Hershey's focus?",
+    "context": "The US chocolate market is $12.4B. Hershey's strong suit is mass retail distribution and impulse purchase at checkout. Premium brands over-index at specialty retail, grocery prepared foods sections, and gifting occasions. Consumer research shows 'premium' chocolate is the fastest-growing occasion among 25-40 year olds. Hershey's has the Scharffen Berger and Dagoba brands in its portfolio but has invested minimally in them.",
+    "correctFrameworks": [
+      "3C's",
+      "STP",
+      "4P's",
+      "Market Share Matrix"
+    ],
+    "whyThisFramework": "Market Share Matrix shows growing category but declining dollar share \u2014 a dangerous pattern indicating Hershey's is ceding value to competitors. 3C's and STP reveal the segment migration toward premium. 4P's addresses the strategic choice: invest in premium extensions, reposition core Hershey's, or leverage underutilized premium portfolio brands.",
+    "keyConsiderations": [
+      "Volume share \u2260 dollar share \u2014 Hershey's is winning units but losing value",
+      "Owned premium brands (Scharffen Berger, Dagoba) are underutilized assets",
+      "Impulse at checkout is a distribution moat; premium gifting is a different occasion to win separately",
+      "Promotion reliance is eroding price perception \u2014 must break the cycle"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is Hershey's volume flat because impulse checkout purchases are holding steady while at-home gifting and planned purchases are declining \u2014 can we separate by purchase occasion?",
+      "What is the current annual marketing investment in Scharffen Berger and Dagoba vs. what Lindt spends in comparable premium positioning?",
+      "What are Hershey's gross margins on the core milk chocolate bar versus what premium brands like Ghirardelli earn at their price points?",
+      "Is the promotion reliance driven by retailer pressure, competitive response, or internal sales targets \u2014 what's causing the 4% price realization decline?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Protect the core volume and margin",
+        "subIssues": [
+          "Can Hershey's reduce promotion frequency while holding volume at checkout \u2014 what is the price elasticity of impulse purchase?",
+          "What is the minimum marketing investment needed to maintain 44% volume share against private label and value competitors?",
+          "Is the 4% price realization decline driven by mix shift or by Hershey's own promotional discounting?"
+        ]
+      },
+      {
+        "block": "Capture the premium dollar opportunity",
+        "subIssues": [
+          "Should Hershey's invest in Scharffen Berger and Dagoba to compete at the $5-8 bar price point in specialty and gifting channels?",
+          "Can Hershey's extend the core Hershey's brand (e.g., Hershey's GOLD, dark chocolate extensions) upward without diluting the mass-market equity?",
+          "What channel strategy is required \u2014 specialty retail, Amazon gifting, grocery premium sections \u2014 to reach the 25-40 premium buyer?"
+        ]
+      },
+      {
+        "block": "Win the gifting occasion",
+        "subIssues": [
+          "What is the size of the chocolate gifting occasion \u2014 Valentine's, Mother's Day, holiday \u2014 and what is Hershey's current dollar share vs. Godiva and Lindt?",
+          "Can Scharffen Berger be repositioned as a gifting brand with premium packaging and seasonal assortments?",
+          "What is the investment required to build gifting-occasion distribution at Nordstrom, specialty grocers, and DTC?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Diagnose the volume/dollar share gap",
+        "detail": "Hershey's holds 44% volume share but only 36% dollar share \u2014 an 8-point gap \u2014 which means Hershey's products are priced below the category average. Premium brands (18% to 26% dollar share growth) are commanding 2-3x the price per pound. Quantify: if Hershey's average price per pound is $3.50 and Lindt is $7.00, Hershey's is leaving enormous per-unit revenue on the table in segments where it could compete."
+      },
+      {
+        "step": 2,
+        "title": "Apply Market Share Matrix by segment",
+        "detail": "Map Hershey's three zones: impulse/convenience (checkout bars) \u2014 holding share, stable margin; everyday household (pantry stock) \u2014 losing to private label; premium/gifting \u2014 virtually absent despite owning Scharffen Berger and Dagoba. The strategic imperative comes from identifying which zone can grow revenue fastest with the least cannibalization."
+      },
+      {
+        "step": 3,
+        "title": "Use 3C's to assess the premium opportunity",
+        "detail": "Company: Hershey's has Scharffen Berger (high-quality dark chocolate, origin-focused) and Dagoba (organic) \u2014 both have premium credentials but minimal marketing investment. Competitors: Lindt, Ghirardelli, and Godiva have distribution in mass retail premium sections and gifting. Consumer: 25-40 year old premium buyer, values origin story, packaging, and gifting experience. Hershey's could compete authentically through its owned brands."
+      },
+      {
+        "step": 4,
+        "title": "Design the 4P's for Scharffen Berger activation",
+        "detail": "Product: relaunch Scharffen Berger with origin-forward packaging, higher cacao percentage options ($6-9 bar). Price: position at $7-8 per bar, 20% below Godiva gifting but above Lindt Lindor. Place: specialty grocery premium sections, Whole Foods, DTC subscription gifting, Amazon premium. Promotion: 'The chocolate maker inside Hershey's' \u2014 leverage heritage story, independent of the Hershey's mass brand."
+      },
+      {
+        "step": 5,
+        "title": "Address the promotion dependency for core bars",
+        "detail": "Reduce promotional depth on Hershey's milk chocolate bars by shifting to value-added bundles (multipack, seasonal assortments) rather than price cuts. This maintains volume while improving price realization. The 4% price realization decline should target a 2-point recovery within 18 months by replacing 30% of promotional events with bundle events."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Volume share vs. dollar share",
+        "definition": "Volume share measures units sold; dollar share measures revenue. A gap where volume share exceeds dollar share means a brand's products are priced below the category average \u2014 the brand is winning the 'cheap' consumers but losing value to premium competitors"
+      },
+      {
+        "term": "Price realization",
+        "definition": "The actual average price received per unit after accounting for discounts, promotions, and coupons \u2014 a decline in price realization indicates over-reliance on price promotions to drive volume"
+      },
+      {
+        "term": "Portfolio utilization",
+        "definition": "The degree to which a company actively markets and invests in all brands it owns \u2014 Hershey's 'underutilized' Scharffen Berger and Dagoba are assets sitting dormant"
+      },
+      {
+        "term": "Impulse purchase",
+        "definition": "An unplanned purchase driven by in-store placement (checkout lanes, end caps) rather than a pre-planned shopping list \u2014 Hershey's checkout distribution is a structural moat that premium brands cannot easily replicate"
+      }
+    ],
+    "interviewerExpectations": "A strong answer separates the volume/dollar share dynamic immediately and identifies Scharffen Berger and Dagoba as underutilized owned assets \u2014 demonstrating that Hershey's doesn't need to build a new brand to compete in premium. A weak answer recommends 'launching a premium Hershey's line' without acknowledging the brand equity risk of moving Hershey's upmarket, or focuses only on marketing spend increases without addressing the structural pricing and promotion issues.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "The critical data point in this case is the 44% volume share versus 36% dollar share \u2014 and the fact that gap has widened 6 points in five years. That tells me Hershey's is winning the volume game but losing the value game, and the trend is accelerating. I'll use Market Share Matrix to understand which segments are at risk, 3C's to assess the competitive premium landscape, and 4P's to design the response. The question I want to answer is: should Hershey's try to take its core brand upmarket, or does it have other assets it can deploy?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Quick questions before I go further. First, what's the actual revenue from Scharffen Berger and Dagoba today \u2014 I want to know how dormant these assets really are. Second, is Hershey's checkout volume holding because of retailer contracts, or is it genuinely a consumer loyalty play \u2014 that distinction matters for how defensible it is. And third, what's driving the 4% price realization decline \u2014 is that Hershey's choice, or retailer pressure forcing the promotions?"
+      },
+      {
+        "label": "Step 1 \u2014 Market Share Matrix: Three Zones",
+        "script": "Let me segment Hershey's situation into three zones. Zone one is impulse and convenience \u2014 checkout bars, grab-and-go, gas stations. Hershey's dominates here at 44% volume share and this is structurally defensible because premium brands cannot win at checkout the way Hershey's can. Zone two is everyday household pantry \u2014 this is where private label is gaining and where Hershey's is most vulnerable on price. Zone three is premium and gifting \u2014 this is growing from 18% to 26% of dollar sales, and Hershey's is essentially absent despite owning Scharffen Berger and Dagoba. That third zone is the opportunity."
+      },
+      {
+        "label": "Step 2 \u2014 3C's: The Premium Opportunity",
+        "script": "On the 3C's analysis: on the company side, Hershey's has two premium brands \u2014 Scharffen Berger, known for high-cacao single-origin dark chocolate, and Dagoba, which is organic. Both have genuine premium credentials, but Hershey's has invested minimally in them. On the competitor side, Lindt, Ghirardelli, and Godiva are winning the $5-10 bar and gifting occasion. On the consumer side, the 25-40 premium buyer is growing the fastest and pays 2-3x the per-pound price of a standard Hershey's bar. The strategic opportunity is clear: Hershey's already owns the brands it needs. This is a marketing and channel investment problem, not an innovation problem."
+      },
+      {
+        "label": "Step 3 \u2014 4P's: Activate Scharffen Berger",
+        "script": "My recommendation for the premium play: relaunch Scharffen Berger as Hershey's premium answer. On Product, focus on origin-forward single-origin bars at 70-85% cacao, with packaging that emphasizes craft and origin story \u2014 priced at $7 to $8 per bar. On Price, position 20% below Godiva gifting but clearly above Lindt Lindor, creating an accessible premium entry point. On Place, target Whole Foods, specialty grocery premium sections, Amazon gifting, and a DTC subscription for the gifting occasion. On Promotion, lead with 'the chocolate maker behind Hershey's' \u2014 use the Hershey's heritage credibly without making this a mass-market Hershey's product. Keep the brands separate in consumers' minds."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To close: Hershey's has three priorities. One, stop the promotional bleeding on core bars \u2014 reduce promo depth by shifting to multipack bundles to recover at least 2 points of the 4% price realization decline over 18 months. Two, activate Scharffen Berger immediately \u2014 this is the fastest path to premium dollar share because the asset already exists, the brand has authentic credentials, and the consumer segment is growing. Three, protect checkout dominance as the structural moat \u2014 don't try to move Hershey's bars upmarket, because the impulse purchase equity is genuinely valuable and mass retail is where Hershey's wins. The biggest mistake would be either diluting the Hershey's core brand by calling it 'Hershey's Premium' or continuing to let Scharffen Berger sit dormant while Lindt takes the growing dollar opportunity."
+      }
+    ]
+  },
+  {
+    "id": "scenario_014",
+    "type": "Competitive Threat",
+    "company": "Gatorade (PepsiCo)",
+    "title": "Gatorade vs. BODYARMOR",
+    "prompt": "Gatorade holds 69% of the US sports drink market. BODYARMOR, acquired by Coca-Cola in 2021 for $5.6B, has grown from 4% to 16% market share over four years, primarily by positioning as 'more natural, more coconut water, less artificial' and signing elite athlete endorsers (Patrick Mahomes, Naomi Osaka). Gatorade has relied on its NFL and NBA league deals. BODYARMOR is now Gatorade's #1 loss of trial source in consumer research. What should Gatorade do?",
+    "context": "The US sports drink market is $8.7B and growing 6% annually. Gatorade's core equity is rooted in science ('The Science Behind Sweat') and broad athlete performance. BODYARMOR's positioning as a 'cleaner' product resonates with the health-conscious younger consumer. Gatorade has launched Gatorade Zero (sugar-free) and Fast Twitch (caffeinated) to extend the portfolio. BODYARMOR's retail distribution has expanded to 85% of US outlets.",
+    "correctFrameworks": [
+      "3C's",
+      "4P's",
+      "STP"
+    ],
+    "whyThisFramework": "3C's maps the competitive threat clearly \u2014 a well-funded challenger with Coke's distribution muscle and a differentiated positioning. STP identifies whether Gatorade's target consumer is being directly poached or if BODYARMOR is growing the category with new users. 4P's drives the response, likely in Product (clean label reformulation) and Promotion (athlete portfolio).",
+    "keyConsiderations": [
+      "BODYARMOR has Coke's distribution \u2014 this is not a scrappy startup anymore",
+      "The 'natural' and 'clean label' trend is structural, not a fad",
+      "Gatorade's league deals provide unmatched scale but may not translate to individual athlete authenticity",
+      "Gatorade Zero and Fast Twitch show portfolio expansion instinct \u2014 right direction, right execution?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is BODYARMOR's 12-point share gain coming from converting existing Gatorade users, or from growing the overall sports drink category among previously non-drinking health consumers?",
+      "What is the age and demographic profile of Gatorade's current user base versus BODYARMOR's \u2014 is there a specific cohort (e.g., 18-25) where trial loss is highest?",
+      "What has been the performance of Gatorade Zero and Fast Twitch on trial, repeat, and market share \u2014 are these extensions gaining traction or flatl?",
+      "Does Gatorade have the ability to reformulate its core product to remove artificial dyes and sweeteners, or does the current formula have technical performance constraints?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Defend Gatorade's core positioning and users",
+        "subIssues": [
+          "Is the 'Science Behind Sweat' performance positioning still compelling to Gatorade's core 16-35 male athlete consumer, or has clean-label become the new credibility signal?",
+          "Can Gatorade reformulate to remove artificial dyes without undermining its efficacy story \u2014 and what does that reformulation cost at scale?",
+          "How should Gatorade respond to BODYARMOR's individual athlete endorsers \u2014 counter-sign more athletes or double down on the authenticity of league-scale performance?"
+        ]
+      },
+      {
+        "block": "Expand the portfolio to address clean-label demand",
+        "subIssues": [
+          "Should Gatorade create a new sub-brand (not called Gatorade) positioned on clean-label ingredients to compete directly with BODYARMOR?",
+          "Is Gatorade Zero the right vehicle to capture the health-conscious consumer, or does it need a separate natural-positioned line?",
+          "What price premium can a clean-label Gatorade variant command, and does the margin profile support the investment?"
+        ]
+      },
+      {
+        "block": "Leverage distribution and scale advantages",
+        "subIssues": [
+          "Gatorade has PepsiCo's distribution \u2014 can it lock up key distribution channels or shelf positions that limit BODYARMOR's 85% outlet expansion?",
+          "Can Gatorade use stadium and event exclusivity (leveraging NFL and NBA deals) to limit BODYARMOR's sampling and trial at high-visibility events?",
+          "What retailer partnerships can Gatorade activate to maintain premium placement against BODYARMOR's growing shelf presence?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Assess the threat accurately via 3C's",
+        "detail": "BODYARMOR is no longer a startup \u2014 it's Coca-Cola's strategic asset with $5.6B acquisition price and full Coke distribution at 85% US outlets. This is a Category 1 competitive threat. Gatorade lost 12 share points in four years; at the current trajectory, BODYARMOR could reach 25-30% share within three years. This is an existential threat to Gatorade's category dominance, not a nuisance competitor."
+      },
+      {
+        "step": 2,
+        "title": "Segment who is switching via STP",
+        "detail": "Determine if BODYARMOR's trial is coming from: (a) existing Gatorade users 18-35 attracted to clean-label, or (b) new sports drink consumers entering the category through BODYARMOR. If (a), the threat is direct substitution and requires Gatorade to respond on the clean-label dimension. If (b), the category is growing and BODYARMOR is expanding it. The consumer research shows BODYARMOR is Gatorade's #1 loss of trial source \u2014 this is direct substitution."
+      },
+      {
+        "step": 3,
+        "title": "Design the product response",
+        "detail": "The clean-label trend is structural. Gatorade must address it in product. Option A: reformulate the core Gatorade product to remove artificial dyes (Red 40, Yellow 5) \u2014 technically feasible, though costly at scale. Option B: aggressively invest in Gatorade Zero as a cleaner-label alternative and position it as performance without sugar. Option C: create a new sub-brand outside the Gatorade architecture. Recommend Option A + B: reformulate core and amplify Zero with clean-label messaging."
+      },
+      {
+        "step": 4,
+        "title": "Reframe the promotion and athlete strategy",
+        "detail": "BODYARMOR wins on individual athlete authenticity (Mahomes, Osaka). Gatorade's league deals provide mass reach but less personal endorsement credibility. Gatorade should sign 3-4 generational athlete faces \u2014 athletes with 10+ year career windows \u2014 who can carry the brand's science-first story in a personal way. Simultaneously, shift 30% of the promotion budget from league-level TV to social/digital where individual athlete content performs."
+      },
+      {
+        "step": 5,
+        "title": "Activate distribution moat",
+        "detail": "PepsiCo's distribution advantage means Gatorade can negotiate for premium shelf position, cooler exclusivity, and promotional priority at retail. Use this window \u2014 before BODYARMOR's distribution reaches 95%+ \u2014 to lock in multi-year shelf position agreements with top-10 retail chains. The leverage is PepsiCo's full portfolio relationship with retailers (Pepsi, Mountain Dew, etc.), not just Gatorade alone."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Loss of trial source",
+        "definition": "In brand research, the competitor a consumer names when they switch away from your product at first purchase \u2014 being the #1 loss of trial source means BODYARMOR is the primary destination when consumers leave Gatorade"
+      },
+      {
+        "term": "Clean-label positioning",
+        "definition": "A product strategy built on removing artificial ingredients, colors, and sweeteners \u2014 appeals to health-conscious consumers who read labels and value 'natural' credentials over performance specifications"
+      },
+      {
+        "term": "Distribution parity",
+        "definition": "When a challenger brand achieves the same retail outlet coverage as the market leader \u2014 at 85% US outlets, BODYARMOR is approaching parity and losing distribution as a natural barrier"
+      },
+      {
+        "term": "Portfolio architecture",
+        "definition": "The intentional structure of a company's brand and product lineup to serve different consumer needs \u2014 Gatorade's Zero and Fast Twitch extensions represent portfolio expansion to cover more occasions"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately identifies that BODYARMOR is now a Coke-backed threat (not a DTC startup) and addresses both the product dimension (clean-label) and the consumer segmentation question (who is switching). A weak answer treats this as a marketing spend problem \u2014 'Gatorade should advertise more' \u2014 without acknowledging the structural clean-label trend or the product reformulation needed to compete authentically.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I structure this, I want to flag something important: BODYARMOR is not a scrappy DTC startup anymore. Coke paid $5.6 billion for it in 2021, which means this is a direct, well-resourced, strategic attack on Gatorade's category dominance. With BODYARMOR at 16% and growing from 4% in four years \u2014 that's a 12-point swing \u2014 Gatorade is in a genuine Category 1 threat situation. I'll use 3C's to map the competitive dynamics, STP to understand who is actually switching, and 4P's to design the response. Let me start with the most important strategic question: is BODYARMOR converting Gatorade's users, or is it growing the category?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few questions I'd want answered. First, the research shows BODYARMOR is the number one loss of trial source \u2014 can we confirm whether that's 18-25 year olds disproportionately, because that's the cohort that would signal a long-term loyalty problem? Second, what has the performance been on Gatorade Zero specifically \u2014 trial, repeat, and share \u2014 because that product might already be the right answer if we're not behind it adequately? And third, what is the technical feasibility of removing artificial dyes from the core Gatorade formula without changing the taste or electrolyte profile?"
+      },
+      {
+        "label": "Step 1 \u2014 3C's: Map the Threat",
+        "script": "On the 3C's. Company: Gatorade has 69% share, PepsiCo distribution, NFL and NBA exclusivity, and a brand built on science and performance. These are real moats. Competitor: BODYARMOR has Coke's distribution at 85% of US outlets, Mahomes and Osaka on a personal endorsement level that league deals can't replicate, and a clean-label positioning that is structurally resonant with how consumers read labels today. Consumer: the health-conscious 18-35 athlete who is now reading ingredients and choosing 'no artificial colors' as a credibility signal. Gatorade's science story \u2014 'The Science Behind Sweat' \u2014 does not address that credibility question directly. That's the gap."
+      },
+      {
+        "label": "Step 2 \u2014 STP: Who Is Switching?",
+        "script": "The research tells us BODYARMOR is Gatorade's number one loss of trial source \u2014 so this is direct substitution, not category expansion. The consumer switching is likely the 22-35 health-conscious athlete who trusts clean-label as a proxy for 'good for my body.' For this consumer, artificial dyes are a dealbreaker even if the electrolyte performance is identical. Gatorade's current formula \u2014 with Yellow 5, Yellow 6, Red 40 \u2014 fails the label-reading test for this segment. This is why BODYARMOR's 'no artificial sweeteners, coconut water base' positioning is working: it's speaking directly to how this consumer evaluates products."
+      },
+      {
+        "label": "Step 3 \u2014 4P's: Product and Promotion Response",
+        "script": "On Product: Gatorade needs to address the clean-label gap directly. I recommend two moves simultaneously. First, reformulate the core Gatorade product to remove artificial dyes \u2014 this will cost at scale but is necessary to pass the label test. Second, aggressively market Gatorade Zero as the performance-plus-clean alternative \u2014 position it as 'all the electrolytes, none of the sugar or artificial dyes.' On Promotion: BODYARMOR is winning on individual athlete authenticity. Mahomes versus the NFL shield is a personal connection versus an institutional one. Gatorade should counter-sign three to four generational athletes \u2014 people with ten-plus-year career windows \u2014 who can carry the science story personally, and shift 30% of the promotion budget from broadcast to social where athlete content drives trial."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation has three layers. Immediate: use PepsiCo's retailer relationship leverage to lock in shelf position and cooler exclusivity agreements before BODYARMOR's distribution reaches 90-plus percent \u2014 that window is closing. Six to twelve months: reformulate Gatorade to remove artificial dyes and launch a major 'clean performance' campaign behind the reformulation, and amplify Gatorade Zero as the premium clean-label answer within the portfolio. Longer term: sign two to three generational athlete endorsers who can carry the brand personally and shift the narrative from institutional league deals to individual human performance stories. The biggest risk is Gatorade dismissing BODYARMOR as a fad and doing nothing \u2014 at the current trajectory, this is not a fad. It's a structural shift in what consumers use as quality signals."
+      }
+    ]
+  },
+  {
+    "id": "scenario_015",
+    "type": "Competitive Threat",
+    "company": "Pampers (P&G)",
+    "title": "Pampers vs. The Honest Company",
+    "prompt": "Pampers holds 38% of the US disposable diaper market. The Honest Company, founded on 'safe, non-toxic' ingredients, has grown from 2% to 7% of the premium diaper tier over five years and is now stocked at Target and Costco in addition to its DTC channel. Consumer research shows Pampers loses 31% of first-time parents at age 25-35 to Honest or Seventh Generation before they ever become loyal Pampers users. What is Pampers' defensive strategy?",
+    "context": "The US disposable diaper market is $6.8B. Pampers' core message centers on 'dryness' and skin protection. The Honest Company prices at $45 for 68-count vs. Pampers Pure at $42 and Pampers Swaddlers at $32. First-time parents are the critical acquisition moment \u2014 research shows 78% of parents stick with the brand they chose for the first 6 months. Natural and 'clean' ingredient claims are the #1 decision driver for parents under 35.",
+    "correctFrameworks": [
+      "3C's",
+      "STP",
+      "4P's"
+    ],
+    "whyThisFramework": "STP is critical \u2014 first-time parents 25-35 are a distinct acquisition segment with different values than loyal older Pampers users. 3C's reveals the specific threat vector. 4P's designs the response, which likely includes reinforcing Pampers Pure as the premium natural play and winning the first-time parent acquisition moment in channels where they shop (Target, Buy Buy Baby, online).",
+    "keyConsiderations": [
+      "The first 6 months of parenthood are the critical loyalty-formation window \u2014 must win there",
+      "Pampers Pure exists but may be undermarketed to the clean-ingredient-seeking segment",
+      "Hospital partnerships and pediatrician recommendations are underutilized trust signals",
+      "DTC/subscription model could lock in new parents before competitive trial"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is the 31% loss of first-time parents occurring at hospital discharge, during the first Target or Costco purchase, or through online research before the baby arrives \u2014 understanding the interception point is critical to the channel strategy?",
+      "What is Pampers Pure's current aided awareness among pregnant women and new parents in the 25-35 demographic \u2014 is the product known but rejected, or simply unknown?",
+      "Does Pampers currently have hospital diaper partnerships, and what percentage of new parents use the hospital-provided brand during their first week?",
+      "What is the repeat purchase rate for parents who start on Pampers Pure versus Swaddlers \u2014 does the premium sub-brand create more loyal users?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Win the first-time parent acquisition moment",
+        "subIssues": [
+          "What is the specific decision point \u2014 hospital, first retail trip, prenatal online research \u2014 where Pampers loses the 31% of first-time parents to Honest?",
+          "Can hospital diaper partnerships and pediatrician recommendations serve as a trust-building mechanism that preempts Honest Company trial?",
+          "What is the role of prenatal targeting \u2014 baby registries, pregnancy apps, OB/GYN offices \u2014 in reaching parents before they form a competitive brand preference?"
+        ]
+      },
+      {
+        "block": "Amplify Pampers Pure as the clean-label answer",
+        "subIssues": [
+          "Is Pampers Pure genuinely competitive with Honest Company on ingredient transparency, and is that communicated clearly at the shelf and online?",
+          "At $42 for 68-count vs. Honest's $45, does Pampers Pure have a meaningful price advantage that it is not exploiting in messaging?",
+          "What incremental marketing investment in Pampers Pure is needed to close the 31% first-time parent loss rate, and what is the lifetime value of recovering those users?"
+        ]
+      },
+      {
+        "block": "Lock in loyalty through subscription and DTC",
+        "subIssues": [
+          "Can Pampers launch a DTC subscription model for new parents that delivers Pampers Pure at a 15-20% discount, locking in users before they trial Honest's DTC channel?",
+          "What is the value of a diaper subscription customer over 2.5 years of diapering \u2014 and does that LTV justify significant acquisition cost investment?",
+          "Can Pampers bundle subscription diapers with Pampers wipes and other P&G baby products (Dreft, Pampers baby wash) to increase switching cost?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Identify the exact acquisition failure point",
+        "detail": "The 31% loss happens before parents become loyal Pampers users. With 78% sticking to the brand chosen in the first 6 months, this is a pre-loyalty acquisition problem. Determine where the loss occurs: hospital discharge (if hospital provides Honest), first Target/Costco trip (where Honest is now stocked at parity shelf position), or prenatal online research. The interception strategy differs dramatically depending on where the consumer defection moment is."
+      },
+      {
+        "step": 2,
+        "title": "Apply STP to segment first-time parents",
+        "detail": "First-time parents 25-35 are a distinct sub-segment from loyal long-term Pampers users. They are research-intensive, ingredient-literate, shopping heavily online and at Target, and 'clean ingredients' is their #1 decision driver. This segment cannot be won with the same 'dryness and skin protection' message that works with loyal Pampers users. Design a dedicated messaging and channel strategy for this segment specifically."
+      },
+      {
+        "step": 3,
+        "title": "Amplify Pampers Pure with targeted 4P's",
+        "detail": "Pampers Pure at $42 vs. Honest at $45 has a pricing advantage that should be prominently messaged. Reformulate Pure's marketing around ingredient transparency \u2014 list what is NOT in it (chlorine bleaching, fragrance, parabens) prominently on packaging and DTC. Target digital ads on pregnancy apps (Ovia, The Bump), baby registry platforms (Amazon, Target), and prenatal search keywords 3-6 months before due date to intercept the research phase."
+      },
+      {
+        "step": 4,
+        "title": "Activate hospital and pediatrician channels",
+        "detail": "78% of parents stick with their first-6-month brand. If Pampers can be the hospital brand \u2014 through partnerships where hospital nurseries use Pampers Pure exclusively \u2014 the brand wins by default at the most critical trust moment. Simultaneously, create a pediatrician recommendation program: give pediatricians educational materials about Pampers Pure ingredients so they can recommend proactively at 2-week, 1-month, and 2-month checkups."
+      },
+      {
+        "step": 5,
+        "title": "Launch a DTC subscription to lock in new parents",
+        "detail": "Honest Company's DTC subscription model is a loyalty lock. Pampers should launch a subscription program offering Pampers Pure at 15% off retail with first-month free, bundled with Pampers wipes and Dreft detergent samples. The bundle increases switching cost and cross-sells P&G baby products. Target the subscription acquisition in the 3rd trimester window when parents are making brand decisions for the first time."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "First-mover loyalty",
+        "definition": "In CPG, the disproportionate brand loyalty created by being the first product a consumer uses in a new life stage \u2014 with 78% of diaper parents sticking to their first brand, whoever wins the hospital and first-purchase moment has a structural advantage"
+      },
+      {
+        "term": "Acquisition moment",
+        "definition": "The specific point in the consumer journey where a first-time buyer forms a brand preference \u2014 for diapers, this is the prenatal research phase, hospital stay, and first retail trip in the first week home"
+      },
+      {
+        "term": "Ingredient transparency",
+        "definition": "A marketing practice of proactively listing what is NOT in a product (no chlorine, no parabens, no fragrance) to build trust with health-conscious consumers who scrutinize labels"
+      },
+      {
+        "term": "LTV (Lifetime Value)",
+        "definition": "The total revenue a customer generates over their relationship with a brand \u2014 a diaper parent represents roughly 2.5 years of purchasing, which justifies high acquisition cost investment compared to a one-time buyer"
+      },
+      {
+        "term": "Subscription lock-in",
+        "definition": "A business model where recurring auto-delivery creates switching costs and reduces competitive trial \u2014 Honest Company's DTC subscription makes it harder for Pampers to intercept a customer who has already committed to auto-delivery"
+      }
+    ],
+    "interviewerExpectations": "A strong answer identifies the 78% first-6-month loyalty statistic as the critical leverage point and builds a strategy around winning the acquisition moment (hospital, prenatal, first retail trip) rather than trying to convert established Honest users. A weak answer focuses on reducing price or increasing advertising without addressing the specific interception channels where first-time parents make their brand choice.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "The most important number in this case is 78% \u2014 78% of parents stick with the brand they chose in the first six months. Combined with the fact that 31% of first-time parents are choosing Honest or Seventh Generation before they ever become Pampers users, this is fundamentally an acquisition problem, not a retention problem. Pampers isn't losing loyal users \u2014 it's failing to acquire new parents in a critical window. I'll use STP to understand the first-time parent segment specifically, 3C's to assess why Honest is winning that segment, and 4P's to design the interception strategy. The question is where exactly in the journey Pampers is losing those 31% \u2014 hospital, first retail trip, or prenatal research \u2014 because the answer changes the strategy."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I build the strategy: three questions. First, where specifically does the 31% loss happen \u2014 is it at hospital discharge, the first Target trip, or during prenatal research online? That's the interception point we need to design around. Second, what is Pampers Pure's awareness among pregnant women 25-35 \u2014 is it unknown, or known and rejected on ingredients? Third, does Pampers have any current hospital diaper partnerships, and what percentage of delivery hospitals provide Pampers in the nursery?"
+      },
+      {
+        "label": "Step 1 \u2014 STP: The First-Time Parent Segment",
+        "script": "First-time parents 25-35 are a completely different consumer from the loyal 38-year-old mom who has been buying Pampers Swaddlers for her second or third child. The first-time parent is research-intensive \u2014 they read every ingredient, they're in pregnancy apps and Facebook parent groups, they register on Amazon and Target, and 'clean ingredients' is their number one decision driver. Pampers' current messaging of 'dryness and skin protection' is not the language that wins this consumer. Honest Company's positioning \u2014 safe, non-toxic, plant-based materials \u2014 speaks exactly the language this consumer trusts. This is a targeting and messaging failure, not a product failure, because Pampers Pure already exists."
+      },
+      {
+        "label": "Step 2 \u2014 3C's: Why Honest Is Winning",
+        "script": "On the 3C's: Company \u2014 Pampers has Pampers Pure at $42 for 68-count, which is actually $3 cheaper than Honest's $45. Pampers has P&G's scale, hospital relationships, and distribution. But Pampers Pure is under-marketed and almost invisible in the ingredient-transparency conversation. Competitor \u2014 Honest Company has a brand story built entirely on 'safe and non-toxic,' a DTC subscription that locks in parents early, and now shelf presence at Target and Costco next to Pampers. Consumer \u2014 the first-time parent 25-35 is completing 80% of their brand research before the baby arrives, in the third trimester, on their phone, on The Bump and Amazon. Pampers is not present in that research phase."
+      },
+      {
+        "label": "Step 3 \u2014 4P's: Winning the Acquisition Moment",
+        "script": "The 4P's response centers on intercepting the first-time parent before they form a Honest preference. On Product: Pampers Pure needs prominent ingredient transparency on-pack \u2014 list what is NOT in it: no chlorine bleaching, no fragrance, no parabens \u2014 just like Honest's packaging does. At $42 versus Honest's $45, Pure has a price advantage it isn't messaging. On Promotion: shift budget to where first-time parents research \u2014 pregnancy apps like Ovia and The Bump, Amazon baby registry search, OB/GYN waiting rooms, and prenatal targeted digital ads starting in the second trimester. On Place: activate hospital partnerships so Pampers Pure is the nursery diaper \u2014 if a parent uses Pure at the hospital for three days, the default brand loyalty starts there. On Price: launch a DTC subscription for Pure at 15% off with the first month free, bundled with Pampers wipes \u2014 this creates a switching cost equivalent to what Honest's subscription already provides."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is a three-stage defense. Stage one is immediate: get Pampers Pure into hospital nurseries through direct B2B diaper partnerships \u2014 this is the single highest-leverage intervention given the 78% first-6-month loyalty window. Stage two within six months: relaunch Pampers Pure's marketing with ingredient transparency messaging targeted specifically at pregnant women in the third trimester, in the channels where they research \u2014 pregnancy apps, Amazon, The Bump. Stage three within twelve months: launch a DTC subscription for Pure bundled with wipes and P&G baby products to create switching cost equivalent to what Honest already has. The 31% loss rate represents enormous lifetime value \u2014 at 2.5 years of purchasing, recovering even half of those lost first-time parents through these three interventions would generate significant incremental revenue. The core insight is that Pampers Pure is already the right product. This is a marketing, channel, and timing problem \u2014 not an innovation problem."
+      }
+    ]
+  },
+  {
+    "id": "scenario_016",
+    "type": "Competitive Threat",
+    "company": "Listerine (J&J / Kenvue)",
+    "title": "Listerine vs. Native Mouthwash",
+    "prompt": "Listerine holds 41% of the US mouthwash market. Native, a DTC brand originally known for deodorant (acquired by P&G in 2017 for $100M), has extended into oral care and is growing 18% annually in mouthwash, now at 4% share. Native's value proposition: 'no alcohol, no artificial flavors, no harsh chemicals' at a price 20% above Listerine. Listerine's own research shows 22% of its 18-34 users have tried Native and 9% have switched. What would you do?",
+    "context": "The US mouthwash market is $1.8B. Listerine's core equity is 'germ-killing power' \u2014 a message built on the efficacy of alcohol and antiseptic ingredients. The alcohol-free mouthwash segment has grown from 11% to 19% of the category in five years. Listerine Zero (alcohol-free) exists but has less than 5% aided awareness. Native is backed by P&G's resources and could significantly expand distribution.",
+    "correctFrameworks": [
+      "3C's",
+      "4P's",
+      "STP"
+    ],
+    "whyThisFramework": "3C's establishes that this is a P&G-backed threat with real staying power \u2014 not a small DTC brand. STP maps the 18-34 consumer segment Listerine is losing. 4P's response must center on Product (reinvest in Listerine Zero with clean-label reformulation) and Promotion (reframe what 'effective' means without alcohol).",
+    "keyConsiderations": [
+      "Native is backed by P&G \u2014 this is a well-resourced, strategic threat, not an indie brand",
+      "Listerine Zero already exists but is invisible \u2014 marketing investment is the fix, not innovation",
+      "The 'harsh chemical' narrative is winning with younger consumers; Listerine must counter-position",
+      "Dentist endorsement and clinical proof of efficacy without alcohol can reclaim the narrative"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "What is Listerine Zero's current retail distribution \u2014 is it carried in all the same outlets as core Listerine, or is distribution itself the gap that is limiting awareness?",
+      "Among the 9% of 18-34 users who have permanently switched to Native, what is their primary stated reason \u2014 is it the absence of alcohol burn, the clean-label positioning, or both?",
+      "Does Listerine have any clinical evidence that its alcohol-free Listerine Zero formula is equally effective at killing germs as the core formula \u2014 and if so, why isn't that in the marketing?",
+      "What is P&G's distribution strategy for Native mouthwash \u2014 is it staying DTC-heavy or expanding aggressively to mass retail like Walmart and CVS?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Defend the 18-34 segment losing to Native",
+        "subIssues": [
+          "Is the 9% switch rate driven by the alcohol-burn experience, the clean-label ingredient story, or the premium price signal \u2014 because each requires a different response?",
+          "Can Listerine Zero be reformulated to remove artificial flavors and coloring to match Native's clean-label credential, while maintaining clinical efficacy proof?",
+          "What marketing investment is required to lift Listerine Zero's 5% aided awareness to competitive levels in the 18-34 demographic?"
+        ]
+      },
+      {
+        "block": "Reframe Listerine's efficacy narrative",
+        "subIssues": [
+          "Does Listerine have clinical data showing that its formula kills X% more germs than alcohol-free alternatives \u2014 and can this be turned into a compelling consumer-facing claim?",
+          "Can dentist and hygienist endorsements of Listerine's formula be activated as a trust signal that counters the 'harsh chemical' narrative?",
+          "What messaging platform allows Listerine to acknowledge the alcohol experience while reframing it as proof of potency rather than a negative?"
+        ]
+      },
+      {
+        "block": "Assess whether a separate brand response is needed",
+        "subIssues": [
+          "Should Kenvue create or acquire a distinct alcohol-free oral care brand rather than extending the Listerine architecture, given that 'Listerine' is synonymous with the alcohol burn?",
+          "What is the ROI of investing in Listerine Zero versus launching a completely separate clean-label brand to avoid the core brand equity conflict?",
+          "Could Kenvue acquire a smaller clean-label oral care brand to compete directly with Native in the DTC and premium channel?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Assess Native as a P&G strategic threat",
+        "detail": "Native is not a $20M indie brand \u2014 it was acquired by P&G in 2017 for $100M and P&G has systematically expanded it from deodorant into oral care. P&G has the distribution infrastructure to take Native from 4% to 12-15% mouthwash share if it deploys the full retail playbook. At 18% annual growth and a clean distribution runway, this threat could follow the same trajectory as BODYARMOR in sports drinks. Do not underestimate the resource level behind Native."
+      },
+      {
+        "step": 2,
+        "title": "Segment the losing consumer via STP",
+        "detail": "The 18-34 cohort represents Listerine's next 30 years of volume. A 9% permanent switch rate in this group is a compounding loyalty problem \u2014 every year fewer young adults become lifetime Listerine users. The target response must be specifically engineered for this cohort: they respond to clean-label, they research online, and they interpret the alcohol burn as a negative rather than a signal of effectiveness."
+      },
+      {
+        "step": 3,
+        "title": "Activate Listerine Zero with new 4P's",
+        "detail": "Listerine Zero exists but has only 5% aided awareness \u2014 this is a marketing failure, not an innovation gap. Redesign Zero's packaging to lean into clean-label credentials (no alcohol, no artificial colors, no harsh chemicals \u2014 front-panel, bold). Back it with clinical efficacy data showing germ-kill percentage equivalent to the core formula. Launch a dedicated digital campaign targeting 18-34 on Instagram, TikTok, and oral care search. Price Zero at $1.50 above core Listerine to signal premium and compete directly with Native's 20% premium."
+      },
+      {
+        "step": 4,
+        "title": "Counter-position Listerine's core with dentist authority",
+        "detail": "For the users who stay on core Listerine (18+ years old, particularly the 35-55 cohort), reinforce the clinical efficacy narrative with a dentist endorsement campaign. Lead with the message: 'The formula dentists have recommended for 100 years now proven effective in 20+ clinical studies.' Reframe the alcohol as 'the antiseptic that works' \u2014 not a harsh chemical, but the active ingredient in surgical-grade antiseptic. This prevents the core brand from eroding while Zero addresses the clean-label segment."
+      },
+      {
+        "step": 5,
+        "title": "Monitor P&G's distribution expansion for Native",
+        "detail": "If P&G moves Native mouthwash into Walmart, Target, and CVS at scale, the threat level escalates significantly. Track Native's distribution footprint quarterly. If expansion occurs, Kenvue should consider whether a separate brand acquisition (outside the Listerine architecture) is warranted \u2014 because 'Listerine Zero' may not be credible to a consumer who has already associated Listerine with the harsh alcohol experience."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Aided awareness",
+        "definition": "The percentage of consumers who recognize a brand when prompted with its name \u2014 Listerine Zero's 5% means most consumers don't know it exists, even though the product does"
+      },
+      {
+        "term": "Efficacy-vs-clean-label tension",
+        "definition": "The strategic conflict between positioning a product as scientifically powerful (which requires active ingredients consumers may perceive as 'harsh') versus positioning it as natural and safe (which may undermine the efficacy claim)"
+      },
+      {
+        "term": "Switch rate",
+        "definition": "The percentage of a brand's current users who have permanently moved to a competitor \u2014 9% among 18-34 Listerine users represents compounding future loyalty loss as those consumers age out of being acquirable"
+      },
+      {
+        "term": "Brand architecture conflict",
+        "definition": "When extending an existing brand to a new segment is hindered by strong existing associations \u2014 'Listerine' is so strongly associated with the alcohol burn that 'Listerine Zero' may not credibly signal clean-label to the consumer who has already formed a negative association"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately identifies Native as P&G-backed (not indie) and makes the insight that Listerine Zero already exists but is invisible \u2014 the fix is marketing investment, not new product development. A weak answer recommends Listerine launch a new alcohol-free product without acknowledging that Listerine Zero already exists, or underestimates the threat by treating Native as a small DTC brand rather than a P&G strategic asset.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Two things I want to flag immediately. First, Native is not a small DTC startup \u2014 it was acquired by P&G in 2017 and P&G is systematically expanding it across personal care categories. This is the same playbook as BODYARMOR in sports drinks \u2014 a challenger brand backed by a major CPG competitor using M&A to challenge the category leader. Second, Listerine already has an alcohol-free product: Listerine Zero. The 5% aided awareness tells me the problem isn't innovation \u2014 it's marketing investment. I'll use 3C's to map the threat, STP to understand the 18-34 cohort specifically, and 4P's to design the response around Listerine Zero."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Three questions before I structure the strategy. First, among the 9% who switched permanently to Native, what is their primary reason \u2014 is it the alcohol burn experience, the clean-label ingredient story, or the premium price as a quality signal? The answer changes the messaging. Second, does Listerine have clinical data showing Listerine Zero kills the same percentage of germs as the core formula? Third, what is Listerine Zero's current retail distribution \u2014 is it in all the same outlets as core Listerine, or is distribution the gap limiting awareness?"
+      },
+      {
+        "label": "Step 1 \u2014 3C's: Accurate Threat Assessment",
+        "script": "On the 3C's. Company: Kenvue has Listerine at 41% share, a century of brand heritage, and clinical efficacy proof \u2014 those are real assets. But Listerine Zero has only 5% aided awareness, meaning the product that could answer the clean-label challenge is essentially invisible. Competitor: Native is P&G's weapon in this fight \u2014 P&G has the distribution relationships, the marketing budget, and the operational scale to take Native from 4% to 15% share if it decides to. This is not a startup threat; it is a direct competitive assault from the world's largest CPG company. Consumer: the 18-34 segment reads labels, interprets the alcohol burn as an indicator of 'harsh chemicals,' and is willing to pay Native's 20% premium for the clean-label credential."
+      },
+      {
+        "label": "Step 2 \u2014 STP: The 18-34 Loyalty Time Bomb",
+        "script": "On the STP side, the 18-34 cohort is Listerine's next 30 years of volume. A 9% switch rate today sounds manageable, but these are consumers who will not return \u2014 they've formed a preference for Native before they became long-term Listerine loyalists. Every year that goes by without addressing this segment, Listerine's future volume base shrinks. The 22% trial rate \u2014 meaning nearly a quarter of young Listerine users have tried Native \u2014 shows the curiosity is high. Converting trial back to Listerine requires addressing the alcohol question directly."
+      },
+      {
+        "label": "Step 3 \u2014 4P's: Listerine Zero as the Answer",
+        "script": "The product already exists \u2014 Listerine Zero. Here's the 4P's rebuild around it. On Product: reformulate Zero to remove artificial colors and flavors, and add front-panel clean-label callouts \u2014 'no alcohol, no artificial flavors, no harsh chemicals' \u2014 matching the language Native uses. On Price: raise Zero to $1.50 above core Listerine to signal premium and compete directly with Native's 20% price premium. On Place: verify Zero has full distribution in every outlet where Native competes \u2014 if not, close the gap immediately. On Promotion: launch a dedicated digital campaign for Zero targeting 18-34 on Instagram and TikTok, led by the message: 'Same germ-killing power, without the burn \u2014 proven in 15 clinical studies.' Lead with the efficacy proof in clean-label language."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation has three parts. One: treat this as a Category 1 threat from P&G and respond at that level of urgency \u2014 not a watch-and-wait situation. Two: invest significantly behind Listerine Zero as the primary response \u2014 reformulate, re-price, and relaunch with a $30-40M digital campaign targeted at 18-34 over the next 12 months. The product exists; it just needs to be marketed. Three: simultaneously reinforce Listerine core's clinical authority with a dentist endorsement campaign for the 35-55 cohort where the alcohol-free narrative is less important \u2014 protect that base while Zero fights for the next generation. The risk I'd flag: if 'Listerine' as a brand name is too strongly associated with the alcohol burn to credibly signal clean-label, Kenvue should consider whether a separate sub-brand or acquisition is needed. But the first test is giving Zero a real marketing budget \u2014 that has not been tried yet."
+      }
+    ]
+  },
+  {
+    "id": "scenario_017",
+    "type": "Competitive Threat",
+    "company": "Oscar Mayer (Kraft Heinz)",
+    "title": "Oscar Mayer vs. Plant-Based Deli Meats",
+    "prompt": "Oscar Mayer holds 28% of the US processed deli meat market ($5.2B). Lightlife and Good Food Institute-backed brands have launched plant-based deli meat alternatives that now hold 6% of the deli meat category by dollar sales, growing 24% annually. Meanwhile, Boar's Head and other premium brands have taken share at the top end. Oscar Mayer is being squeezed between plant-based disruption and premium competition. Volume is down 8% over three years. What do you recommend?",
+    "context": "Oscar Mayer's core consumers are family households with school-age children, who buy primarily for lunchboxes. The brand's Lunchables franchise is growing 9% annually and now represents 35% of Oscar Mayer's revenue. Plant-based alternatives are priced at parity or premium to Oscar Mayer. Consumer research shows plant-based trial is concentrated among childless households ages 22-38 \u2014 largely not Oscar Mayer's current core.",
+    "correctFrameworks": [
+      "3C's",
+      "STP",
+      "4P's"
+    ],
+    "whyThisFramework": "STP analysis reveals Oscar Mayer and plant-based brands are actually competing for different consumers \u2014 the threat may be overstated for the core family segment. 3C's examines whether the real threat is premium (Boar's Head) not plant-based. 4P's then defends the core family segment while assessing whether a plant-based extension makes sense.",
+    "keyConsiderations": [
+      "Plant-based buyers may not be Oscar Mayer's core consumer \u2014 verify overlap before overreacting",
+      "Lunchables is the growth engine \u2014 should resource allocation follow that momentum?",
+      "Boar's Head premium threat may be more immediate to revenue than plant-based disruption",
+      "A plant-based Oscar Mayer line could be defensive or could dilute the brand"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Of the 8% volume decline, how much is attributable to household-with-children customers \u2014 Oscar Mayer's stated core \u2014 versus single-person households or childless adults who are more likely to be plant-based buyers?",
+      "Is Boar's Head taking share at the deli counter or in the packaged deli meat section \u2014 and is Oscar Mayer even competing in the deli counter channel?",
+      "What is the margin comparison between Lunchables at 35% of revenue versus traditional deli meat \u2014 and if Lunchables is higher margin, does that argue for accelerating the portfolio shift toward Lunchables?",
+      "Has Oscar Mayer modeled a plant-based deli meat line, and what would the brand equity risk be \u2014 does the Oscar Mayer name help or hurt in attracting plant-based buyers?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Diagnose the real source of volume decline",
+        "subIssues": [
+          "Is Oscar Mayer losing family lunchbox consumers to plant-based alternatives, or is plant-based growth coming from a completely different consumer segment?",
+          "Is the 8% volume decline driven by Boar's Head premium poaching, private label price competition, or category reduction as families eat fewer packaged lunches?",
+          "What is the volume trend specifically in the lunchbox-occasion slice of deli meat \u2014 is that stable while other occasions (snacking, sandwich-making) decline?"
+        ]
+      },
+      {
+        "block": "Defend and accelerate the core family segment",
+        "subIssues": [
+          "Can Oscar Mayer lean further into Lunchables as its primary growth vehicle \u2014 at 9% annual growth and 35% of revenue, should it receive more resource allocation than traditional deli meat?",
+          "What product innovation within the family lunchbox occasion (new protein varieties, new Lunchables formats) could accelerate the 9% growth rate?",
+          "What channel and promotional strategy most effectively reaches family households \u2014 school programming, Target family section, back-to-school promotions?"
+        ]
+      },
+      {
+        "block": "Evaluate the plant-based and premium competitive responses",
+        "subIssues": [
+          "Should Oscar Mayer launch a plant-based deli line, and if so, should it be under the Oscar Mayer brand or a separate brand to avoid equity dilution?",
+          "Does Oscar Mayer compete in the deli counter channel where Boar's Head wins, or should it concede the premium deli counter to focus on packaged strength?",
+          "What is the ROI of defending against Boar's Head premium versus investing in Lunchables innovation \u2014 which threat is more material to Kraft Heinz's P&L?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Test the assumption that plant-based is the primary threat",
+        "detail": "The 6% plant-based share growing at 24% annually sounds alarming, but the context says plant-based trial is concentrated among childless 22-38 households \u2014 not Oscar Mayer's core family consumer. Before designing a plant-based response, verify the consumer overlap: if plant-based buyers are not Oscar Mayer's customers, the 8% volume decline is being driven by something else \u2014 likely Boar's Head premium poaching at the top and private label at the bottom."
+      },
+      {
+        "step": 2,
+        "title": "Identify where the 8% decline actually comes from",
+        "detail": "Separate the 8% volume decline by occasion (lunchbox, snacking, dinner sandwiches), by channel (mass retail packaged vs. deli counter), and by consumer segment (families vs. adults without children). If family lunchbox volume is stable and snacking/adult occasions are declining, the solution is to accelerate Lunchables and harvest the declining adult deli meat occasions rather than fight for them."
+      },
+      {
+        "step": 3,
+        "title": "Apply STP to identify the defend-and-grow target",
+        "detail": "Oscar Mayer's winning segment is family households with school-age children \u2014 the lunchbox buyer. This consumer values convenience, price, and brand familiarity. Lunchables at 9% growth is the proof that Oscar Mayer is winning there. The STP recommendation: concentrate resources on the family segment, with Lunchables as the flagship growth vehicle, and resist the temptation to chase the plant-based segment that belongs to a different consumer."
+      },
+      {
+        "step": 4,
+        "title": "Use 4P's to accelerate Lunchables and defend traditional deli",
+        "detail": "Lunchables: introduce new formats (protein-focused, snack-size, after-school), expand into new retail occasions (vending, school cafeteria channels), and invest in digital/social targeting of parents of school-age children. Traditional deli meat: maintain price competitiveness vs. private label at mass retail, accept the Boar's Head premium deli counter segment as a non-competing occasion, and focus Oscar Mayer on the packaged, convenience-oriented lunchbox shopper."
+      },
+      {
+        "step": 5,
+        "title": "Make a clear plant-based go/no-go decision",
+        "detail": "If Kraft Heinz determines a plant-based response is needed, it should NOT be under the Oscar Mayer brand \u2014 the brand's family and meat heritage would undermine credibility with the plant-based consumer. A separate brand acquisition or creation is required. However, given the consumer overlap analysis (plant-based buyers are largely not Oscar Mayer's core), the smarter allocation is investing the plant-based development dollars into Lunchables innovation instead."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Consumer overlap analysis",
+        "definition": "Research that determines whether two competing brands are actually competing for the same consumer \u2014 when overlap is low, a competitive threat may be less material than market share data suggests"
+      },
+      {
+        "term": "Portfolio reallocation",
+        "definition": "Shifting investment, marketing dollars, and management focus from declining parts of a product portfolio toward higher-growth segments \u2014 in this case, from traditional deli meat toward Lunchables"
+      },
+      {
+        "term": "Occasion-based segmentation",
+        "definition": "Dividing a market by the use occasion (lunchbox, dinner sandwich, snacking) rather than by demographic \u2014 allows more precise targeting because the same consumer may behave differently across occasions"
+      },
+      {
+        "term": "Brand equity dilution",
+        "definition": "The risk that extending a brand into a new category or consumer segment that conflicts with existing associations weakens the brand's meaning with its core users"
+      }
+    ],
+    "interviewerExpectations": "A strong answer challenges the premise that plant-based is the primary threat, demonstrates that consumer overlap may be low, and redirects strategic attention to Lunchables as the growth engine and Boar's Head as the more direct threat. A weak answer immediately recommends launching a plant-based Oscar Mayer product without verifying whether plant-based buyers are actually Oscar Mayer's customers.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I accept the framing that plant-based deli meats are the primary threat, I want to test an assumption. The context says plant-based trial is concentrated among childless households ages 22-38 \u2014 and Oscar Mayer's core is family households with school-age children buying for lunchboxes. If those consumers don't overlap significantly, plant-based may be growing the category at the margins, not eating Oscar Mayer's core. I'll use 3C's to examine both competitive threats, STP to verify the consumer overlap, and 4P's to design the right response. The most important strategic question here is: what is actually causing the 8% volume decline?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Three questions. First, of the 8% volume decline, how much is traceable to Oscar Mayer's core family lunchbox buyer segment \u2014 or is the decline concentrated in the adult snacking and dinner sandwich occasions where plant-based has more traction? Second, is Boar's Head winning at the packaged deli meat shelf \u2014 which is Oscar Mayer's territory \u2014 or at the deli counter, which is a different channel and a different shopper? Third, what are the margin comparisons between Lunchables and traditional deli meat \u2014 if Lunchables is higher margin and growing at 9%, that changes how I'd allocate resources significantly."
+      },
+      {
+        "label": "Step 1 \u2014 3C's: Two Different Threats Require Two Different Analyses",
+        "script": "On the 3C's, I see two distinct competitive dynamics and they require separate responses. Threat one is plant-based deli at 6% share growing 24% annually. This is real growth, but the consumer is childless 22-38 adults. That is not Oscar Mayer's lunchbox parent buying Lunchables at Target on a Sunday. Threat two is Boar's Head at the premium end \u2014 this is a much more direct threat to Oscar Mayer's actual customer, because Boar's Head is competing in the same grocery channel for the same family shopper who is upgrading to premium packaged meats. My hypothesis: Boar's Head is causing more of the 8% volume decline than plant-based is."
+      },
+      {
+        "label": "Step 2 \u2014 STP: Defend the Family Lunchbox Segment",
+        "script": "On the STP side, Oscar Mayer's winning segment is crystal clear: family households with school-age children who need weekday lunchbox solutions. This consumer values convenience, price accessibility, and brand reliability. And the proof that Oscar Mayer is winning there is Lunchables \u2014 at 9% annual growth and now 35% of Oscar Mayer's total revenue, Lunchables is the single best-performing asset in the portfolio. The STP recommendation is to concentrate \u2014 don't chase the plant-based consumer who is not buying Oscar Mayer today, and don't try to compete at the Boar's Head premium deli counter. Own the family lunchbox occasion where Oscar Mayer genuinely wins."
+      },
+      {
+        "label": "Step 3 \u2014 4P's: Accelerate Lunchables, Stabilize Core",
+        "script": "On the 4P's. For Lunchables: expand the product line into new formats \u2014 protein-focused versions for health-conscious parents, after-school snack sizes, school cafeteria distribution. Price at the current range but add a premium tier with higher-quality meats and cheeses to preempt Boar's Head-style trading up. Place: add vending channel, school lunch programs, convenience retail for grab-and-go occasions. Promote through digital channels targeting parents of 6-12 year olds on social media and school-year search moments. For traditional deli meat: hold price parity with private label at mass retail, accept that Oscar Mayer won't win the premium deli counter from Boar's Head, and focus distribution and promotional resources on packaged convenience rather than fighting for the deli counter."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is to resist the temptation to chase both threats simultaneously \u2014 that leads to underinvestment everywhere. Here's the prioritization. One: redirect 40% of any incremental investment from traditional deli meat defense into Lunchables innovation and distribution expansion \u2014 that is where the growth momentum is and where Oscar Mayer has genuine competitive advantage. Two: accept Boar's Head's premium deli counter dominance rather than fighting it, and focus on packaged convenience where price and distribution are the winning factors. Three: do not launch a plant-based Oscar Mayer product \u2014 the consumer overlap with Oscar Mayer's core buyer is low, the brand equity risk is real, and that capital is better spent on Lunchables. If Kraft Heinz wants a plant-based play in deli, it should be a separate brand acquisition. The core insight is that this is primarily a portfolio reallocation decision \u2014 move resources from declining adult deli meat occasions to growing family lunchbox occasions \u2014 not a defensive innovation problem."
+      }
+    ]
+  },
+  {
+    "id": "scenario_018",
+    "type": "Competitive Threat",
+    "company": "Febreze (P&G)",
+    "title": "Febreze vs. Air Wick and DTC Challengers",
+    "prompt": "Febreze holds 44% of the US air care market. Reckitt's Air Wick has launched a 'Botanica' line positioned on natural plant-based ingredients and essential oils, growing 31% in 12 months and taking 3 points of share. Simultaneously, DTC brand Pura (smart diffuser + subscription fragrance) is growing 40% annually with strong Gen Z/Millennial appeal. Febreze's total market share has dropped from 44% to 40% in 18 months. What do you do?",
+    "context": "The US air care market is $2.1B. Febreze's positioning centers on 'eliminating odors' rather than masking with scent. The fragrance-as-home-ritual segment (candles, diffusers, premium sprays) is growing 16% annually and now represents 28% of air care spend. Pura's subscription model generates $180 average annual revenue per customer. Pura's subscription model generates $180 average annual revenue per customer. Febreze's heaviest users are households with pets or smokers.",
+    "correctFrameworks": [
+      "3C's",
+      "STP",
+      "4P's",
+      "Market Entry Framework"
+    ],
+    "whyThisFramework": "3C's maps two distinct threats: a retailer brand going premium and a DTC tech-enabled subscription model \u2014 different responses required. STP identifies which segments are at risk. Market Entry Framework evaluates whether Febreze should enter the premium diffuser space or defend its odor-elimination position. 4P's executes the chosen path.",
+    "keyConsiderations": [
+      "Two separate competitive threats require two separate strategic responses",
+      "Febreze's odor-elimination positioning is functionally distinct from fragrance-ritual \u2014 own it",
+      "The smart diffuser/subscription model is a different business model, not just a product",
+      "Could P&G acquire Pura or build a competitive smart diffuser product?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Is Febreze's 4-point share loss (44% to 40%) coming from the same consumer segments as Pura and Air Wick Botanica attract \u2014 or are those brands growing a different part of the air care market?",
+      "What is Febreze's current presence in the premium fragrance-ritual segment \u2014 candles, diffusers, premium sprays \u2014 or is Febreze essentially absent from that 28% and growing slice of the market?",
+      "What is P&G's internal assessment of building a smart diffuser product vs. acquiring Pura \u2014 has any competitive analysis been done on Pura's hardware and subscription economics?",
+      "Among Febreze's heaviest users \u2014 pet owners and smokers \u2014 is there any share loss to Air Wick Botanica or Pura, or is that segment holding?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Defend Febreze's core odor-elimination position",
+        "subIssues": [
+          "Is Air Wick Botanica competing directly on odor elimination \u2014 in which case Febreze must defend with efficacy proof \u2014 or is it winning a different occasion (fragrance ritual) where Febreze isn't?",
+          "What is the household-with-pets and smoker segment size, and is Febreze's 44% share within that segment stable despite the overall market share decline?",
+          "Can Febreze add plant-based or natural ingredient claims to its core formula without compromising the odor-elimination efficacy that is its primary purchase driver?"
+        ]
+      },
+      {
+        "block": "Evaluate entering the fragrance-ritual and smart diffuser segment",
+        "subIssues": [
+          "What is the investment required for P&G to build a competitive smart diffuser product matching Pura's hardware quality and app integration?",
+          "Could P&G acquire Pura \u2014 at $180 average annual revenue per customer and 40% growth, what is Pura's likely valuation and does it meet P&G's acquisition criteria?",
+          "If P&G enters the smart diffuser space, should it be under the Febreze brand or a completely separate brand identity to avoid the 'odor eliminator' association?"
+        ]
+      },
+      {
+        "block": "Respond to Air Wick Botanica's natural positioning",
+        "subIssues": [
+          "Can Febreze launch a natural-ingredient variant \u2014 Febreze Botanicals or Febreze with Essential Oils \u2014 to compete directly with Air Wick Botanica at retail?",
+          "What is the speed to market for a reformulated natural Febreze line, and can P&G's manufacturing capability produce it at competitive cost?",
+          "Would a natural Febreze line cannibalize existing Febreze sales, or is the natural-seeking consumer a genuinely distinct buyer who would otherwise go to Air Wick?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Separate the two threats and size each one",
+        "detail": "Threat 1: Air Wick Botanica \u2014 a mass retail natural-positioned spray product growing 31% and taking 3 share points. This is competing at Febreze's shelf position in the same distribution channels. Threat 2: Pura \u2014 a DTC smart diffuser subscription at $180 annual revenue per customer in the growing fragrance-ritual segment (28% of $2.1B = $588M and growing 16%). These are different business models requiring different responses \u2014 do not conflate them."
+      },
+      {
+        "step": 2,
+        "title": "Determine what each threat is actually winning",
+        "detail": "Air Wick Botanica is likely winning the consumer who wants air care but prefers natural/plant-based ingredients. Pura is winning the consumer who treats home fragrance as a lifestyle ritual \u2014 a fundamentally different occasion than odor elimination. If Febreze's share loss is concentrated in the fragrance-ritual segment, Febreze's core odor-elimination positioning may actually still be healthy. The market may be expanding in a direction Febreze doesn't currently serve."
+      },
+      {
+        "step": 3,
+        "title": "Respond to Air Wick Botanica with a natural Febreze line",
+        "detail": "Febreze should launch 'Febreze with Natural Essentials' \u2014 a line using plant-derived ingredients and essential oils at retail, positioned as 'Febreze odor elimination with natural ingredients.' Price at parity to Air Wick Botanica. Prioritize speed \u2014 Air Wick Botanica has 12 months of momentum but Febreze's distribution advantages mean a well-executed launch can recover shelf position and trial quickly. P&G's manufacturing scale means it can match production quality at lower cost."
+      },
+      {
+        "step": 4,
+        "title": "Apply Market Entry Framework to Pura's segment",
+        "detail": "The fragrance-as-ritual segment is $588M and growing 16% annually. Pura has a smart diffuser hardware + subscription model generating $180 per customer. Attractive market. Feasibility: P&G could build hardware (significant investment, 2-3 year timeline) or acquire Pura. Timing: Pura is early but gaining momentum \u2014 the acquisition window is now, before valuation escalates further. Recommend P&G evaluate Pura acquisition within 6 months and parallel-track a 'Febreze Smart Diffuser' concept under a separate brand identity."
+      },
+      {
+        "step": 5,
+        "title": "Reinforce and own the odor-elimination positioning",
+        "detail": "Febreze's heaviest users \u2014 pet owners and smokers \u2014 value the functional odor-elimination benefit. Pura and Air Wick Botanica do not credibly own this space. Febreze should double down on the 'actual odor elimination vs. masking' message in campaigns targeting these heavy users. This is the moat Febreze has that premium fragrance brands cannot claim \u2014 clinically proven odor elimination, not just pleasant scent coverage."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Fragrance-as-ritual segment",
+        "definition": "A growing slice of the air care market where consumers use home fragrance products as part of intentional lifestyle rituals \u2014 distinct from functional odor control; driven by candles, premium sprays, and smart diffusers"
+      },
+      {
+        "term": "Smart diffuser subscription model",
+        "definition": "A hardware + recurring fragrance refill business model (like Pura) that generates $180+ annual revenue per customer and creates switching costs through app integration and pre-committed refill subscriptions"
+      },
+      {
+        "term": "Market Entry Framework",
+        "definition": "A structured approach assessing whether to enter a new adjacent market: evaluating market attractiveness, the company's competitive feasibility, timing relative to competitors, and the optimal entry mode (build, buy, or partner)"
+      },
+      {
+        "term": "Odor elimination vs. odor masking",
+        "definition": "A functional distinction in air care: Febreze chemically neutralizes odor molecules, while fragrance sprays and candles cover odors with stronger scent \u2014 a credible differentiation point against natural fragrance competitors"
+      }
+    ],
+    "interviewerExpectations": "A strong answer separates the two competitive threats (Air Wick retail vs. Pura DTC/subscription) and recognizes that they require different strategic responses \u2014 one is a product/marketing response, the other is a business model and M&A question. A weak answer treats both threats the same way or recommends only a single response such as 'launch a natural Febreze line' without addressing the Pura subscription model threat.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "The first thing I want to do is separate these two competitive threats, because they are fundamentally different problems. Air Wick Botanica is a retail natural-ingredient product growing 31% and taking Febreze's shelf position in mass retail \u2014 that's a product and marketing problem. Pura is a smart diffuser subscription model growing 40% and winning consumers in the fragrance-ritual segment \u2014 that's a business model and potentially an M&A problem. Treating both with the same response will result in underreacting to one or both. I'll use 3C's to map each threat, Market Entry Framework to evaluate Pura's space, and 4P's to design the retail response to Air Wick."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I go further: three questions. First, is Febreze's 4-point share loss happening in the functional odor-elimination occasions \u2014 pet homes, smoker households \u2014 or in the home fragrance and ambiance occasions? That tells me which threat is actually responsible. Second, does P&G have any current DTC or subscription model infrastructure that could be leveraged for a Pura-style product, or would that require greenfield investment? Third, has P&G evaluated Pura's acquisition \u2014 at $180 annual revenue per customer and 40% growth, what would that business value at?"
+      },
+      {
+        "label": "Step 1 \u2014 3C's: Map Both Threats Separately",
+        "script": "On the 3C's for Air Wick Botanica: Reckitt has Botanica at mass retail competing directly on shelf space against Febreze. The consumer being won is the natural-ingredient-seeking household buyer. Febreze's formula is not positioned as natural \u2014 and that gap is what Botanica is exploiting. On the 3C's for Pura: Pura is winning a completely different consumer \u2014 the Gen Z and Millennial home fragrance enthusiast who treats diffusing as a lifestyle ritual. Pura's $180 annual subscription is not a functional odor product; it's a home ambiance product. The consumer who buys Pura may never have been a Febreze buyer to begin with."
+      },
+      {
+        "label": "Step 2 \u2014 Respond to Air Wick Botanica",
+        "script": "For Air Wick Botanica, the response is a product and channel play. Febreze should launch 'Febreze Natural Essentials' \u2014 a plant-derived ingredients line with essential oils \u2014 priced at parity to Botanica, positioned as 'Febreze's proven odor elimination, now with natural ingredients.' P&G's distribution scale means Febreze can get this on shelf faster and at higher distribution breadth than Air Wick. Lead the launch with a campaign that says: 'Other natural sprays mask odors. Febreze Natural eliminates them.' Lean into the functional differentiation. Speed matters here \u2014 Botanica has 12 months of momentum and shelf position to defend against."
+      },
+      {
+        "label": "Step 3 \u2014 Market Entry Framework: Pura's Segment",
+        "script": "The fragrance-ritual segment is $588 million today \u2014 that's 28% of the $2.1 billion market \u2014 and growing at 16% annually. This is an attractive market. Can Febreze compete there? The Febreze brand is built on odor elimination, not home fragrance ritual, so a 'Febreze Smart Diffuser' would face a brand architecture challenge \u2014 the name signals functional, not aspirational. My recommendation: P&G should evaluate acquiring Pura within the next six months. At $180 annual revenue per customer and 40% growth, Pura is likely valued at $200-400 million \u2014 a reasonable acquisition for P&G. Alternatively, build a separate brand identity for a P&G smart diffuser \u2014 not Febreze \u2014 to compete in the fragrance-ritual segment without the brand equity conflict."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation has three parts. One: fast-track 'Febreze Natural Essentials' to retail within six months to directly counter Air Wick Botanica \u2014 this is a product and marketing problem P&G can solve quickly using existing manufacturing. Two: evaluate Pura for acquisition immediately \u2014 the fragrance-ritual segment is growing and Pura has first-mover brand credibility that a P&G build-from-scratch product would take years to develop. Three: simultaneously double down on Febreze's odor-elimination positioning with the pet-owner and smoker segments \u2014 this is the functional moat that Botanica and Pura genuinely cannot claim, and Febreze's heaviest users are there. The biggest mistake would be trying to extend Febreze's brand into the luxury fragrance-ritual space \u2014 that's not what the brand means to consumers, and it would dilute the core equity while failing to credibly compete with Pura's lifestyle positioning."
+      }
+    ]
+  },
+  {
+    "id": "scenario_019",
+    "type": "Competitive Threat",
+    "company": "Chobani",
+    "title": "Chobani Defending Greek Yogurt Leadership",
+    "prompt": "Chobani holds 19% of the $9.4B US yogurt market and is the #1 Greek yogurt brand. Danone (Oikos) has launched a 'Pro' high-protein line at $2.49/cup (vs. Chobani at $1.89) and spent $80M in advertising in the first year. Simultaneously, Fage (which Chobani credits as the originator of US Greek yogurt) has grown 12% by positioning on 'authentic Greek' with imported milk. Chobani's dollar share has declined from 19.2% to 18.6% in 12 months. What is the strategic response?",
+    "context": "Chobani's success was built on making Greek yogurt accessible at mainstream price points in mass retail. The brand has expanded into oat milk, coffee creamer, and drinks. Chobani's research shows its core buyer is a female 28-45 health-conscious consumer. The high-protein yogurt segment (25g+ protein) is growing 34% annually and commands a $0.50+ price premium. Chobani has a 'Plain' SKU with 17g protein.",
+    "correctFrameworks": [
+      "3C's",
+      "4P's",
+      "STP"
+    ],
+    "whyThisFramework": "3C's reveals two flanking attacks: Danone going above on protein/price and Fage going to authenticity. STP determines whether Chobani's 'democratization of Greek' positioning can hold the middle or if it gets squeezed. 4P's then responds \u2014 likely product reformulation to match protein specs and pricing strategy to maintain accessibility while creating a premium tier.",
+    "keyConsiderations": [
+      "Being squeezed from above (premium protein) and below (authentic/imported) simultaneously",
+      "Chobani's brand heritage is accessibility \u2014 premium repositioning risks alienating core buyers",
+      "The high-protein trend is structural; Chobani must match the category direction",
+      "Portfolio extension (Chobani Pro line) can defend without repositioning the hero SKU"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is the 0.6-point dollar share decline coming from Chobani's flavored yogurt line (where Danone Pro likely competes) or from the plain Greek segment (where Fage competes) \u2014 understanding which flank is bleeding faster changes the prioritization?",
+      "What is the protein content of Chobani's current flavored yogurt lineup versus Oikos Pro's 25g+ claim \u2014 and what would it cost to reformulate Chobani flavored yogurts to 20-25g protein?",
+      "Has Chobani evaluated launching a 'Chobani Pro' or high-protein sub-line, and what are the formulation and cost constraints at scale?",
+      "How is Chobani performing in the mass retail channel versus Danone \u2014 are they losing shelf position, or is the share decline happening in specialty retail and natural channels where Fage over-indexes?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Defend the accessible-mainstream position",
+        "subIssues": [
+          "Is the $1.89 price point still competitive for Chobani's core 28-45 female buyer, or has private label at $1.29 and Danone Pro at $2.49 created a price ladder that makes $1.89 feel neither cheap enough nor premium enough?",
+          "What is the distribution and shelf position of Chobani vs. Oikos Pro in the top-10 mass retail accounts \u2014 has Chobani lost eye-level position to the Danone Pro launch?",
+          "Can Chobani defend the accessible center by increasing protein content on existing SKUs without changing price \u2014 reformulating to 20g+ protein at $1.89 would directly neutralize Oikos Pro's primary claim at a $0.60 price advantage?"
+        ]
+      },
+      {
+        "block": "Compete in the high-protein premium tier",
+        "subIssues": [
+          "Should Chobani launch a 'Chobani Pro' line at $2.29-2.49 to compete directly with Oikos Pro on protein content and capture the growing 34% high-protein segment?",
+          "What formulation is required to hit 25g+ protein per cup, and does Chobani's current manufacturing infrastructure support that protein concentration without additional investment?",
+          "What is the cannibalization risk of a Chobani Pro line on the core $1.89 Chobani SKU \u2014 will health-conscious buyers trade up internally, and is that a good outcome?"
+        ]
+      },
+      {
+        "block": "Address Fage's authenticity challenge",
+        "subIssues": [
+          "What is the actual consumer-facing difference between Chobani's 'Made in America' Greek yogurt and Fage's 'authentic Greek' imported milk positioning \u2014 and does Chobani's core buyer care?",
+          "Can Chobani counter-position on 'authentic craft' or 'local ingredients' to differentiate from Fage without abandoning the accessibility positioning?",
+          "Is Fage's 12% growth primarily in specialty and natural channels where Chobani has less share \u2014 and if so, is it worth fighting there or ceding those channels?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Map the two-front competitive attack",
+        "detail": "Chobani is being flanked from above (Danone Oikos Pro at $2.49 with 25g+ protein and $80M in advertising) and from the side (Fage authenticity positioning growing 12%). The 0.6-point dollar share decline in 12 months at a $9.4B market is $56M in revenue lost annually. Quantify each threat separately: how much of the decline is attributable to Oikos Pro's protein-and-price play versus Fage's authenticity positioning?"
+      },
+      {
+        "step": 2,
+        "title": "Apply STP to determine if the middle position is sustainable",
+        "detail": "Chobani's 'democratized Greek' position \u2014 accessible quality at $1.89 \u2014 has been its competitive advantage. The question is whether that middle position gets squeezed as Oikos Pro becomes the protein standard and Fage owns authentic. The STP analysis: Chobani's core 28-45 female health-conscious buyer is being directly targeted by Oikos Pro's protein message. If 25g protein becomes the new minimum expectation for 'healthy Greek yogurt,' Chobani's 17g plain SKU is at risk of being perceived as nutritionally inferior \u2014 that is an existential threat to the brand's health positioning."
+      },
+      {
+        "step": 3,
+        "title": "Design the portfolio response via 4P's",
+        "detail": "Product: launch 'Chobani Complete' or 'Chobani Pro' at 25g+ protein within 6-9 months, priced at $2.29 (below Oikos Pro's $2.49, maintaining the accessibility edge). Simultaneously, reformulate core flavored Chobani to 20g protein at the current $1.89 price \u2014 neutralizing Oikos Pro's primary claim at a significant price advantage. On Promotion: immediately activate a protein comparison campaign: 'Same protein power, 60 cents less.' This directly attacks Oikos Pro's value proposition."
+      },
+      {
+        "step": 4,
+        "title": "Address Fage with brand story, not ingredient reformulation",
+        "detail": "Fage's 'authentic Greek' play is a brand story, not a functional superiority. Counter with Chobani's own authentic story: founded by Hamdi Ulukaya, a Kurdish immigrant, in upstate New York in 2005 \u2014 a genuinely compelling American entrepreneurship narrative. Position Chobani as 'the brand that brought Greek yogurt to America' \u2014 owning the category origin story rather than ceding it to Fage. This is a Promotion and brand narrative response, not a product change."
+      },
+      {
+        "step": 5,
+        "title": "Protect shelf position and distribution",
+        "detail": "Danone's $80M advertising spend is a push play \u2014 it will pull consumers toward Oikos Pro if retailers give it premium shelf position. Chobani must defend shelf position aggressively through retailer partnership agreements, promotional programs, and distributor relationships. Use Chobani's full portfolio (oat milk, creamer, drinks) as negotiating leverage with retailers to maintain yogurt shelf prominence \u2014 P&G-style portfolio leverage with retail partners."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Flanking attack",
+        "definition": "A competitive strategy where a challenger attacks a market leader not head-on but from a different angle \u2014 Danone attacks from above with premium protein, Fage attacks from the side with authenticity, both avoiding direct price competition with Chobani's core"
+      },
+      {
+        "term": "Portfolio sub-brand",
+        "definition": "A branded extension that operates under the parent brand's architecture \u2014 'Chobani Pro' would be a sub-brand that captures the high-protein segment while keeping the core Chobani brand for accessibility"
+      },
+      {
+        "term": "Protein per dollar value",
+        "definition": "A consumer-facing metric in health food categories comparing protein grams to price \u2014 at 20g for $1.89, Chobani can claim better protein-per-dollar value than Oikos Pro's 25g for $2.49"
+      },
+      {
+        "term": "Category origin positioning",
+        "definition": "A brand narrative that claims credit for introducing a category \u2014 Chobani's story of bringing Greek yogurt to mass market America is a counter to Fage's 'authentic Greek' claim and an ownership of the category's US history"
+      }
+    ],
+    "interviewerExpectations": "A strong answer separates the two threats (Danone protein vs. Fage authenticity) and proposes differentiated responses \u2014 a product/pricing response to Danone and a brand narrative response to Fage. A weak answer recommends a single solution like 'increase marketing spend' without addressing the structural protein credibility gap or the portfolio architecture question.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Chobani is facing a two-front competitive attack and each front requires a different response. Danone is attacking from above with Oikos Pro \u2014 25 grams of protein at $2.49 and $80 million in first-year advertising. That's a product and price positioning threat. Fage is attacking from the side with authentic Greek, imported milk, and heritage \u2014 that's a brand narrative threat. I'll use 3C's to map both threats, STP to assess whether Chobani's middle positioning can hold, and 4P's to design the response. Let me start by sizing the risk."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I structure this: is the 0.6-point dollar share decline concentrated in the flavored yogurt segment where Oikos Pro competes, or in the plain Greek segment where Fage wins? That prioritization changes everything. Second \u2014 has Chobani evaluated a 'Chobani Pro' sub-line internally, and what are the formulation constraints to hitting 25 grams of protein per cup? Third \u2014 in which retail channels is Chobani losing the most \u2014 mass retail where Danone's advertising dollars pull, or specialty and natural channels where Fage over-indexes?"
+      },
+      {
+        "label": "Step 1 \u2014 3C's: Two Threats, Two Different Problems",
+        "script": "On the 3C's. Company: Chobani built its 19% share by democratizing Greek yogurt \u2014 accessible quality at $1.89 in mass retail. The brand's health credibility is real, but its 17 grams of protein on the plain SKU is below the 25-gram standard that Oikos Pro is establishing as the 'serious protein' bar. Competitor one \u2014 Danone has Oikos Pro with $80 million in advertising and a 25g protein claim at $2.49. Competitor two \u2014 Fage has authenticity and imported milk positioning growing 12%. Consumer: Chobani's core 28-45 female health buyer is the exact target of Oikos Pro's protein messaging. If she starts to see 25 grams as the baseline for 'actually healthy,' Chobani's 17 grams puts it at risk of being seen as a lesser product."
+      },
+      {
+        "label": "Step 2 \u2014 STP: Can the Middle Position Hold?",
+        "script": "Chobani's positioning is 'accessible Greek yogurt at a mainstream price point.' The question is whether the consumer stays in the middle as the top and sides get attacked. For the health-conscious 28-45 buyer, I think the middle position is genuinely at risk on the protein dimension. The high-protein segment is growing 34% annually \u2014 that is a structural consumer shift toward prioritizing protein. If 25 grams becomes the category benchmark, Chobani at 17 grams risks becoming 'the less healthy option,' which would be devastating to its core equity. This is the most urgent problem."
+      },
+      {
+        "label": "Step 3 \u2014 4P's: Product and Pricing Response to Danone",
+        "script": "My primary response targets Oikos Pro. Within six to nine months, launch 'Chobani Pro' at 25 grams of protein, priced at $2.29 \u2014 sixty cents below Oikos Pro at $2.49. The promotional campaign leads with: 'Same protein. Sixty cents less.' Simultaneously, reformulate the existing core Chobani flavored line to 20 grams of protein at the current $1.89 price \u2014 no price increase. This move neutralizes Oikos Pro's protein advantage at the core price point while the Pro sub-line captures the 34%-growing high-protein premium segment. On shelf position, use Chobani's full portfolio \u2014 oat milk, creamer, drinks \u2014 as negotiating leverage with retailers to maintain yogurt shelf prominence against Danone's push campaign."
+      },
+      {
+        "label": "Step 4 \u2014 Brand Narrative Response to Fage",
+        "script": "Fage's threat is about authenticity and origin, not functional superiority. The counter is a brand narrative, not a product change. Chobani's founder story is genuinely powerful: a Kurdish immigrant, Hamdi Ulukaya, bought a shuttered yogurt plant in upstate New York in 2005 and brought Greek yogurt to mainstream America. That is authentic. Position Chobani as 'the brand that brought Greek yogurt to America' \u2014 own the US category origin story. The messaging: 'Fage invented Greek yogurt in Greece. Chobani introduced it to your grocery store.' This acknowledges Fage's heritage while claiming the US consumer relationship."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "Three priorities. One: within six months, launch Chobani Pro at 25 grams protein, priced at $2.29, with a direct comparison campaign against Oikos Pro on protein-per-dollar value \u2014 this is the most urgent response because the protein trend is structural and Danone's $80M campaign is actively reshaping consumer expectations. Two: reformulate core flavored Chobani to 20 grams protein at no price increase to close the nutritional credibility gap on the core SKU. Three: activate Chobani's founder story as the primary response to Fage \u2014 this is a brand campaign, not a product change, and it reclaims the authenticity narrative without conceding that 'authentic' means imported. The risk is trying to fight both threats with the same response. They require different tools."
+      }
+    ]
+  },
+  {
+    "id": "scenario_020",
+    "type": "Pricing",
+    "company": "Nike",
+    "title": "Nike Air Force 1 Price Increase Decision",
+    "prompt": "Nike is considering raising the retail price of the Air Force 1, its best-selling lifestyle sneaker, from $110 to $130. The shoe sells 15M units annually in the US. A pricing analysis shows price elasticity of -1.4 for the AF1 style. Nike's current gross margin on AF1 is 48%. The cost increase from supply chain and materials is $8 per unit. Should Nike raise the price, and by how much?",
+    "context": "Air Force 1 is one of Nike's most culturally embedded styles \u2014 worn by consumers from age 12 to 60. The $110-$130 price tier is highly competitive (Adidas Forum at $110, New Balance 550 at $110). If Nike raises price to $130, Foot Locker analysis suggests AF1 unit sales could drop 8-12%. However, maintaining $110 means Nike absorbs the $8 cost increase entirely, compressing margins by 4 points.",
+    "correctFrameworks": [
+      "Pricing Framework",
+      "Breakeven Analysis",
+      "4P's"
+    ],
+    "whyThisFramework": "Breakeven Analysis calculates exactly how much volume loss is acceptable at each price point given the cost structure. Pricing Framework (specifically value-based vs. cost-based tension) frames the strategic choice. 4P's ensures price is set in context of the full marketing mix \u2014 a price increase needs promotional support to hold volume.",
+    "keyConsiderations": [
+      "Elasticity of -1.4 means a 10% price increase causes a 14% volume drop \u2014 do the math",
+      "Cultural equity of AF1 provides some price insulation; it's not a pure commodity",
+      "A partial increase ($10) vs. full increase ($20) may thread the needle on volume retention",
+      "Timing matters \u2014 price increases during back-to-school season have higher risk"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is the -1.4 price elasticity figure based on observed consumer behavior data (e.g., from previous AF1 price tests) or modeled from category elasticity benchmarks \u2014 and how confident is Nike in this estimate?",
+      "Is the $8 cost increase permanent \u2014 driven by a structural change in materials costs \u2014 or temporary due to a supply chain disruption that may normalize?",
+      "What is the current timing relative to back-to-school and holiday seasons \u2014 a price increase at peak demand is riskier than one in a trough period?",
+      "Are Adidas Forum and New Balance 550 at the $110 price point comparable substitutes in the eyes of AF1's core consumer, or does AF1's cultural cachet create sufficient differentiation to absorb a premium?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Financial impact of each pricing option",
+        "subIssues": [
+          "What is the revenue and gross profit impact of holding price at $110 and absorbing the $8 cost increase \u2014 how many margin points does Niek lose?",
+          "What is the breakeven volume loss for a $10 price increase to $120, given the elasticity of -1.4 and current gross margin of 48%?",
+          "What is the breakeven volume loss for a $20 price increase to $130, and does the Foot Locker projection of 8-12% volume decline fall above or below that breakeven threshold?"
+        ]
+      },
+      {
+        "block": "Competitive and market context for the price increase",
+        "subIssues": [
+          "How does AF1's price elasticity of -1.4 compare to other Nike lifestyle silhouettes \u2014 is AF1 more or less elastic than Jordan 1 or Dunk Low?",
+          "At $130, would AF1 be priced above Adidas Forum and New Balance 550 by $20 \u2014 and is that gap sustainable given the competitive alternatives available to AF1's core consumer?",
+          "What is the risk of a price increase triggering retail channel partners (Foot Locker, Dick's) to reduce AF1 allocation or promotional support?"
+        ]
+      },
+      {
+        "block": "Execution and marketing mix support",
+        "subIssues": [
+          "What promotional investment is required to offset the expected volume decline from a $10 or $20 price increase?",
+          "Should the price increase be implemented uniformly across all retail channels, or should Nike raise DTC prices while keeping wholesale at $110 to protect retail partner relationships?",
+          "What is the timing recommendation \u2014 which season minimizes volume risk for a price increase of this magnitude?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Calculate the cost of doing nothing",
+        "detail": "At $110 with a 48% gross margin, Nike earns $52.80 per unit ($110 \u00d7 48%). The $8 cost increase reduces margin to $44.80 per unit \u2014 a margin of 40.7%, a 7.3 percentage point compression. Across 15M units, Nike loses $120M in gross profit annually by holding price. This is the baseline cost of inaction, and it establishes why a price increase must be seriously considered."
+      },
+      {
+        "step": 2,
+        "title": "Model the breakeven for a $10 increase to $120",
+        "detail": "At $120 with the $8 cost increase absorbed, Nike's gross profit per unit = ($120 \u00d7 48%) - $8 = $57.60 - $8 = wait, recalculate properly: if price goes to $120 and COGS increases by $8/unit, new gross profit = $120 - ($110 \u00d7 52%) - $8 = $120 - $57.20 - $8 = $54.80 per unit. Versus baseline $52.80. That is $2 more per unit. With elasticity of -1.4, a 9.1% price increase ($10/$110) causes a 12.7% volume decline (9.1% \u00d7 1.4). 12.7% of 15M units = 1.9M units lost. Revenue impact: need to check if the $2/unit gain covers the volume loss. At 13.1M units \u00d7 $54.80 = $717.9M vs. baseline 15M \u00d7 $52.80 = $792M. A $10 increase is revenue-negative. Recommend $5-7 increase or model more carefully."
+      },
+      {
+        "step": 3,
+        "title": "Model the full $20 increase to $130",
+        "detail": "A $20 increase is 18.2% above $110. With elasticity of -1.4, volume declines 25.5% (18.2% \u00d7 1.4) = loss of 3.8M units. New volume: 11.2M units. New gross profit per unit at $130 with $8 cost increase: revenue side gains $20/unit but the 48% margin base was on $110. Need to structure as: COGS was $110 \u00d7 52% = $57.20. New COGS = $57.20 + $8 = $65.20. New gross profit = $130 - $65.20 = $64.80 per unit. Baseline gross profit: $110 - $57.20 = $52.80. Total gross profit at $130: 11.2M \u00d7 $64.80 = $725.8M vs. baseline 15M \u00d7 $52.80 = $792M. Also revenue-negative. The elasticity makes both options financially worse than holding at $110 with absorbed cost."
+      },
+      {
+        "step": 4,
+        "title": "Recommend the optimal price and timing",
+        "detail": "Given elasticity of -1.4, large price increases destroy more value than they create at current volume levels. The optimal strategy is a modest $5 increase to $115 \u2014 a 4.5% increase causing a 6.4% volume decline (4.5% \u00d7 1.4 = 6.3%), losing ~945K units. New gross profit: 14.05M units \u00d7 ($115 - $65.20) = 14.05M \u00d7 $49.80 = $699.7M. Versus baseline $792M. Still below baseline, but the margin compression from doing nothing is $120M \u2014 making even partial recovery valuable. Implement in a non-peak period (January-February or June) to avoid back-to-school and holiday risk."
+      },
+      {
+        "step": 5,
+        "title": "Design 4P's support for the price increase",
+        "detail": "A price increase without marketing support accelerates volume decline. Accompany the $5-7 increase with a cultural campaign reinforcing AF1's uniqueness \u2014 celebrity collaborations, limited colorways, and storytelling about AF1's 40-year heritage. This shifts the consumer mental frame from 'sneaker at $115' to 'cultural artifact worth the premium.' Use the DTC channel to test the price increase first before pushing to wholesale, as DTC provides faster feedback loops and doesn't risk retailer relationship damage."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Price elasticity of demand",
+        "definition": "A measure of how much volume changes in response to a price change \u2014 elasticity of -1.4 means a 10% price increase causes a 14% volume decline; values above -1.0 are 'elastic' (price-sensitive) and values below -1.0 are 'inelastic' (price-insensitive)"
+      },
+      {
+        "term": "Breakeven volume analysis",
+        "definition": "Calculating the maximum volume loss a price increase can cause before total gross profit falls below the baseline \u2014 combines price elasticity with margin structure to find the optimal price point"
+      },
+      {
+        "term": "Gross margin compression",
+        "definition": "The reduction in gross margin percentage caused by cost increases that are not passed through to consumers \u2014 absorbing Nike's $8 cost increase without a price increase compresses margin from 48% to approximately 40.7%"
+      },
+      {
+        "term": "Value-based pricing",
+        "definition": "Setting price based on the perceived value to the consumer rather than cost-plus \u2014 AF1's cultural cachet and 40-year heritage give it some insulation from pure price competition, justifying a modest premium over Adidas Forum and New Balance 550"
+      },
+      {
+        "term": "DTC channel testing",
+        "definition": "Using Nike's direct-to-consumer website and stores as a controlled test environment for price changes before rolling them out to wholesale retail partners \u2014 allows faster iteration and protects retailer relationships during the testing phase"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately applies the elasticity math \u2014 calculating that a -1.4 elasticity makes a large price increase financially destructive \u2014 and recommends a smaller, phased increase rather than the full $20 jump. A weak answer recommends either the full $20 increase without doing the math, or recommends holding price at $110 without quantifying the $120M gross profit cost of doing nothing.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a quantitative pricing decision, so I want to run the math before making a recommendation. The key inputs are: 15 million units at $110, 48% gross margin, price elasticity of -1.4, and an $8 cost increase per unit. I'll use breakeven analysis to calculate how much volume we can afford to lose at each price point, then use the Pricing Framework to assess whether AF1's cultural equity provides any insulation from pure elasticity, and finally 4P's to design the marketing support needed if we raise price. Let me start with the cost of doing nothing."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before the math: three quick questions. Is the -1.4 elasticity estimate based on observed AF1 consumer behavior \u2014 actual price test data \u2014 or modeled from category benchmarks? Because if it's modeled, there's uncertainty in those forecasts. Second, is the $8 cost increase permanent or supply-chain-temporary? If it reverses in 18 months, holding price is more defensible. Third \u2014 what is our current timing relative to back-to-school? Because I'd recommend against raising price within 60 days of a major shopping season regardless of the financial analysis."
+      },
+      {
+        "label": "Step 1 \u2014 Cost of Doing Nothing",
+        "script": "Let me establish the baseline. At $110 with a 48% gross margin, Nike earns $52.80 per unit in gross profit. The $8 cost increase brings our COGS from $57.20 to $65.20 per unit. If we hold price at $110, gross profit per unit drops to $44.80 \u2014 a compression from 48% to 40.7% margin. Across 15 million units, that is $120 million in annual gross profit lost. That is the cost of inaction. It makes the case that we need to do something \u2014 the question is how much to raise price, not whether to raise it."
+      },
+      {
+        "label": "Step 2 \u2014 Breakeven Analysis at $130",
+        "script": "Let me model the full $20 increase first. At $130, our new gross profit per unit is $130 minus $65.20 in COGS, which equals $64.80. That is $12 more per unit than the cost-absorbed $110 baseline of $52.80. But with elasticity of -1.4, an 18.2% price increase drives a 25.5% volume decline \u2014 that's 3.8 million units lost, leaving us at 11.2 million units. Total gross profit at $130: 11.2 million units times $64.80 equals approximately $726 million. Compare that to the baseline \u2014 15 million units at $52.80 equals $792 million. The $20 increase actually destroys $66 million in gross profit versus the no-cost-increase baseline. At this elasticity level, the full $20 jump is financially destructive."
+      },
+      {
+        "label": "Step 3 \u2014 Optimal Price Point",
+        "script": "The math tells me the full $20 increase overcorrects. Let me test a $5 increase to $115. A 4.5% price increase with elasticity of -1.4 drives a 6.3% volume decline \u2014 about 945,000 units lost, leaving us at 14.05 million units. New gross profit: $115 minus $65.20 equals $49.80 per unit. Total: 14.05 million times $49.80 equals $699 million. That is still below the pre-cost-increase baseline of $792 million, but significantly better than absorbing the full $8 cost hit at $110, which would produce 15 million times $44.80 equals $672 million. A $5 increase recovers roughly $27 million versus doing nothing, with a smaller volume risk. My recommendation is a $5 to $7 increase \u2014 not the full $20."
+      },
+      {
+        "label": "Step 4 \u2014 Pricing Framework: Does AF1 Equity Provide Insulation?",
+        "script": "Now let me apply the value-based pricing lens. AF1 is not a commodity \u2014 it has 40 years of cultural history, collaboration equity from Off-White to Travis Scott, and a consumer base from age 12 to 60. In a pure commodity market with -1.4 elasticity, any price increase above break-even destroys value. But AF1's cultural cachet gives us some insulation \u2014 a well-executed cultural campaign alongside the price increase can soften the elasticity effect. My recommendation is to test the $5 to $7 increase first in the DTC channel, where we get faster feedback and don't risk damaging Foot Locker's promotional priority. If DTC volume holds above model \u2014 say elasticity behaves closer to -1.0 than -1.4 \u2014 we can roll the increase to wholesale with confidence."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: raise AF1 price by $5 to $7, not the full $20. The elasticity math makes the $20 increase financially destructive \u2014 we lose more from volume decline than we gain from the price increase. The $5 to $7 increase partially offsets the $8 cost increase and recovers approximately $27 million in gross profit versus absorbing the full cost hit. Implement it in a non-peak period \u2014 January or June \u2014 not near back-to-school or holiday. Support the increase with a cultural campaign: AF1 collaborations, heritage storytelling, limited colorways \u2014 the goal is to shift the consumer frame from 'sneaker that costs $115' to 'cultural icon worth the premium.' And test DTC first before wholesale to validate the elasticity assumptions before locking in retailer pricing commitments. The biggest mistake would be implementing the full $20 increase without doing this math first."
+      }
+    ]
+  }
+]

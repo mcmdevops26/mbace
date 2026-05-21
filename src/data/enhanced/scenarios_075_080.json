@@ -1,0 +1,746 @@
+[
+  {
+    "id": "scenario_075",
+    "type": "Acquisition",
+    "company": "Amgen",
+    "title": "Amgen Acquisition of a Gene Therapy Company",
+    "prompt": "You are VP of corporate development at Amgen. A gene therapy biotech company with 3 pipeline assets in Phase 2 trials (cardiovascular, rare disease, oncology), no revenue, and a 12-year patent runway is available for $3.2B. Amgen's biologics portfolio faces $14B in biosimilar competition by 2030. Should Amgen acquire this company?",
+    "context": "Gene therapy is projected to grow from $5B to $38B by 2030. Novartis's Zolgensma at $2.1M per patient set the benchmark for gene therapy pricing. The acquisition target's lead cardiovascular asset has Phase 2 efficacy data showing 67% reduction in LDL vs. PCSK9 inhibitors at 31% reduction. Amgen's PCSK9 inhibitor Repatha generates $1.1B annually but faces patent expiry in 2028. Amgen has $7.4B in cash on hand. Development risk: Phase 2 to Phase 3 success rate in gene therapy is 48%.",
+    "correctFrameworks": [
+      "Market Entry Framework",
+      "Breakeven Analysis"
+    ],
+    "whyThisFramework": "Market Entry Framework to assess whether the gene therapy market is structurally attractive, whether Amgen has the manufacturing and regulatory capabilities to commercialize gene therapies, and how competitive the cardiovascular indication is, then Breakeven Analysis to determine what commercial success probability and peak sales scenario is needed to justify $3.2B at Amgen's cost of capital.",
+    "keyConsiderations": [
+      "What probability-adjusted NPV does the $3.2B acquisition need to achieve at Amgen's hurdle rate?",
+      "Does Amgen have the gene therapy manufacturing capability, or must it build/partner?",
+      "How does the cardiovascular asset's efficacy profile compare to Repatha — cannibalization risk?",
+      "Is $3.2B the right price given 48% Phase 2-to-3 success rate?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "What is Amgen's weighted average cost of capital and required hurdle rate for acquisitions of this risk profile?",
+      "Does Amgen have existing AAV (adeno-associated virus) vector manufacturing capacity, or would this be built from scratch post-acquisition?",
+      "Are the three pipeline assets being valued independently, and is the $3.2B price driven by the cardiovascular lead asset or the full portfolio?",
+      "What is the regulatory pathway timeline — when would the cardiovascular asset realistically reach NDA submission, and does that create a cash gap Amgen needs to fund?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Market & Strategic Fit",
+        "subIssues": [
+          "Is the gene therapy market large and growing enough to justify entry at $3.2B given Amgen's scale requirements?",
+          "Does the cardiovascular asset complement or cannibalize Repatha's $1.1B revenue before its 2028 patent expiry?",
+          "Does Amgen possess or can it credibly build the gene therapy manufacturing and regulatory expertise to commercialize these assets?"
+        ]
+      },
+      {
+        "block": "Financial Return — Probability-Adjusted NPV",
+        "subIssues": [
+          "What peak sales and pricing assumptions (benchmarked to Zolgensma's $2.1M) are required to achieve a positive NPV at Amgen's hurdle rate?",
+          "At a 48% Phase 2-to-Phase 3 success rate, what is the probability-weighted value of the full three-asset portfolio?",
+          "What additional capex is required for gene therapy manufacturing build-out, and how does it affect the $3.2B all-in cost basis?"
+        ]
+      },
+      {
+        "block": "Alternatives & Execution Risk",
+        "subIssues": [
+          "Could Amgen license or partner on these assets rather than acquiring at full price, preserving capital for other biosimilar defense?",
+          "What happens to Amgen's competitive position if a rival (e.g., Pfizer, Novartis) acquires this target instead?",
+          "What integration risks exist — retention of key scientists, CMC (chemistry, manufacturing, controls) transfer, and clinical execution?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Frame the Strategic Context",
+        "detail": "Anchor the decision in Amgen's $14B biosimilar exposure by 2030 and Repatha's 2028 patent cliff. Establish that this is not just an acquisition question but a portfolio defense question: does gene therapy offset biosimilar revenue loss in the cardiovascular franchise?"
+      },
+      {
+        "step": 2,
+        "title": "Evaluate Market Attractiveness",
+        "detail": "Apply Market Entry Framework: the gene therapy market grows from $5B to $38B by 2030 (38% CAGR), pricing power is validated by Zolgensma at $2.1M per patient, and the cardiovascular segment is underserved at this curative level. Assess Amgen's manufacturing capability gap — gene therapy requires viral vector production, which Amgen does not currently operate at scale."
+      },
+      {
+        "step": 3,
+        "title": "Build Probability-Adjusted NPV",
+        "detail": "Request: (1) estimated peak sales for the cardiovascular asset under a curative pricing model, (2) development timeline to NDA, (3) estimated capex for AAV manufacturing. Apply the 48% Phase 2-to-Phase 3 success rate as a probability weight. Back-solve: at $3.2B price, what peak sales year-1 commercial revenue is required to exceed Amgen's ~12% hurdle rate?"
+      },
+      {
+        "step": 4,
+        "title": "Test Cannibalization and Sequencing",
+        "detail": "Flag that the cardiovascular gene therapy asset — 67% LDL reduction vs. Repatha's 31% — could displace Repatha in the same patient population. If launched before 2028, Amgen cannibalizes its own $1.1B franchise early. The rare disease and oncology assets provide diversification and reduce reliance on a single bet, which partially justifies the portfolio acquisition premium."
+      },
+      {
+        "step": 5,
+        "title": "Recommend with Conditions",
+        "detail": "Recommend acquisition if: (1) probability-adjusted NPV at a $1.5B+ peak sales cardiovascular scenario exceeds hurdle rate, (2) Amgen commits to a gene therapy manufacturing partnership (e.g., contract manufacturer) to avoid $500M+ of standalone capex, and (3) deal includes milestone-based payments tied to Phase 3 initiation to share development risk. The $7.4B cash position makes the $3.2B purchase feasible without balance sheet stress."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "NDA",
+        "definition": "New Drug Application — the formal submission to the FDA requesting approval to market a new drug; approval triggers commercial launch"
+      },
+      {
+        "term": "AAV (Adeno-Associated Virus)",
+        "definition": "The viral vector most commonly used to deliver gene therapy payloads into human cells; manufacturing capacity is scarce and expensive"
+      },
+      {
+        "term": "PCSK9 Inhibitor",
+        "definition": "A class of injectable cholesterol-lowering drugs; Amgen's Repatha is one, generating $1.1B annually — the gene therapy asset is a potential curative replacement in this space"
+      },
+      {
+        "term": "Probability-Adjusted NPV",
+        "definition": "Net present value of future cash flows multiplied by the probability of clinical and commercial success — the standard pharma/biotech acquisition valuation method"
+      },
+      {
+        "term": "CMC",
+        "definition": "Chemistry, Manufacturing, and Controls — the regulatory section covering how a drug is made; especially complex for gene therapies and a key integration risk"
+      }
+    ],
+    "interviewerExpectations": "A strong answer quantifies the return hurdle, applies the 48% success rate explicitly to the $3.2B price, and raises the Repatha cannibalization tension without being prompted. A weak answer recommends acquisition based solely on market growth rates without acknowledging manufacturing gaps, development risk, or the self-competition dynamic.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Thank you — this is a compelling strategic question. Before I give a recommendation, I want to briefly clarify one thing: does Amgen have any existing AAV vector manufacturing capability, or would we need to build or partner post-close? That will materially affect the all-in cost. Assuming we'd need to partner or contract manufacture — I'll flag that assumption and we can revisit. I'll structure my thinking using a Market Entry lens first to assess strategic fit, then I'll run a back-of-envelope probability-adjusted NPV to test whether $3.2B is the right price. Ready to walk through it?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few quick questions before I dive in. First, what's Amgen's hurdle rate for acquisitions — is it roughly 12%? Second, is the $3.2B a fixed bid, or is there room for a milestone-structured deal where we pay more upon Phase 3 initiation? And third, are we valuing the three pipeline assets together or is the cardiovascular lead asset driving most of the price? Those three answers will shape my NPV math significantly."
+      },
+      {
+        "label": "Step 1 — Market Attractiveness",
+        "script": "Starting with market fit. Gene therapy is projected to grow from $5 billion today to $38 billion by 2030 — that's a roughly 35% CAGR, which is structurally attractive. Novartis's Zolgensma at $2.1 million per patient proves the pricing model — curative therapies command extraordinary prices in reimbursed markets. The cardiovascular lead asset is particularly interesting: 67% LDL reduction versus Repatha's 31%. That's a meaningfully superior efficacy profile. But here's the tension I want to flag: if this asset launches before Repatha's 2028 patent expiry, Amgen is essentially cannibalizing its own $1.1 billion franchise. That's not necessarily wrong — better to cannibalize yourself than let a competitor do it — but we need to price that displacement into our analysis."
+      },
+      {
+        "label": "Step 2 — Probability-Adjusted NPV",
+        "script": "Now let me pressure-test the $3.2 billion price. The Phase 2-to-Phase 3 success rate in gene therapy is 48%, and even Phase 3-to-approval adds another 30% haircut, so the blended probability of the cardiovascular asset reaching market is roughly 30 to 35%. If we assume peak sales of $2 billion annually — reasonable given Repatha's $1.1 billion ceiling and a curative premium — and discount at 12% over a 10-year horizon, we get a present value of roughly $5 to $6 billion for the cardiovascular asset alone on a success-only basis. Risk-adjust that at 33% probability and we're at $1.7 to $2 billion expected value for one asset. The rare disease and oncology assets add option value — let's call it another $1.5 billion risk-adjusted. Combined, we're at roughly $3.2 to $3.5 billion in expected value, which means the $3.2 billion price is approximately right — but there is very little margin of safety."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is: acquire, but structure the deal to share risk. The expected value math supports the price — barely — but there's no cushion for manufacturing cost overruns or Phase 3 failures. So I'd push for three conditions: one, a milestone-based payment structure where $500 million of the $3.2 billion is contingent on Phase 3 initiation — that preserves Amgen's capital if the science fails early. Two, a contract manufacturing agreement with a gene therapy CDM, like Lonza or Catalent, to avoid a $400 to $500 million AAV facility build — Amgen's $7.4 billion in cash is sufficient but shouldn't be overcommitted. Three, an internal sequencing plan for the cardiovascular asset to avoid pre-2028 self-cannibalization of Repatha — phase the commercial launch after Repatha's patent cliff. Done right, this acquisition solves Amgen's $14 billion biosimilar exposure problem with a high-value differentiated portfolio that biologics competitors cannot easily replicate."
+      }
+    ]
+  },
+  {
+    "id": "scenario_076",
+    "type": "Acquisition",
+    "company": "MasterCard",
+    "title": "MasterCard Acquisition of an Open Banking Platform",
+    "prompt": "You are a director of corporate development at MasterCard. An open banking API platform that connects 4,200 banks with 1,800 fintech apps and processes $180B in annual data-driven transaction authorizations is available for $2.8B. The platform has $220M in revenue growing at 48% annually. Should MasterCard acquire it?",
+    "context": "Open banking regulation (PSD2 in Europe, proposed US rules) is threatening MasterCard's data network advantage. Visa acquired Plaid for $5.3B (deal blocked) and later acquired Tink for $2.15B in Europe. MasterCard's data analytics division (Mastercard Advisors) generates $2.1B in annual revenue. The target platform processes account verification and cash flow data that complements card transaction data. If acquired, the platform would give MasterCard visibility into non-card spending at 4,200 banks. Plaid, which dominates open banking in the US, is not for sale.",
+    "correctFrameworks": [
+      "3C's",
+      "Value Chain Analysis"
+    ],
+    "whyThisFramework": "3C's to evaluate open banking platform users' needs (consumer), how Visa's Tink acquisition and Plaid's position affect strategic dynamics (competition), and MasterCard's ability to integrate and leverage open banking data within its existing analytics business (company), then Value Chain Analysis to determine where open banking data creates the most incremental value in MasterCard's existing value chain.",
+    "keyConsiderations": [
+      "Does open banking data meaningfully strengthen MasterCard Advisors' analytics revenue?",
+      "Can MasterCard avoid Visa's antitrust problems given its Plaid acquisition attempt was blocked?",
+      "What is the revenue synergy case for combining MasterCard's card data with card-absent bank data?",
+      "At 48% revenue growth, is $2.8B a fair valuation and does MasterCard overpay vs. Visa's Tink price?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "What geographic footprint does the platform cover — primarily US, Europe, or global — and does it overlap with Visa's Tink (Europe-only) or compete with Plaid (US-focused)?",
+      "What is the platform's revenue model — per-API call fees, SaaS subscriptions, or transaction-based? This affects revenue quality and synergy assumptions.",
+      "Has MasterCard's legal team assessed antitrust exposure, given Visa's blocked Plaid deal set a precedent for regulator scrutiny of payment network acquisitions of open banking assets?",
+      "What is the platform's net revenue retention — are the 1,800 fintech app relationships growing or churning?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Strategic Fit and Competitive Positioning",
+        "subIssues": [
+          "Does the open banking platform fill a genuine data gap in MasterCard Advisors' analytics — specifically non-card spending visibility at 4,200 banks?",
+          "Does acquiring this platform provide a defensive moat against open banking regulation eroding MasterCard's data network advantage?",
+          "How does MasterCard's competitive position change relative to Visa, which already acquired Tink in Europe, if MasterCard does not act?"
+        ]
+      },
+      {
+        "block": "Financial Valuation and Synergies",
+        "subIssues": [
+          "Is $2.8B a reasonable price at 48% revenue growth — how does it compare to Visa's Tink at $2.15B and Plaid's private valuation?",
+          "What are the incremental revenue synergies from combining bank account data with MasterCard card transaction data for Mastercard Advisors' clients?",
+          "What is the organic revenue trajectory if the platform grows at 48% for 3 years — does the $2.8B represent a fair multiple of year-3 revenue?"
+        ]
+      },
+      {
+        "block": "Execution and Regulatory Risk",
+        "subIssues": [
+          "What is the antitrust risk given Visa's Plaid acquisition was blocked on competition grounds — would MasterCard face similar scrutiny?",
+          "Can MasterCard integrate the API platform without disrupting the 1,800 fintech app relationships that depend on platform neutrality?",
+          "What is the risk that open banking regulation evolves to mandate free data sharing, commoditizing the platform's proprietary value?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Establish Strategic Rationale",
+        "detail": "Frame the acquisition against MasterCard's core threat: open banking regulation (PSD2 in Europe, proposed US rules) is forcing banks to share account data with fintechs via APIs, potentially routing transactions outside the card network. Acquiring the platform gives MasterCard visibility into $180B of non-card transactions and preserves its data analytics advantage."
+      },
+      {
+        "step": 2,
+        "title": "Assess the Competitive Map",
+        "detail": "Visa has Tink in Europe ($2.15B, approved) but lacks a US open banking asset. Plaid dominates US open banking and is not for sale. This target appears to be the most significant US/global open banking asset available. The question is whether MasterCard can pass antitrust review that Visa could not for Plaid — the target's smaller scale and lower market share make that more plausible."
+      },
+      {
+        "step": 3,
+        "title": "Value Chain Analysis — Where Does Open Banking Data Create Incremental Value?",
+        "detail": "Map where open banking account data plugs into MasterCard's value chain: (1) Mastercard Advisors — account cash flow data enriches card spend analytics for merchant clients; (2) fraud and identity — account verification data from 4,200 banks improves real-time authorization accuracy; (3) issuer services — real-time cash flow data enables better credit underwriting for issuing bank clients. Estimate the revenue lift to MasterCard Advisors' $2.1B base if even 5-10% incremental analytics capability is monetized."
+      },
+      {
+        "step": 4,
+        "title": "Sanity-Check the Valuation",
+        "detail": "At $220M revenue growing 48% annually, year-3 revenue is approximately $478M. The $2.8B price represents roughly 5.9x year-3 revenue — consistent with Visa's Tink at $2.15B on comparable revenue. Run a simple DCF: if revenue grows to $500M by year 3 at 30% EBITDA margins, EBITDA of $150M at a 20x multiple = $3B — roughly in line with the ask. Flag that the multiple is justified only if synergies materialize."
+      },
+      {
+        "step": 5,
+        "title": "Recommend with Antitrust Condition",
+        "detail": "Recommend acquisition with three conditions: (1) outside antitrust counsel confirms the risk profile is materially lower than Visa/Plaid given the target's smaller US market share; (2) the integration plan preserves the platform's neutrality with the 1,800 fintech app customers — any perception of MasterCard preference will accelerate churn; (3) synergy targets are formally built into Mastercard Advisors' three-year revenue plan to justify the $2.8B price to the board."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "PSD2",
+        "definition": "Payment Services Directive 2 — EU regulation requiring banks to open their payment and account data to licensed third parties via APIs, forcing data sharing that previously required card network infrastructure"
+      },
+      {
+        "term": "Open Banking API",
+        "definition": "A standardized technical interface that allows fintechs and third-party apps to access bank account data and initiate payments directly, bypassing traditional card networks"
+      },
+      {
+        "term": "NRR (Net Revenue Retention)",
+        "definition": "Revenue retained from existing customers including expansions minus churn — a key indicator of SaaS and API platform health; above 120% suggests strong upsell momentum"
+      },
+      {
+        "term": "Mastercard Advisors",
+        "definition": "MasterCard's data analytics and consulting division generating $2.1B annually by monetizing card transaction insights to merchants, banks, and governments — the primary synergy target for open banking data"
+      },
+      {
+        "term": "Antitrust Scrutiny",
+        "definition": "Regulatory review of whether an acquisition reduces competition; the blocked Visa/Plaid deal at $5.3B established that payment networks acquiring data infrastructure face heightened DOJ and FTC review"
+      }
+    ],
+    "interviewerExpectations": "A strong answer proactively raises antitrust risk (citing the Visa/Plaid precedent), builds a synergy case specifically tied to Mastercard Advisors' revenue, and tests the valuation against Tink as a comparable. A weak answer endorses the acquisition because the market is growing without addressing regulatory exposure or quantifying where value is actually created.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is an exciting but high-stakes acquisition question — the upside is clear, but there's a real antitrust landmine I want to make sure we address head-on. I'll structure my thinking with 3C's to understand strategic fit, then a Value Chain Analysis to identify where this open banking data actually creates incremental value for MasterCard. I'll finish with a valuation sanity check and a clear recommendation. One quick clarifying question before I dive in: has legal assessed our antitrust exposure, given that Visa's Plaid acquisition was blocked by DOJ on competition grounds?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few things would sharpen my analysis. First, what is the platform's geographic footprint — is it primarily US, or does it have European coverage that would put it in direct competition with Visa's Tink? Second, what does the platform's net revenue retention look like — are the 1,800 fintech relationships growing or churning? And third, what is the revenue model — per-API call, SaaS subscription, or transaction-based? That tells us a lot about revenue quality and how synergies would flow into Mastercard Advisors."
+      },
+      {
+        "label": "Step 1 — Strategic Fit via 3C's",
+        "script": "Starting with the 3C's. On the customer side: fintechs and banks need neutral, high-reliability open banking infrastructure — if MasterCard is perceived as favoring its own card products in routing decisions, it will lose the 1,800 fintech relationships quickly. On competition: Visa acquired Tink in Europe for $2.15 billion — MasterCard is already behind in that market. Plaid is the US leader and is not for sale. This target appears to be the most significant available open banking asset globally, which creates scarcity value and strategic urgency. On company fit: MasterCard Advisors generates $2.1 billion by monetizing card transaction data. The target gives us visibility into $180 billion of non-card bank transactions across 4,200 institutions. Combining card-present and card-absent data creates a genuinely differentiated analytics product that neither Visa nor standalone fintechs can replicate."
+      },
+      {
+        "label": "Step 2 — Value Chain and Synergy Analysis",
+        "script": "Using Value Chain Analysis, I see three specific synergy pools. First, Mastercard Advisors revenue uplift: if open banking account data allows us to sell enriched analytics to even 20% of our current Advisors clients at a 10% price premium, that's $42 million in incremental annual revenue — and that's conservative. Second, fraud and identity services: real-time account balance verification from 4,200 banks dramatically improves authorization accuracy and reduces false declines — that's a product we can sell back to issuing banks. Third, credit underwriting: cash flow data from bank accounts is the missing input for MasterCard's lending partner services. Each of these is a defensible synergy with a clear buyer. Now on valuation: at 48% growth, year-3 revenue is approximately $480 million. At $2.8 billion, we're paying roughly 5.8x forward revenue — consistent with Visa's Tink deal. The math works if synergies materialize."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is: pursue the acquisition, but gate the process on antitrust clearance confidence first. Here's why. The strategic case is strong — this is likely the only open banking asset of this scale that will be available, and MasterCard falls further behind Visa if we don't act. The valuation is defensible at 5.8x forward revenue with Tink as a comp. However, the Visa/Plaid precedent means we cannot assume DOJ approval. Before committing, I want outside antitrust counsel to review the target's US market share and assess whether our case is materially different from Visa's. If the antitrust path is manageable, I'd recommend we move quickly — and I would structure the integration to explicitly guarantee platform neutrality for the 1,800 fintech partners, because their trust is the core asset we're paying $2.8 billion for. Lose that trust, and the acquisition fails regardless of what we paid."
+      }
+    ]
+  },
+  {
+    "id": "scenario_077",
+    "type": "Acquisition",
+    "company": "J&J",
+    "title": "J&J MedTech Acquisition of a Surgical Robotics Company",
+    "prompt": "You are VP of corporate development at Johnson & Johnson MedTech. A surgical robotics startup has developed a soft-tissue robotic surgery platform with 140 installed systems in US hospitals, $95M in recurring instrument and service revenue, and FDA clearance in 3 surgical categories. It is available for $1.8B. Intuitive Surgical's da Vinci dominates robotic surgery with 68% market share. Should J&J acquire it?",
+    "context": "The surgical robotics market is projected to grow from $14B to $38B by 2030. J&J's Ottava robotic surgery system has been in development for 7 years and is still awaiting FDA clearance. The acquisition target's platform is cleared for hernia, colorectal, and bariatric procedures — J&J's highest-growth MedTech segments. Stryker and Medtronic have both launched competing robotic platforms. The recurring instrument revenue model generates $680K per installed system annually. J&J has $22B in cash and equivalents.",
+    "correctFrameworks": [
+      "Market Entry Framework",
+      "Breakeven Analysis"
+    ],
+    "whyThisFramework": "Market Entry Framework to evaluate whether acquiring the target accelerates J&J's robotic surgery entry better than the internal Ottava program, and whether 140 installed systems is a sufficient foothold vs. Intuitive's dominance, then Breakeven Analysis to determine what installed base expansion is needed to generate an adequate return on the $1.8B acquisition price.",
+    "keyConsiderations": [
+      "Does the acquisition replace or complement J&J's Ottava development program?",
+      "What is the value of 140 installed systems and the recurring revenue stream at $1.8B?",
+      "How does Intuitive Surgical respond to an accelerated J&J competitive threat?",
+      "What installed base expansion rate is needed to generate J&J's typical 15% ROIC hurdle?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "What is J&J's current plan for the Ottava program — is it being shut down, maintained in parallel, or would this acquisition replace it entirely?",
+      "What surgical procedure volumes do the 140 installed systems generate annually, and what is the instrument attach rate per procedure?",
+      "Are the hospital contracts for the 140 systems capital purchases or operating leases, and what is the average remaining contract term?",
+      "Has J&J assessed the target's clinical outcomes data — what are complication rates vs. Intuitive Surgical's da Vinci in the three cleared indications?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Strategic Rationale — Make vs. Buy",
+        "subIssues": [
+          "Does the acquisition give J&J a faster, lower-risk path to robotic surgery market entry than waiting for Ottava FDA clearance?",
+          "Do the target's three cleared indications (hernia, colorectal, bariatric) align with J&J MedTech's highest-growth surgery segments?",
+          "Does J&J's existing MedTech sales force, hospital relationships, and surgical training infrastructure provide a meaningful commercial advantage for scaling the acquired platform?"
+        ]
+      },
+      {
+        "block": "Financial Return — Breakeven and ROIC",
+        "subIssues": [
+          "At $680K recurring revenue per installed system, how many systems must be installed to generate J&J's 15% ROIC hurdle on $1.8B?",
+          "What is the realistic installed base growth rate — how many new system placements per year can J&J's commercial team achieve in years one through five?",
+          "How does the recurring instrument revenue model provide revenue visibility and downside protection vs. a capital equipment model?"
+        ]
+      },
+      {
+        "block": "Competitive and Execution Risk",
+        "subIssues": [
+          "How does Intuitive Surgical respond — will it accelerate da Vinci adoption in hernia and colorectal, potentially locking out the target's expansion?",
+          "What integration risks exist — will key robotics engineers and clinical team members stay post-acquisition?",
+          "Can J&J scale manufacturing of the platform to support aggressive installed base growth without quality and supply chain failures?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Establish the Make vs. Buy Decision",
+        "detail": "The core strategic question is whether this acquisition is better than continuing Ottava, which has been in development for 7 years and still lacks FDA clearance. Quantify the opportunity cost: every year without robotic surgery market presence means lost instrument pull-through revenue and hospital relationship disadvantage vs. Intuitive, Stryker, and Medtronic, all of which are already in market."
+      },
+      {
+        "step": 2,
+        "title": "Validate Market Entry Fit",
+        "detail": "Apply Market Entry Framework: the surgical robotics market grows from $14B to $38B by 2030 (CAGR ~15%). The target is cleared in hernia, colorectal, and bariatric — J&J's highest-growth MedTech segments. This is a genuinely strategic fit. However, Intuitive holds 68% share, and Stryker and Medtronic are already competing — J&J would be entering a market with four established players."
+      },
+      {
+        "step": 3,
+        "title": "Run Breakeven Analysis on Installed Base",
+        "detail": "At $680K annual recurring revenue per system and 140 systems, current annual instrument and service revenue is approximately $95M — consistent with the data. At J&J's 15% ROIC hurdle on $1.8B, J&J requires $270M in annual NOPAT. At a 30% EBITDA margin, J&J needs roughly $900M in total platform revenue. At $680K per system, that requires approximately 1,325 installed systems. From 140 today, that means adding roughly 200 systems annually for 5 to 6 years — an aggressive but achievable target for J&J's commercial infrastructure."
+      },
+      {
+        "step": 4,
+        "title": "Assess Ottava Decision and Capital Allocation",
+        "detail": "Recommend a clear board decision: if this acquisition proceeds, Ottava should be sunset or repurposed for a different indication to avoid internal duplication. Ottava has consumed 7 years of R&D investment; continuing it in parallel would split J&J's commercial and manufacturing focus. J&J's $22B cash position makes the $1.8B price manageable — less than 10% of cash on hand — which reduces balance sheet risk."
+      },
+      {
+        "step": 5,
+        "title": "Recommend with Strategic Conditions",
+        "detail": "Recommend acquisition contingent on: (1) management team retention agreements for 24 months to preserve robotics engineering and clinical execution continuity; (2) a clear decision to sunset Ottava within 12 months post-close; (3) an installed base growth plan targeting 250 new system placements in year 1, leveraging J&J's existing hospital sales relationships in 1,400+ health systems nationally."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Instrument Attach Rate",
+        "definition": "The number of single-use instruments consumed per robotic surgical procedure — the primary driver of recurring revenue in the Intuitive Surgical and similar razor-and-blade business models"
+      },
+      {
+        "term": "ROIC",
+        "definition": "Return on Invested Capital — J&J's standard 15% hurdle rate for acquisitions; calculated as NOPAT divided by total invested capital including the acquisition price"
+      },
+      {
+        "term": "FDA 510(k) Clearance",
+        "definition": "The FDA regulatory pathway for medical devices that are substantially equivalent to a legally marketed predicate device; the target has already cleared this for three procedure categories, removing a key risk"
+      },
+      {
+        "term": "Soft-Tissue Robotic Surgery",
+        "definition": "Robotic-assisted surgery for abdominal and visceral procedures (hernia, colon, stomach) — distinct from Stryker's orthopedic (bone) robotic focus; the target competes directly with da Vinci here"
+      },
+      {
+        "term": "Installed Base",
+        "definition": "The total number of robotic surgery systems placed in hospitals; critical because each system generates predictable, high-margin recurring revenue from instruments and service contracts for its operational lifetime"
+      }
+    ],
+    "interviewerExpectations": "A strong answer frames the decision as a 'make vs. buy' against Ottava, runs the ROIC math to determine how many installed systems are needed, and proactively addresses the Ottava sunset decision. A weak answer focuses only on market growth rates without acknowledging the competitive response from Intuitive Surgical or quantifying the installed base target required to justify $1.8B.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I jump in — one clarifying question that will shape everything: what is the current plan for Ottava? Because this acquisition decision is really a make-versus-buy decision, and we can't answer it without knowing whether we're replacing Ottava or running two platforms in parallel. I'll assume for now that Ottava would be sunset post-close, and I'll flag that as a key condition. My framework: Market Entry to assess whether this accelerates J&J's robotic surgery position meaningfully, then a Breakeven Analysis on the installed base math to test whether $1.8 billion is the right price."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few quick data requests. First, what are the hospital contract terms for the 140 installed systems — capital purchases or operating leases, and what's the average remaining term? That tells us how sticky the revenue base is. Second, what is the instrument attach rate per procedure — how many single-use instruments are consumed per surgery at each system? That drives the $680K per system revenue figure and tells us if there's upside. And third, has J&J's clinical team reviewed the target's complication and outcome data relative to da Vinci? We need to know we're acquiring a clinically competitive platform, not just a foothold."
+      },
+      {
+        "label": "Step 1 — Market Entry Fit",
+        "script": "Starting with Market Entry. The surgical robotics market grows from $14 billion today to $38 billion by 2030 — roughly 15% annually. The three cleared indications — hernia, colorectal, and bariatric — map directly to J&J MedTech's highest-growth surgery segments. That's not a coincidence; this is a genuinely strategic fit, not a financial bet. However, the competitive picture is tough: Intuitive holds 68% market share, and Stryker and Medtronic are already in market. J&J would be the fourth entrant. The question is whether J&J's existing relationships with 1,400-plus hospital systems, its surgical training infrastructure, and its ability to bundle instruments with its existing MedTech portfolio create a commercial flywheel that a standalone startup could never achieve. I believe they do — but it requires aggressive execution."
+      },
+      {
+        "label": "Step 2 — Breakeven on Installed Base",
+        "script": "Now the financial test. At $680,000 in annual recurring revenue per installed system and J&J's 15% ROIC hurdle on $1.8 billion, J&J needs to generate roughly $270 million in annual net operating profit after tax. Assuming a 30% EBITDA margin and a 25% tax rate, that implies approximately $900 million in platform revenue. At $680,000 per system, that requires roughly 1,325 installed systems. We're at 140 today, so we need to add about 1,185 systems — call it 200 per year over six years. That's achievable given J&J's commercial scale, but it requires committing meaningful salesforce bandwidth specifically to robotic surgery, and it assumes Intuitive doesn't aggressively discount to lock up accounts in hernia and colorectal before J&J can penetrate."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: acquire at $1.8 billion, but with three conditions attached. One, sunset Ottava within 12 months of close — running two robotic platforms internally splits focus and wastes capital; Ottava has had 7 years and still isn't cleared, so this acquisition is the better path. Two, execute management retention agreements immediately post-announcement — the robotics engineers and clinical team are the core asset; losing them undermines the whole thesis. Three, commit to 250 system placements in year one by re-deploying J&J's MedTech hospital sales relationships — our installed base target requires consistent 200-plus placements annually, and year one sets the trajectory. The $22 billion cash position makes this a manageable bet — $1.8 billion is less than 10% of cash on hand. The risk of not acquiring is higher: Intuitive continues to consolidate the soft-tissue robotic market, and J&J is still waiting for Ottava while Stryker and Medtronic build installed bases that will be very difficult to displace."
+      }
+    ]
+  },
+  {
+    "id": "scenario_078",
+    "type": "General Strategy",
+    "company": "Kraft Heinz",
+    "title": "Kraft Heinz Portfolio Prioritization",
+    "prompt": "You are a senior director of strategy at Kraft Heinz. The company has 200+ brands across condiments, cheese, meats, beverages, and frozen foods. Revenue has been flat at $26B for 4 years. After flat revenue for 4 years, the CEO is asking you to recommend which businesses Kraft Heinz should invest in, hold, or divest to return to growth. How do you approach this?",
+    "context": "Kraft Heinz's top 6 brands (Heinz Ketchup, Kraft Mac & Cheese, Oscar Mayer, Velveeta, Philadelphia Cream Cheese, Planters) represent 42% of total revenue. The bottom 80 brands represent 22% of revenue with average EBITDA margins of 8% vs. 24% for top brands. Private equity buyers have acquired 3 mid-tier food brands from peers at 10-12x EBITDA in the past 18 months. The packaged food category is structurally growing only 1.2% annually. Kraft Heinz has $21B in long-term debt with $1.8B in annual interest expense.",
+    "correctFrameworks": [
+      "SPECIAL-T / MVM",
+      "Value Chain Analysis"
+    ],
+    "whyThisFramework": "SPECIAL-T / MVM to assess macro forces affecting Kraft Heinz's portfolio strategy (industry consolidation, consumer health trends, private label threat, tech-enabled DTC food brands), then Value Chain Analysis to identify which brands have durable cost or differentiation advantages that merit investment vs. divestiture.",
+    "keyConsiderations": [
+      "What criteria distinguish an 'invest' brand from a 'divest' brand in the Kraft Heinz portfolio?",
+      "Should Kraft Heinz use divestiture proceeds to pay down debt or acquire growth brands?",
+      "Which categories have structural tailwinds that Kraft can build on?",
+      "What is the risk of brand portfolio concentration if the bottom 80 brands are divested?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "For the 'invest' vs. 'divest' framework, what financial criteria matter most to the CEO — return to organic revenue growth, EBITDA margin improvement, or debt reduction?",
+      "Are there any brands in the bottom 80 that are in high-growth categories (e.g., plant-based, premium condiments) that may be underperforming due to underinvestment rather than structural weakness?",
+      "What is Kraft Heinz's current leverage ratio and target — is debt reduction a prerequisite before reinvestment in growth brands is feasible?",
+      "What is the board's appetite for a significant divestiture program — has Kraft Heinz attempted portfolio simplification before, and what stopped it?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Portfolio Diagnosis — Which Brands Merit Investment",
+        "subIssues": [
+          "Which brands have structural pricing power, category leadership, or differentiation that justifies continued investment vs. those in commoditizing, declining categories?",
+          "Do the bottom 80 brands underperform because of category structure (invest more won't help) or execution failures (underinvestment that is fixable)?",
+          "What is the cross-brand revenue exposure — if Kraft Heinz divests 80 brands representing 22% of revenue, does it create dangerous customer concentration or retailer leverage?"
+        ]
+      },
+      {
+        "block": "Capital Allocation — Divestiture Proceeds",
+        "subIssues": [
+          "At 10-12x EBITDA private equity pricing, what are the bottom 80 brands worth, and does the net proceeds allow meaningful debt reduction?",
+          "Should proceeds from divestitures prioritize paying down the $21B in debt to reduce $1.8B annual interest expense, or fund acquisitions in higher-growth food categories?",
+          "What is the tax and accounting implication of a large-scale divestiture program — does goodwill impairment risk make the board reluctant to write down values?"
+        ]
+      },
+      {
+        "block": "Macro Environment and Timing",
+        "subIssues": [
+          "Is the current M&A environment — private equity bidding 10-12x EBITDA for mid-tier food brands — a favorable window for Kraft Heinz to divest, and how long does this window remain open?",
+          "Which macro trends (private label growth, health and wellness, e-commerce grocery) are structural headwinds to Kraft Heinz's existing portfolio that reinvestment cannot overcome?",
+          "Does packaged food at 1.2% structural growth suggest Kraft Heinz needs to enter adjacencies (foodservice, international, premium natural) rather than simply optimize its existing portfolio?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Build Portfolio Diagnostic Criteria",
+        "detail": "Define the invest/hold/divest criteria before applying them: Invest = category growing >3% annually, brand has top-2 market position, EBITDA margin >20%, pricing power demonstrated in last 3 years. Hold = stable category, top-3 position, margin 15-20%. Divest = declining category, sub-top-3 position, margin <15%, and private equity buyers available at 10-12x EBITDA. Apply these criteria systematically across the portfolio."
+      },
+      {
+        "step": 2,
+        "title": "Apply SPECIAL-T to Identify Category Headwinds",
+        "detail": "Use SPECIAL-T to surface macro forces: Social (consumer shift to fresh, local, health-oriented eating pressures processed food brands), Private label growth (directly competes with Kraft Heinz's mid-tier brands), E-commerce grocery (disadvantages brands without strong digital presence), Competition (General Mills, Conagra, Unilever all rationalizing portfolios). The macro environment is structurally challenging — a diversified portfolio of 200 brands is not the right defense."
+      },
+      {
+        "step": 3,
+        "title": "Quantify the Divestiture Opportunity",
+        "detail": "The bottom 80 brands at 8% EBITDA margins on 22% of $26B ($5.7B revenue) generate approximately $456M in EBITDA. At 10-12x private equity multiples, that's $4.6B to $5.5B in potential proceeds. Applying $4B to $21B in debt reduces interest expense by approximately $250-300M annually — equivalent to a meaningful margin improvement across the remaining portfolio."
+      },
+      {
+        "step": 4,
+        "title": "Identify 'Invest' Brands and Capital Requirements",
+        "detail": "Focus investment on the top 6 brands — Heinz, Kraft Mac & Cheese, Philadelphia, and emerging platforms — which generate 42% of revenue at 24% EBITDA margins. Specific investment priorities: Heinz's global expansion (Heinz is underdeveloped outside North America and UK), Kraft Mac & Cheese's premium and protein-enriched line extensions, Philadelphia's cream cheese applications in foodservice. Request brand-level marketing spend histories to identify where underspending has created fixable performance gaps."
+      },
+      {
+        "step": 5,
+        "title": "Sequence and Recommend",
+        "detail": "Recommend a three-phase approach: Phase 1 (Year 1) — launch divestiture program for the bottom 40-80 brands, targeting $3-5B in proceeds; apply 75% to debt reduction to bring leverage to a manageable level and reduce interest expense. Phase 2 (Years 2-3) — reinvest in marketing and innovation behind the top 6 brands; set revenue growth target of 4-5% for the concentrated portfolio. Phase 3 (Years 3-5) — evaluate bolt-on acquisitions in premium, plant-based, or international adjacencies using the strengthened balance sheet."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "EBITDA Multiple",
+        "definition": "Enterprise value divided by EBITDA — the standard valuation metric for consumer food M&A; private equity is currently paying 10-12x EBITDA for mid-tier food brands, creating a favorable divestiture window for Kraft Heinz"
+      },
+      {
+        "term": "Leverage Ratio",
+        "definition": "Net debt divided by EBITDA — Kraft Heinz's $21B debt on approximately $6B EBITDA implies roughly 3.5x leverage, above investment-grade comfort zone and constraining reinvestment capacity"
+      },
+      {
+        "term": "Category Leadership",
+        "definition": "Holding the number-one or number-two market share position in a defined grocery category — the most reliable predictor of sustained pricing power and margin durability in packaged food"
+      },
+      {
+        "term": "Goodwill Impairment",
+        "definition": "An accounting write-down when the carrying value of an acquired brand exceeds its fair market value — a risk Kraft Heinz faced in 2019 with a $15B impairment, making boards sensitive to further brand value write-downs"
+      },
+      {
+        "term": "Invest / Hold / Divest Framework",
+        "definition": "A BCG-originated portfolio prioritization tool that segments business units by growth and competitive position — adapted here to categorize Kraft Heinz's 200+ brands by category tailwind and brand strength"
+      }
+    ],
+    "interviewerExpectations": "A strong answer builds clear diagnostic criteria for invest vs. divest before recommending, quantifies the divestiture proceeds and debt reduction impact, and sequences the strategy in phases. A weak answer recommends 'divesting the weak brands and investing in strong ones' without defining what 'weak' means or addressing what to do with the proceeds.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a classic portfolio prioritization challenge, and I want to make sure I build criteria for the invest/hold/divest decision before I apply them — otherwise we're just labeling things without discipline. I'll use SPECIAL-T to identify the macro forces shaping which categories are worth fighting for, then apply Value Chain Analysis to assess which individual brands have durable advantages versus structural disadvantages. I'll finish with a phased recommendation and the capital allocation logic. One quick clarifying question: does the CEO prioritize margin improvement over revenue growth as the primary metric, or are they open to revenue concentration risk in exchange for a leaner, faster-growing portfolio?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Three things would sharpen this significantly. First, for the bottom 80 brands — do we know how many are in genuinely declining categories versus categories that are growing but where Kraft Heinz is underinvesting? Because those are very different problems. Second, what is the board's appetite for goodwill impairment — the 2019 write-down of $15 billion was traumatic, and I want to understand if there's political resistance to marking down brand values again. And third, is there a leverage ratio target the CFO has set — because if we need to get below 3x net debt to EBITDA before we can reinvest, that constrains the sequencing significantly."
+      },
+      {
+        "label": "Step 1 — Macro Diagnosis via SPECIAL-T",
+        "script": "Let me start with the macro environment, because you can't make brand investment decisions without understanding structural category tailwinds and headwinds. Using SPECIAL-T: Social — consumers are shifting toward fresh, less-processed, health-oriented food, which is a structural headwind for processed cheese, luncheon meats, and shelf-stable items like Velveeta. Private label — store brands are growing across condiments and frozen food, directly attacking Kraft Heinz's mid-tier brands. E-commerce grocery — brands without strong digital shelf presence or DTC capability are increasingly disadvantaged in a channel that now represents 12% of grocery sales. Competition — General Mills and Conagra have both gone through similar portfolio rationalization; they've already shed the weaker brands and reinvested behind category leaders. Kraft Heinz has not. The macro picture says: a 200-brand diversified portfolio is not the right asset base for this environment."
+      },
+      {
+        "label": "Step 2 — Portfolio Criteria and Divestiture Math",
+        "script": "Now let me build the invest/hold/divest criteria. I'd define invest brands as: top-2 market share position, category growing above 3% annually, EBITDA margin above 20%, and demonstrated pricing power in the last three years. That describes Heinz Ketchup, Philadelphia Cream Cheese, and Kraft Mac & Cheese. Divest brands: below top-3 share, declining or flat category, margin below 15%, and a private equity buyer available. The bottom 80 brands at 8% EBITDA margin on $5.7 billion in revenue generate approximately $456 million in EBITDA. At the 10 to 12x private equity multiples currently being paid in the market, that's $4.5 to $5.5 billion in potential proceeds. Apply $4 billion to the $21 billion debt load — that cuts annual interest expense by roughly $250 million and brings leverage down toward 3x, which restores investment-grade financial flexibility."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is a three-phase portfolio transformation. Phase one, in year one: launch a divestiture program targeting the bottom 40 to 80 brands. The PE buyer market is active right now — 10 to 12x EBITDA multiples for mid-tier food brands. That window will not stay open indefinitely. Target $4 billion in net proceeds and apply 75% to debt reduction. Phase two, in years two and three: concentrate marketing investment behind the top 6 brands, with a particular focus on Heinz's international white space — Heinz is underdeveloped outside North America and the UK — and Philadelphia Cream Cheese's foodservice expansion. Set a 4 to 5% annual revenue growth target for the concentrated portfolio. Phase three, in years three through five: use the restored balance sheet to pursue bolt-on acquisitions in premium sauces, plant-based proteins, or adjacent international categories — areas where the Kraft Heinz manufacturing and distribution infrastructure can add value that a standalone brand cannot. The risk of this plan is revenue concentration — you go from 200 brands to perhaps 120, and the top 6 represent over 50% of revenue. But that concentration is actually a feature, not a bug, in a 1.2% structural growth category. You don't win by spreading investment thin. You win by being undeniably the best at a few things."
+      }
+    ]
+  },
+  {
+    "id": "scenario_079",
+    "type": "General Strategy",
+    "company": "Hilton",
+    "title": "Hilton Long-Term Competitive Strategy",
+    "prompt": "You are a senior VP of strategy at Hilton. Airbnb hosts 500 million annual guest stays globally vs. Hilton's 175 million room nights. Short-term rental platforms now represent 21% of all US lodging demand. Hilton's occupancy has recovered post-COVID to 71% but RevPAR growth has slowed from 12% to 4% annually. What is your 5-year competitive strategy to defend and grow Hilton's position?",
+    "context": "Airbnb's average booking value is $185/night vs. Hilton's $148/night. Hilton's franchised asset-light model means Hilton itself does not own 97% of its properties. Millennial and Gen Z travelers prefer unique, local experiences (72% of surveyed travelers under 35). Hilton's Honors loyalty program drives 65% of room revenue. Corporate travel recovery to pre-COVID levels is at 84%. Hilton's all-inclusive resort brand, LXR, is its fastest-growing segment at 18% RevPAR growth.",
+    "correctFrameworks": [
+      "SPECIAL-T / MVM",
+      "Porter's Five Forces"
+    ],
+    "whyThisFramework": "SPECIAL-T / MVM to evaluate macro forces reshaping lodging (sharing economy, remote work, post-COVID travel patterns, technology in booking and distribution), then Porter's Five Forces to assess Hilton's structural position against Airbnb (substitute), OTA platforms (buyer power), independent boutique hotels (rivalry), and new hotel brands (entrants).",
+    "keyConsiderations": [
+      "Is Airbnb a substitute or complementary channel — do they serve genuinely different needs?",
+      "How does Hilton invest in 'uniqueness and local experience' without abandoning its standardization advantage?",
+      "What is the right brand portfolio strategy — fewer focused brands or broader segment coverage?",
+      "How does Hilton strengthen loyalty to reduce OTA distribution cost (currently 15-18% commission)?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "What percentage of Hilton's room nights are booked through OTAs (Expedia, Booking.com) vs. direct Hilton channels — and what is the average OTA commission rate Hilton is paying?",
+      "What is the Honors loyalty program's penetration among leisure travelers vs. corporate travelers, and what is the repeat booking rate for Honors members?",
+      "Is the 84% corporate travel recovery split evenly across segments — large enterprise, SMB, government — or is the recovery concentrated in certain verticals?",
+      "How does RevPAR performance vary between Hilton's branded segments (full-service, limited-service, luxury, all-inclusive) — which segments are growing and which are stagnant?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Competitive Positioning — What Hilton Does That Airbnb Cannot",
+        "subIssues": [
+          "Is Airbnb a direct substitute for Hilton's core customer segments (corporate traveler, loyalty-driven leisure) or is it capturing incremental demand from different use cases (group travel, longer stays, unique experiences)?",
+          "Where does Hilton's standardization, safety guarantee, and loyalty program create durable advantages that Airbnb's peer-to-peer model structurally cannot replicate?",
+          "Can Hilton create 'local uniqueness' within its brand portfolio — via boutique, lifestyle, and LXR brands — without undermining the consistency that corporate clients and Honors members value?"
+        ]
+      },
+      {
+        "block": "Revenue and Distribution Strategy",
+        "subIssues": [
+          "How does Hilton reduce OTA dependence (at 15-18% commission) and grow direct booking share through Honors, digital channels, and exclusive member rates?",
+          "What pricing or packaging strategies can close the $37 per night gap between Airbnb's $185 average booking value and Hilton's $148 — and is that gap worth closing or is it a positioning choice?",
+          "Can LXR's 18% RevPAR growth model be replicated in other Hilton segments, and what drives it — pricing power, experience differentiation, or favorable supply dynamics?"
+        ]
+      },
+      {
+        "block": "Portfolio and Brand Architecture for the Next 5 Years",
+        "subIssues": [
+          "Should Hilton expand its lifestyle and boutique brand segment (Curio, Tapestry, Canopy) to capture the millennial/Gen Z experiential preference, and how many new properties are needed to be competitive?",
+          "Should Hilton enter the extended-stay or private home segment to compete directly for longer-duration Airbnb bookings, or is that a distraction from core competencies?",
+          "What is the franchisor revenue impact of adding 500 or 1,000 new lifestyle-segment properties — and does the franchisee unit economics support the investment at Hilton's standard royalty rate?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Diagnose Airbnb as Substitute vs. Complement",
+        "detail": "Start with the most important strategic question: is Airbnb cannibalizing Hilton's core demand, or is it serving different use cases? Hilton's 65% Honors-driven revenue suggests its core business is loyalty-anchored corporate and repeat leisure travel — a segment Airbnb is structurally weak in due to lack of consistency, business expense reporting, and guaranteed service levels. The 21% short-term rental share is likely concentrated in leisure, group, and extended-stay travel, not Hilton's core corporate segment."
+      },
+      {
+        "step": 2,
+        "title": "Apply Porter's Five Forces to Surface Key Pressures",
+        "detail": "Substitutes: Airbnb at 500M stays is the primary threat, but it skews leisure/young/unique-experience use cases. Buyer power: OTAs (Expedia, Booking.com) at 15-18% commission extract significant margin; Hilton must grow direct booking to reduce this. Rivalry: Marriott, Hyatt, IHG are all expanding lifestyle brands — the segment is getting crowded. New entrants: boutique hotel collectives (Sonder, Selina) are competing for millennial demand without the capital intensity of traditional brands."
+      },
+      {
+        "step": 3,
+        "title": "Define Hilton's 5-Year Strategic Priorities",
+        "detail": "Three pillars: (1) Defend corporate loyalty — accelerate Honors benefits for corporate travelers, close the 16% recovery gap in corporate travel, build B2B-exclusive rates and platforms that Airbnb cannot offer; (2) Expand lifestyle and boutique brands — add 500-800 Curio, Tapestry, and Canopy properties in the next 5 years to capture millennial/Gen Z leisure travel, creating 'local uniqueness' at scale; (3) Drive direct booking — reduce OTA dependency to below 25% of room nights through Honors-exclusive pricing, app-based features (digital key, room selection), and loyalty program investment."
+      },
+      {
+        "step": 4,
+        "title": "Quantify the Direct Booking Opportunity",
+        "detail": "At 65% direct booking through Honors and 35% through OTAs at 15-18% commission: OTA commission on 35% of $26B (Hilton's implied room revenue at 175M rooms x $148/night) is approximately $1.4B annually. Moving 10 percentage points of OTA bookings to direct at zero commission saves approximately $400M in distribution cost. That is the highest-leverage financial move in the 5-year plan — fund it by reinvesting into Honors benefits and exclusive member rates."
+      },
+      {
+        "step": 5,
+        "title": "Develop the LXR Replication Question",
+        "detail": "LXR at 18% RevPAR growth is the signal: premium, curated, all-inclusive experiences command pricing power that pure-play hotels cannot match. Assess whether Curio and Tapestry (soft brand collections) can apply similar experiential curation at a more accessible price point. Request LXR unit economics — if the model works at LXR pricing, explore how Hilton systematically creates 'local uniqueness' standards (F&B partnership frameworks, local art programs, community experiences) that Airbnb cannot systematize."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "RevPAR",
+        "definition": "Revenue Per Available Room — occupancy rate multiplied by average daily rate; the standard performance metric for hotel properties and brands; Hilton's RevPAR growth slowing from 12% to 4% signals a plateauing recovery"
+      },
+      {
+        "term": "OTA",
+        "definition": "Online Travel Agency — Expedia, Booking.com, and similar platforms that aggregate hotel inventory; they charge 15-18% commission, making direct booking through Hilton Honors significantly more profitable for Hilton"
+      },
+      {
+        "term": "Asset-Light Model",
+        "definition": "Hilton's franchising and management contract business model where Hilton does not own 97% of its hotels — it earns royalty fees from franchisees while owners bear capital expenditure and balance sheet risk"
+      },
+      {
+        "term": "Soft Brand Collection",
+        "definition": "A hotel brand architecture (like Curio Collection or Tapestry by Hilton) where independently operated boutique hotels join a loyalty network without conforming to standardized design — designed to compete with Airbnb and boutique hotels for experiential travelers"
+      },
+      {
+        "term": "Honors Loyalty Program",
+        "definition": "Hilton's frequent guest program driving 65% of room revenue — the primary mechanism for direct booking and customer retention, and structurally Hilton's most durable competitive advantage vs. Airbnb"
+      }
+    ],
+    "interviewerExpectations": "A strong answer segments the Airbnb threat precisely — identifying which Hilton customer segments are actually at risk — and builds a direct booking strategy with specific financial impact. A weak answer treats Airbnb as an existential threat to all of Hilton's business without recognizing that corporate loyalty and standardization are moats Airbnb cannot replicate.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a nuanced question because the knee-jerk answer is 'compete with Airbnb,' but I think the smarter answer is 'be very clear about where you can't and shouldn't compete with Airbnb.' My framework: I'll use SPECIAL-T to understand the macro forces reshaping lodging — and there are several beyond just Airbnb — then Porter's Five Forces to pinpoint where Hilton's structural position is genuinely threatened versus where it is durable. From that I'll build a three-pillar 5-year strategy. One clarifying question: what share of Hilton's room nights are currently booked through OTAs versus direct channels? That number will shape my distribution strategy recommendation significantly."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few data points would sharpen this. First, what is Honors program penetration among leisure travelers under 35 — are we capturing that millennial cohort in the loyalty program, or are we losing them entirely to Airbnb? Second, how does RevPAR performance vary by brand segment — is LXR's 18% RevPAR growth representative of lifestyle brands generally, or is it isolated to all-inclusive resorts? And third, is the 84% corporate travel recovery split evenly across industries, or is it skewed — tech and financial services may be at 75% while pharma and consulting are already at 100%, which would tell us where to invest in corporate account retention."
+      },
+      {
+        "label": "Step 1 — Diagnosing the Real Airbnb Threat via SPECIAL-T",
+        "script": "Starting with macro forces. The sharing economy and Airbnb's 500 million stays are real, but I want to be precise about where the threat actually sits. Seventy-two percent of travelers under 35 prefer unique, local experiences — and Airbnb is winning that preference war in leisure travel. But Hilton's Honors loyalty program drives 65% of room revenue. That loyalty base is primarily corporate travelers and repeat leisure guests who value consistency, safety, and program benefits that Airbnb structurally cannot offer. No Airbnb host offers expense reporting, guaranteed service standards, or status-match upgrades. So the Airbnb threat is real, but it's concentrated in the leisure, non-loyalty, longer-stay segment — not in Hilton's core business. Remote work is a secondary shift: 'bleisure' travel, extended stays, and work-from-hotel demand are growing, and that's actually an opportunity for Hilton to extend average length of stay."
+      },
+      {
+        "label": "Step 2 — Porter's Five Forces: Where Hilton Is Vulnerable",
+        "script": "Using Porter's to surface the specific pressure points. Substitutes — Airbnb is primary, but Sonder and Selina are also competing for millennial demand with more consistent boutique experiences. Buyer power — OTAs at 15 to 18% commission are a structural margin drain; I estimate Hilton is paying over $1 billion annually in OTA distribution cost based on the room revenue math. That is the single highest-leverage opportunity in the financial structure. Rivalry — Marriott's Moxy, Hyatt's Andaz, and IHG's Kimpton are all chasing the lifestyle segment; the boutique hotel arms race is well underway. Entrants — boutique hotel collectives are growing quickly, and Airbnb's new 'Rooms' and hotel hybrid products suggest they are trying to move upmarket. These forces point to three strategic priorities."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My 5-year strategy has three pillars. Pillar one: defend corporate loyalty. Corporate travel is 84% recovered — there are 300 to 400 million room nights of corporate demand to capture as that last 16% returns. Hilton should invest in B2B-exclusive rates, enhanced Honors benefits for business travelers, and digital tools like expense integration and touchless check-in that Airbnb literally cannot offer. This is untouchable competitive moat if Hilton invests behind it. Pillar two: expand lifestyle and boutique brands. Curio Collection and Tapestry are the right vehicles to capture the millennial experiential preference without Airbnb pricing. Add 600 to 800 properties in these collections over 5 years in high-demand urban and destination markets — the asset-light franchising model means this requires minimal Hilton capital. LXR at 18% RevPAR growth proves the experiential premium model works; the question is whether we can systematize 'local uniqueness' at scale across Curio and Tapestry. I think we can, with defined food and beverage programming, local partnership frameworks, and design standards that feel boutique. Pillar three: drive direct booking. Every percentage point shift from OTA to direct booking saves Hilton 15 to 18% in commission. Moving 10 points of OTA bookings to Honors-direct saves $400 million annually at scale. Fund that shift with Honors-exclusive pricing — make the Honors rate meaningfully better than any OTA rate, and advertise that aggressively. Hilton's target: reduce OTA dependency to below 25% of room nights within 5 years. That alone funds the lifestyle brand expansion and the corporate loyalty investment. The summary: don't try to be Airbnb. Be the platform Airbnb can never be for the customers that matter most."
+      }
+    ]
+  },
+  {
+    "id": "scenario_080",
+    "type": "General Strategy",
+    "company": "Citi",
+    "title": "Citi Wealth Management Strategic Direction",
+    "prompt": "You are a senior director of strategy at Citi. Citi's wealth management business manages $800B in client assets but has a 0.9% fee yield vs. Morgan Stanley's 1.1% and Goldman Sachs's 1.2% on comparable AUM. Citi's wealth management revenue is $7.2B vs. Morgan Stanley's $26B. The CEO wants a recommendation on whether to invest aggressively to compete with Morgan Stanley or to refocus on a differentiated segment. What do you recommend?",
+    "context": "Citi serves ultra-high-net-worth (UHNW) clients in 160 countries through its Private Bank. Morgan Stanley serves primarily US-based high-net-worth ($1M+) clients at mass scale. Citi's UHNW clients (>$25M) have 1.4% average fee yield vs. Citi's 0.9% blended average. The mass-affluent segment ($250K-$1M) is served poorly by Citi — low touch, low yield. Robo-advisors are capturing mass-affluent share. JP Morgan Private Bank is rapidly expanding its UHNW international platform. Citi would need $2B+ in advisor hiring to build US mass-market wealth at scale.",
+    "correctFrameworks": [
+      "SPECIAL-T / MVM",
+      "STP"
+    ],
+    "whyThisFramework": "SPECIAL-T / MVM to assess structural forces in wealth management (technology disruption by robo-advisors, regulatory changes, competitive consolidation), then STP to determine whether Citi's best path is doubling down on UHNW international (where it already leads) vs. building US mass-affluent scale it currently lacks.",
+    "keyConsiderations": [
+      "Is Citi's UHNW international positioning a defensible moat or a niche?",
+      "What investment would it take to close the fee yield gap with Morgan Stanley, and is it achievable?",
+      "Should Citi use digital wealth tools to serve mass-affluent clients profitably vs. advisor-heavy model?",
+      "How does Citi differentiate its UHNW offering from JP Morgan Private Bank internationally?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "What is the geographic split of Citi's $800B in AUM — how much is from international UHNW clients versus US-based high-net-worth clients?",
+      "What is the cost-to-serve comparison between Citi's UHNW clients at 1.4% yield and the mass-affluent segment — is the margin profile per client actually superior at UHNW, or does higher servicing cost offset the yield premium?",
+      "How does Citi's Private Bank rank globally in UHNW market share — is it top 3 in any specific international region, or is it fragmented across 160 countries without dominant positions?",
+      "Has Citi attempted mass-market wealth before and exited, or is this the first time the CEO is seriously considering that expansion?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Strategic Positioning — Which Segment to Win",
+        "subIssues": [
+          "Is Citi's UHNW international franchise a genuinely defensible moat — are client relationships long-tenured, multi-generational, and difficult for JP Morgan or Goldman to poach?",
+          "Can Citi credibly build US mass-market wealth management at the scale required to compete with Morgan Stanley, and what is the realistic fee yield trajectory if it invests $2B+ in advisors?",
+          "Is there a hybrid path — serve mass-affluent clients digitally (robo + human hybrid) while maintaining UHNW premium service — that doesn't require the full $2B+ advisor investment?"
+        ]
+      },
+      {
+        "block": "Financial Impact of Each Strategic Path",
+        "subIssues": [
+          "If Citi doubles down on UHNW and grows AUM by 20% in that segment at 1.4% yield, what is the incremental revenue vs. the cost of UHNW advisor and client relationship investment?",
+          "If Citi pursues mass-affluent at scale with a $2B advisor investment, what AUM growth and yield improvement is needed to generate a positive ROI, and how many years does it take to break even?",
+          "What is the revenue impact of closing Citi's yield gap from 0.9% to 1.1% — at $800B AUM, each 10 basis point yield improvement equals $800M in incremental annual revenue?"
+        ]
+      },
+      {
+        "block": "Competitive Dynamics and Execution Feasibility",
+        "subIssues": [
+          "Is JP Morgan Private Bank's UHNW international expansion a near-term threat to Citi's core franchise, and what specifically would Citi need to do to defend client relationships in key markets?",
+          "Can Citi realistically hire and retain $2B+ worth of experienced wealth advisors in a tight talent market, or would mass-market expansion face years of underperformance before reaching scale?",
+          "Does Citi's banking and global corporate client relationships provide a unique feeder pipeline for UHNW wealth management that Morgan Stanley and pure-play wealth managers structurally cannot replicate?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Frame the Strategic Choice Precisely",
+        "detail": "There are three distinct paths: (A) Compete with Morgan Stanley at US mass-market scale — $2B+ investment, slow payback, competing on their home turf. (B) Double down on UHNW international — Citi's existing advantage, 1.4% yield, 160-country footprint. (C) Hybrid — use technology to serve mass-affluent digitally while intensifying UHNW human relationships. The recommendation depends on which path has the most defensible competitive position and most achievable financial returns."
+      },
+      {
+        "step": 2,
+        "title": "Apply SPECIAL-T to Macro Forces in Wealth Management",
+        "detail": "Key macro forces: Technology — robo-advisors (Betterment, Schwab Intelligent Portfolios) are commoditizing mass-affluent investment management below $1M, making it difficult to charge >0.5% fee yield profitably without a human relationship. Regulatory — international wealth management is subject to FATCA, OECD CRS, and AML compliance complexity; Citi's existing compliance infrastructure in 160 countries is a barrier to entry that a US-focused competitor cannot quickly replicate. Competition — Goldman and JP Morgan are expanding UHNW internationally; Citi's first-mover advantage is compressing. These forces favor UHNW specialization."
+      },
+      {
+        "step": 3,
+        "title": "Apply STP to Define the Winning Segment",
+        "detail": "Segmentation: UHNW international ($25M+ clients outside the US) vs. US HNW ($1-$25M) vs. mass-affluent ($250K-$1M). Targeting: UHNW international is where Citi already has pricing power at 1.4% yield, existing infrastructure in 160 countries, and multi-generational client relationships that take decades to build. The $800B AUM growing by 20% in UHNW segment at 1.4% yield generates $2.24B in revenue vs. $1.44B today for that segment — without a $2B advisor investment. Positioning: Citi positions as the global private bank for UHNW international families — not trying to be Morgan Stanley, but being explicitly the best in the world for clients who need banking, lending, investment, and trust services across multiple jurisdictions."
+      },
+      {
+        "step": 4,
+        "title": "Quantify the Yield Gap Opportunity",
+        "detail": "The blended yield gap is 20 basis points vs. Morgan Stanley (0.9% vs. 1.1%). At $800B AUM, closing that gap by 10 basis points generates $800M in incremental annual revenue — without adding a single dollar of new AUM. The path to closing the yield gap is mix shift: grow UHNW at 1.4% yield while allowing the low-yield mass-affluent business to run flat or shrink. If UHNW grows from 30% of AUM to 50% of AUM at 1.4% yield while mass-affluent stays flat at 0.5% yield, blended yield improves to approximately 1.05% — adding $1.2B in annual revenue on the same asset base."
+      },
+      {
+        "step": 5,
+        "title": "Recommend: Double Down on UHNW, Digitize Mass-Affluent",
+        "detail": "Recommend: (1) Concentrate investment in UHNW international — hire 200-300 senior private bankers in key markets (Singapore, UAE, Switzerland, Latin America) where JP Morgan is expanding; (2) Leverage Citi's global banking relationships as a feeder pipeline — UHNW clients often emerge from corporate M&A, IPOs, and global banking deals where Citi is already present; (3) Serve mass-affluent with a digital-first model (Citi Wealth Advisor hybrid robo) to maintain the revenue base without the $2B advisor investment required for a Morgan Stanley-style mass-market build; (4) Set a 5-year target of 1.15% blended yield on $1T+ AUM — achievable through UHNW mix shift — vs. trying to match Morgan Stanley's $26B revenue by replicating their business model."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "AUM",
+        "definition": "Assets Under Management — the total market value of client investments Citi manages and earns fees on; Citi's $800B AUM at 0.9% yield generates $7.2B in annual revenue"
+      },
+      {
+        "term": "Fee Yield",
+        "definition": "Annual revenue divided by AUM — Citi's 0.9% vs. Morgan Stanley's 1.1% and Goldman's 1.2% means Citi earns less per dollar managed; the gap reflects client mix, service model, and pricing power differences"
+      },
+      {
+        "term": "UHNW",
+        "definition": "Ultra-High-Net-Worth — clients with investable assets above $25 million; they require bespoke, multi-jurisdictional services and are willing to pay 1.4%+ fee yields, which is Citi's highest-margin client segment"
+      },
+      {
+        "term": "STP",
+        "definition": "Segmentation, Targeting, Positioning — the marketing strategy framework used here to identify which wealth segment (UHNW, HNW, mass-affluent) Citi should concentrate resources on and how to position against Morgan Stanley and JP Morgan"
+      },
+      {
+        "term": "Basis Points (bps)",
+        "definition": "One hundredth of one percent — the standard unit for fee yield measurement; Citi's 20-basis-point yield gap vs. Morgan Stanley translates to $1.6B in annual revenue at Citi's $800B AUM scale"
+      }
+    ],
+    "interviewerExpectations": "A strong answer quantifies the yield gap in dollar terms ($800M per 10 bps at $800B AUM), uses the UHNW yield data to recommend a deliberate mix-shift strategy, and explicitly rejects the 'compete with Morgan Stanley' path with a clear rationale. A weak answer recommends 'improving yield' without identifying how, or endorses mass-market expansion without modeling the $2B investment payback period.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is fundamentally a segmentation and positioning decision disguised as a financial performance question. The yield gap versus Morgan Stanley is real — 20 basis points at $800 billion in AUM equals $1.6 billion in annual revenue that Citi is leaving on the table. But the question is whether the path to closing that gap is competing with Morgan Stanley on their home turf, or doubling down on what Citi already does better than anyone else. I'll use SPECIAL-T to understand the macro forces in wealth management, then STP to identify the right segment to own. One quick clarifying question: what share of Citi's $800 billion AUM is from UHNW clients above $25 million versus the HNW and mass-affluent segments? That number is the core of my analysis."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Three things would sharpen this significantly. First, what is Citi's rank in UHNW private banking internationally — is Citi top three in any regional market like Singapore, UAE, or Switzerland? Because if it's top three, that's a defensible moat worth investing behind. If it's fragmented across 160 countries without any dominant positions, the story changes. Second, what is the cost-to-serve comparison between UHNW and mass-affluent clients? The 1.4% yield on UHNW sounds attractive, but if those clients require 10 times the service intensity, net margin may be lower than it appears. And third, has Citi ever attempted a mass-market US wealth build before? Understanding why it failed — or was avoided — tells us something important about execution feasibility."
+      },
+      {
+        "label": "Step 1 — Macro Forces via SPECIAL-T",
+        "script": "Starting with the macro environment. Three forces are decisive here. First, technology: robo-advisors have commoditized mass-affluent investment management below $1 million in AUM. Betterment and Schwab Intelligent Portfolios charge 25 to 50 basis points — it is structurally very difficult to charge 90 basis points at the mass-affluent level with a human advisor model and earn an acceptable margin. Competing in that segment requires either digital-first economics or Morgan Stanley's brand scale, neither of which Citi currently has. Second, regulatory complexity: international wealth management requires FATCA compliance, OECD Common Reporting Standards, and AML frameworks across dozens of jurisdictions. Citi's existing infrastructure in 160 countries took decades to build — a new entrant like JP Morgan or Goldman trying to replicate that would face years of compliance build-out. That infrastructure is a genuine barrier to entry for UHNW international clients. Third, competition: JP Morgan is expanding its UHNW international platform aggressively. Citi cannot afford to stand still in UHNW, but it also cannot win a mass-market race against Morgan Stanley. The macro picture pushes strongly toward UHNW specialization."
+      },
+      {
+        "label": "Step 2 — STP and the Yield Math",
+        "script": "Applying STP. Three segments: UHNW international, US high-net-worth at 1 to 25 million, and mass-affluent below $1 million. The targeting decision should be driven by where Citi has competitive advantage and pricing power. UHNW is clearly that segment — 1.4% yield versus 0.9% blended, and a 160-country infrastructure that took decades to build. Now the financial math. Each 10 basis points of yield improvement on $800 billion in AUM equals $800 million in annual revenue — without adding a single dollar of new client assets. If Citi shifts its AUM mix so that UHNW goes from 30% to 50% of total assets at 1.4% yield while mass-affluent stays flat, blended yield improves from 0.9% to approximately 1.05%. That's 15 basis points — $1.2 billion in incremental annual revenue — without a $2 billion advisor hiring program. Competing with Morgan Stanley for US mass-market wealth at $2 billion in advisor investment would take 7 to 10 years to break even and would require Citi to out-execute Morgan Stanley in their own backyard. That is not a bet I'd recommend to the CEO."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: double down on UHNW international and digitize mass-affluent rather than chasing Morgan Stanley. Here is the specific plan. First, concentrate investment in UHNW international — hire 200 to 300 senior private bankers in Singapore, UAE, Switzerland, and Latin American markets where wealth concentration is growing and JP Morgan is expanding. These hires are high-cost but high-yield — each UHNW relationship banker manages 30 to 50 client families at $25 million plus in assets, generating $3 to $5 million in annual revenue per banker. Second, leverage Citi's global banking and corporate relationships as a feeder pipeline — UHNW clients often emerge from corporate M&A, IPO, or treasury events where Citi is already their institutional bank. That pipeline is a structural advantage Goldman and Morgan Stanley don't have at the same scale internationally. Third, serve the mass-affluent segment with a digital-first hybrid model — a Citi Wealth Advisor robo-human product at 40 to 50 basis points — to hold the revenue base without the human capital investment that mass-market advisor scaling requires. Fourth, set a 5-year target: 1.15% blended yield on $1 trillion in AUM — driven by UHNW mix shift — generating $11.5 billion in annual wealth revenue versus $7.2 billion today. That path is achievable. Trying to replicate Morgan Stanley's model with their scale advantages is not."
+      }
+    ]
+  }
+]

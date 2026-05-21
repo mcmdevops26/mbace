@@ -1,0 +1,1275 @@
+[
+  {
+    "id": "scenario_091",
+    "type": "Market Sizing",
+    "company": "Nike",
+    "title": "Size the US Pickleball Equipment Market",
+    "prompt": "You are a brand manager at Nike evaluating whether to launch a pickleball equipment line. Before building a business case, you need to estimate the size of the US pickleball equipment market. Walk me through your approach and estimate.",
+    "context": "Nike is considering entering pickleball as a growth category. The company wants to know if the market is large enough to justify product development investment. You have 10 minutes to provide an estimate with clear assumptions. Use a bottoms-up approach starting from the number of active players.",
+    "correctFrameworks": [
+      "SPEAK"
+    ],
+    "whyThisFramework": "SPEAK framework: State assumptions (US adult population, participation rate, equipment spend per player), Pick metrics (active players × annual equipment spend), Estimate quickly (bottom-up calculation), Assess whether the number is directionally reasonable vs. available benchmarks, Keep exceptions noted (elite vs. recreational, primary vs. secondary equipment).",
+    "keyConsiderations": [
+      "What is the US adult population and what percentage play pickleball at least monthly?",
+      "How much does an active pickleball player spend on equipment annually?",
+      "What is the split between new players (high equipment spend) vs. established players (maintenance spend)?",
+      "How do you sanity-check your estimate against known data points like Sports Authority pickleball sales?"
+    ],
+    "difficulty": "easy",
+    "clarifyingQuestions": [
+      "Are we sizing total retail market (all channels) or just Nike's addressable share — i.e., should I include Amazon, specialty retailers, and direct-to-consumer?",
+      "Should I include only paddles and balls, or also pickleball-specific footwear and apparel?",
+      "Are we estimating today's market or a 3-year forward projection, given how rapidly participation is growing?",
+      "Should I separate recreational players from competitive/tournament players, since their spend profiles differ significantly?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Active Player Base",
+        "subIssues": [
+          "How many US adults play pickleball at least once per month?",
+          "What is the growth rate of new entrants vs. churn of lapsed players?",
+          "How do we segment by play frequency (casual 1-2x/month vs. avid 3x+/week)?"
+        ]
+      },
+      {
+        "block": "Per-Player Annual Equipment Spend",
+        "subIssues": [
+          "What does a new player spend on initial equipment (paddle, balls, bag, shoes)?",
+          "What does an established player spend on annual replacement and upgrades?",
+          "How much incremental spend comes from apparel and accessories vs. hard equipment?"
+        ]
+      },
+      {
+        "block": "Sanity Check & Reasonableness",
+        "subIssues": [
+          "Does our bottom-up estimate align with top-down proxies (tennis market share, retail scan data)?",
+          "What is the implied per-player spend vs. comparable racquet sports?",
+          "How does our estimate compare to reported figures from USA Pickleball or Sports & Fitness Industry Association?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Anchor the Player Base",
+        "detail": "Start with ~265M US adults. Apply a pickleball participation rate of approximately 8-9% based on the sport's rapid growth — that yields roughly 22 million active players. Segment them 70/30 casual vs. avid to weight spending correctly."
+      },
+      {
+        "step": 2,
+        "title": "Estimate Per-Player Annual Spend",
+        "detail": "A new casual player spends ~$150-200 on first-year equipment (one paddle $80-120, balls $20-30, bag $40). Established casual players spend ~$60/year on replacements. Avid players spend ~$300+/year (upgrading paddles, multiple ball cans, specialty footwear). Blend to ~$120 average annual spend per active player."
+      },
+      {
+        "step": 3,
+        "title": "Calculate Bottom-Up Market Size",
+        "detail": "22M players × $120 average annual spend = ~$2.6B total US pickleball equipment market. Then apply a growth kicker: if the player base is growing 15-20% annually, today's market may be $2.0-2.5B with a $3B+ 2-year forward view."
+      },
+      {
+        "step": 4,
+        "title": "Sanity Check Against Top-Down",
+        "detail": "Tennis is a $1.2B equipment market with ~18M players — implying ~$67/player. Pickleball's higher per-player spend ($120) is defensible because the sport skews older with more disposable income and is in a gear-upgrade phase. The SFIA has reported ~$500M in pickleball equipment retail, suggesting our estimate may be high — flag this and note the discrepancy may reflect different definitions of 'active player.'"
+      },
+      {
+        "step": 5,
+        "title": "State Your Conclusion and Nike Implication",
+        "detail": "Conclude: 'I estimate the US pickleball equipment market at $1.5-2.5B annually, with the range reflecting uncertainty in the player count definition. Even at the low end, this is a meaningful category. Nike's natural entry point would be footwear and apparel first, where it has manufacturing competency, before paddles.'"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "TAM",
+        "definition": "Total Addressable Market — the full revenue opportunity assuming 100% market share; used here to describe the total US pickleball equipment retail spend regardless of who captures it"
+      },
+      {
+        "term": "SPEAK",
+        "definition": "Market sizing framework: State assumptions, Pick the right metric, Estimate quickly, Assess reasonableness, Keep exceptions noted — ensures structured, auditable estimates"
+      },
+      {
+        "term": "Participation Rate",
+        "definition": "The percentage of a defined population (US adults) who engage in an activity at a specified frequency (monthly) — the key lever in any sports market sizing"
+      },
+      {
+        "term": "Blended Average Spend",
+        "definition": "A weighted average spend per player that accounts for different segments (new vs. established, casual vs. avid) rather than applying a single number to all players"
+      },
+      {
+        "term": "Sanity Check",
+        "definition": "A top-down cross-validation of a bottom-up estimate using proxy benchmarks (comparable sports markets, reported industry data) to confirm the estimate is in the right order of magnitude"
+      }
+    ],
+    "interviewerExpectations": "Strong answers structure the estimate clearly using SPEAK, show explicit math with labeled assumptions, and proactively sanity-check against a comparable (e.g., the tennis market). Weak answers jump to a number without showing work, fail to segment players by spend behavior, or skip the reasonableness check entirely.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Great question. To size the US pickleball equipment market, I'll use a bottoms-up approach — building from the number of active players and multiplying by per-player annual equipment spend. I'll then sanity-check that number against the tennis equipment market as a comparable. Can I take 30 seconds to structure my assumptions before I calculate?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two quick clarifications: First, should I include pickleball-specific footwear and apparel, or just hard equipment like paddles and balls? And are we estimating the current market or a 3-year projection, given the sport is growing fast? I'll assume hard equipment only and today's market for now, but I can flex that."
+      },
+      {
+        "label": "Step 1 — Estimating the Player Base",
+        "script": "Starting with the US: roughly 265 million adults. Pickleball has exploded — I'll estimate about 8% of adults play at least once a month, which gives me about 21 million active players. I'll split those 70-30 casual versus avid, because spending behavior differs significantly between someone who plays once a week recreationally versus someone who's on the courts three times a week and upgrading gear regularly."
+      },
+      {
+        "label": "Step 2 — Per-Player Spend and Market Math",
+        "script": "For casual players, I'll estimate $70 per year — mostly ball replacements and the occasional paddle upgrade. For avid players, I'll use $280 per year — they're buying higher-end paddles in the $150-200 range and replacing them more often. Blending those: 70% × $70 plus 30% × $280 gives me about $133 per player per year. Multiply that times 21 million players and I get approximately $2.8 billion. I'll round to call it a $2-3 billion market to reflect my uncertainty in the participation rate."
+      },
+      {
+        "label": "Sanity Check",
+        "script": "Let me sanity-check that. The US tennis equipment market is roughly $1.2 billion with about 18 million players — implying $67 per player. My pickleball estimate is $133 per player, which is about double. That's plausible given pickleball players skew older with more disposable income and the sport is in a gear-enthusiasm phase where people are upgrading rapidly. That said, I've seen SFIA figures in the $500 million range, which could reflect a narrower definition of active players. I'd flag that discrepancy and recommend checking how 'active' is defined in any reported data."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My estimate is that the US pickleball equipment market is between $1.5 and $2.5 billion today, growing 15-20% annually. Even at the low end, this is a meaningful opportunity. For Nike specifically, I'd recommend entering with footwear and apparel first — that's where Nike has manufacturing scale and brand equity — before evaluating paddles, which is a more specialized and competitive entry point. The market is clearly large enough to justify a business case."
+      }
+    ]
+  },
+  {
+    "id": "scenario_092",
+    "type": "Market Sizing",
+    "company": "Hilton",
+    "title": "Size the US Extended Stay Hotel Market",
+    "prompt": "You are a strategy analyst at Hilton evaluating the extended stay hotel segment before a potential brand launch. Estimate the total annual revenue of the US extended stay hotel market. Walk me through your approach.",
+    "context": "Hilton's strategy team needs a bottom-up market size estimate to assess whether the extended stay segment is large enough to support a new brand launch. Extended stay is defined as stays of 5 nights or more. You should approach this from the demand side — who uses extended stay hotels and how often.",
+    "correctFrameworks": [
+      "SPEAK"
+    ],
+    "whyThisFramework": "SPEAK framework: State assumptions (extended stay demand drivers: corporate relocation, project workers, medical travel, insurance housing), Pick metrics (number of extended stay users × average stay duration × nightly rate), Estimate quickly, Assess against reported market size data, Keep exceptions (economy vs. upscale segments have different dynamics).",
+    "keyConsiderations": [
+      "What are the primary demand drivers for extended stay — corporate relocation, travel nurses, insurance housing?",
+      "How many US workers are on multi-week project assignments at any given time?",
+      "What is the average nightly rate across economy, mid-scale, and upscale extended stay?",
+      "How does seasonal demand (medical travel, construction projects) affect annual estimates?"
+    ],
+    "difficulty": "easy",
+    "clarifyingQuestions": [
+      "Should I include all price segments — economy brands like WoodSpring, mid-scale like Homewood Suites, and upscale like Element — or just the mid-scale and above where Hilton would compete?",
+      "Are we measuring occupied room revenue only, or should I include ancillary revenue like laundry, parking, and food service?",
+      "Should I build from the demand side (who stays and how long) or from the supply side (number of extended-stay branded properties × occupancy × rate)?",
+      "Is the definition of extended stay strictly 5+ nights, or does the industry use a 7-night threshold for some segments?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Demand Segments (Who Stays)",
+        "subIssues": [
+          "How many corporate relocation and project-based workers stay in extended stay hotels annually?",
+          "How large is the medical travel segment — travel nurses, patients receiving treatment away from home?",
+          "How significant is insurance-displaced housing (natural disasters, home repairs) as a demand driver?"
+        ]
+      },
+      {
+        "block": "Stay Economics (How Long and At What Rate)",
+        "subIssues": [
+          "What is the average length of stay for each demand segment (corporate project vs. relocation vs. medical)?",
+          "What is the average daily rate across economy, mid-scale, and upscale extended-stay segments?",
+          "What occupancy rate characterizes the extended-stay segment vs. traditional hotels?"
+        ]
+      },
+      {
+        "block": "Supply-Side Sanity Check",
+        "subIssues": [
+          "How many extended-stay branded properties exist in the US and what is the average room count?",
+          "Does implied revenue per property validate our demand-side estimate?",
+          "How does total room night supply constrain or validate the demand estimate?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Identify and Size the Demand Segments",
+        "detail": "Build from four demand drivers: (1) Corporate project workers — estimate 5M US workers on multi-week assignments annually, with 40% using hotels over apartments; (2) Corporate relocation — ~500K relocations per year, averaging 30-day interim hotel stays; (3) Travel nurses and medical travelers — ~500K travel nurses with 13-week contracts, plus patient/caregiver medical travel; (4) Insurance-displaced residents — ~200K annual cases from natural disaster and home damage claims."
+      },
+      {
+        "step": 2,
+        "title": "Estimate Stay Duration Per Segment",
+        "detail": "Corporate project workers average ~3 weeks per stay. Relocating employees average ~30 nights. Travel nurses average 91 nights (13-week contracts). Insurance housing averages ~45 nights. Request the interviewer confirm if these feel reasonable — they'll appreciate the check-in."
+      },
+      {
+        "step": 3,
+        "title": "Calculate Total Room Nights",
+        "detail": "Sum room nights across segments: 2M corporate project workers × 21 nights = 42M nights; 500K relocations × 30 nights = 15M nights; 300K medical travelers × 60 nights = 18M nights; 200K insurance cases × 45 nights = 9M nights. Total ≈ 84M room nights per year."
+      },
+      {
+        "step": 4,
+        "title": "Apply Blended Average Daily Rate",
+        "detail": "Economy extended-stay (WoodSpring, Motel 6) averages ~$65/night. Mid-scale (Candlewood, Home2 Suites) averages ~$110/night. Upscale (Homewood, Residence Inn) averages ~$160/night. Blend 40/40/20 across segments for a blended rate of ~$105/night. 84M nights × $105 = ~$8.8B."
+      },
+      {
+        "step": 5,
+        "title": "Sanity Check and State Conclusion",
+        "detail": "Cross-check: the US hotel industry is ~$230B annually. Extended stay is commonly cited as 5-8% of total hotel revenue, implying $11-18B. Our $8.8B estimate is at the lower end — reasonable if we've undercounted seasonal/irregular demand. Conclude: 'I estimate the US extended stay hotel market at approximately $9-12 billion annually, which suggests this is a viable segment for a new Hilton brand if the company can capture even 5-8% share.'"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "RevPAR",
+        "definition": "Revenue Per Available Room — the hotel industry's primary performance metric, calculated as occupancy rate × average daily rate; used to compare hotel performance across segments"
+      },
+      {
+        "term": "ADR",
+        "definition": "Average Daily Rate — the average price paid per occupied hotel room per night; varies significantly across economy (~$65), mid-scale (~$110), and upscale (~$160) extended-stay segments"
+      },
+      {
+        "term": "Demand Segmentation",
+        "definition": "Breaking the total market into mutually exclusive demand groups (corporate project, relocation, medical, insurance) each with distinct stay durations and price sensitivity"
+      },
+      {
+        "term": "Occupancy Rate",
+        "definition": "The percentage of available room nights that are actually sold; extended-stay hotels typically run 75-85% occupancy vs. 65-70% for traditional hotels due to longer, more predictable booking patterns"
+      },
+      {
+        "term": "IDN / Integrated Delivery Network",
+        "definition": "In the hotel context, a managed travel program where corporate accounts book blocks of rooms for project teams — a key demand driver for mid-scale and upscale extended stay"
+      }
+    ],
+    "interviewerExpectations": "Strong answers enumerate the distinct demand segments (corporate project, relocation, medical, insurance-displaced) rather than treating 'extended stay guests' as one monolithic group, and apply different stay durations to each. Weak answers estimate a single average stay length, ignore the ADR variation across price segments, or fail to cross-check the estimate against total hotel industry size.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "To estimate the US extended stay hotel market, I'll build from the demand side — identifying the major customer segments who use extended stay, estimating how many people fall into each segment and how long they stay, then multiplying by the relevant nightly rate. I'll finish with a supply-side sanity check. Extended stay has four distinct demand drivers, so I want to treat each one separately rather than applying a single average."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I start — two quick clarifications. First, should I include economy-segment brands like WoodSpring Suites, or focus on mid-scale and above where Hilton would realistically compete? And second, are we measuring room revenue only, or including ancillary income like food and parking? I'll assume all segments and room revenue only for now."
+      },
+      {
+        "label": "Step 1 — Demand Segments",
+        "script": "I see four major demand segments. First, corporate project workers — consultants, construction crews, contractors on multi-week assignments. I'd estimate 4-5 million of these workers annually use hotels rather than apartments, averaging about 3 weeks per stay. Second, corporate relocations — approximately 500,000 per year, with employees needing interim housing for about 30 nights during transition. Third, medical travelers — travel nurses on 13-week contracts and patients or caregivers traveling for specialized treatment, let's say 400,000 people averaging 60 nights. Fourth, insurance-displaced residents — homeowners displaced by fire, flood, or renovation, roughly 200,000 cases averaging 45 nights."
+      },
+      {
+        "label": "Step 2 — Room Nights and Rate Math",
+        "script": "Adding those up: 2 million corporate project workers times 21 nights is 42 million room nights. 500,000 relocations times 30 nights is 15 million. 400,000 medical travelers times 60 nights is 24 million. 200,000 insurance cases times 45 nights is 9 million. Total is roughly 90 million room nights annually. For rates, I'll use a blend: 40% economy at $65, 40% mid-scale at $110, 20% upscale at $160 — blended ADR of about $100 per night. 90 million nights times $100 is $9 billion."
+      },
+      {
+        "label": "Sanity Check",
+        "script": "Let me sanity-check that. The total US hotel industry is roughly $220-230 billion annually. Extended stay is typically cited as 5 to 8 percent of the hotel market, which would imply $11 to $18 billion. My $9 billion estimate is slightly below that range, which suggests I may have undercounted irregular demand or seasonal workers. I'll call the range $9 to $13 billion to capture that uncertainty."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My estimate is that the US extended stay hotel market generates approximately $9 to $13 billion in annual room revenue. This is a substantial segment — large enough to support a dedicated brand launch at Hilton if the company can capture meaningful share. Given Hilton already operates Homewood Suites and Home2 Suites, a new brand would need a distinct positioning — likely economy-price or apartment-hybrid — to avoid cannibalizing the existing portfolio."
+      }
+    ]
+  },
+  {
+    "id": "scenario_093",
+    "type": "Market Sizing",
+    "company": "Amgen",
+    "title": "Size the US Market for Obesity Drug Treatment",
+    "prompt": "You are a market analyst at Amgen evaluating whether to enter the GLP-1 obesity treatment market. Estimate the annual US market size for prescription obesity medications. Walk me through your approach.",
+    "context": "Amgen has an obesity drug in early development and wants to understand the market opportunity. The existing GLP-1 drugs (Ozempic, Wegovy, Mounjaro) have created massive demand. You need to estimate the total addressable market for prescription obesity treatment in the US — both current and potential at full penetration.",
+    "correctFrameworks": [
+      "SPEAK"
+    ],
+    "whyThisFramework": "SPEAK framework: State assumptions (US adult obesity prevalence, treatment-eligible population, prescription penetration rate, annual drug cost per patient), Pick metrics (eligible patients × penetration rate × annual cost), Estimate quickly, Assess reasonableness vs. reported Wegovy/Ozempic sales, Keep exceptions (Medicaid/Medicare coverage gaps, adherence rates).",
+    "keyConsiderations": [
+      "What percentage of US adults are clinically obese (BMI >30) and eligible for pharmacological treatment?",
+      "What fraction of eligible patients are currently prescribed GLP-1 drugs vs. the theoretical maximum?",
+      "What is the annual cost of GLP-1 treatment and how does payer coverage affect the addressable market?",
+      "How do you differentiate between addressable market (covered patients) and total theoretical market?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Are we estimating the current market as it exists today, or the potential market at full penetration if coverage and access barriers were resolved?",
+      "Should I include overweight patients (BMI 27-30 with comorbidities) in addition to obese patients (BMI 30+), since GLP-1 drugs are approved for both?",
+      "Should annual drug cost reflect list price, or net price after payer rebates — since list price for Wegovy is ~$1,350/month but net realized revenue is significantly lower?",
+      "Are we scoping to GLP-1 drugs only, or the broader obesity pharmacotherapy market including older agents like phentermine?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Treatment-Eligible Patient Population",
+        "subIssues": [
+          "How many US adults are clinically obese (BMI 30+) and medically eligible for prescription treatment?",
+          "What fraction of eligible patients have commercial insurance, Medicare, or Medicaid coverage for obesity drugs?",
+          "What are the clinical exclusion criteria that limit actual prescribable population?"
+        ]
+      },
+      {
+        "block": "Current Penetration vs. Full Potential",
+        "subIssues": [
+          "What is today's prescription penetration rate among eligible, covered patients?",
+          "What penetration rate is achievable at market maturity (analogous to statin or antihypertensive penetration)?",
+          "What are the primary barriers to penetration: cost, supply, physician adoption, patient adherence?"
+        ]
+      },
+      {
+        "block": "Revenue Per Treated Patient",
+        "subIssues": [
+          "What is the annual cost of GLP-1 therapy at list price vs. net price after rebates?",
+          "What is the adherence rate — what fraction of prescribed patients remain on therapy for 12 months?",
+          "How does the revenue calculation differ between commercially insured, Medicare Part D, and uninsured patients?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Define the Eligible Population",
+        "detail": "US adult population: ~265 million. Obesity prevalence (BMI 30+): ~42%, so ~111 million obese adults. Add overweight with comorbidities (BMI 27-30 with type 2 diabetes or hypertension) — approximately 30 million more, for ~141 million clinically eligible patients. Apply a 'diagnosed and in medical care' filter of ~60%, yielding ~85 million actively managed eligible patients."
+      },
+      {
+        "step": 2,
+        "title": "Apply Insurance Coverage Filter",
+        "detail": "Of the 85 million managed eligible patients: ~50% have commercial insurance with obesity drug coverage (~42 million), ~25% are Medicare (historically limited coverage, improving post-IRA), ~15% are Medicaid (variable state coverage), ~10% uninsured. Effective insured addressable population: ~55-60 million patients."
+      },
+      {
+        "step": 3,
+        "title": "Estimate Penetration Rate",
+        "detail": "Current GLP-1 penetration is approximately 5-8% of eligible covered patients — supply constraints and formulary restrictions have limited uptake despite high demand. At market maturity (analogous to statins at ~30-40% penetration), the long-term TAM is far larger. Use 7% current penetration: 58M × 7% = ~4 million patients currently treated."
+      },
+      {
+        "step": 4,
+        "title": "Calculate Annual Market Revenue",
+        "detail": "Wegovy list price is ~$16,200/year ($1,350/month). Net price after rebates is estimated at 30-40% discount, so ~$10,000-11,000/year. Apply ~70% adherence (patients remain on drug for average 8-9 months per year). 4M patients × $10,500 net annual cost × 70% adherence = ~$29 billion current market. Full penetration scenario at 30%: 58M × 30% × $10,500 × 70% = ~$128 billion theoretical TAM."
+      },
+      {
+        "step": 5,
+        "title": "Sanity Check and Conclusion",
+        "detail": "Cross-check: Novo Nordisk reported ~$4B in Wegovy US sales and Eli Lilly ~$5B in Mounjaro/Zepbound US sales in 2023-2024, suggesting a $25-35B current market including all GLP-1 indications. Our $29B estimate aligns well. Conclude: 'The current US obesity drug market is approximately $25-35B and could reach $100B+ at maturity. This is a generational market opportunity that justifies Amgen's investment in AMG133.'"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "GLP-1",
+        "definition": "Glucagon-Like Peptide-1 — a hormone that regulates appetite and blood sugar; GLP-1 receptor agonists (Ozempic, Wegovy, Mounjaro) mimic this hormone to produce weight loss and glycemic control"
+      },
+      {
+        "term": "Net Price",
+        "definition": "The actual revenue received by a drug manufacturer after deducting rebates paid to pharmacy benefit managers and insurance formularies; typically 30-50% below the published list price"
+      },
+      {
+        "term": "Adherence Rate",
+        "definition": "The percentage of prescribed patients who continue taking a medication as directed over a defined period; GLP-1 drugs have significant discontinuation rates due to cost and side effects, making this a key revenue driver"
+      },
+      {
+        "term": "TAM vs. SAM",
+        "definition": "Total Addressable Market (all eligible patients regardless of coverage) vs. Serviceable Addressable Market (covered, diagnosable patients that can realistically be reached); the distinction is critical in pharma due to coverage gaps"
+      },
+      {
+        "term": "BMI Threshold",
+        "definition": "Body Mass Index cutoff used to define clinical eligibility for obesity pharmacotherapy: BMI ≥30 for obesity, or BMI ≥27 with at least one weight-related comorbidity (type 2 diabetes, hypertension, dyslipidemia)"
+      }
+    ],
+    "interviewerExpectations": "Strong answers distinguish between the total eligible population and the covered/reachable population, flag the gap between list price and net price, and apply an adherence discount rather than assuming 100% compliance. Weak answers treat all 42% obese US adults as the market, use list price uncritically, and fail to sanity-check against publicly reported GLP-1 revenues.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "To size the US obesity drug market, I'll build from the patient population downward: starting with the total eligible population, filtering to the insured and medically managed subset, applying current penetration rates, and then multiplying by net revenue per treated patient. I'll also show the full-penetration scenario since that's really the strategic question for Amgen. Two quick questions before I start."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "First — are we estimating today's actual market or the full theoretical potential? I want to show both, but I want to confirm which is the primary deliverable. Second — should I use list price or net price after rebates? Wegovy is $1,350 per month list, but manufacturers net significantly less after PBM rebates. I'll use net price to be most accurate."
+      },
+      {
+        "label": "Step 1 — Eligible Patient Population",
+        "script": "US adults: roughly 265 million. About 42% are clinically obese by BMI — that's 111 million people. Adding overweight patients with comorbidities like type 2 diabetes, who are also FDA-approved for these drugs, brings the eligible population to around 140 million. But realistically, only about 60% of those are actively in the healthcare system and could receive a prescription — so call it 85 million clinically eligible, managed patients."
+      },
+      {
+        "label": "Step 2 — Coverage and Penetration Math",
+        "script": "Of those 85 million, I'll estimate about 65% have insurance coverage that includes obesity drugs — so around 55 million with effective access. Current penetration among covered eligible patients is low, roughly 5 to 7%, due to supply constraints and formulary restrictions. That implies about 3.5 to 4 million patients currently on therapy. At net price of $10,000 to $11,000 per year and 70% adherence — since many patients discontinue due to cost or side effects — that's roughly 4 million times $10,500 times 70%, which equals about $29 billion in annual market revenue today."
+      },
+      {
+        "label": "Sanity Check",
+        "script": "That checks out. Novo Nordisk reported roughly $4-5 billion in US Wegovy sales and Lilly is in a similar range for Mounjaro and Zepbound, suggesting the market is already $25-35 billion. My $29 billion estimate is right in that range. The full-penetration scenario at 30% — comparable to statins — implies a $100+ billion market, which is why every major pharma company is racing into this space."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My estimate: the current US obesity drug market is approximately $25 to $30 billion and could reach $100 billion or more at maturity. This is one of the largest pharmaceutical market opportunities in history. For Amgen, the question isn't whether the market is big enough — it clearly is — it's whether AMG133's differentiation versus Wegovy and Zepbound is strong enough to carve out a meaningful share against deeply entrenched incumbents. I'd recommend Amgen prioritize head-to-head clinical data showing superior weight loss or tolerability as the centerpiece of its differentiation strategy."
+      }
+    ]
+  },
+  {
+    "id": "scenario_094",
+    "type": "Market Sizing",
+    "company": "MasterCard",
+    "title": "Size the Global Contactless Payment Market",
+    "prompt": "You are a strategy analyst at MasterCard assessing the opportunity in contactless (tap-to-pay) payments globally. Estimate the total annual transaction value of contactless payments globally. Walk me through your approach.",
+    "context": "MasterCard is preparing a presentation on contactless payment growth for its board. You need to estimate total global contactless transaction value — including credit, debit, and prepaid contactless cards — as a basis for evaluating MasterCard's share opportunity. Focus on in-store contactless, not online.",
+    "correctFrameworks": [
+      "SPEAK"
+    ],
+    "whyThisFramework": "SPEAK framework: State assumptions (global adult banked population, contactless card penetration by region, contactless vs. total card transaction share, average contactless transaction value and frequency), Pick metrics (contactless-enabled users × transactions per year × average value), Estimate quickly, Assess vs. known data (MasterCard processes $8T+ annually), Keep exceptions (regional variation in contactless adoption).",
+    "keyConsiderations": [
+      "How does contactless penetration differ between mature markets (UK, Australia) vs. developing markets?",
+      "What is the average contactless transaction value — is this primarily small-ticket purchases?",
+      "How many contactless transactions does an active user make per month in a mature market?",
+      "How do mobile wallets (Apple Pay, Google Pay) affect your definition of 'contactless'?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Should I include mobile wallet transactions (Apple Pay, Google Pay) in addition to physical contactless cards, since both use NFC technology at the point of sale?",
+      "Are we estimating transaction value (dollar volume) or transaction count? I'll assume value since that's what drives payment network revenue.",
+      "Should I segment by region given the enormous variation in contactless adoption — the UK is near 90% of in-store transactions, while parts of Latin America and Southeast Asia are much lower?",
+      "Is transit (subway, bus) included, or only retail point-of-sale? Transit transactions tend to be very low value and would skew the average down significantly."
+    ],
+    "meceBlocks": [
+      {
+        "block": "Geographic Segmentation by Adoption Maturity",
+        "subIssues": [
+          "What is contactless transaction volume in mature markets (UK, Australia, Canada, Western Europe) where adoption exceeds 70%?",
+          "What is contactless transaction volume in mid-adoption markets (US, Japan, Brazil) where tap-to-pay is growing rapidly?",
+          "What is contactless transaction volume in emerging markets (India, Southeast Asia, Sub-Saharan Africa) where mobile payment schemes often dominate?"
+        ]
+      },
+      {
+        "block": "Transaction Economics per Active User",
+        "subIssues": [
+          "How many contactless transactions does an active user make per month in each regional tier?",
+          "What is the average transaction value for contactless — does it differ from chip/PIN card averages?",
+          "What share of total card spending is captured via contactless vs. insert/swipe methods?"
+        ]
+      },
+      {
+        "block": "Network and Scheme Attribution",
+        "subIssues": [
+          "What fraction of global contactless volume flows through Visa, MasterCard, and other schemes?",
+          "How does the growth of closed-loop contactless (transit cards, store-specific systems) affect the open-network TAM?",
+          "What is MasterCard's implied share of the estimated total?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Segment the World by Contactless Adoption Rate",
+        "detail": "Divide global markets into three tiers: Tier 1 (mature) — UK, Australia, Canada, Western Europe, ~600M adults, 80% contactless card penetration, ~8 transactions/month per user, avg $25/transaction. Tier 2 (growing) — US, Japan, Brazil, Eastern Europe, ~900M adults, 50% contactless penetration, ~5 transactions/month, avg $30/transaction. Tier 3 (early stage) — India, Southeast Asia, Africa, Latin America, ~2.5B banked adults, 15% contactless penetration, ~2 transactions/month, avg $15/transaction."
+      },
+      {
+        "step": 2,
+        "title": "Calculate Active Contactless Users per Tier",
+        "detail": "Tier 1: 600M × 80% = 480M users. Tier 2: 900M × 50% = 450M users. Tier 3: 2.5B × 15% = 375M users. Total: ~1.3 billion active contactless users globally."
+      },
+      {
+        "step": 3,
+        "title": "Calculate Annual Transaction Value per Tier",
+        "detail": "Tier 1: 480M users × 8 tx/month × $25 × 12 months = $1.15T. Tier 2: 450M × 5 × $30 × 12 = $810B. Tier 3: 375M × 2 × $15 × 12 = $135B. Total: approximately $2.1 trillion."
+      },
+      {
+        "step": 4,
+        "title": "Sanity Check Against Known Data",
+        "detail": "MasterCard processes approximately $8T annually in total card volume globally. Visa processes a similar amount. Combined global card network volume is ~$16-20T. Contactless as a share of total card spend is estimated at 10-15% globally (higher in mature markets, lower in US where contactless adoption lagged). $2T ÷ $18T ≈ 11% — that's consistent with industry estimates. Sanity check passes."
+      },
+      {
+        "step": 5,
+        "title": "State Conclusion with MasterCard Implication",
+        "detail": "Conclude: 'I estimate global in-store contactless payment transaction value at approximately $2 trillion annually, with Tier 1 markets (UK, Australia, Western Europe) contributing more than half despite representing a fraction of the global population. MasterCard's share of ~30% of global card volume implies roughly $600B in contactless volume — but the real growth opportunity is accelerating penetration in Tier 2 and Tier 3 markets.'"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "NFC",
+        "definition": "Near Field Communication — the short-range wireless technology that enables tap-to-pay transactions between a contactless card or mobile wallet and a point-of-sale terminal"
+      },
+      {
+        "term": "Transaction Value (GDV)",
+        "definition": "Gross Dollar Volume — the total value of purchases processed through a payment network; MasterCard's primary revenue driver since interchange fees are a percentage of this volume"
+      },
+      {
+        "term": "Contactless Penetration Rate",
+        "definition": "The percentage of in-store card transactions that use tap-to-pay rather than chip insertion or magnetic stripe; highly variable by country — 90%+ in the UK, historically lower in the US until COVID accelerated adoption"
+      },
+      {
+        "term": "Open Loop vs. Closed Loop",
+        "definition": "Open-loop contactless systems (Visa, MasterCard) work at any merchant; closed-loop systems (Oyster Card in London, Octopus in Hong Kong) work only within a specific network — closed-loop volume is outside MasterCard's TAM"
+      },
+      {
+        "term": "Interchange Fee",
+        "definition": "The fee paid by the merchant's bank to the cardholder's bank on each transaction, typically 1.5-2% for credit and 0.5% for debit; the primary economics of the payment network business"
+      }
+    ],
+    "interviewerExpectations": "Strong answers segment the world by contactless adoption maturity (rather than applying a single global average) and demonstrate awareness of the massive regional variation in tap-to-pay penetration. They also sanity-check against MasterCard's known total network volume. Weak answers apply a single global transaction frequency and rate without acknowledging that the UK or Australia are not representative of Southeast Asia or Latin America.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "To estimate global contactless payment transaction value, I'll segment the world into three tiers by contactless adoption maturity — because the UK at 90% tap-to-pay is a fundamentally different market than Brazil or India. Within each tier I'll estimate active contactless users, monthly transaction frequency, and average transaction value, then multiply up to annual volume. I'll finish by checking against MasterCard's known total network volume."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Quick confirmation: should I include mobile wallet transactions like Apple Pay and Google Pay, since they also use NFC at the point of sale? And should I include transit — subway and bus fare payments — or focus on retail only? Transit transactions are typically under $5 and could skew the average down significantly. I'll include mobile wallets but exclude transit for this estimate unless you'd like me to add it."
+      },
+      {
+        "label": "Step 1 — Three-Tier Geographic Segmentation",
+        "script": "Tier 1 — mature markets: the UK, Australia, Canada, Western Europe. These have contactless penetration above 70% of in-store transactions. Combined adult population of roughly 600 million, 80% with contactless cards. About 8 tap-to-pay transactions per month at an average of $25 each — that's mostly coffee, groceries, transit substitutes, quick-service dining. Tier 2 — growing markets: the US, Japan, Brazil, Eastern Europe. Roughly 900 million adults, 50% contactless adoption, 5 transactions per month at $30. The US is actually lower adoption than Europe due to slower terminal upgrades, but COVID accelerated this significantly. Tier 3 — early stage: India, Southeast Asia, Sub-Saharan Africa, most of Latin America. About 2.5 billion banked adults, 15% contactless penetration, 2 transactions per month at $15."
+      },
+      {
+        "label": "Step 2 — Transaction Value Math",
+        "script": "Tier 1: 480 million contactless users times 8 transactions per month times $25 times 12 months equals $1.15 trillion. Tier 2: 450 million users times 5 times $30 times 12 equals $810 billion. Tier 3: 375 million users times 2 times $15 times 12 equals $135 billion. Total: approximately $2.1 trillion in annual global in-store contactless payment volume."
+      },
+      {
+        "label": "Sanity Check",
+        "script": "Let me check that. MasterCard and Visa each process roughly $8 trillion in annual card volume — combined global card volume is $15 to $18 trillion. If contactless is 10 to 12 percent of total card spend globally, that implies $1.5 to $2.2 trillion. My estimate of $2.1 trillion falls right in that range, so the math holds."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My estimate is that the global in-store contactless payment market represents approximately $2 trillion in annual transaction value, with mature markets generating more than half of that volume despite being a fraction of the global population. For MasterCard, at roughly 30% global network share, that implies about $600 billion in contactless volume today. The strategic opportunity is in accelerating penetration in Tier 2 and Tier 3 markets — particularly the US, which is still underpenetrated relative to Western Europe, and India, where mobile payment infrastructure is growing rapidly."
+      }
+    ]
+  },
+  {
+    "id": "scenario_095",
+    "type": "Market Sizing",
+    "company": "Dick's Sporting Goods",
+    "title": "Size the US Youth Sports Equipment Market",
+    "prompt": "You are a category strategy analyst at Dick's Sporting Goods. Estimate the total annual retail spend on youth sports equipment (ages 5-17) in the United States. Walk me through your approach.",
+    "context": "Dick's is evaluating a major investment in its youth sports category, including potential store-in-store concepts and youth sports community programs. Before making the investment decision, leadership wants a bottom-up estimate of the total US youth sports equipment market to understand Dick's current share and growth opportunity.",
+    "correctFrameworks": [
+      "SPEAK"
+    ],
+    "whyThisFramework": "SPEAK framework: State assumptions (number of US children age 5-17, youth sports participation rate, number of sports per child, annual spend per sport per child), Pick metrics (youth athletes × sports played × annual equipment spend per sport), Estimate quickly, Assess against Dick's own revenue data and known industry figures, Keep exceptions (team vs. individual sports, geographic variation in sport participation).",
+    "keyConsiderations": [
+      "What percentage of US children ages 5-17 participate in organized sports?",
+      "How many sports does the average youth athlete play — is there multi-sport overlap?",
+      "How does per-sport equipment spend vary between football ($400+ in pads/helmet) vs. soccer ($100)?",
+      "How do you account for hand-me-down equipment and second-hand markets?"
+    ],
+    "difficulty": "easy",
+    "clarifyingQuestions": [
+      "Should I include team-purchased equipment (uniforms, shared gear) or only parent/guardian retail purchases for individual athletes?",
+      "Should I include recreational backyard sports or only organized league sports with equipment requirements?",
+      "Should I include athletic footwear as part of equipment spend, or only sport-specific gear? Footwear significantly inflates per-athlete spend.",
+      "Should I account for used equipment markets — eBay, Play It Again Sports — which siphon spend away from Dick's retail?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Youth Athlete Population",
+        "subIssues": [
+          "How many children ages 5-17 are in the US, and what fraction participate in organized sports?",
+          "How does participation rate vary by age group (5-8 vs. 9-13 vs. 14-17)?",
+          "How many sports does the average youth athlete participate in simultaneously or sequentially per year?"
+        ]
+      },
+      {
+        "block": "Per-Sport Equipment Spend",
+        "subIssues": [
+          "What is the typical first-year equipment cost for the five most popular youth sports (soccer, baseball, basketball, football, swimming)?",
+          "What is the annual replacement/maintenance spend for each sport after the initial purchase year?",
+          "What is the split between equipment spend and footwear spend for each sport?"
+        ]
+      },
+      {
+        "block": "Market Leakage and Retail Capture Rate",
+        "subIssues": [
+          "What share of youth sports equipment spend flows through specialty sporting goods retailers vs. Amazon, Walmart, and direct-to-brand?",
+          "How much spend is captured by the second-hand market (Play It Again Sports, Facebook Marketplace)?",
+          "What is Dick's estimated share of the retail market and does that imply a reasonable absolute revenue figure?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Estimate the Youth Athlete Population",
+        "detail": "US children ages 5-17: approximately 54 million. Organized sports participation rate is roughly 55-60% — about 30 million youth athletes participate in at least one organized sport per year. Of those, approximately 40% play two or more sports, so total sport-participations per year is closer to 42 million (30M × 1.4 sports average)."
+      },
+      {
+        "step": 2,
+        "title": "Estimate Equipment Spend by Sport Category",
+        "detail": "Categorize sports into three spend tiers: High-spend sports (football, hockey, lacrosse) — avg $400-600 in equipment per year; these represent ~15% of participations. Mid-spend sports (baseball/softball, soccer, swimming, tennis) — avg $150-250 per year; represent ~45% of participations. Low-spend sports (basketball, track, cross country) — avg $80-120 per year; represent ~40% of participations. Blended average: 15% × $500 + 45% × $200 + 40% × $100 = $75 + $90 + $40 = $205 per sport per year."
+      },
+      {
+        "step": 3,
+        "title": "Calculate Total Market Size",
+        "detail": "42 million sport-participations × $205 average annual equipment spend = ~$8.6 billion. If we add athletic footwear (averaging $80/year per active athlete × 30M athletes = $2.4B), total youth sports retail spend including footwear is approximately $11 billion."
+      },
+      {
+        "step": 4,
+        "title": "Adjust for Second-Hand Markets",
+        "detail": "Estimate 15-20% of total equipment spend is captured by resale channels (Play It Again Sports, eBay, Facebook Marketplace, hand-me-downs) — particularly in high-cost sports like football and hockey where parents trade gear as kids grow. Net retail market available to Dick's and competitors: ~$7-9 billion in equipment and footwear."
+      },
+      {
+        "step": 5,
+        "title": "Sanity Check and Dick's Implication",
+        "detail": "Dick's Sporting Goods reported ~$13B in total revenue with youth sports as an estimated 20-25% of category revenue, implying ~$2.5-3B in Dick's youth sports revenue. If Dick's holds 25-35% share of the ~$8-9B addressable retail market, that aligns. Conclude: 'The US youth sports equipment market is approximately $8-10B annually at retail, and Dick's is likely the largest single player at 25-30% share — giving it significant leverage to invest in community programs that deepen loyalty.'"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Participation Rate",
+        "definition": "The percentage of children in a defined age range who participate in organized sports at any level — estimates range from 45-60% depending on the definition of 'organized' (school, recreational league, or club)"
+      },
+      {
+        "term": "Sport-Participations",
+        "definition": "A count that adds up each individual sport each athlete plays, not just the number of athletes; used to correctly weight multi-sport players who generate multiple streams of equipment spend"
+      },
+      {
+        "term": "Second-Hand Market Leakage",
+        "definition": "The portion of potential equipment spend that flows through resale channels (used gear stores, online marketplaces) rather than new retail; particularly significant in high-cost youth sports where children outgrow equipment quickly"
+      },
+      {
+        "term": "Specialty Retail Capture Rate",
+        "definition": "The percentage of total category spend that flows through specialty sports retailers (Dick's, Academy) vs. mass market (Walmart, Amazon) and direct-to-brand — determines the addressable market for a given retailer"
+      },
+      {
+        "term": "Club Sports Premium",
+        "definition": "The significantly higher equipment spend of club or travel sports athletes vs. recreational league participants; club soccer, lacrosse, and hockey players often spend 3-5x more on equipment than recreational players"
+      }
+    ],
+    "interviewerExpectations": "Strong answers segment equipment spend by sport type rather than applying a single average (recognizing that football and hockey are dramatically more expensive than basketball), account for multi-sport athletes, and acknowledge second-hand market leakage. Weak answers apply one uniform spend estimate to all 30 million youth athletes and ignore the resale market or footwear distinction.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "To size the US youth sports equipment market, I'll build from the number of youth athletes, account for multi-sport participation, and then apply a spend estimate that varies by sport type — because the equipment cost for football or hockey is dramatically higher than basketball or track. I'll also flag how the second-hand market affects what flows through retail channels like Dick's. Can I take 30 seconds to structure my assumptions?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two quick questions: First, should I include athletic footwear in equipment spend? It significantly changes the number — I can show it both ways. Second, are we measuring total retail market or only new equipment through specialty channels? I want to understand whether we're sizing Dick's opportunity or the broader market including Amazon and Walmart."
+      },
+      {
+        "label": "Step 1 — Youth Athlete Population",
+        "script": "Starting with US children ages 5 to 17 — roughly 54 million kids. Based on participation surveys, about 55% participate in organized sports at some point in the year, which gives me about 30 million youth athletes. Importantly, about 40% of those play two or more sports annually — so the total number of sport participations is closer to 42 million. That matters because a multi-sport athlete generates multiple streams of equipment spend."
+      },
+      {
+        "label": "Step 2 — Per-Sport Spend by Category",
+        "script": "I'll put sports into three tiers. High spend: football, hockey, lacrosse — averaging around $500 per year in equipment, representing about 15% of participations. Mid spend: baseball and softball, soccer, swimming, tennis — around $200 per year, making up about 45% of participations. Low spend: basketball, track, cross country — around $100 per year, about 40% of participations. Blending those: 15% times $500 plus 45% times $200 plus 40% times $100 gives me a blended average of about $205 per sport per year. Times 42 million sport participations equals roughly $8.6 billion in equipment spend. Adding footwear at about $80 per athlete across 30 million athletes adds another $2.4 billion, for a total of about $11 billion."
+      },
+      {
+        "label": "Sanity Check and Leakage Adjustment",
+        "script": "Two adjustments: I'll reduce for second-hand market leakage — particularly in high-cost sports like football and hockey where kids outgrow gear quickly and parents trade it. I estimate 15 to 20 percent of equipment spend goes through resale channels, leaving roughly $9 billion at retail. Sanity-checking: Dick's reports about $13 billion in total revenue, with youth sports estimated at 20 to 25 percent of sales — that's $2.5 to $3 billion. If Dick's holds 25 to 30 percent share of a $9 billion market, that math works."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My estimate is that the US youth sports equipment market generates approximately $9 to $11 billion in annual retail sales, depending on how you count footwear. Dick's is likely the largest single player at 25 to 30 percent share. The case for investing in community youth sports programs is strong — parents who associate Dick's with their child's athletic experience have meaningfully higher lifetime value, and the category is relatively recession-resistant because parents prioritize their children's sports participation even in downturns."
+      }
+    ]
+  },
+  {
+    "id": "scenario_096",
+    "type": "Market Sizing",
+    "company": "Chevron",
+    "title": "Size the US Electric Vehicle Charging Market by 2030",
+    "prompt": "You are a strategy analyst at Chevron evaluating the EV charging market before a major infrastructure investment decision. Estimate the total annual revenue of the US public EV charging market by 2030. Walk me through your approach.",
+    "context": "Chevron is deciding whether to invest $500M in EV charging infrastructure over 5 years. To evaluate the opportunity, leadership wants a bottom-up estimate of total US public EV charging market revenue by 2030 — specifically the revenue from selling electricity and services to EV drivers at public charging stations.",
+    "correctFrameworks": [
+      "SPEAK"
+    ],
+    "whyThisFramework": "SPEAK framework: State assumptions (projected EV fleet size in 2030, percentage of charging done at public vs. home chargers, average public charging sessions per month per EV, average revenue per charging session), Pick metrics (EVs × % public charging share × sessions/month × revenue/session × 12), Estimate quickly, Assess vs. forecast reports and current EV charging revenue benchmarks, Keep exceptions (Tesla Supercharger is a separate ecosystem).",
+    "keyConsiderations": [
+      "How many EVs will be on US roads by 2030 — what EV adoption curve is most likely?",
+      "What fraction of EV drivers rely primarily on public charging vs. home charging?",
+      "What is the average revenue per DC fast charge session at 2030 pricing?",
+      "How does Tesla's proprietary network affect the addressable market for non-Tesla chargers?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Should I include Tesla Supercharger revenue, or only the open-standard non-Tesla charging market that Chevron could actually compete in? Tesla's network is ~30% of US fast chargers but largely closed.",
+      "Are we estimating revenue only from electricity sales, or should I include subscriptions, parking fees, and ancillary revenue that charging network operators collect?",
+      "Should I model one EV adoption scenario or give a range — there's significant uncertainty in how quickly EV penetration accelerates between now and 2030?",
+      "Is DC fast charging the primary focus, or should I also include Level 2 AC charging, which generates lower revenue per session but represents the majority of public charger installations?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "EV Fleet Size by 2030",
+        "subIssues": [
+          "What is the projected number of EVs on US roads by 2030 under a base-case adoption scenario?",
+          "What fraction of those EVs rely on public charging as a primary or regular charging method (vs. home-exclusive charging)?",
+          "How does the share of apartment dwellers without home charging affect public charging demand?"
+        ]
+      },
+      {
+        "block": "Public Charging Session Economics",
+        "subIssues": [
+          "How many public charging sessions per month does a regular public-charging EV driver use?",
+          "What is the average revenue per DC fast charge session at expected 2030 electricity and pricing levels?",
+          "How does the Level 2 vs. DC fast charging mix affect blended revenue per session?"
+        ]
+      },
+      {
+        "block": "Network Segmentation and Competitive Landscape",
+        "subIssues": [
+          "What share of public charging revenue flows through Tesla Supercharger vs. open-standard networks (ChargePoint, Electrify America, EVgo)?",
+          "What is the expected utilization rate of public chargers by 2030 — how often are chargers sitting idle vs. actively charging?",
+          "How do government subsidies and free-charging programs affect revenue recognition for charging operators?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Project the 2030 US EV Fleet",
+        "detail": "Today (2024) there are approximately 4 million EVs on US roads. The EV adoption S-curve suggests growth of 25-35% annually through 2030. At 30% CAGR for 6 years: 4M × (1.3)^6 ≈ 20 million EVs. Government targets and auto OEM commitments suggest 25-30 million is plausible. Use 20-25 million as a base case. Note: acknowledge uncertainty is high here and the estimate will bracket accordingly."
+      },
+      {
+        "step": 2,
+        "title": "Segment by Charging Behavior",
+        "detail": "Of 22 million EVs (midpoint), approximately 60% are owned by homeowners with access to home Level 1 or Level 2 charging — these users public-charge infrequently (1-2x/month). 40% are apartment/condo dwellers or urban drivers without reliable home charging — these rely on public charging 6-10x/month. Adjust: 13M home-capable EVs × 1.5 sessions/month + 9M public-reliant EVs × 8 sessions/month = 19.5M + 72M = ~91 million sessions/month."
+      },
+      {
+        "step": 3,
+        "title": "Estimate Revenue Per Session",
+        "detail": "DC fast charging sessions (avg 30 min, 25 kWh delivered) at $0.35-0.45/kWh by 2030 = $9-11 per session, plus potential service/session fees of $2-3. Blended average: ~$13 per DC fast charge session. Level 2 sessions: avg 2 hours, $5-7 per session. Network mix: 30% DC fast charge at $13, 70% Level 2 at $6 = blended $7.90 per session."
+      },
+      {
+        "step": 4,
+        "title": "Calculate Annual Market Revenue",
+        "detail": "91 million sessions/month × $7.90 blended revenue/session × 12 months = ~$8.6 billion annually. Subtract Tesla Supercharger share (~25-30% of market): $8.6B × 70% = ~$6.0 billion for the open-standard market where Chevron could compete. Total market including Tesla: ~$8-9 billion."
+      },
+      {
+        "step": 5,
+        "title": "Sanity Check and Chevron Implication",
+        "detail": "Cross-check: BloombergNEF projects the US public EV charging market at $7-10 billion by 2030. Our estimate of $8-9B is in range. For Chevron: with a $500M investment, Chevron could build approximately 5,000-8,000 DC fast charge stalls. At $25,000 annual revenue per stall at mature utilization, that's $125-200M/year in revenue — a 25-40% return on investment horizon of 4-6 years. The economics are viable but depend critically on utilization rates."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "DC Fast Charging (Level 3)",
+        "definition": "Direct Current fast charging — the highest-power public charging technology (50-350 kW), capable of adding 100-200 miles of range in 20-30 minutes; generates the highest revenue per session and is the primary focus for highway corridor charging networks"
+      },
+      {
+        "term": "Level 2 Charging",
+        "definition": "AC charging at 7-22 kW — typical for destination charging at shopping centers, parking garages, and workplaces; slower (4-8 hours for a full charge) but significantly cheaper to install than DC fast chargers"
+      },
+      {
+        "term": "Charger Utilization Rate",
+        "definition": "The percentage of time a charging station is actively delivering electricity to a vehicle; current utilization rates are 10-20% for most public chargers — the key driver of economics since a charger with 15% utilization generates far less annual revenue than one at 40%"
+      },
+      {
+        "term": "Open Standard Network",
+        "definition": "EV charging networks that use CCS or CHAdeMO connectors compatible with any non-Tesla EV (ChargePoint, Electrify America, EVgo, Blink); contrasted with Tesla's proprietary Supercharger network, which now offers limited adapter access to other brands"
+      },
+      {
+        "term": "CAGR",
+        "definition": "Compound Annual Growth Rate — the year-over-year growth rate applied consistently over a period; used here to project EV fleet size from today's 4 million to an estimated 20-25 million by 2030 at 30% annual growth"
+      }
+    ],
+    "interviewerExpectations": "Strong answers acknowledge the significant uncertainty in 2030 EV projections and present a range rather than a single-point estimate, segment charging users by home-access status (critical because this drives public charging frequency), and raise the Tesla Supercharger network as a meaningful carve-out from the open-market TAM. Weak answers project a single EV fleet number without discussing assumptions, ignore the home vs. public charging split, or fail to consider Tesla's market share.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a forward-looking estimate with significant uncertainty, so I'll be explicit about my assumptions and give a range rather than a false-precision point estimate. I'll build from projected EV fleet size in 2030, segment drivers by charging behavior, calculate sessions per month, multiply by revenue per session, and then check against third-party forecasts. One important clarification first."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Should I include Tesla Supercharger revenue, or only the open-standard market where Chevron would actually compete? Tesla controls about 30% of US fast charger stalls and its network is largely closed to other manufacturers. For Chevron's investment decision, the open-standard market is what matters, but I'll size the total market first and then back out Tesla's share."
+      },
+      {
+        "label": "Step 1 — 2030 EV Fleet Projection",
+        "script": "Today, 2024, there are roughly 4 million EVs on US roads. Government targets and OEM commitments suggest the market is growing at 25 to 35 percent annually. At 30 percent CAGR over 6 years, that's 4 million times 1.3 to the power of 6, which gives me about 20 to 22 million EVs. I'll use 22 million as my base case, while flagging that this could be as low as 15 million in a slow-adoption scenario or as high as 30 million if federal incentives accelerate purchases."
+      },
+      {
+        "label": "Step 2 — Charging Behavior and Session Volume",
+        "script": "Of 22 million EVs, I'll assume 60% are owned by homeowners with home charging access — they use public charging about once or twice a month for convenience or on road trips. The other 40% are apartment or urban dwellers without reliable home charging who use public stations 6 to 8 times per month. Working through the math: 13 million home-capable EVs at 1.5 sessions per month gives about 20 million sessions. 9 million public-reliant EVs at 7 sessions per month gives 63 million sessions. Total: roughly 83 million public charging sessions per month."
+      },
+      {
+        "label": "Step 3 — Revenue Per Session and Annual Total",
+        "script": "For revenue per session, I'll separate DC fast charging from Level 2. A DC fast charge session delivers about 25 kilowatt hours in 30 minutes. At an expected 2030 price of around $0.40 per kWh plus a session fee, that's roughly $12 to $14 per session. Level 2 sessions at destination chargers average $5 to $7. Assuming a network mix of 30% DC fast and 70% Level 2, blended revenue is about $8 per session. 83 million sessions per month times $8 times 12 months equals roughly $8 billion per year. Excluding Tesla's 25 to 30 percent share, the open-standard market is about $5.5 to $6 billion."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My estimate is that the total US public EV charging market generates approximately $8 to $9 billion in annual revenue by 2030, with the open-standard market — where Chevron would operate — at $5.5 to $6 billion. BloombergNEF's published forecasts are in the $7 to $10 billion range, so we're directionally consistent. For Chevron's $500 million investment, the key risk isn't market size — it's utilization rate. Current public chargers average 10 to 15 percent utilization. To make the economics work at scale, Chevron needs to site chargers where utilization exceeds 30 to 40 percent — which means prioritizing highway corridors, airports, and destination retail over residential streets."
+      }
+    ]
+  },
+  {
+    "id": "scenario_097",
+    "type": "Market Sizing",
+    "company": "Cardinal Health",
+    "title": "Size the US Hospital Supply Chain Software Market",
+    "prompt": "You are a strategy analyst at Cardinal Health evaluating the opportunity in hospital supply chain management software before launching a new SaaS product. Estimate the total addressable market for hospital supply chain software in the United States. Walk me through your approach.",
+    "context": "Cardinal Health is considering a $120M investment to build an AI-powered hospital supply chain management platform. To validate the business case, leadership needs a bottom-up estimate of how large the US hospital supply chain software market is — specifically the annual spend by hospitals on software for pharmaceutical and medical supply inventory management.",
+    "correctFrameworks": [
+      "SPEAK"
+    ],
+    "whyThisFramework": "SPEAK framework: State assumptions (number of US hospitals, size-based segmentation by annual supply spend, supply chain software as a % of supply spend, current penetration of dedicated software vs. manual/ERP processes), Pick metrics (hospitals in each segment × annual software spend per hospital), Estimate quickly, Assess vs. reported market size data and current Cardinal pilot pricing, Keep exceptions (IDN systems that may use centralized purchasing vs. individual hospital systems).",
+    "keyConsiderations": [
+      "How many US hospitals exist and how do they segment by size — large academic medical centers vs. community hospitals?",
+      "What percentage of a hospital's supply chain spend goes to management software?",
+      "What fraction of hospitals currently use dedicated supply chain software vs. spreadsheets or basic ERP?",
+      "How does the IDN (integrated delivery network) consolidation affect the number of buying units?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Are we sizing the entire hospital supply chain software market (including competitors like GHX, Infor, and Oracle) or specifically the segment addressable by a new Cardinal Health SaaS product?",
+      "Should I include ambulatory surgery centers and large physician group practices, or only acute care hospitals?",
+      "Is Cardinal's product targeting all hospital sizes, or is there a minimum scale threshold — say, 200 beds — below which the product economics don't work?",
+      "Should I estimate current market spend, or the potential market if all hospitals that could benefit from dedicated software actually adopted it?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Hospital Universe Segmentation",
+        "subIssues": [
+          "How many US acute care hospitals exist and how do they segment by bed count (small <100, mid 100-400, large 400+)?",
+          "How many independent hospitals vs. IDN-affiliated hospitals make purchasing decisions centrally vs. individually?",
+          "What fraction of hospitals currently have dedicated supply chain software vs. using ERP modules or spreadsheets?"
+        ]
+      },
+      {
+        "block": "Annual Software Spend per Hospital",
+        "subIssues": [
+          "What is a typical annual supply chain software contract value for a large academic medical center vs. a community hospital?",
+          "How does supply chain software spend correlate with total supply spend (typical benchmarks: 0.5-1.5% of supply budget)?",
+          "What implementation and professional services fees are included vs. excluded from software market sizing?"
+        ]
+      },
+      {
+        "block": "Market Growth and Penetration",
+        "subIssues": [
+          "What percentage of the total addressable hospital universe is currently penetrated by dedicated supply chain software?",
+          "What is the expected annual growth rate driven by AI adoption, post-COVID supply chain investment, and EHR integration trends?",
+          "How does the move toward value-based care create new demand for supply chain cost analytics?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Define and Segment the Hospital Universe",
+        "detail": "There are approximately 6,100 acute care hospitals in the US. Segment by bed count: Large (400+ beds): ~800 hospitals — these are academic medical centers and major health system flagships with complex supply chains. Mid-size (100-400 beds): ~2,500 hospitals — community hospitals and regional health system members. Small (<100 beds): ~2,800 hospitals — critical access hospitals and rural facilities, less sophisticated supply chain needs. Focus on Large and Mid-size as primary addressable market (~3,300 hospitals)."
+      },
+      {
+        "step": 2,
+        "title": "Estimate Annual Supply Chain Spend per Hospital",
+        "detail": "Supply spend as a percentage of hospital operating expenses is approximately 20-25%. Large hospital average operating expense: $800M → supply spend ~$180M. Mid-size: $150M operating expense → supply spend ~$35M. Software typically represents 1-1.5% of supply spend for sophisticated supply chain management. Large hospital software budget: $180M × 1.25% = ~$2.25M/year. Mid-size: $35M × 1% = ~$350K/year."
+      },
+      {
+        "step": 3,
+        "title": "Calculate Total Market Spend",
+        "detail": "Large hospitals (800 × $2.25M) = $1.8B. Mid-size hospitals (2,500 × $350K) = $875M. Total: ~$2.7 billion. However, current software adoption for dedicated supply chain platforms (vs. ERP modules) is only ~40% of large hospitals and ~20% of mid-size. Current realized market: 800 × 40% × $2.25M + 2,500 × 20% × $350K = $720M + $175M ≈ $900M. Full adoption TAM: $2.7B."
+      },
+      {
+        "step": 4,
+        "title": "Adjust for IDN Consolidation",
+        "detail": "Approximately 65% of US hospitals are part of Integrated Delivery Networks. IDNs typically negotiate enterprise-wide software contracts that price at a per-member discount. Adjust IDN-affiliated mid-size hospitals down 20% for volume discounting: (2,500 × 65%) × $350K × 80% = $364M. Revised total current market: ~$800-900M. Revised full-potential TAM: ~$2.2-2.5B."
+      },
+      {
+        "step": 5,
+        "title": "Sanity Check and Cardinal Implication",
+        "detail": "Industry analysts cite the US hospital supply chain management software market at $1.5-2.5B, consistent with our estimate. For Cardinal Health: the $120M investment in a SaaS platform would need to capture ~5-8% market share at target pricing to generate positive NPV at an 8-10% cost of capital — achievable given Cardinal's existing distribution relationships with 85% of US hospitals. Conclude: 'The market is real and large enough for the investment, but Cardinal must leverage its existing customer relationships to accelerate adoption and avoid competing purely on feature parity with established vendors like GHX and Oracle.'"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "IDN",
+        "definition": "Integrated Delivery Network — a group of hospitals, physician practices, and other healthcare providers that share resources and often make centralized purchasing decisions; roughly 65% of US hospitals are IDN-affiliated, which concentrates buying power and affects software contract values"
+      },
+      {
+        "term": "SaaS ACV",
+        "definition": "Software as a Service Annual Contract Value — the annual recurring revenue from a software subscription; the primary metric for sizing B2B software markets and evaluating customer lifetime value"
+      },
+      {
+        "term": "Supply Chain Penetration Rate",
+        "definition": "The percentage of eligible hospitals that currently use dedicated supply chain management software vs. general ERP systems or manual processes; current penetration is low (~20-40%), creating significant greenfield opportunity"
+      },
+      {
+        "term": "ERP Module",
+        "definition": "Enterprise Resource Planning module — basic supply chain functionality embedded in systems like Oracle or SAP; often used by smaller hospitals as a substitute for dedicated supply chain software, representing a replacement sales opportunity"
+      },
+      {
+        "term": "Value-Based Care",
+        "definition": "A healthcare payment model that reimburses providers based on patient outcomes rather than service volume; creates financial pressure to reduce supply costs, increasing demand for supply chain analytics and optimization software"
+      }
+    ],
+    "interviewerExpectations": "Strong answers segment hospitals by size and recognize that large academic medical centers have dramatically higher software spend than community hospitals, account for IDN consolidation's effect on pricing and buying units, and distinguish between current realized market and full-penetration TAM. Weak answers treat all 6,100 hospitals as identical and fail to recognize that only 40% of large hospitals have dedicated supply chain software today, making the current market much smaller than the theoretical maximum.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "To size the US hospital supply chain software market, I'll build from the hospital universe, segment by bed count since software spend correlates strongly with hospital size, estimate annual software spend per segment, and then apply a current penetration rate to distinguish the realized market from the full TAM. IDN consolidation will affect pricing, so I'll account for that as well. Let me confirm one thing before I start."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two clarifications: Are we sizing the total market including competitors like GHX and Oracle, or Cardinal's specific addressable segment? And are we measuring current market spend or full-potential TAM assuming all hospitals that could benefit actually adopted dedicated software? I'll size both — the current market is what Cardinal can capture near-term, and the full TAM is the long-run prize."
+      },
+      {
+        "label": "Step 1 — Hospital Segmentation",
+        "script": "There are approximately 6,100 acute care hospitals in the US. I'll segment them into three tiers: about 800 large hospitals with 400-plus beds — academic medical centers and major health system flagships; about 2,500 mid-size hospitals with 100 to 400 beds — community hospitals and regional systems; and about 2,800 small hospitals under 100 beds — mostly critical access rural facilities. For supply chain software, the realistic addressable market is the large and mid-size tiers — about 3,300 hospitals. Small hospitals typically use basic ERP modules or spreadsheets and won't justify a dedicated SaaS investment."
+      },
+      {
+        "label": "Step 2 — Software Spend per Hospital",
+        "script": "Supply chain spend is typically 20 to 25 percent of a hospital's operating budget. For a large hospital with $800 million in operating expense, supply spend is around $180 million. Dedicated supply chain software averages about 1.25 percent of supply spend — so roughly $2.25 million per year for a large hospital. For a mid-size hospital at $150 million operating expense and $35 million supply spend, software cost is about $350,000 per year. Multiplying: 800 large hospitals at $2.25 million equals $1.8 billion. 2,500 mid-size hospitals at $350,000 equals $875 million. Total potential market: $2.7 billion."
+      },
+      {
+        "label": "Step 3 — Penetration and IDN Adjustments",
+        "script": "Current penetration of dedicated supply chain software is about 40 percent among large hospitals and 20 percent among mid-size hospitals — many still use general ERP modules. Applying those penetration rates, the current realized market is about $720 million plus $175 million, or roughly $900 million. I'll also reduce mid-size hospital spend by about 20 percent for IDN volume discounting — about 65 percent of hospitals are IDN-affiliated and negotiate enterprise pricing. That brings the current market to around $800 to $850 million, with a full-penetration TAM of $2.2 to $2.5 billion."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My estimate: the current US hospital supply chain software market is approximately $800 million to $1 billion annually, with a full-penetration addressable market of $2.2 to $2.5 billion. Industry forecasts from Definitive Healthcare and KLAS Research cite similar ranges, so we're directionally consistent. For Cardinal Health, the strategic argument is compelling: Cardinal already has distribution relationships with 85 percent of US hospitals, which is an enormous channel advantage over pure-play software competitors. The $120 million investment needs to capture roughly 5 to 8 percent market share to generate an acceptable return — that's about 150 to 200 hospital contracts at mid-size pricing, which is achievable in 3 to 5 years given Cardinal's existing sales relationships."
+      }
+    ]
+  },
+  {
+    "id": "scenario_098",
+    "type": "Corporate Finance",
+    "company": "Nike",
+    "title": "Nike Make vs. Buy Manufacturing Decision",
+    "prompt": "You are a VP of supply chain strategy at Nike. Nike currently outsources 100% of footwear manufacturing to contract manufacturers in Vietnam and Indonesia. A consulting firm has proposed that Nike build its own manufacturing facility in the US, producing 2 million pairs annually, as a strategic investment in reshoring and premium 'Made in USA' positioning. Should Nike build this facility?",
+    "context": "Building a US footwear manufacturing facility would cost $340M in capital investment with a 3-year build timeline. Operating cost per pair in the US facility would be $68 vs. $31 in Vietnam (labor + overhead). A 'Made in USA' premium would allow Nike to price these shoes at $250 vs. $140 average for comparable Vietnam-produced shoes. The facility would serve 2 million pairs at full capacity. Nike's weighted average cost of capital is 9.1%. The consulting firm projects the facility reaches full capacity by Year 4.",
+    "correctFrameworks": [
+      "Breakeven Analysis",
+      "Value Chain Analysis"
+    ],
+    "whyThisFramework": "Breakeven Analysis to evaluate whether the revenue premium ($250 - $68 cost) over 2M pairs generates sufficient return on $340M capital investment at Nike's 9.1% WACC, then Value Chain Analysis to determine whether manufacturing is a core competency Nike should own or a commodity activity best outsourced — and whether 'Made in USA' creates durable brand differentiation.",
+    "keyConsiderations": [
+      "Does the revenue premium of $250 vs. $140 justify the $37 higher manufacturing cost and $340M investment?",
+      "What is the payback period on $340M at 2M pairs × contribution margin per pair?",
+      "Is 'Made in USA' positioning a sustainable brand strategy or a niche that doesn't scale?",
+      "What is the opportunity cost — could $340M generate higher returns deployed in marketing or supply chain automation?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Is Nike's goal here primarily financial return, or is 'Made in USA' strategic positioning intended to serve a specific premium segment regardless of ROI?",
+      "Should I assume the $250 price point is achievable at full 2 million pair volume, or does the premium pricing require limiting supply to maintain exclusivity?",
+      "What is Nike's current gross margin on Vietnam-produced footwear — I need that to compare contribution margins, not just costs?",
+      "Should I factor in the 3-year build timeline where Nike incurs capital cost but generates zero revenue from this facility?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Financial Return Analysis",
+        "subIssues": [
+          "What is the contribution margin per pair in the US facility vs. continuing to source from Vietnam?",
+          "What is the payback period on the $340M capital investment given annual contribution from 2M pairs at full capacity?",
+          "Does the NPV of this investment exceed zero at Nike's 9.1% WACC over a reasonable horizon?"
+        ]
+      },
+      {
+        "block": "Strategic and Competitive Positioning",
+        "subIssues": [
+          "Is 'Made in USA' a sustainable differentiator or a premium consumers will pay for initially but abandon when prices increase?",
+          "Does owning manufacturing create a core competency advantage, or does it divert management attention from Nike's real strengths (design, marketing, distribution)?",
+          "How does this decision affect Nike's relationship with existing contract manufacturing partners?"
+        ]
+      },
+      {
+        "block": "Risk and Opportunity Cost",
+        "subIssues": [
+          "What are the execution risks of building and operating a US footwear manufacturing facility for a company with no manufacturing experience?",
+          "What alternative uses of $340M would generate superior returns — increased marketing spend, supply chain automation, direct-to-consumer infrastructure?",
+          "What is the downside scenario if the premium pricing fails and the facility operates below full capacity?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Calculate Contribution Margin Per Pair — US vs. Vietnam",
+        "detail": "US facility: Price $250 - Cost $68 = Gross contribution of $182/pair. Vietnam outsourced: Price $140 - Cost $31 = Gross contribution of $109/pair. The US facility generates $73 more gross contribution per pair ($182 - $109). At 2 million pairs/year: $73 × 2M = $146M incremental annual contribution vs. selling the same volume from Vietnam at $140."
+      },
+      {
+        "step": 2,
+        "title": "Calculate Payback Period on $340M Investment",
+        "detail": "At $146M incremental annual contribution (vs. Vietnam alternative): $340M ÷ $146M = 2.3-year payback on incremental contribution. However, the facility takes 3 years to build and 1 additional year to reach full capacity (Year 4). So the investment outlay precedes any revenue by 3 years. Simple payback from first production: Year 4 + 2.3 years = approximately Year 6-7 from investment decision. At 9.1% WACC, the cost of 3 years of dead capital is significant: $340M × (1.091)³ = ~$441M effective cost at first revenue."
+      },
+      {
+        "step": 3,
+        "title": "Calculate NPV",
+        "detail": "Model 10-year cash flows from Year 4 (first full production year). Annual incremental cash flow: $146M. PV of $146M annuity from Year 4-13 at 9.1% discount rate ≈ $146M × 6.4 (10-year annuity factor) × 0.74 (3-year discount to present) = ~$690M. NPV = $690M - $340M = ~$350M positive NPV. This is a compelling return IF the $250 price point holds at 2M unit volume."
+      },
+      {
+        "step": 4,
+        "title": "Apply Value Chain Analysis — Is Manufacturing a Core Competency?",
+        "detail": "Nike's historical competitive advantage sits in design, marketing, and distribution — not manufacturing. Nike has zero experience operating a manufacturing facility. Operational risks include: labor management, quality control, supply chain disruption, and regulatory compliance. The Value Chain Analysis question: Is owning this step in the chain where Nike creates unique value, or does it merely match what contract manufacturers do more efficiently? The answer is almost certainly no — Nike's brand premium comes from storytelling and design, not factory ownership."
+      },
+      {
+        "step": 5,
+        "title": "State Recommendation with Risk Caveat",
+        "detail": "Conclude: 'The NPV math is positive at ~$350M, so the investment is financially viable — IF we accept three key assumptions: (1) $250 pricing holds at 2M unit volume without demand destruction, (2) the facility operates at full capacity from Year 4, and (3) Nike can successfully manage a manufacturing operation with no prior experience. I'd recommend a modified approach: license the 'Made in USA' story through a partnership with a premium US manufacturer (e.g., New Balance has operational factories) rather than building from scratch — capturing the brand positioning benefit at a fraction of the capital cost.'"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "WACC",
+        "definition": "Weighted Average Cost of Capital — the minimum required return on an investment, blending the cost of equity and cost of debt weighted by their proportion in the capital structure; Nike's 9.1% WACC means any project must return at least 9.1% annually to create shareholder value"
+      },
+      {
+        "term": "Contribution Margin",
+        "definition": "Revenue minus variable costs — the amount each unit sold contributes toward covering fixed costs and profit; in this case, $182 per pair in the US facility vs. $109 per pair from Vietnam outsourcing"
+      },
+      {
+        "term": "NPV",
+        "definition": "Net Present Value — the sum of all future cash flows discounted back to today at the WACC, minus the initial investment; a positive NPV indicates the investment creates value, a negative NPV destroys it"
+      },
+      {
+        "term": "Make vs. Buy Decision",
+        "definition": "A strategic choice between producing a good or service internally (make) versus purchasing it from an external supplier (buy); the decision turns on cost comparison, core competency alignment, strategic control, and capital allocation"
+      },
+      {
+        "term": "Core Competency",
+        "definition": "A unique capability that gives a company its competitive advantage and is difficult for competitors to replicate; Nike's core competencies are brand building, design, and athlete relationships — not manufacturing operations"
+      }
+    ],
+    "interviewerExpectations": "Strong answers do the actual math — calculating contribution margin per pair, incremental annual profit vs. Vietnam alternative, and payback period — before layering in the Value Chain Analysis about whether manufacturing is a core competency Nike should own. Weak answers discuss the decision qualitatively without running the numbers, or ignore the 3-year build lag and its effect on capital cost, or accept the $250 price point without questioning whether 2M units can sustain a price that is 79% above Nike's current average.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "To evaluate this make vs. buy decision, I'll use two lenses: first, a breakeven and NPV analysis to determine whether the financial return on $340 million justifies the investment at Nike's 9.1% cost of capital; second, a value chain analysis to ask whether manufacturing is actually where Nike creates competitive advantage, or whether this is capital deployed in the wrong part of the value chain. I have a few quick questions before I start the math."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two important clarifications. First: Is the $250 price point sustainable at full 2-million-pair volume, or does 'Made in USA' work only as a limited edition at high price? Premium positioning often requires scarcity — mass production can dilute the brand story. Second: Should I assume Nike would sell 2 million pairs at $140 from Vietnam if it doesn't build this facility, so the comparison is incremental profit, not just absolute margin?"
+      },
+      {
+        "label": "Step 1 — Contribution Margin Math",
+        "script": "Let me start with the unit economics. In the US facility: revenue of $250 minus operating cost of $68 gives a gross contribution of $182 per pair. If Nike instead sources from Vietnam and sells at $140: revenue of $140 minus cost of $31 gives $109 per pair. So the US facility generates $73 more contribution per pair than the Vietnam alternative. At 2 million pairs per year, that's $146 million in incremental annual contribution from the US facility."
+      },
+      {
+        "label": "Step 2 — Capital Return and NPV",
+        "script": "Simple payback: $340 million divided by $146 million per year equals 2.3 years of payback from first production. But there's a critical catch — the facility takes 3 years to build and another year to ramp to full capacity. That means Nike invests $340 million today and doesn't see a single dollar of revenue for 3 to 4 years. At 9.1% WACC, that dead capital compounding for 3 years increases the effective cost to about $440 million. Modeling a 10-year production run starting in Year 4: the present value of $146 million annually for 10 years discounted at 9.1% back to today is approximately $680 million. NPV is roughly $680 million minus $340 million, which is $340 million positive. So the math works — if the assumptions hold."
+      },
+      {
+        "label": "Step 3 — Value Chain Analysis",
+        "script": "Now the strategic question: should Nike own manufacturing at all? Nike's entire competitive model is asset-light — design, brand, and distribution, with manufacturing outsourced to experts who do it more efficiently. Nike has zero experience operating factories. The risks here are real: labor management, quality control at scale, regulatory compliance, and the operational distraction for a leadership team built around brand and commerce, not industrial operations. The value chain question is: does owning this manufacturing step make Nike's design better? No. Does it make its marketing more effective? No. Does it create a barrier competitors can't replicate? No — New Balance already does Made in USA and has for decades. Nike would be entering a space where it has no advantage."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: do not build the facility as proposed. The NPV math is positive on paper, but it rests on assumptions I'd want to stress-test — specifically whether 2 million pairs can sustain a $250 price point, and whether Nike can actually run a factory. Instead, I'd recommend a licensing or co-branding partnership with an existing US manufacturer like New Balance, which already operates domestic facilities. Nike captures the Made in USA brand story at a fraction of the capital cost, without taking on manufacturing operational risk. The $340 million is better deployed in DTC infrastructure or supply chain automation in existing markets where Nike has clear competency."
+      }
+    ]
+  },
+  {
+    "id": "scenario_099",
+    "type": "Corporate Finance",
+    "company": "Amgen",
+    "title": "Amgen R&D Investment Prioritization",
+    "prompt": "You are a VP of finance at Amgen. Amgen has $4.8B in annual R&D budget and must allocate funds across a portfolio of 24 pipeline assets at various stages. The CFO wants a framework for prioritizing R&D investment that balances near-term portfolio needs against long-term growth. Three assets are competing for $800M in additional funding: Asset A (Phase 2 oncology, 40% P2-3 success rate, $4B peak sales), Asset B (Phase 3 cardiovascular, 72% P3 approval rate, $2.1B peak sales), and Asset C (Preclinical obesity, high uncertainty, $12B peak sales potential). How do you allocate the $800M?",
+    "context": "Amgen's cost of capital is 8.4%. Asset A launch is expected in 2029 with 12-year exclusivity. Asset B launch is expected in 2027 with 9-year exclusivity. Asset C would not launch before 2033. Amgen's sales force has capacity for 2 major launches in the next 3 years. GLP-1 drugs are already capturing significant obesity market share, but Amgen's obesity asset uses a different mechanism (AMG133, GIP/GLP-1 dual agonist). Allocating to Asset C requires $200M more in preclinical investment before Phase 1 begins.",
+    "correctFrameworks": [
+      "Breakeven Analysis",
+      "SPECIAL-T / MVM"
+    ],
+    "whyThisFramework": "Breakeven Analysis to calculate probability-adjusted NPV for each asset ($peak sales × P(approval) × exclusivity years × margin, discounted at 8.4%), then SPECIAL-T / MVM to assess strategic factors beyond NPV (competitive landscape in each indication, regulatory environment, Amgen's commercial launch capacity, obesity market dynamics with GLP-1 incumbents).",
+    "keyConsiderations": [
+      "What is the probability-adjusted NPV for each of the three assets at 8.4% discount rate?",
+      "Does Amgen's commercial launch capacity of 2 near-term launches favor Asset B over Asset A?",
+      "Is the $12B obesity potential for Asset C realistic given GLP-1 incumbents' head start?",
+      "How does portfolio diversification across indications factor into the allocation decision?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Should the $800M be allocated in full to these three assets, or is the question whether any of the $800M goes to each — i.e., can we fund all three at varying levels?",
+      "What is Amgen's current operating margin on approved drugs — I need a rough margin assumption to calculate NPV from peak sales figures?",
+      "For Asset B, is the 72% Phase 3 approval probability a regulatory probability only, or does it already reflect commercial execution risk?",
+      "Is there a strategic imperative around the obesity category — for example, has Amgen's board indicated it wants to compete in GLP-1 regardless of near-term NPV?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Probability-Adjusted NPV by Asset",
+        "subIssues": [
+          "What is the risk-adjusted net present value of Asset A given 40% approval probability, $4B peak sales, 12-year exclusivity, and 2029 launch?",
+          "What is the risk-adjusted NPV of Asset B given 72% approval probability, $2.1B peak sales, 9-year exclusivity, and 2027 launch?",
+          "What is the risk-adjusted NPV of Asset C given high uncertainty, $12B peak sales potential, 2033 launch, and the $200M additional preclinical cost?"
+        ]
+      },
+      {
+        "block": "Strategic Fit and Commercial Feasibility",
+        "subIssues": [
+          "Does Amgen's sales force capacity support launching both Asset A and Asset B, or must a choice be made?",
+          "Is the obesity market entry (Asset C) strategically important for long-term positioning even if NPV is lower on a probability-adjusted basis?",
+          "How does each asset's indication (oncology, cardiovascular, obesity) align with Amgen's core therapeutic area expertise and sales force capabilities?"
+        ]
+      },
+      {
+        "block": "Portfolio Risk and Capital Efficiency",
+        "subIssues": [
+          "Does concentrating $800M on one asset create unacceptable binary risk vs. spreading investment across multiple bets?",
+          "Which asset has the best capital efficiency — highest risk-adjusted NPV per dollar of investment required?",
+          "What is the scenario analysis if the top-ranked asset fails — does Amgen still have adequate near-term revenue protection?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Calculate Probability-Adjusted NPV for Each Asset",
+        "detail": "Use simplified NPV: P(approval) × Peak annual sales × Exclusivity years × Operating margin (assume 35% for pharma) ÷ (1 + WACC)^years to launch. Asset A: 40% × $4B × 12 years × 35% ÷ (1.084)^5 = 0.40 × $16.8B × 0.66 discount = ~$4.4B risk-adjusted value. Asset B: 72% × $2.1B × 9 years × 35% ÷ (1.084)^3 = 0.72 × $6.6B × 0.78 = ~$3.7B risk-adjusted value. Asset C: Use 15% probability of reaching market × $12B × 10 years × 35% ÷ (1.084)^9 = 0.15 × $42B × 0.49 = ~$3.1B, minus $200M additional preclinical cost. Net: ~$2.9B."
+      },
+      {
+        "step": 2,
+        "title": "Apply Commercial Launch Capacity Constraint",
+        "detail": "Amgen can support 2 major launches in the next 3 years. Asset B launches 2027, Asset A launches 2029 — both fit within the 3-year window and represent distinct therapeutic areas (CV vs. oncology), so they don't compete for the same sales force resources. Asset C wouldn't launch until 2033, well beyond the constraint window. Recommendation: prioritize B and A for near-term commercial reasons; Asset C decision is separate from commercial capacity."
+      },
+      {
+        "step": 3,
+        "title": "Evaluate Asset C Strategic Option Value",
+        "detail": "Asset C's probability-adjusted NPV ($2.9B) is lower than A and B, but it's an option on a $12B market in obesity — one of the most consequential pharmaceutical markets in history. The $200M preclinical investment buys Amgen a Phase 1 decision point. Apply real options logic: if Phase 1 data are positive (manageable side effects, early efficacy signal), Amgen can accelerate; if negative, it can abandon and has spent only $200M rather than $800M. Recommend funding Asset C at $200M to preserve the option, not at full $800M."
+      },
+      {
+        "step": 4,
+        "title": "Propose Allocation",
+        "detail": "Asset B: $450M — highest near-term probability of approval (72%), launch in 2027, immediately within commercial capacity. Asset A: $150M — fund to Phase 3 initiation milestone; 40% success rate suggests not overfunding before Phase 3 data validates the investment. Asset C: $200M — fund preclinical to Phase 1 entry decision point only; preserve strategic option in obesity without committing to full development costs. Total: $800M."
+      },
+      {
+        "step": 5,
+        "title": "Present Recommendation with Risk Framing",
+        "detail": "Conclude: 'I'd allocate $450M to Asset B as the anchor investment — highest probability of near-term return. $200M to Asset C to preserve the obesity option — this is a strategic bet that the AMG133 mechanism differentiates from GLP-1 incumbents, but we're not committing full development budget until we see Phase 1 safety and efficacy signals. The remaining $150M to Asset A bridges it to Phase 3 completion, where we'll have a binary read on whether to accelerate. This allocation balances near-term return probability with long-term option preservation.'"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Probability-Adjusted NPV",
+        "definition": "Net Present Value multiplied by the probability of regulatory success — accounts for the risk that a drug candidate fails in clinical trials; the standard framework for comparing pharma pipeline assets with different approval probabilities"
+      },
+      {
+        "term": "Phase Transition Probability",
+        "definition": "The likelihood of a drug moving from one development phase to the next — industry averages are: Phase 1 to 2 (63%), Phase 2 to 3 (31%), Phase 3 to approval (58%), overall PoS from Phase 1 to market (~12%); Asset B's 72% P3 probability is well above average"
+      },
+      {
+        "term": "Real Options Thinking",
+        "definition": "Treating an investment as buying the right, but not obligation, to make a future decision — funding Asset C's preclinical work at $200M buys Amgen the option to invest or abandon at Phase 1, avoiding full commitment before key data"
+      },
+      {
+        "term": "Exclusivity Period",
+        "definition": "The time after launch during which a drug is protected from generic competition by patents and regulatory exclusivity; the primary window for recovering R&D investment — Asset A's 12 years vs. Asset B's 9 years significantly affects total revenue potential"
+      },
+      {
+        "term": "GIP/GLP-1 Dual Agonist",
+        "definition": "A drug mechanism that targets both the GIP and GLP-1 hormone receptors simultaneously — Amgen's AMG133 uses this approach, which is also used by Mounjaro (tirzepatide); the key differentiation question is whether efficacy and tolerability are meaningfully better than single-agonist GLP-1 drugs"
+      }
+    ],
+    "interviewerExpectations": "Strong answers run explicit probability-adjusted NPV calculations for all three assets before making the allocation recommendation, surface the commercial launch capacity constraint as a binding factor, and use real-options logic for the Asset C decision rather than treating it as binary fund-or-don't. Weak answers rank the assets qualitatively without doing the NPV math, miss the commercial capacity constraint entirely, or recommend funding only one asset without considering portfolio diversification.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "To allocate the $800 million across these three assets, I'll use two frameworks in sequence. First, probability-adjusted NPV to rank the assets on financial merit — because in pharma, you have to multiply potential value by approval probability before comparing opportunities. Second, I'll overlay strategic fit factors: commercial launch capacity, competitive landscape, and portfolio risk management. The math gives me a ranking; the strategic lens tells me how much to bet on each. A few quick questions first."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two questions. First, is the $800 million a fixed total to be split among these three, or are we deciding how much, if any, goes to each? I'll assume it must be fully allocated. Second, what operating margin should I assume for these assets — I need a margin to convert peak sales to cash flow. I'll use 35%, which is roughly Amgen's blended product margin."
+      },
+      {
+        "label": "Step 1 — Probability-Adjusted NPV",
+        "script": "Let me run simplified probability-adjusted NPVs for all three assets. For Asset B: 72% approval probability times $2.1 billion peak annual sales times 9 years of exclusivity times 35% margin equals roughly $4.8 billion in gross expected value, discounted back 3 years at 8.4% — present value approximately $3.7 billion. For Asset A: 40% times $4 billion times 12 years times 35%, discounted back 5 years — approximately $4.4 billion probability-adjusted value. Note that Asset A is actually higher expected NPV than Asset B despite lower approval probability, because of the longer exclusivity window and higher peak sales. For Asset C: I'll assume a 15% probability of reaching market given preclinical stage — that's roughly the industry average Phase 1-to-market success rate. 15% times $12 billion times 10 years times 35%, discounted back 9 years — approximately $3.1 billion, minus the additional $200 million preclinical cost. Net: about $2.9 billion. So the ranking by expected NPV is: Asset A at $4.4 billion, Asset B at $3.7 billion, Asset C at $2.9 billion."
+      },
+      {
+        "label": "Step 2 — Strategic Constraints",
+        "script": "The NPV ranking favors A over B, but here's the critical constraint: Amgen's sales force has capacity for 2 major launches in the next 3 years. Asset B launches in 2027 and Asset A in 2029 — both fit, and they're in different indications — cardiovascular and oncology — so they don't compete for the same reps. That means Amgen can actually support both near-term assets commercially. Asset C doesn't launch until 2033, so it's completely outside this commercial capacity bottleneck. On competitive landscape: Asset B's cardiovascular indication is relatively uncluttered at Amgen's target mechanism. Asset C faces Novo Nordisk and Lilly already entrenched in obesity — Amgen needs clinical evidence that AMG133's dual mechanism provides meaningfully better efficacy or tolerability before committing full development capital."
+      },
+      {
+        "label": "Step 3 — Allocation Recommendation",
+        "script": "Here's my proposed allocation: $450 million to Asset B — it has the highest near-term approval probability at 72% and the earliest launch date of 2027, so it's the most capital-efficient path to near-term revenue. $150 million to Asset A — I'm not committing full development capital here because 40% Phase 2 to 3 success rates mean there's meaningful failure risk; I'd fund Asset A to a Phase 3 interim data readout, then make a larger commitment if the signal is strong. $200 million to Asset C — this funds the preclinical work to reach a Phase 1 entry decision. I'm treating this as buying a real option in the obesity market. If Phase 1 shows strong safety and early efficacy, Amgen can allocate aggressively in the next budget cycle. If not, we've spent $200 million rather than $800 million to learn that lesson."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: prioritize Asset B with $450 million as the anchor investment — highest near-term probability of return and commercial capacity exists to execute the 2027 launch. Bridge Asset A with $150 million to the Phase 3 data read, then re-evaluate. Fund Asset C at $200 million to preserve the strategic option in obesity without overcommitting before Phase 1 data. This allocation balances near-term return probability with portfolio diversification and preserves Amgen's ability to participate in obesity if AMG133 differentiates itself clinically. The one risk I'd flag: if Asset B fails in Phase 3, the portfolio loses its nearest-term revenue catalyst — which is exactly why we shouldn't put the full $800 million into B alone."
+      }
+    ]
+  },
+  {
+    "id": "scenario_100",
+    "type": "Corporate Finance",
+    "company": "Kraft Heinz",
+    "title": "Kraft Heinz Pricing vs. Volume Investment Decision",
+    "prompt": "You are a VP of finance at Kraft Heinz. The CFO is deciding between two strategic options for the Oscar Mayer hot dog business ($1.1B revenue, 18% EBITDA margin): Option A — take a 12% price increase, modeled to reduce volume by 19% but maintain gross profit; Option B — hold price flat and invest $85M in marketing to drive 8% volume growth. How do you analyze this decision?",
+    "context": "Oscar Mayer's current price is $6.49 for an 8-count pack. Private label hot dogs are priced at $3.99. The elasticity model shows 1.6% volume loss for every 1% price increase. Current annual volume is 169 million units. Gross margin is 38% at current price. Marketing ROI for Oscar Mayer has historically been $1.90 in incremental gross profit per $1.00 of marketing spend, but this is based on pre-pandemic consumer data. Category volume is flat to declining at -1.2% annually.",
+    "correctFrameworks": [
+      "Breakeven Analysis",
+      "Profitability Tree"
+    ],
+    "whyThisFramework": "Breakeven Analysis to model Option A (price × reduced volume vs. current gross profit) and Option B (flat price × 8% volume growth vs. $85M investment, using historical marketing ROI), then Profitability Tree to compare both options across Revenue = Price × Volume and Gross Profit = Revenue − COGS, identifying which path produces higher EBITDA and at what risk.",
+    "keyConsiderations": [
+      "Does Option A math work: 12% price increase × 169M units × (1 - 19% volume loss) vs. current gross profit?",
+      "Does Option B math work: $85M investment × $1.90 ROI = $161.5M incremental gross profit vs. $85M cost?",
+      "At a $2.50 private label gap today, does a 12% price increase widen it to a consumer-breaking point?",
+      "Is the $1.90 marketing ROI still valid in a post-pandemic, declining-category environment?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is the 12% price increase in Option A applied at the shelf (retail level) or at the manufacturer-to-retailer level — since retailer margin decisions affect the final shelf price consumers see?",
+      "Is the 19% volume decline in Option A already the modeled output of the 1.6× elasticity rule applied to a 12% increase, or is it an independent assumption I should check against the elasticity model?",
+      "For Option B, is the $85M marketing investment in addition to current marketing spend, or does it replace existing spend? The ROI calculation depends on whether this is incremental.",
+      "Is the 8% volume growth target in Option B contingent on the $85M spend, or is it assumed regardless — i.e., are those two independent assumptions or linked?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Option A: Price Increase Economics",
+        "subIssues": [
+          "What is the new revenue after a 12% price increase applied to modeled post-elasticity volume?",
+          "What is the new gross profit at the 38% gross margin rate on reduced-volume revenue?",
+          "How does Option A EBITDA compare to current baseline EBITDA?"
+        ]
+      },
+      {
+        "block": "Option B: Marketing Investment Economics",
+        "subIssues": [
+          "What is the incremental gross profit generated by 8% volume growth at current pricing and 38% margin?",
+          "Does the incremental gross profit exceed the $85M marketing investment — what is the net EBITDA impact?",
+          "Is the historical $1.90 marketing ROI a reliable predictor in the current declining-category environment?"
+        ]
+      },
+      {
+        "block": "Competitive and Strategic Risk Assessment",
+        "subIssues": [
+          "Does the 12% price increase in Option A widen the private label gap to a level that triggers mass consumer trade-down?",
+          "What is the risk that Option B's $85M fails to achieve 8% volume growth in a category declining at -1.2%?",
+          "What is the long-term brand equity implication of repeated price increases vs. investing in brand relevance?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Verify the Elasticity Math for Option A",
+        "detail": "Check whether 19% volume loss is consistent with the stated elasticity. Elasticity = 1.6% volume loss per 1% price increase. A 12% price increase should drive 12 × 1.6% = 19.2% volume loss. Confirmed — the elasticity check validates the 19% assumption. Proceed to calculate Option A financials."
+      },
+      {
+        "step": 2,
+        "title": "Model Option A Full P&L",
+        "detail": "Current baseline: 169M units × $6.49 = $1.097B revenue. 38% gross margin = $417M gross profit. EBITDA at 18%: $197M. Option A: New volume = 169M × (1 - 19%) = 136.9M units. New price = $6.49 × 1.12 = $7.27. New revenue = 136.9M × $7.27 = $995M. Gross profit at 38% = $378M. EBITDA impact: Option A gross profit ($378M) vs. baseline ($417M) = $39M less gross profit. EBITDA falls from $197M to approximately $158M — a 20% decline in absolute EBITDA despite maintaining gross margin percentage."
+      },
+      {
+        "step": 3,
+        "title": "Model Option B Full P&L",
+        "detail": "Option B: Volume grows 8%: 169M × 1.08 = 182.5M units at $6.49 = $1.185B revenue. Gross profit at 38% = $450M. Incremental gross profit vs. baseline: $450M - $417M = $33M. Net EBITDA impact of Option B: +$33M gross profit - $85M marketing investment = -$52M EBITDA impact. At the historical $1.90 ROI: $85M × $1.90 = $161.5M incremental gross profit claimed in the marketing model — which massively contradicts the simple gross margin math. Flag this discrepancy: the $1.90 ROI implies 5.6× more volume growth than the 8% assumption."
+      },
+      {
+        "step": 4,
+        "title": "Resolve the Option B Contradiction",
+        "detail": "The $1.90 gross profit ROI on $85M spend implies $161.5M of incremental gross profit. At 38% margin, that requires $425M in incremental revenue — a 39% volume increase, not 8%. Either the marketing ROI figure is overstated, or the 8% volume growth assumption is far too conservative. Recommend: (1) challenge the ROI assumption — it's pre-pandemic and category is declining; (2) model Option B at both 8% growth (net -$52M EBITDA) and the ROI-implied growth (net +$76M EBITDA). The 8% scenario is the more conservative and likely more accurate assumption."
+      },
+      {
+        "step": 5,
+        "title": "Recommendation with Strategic Context",
+        "detail": "Conclude: 'Neither option is clearly superior on the math alone. Option A generates lower absolute EBITDA (-$39M vs. baseline) despite maintaining margin rate — and widens the private label price gap from $2.50 to $3.28, risking accelerated trade-down. Option B at the 8% growth assumption also destroys EBITDA (-$52M). I'd reject both as currently framed. My recommendation: take a more moderate price increase of 6-7% (reducing volume loss to ~10%), combined with targeted marketing at $40-50M in the highest-ROI vehicles. This hybrid approach protects gross profit while investing in brand equity without the EBITDA destruction of either extreme.'"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Price Elasticity",
+        "definition": "The percentage change in volume demanded for a 1% change in price; Oscar Mayer's 1.6× elasticity means a 12% price increase drives a 19% volume decline — used to model the revenue impact of pricing decisions"
+      },
+      {
+        "term": "Gross Profit",
+        "definition": "Revenue minus Cost of Goods Sold (COGS), expressed as a dollar amount or percentage margin; at Oscar Mayer's 38% gross margin, every $1 of revenue generates $0.38 in gross profit — the primary pool from which marketing and fixed costs are funded"
+      },
+      {
+        "term": "EBITDA Margin",
+        "definition": "Earnings Before Interest, Taxes, Depreciation, and Amortization as a percentage of revenue — Oscar Mayer's 18% EBITDA margin generates $197M on $1.1B revenue; the metric Kraft Heinz's CFO is most focused on protecting"
+      },
+      {
+        "term": "Marketing ROI",
+        "definition": "The incremental gross profit generated per dollar of marketing spend — Oscar Mayer's historical $1.90 ROI means each marketing dollar has generated $1.90 in gross profit; this figure is questioned here because it's pre-pandemic and may not reflect current consumer behavior in a declining category"
+      },
+      {
+        "term": "Private Label Price Gap",
+        "definition": "The dollar difference between a branded product and its private label equivalent on shelf; Oscar Mayer's current $2.50 gap ($6.49 vs. $3.99) is already significant — a 12% price increase widens it to $3.28, which research suggests can trigger accelerated brand-to-private-label switching"
+      }
+    ],
+    "interviewerExpectations": "Strong answers run the actual arithmetic for both options — calculating new revenue, gross profit, and EBITDA under each scenario — and surface the internal contradiction between the 8% volume growth assumption in Option B and the $1.90 marketing ROI (which implies much higher growth). Weak answers compare the options qualitatively, accept all assumptions at face value without checking for consistency, or recommend one option without modeling both scenarios fully.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "To analyze this decision, I'll use a profitability tree framework — breaking each option into its revenue and cost components — combined with breakeven analysis to determine which option produces better EBITDA. I'll also check whether the input assumptions are internally consistent, because I already see a potential contradiction in Option B that I want to surface. Let me start with the math on both options, then discuss the strategic risk."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two quick questions before I calculate. First: is the 19% volume decline in Option A an independent assumption, or is it the output of the 1.6× elasticity model applied to 12% price increase? I want to verify those numbers are consistent before I rely on them. Second: for Option B, is the $85 million marketing investment incremental to existing marketing spend, or does it replace existing budget? The ROI calculation depends on that distinction."
+      },
+      {
+        "label": "Step 1 — Verify Elasticity and Baseline",
+        "script": "First, let me check the elasticity math. The stated elasticity is 1.6% volume loss per 1% price increase. A 12% price increase should produce 12 times 1.6, which is 19.2% volume decline. That's consistent with the 19% assumption in the problem — so that's confirmed. Baseline: 169 million units at $6.49 equals $1.097 billion revenue. At 38% gross margin, gross profit is $417 million. At 18% EBITDA margin, EBITDA is $197 million."
+      },
+      {
+        "label": "Step 2 — Option A Math",
+        "script": "Under Option A: new volume is 169 million times 81% — that's about 136.9 million units. New price is $6.49 times 1.12, which is $7.27 per pack. New revenue is 136.9 million times $7.27, approximately $995 million. Gross profit at 38% is $378 million. So Option A reduces gross profit by $39 million versus baseline — and absolute EBITDA falls from $197 million to roughly $158 million, a 20% decline. I'll also flag: Option A widens the private label price gap from $2.50 today to $3.28 after the increase. At that spread, I'd expect further consumer trade-down beyond the modeled 19%, making this estimate optimistic."
+      },
+      {
+        "label": "Step 3 — Option B Math and Contradiction",
+        "script": "Under Option B: volume grows 8% to 182.5 million units at $6.49, generating $1.185 billion revenue. Gross profit at 38% is $450 million — $33 million more than baseline. But we're investing $85 million in marketing, so net EBITDA impact is $33 million minus $85 million, or negative $52 million. Now here's the problem with Option B: the scenario cites a historical marketing ROI of $1.90 in gross profit per dollar spent. $85 million times $1.90 equals $161.5 million in claimed incremental gross profit — but our simple margin math shows only $33 million from 8% volume growth. Those two numbers are completely inconsistent. Either the ROI figure is significantly overstated, or the 8% volume growth assumption is far too conservative. I'd want to understand which assumption is wrong before recommending anything."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My conclusion: both options as modeled destroy EBITDA relative to baseline. Option A reduces EBITDA by $39 million and widens the private label gap to a level that risks accelerated trade-down. Option B at the 8% growth assumption reduces EBITDA by $52 million, and the marketing ROI assumption appears inconsistent with the volume growth projection. I'd reject both options as currently framed. My recommendation: a hybrid approach — take a 6 to 7 percent price increase instead of 12 percent, which the elasticity model predicts would reduce volume by only 10 to 11 percent and preserve more absolute revenue. Combine that with targeted marketing at $40 to $50 million in the highest-ROI media vehicles — digital and in-store — rather than the full $85 million. This hybrid likely produces better EBITDA than either Option A or Option B, while investing in brand health rather than trading it away for short-term margin. And I'd strongly recommend refreshing that marketing ROI model with current data before making any significant spend decision."
+      }
+    ]
+  }
+]

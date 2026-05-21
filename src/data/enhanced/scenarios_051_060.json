@@ -1,0 +1,1212 @@
+[
+  {
+    "id": "scenario_051",
+    "type": "Growth Strategy",
+    "company": "Nike",
+    "title": "Nike Women's Running Growth",
+    "prompt": "You are a senior brand manager at Nike. Women's running apparel is growing 12% annually as a category, but Nike's women's running revenue has grown only 4% over the same period. Nike's overall women's business is $8B globally. What strategic direction would you recommend to close the gap?",
+    "context": "Lululemon has become the dominant player in women's athletic apparel with 28% of the women's premium segment. Nike's women's running share has dropped from 31% to 24% over 3 years. Consumer research shows Nike is perceived as performance-first but less aligned with the 'wellness lifestyle' trend driving growth. Nike's women's marketing spend is 18% of total marketing budget vs. women representing 40% of athletic apparel buyers.",
+    "correctFrameworks": ["3C's", "STP"],
+    "whyThisFramework": "3C's to diagnose why Nike is undergrowing the category (consumer perception shift, competitive positioning vs. Lululemon, company resource allocation), then STP to redesign targeting and positioning for the underserved wellness-oriented segment.",
+    "keyConsiderations": [
+      "Why are women choosing Lululemon over Nike — performance vs. lifestyle positioning gap",
+      "Is this a product problem, a marketing problem, or a distribution problem?",
+      "What segments within women's running are growing fastest?",
+      "How does Nike leverage its scale without diluting its performance brand?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "When we say women's running revenue grew 4%, is that units, dollars, or both — and how does that break down between footwear, apparel, and accessories?",
+      "Is the 31%-to-24% share loss concentrated in a particular price tier or channel, like DTC vs. wholesale?",
+      "How does Nike's women's running marketing budget of 18% compare to two or three years ago — has this been declining, flat, or is this a new gap?",
+      "Do we have any data on where lost Nike women's running customers are going — is it primarily Lululemon, or are other brands like Athleta or On Running capturing share?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Consumer Demand & Perception Gap",
+        "subIssues": [
+          "Are women's running buyers choosing wellness-lifestyle positioning over performance positioning, and is this a permanent shift?",
+          "What specific product attributes or brand signals are driving the perception that Nike is 'not for me'?",
+          "Which segments — casual wellness runners, competitive runners, athleisure wearers — are growing fastest and where is Nike weakest?"
+        ]
+      },
+      {
+        "block": "Competitive Positioning vs. Lululemon",
+        "subIssues": [
+          "On what dimensions — price, product, community, retail experience — is Lululemon winning that Nike can realistically compete on?",
+          "Is Lululemon's advantage structural (brand identity, community) or tactical (product assortment, marketing)?",
+          "Are there segments or use cases Lululemon doesn't serve well where Nike could establish a beachhead?"
+        ]
+      },
+      {
+        "block": "Nike's Internal Resource Allocation",
+        "subIssues": [
+          "Is the 18% marketing budget allocation for women the root cause of underperformance, and what would parity (40%) unlock?",
+          "Are Nike's design and product development pipelines structured to serve women's wellness needs, or are they adapting men's products?",
+          "Which channel — DTC, wholesale, Nike app — has the highest share of women's running and where is the biggest growth leverage?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the growth gap",
+        "detail": "Establish the dollar gap: if the category grew 12% and Nike grew 4%, on an $8B women's base Nike underperformed by roughly $640M in foregone revenue relative to category growth. Ask for a breakdown by product type (footwear vs. apparel) and channel to find where underperformance is sharpest."
+      },
+      {
+        "step": 2,
+        "title": "Diagnose the consumer perception gap",
+        "detail": "Request the consumer perception data comparing Nike to Lululemon on key attributes: performance, lifestyle alignment, community, style, and value. The 'performance-first vs. wellness lifestyle' gap should be quantified — what % of women's running buyers rank lifestyle factors above performance when choosing a brand?"
+      },
+      {
+        "step": 3,
+        "title": "Segment and target",
+        "detail": "Apply STP to divide women's running into three segments: competitive performance runners (small, Nike-strong), casual wellness/lifestyle runners (large, growing, Lululemon-dominant), and athleisure crossover buyers (large, fragmented). Recommend targeting the lifestyle/wellness segment as the growth priority with a dedicated sub-brand or repositioning campaign."
+      },
+      {
+        "step": 4,
+        "title": "Develop the positioning and marketing reallocation plan",
+        "detail": "Recommend repositioning Nike women's running from 'athlete performance' to 'empowered movement' — a bridge between performance and wellness. Recommend increasing women's marketing budget toward 30-35% of total over two years, funding a women-specific brand campaign, community-based marketing (running clubs, studio partnerships), and product storytelling around comfort and style alongside performance."
+      },
+      {
+        "step": 5,
+        "title": "Recommend channel and product actions",
+        "detail": "Prioritize DTC and Nike app as primary channels for women's running since they allow curated, full-brand storytelling. Propose a 3-to-5 product launches specifically designed for the wellness runner archetype — versatile, stylish, performance-capable — differentiated from Lululemon on Nike's technology heritage (Flyknit, Dri-FIT) while communicating aesthetic and lifestyle appeal."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "STP",
+        "definition": "Segmentation, Targeting, Positioning — a three-step framework to identify which customer group to pursue, then craft a message specifically for them"
+      },
+      {
+        "term": "Category share",
+        "definition": "A brand's percentage of total category sales; Nike's women's running share dropped from 31% to 24%, meaning competitors took those dollars"
+      },
+      {
+        "term": "Lifestyle positioning",
+        "definition": "Marketing a product as part of an aspirational way of living rather than on functional performance specs — Lululemon's core advantage over Nike in women's apparel"
+      },
+      {
+        "term": "DTC (Direct-to-Consumer)",
+        "definition": "Selling directly through Nike's own stores and app rather than through retailers like Foot Locker — higher margins and full brand control"
+      },
+      {
+        "term": "Brand architecture",
+        "definition": "How a company organizes its brands and sub-brands; Nike must decide whether to reposition the core Nike brand for women or create a dedicated sub-brand"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately quantifies the gap in dollar terms, uses 3C's to structure the diagnosis before jumping to solutions, and makes a specific recommendation about which consumer segment to target and how to reallocate marketing spend. A weak answer jumps to tactics (launch a new product line) without diagnosing whether the root cause is product, perception, or marketing investment.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Thank you — this is a classic category-underperformance problem, and I'd like to use a two-part framework. First I'll apply the 3C's — Consumer, Competition, and Company — to diagnose why Nike's women's running revenue is growing at 4% when the category is growing at 12%. Then I'll use STP to design the strategic response. Before I dive in, may I ask a couple of clarifying questions?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "First, when we say Nike's women's running grew 4%, is that concentrated in a specific product category — footwear, apparel — or is it broad-based? And second, do we have any data on where lost customers are going — is it primarily Lululemon, or is this fragmented across multiple competitors? Great, thank you. I'll proceed with those assumptions."
+      },
+      {
+        "label": "Step 1 — 3C's Diagnosis",
+        "script": "Starting with the Consumer: the consumer research tells us there's a perception gap — Nike reads as 'performance-first' while the growth in women's running is being driven by a 'wellness lifestyle' buyer who wants to feel good, look good, and be part of a community. That buyer is choosing Lululemon. On Competition: Lululemon has 28% of the women's premium segment, and they've built that through community marketing, premium retail experience, and lifestyle positioning that Nike hasn't matched. On the Company side: the most actionable data point is that Nike is directing only 18% of total marketing spend at women, who represent 40% of athletic apparel buyers. That is a structural underinvestment that compounds the perception problem."
+      },
+      {
+        "label": "Step 2 — STP Recommendation",
+        "script": "Now applying STP: I'd segment women's running into three groups — competitive performance runners, casual wellness runners, and athleisure crossover buyers. The wellness runner segment is where the 12% category growth is concentrated, and it's where Nike is weakest relative to Lululemon. My recommendation is to target that wellness segment with a repositioned sub-line — call it Nike Move or Nike Wellrun — that bridges Nike's performance technology with lifestyle aesthetics. The positioning would be: 'made for every mile of your day,' communicating that Nike products perform when you run and feel great when you don't. Operationally, I'd increase women's marketing budget from 18% to at least 30% over two years, invest in women's running communities and studio partnerships the way Lululemon has, and prioritize DTC channels where Nike controls the full brand story."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "In summary, the root cause of Nike's 4% growth vs. a 12% category is a combination of underinvestment in women's marketing — 18% budget for 40% of buyers — and a performance-only brand perception that doesn't resonate with the wellness runner driving category growth. The strategic recommendation is threefold: reposition Nike women's running around 'empowered movement,' double down on marketing investment toward the 30-35% range, and launch a dedicated product line for the wellness segment. If done well, closing even half the share gap from 24% back toward 28% would represent roughly $320M in incremental revenue on the $8B women's base."
+      }
+    ]
+  },
+  {
+    "id": "scenario_052",
+    "type": "Growth Strategy",
+    "company": "Hilton",
+    "title": "Hilton Loyalty Program Expansion",
+    "prompt": "You are a VP of marketing at Hilton. Hilton Honors has 173 million members but only 38% are active (stayed at least once in the past 12 months). The loyalty program drives 60% of Hilton's occupancy. How would you grow revenue from the existing loyalty base?",
+    "context": "Marriott Bonvoy has 196 million members with 45% active rate. Hilton's average member stay is 2.1 nights per trip vs. 2.6 for Marriott. Members who use the Hilton app book direct 3x more often than non-app users. Hilton has 7,200 properties across 123 countries. Non-hotel partnership redemptions (airlines, retail) represent only 8% of points usage vs. 22% for competitors.",
+    "correctFrameworks": ["3C's Growth Framework", "4P's"],
+    "whyThisFramework": "3C's Growth Framework to identify which customer segments are most valuable and underserved, then 4P's to design engagement tactics (product: app features, price: point value, place: partnership channels, promotion: re-engagement campaigns) that drive active stays.",
+    "keyConsiderations": [
+      "What causes 62% of members to go inactive — price, preference, or awareness?",
+      "Which member segments have highest lifetime value and lowest activation?",
+      "Can non-hotel partnerships convert passive members into active travelers?",
+      "How does Hilton compete with Airbnb for the millennial leisure traveler?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "When we say 38% active, is that defined as at least one stay in the past 12 months — and how does activeness correlate with revenue per member versus the inactive 62%?",
+      "Do we know why members go inactive — is it primarily switching to competitors like Marriott, choosing Airbnb for leisure, or simply not traveling enough to stay at hotels?",
+      "What is the current split of active members by segment — business travelers, leisure travelers, corporate account — and which segment has the worst activation rate?",
+      "For the app engagement data showing 3x direct booking rate, how large is the current app user base and what's the main barrier to app adoption among non-users?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Reactivate the Inactive 62%",
+        "subIssues": [
+          "Which inactive member segments have the highest travel frequency but are staying at competitors — and can targeted offers win them back?",
+          "What is the minimum investment (offer, communication, experience) required to convert an inactive member to one stay per year?",
+          "Are partnership redemptions (airlines, retail) a credible bridge to re-engage members who aren't actively traveling for hotel stays?"
+        ]
+      },
+      {
+        "block": "Increase Nights per Stay for Active Members",
+        "subIssues": [
+          "Why does Hilton average 2.1 nights vs. Marriott's 2.6 — is it property mix, business vs. leisure split, or booking incentives?",
+          "What incentives would cause an active member to extend a stay by even 0.5 nights on average — what's the revenue and margin impact?",
+          "Can app-based personalization (local recommendations, upgrade offers) be used to drive longer stays among existing bookers?"
+        ]
+      },
+      {
+        "block": "Drive Direct Booking via App Adoption",
+        "subIssues": [
+          "Given app users book direct 3x more, what is the ROI of a campaign to triple app downloads among the existing inactive member base?",
+          "What features — mobile check-in, room selection, local experiences — would drive app adoption for members who currently book through OTAs?",
+          "Can Hilton partner with airlines or corporate travel platforms to make the Hilton app a default booking tool for business travelers?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the revenue opportunity",
+        "detail": "Establish the math: Hilton Honors drives 60% of occupancy; if 62% of 173 million members are inactive, that's roughly 107 million dormant members. Even converting 5% of inactive members to one stay per year at an average of $150/night for 2 nights = $321M in incremental revenue. Use this to frame priority and investment size."
+      },
+      {
+        "step": 2,
+        "title": "Segment the inactive base",
+        "detail": "Request segmentation of the 107 million inactive members by travel frequency (high, medium, low travelers), last-stay date, and competitor usage data where available. Prioritize the 'high-frequency traveler who has lapsed' segment — they travel but are choosing competitors — as the highest ROI reactivation target."
+      },
+      {
+        "step": 3,
+        "title": "Design reactivation and retention tactics via 4P's",
+        "detail": "Product: Enhance the Hilton app with room selection, digital key, and local experiences to close the app adoption gap. Price: Offer lapsed members a 'Welcome Back' bonus points campaign (double points for first two stays) rather than discounting rate. Place: Expand non-hotel partnerships from 8% to 15%+ of redemption options — airline miles, dining, retail — to keep Hilton Honors top-of-mind for members not actively traveling. Promotion: Launch a personalized reactivation email sequence with dynamic offers based on member travel history."
+      },
+      {
+        "step": 4,
+        "title": "Close the nights-per-stay gap vs. Marriott",
+        "detail": "The 2.1 vs. 2.6 nights gap represents a 24% differential. Investigate whether this is a property mix issue (more city hotels vs. resort/conference properties) or a booking incentive issue. Recommend in-stay upgrade offers and points accelerators for extending stays by one night, and prioritize positioning properties with conference and extended-stay appeal to corporate accounts."
+      },
+      {
+        "step": 5,
+        "title": "Recommend and prioritize initiatives",
+        "detail": "Prioritize: (1) App adoption campaign for high-frequency lapsed members — highest near-term revenue impact given the 3x booking multiplier. (2) Partnership expansion — keeps brand relevant for non-travel spend. (3) In-stay extension incentives — relatively low-cost and directly addresses the Marriott nights gap. Avoid deep rate discounting, which would erode margin without building loyalty."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Active rate",
+        "definition": "The percentage of loyalty program members who made at least one qualifying transaction (here, one stay) in the past 12 months — Hilton's 38% vs. Marriott's 45% represents a significant engagement gap"
+      },
+      {
+        "term": "Direct booking",
+        "definition": "A reservation made through Hilton's own website or app rather than an OTA (Online Travel Agency) like Expedia — direct bookings have higher margins because Hilton avoids the 15-25% OTA commission"
+      },
+      {
+        "term": "OTA commission",
+        "definition": "The fee (typically 15-25% of room revenue) paid to Online Travel Agencies like Expedia or Booking.com when a customer books through their platform instead of directly with Hilton"
+      },
+      {
+        "term": "Points liability",
+        "definition": "The financial obligation Hilton carries for unredeemed loyalty points outstanding on member accounts — expanding non-hotel redemptions reduces this liability while maintaining member engagement"
+      },
+      {
+        "term": "RevPAR",
+        "definition": "Revenue Per Available Room — the key hotel industry metric calculated as occupancy rate times average daily rate, representing overall revenue efficiency of a property"
+      }
+    ],
+    "interviewerExpectations": "A strong answer opens with a revenue quantification of the inactive member opportunity, uses the 4P's to generate structured tactical options, and makes a clear prioritization call (app adoption and reactivation over discounting). A weak answer lists generic loyalty program tactics without connecting them to the specific data points provided — the 38% active rate, 2.1 night gap, 3x app booking rate, and 8% non-hotel redemption rate are all flags that need to be addressed.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Great question. We're really solving two problems here: reactivating the 62% of Honors members who aren't generating any revenue, and deepening engagement with the 38% who are active to increase their value. I'd like to structure my response using the 3C's to diagnose the opportunity, then 4P's to build the tactical plan. May I ask a couple of questions first?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "First, do we know why members go inactive — is it primarily competitive switching to Marriott Bonvoy, or is it a broader 'not traveling' issue? And second, is there a revenue breakdown by active vs. inactive members — I want to understand the upside of moving even a fraction of that inactive base. Thank you — I'll proceed with those assumptions."
+      },
+      {
+        "label": "Step 1 — Quantifying the Inactive Opportunity",
+        "script": "Let me start with the math. We have 173 million Honors members, 38% active — so roughly 107 million inactive members. If we could convert just 5% of them to one stay per year at an average of 2 nights at $150 per night, that's about $320 million in incremental revenue. That's significant relative to any investment in reactivation, so the opportunity is clearly worth pursuing. The question is: which lever has the highest ROI?"
+      },
+      {
+        "label": "Step 2 — 4P's Tactical Framework",
+        "script": "Let me walk through 4P's to build the plan. On Product: the app engagement data is the most actionable signal we have — members who use the Hilton app book direct 3 times more often than non-users. That means our highest-ROI product investment is driving app adoption among lapsed members — enhanced features like digital key, room selection, and local experience recommendations. On Price: I would not recommend discounting room rates — that erodes margin and trains members to expect discounts. Instead, I'd run a 'Welcome Back' double-points promotion for the first two stays, which feels like value without pricing down. On Place: the non-hotel partnerships are a glaring gap — 8% of points redeemed through airlines and retail versus 22% for competitors. Expanding those partnerships keeps Hilton Honors top-of-mind for members between trips, which is critical for reactivation. On Promotion: a personalized reactivation sequence for inactive members — segmented by travel history — offering targeted bonus points or upgrade guarantees for the next booking."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize: I'd prioritize three initiatives in this order. First, an app adoption campaign targeting high-frequency lapsed members — this directly leverages the 3x direct-booking multiplier and builds a long-term engagement habit. Second, expand non-hotel redemption partnerships from 8% toward the competitive benchmark of 22% — this keeps the brand relevant between trips and reduces points liability. Third, address the 2.1 vs. 2.6 nights gap through in-stay incentives — upgrade offers and points accelerators for extended stays. I'd explicitly avoid broad rate discounting. If we move the active rate from 38% toward Marriott's 45% even halfway, we're talking roughly $300 to $400 million in incremental annual revenue at current spending levels per member."
+      }
+    ]
+  },
+  {
+    "id": "scenario_053",
+    "type": "Growth Strategy",
+    "company": "Kraft Heinz",
+    "title": "Kraft Mac & Cheese Premiumization",
+    "prompt": "You are a brand director at Kraft Heinz. Kraft Mac & Cheese generates $1.2B in annual US retail sales but volume has declined 3% year-over-year for two consecutive years while the premium pasta category has grown 9%. How do you grow Kraft Mac & Cheese revenue?",
+    "context": "The premium mac & cheese segment (Annie's, Banza, local brands) grew from $180M to $290M over 3 years. Kraft's household penetration is 43% — one of the highest in the category — but purchase frequency has dropped from 6.2 to 5.7 times per year. Millennial parents are the fastest-declining segment, citing concerns about artificial ingredients. Kraft reformulated to remove artificial preservatives in 2016 but awareness of the change is only 31% among millennial parents.",
+    "correctFrameworks": ["STP", "4P's"],
+    "whyThisFramework": "STP to identify which segments are lapsing vs. growing and whether a sub-brand or repositioning can capture premium-leaning millennials without alienating core buyers, then 4P's to redesign product formulation communication, pricing architecture, and shelf placement strategy.",
+    "keyConsiderations": [
+      "Should Kraft launch a premium sub-brand or reposition the core brand?",
+      "How does Kraft communicate the 2016 reformulation to skeptical millennial parents?",
+      "What price premium can Kraft command before losing its value-positioning advantage?",
+      "Is the decline a product problem or a perception problem?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "The 3% volume decline — is it driven by fewer households buying (penetration falling from 43%) or the same households buying less frequently (purchase frequency down to 5.7), and which is larger?",
+      "Is the millennial parent attrition primarily going to Annie's and Banza, or to home-made pasta alternatives — knowing where defectors go matters for our response strategy?",
+      "What is Kraft's current price per serving relative to Annie's and Banza — are we talking a 30% premium gap or a 100% gap?",
+      "Do we have any data on what would change millennial parents' minds — would learning about the 2016 reformulation be sufficient, or is the brand itself the problem?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Perception vs. Product Reality Gap",
+        "subIssues": [
+          "Is the millennial decline caused by Kraft's actual ingredient profile or by outdated perceptions — given 69% of millennial parents don't know about the 2016 reformulation?",
+          "If perception is the primary problem, what message and channel would most efficiently close the awareness gap from 31% to a tipping-point level?",
+          "Are there any remaining product attributes (sodium, artificial flavors beyond preservatives) that would still disqualify Kraft for health-conscious millennial parents even after full reformulation awareness?"
+        ]
+      },
+      {
+        "block": "Brand Architecture Decision",
+        "subIssues": [
+          "Can the core Kraft Mac & Cheese brand be repositioned for millennials without alienating the value-focused core buyer who represents the majority of the 43% penetration?",
+          "Would a premium sub-brand (e.g., 'Kraft Organics' or 'Kraft Simply') capture millennial parents who are driving Annie's growth without brand confusion?",
+          "What are the cannibalization risks and incremental revenue estimates of each architecture approach?"
+        ]
+      },
+      {
+        "block": "Frequency & Purchase Occasion Expansion",
+        "subIssues": [
+          "The purchase frequency dropped from 6.2 to 5.7 times per year — what occasions or meal contexts have been lost and can they be recaptured through product or marketing?",
+          "Are there new product formats (cups, frozen, premium sauce pouches) that could add purchase occasions without diluting the core SKU?",
+          "How does Kraft's price point relative to homemade pasta influence frequency — is value vs. convenience the real decision driver?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Diagnose the volume loss",
+        "detail": "Calculate the revenue impact of the frequency decline: 43% household penetration on ~130 million US households is roughly 56 million buying households. A drop from 6.2 to 5.7 purchases per year is 0.5 fewer purchases × 56 million households = 28 million lost unit occasions. At an average unit price of ~$1.80, that's roughly $50M in annual revenue erosion — purely from frequency, before any penetration decline."
+      },
+      {
+        "step": 2,
+        "title": "Identify which segments are driving the decline",
+        "detail": "Apply STP to segment the buyer base into: (A) value-focused loyal buyers (older households, price-sensitive), (B) millennial parents declining due to ingredient perception, and (C) lapsed buyers who moved to premium alternatives. Millennial parents are the most actionable segment — they're leaving over a perception problem that the 2016 reformulation has already solved."
+      },
+      {
+        "step": 3,
+        "title": "Decide: reposition core brand or launch sub-brand",
+        "detail": "Evaluate two options. Option A: reposition Kraft Mac & Cheese with a 'clean label' campaign — 'No artificial preservatives since 2016' messaging prominently on packaging, in digital and in-store. Risk: alienates value buyers if too premium. Option B: launch a premium sub-brand (e.g., Kraft Organics Mac & Cheese) to compete directly with Annie's at a higher price point. Risk: fragmented investment, lower scale. Recommend Option A first — it has zero incremental COGS and can be tested with a packaging update and campaign before any sub-brand investment."
+      },
+      {
+        "step": 4,
+        "title": "Build the 4P's action plan",
+        "detail": "Product: prominently display 'No artificial preservatives' and relevant certifications on packaging front panel — awareness is only 31%. Price: test a modest 10-15% price increase on premium SKUs (shapes, characters) while maintaining the entry price point. Place: negotiate additional shelf space in natural/organic aisles at retailers like Target and Whole Foods alongside conventional shelf. Promotion: run a millennial-targeted digital campaign 'The Kraft You Already Love, Made Cleaner' — targeted at parents on Instagram and YouTube."
+      },
+      {
+        "step": 5,
+        "title": "Set metrics and success criteria",
+        "detail": "Define success as: (1) increase millennial parent awareness of the 2016 reformulation from 31% to 50% within 12 months via campaign tracking. (2) Stabilize purchase frequency from 5.7 back toward 5.9 within 18 months. (3) Grow premium SKUs (shapes, cups, flavored varieties) to 20% of Kraft Mac & Cheese revenue, up from current level."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Household penetration",
+        "definition": "The percentage of all US households that purchased Kraft Mac & Cheese at least once in the past year — Kraft's 43% is exceptionally high, meaning the problem is frequency, not reach"
+      },
+      {
+        "term": "Purchase frequency",
+        "definition": "How often the average buying household purchases the product per year — Kraft's drop from 6.2 to 5.7 is a 8% decline in buying rate among existing customers"
+      },
+      {
+        "term": "Clean label",
+        "definition": "A product positioning strategy emphasizing the removal of artificial ingredients, additives, and preservatives — the core driver of premium mac & cheese growth via Annie's and Banza"
+      },
+      {
+        "term": "Brand architecture",
+        "definition": "How Kraft organizes its products — whether to stretch the core Kraft brand upmarket or create a distinct premium sub-brand to avoid confusing value shoppers"
+      },
+      {
+        "term": "Price elasticity",
+        "definition": "How much purchase volume changes in response to a price increase — Kraft must estimate whether a 10-15% price bump on premium SKUs would be offset by margin gains or cause volume loss"
+      }
+    ],
+    "interviewerExpectations": "An impressive answer uses the frequency math to quantify the problem precisely, makes a clear and reasoned choice between repositioning the core brand vs. launching a sub-brand, and calls out the 2016 reformulation as the highest-ROI intervention — it's already done and just needs communication. A weak answer treats this as a generic 'declining brand' problem without engaging with the specific data: the 31% awareness stat, the 6.2-to-5.7 frequency drop, and the $180M-to-$290M premium segment growth.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Thank you. This is a brand in decline that has both a perception problem and a frequency problem — and they're related. I want to use STP to identify which consumer segments we should prioritize, then 4P's to build the plan. Before I do, can I ask a quick question?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Is the 3% volume decline driven primarily by purchase frequency falling — which the data suggests at 6.2 to 5.7 times per year — or are we also losing household penetration below 43%? And is the millennial parent attrition primarily going to Annie's, or to home-cooked alternatives? Great — that confirms the frequency issue is the primary driver and Annie's is the main competitor for millennial parents."
+      },
+      {
+        "label": "Step 1 — Quantifying the Problem",
+        "script": "Let me start with the math. Kraft has roughly 43% of 130 million US households buying — that's about 56 million buying households. The frequency drop of 0.5 purchases per year across those households is about 28 million lost purchase occasions annually. At roughly $1.80 per unit, that's around $50 million in lost revenue per year purely from frequency decline, and it's accelerating. The premium segment growing from $180M to $290M tells us those occasions aren't disappearing — they're migrating to Annie's and Banza."
+      },
+      {
+        "label": "Step 2 — STP Diagnosis and 4P's Recommendation",
+        "script": "Segmenting Kraft's buyers: we have a value-loyal core that's price-sensitive and brand-habitual — we should not risk alienating them. And we have a millennial parent segment that's lapsing over ingredient concerns — but here's the key insight: the 2016 reformulation already solved the actual problem. Kraft removed artificial preservatives nine years ago, but only 31% of millennial parents know that. That means the single highest-ROI action we can take is a communication campaign, not a product change. On Product: update the front-of-pack to prominently feature 'No artificial preservatives.' On Promotion: run a targeted digital campaign for millennial parents — something like 'Kraft Mac & Cheese: made cleaner since 2016' — on YouTube and Instagram. On Price: I'd test a modest 10% increase on premium SKUs like character shapes and flavored varieties to capture incremental margin while keeping the flagship price stable. On Place: explore whether Kraft can earn shelf space in the natural food aisles at Target and Whole Foods alongside the conventional aisle."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "In summary, this is primarily a perception problem, not a product problem. The most urgent action is closing the 31% awareness gap on the 2016 reformulation — this is low-cost and high-impact. I would not recommend launching a premium sub-brand as a first move because it fragments marketing investment and risks confusing our core buyer. Instead: reposition the core brand as 'cleaner than you think,' stabilize frequency among millennial parents, and test premium pricing on specialty SKUs. If we can recover frequency from 5.7 to 6.0 purchases per year across 56 million buying households at the current price point, that's roughly $90M in recovered revenue annually."
+      }
+    ]
+  },
+  {
+    "id": "scenario_054",
+    "type": "Growth Strategy",
+    "company": "American Express",
+    "title": "Amex Small Business Card Growth",
+    "prompt": "You are a director of product marketing at American Express. The Amex Business Gold Card has a 14% market share among small business credit cards but only 6% among businesses with fewer than 10 employees. Small businesses under 10 employees represent 78% of all US small businesses. How do you grow penetration in this segment?",
+    "context": "Chase Ink and Capital One Spark collectively hold 51% of the under-10-employee segment. These competitors offer lower annual fees ($95 vs. Amex Business Gold's $295) and simpler rewards structures. Survey data shows 67% of micro-business owners cite annual fee as primary barrier to Amex adoption. Amex's NPS among existing small business cardholders is +52, among the highest in the category. Referral rates from existing members are 3x higher than industry average.",
+    "correctFrameworks": ["3C's", "4P's"],
+    "whyThisFramework": "3C's to identify the micro-business segment's unmet needs vs. what competitors offer vs. Amex's actual strengths (high NPS, referral network), then 4P's to address the price barrier (fee structure), product fit (simplified rewards), and promotion (referral program amplification).",
+    "keyConsiderations": [
+      "Is fee sensitivity the real barrier or is it awareness and perceived value?",
+      "Should Amex launch a new lower-fee product or restructure Business Gold?",
+      "How can Amex leverage its +52 NPS to drive referral-based growth?",
+      "What rewards categories matter most to micro-business owners?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Of the 67% who cite annual fee as a barrier, do we know whether they'd convert at $150 or $195 — is this true price sensitivity or a 'default excuse' masking a deeper perception gap about Amex's value?",
+      "What is the spend profile of a typical micro-business owner with fewer than 10 employees — do they spend enough monthly to make the $295 fee economics work on 4x rewards points?",
+      "When you say referral rates are 3x industry average, are those referrals converting to new cardholders — and are the referred customers staying active?",
+      "Are we constrained to growing the Business Gold Card specifically, or is a new lower-fee product an option within scope?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Price Barrier: Real vs. Perceived",
+        "subIssues": [
+          "At what monthly spend level does the Business Gold Card's rewards value exceed the $295 annual fee relative to Chase Ink at $95 — is there a clear break-even spend that most micro-businesses don't reach?",
+          "Would introducing a lower-fee Business Card at $150 capture the fee-sensitive segment, or would it cannibalize Business Gold revenue from the existing 14% share base?",
+          "Can Amex demonstrate ROI through a 'rewards calculator' tool that shows micro-business owners their net savings based on spending categories?"
+        ]
+      },
+      {
+        "block": "Product & Rewards Complexity",
+        "subIssues": [
+          "Are micro-business owners declining Amex because of the fee alone, or because they find the 4x rewards categories complex relative to Chase Ink's flat cash-back structure?",
+          "What spending categories do micro-businesses under 10 employees over-index on — software subscriptions, shipping, advertising — and does Business Gold's 4x cover those?",
+          "Would a simpler rewards structure (flat 2% cash back) outperform the current tiered system for micro-business acquisition, even if it's less differentiated at the high end?"
+        ]
+      },
+      {
+        "block": "Leveraging the Referral & NPS Advantage",
+        "subIssues": [
+          "With a +52 NPS and 3x referral rate, what is the current referral program structure and why isn't it already driving micro-business penetration?",
+          "Can Amex build a formal peer referral network among micro-business owners — targeting accountants, SCORE advisors, and small business networks as referral channels?",
+          "What is the lifetime value of a referred micro-business cardholder vs. one acquired through paid channels, and does the math support a higher referral bonus investment?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the market opportunity",
+        "detail": "Calculate the size of the prize: if 78% of US small businesses have fewer than 10 employees, and the small business card market is roughly $200B in spend volume, micro-businesses represent a massive underserved pool. At 6% penetration vs. Amex's 14% overall share, closing even half the gap implies millions of potential new cardholders. Ask for the current micro-business cardholder count and average annual spend to size the revenue potential."
+      },
+      {
+        "step": 2,
+        "title": "Test whether fee is the real barrier",
+        "detail": "Conduct a value ROI analysis: Business Gold offers 4x points on top two eligible spending categories. If a micro-business spends $3,000/month on ads and software (common for a 5-person firm), the 4x points at ~$0.01-per-point value = $1,440/year in rewards, well above the $295 fee. Request data on whether micro-business owners who were shown this math in research changed their stated intent. This distinguishes true fee sensitivity from an awareness-of-value problem."
+      },
+      {
+        "step": 3,
+        "title": "Decide on product architecture",
+        "detail": "Evaluate two paths: (A) Launch a new Amex Business Essential card at $150/year with simplified flat 2x rewards — targets price-sensitive micro-businesses and blocks Chase Ink. (B) Add a first-year fee waiver to Business Gold with a rewards calculator marketing campaign — converts aware-but-hesitant micro-businesses without a new product. Recommend Option A if research confirms true price elasticity, Option B if it confirms awareness gap."
+      },
+      {
+        "step": 4,
+        "title": "Amplify the referral engine",
+        "detail": "The 3x referral rate is the most underleveraged asset. Design a 'Small Business Refer' program: existing Business Gold cardholders who refer a micro-business owner get 20,000 bonus points (worth ~$200) and the new member gets a first-year fee waiver. Target accountants, SCORE mentors, and small business association networks as high-leverage referral channels — one accountant with 50 micro-business clients can be a multiplier."
+      },
+      {
+        "step": 5,
+        "title": "Set 90-day and 12-month metrics",
+        "detail": "90-day: launch referral program amplification and rewards ROI calculator campaign — measure card applications from micro-businesses against baseline. 12-month goal: grow micro-business penetration from 6% to 9% (a 50% relative gain) and measure approval-to-activation rate and 6-month spend to ensure quality of new members."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "NPS (Net Promoter Score)",
+        "definition": "A measure of customer loyalty on a -100 to +100 scale based on how likely customers are to recommend a product — Amex's +52 is exceptionally high and signals untapped referral potential"
+      },
+      {
+        "term": "Annual fee ROI",
+        "definition": "The calculation of whether a credit card's rewards and benefits exceed its annual fee for a given spending profile — the primary mental hurdle for micro-business owners considering the $295 Business Gold"
+      },
+      {
+        "term": "Micro-business segment",
+        "definition": "Businesses with fewer than 10 employees — representing 78% of all US small businesses and the highest-growth opportunity for business card acquisition"
+      },
+      {
+        "term": "Fee waiver",
+        "definition": "Waiving the first-year annual fee as an acquisition incentive — reduces the upfront barrier without permanently repricing the card"
+      },
+      {
+        "term": "Referral flywheel",
+        "definition": "A growth loop where satisfied customers bring in new customers through referrals, compounding acquisition without proportional marketing spend — Amex's 3x referral rate represents an underinvested version of this"
+      }
+    ],
+    "interviewerExpectations": "A strong answer diagnoses whether the $295 fee barrier is real or perceived (do the rewards math out?), makes a specific product architecture recommendation (new tier vs. waiver campaign), and proposes a concrete referral program design using the +52 NPS as an asset. A weak answer accepts the 67% fee-barrier survey result at face value without testing whether a spend-based ROI analysis changes the picture, or proposes simply lowering the fee without considering cannibalization.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a penetration problem with a specific segment — micro-businesses under 10 employees — and I want to be careful not to assume the 67% fee-barrier survey answer is the complete story. I'll use 3C's to diagnose the real barrier first, then 4P's to build the response. A quick clarifying question before I dive in."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "When 67% of micro-business owners cite the annual fee as a barrier, do we have any data on whether showing them the rewards ROI — what they'd actually earn back based on their typical spending — changes their stated intent to apply? And separately, are we open to launching a new lower-fee product, or is the goal to grow Business Gold specifically? Perfect — knowing both will shape the recommendation significantly."
+      },
+      {
+        "label": "Step 1 — 3C's Diagnosis",
+        "script": "Starting with the Consumer: the micro-business owner with fewer than 10 employees is typically spending heavily on software subscriptions, advertising, and maybe shipping — the exact categories Business Gold's 4x multiplier covers. But they're likely not doing the math. A business spending $3,000 a month in those categories earns roughly $1,440 in points annually at a $0.01 per point value — which more than covers the $295 fee. So the fee may be a perception problem, not a true price problem. On Competition: Chase Ink and Capital One Spark hold 51% of this segment with $95 fees and flat cash-back structures. They win on simplicity and apparent affordability, not on reward value. On the Company side: Amex has a +52 NPS and a 3x referral rate — both are underinvested assets in driving micro-business acquisition."
+      },
+      {
+        "label": "Step 2 — 4P's Recommendation",
+        "script": "On Product: I recommend launching a new Amex Business Essential tier at $150 per year with a simplified 2x rewards structure — this directly addresses the fee barrier and blocks Chase Ink, while protecting Business Gold for higher-spend businesses. On Price: for Business Gold, run a first-year fee waiver offer paired with a personalized rewards calculator that shows the prospect their estimated annual rewards based on their industry's typical spend profile. On Promotion: this is where the +52 NPS becomes a weapon — launch a 'Refer a Business Owner' program with a 20,000-point bonus for referrers and a first-year fee waiver for referred new members. Target accountants and SCORE advisors specifically — one accountant with 50 micro-business clients can drive dozens of applications. On Place: partner with QuickBooks, FreshBooks, and small business banking apps to surface the Amex Business Essential offer at the moment micro-business owners are managing their finances — that's the highest-intent moment."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize: I believe this is partly a price problem and largely a value-communication problem. My recommendation is two parallel moves. First, launch an Amex Business Essential card at $150 to capture the truly fee-sensitive micro-business segment — this addresses the 67% barrier directly. Second, invest in making the referral flywheel work at scale — with a +52 NPS and 3x referral rate, we have the raw material for a growth engine that doesn't require expensive paid acquisition. If we can move micro-business penetration from 6% to 9% over 18 months, and these businesses average $50,000 in annual card spend at a 2% net revenue yield, each percentage point of penetration growth represents hundreds of millions in new spend volume."
+      }
+    ]
+  },
+  {
+    "id": "scenario_055",
+    "type": "Growth Strategy",
+    "company": "Dick's Sporting Goods",
+    "title": "Dick's Private Label Expansion",
+    "prompt": "You are VP of merchandising strategy at Dick's Sporting Goods. Dick's private label brands (CALIA, Alpine Design, DBX) represent 14% of total revenue at $1.9B. National brand equivalents like Under Armour and The North Face carry 40-55% gross margins vs. private label's 58-62%. How do you grow private label to 20% of revenue over 3 years?",
+    "context": "Dick's operates 850 stores and $12.4B in annual revenue. Target's private label Cat & Jack reached $2B in revenue within 2 years of launch. Nike has threatened to reduce shelf space allocation at Dick's over private label expansion. Private label conversion rates are highest in fitness equipment (23%) and lowest in footwear (4%). Consumer research shows 71% of Dick's shoppers are unaware that CALIA is a Dick's brand.",
+    "correctFrameworks": ["Value Chain Analysis", "4P's"],
+    "whyThisFramework": "Value Chain Analysis to identify where Dick's has cost and differentiation advantages in private label (design, manufacturing partnerships, merchandising) vs. national brands, then 4P's to build a go-to-market plan including product category prioritization, pricing architecture, placement strategy, and brand-building investment.",
+    "keyConsiderations": [
+      "Which categories have the best private label conversion potential beyond fitness equipment?",
+      "How does Dick's manage the Nike relationship risk while expanding private label?",
+      "What investment in brand awareness is needed to make CALIA a recognized brand?",
+      "Should Dick's acquire a brand vs. build in-house?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "The 14% private label share at $1.9B — is that primarily CALIA, or are Alpine Design and DBX material contributors, and which brand has the highest customer satisfaction scores?",
+      "When Nike threatens to reduce shelf space, do we have a sense of what the revenue impact would be if Nike pulled 20% of its allocation — is this a real risk or a negotiating posture?",
+      "For the categories between fitness equipment's 23% conversion and footwear's 4%, do we have conversion data for apparel, accessories, and outdoor gear specifically?",
+      "Is the 3-year target of 20% of revenue ($2.5B) intended to come purely from growing private label faster than total revenue, or does it also include an acquisition of an existing brand?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Category Prioritization",
+        "subIssues": [
+          "Which product categories beyond fitness equipment have conversion potential above 15%, and what is the gross margin uplift of capturing those categories under private label?",
+          "In footwear — the lowest conversion at 4% — is this because consumers won't buy unbranded athletic shoes, or because Dick's hasn't invested in a credible footwear private brand?",
+          "What is the total addressable revenue in each high-conversion category, and how many private label SKUs would it take to reach 20% penetration of that category?"
+        ]
+      },
+      {
+        "block": "Nike Relationship Risk Management",
+        "subIssues": [
+          "What percentage of Dick's total revenue comes from Nike, and what would a 20-30% shelf space reduction cost in both revenue and traffic?",
+          "Are there categories where Dick's private label can expand without directly competing with Nike — outdoor, fitness equipment, team sports — that reduce the confrontation risk?",
+          "Can Dick's negotiate a phased approach with Nike, expanding private label in non-Nike-core categories first while maintaining Nike's share in footwear?"
+        ]
+      },
+      {
+        "block": "Brand Building & Consumer Awareness",
+        "subIssues": [
+          "With 71% of Dick's shoppers unaware CALIA is a Dick's brand, is low brand awareness helping or hurting — does CALIA need its own identity, or would the Dick's halo help conversion?",
+          "What marketing investment is required to move CALIA awareness from 29% to 60%+ among Dick's core shoppers, and what's the payback period given 58-62% gross margins?",
+          "Should Dick's consolidate private label under one umbrella brand for simplicity, or maintain separate brand identities for different sport/lifestyle segments?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the revenue gap to 20%",
+        "detail": "The target is 20% of $12.4B revenue = $2.48B in private label revenue vs. current $1.9B — a $580M growth requirement over 3 years. At 58-62% gross margin on private label vs. 40-55% on national brands, every dollar of revenue shifted to private label generates an additional $0.05-$0.18 in gross margin. This framing makes the business case urgent for the category team."
+      },
+      {
+        "step": 2,
+        "title": "Apply Value Chain Analysis to identify where Dick's has advantage",
+        "detail": "Map where Dick's creates value in private label: (1) Design and trend-spotting — do they have this capability? (2) Manufacturing relationships — 850 stores gives buying scale. (3) Merchandising — Dick's controls its own shelf, which is the single biggest advantage over independent brands. (4) Customer data — Dick's ScoreCard data reveals exactly what customers buy, enabling product line decisions national brands can't match. The merchandising control and customer data are the true differentiators."
+      },
+      {
+        "step": 3,
+        "title": "Prioritize expansion categories",
+        "detail": "Rank categories by: conversion potential × revenue size × Nike conflict risk. High priority: outdoor/camping apparel (high conversion potential, low Nike overlap), fitness accessories and team sports (high conversion, Nike-safe). Medium priority: women's training apparel (CALIA territory, growing category). Low priority for now: footwear (4% conversion, high Nike conflict risk). Recommend focusing private label expansion on the Nike-safe categories first to derisk the supplier relationship."
+      },
+      {
+        "step": 4,
+        "title": "Build the 4P's go-to-market plan",
+        "detail": "Product: invest in quality-parity testing vs. national brands — private label wins when consumers perceive equivalent or better quality at a lower price. Price: position private label at 20-30% below national brand equivalents to drive trial without signaling inferior quality. Place: increase private label shelf adjacency to national brands in high-conversion categories (fitness equipment, outdoor) and dedicate endcaps and high-traffic locations to CALIA and Alpine Design. Promotion: launch CALIA awareness campaign — 'Great gear, made by Dick's' — using in-store, digital, and influencer channels. A 50% increase in CALIA brand awareness could drive measurable conversion lifts."
+      },
+      {
+        "step": 5,
+        "title": "Manage the Nike risk and set governance",
+        "detail": "Establish a clear category map with Nike showing which categories are 'private label growth zones' vs. 'Nike protected zones' — this is both a relationship management move and a strategic clarity exercise. Propose to Nike that footwear remains their domain in exchange for more flexibility in outdoor and accessories. Set a quarterly private label market share tracking dashboard and govern the 20% target with a cross-functional team including merchandising, marketing, and supply chain."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Gross margin",
+        "definition": "Revenue minus cost of goods sold, expressed as a percentage — private label's 58-62% vs. national brands' 40-55% is the core financial rationale for Dick's expansion"
+      },
+      {
+        "term": "Conversion rate (merchandising)",
+        "definition": "The percentage of category shoppers who choose the private label option over national brands — fitness equipment's 23% vs. footwear's 4% reflects brand importance differences by category"
+      },
+      {
+        "term": "Value Chain Analysis",
+        "definition": "A framework that maps all the activities a company performs to create value — for Dick's, shelf control and customer data are the strongest private label value chain advantages"
+      },
+      {
+        "term": "Shelf adjacency",
+        "definition": "Positioning private label products next to national brand equivalents on the retail shelf — drives comparison shopping and increases trial without requiring consumer brand awareness"
+      },
+      {
+        "term": "Category conflict",
+        "definition": "The tension between selling a supplier's products (Nike) and competing against them with private label — Dick's must manage this diplomatically to avoid losing Nike's product allocation"
+      }
+    ],
+    "interviewerExpectations": "A strong answer quantifies the $580M revenue gap to the 20% target, uses Value Chain Analysis to identify Dick's merchandising control and customer data as its real moat, makes a specific category prioritization that routes around Nike conflict, and directly addresses the CALIA awareness gap as a brand investment question. A weak answer focuses only on product quality and pricing without addressing the Nike relationship risk or the brand awareness gap.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Growing private label from 14% to 20% of revenue is fundamentally about three things: knowing which categories to enter, managing the Nike relationship risk carefully, and building enough brand equity to drive conversion. I'll use Value Chain Analysis to identify where Dick's genuinely has advantage, then 4P's to build the execution plan. Let me start with a quick clarifying question."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Do we have conversion rate data for categories between fitness equipment's 23% and footwear's 4% — specifically for outdoor apparel and accessories? And on Nike: is the threat to reduce shelf space a credible operational threat or a negotiating signal? Those two answers will shape whether this is a broad expansion or a focused category play."
+      },
+      {
+        "label": "Step 1 — Quantifying the Goal and Value Chain Advantages",
+        "script": "Let me start with the math. Moving from 14% to 20% of $12.4B is a $580 million revenue increase in private label. At the 8 to 12 percentage point gross margin advantage over national brands, every dollar of that shift improves gross profit by $0.08 to $0.12 — so there's roughly $50 to $70 million in incremental gross profit locked in that growth target. That's the prize. Now, applying Value Chain Analysis: Dick's core private label advantage isn't design capability or manufacturing scale — it's two things. One, shelf control: Dick's literally decides where products appear in 850 stores and can give private label the best real estate without paying a slotting fee. Two, customer data: Dick's ScoreCard data tells us exactly what each customer buys, in what category, at what price — that's better than any national brand's market research for guiding private label product development."
+      },
+      {
+        "label": "Step 2 — Category Strategy and Nike Risk Management",
+        "script": "On category prioritization: the 23% conversion rate in fitness equipment tells us private label wins when brand identity matters less — when the customer cares more about function and price than a swoosh or a logo. Outdoor apparel, fitness accessories, and team sports equipment likely have similar dynamics. Footwear at 4% is the opposite — the brand is the product in athletic footwear. So my recommendation is to concentrate the expansion in outdoor, fitness accessories, and team sports where we can grow to 20%+ conversion without directly threatening Nike. This is also how we manage the Nike relationship: we create a clear category map that shows Nike where we're expanding and where we're not. Footwear stays theirs. That's a trade Dick's should be willing to make."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To close: the 4P's plan in brief. Product — invest in quality-parity testing and customer validation in outdoor and accessories before full launch. Price — position at 20-25% below national brand equivalents to drive trial. Place — use endcap and adjacency placement in Dick's own stores aggressively — this is the single cheapest customer acquisition tool available and we control it completely. Promotion — address the CALIA awareness gap head-on: only 29% of Dick's shoppers know it's a Dick's brand. I'd run an in-store and digital campaign: 'Great gear, from Dick's.' Not hiding the connection — owning it. If we can get CALIA brand awareness from 29% to 55% among frequent Dick's shoppers, conversion rates should follow. Done in the right category sequence, $580 million in incremental private label revenue over 3 years is very achievable."
+      }
+    ]
+  },
+  {
+    "id": "scenario_056",
+    "type": "Growth Strategy",
+    "company": "Walmart",
+    "title": "Walmart Grocery Delivery Growth",
+    "prompt": "You are a senior director of strategy at Walmart. Walmart's grocery delivery service has 6.3 million active subscribers but monthly churn is 4.2%, significantly above the 1.8% churn rate of Walmart+ overall. Grocery delivery revenue is $4.1B annually. How do you reduce churn and grow the subscriber base?",
+    "context": "Instacart holds 28% of US grocery delivery market. Amazon Fresh has grown 34% year-over-year. Walmart's delivery subscribers spend 2.1x more annually than non-subscribers. The top churn reason (42% of churners) is order accuracy issues — wrong items, missing items. Walmart has 4,700 US stores capable of fulfilling same-day delivery. Average delivery fee without subscription is $9.95 vs. $6.99 for Instacart.",
+    "correctFrameworks": ["Profitability Tree", "3C's"],
+    "whyThisFramework": "Profitability Tree to decompose the churn-driven revenue loss (subscribers × monthly spend × churn rate) and identify where intervention has highest ROI, then 3C's to understand whether churn is driven by Walmart's operational failures, competitive alternatives, or customer segment mismatch.",
+    "keyConsiderations": [
+      "Is the 4.2% churn rate driven by operational issues or competitive poaching?",
+      "What is the unit economics of acquiring a new subscriber vs. retaining an existing one?",
+      "How does Walmart fix order accuracy at scale across 4,700 stores?",
+      "Which customer segments are most and least likely to churn?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "When 42% of churners cite order accuracy, is this measured by orders with at least one substitution or missing item, and what is the current order accuracy rate — is this improving or deteriorating?",
+      "Do we know whether churned subscribers are switching to Instacart or Amazon Fresh, or are they just canceling and returning to in-store shopping?",
+      "What is the subscriber acquisition cost — how much does Walmart spend to acquire each new grocery delivery subscriber — and how does that compare to the lifetime value calculation?",
+      "Are the 4.2% grocery delivery churners distinct from the 1.8% Walmart+ churners, or is there overlap — meaning some may be canceling grocery delivery but remaining Walmart+ members?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Churn Reduction (Retain Current 6.3M Subscribers)",
+        "subIssues": [
+          "What operational changes at the store fulfillment level would reduce the 42% of churn driven by order accuracy — training, technology, incentives, or substitution logic?",
+          "What is the revenue retention impact of reducing monthly churn from 4.2% to 2.5%, and does that ROI justify a significant operational investment?",
+          "Are there subscriber segments — by tenure, geography, or spend level — that churn at disproportionately high rates and should be targeted with proactive retention interventions?"
+        ]
+      },
+      {
+        "block": "New Subscriber Acquisition",
+        "subIssues": [
+          "What is the addressable pool of non-subscribers who shop at Walmart regularly and have demonstrated interest in delivery — and what offer would convert them?",
+          "Is a free trial the most effective acquisition tool, or does the $9.95 vs. subscription price comparison drive more conversions among price-sensitive Walmart shoppers?",
+          "Can Walmart bundle grocery delivery with other Walmart+ benefits to lower perceived cost and increase acquisition among currently on-the-fence households?"
+        ]
+      },
+      {
+        "block": "Competitive Positioning vs. Instacart and Amazon Fresh",
+        "subIssues": [
+          "On the dimensions that matter most to grocery delivery buyers — speed, price, accuracy, selection — where does Walmart win and where does it lose?",
+          "Amazon Fresh's 34% YoY growth suggests it's capturing demand Walmart is losing — what specifically is Amazon doing better (Prime bundling, product selection, Fresh exclusives)?",
+          "Is Walmart's 4,700-store fulfillment network a competitive moat on speed and same-day availability, and is it being marketed as such?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the churn-driven revenue loss",
+        "detail": "Apply the Profitability Tree: 6.3M subscribers × 4.2% monthly churn = 264,600 churned subscribers per month. If average annual subscriber spend is 2.1x the non-subscriber average, and annual delivery revenue is $4.1B across 6.3M subscribers, average subscriber revenue ≈ $651/year. Monthly churn costs roughly $264,600 × $651/12 ≈ $14.3M per month in lost annual run-rate revenue — or about $172M per year. Reducing churn from 4.2% to the Walmart+ rate of 1.8% would recover approximately $111M annually."
+      },
+      {
+        "step": 2,
+        "title": "Prioritize order accuracy as root cause #1",
+        "detail": "42% of churners cite order accuracy — that's the single highest-leverage fix. Request data on which stores have the highest substitution rates and which have the lowest — this will reveal whether it's a systemic technology problem (substitution algorithm) or a training and incentive problem at specific locations. Recommend three interventions: (1) improve substitution logic to offer real-time alternatives rather than auto-substituting, (2) implement accuracy metrics in store picker performance management, (3) introduce a proactive credit or apology for any order with missing or wrong items."
+      },
+      {
+        "step": 3,
+        "title": "Segment subscribers by churn risk",
+        "detail": "Use subscriber data to build a churn risk model: identify subscribers who have had 2+ order accuracy issues in the last 90 days, are in their first 60 days (highest churn period), or whose ordering frequency has declined. Proactively offer these high-risk segments a 'Make It Right' intervention — a free delivery credit or bonus points — before they cancel. This is significantly cheaper than re-acquiring a churned subscriber."
+      },
+      {
+        "step": 4,
+        "title": "Address the competitive gap vs. Amazon and Instacart",
+        "detail": "Apply 3C's to competitive positioning: Walmart wins on price ($9.95 per delivery without subscription vs. $6.99 for Instacart — Walmart is actually more expensive without subscription, which is counterintuitive for a Walmart customer). Fix: communicate subscription savings more aggressively at sign-up. Walmart also has a same-day fulfillment advantage via 4,700 stores — this should be marketed explicitly: 'Same-day delivery from a store near you' is a differentiator Amazon Fresh can't match in most markets."
+      },
+      {
+        "step": 5,
+        "title": "Build a new subscriber acquisition funnel",
+        "detail": "The highest-converting acquisition channel is likely existing Walmart shoppers who buy groceries in-store. Recommend a targeted in-store trial offer at checkout: 'Try grocery delivery free for 30 days.' If the first experience has good order accuracy (step 2 investments), conversion to paid subscription should be high. Set success metric: trial-to-paid conversion rate target of 30%+."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Monthly churn rate",
+        "definition": "The percentage of subscribers who cancel in a given month — Walmart grocery delivery's 4.2% means roughly 1 in 24 subscribers leaves each month"
+      },
+      {
+        "term": "Profitability Tree",
+        "definition": "A framework that decomposes revenue or profit into its mathematical components (subscribers × revenue per subscriber × retention rate) to identify the highest-leverage intervention"
+      },
+      {
+        "term": "Order accuracy",
+        "definition": "The percentage of delivery orders fulfilled without substitutions, missing items, or wrong items — the top driver of grocery delivery churn at 42% of cancellations"
+      },
+      {
+        "term": "Lifetime value (LTV)",
+        "definition": "The total revenue a subscriber generates over their relationship with the service — Walmart delivery subscribers spending 2.1x more than non-subscribers makes retention economics very attractive"
+      },
+      {
+        "term": "Subscriber acquisition cost (SAC)",
+        "definition": "The fully-loaded marketing and incentive cost to acquire one new paid subscriber — compared against LTV to assess the sustainability of growth investment"
+      }
+    ],
+    "interviewerExpectations": "A strong answer leads with the churn math (264,000 subscribers lost per month, $172M annual run-rate impact) to create urgency, immediately identifies order accuracy as the root cause priority since 42% of churners cite it explicitly, and distinguishes between retention investment and acquisition investment with a clear prioritization. A weak answer jumps to acquisition tactics without first quantifying and addressing the 4.2% churn bleed — trying to fill a leaky bucket without fixing the hole.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before we talk about growing the subscriber base, I want to make sure we're not trying to fill a leaky bucket. At 4.2% monthly churn, we're losing a meaningful number of subscribers every month. I want to use a Profitability Tree to quantify that bleed, then 3C's to understand what's driving it. May I ask a quick question first?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two questions: First, do we know whether the 42% of churners citing order accuracy is the exit survey answer, or is it triangulated with order history data — meaning do those churners actually have more inaccurate orders than retained subscribers? Second, when subscribers churn, are they switching to Instacart, going back to in-store shopping, or something else? The competitive response differs significantly. Thank you — assuming churn is primarily driven by operational issues and secondarily by competitive switching, let me proceed."
+      },
+      {
+        "label": "Step 1 — Quantifying the Churn Problem",
+        "script": "Let me run the math. 6.3 million subscribers at 4.2% monthly churn is roughly 264,000 subscribers lost per month. If grocery delivery generates $4.1 billion annually across 6.3 million subscribers, that's about $650 per subscriber per year. So we're losing 264,000 subscribers times $650 divided by 12 — that's about $14 million in monthly revenue run-rate erosion, or $170 million annually. If we could cut churn from 4.2% to the Walmart+ average of 1.8%, we'd recover roughly $110 million a year in retained revenue. That's the case for investing aggressively in retention before we spend a dollar on acquisition."
+      },
+      {
+        "label": "Step 2 — Root Cause and 3C's",
+        "script": "Using 3C's: on the Customer side, 42% of churners cite order accuracy — wrong items, missing items. That's the single most actionable data point in this case. It tells us that customer-side failures, not competitive losses, are driving the majority of churn. On the Competition side, Instacart and Amazon Fresh are benefiting, but they're likely catching subscribers after a bad Walmart experience rather than poaching satisfied customers. On the Company side, Walmart has 4,700 stores capable of same-day fulfillment — that's a massive operational advantage that should make order accuracy achievable at scale, but evidently the fulfillment execution isn't there yet. So the root cause is internal, not competitive — and that's actually good news because it's fixable."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is three priorities in sequence. First and most urgent: fix order accuracy. Improve the substitution algorithm so customers are offered alternatives in real time rather than receiving auto-substitutions, add accuracy to store picker performance metrics, and proactively credit any order with missing or wrong items before the customer calls. Second: build a churn-risk early warning system — subscribers who have had two or more accuracy issues in 90 days should automatically receive a 'Make It Right' offer before they cancel. Third: only after churn is stabilized, invest in acquisition — and the highest-ROI acquisition channel is in-store: offer a free 30-day trial at checkout to regular Walmart grocery shoppers. If their first experience is accurate and on-time, the conversion rate to paid subscription should be strong. The North Star metric: move grocery delivery churn from 4.2% toward 2.5% within 12 months, recovering $80 to $100 million in annual revenue without spending a dollar on new subscribers."
+      }
+    ]
+  },
+  {
+    "id": "scenario_057",
+    "type": "Growth Strategy",
+    "company": "Chevron",
+    "title": "Chevron EV Charging Network Growth",
+    "prompt": "You are a strategy director at Chevron. Chevron has launched a pilot EV charging network at 150 of its 8,000 US gas stations. Utilization at pilot stations is 31% — below the 55% needed for profitability. How does Chevron grow this business to profitability within 3 years?",
+    "context": "Tesla Superchargers have 65% market share of fast charging with 97% uptime reliability. ChargePoint and EVgo collectively have 35% of non-Tesla DC fast charging. Chevron's pilot stations average 4 charging stalls each. Average EV driver charges 1.4 times per week at public chargers. Chevron stations are primarily in suburban and highway locations. EV adoption is 3x higher in California, Oregon, and Washington than the national average.",
+    "correctFrameworks": ["Market Entry Framework", "Breakeven Analysis"],
+    "whyThisFramework": "Market Entry Framework to assess whether Chevron has the demand, capability, competitive position, and financial case to scale beyond the pilot, then Breakeven Analysis to determine what utilization rate, pricing, and stall count per location is needed to achieve profitability at scale.",
+    "keyConsiderations": [
+      "At what utilization rate does each charging stall break even?",
+      "Should Chevron focus rollout in high-EV-adoption states first?",
+      "How does Chevron differentiate from Tesla Superchargers on reliability and experience?",
+      "What adjacency revenue (convenience store, food) can subsidize charging infrastructure?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "When we say 55% utilization is needed for profitability, is that at the individual stall level or the station level, and what are the fixed vs. variable cost components per stall?",
+      "What is the current revenue model — per-kWh pricing, per-minute pricing, or subscription — and what is the average revenue per charging session at pilot stations?",
+      "Do we know why utilization is only 31% — is it low EV density in pilot station locations, competitive availability of Tesla Superchargers nearby, or reliability/uptime issues?",
+      "Is Chevron's 3-year profitability target at the network level (portfolio breakeven) or at the individual station level?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Demand-Side: Where are EVs and Charging Behavior?",
+        "subIssues": [
+          "Which of Chevron's 8,000 stations are within the top-EV-density corridors in California, Oregon, and Washington, and what is the EV per-capita ratio within a 5-mile radius of each?",
+          "What share of EV drivers charge primarily at home vs. relying on public charging — and what trip type (highway vs. local errand) drives the 1.4 public charges per week?",
+          "How does proximity to Tesla Superchargers affect Chevron pilot station utilization — are low-utilization stations collocated with Tesla infrastructure?"
+        ]
+      },
+      {
+        "block": "Supply-Side: Economics Per Stall",
+        "subIssues": [
+          "What is the capital cost per DC fast charging stall and the annual fixed cost (electricity, maintenance, staff) required to run each stall?",
+          "At what average session length and kWh per session does a stall need 55% utilization to break even — and is increasing pricing an option without losing sessions to competitors?",
+          "Can adjacency revenue (increased convenience store purchases during 20-30 minute charges) reduce the utilization breakeven threshold?"
+        ]
+      },
+      {
+        "block": "Competitive Position vs. Tesla and ChargePoint",
+        "subIssues": [
+          "Tesla Superchargers have 97% uptime vs. industry average of ~75% — what is Chevron's current uptime on pilot stations and how does a reliability gap affect repeat usage?",
+          "Is Tesla's adoption of NACS (North American Charging Standard) reducing the non-Tesla charging market, and how does this affect Chevron's medium-term demand forecast?",
+          "What would it take for Chevron to match or exceed Tesla's reliability — is this a hardware, software, or maintenance model problem?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Run the breakeven math per stall",
+        "detail": "Estimate: if 55% utilization is the breakeven and a stall is available 24 hours/day, 55% utilization = 13.2 hours of active charging per day. If an average session is 25 minutes and average revenue is $15, that's 32 sessions × $15 = $480/day per stall at breakeven. Annual breakeven revenue per stall = ~$175,000. Compare to current 31% utilization = $272/day per stall = $99,000 annual — a gap of $76,000 per stall per year. This math frames the business case for geographic prioritization and adjacency revenue."
+      },
+      {
+        "step": 2,
+        "title": "Geographic prioritization: concentrate in high-EV states",
+        "detail": "With EV adoption 3x higher in California, Oregon, and Washington, Chevron should map its 8,000 stations against EV registration density by ZIP code and prioritize the next 200-300 charging site deployments in those states. Pilot stations in low-EV-density suburban markets will structurally underperform — moving the portfolio mix toward high-density corridors will lift network utilization faster than any marketing spend."
+      },
+      {
+        "step": 3,
+        "title": "Fix reliability to compete with Tesla",
+        "detail": "If Chevron's uptime is below Tesla's 97%, it is a disqualifying problem for repeat usage — EV drivers who arrive at a broken charger switch networks and don't return. Recommend investing in predictive maintenance technology (remote monitoring of stall performance) and establishing a 4-hour repair SLA for any down stall. Public uptime data should be reported proactively to build trust with early adopters."
+      },
+      {
+        "step": 4,
+        "title": "Leverage adjacency revenue as a profitability bridge",
+        "detail": "DC fast charging takes 20-40 minutes — this is a dwell time that gas stations have never had. Chevron should redesign pilot station convenience stores to maximize spend during charging sessions: fresh food, coffee, Wi-Fi seating. If charging customers spend an incremental $8 per session at the convenience store at a 60% gross margin, that's $4.80 per session in adjacency contribution. At 32 sessions/day/stall, that's $154/day — enough to lower the utilization breakeven from 55% to roughly 45%."
+      },
+      {
+        "step": 5,
+        "title": "Scale decision and investment recommendation",
+        "detail": "Recommend scaling from 150 to 500 stations over 3 years, concentrated in the top-EV-adoption corridors. Investment per station of 4 stalls at ~$200,000 capital each = ~$800K per station × 350 new stations = ~$280M capital investment. Set a profitability milestone: 45% average utilization (after adjacency revenue credit) across the network by month 24 as the go/no-go signal for the full 500-station rollout."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Utilization rate",
+        "definition": "The percentage of time a charging stall is actively in use — Chevron's 31% means stalls sit idle 69% of the time, far below the 55% needed to cover fixed costs"
+      },
+      {
+        "term": "DC fast charging (DCFC)",
+        "definition": "Direct Current fast chargers that can add 100-200 miles of range in 20-40 minutes — more expensive to install than Level 2 AC chargers but required for highway corridor and high-volume public charging"
+      },
+      {
+        "term": "Breakeven analysis",
+        "definition": "A calculation of the revenue or volume needed to cover all fixed and variable costs — in this case, the number of daily charging sessions per stall needed to reach profitability"
+      },
+      {
+        "term": "Uptime reliability",
+        "definition": "The percentage of time a charging stall is functional and available — Tesla Superchargers' 97% uptime vs. industry's ~75% is a key competitive differentiator"
+      },
+      {
+        "term": "NACS (North American Charging Standard)",
+        "definition": "Tesla's charging connector standard, now adopted by Ford, GM, and other automakers — reducing the share of EVs that require CCS connectors (what non-Tesla public chargers typically use)"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately runs the breakeven math to quantify the utilization gap in dollar terms, recommends geographic concentration in high-EV states as the single fastest path to network-level profitability, and treats reliability as a hygiene factor that must be fixed before scaling. A weak answer recommends marketing and awareness campaigns without addressing the structural utilization shortfall — you cannot market your way to profitability if the stations are in the wrong locations.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a classic market entry profitability problem — the pilot is running but below breakeven. I want to use Breakeven Analysis first to understand exactly how far from profitability we are and why, then Market Entry Framework to evaluate whether and how to scale. May I ask one clarifying question?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "The 55% utilization target — is that calculated at the individual stall level or the network level? And do we know what revenue per session and session length the pilot is averaging? That will let me anchor the breakeven math before we develop recommendations. Great — I'll work with $15 per session and 25-minute average sessions."
+      },
+      {
+        "label": "Step 1 — Breakeven Math",
+        "script": "Let me run the numbers. At 55% utilization with stalls available 24 hours per day, that's about 13 hours of active charging — roughly 32 sessions per day at 25 minutes each. At $15 per session, that's $480 per stall per day, or about $175,000 per stall per year at breakeven. Current 31% utilization gives us about $272 per stall per day — $99,000 annually. The gap is roughly $76,000 per stall per year. Across the 150-station pilot with 4 stalls each, that's a $45 million annual shortfall. This is a volume problem, and volume is driven by location and reliability."
+      },
+      {
+        "label": "Step 2 — Market Entry Analysis: Path to Profitability",
+        "script": "Applying the Market Entry Framework: on Demand, EV adoption is 3x higher in California, Oregon, and Washington. If Chevron's 150 pilot stations are not concentrated there, that's likely a major contributor to the 31% utilization. My first recommendation is a geographic triage: map all 8,000 Chevron stations against EV registration density by ZIP code and redeploy the next 200 to 300 charging site investments exclusively in high-EV corridors. On Competitive Position: Tesla has 65% market share and 97% uptime. If Chevron's uptime is below 90%, EV drivers will avoid us after one bad experience. Reliability is a hygiene requirement, not a differentiator. I'd set an internal standard of 95%+ uptime before scaling. On Financials: the breakeven can be improved not just by utilization but by adjacency revenue. A DC fast charge takes 20 to 40 minutes — that's dwell time gas stations have never had. If Chevron invests in fresh food and coffee at pilot convenience stores and captures $8 in additional spend per charging customer at 60% gross margin, that's $4.80 per session in adjacency contribution, which could lower the utilization breakeven from 55% to roughly 45%."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: scale from 150 to 500 stations over 3 years, but be highly selective on geography. Prioritize California, Oregon, and Washington corridors — specifically highway stations where range anxiety is highest and charging dwell time is expected. Fix reliability to 95%+ before scaling. Redesign convenience stores at charging stations for dwell-time monetization. Set a milestone check at 24 months: if average network utilization reaches 45% (adjusted for adjacency revenue), proceed with the remaining rollout. The 3-year profitability target is achievable — but only if we solve the location and reliability problems first, not by spreading capital across 8,000 stations uniformly."
+      }
+    ]
+  },
+  {
+    "id": "scenario_058",
+    "type": "New Market Entry",
+    "company": "Kraft Heinz",
+    "title": "Kraft Entry into Plant-Based Protein",
+    "prompt": "You are a VP of strategy at Kraft Heinz. The plant-based protein category grew 8% annually to reach $8B in US retail sales last year. Kraft Heinz has no products in this category. Should Kraft Heinz enter the plant-based protein market, and if so, how?",
+    "context": "Beyond Meat and Impossible Foods collectively hold 42% of the plant-based meat segment. Private label plant-based products have grown 140% in 2 years. Kraft Heinz has manufacturing relationships with 850 suppliers and owns 6 US production facilities capable of protein processing. Consumer research shows Kraft's brand is associated with 'comfort food' — which has both positive (familiar, trusted) and negative (processed, unhealthy) connotations for plant-based buyers. The plant-based category has seen 18% of SKUs discontinued in the past year due to overhyped demand.",
+    "correctFrameworks": ["Market Entry Framework", "Porter's Five Forces"],
+    "whyThisFramework": "Porter's Five Forces to assess whether the plant-based protein industry is structurally attractive (intense competition, flagging consumer demand, supplier dynamics), then Market Entry Framework to evaluate Kraft's specific capability fit, brand risk, competitive response, and whether to build/buy/partner.",
+    "keyConsiderations": [
+      "Is the plant-based category past peak hype — is entry timing wrong?",
+      "Does Kraft's comfort food brand help or hurt in plant-based positioning?",
+      "Should Kraft acquire a smaller brand vs. launch under existing brands?",
+      "What manufacturing capabilities does Kraft already have that transfer?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "The category grew 8% overall — but is that growth concentrated in specific segments like plant-based burgers, chicken alternatives, or dairy alternatives, and are those segments still growing or are some declining after peak hype?",
+      "When we say 18% of SKUs were discontinued in the past year, is that concentrated among smaller challenger brands or are major players like Beyond Meat also rationalizing?",
+      "What is Kraft Heinz's current gross margin profile — and does plant-based protein at current market pricing offer margin expansion or compression relative to our core portfolio?",
+      "Are we considering entry purely organically, or is an acquisition of a smaller plant-based brand on the table?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Is the Market Structurally Attractive?",
+        "subIssues": [
+          "Applying Porter's Five Forces: is competition among Beyond Meat, Impossible, and private label so intense that structural profitability is impossible for a new entrant?",
+          "Has the consumer demand curve normalized after peak hype — the 18% SKU discontinuation rate and Beyond Meat's stock decline suggest demand is below original projections?",
+          "Are there specific sub-segments within plant-based protein that remain structurally attractive — dairy alternatives, plant-based snacks — where competition is less intense?"
+        ]
+      },
+      {
+        "block": "Does Kraft Have a Right to Win?",
+        "subIssues": [
+          "Kraft's comfort food brand associations — familiar, trusted, indulgent — do these help in a category where buyers want 'healthy and natural,' or is there a fundamental brand misfit?",
+          "Kraft's 6 protein-processing facilities and 850 supplier relationships are manufacturing advantages — but does Kraft have the food science and flavor innovation capability required for plant-based protein development?",
+          "Can Kraft enter through a brand acquisition (e.g., a smaller plant-based brand with consumer credibility) to sidestep the brand misfit problem?"
+        ]
+      },
+      {
+        "block": "Entry Mode: Build, Buy, or Partner?",
+        "subIssues": [
+          "Building under an existing Kraft brand (e.g., Oscar Mayer plant-based sausage) leverages distribution but risks brand dilution if the product underperforms — what's the brand equity risk?",
+          "Acquiring a credible smaller plant-based brand gives consumer credibility and avoids the Kraft brand misfit, but at what valuation multiple and integration complexity?",
+          "A manufacturing partnership with Beyond Meat or a private label white-label agreement gives revenue with minimal brand risk — is this the lowest-risk market test?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Apply Porter's Five Forces to assess attractiveness",
+        "detail": "Rivalry: intense — Beyond Meat, Impossible, and private label (growing 140% in 2 years) create a three-way squeeze. Threat of new entrants: moderate — manufacturing and R&D barriers exist, but private label is already in. Buyer power: high — retailers are demanding cost reductions and rationalizing SKUs (18% discontinued). Supplier power: low — protein ingredient suppliers are commoditized. Substitutes: high — consumers can choose conventional meat, other protein sources, or home-cooked plant-based meals. Verdict: the industry is structurally challenging for a late entrant with a 'me too' product."
+      },
+      {
+        "step": 2,
+        "title": "Assess Kraft's brand fit and manufacturing capability",
+        "detail": "Kraft's brand associations ('comfort food,' 'processed') are directionally misaligned with plant-based buyers who prioritize 'natural,' 'clean label,' and 'health.' However, there is one Kraft brand that could work: Oscar Mayer — it's associated with protein (sausage, hot dogs) and the category already has plant-based versions that are gaining share. Oscar Mayer plant-based is actually lower brand risk than a Kraft-branded launch. Manufacturing: 6 protein processing facilities is a real advantage — Kraft has the infrastructure to produce at scale faster than pure-play plant-based startups."
+      },
+      {
+        "step": 3,
+        "title": "Evaluate entry mode options",
+        "detail": "Option A — Build under Oscar Mayer: leverages existing protein brand equity, uses Kraft's manufacturing and distribution. Medium risk. Recommended as primary path. Option B — Acquire a smaller plant-based brand: could capture a brand with authentic 'natural' positioning (e.g., gardein, Dr. Praeger's). High upfront cost but resolves brand misfit. Option C — Private label manufacturing: supply plant-based products to retailers under their house brand using Kraft's protein facilities. Lowest brand risk, moderate revenue, tests manufacturing before committing to a Kraft-branded launch."
+      },
+      {
+        "step": 4,
+        "title": "Recommend entry with timing caveat",
+        "detail": "Given that 18% of SKUs were discontinued in the past year, Kraft should enter carefully and selectively. Recommend a staged entry: Phase 1 — launch 2-3 Oscar Mayer plant-based SKUs (plant-based hot dogs, plant-based breakfast sausage) in 10 test markets using existing distribution infrastructure. Phase 2 — if trial and repeat rates meet threshold (trial >20% among target households, repeat >35%), scale nationally and explore acquisition of a natural-positioned brand for the premium tier."
+      },
+      {
+        "step": 5,
+        "title": "Set success criteria and risk guardrails",
+        "detail": "Define go/no-go metrics for Phase 1: household trial rate, repeat purchase rate, gross margin (must match or exceed the core portfolio's ~40% target), and brand health tracking for Oscar Mayer (does plant-based entry positively or negatively affect Oscar Mayer's existing buyer base?). Set a $50M investment cap for Phase 1 to limit downside if category demand continues to rationalize."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Porter's Five Forces",
+        "definition": "A framework for assessing industry profitability based on competitive rivalry, new entrant threat, buyer power, supplier power, and substitute threats — used here to determine whether plant-based protein is worth entering"
+      },
+      {
+        "term": "SKU rationalization",
+        "definition": "The discontinuation of underperforming product SKUs — 18% of plant-based protein SKUs being cut signals that retailers are reducing shelf space for the category post-hype"
+      },
+      {
+        "term": "Right to win",
+        "definition": "Whether a company has a distinctive advantage — brand, capability, or asset — that makes success in a new market genuinely achievable, not just financially desirable"
+      },
+      {
+        "term": "Entry mode",
+        "definition": "The method of entering a new market: build (organic development), buy (acquisition), or partner — each carries different speed, cost, and risk tradeoffs"
+      },
+      {
+        "term": "Brand misfit",
+        "definition": "A disconnect between a brand's existing associations and a new category's consumer expectations — Kraft's 'comfort food' image clashing with plant-based buyers seeking 'natural' and 'healthy'"
+      }
+    ],
+    "interviewerExpectations": "A strong answer uses Porter's Five Forces to honestly assess whether the plant-based category is structurally attractive before recommending entry — and notes the 18% SKU discontinuation and intense private label growth as caution signals. The candidate should recommend a staged entry under Oscar Mayer (not 'Kraft brand') and explicitly address the brand fit question. A weak answer enthusiastically recommends entry because the category is 'growing 8%' without noting the structural challenges or the brand misfit risk.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "I want to answer the 'should we enter' question before I answer 'how.' An 8% annual growth rate is attractive on the surface, but a few data points in this case give me pause — and I think the interviewer wants me to notice them. I'll use Porter's Five Forces to assess structural attractiveness, then Market Entry Framework to evaluate Kraft's specific fit and the best entry mode. Let me ask one clarifying question first."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "When we say 18% of SKUs were discontinued last year, is that concentrated among smaller challenger brands, or are Beyond Meat and Impossible also rationalizing their portfolios? And is the 8% category growth concentrated in specific segments — dairy alternatives, for example — or is plant-based meat (the most competitive segment) also still growing at that rate? Thank you — that's an important distinction."
+      },
+      {
+        "label": "Step 1 — Porter's Five Forces Assessment",
+        "script": "Let me run through the Five Forces quickly. Rivalry is intense: Beyond Meat and Impossible hold 42% combined, and private label is growing 140% in two years — that's a squeeze from both the premium and value ends. Buyer power — retailers — is high: they're already pulling SKUs and pushing for margin concessions, and a late entrant from Kraft would face tough shelf negotiation. New entrant threat is moderate but private label is effectively already in. Substitutes are high: consumers can choose conventional meat, which is rebounding as plant-based hype fades. Supplier power is low. The verdict on attractiveness: this category is structurally challenged for a late entrant with a standard product. The 18% SKU discontinuation rate is the biggest red flag — it tells us the market is rationalizing, not expanding. Entry is possible, but only with a clear right to win."
+      },
+      {
+        "label": "Step 2 — Kraft's Right to Win and Entry Mode",
+        "script": "Does Kraft have a right to win? Two assets matter: manufacturing — 6 US protein processing facilities is a real scale advantage that plant-based startups don't have. But brand — here's the problem. Kraft's core associations are 'comfort food,' 'familiar,' 'processed.' Plant-based buyers want 'natural,' 'clean,' 'healthy.' That's a misfit. However, Kraft owns Oscar Mayer, which is already associated with protein — hot dogs, sausage, breakfast meats. Oscar Mayer plant-based is a more credible play than Kraft-branded plant-based. On entry mode, I recommend against a big acquisition right now — valuations for established plant-based brands are declining alongside category sentiment, but they haven't hit bottom yet. Instead, I recommend a staged organic entry: launch 2-3 Oscar Mayer plant-based SKUs — plant-based hot dogs and breakfast sausages — in 10 test markets using Kraft's existing distribution. This tests consumer response with low capital risk before committing to full national launch."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is: enter, but selectively and staged. Do not enter under the Kraft brand — brand misfit is too high. Enter under Oscar Mayer in the specific protein segments where that brand has existing equity: hot dogs and sausage. Use Kraft's manufacturing infrastructure to compete on cost and scale, which private-label competitors are already proving is viable. Set a $50 million Phase 1 investment ceiling and clear go/no-go metrics: 20% trial rate among target households, 35% repeat rate, and gross margin at or above the current Kraft portfolio average of 40%. If those metrics are met in test markets after 12 months, scale nationally. If not, the staged approach limits the downside exposure significantly. The category is growing but rationalizing — the right move is a disciplined toe in the water, not a platform acquisition."
+      }
+    ]
+  },
+  {
+    "id": "scenario_059",
+    "type": "New Market Entry",
+    "company": "Hilton",
+    "title": "Hilton Entry into Extended Stay Segment",
+    "prompt": "You are a senior director of brand strategy at Hilton. The extended stay hotel segment ($18B US market) is growing at 6.2% annually — faster than traditional hotels at 3.1%. Hilton's current extended stay brand, Homewood Suites, has 520 properties. WoodSpring Suites (economy) and Sonesta ES Suites are gaining share at the economy and mid-scale tiers. Should Hilton launch a new extended stay brand targeting the underserved upscale segment?",
+    "context": "Extended stay guests average 14-night stays vs. 2.1 nights for traditional hotel guests. Occupancy rates in extended stay are 77% vs. 65% for traditional hotels. Marriott's TownePlace Suites has 510 properties and is adding 40 per year. The upscale extended stay segment (ADR above $150/night) has only 3 brands with fewer than 800 total properties nationally. Corporate relocation and project-based workers represent 58% of extended stay demand. Remote work has increased leisure extended stays by 34% since 2021.",
+    "correctFrameworks": ["Market Entry Framework", "STP"],
+    "whyThisFramework": "Market Entry Framework to evaluate whether the upscale extended stay segment has sufficient demand, manageable competitive response, and fits Hilton's brand and franchising capability, then STP to define the precise guest profile, targeting strategy, and positioning that differentiates a new Hilton upscale extended stay brand from Homewood Suites.",
+    "keyConsiderations": [
+      "Does launching a new brand cannibalize Homewood Suites or address a truly different segment?",
+      "Is the upscale extended stay segment large enough to support 200+ new properties?",
+      "What do corporate relocation buyers value most — brand recognition or suite amenities?",
+      "Can Hilton attract franchisees to a new brand in a competitive development environment?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "What is Homewood Suites' current Average Daily Rate and how does that position it — is it mid-scale or already upscale, and is there a clear white space above $150/night ADR?",
+      "Of the 58% of extended stay demand from corporate relocation and project workers, which companies or industries are generating this demand and do they have preferred vendor relationships that a new Hilton brand could tap into?",
+      "Has Hilton tested the upscale extended stay concept with any franchise development conversations — is there franchisee appetite for a higher-ADR extended stay brand given the land and construction costs?",
+      "How is 'upscale extended stay' defined — is it ADR above $150, suite square footage, amenity level, or guest profile?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Market Opportunity: Is the Upscale Segment Real?",
+        "subIssues": [
+          "With fewer than 800 properties in upscale extended stay nationally, is the small supply a signal of unmet demand or of insufficient demand to support development economics?",
+          "What is the total revenue opportunity for a new brand targeting the upscale tier — if Hilton develops 200 properties at 150 rooms with 77% occupancy and $180 ADR, what is the annual top-line?",
+          "Is the 34% increase in leisure extended stays post-remote work a durable structural shift or a temporary COVID-era anomaly that's already normalizing?"
+        ]
+      },
+      {
+        "block": "Cannibalization Risk vs. Differentiation from Homewood Suites",
+        "subIssues": [
+          "What is Homewood Suites' current ADR, service level, and target guest — and is there a meaningful upscale white space above it, or would a new brand simply pull demand from Homewood?",
+          "Are corporate relocation program buyers choosing Homewood Suites or going to competitors for upscale extended stays — and would a Hilton upscale brand capture those program dollars?",
+          "How does Hilton's brand architecture handle two extended stay brands competing for hotel development capital and franchisee interest?"
+        ]
+      },
+      {
+        "block": "Franchisee and Development Economics",
+        "subIssues": [
+          "What is the development cost per room for an upscale extended stay property vs. a mid-scale property, and at what ADR and occupancy does a franchisee reach their investment return hurdle?",
+          "Is the franchisee community bullish on extended stay given 77% industry occupancy rates, or is the higher room buildout cost (full kitchens, larger suites) a deterrent?",
+          "What conversion opportunity exists — can Hilton convert existing apartment complexes, corporate housing, or traditional hotel properties into upscale extended stay with lower capital investment?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Size the upscale segment opportunity",
+        "detail": "Calculate the revenue potential: $18B total extended stay market growing at 6.2% implies the market reaches ~$21.7B in 3 years. If upscale extended stay (ADR >$150) is currently 25% of the market, that's a ~$4.3B addressable segment growing proportionally. A new Hilton brand targeting 200 properties at 150 rooms, 77% occupancy, $180 ADR: 200 × 150 × 365 × 77% × $180 = approximately $1.5B in system-wide room revenue at maturity — a meaningful number."
+      },
+      {
+        "step": 2,
+        "title": "Apply Market Entry Framework",
+        "detail": "Demand: corporate relocation (58% of demand) plus the post-COVID 34% leisure extended stay growth creates credible demand signal for an upscale tier. Competition: only 3 brands with <800 properties nationally in upscale extended stay — this is genuinely underserved. Capability: Hilton has franchising expertise, loyalty program (Hilton Honors), and brand distribution. Risk: Marriott is adding 40 TownePlace Suites per year — they will likely respond in the upscale tier if Hilton moves. Verdict: the opportunity is real, but speed-to-market matters."
+      },
+      {
+        "step": 3,
+        "title": "Apply STP to define the new brand",
+        "detail": "Segment: the new brand should target the corporate relocation and project-worker segment, specifically companies with 50-500 employees doing cross-country relocations or 4-12 week project deployments. These buyers have corporate travel program relationships and care about consistent experience, Hilton Honors points, and professional amenities (high-speed internet, workspace in suite, laundry). Positioning: 'Home + Hilton' — all the comfort of a premium residence with the reliability and loyalty perks of a Hilton property. This differentiates from Homewood Suites (more mid-scale, family-oriented) and from apartment short-term rentals (no loyalty program, inconsistent quality)."
+      },
+      {
+        "step": 4,
+        "title": "Assess cannibalization vs. incremental capture",
+        "detail": "Quantify the overlap risk: if Homewood Suites is already at the low end of upscale (ADR $130-150), a new brand at ADR $170-200 would address a genuinely different buyer. Conduct a guest research study among corporate relocation program managers to determine: (a) are they currently booking Homewood Suites or competitor brands for upscale extended stay? (b) would a purpose-built upscale Hilton brand capture incremental corporate program dollars that currently go to Marriott or Hyatt?"
+      },
+      {
+        "step": 5,
+        "title": "Development economics and franchisee strategy",
+        "detail": "Recommend a conversion-first development strategy: identify existing hotel properties, corporate housing, or apartment complexes in major corporate relocation markets (Dallas, Atlanta, Houston, Chicago) that can be converted to upscale extended stay at lower cost than greenfield development. Target 20-30 converted properties in Year 1 as proof-of-concept for franchisee investment. The 77% industry occupancy rate and ADR premium make the unit economics compelling for the right location."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ADR (Average Daily Rate)",
+        "definition": "The average revenue earned per occupied hotel room per night — the key pricing metric for hotel positioning; upscale extended stay is defined here as ADR above $150/night"
+      },
+      {
+        "term": "Extended stay segment",
+        "definition": "Hotel properties designed for stays of 5 nights or longer, typically featuring full kitchens, separate living areas, and amenities for long-term residents — 77% occupancy vs. 65% for traditional hotels reflects strong underlying demand"
+      },
+      {
+        "term": "Corporate relocation program",
+        "definition": "Preferred vendor contracts between corporations and hotel brands for housing employees during relocations or project assignments — these generate high-volume, predictable demand and are the primary extended stay revenue driver"
+      },
+      {
+        "term": "Franchisee development appetite",
+        "definition": "The willingness of hotel franchisees (independent investors) to build or convert properties to a specific brand — without franchisee interest, Hilton cannot scale a new brand regardless of consumer demand"
+      },
+      {
+        "term": "Brand cannibalization",
+        "definition": "When a new brand pulls revenue from an existing brand within the same company's portfolio rather than capturing new demand — the primary risk in launching a Hilton upscale extended stay brand alongside Homewood Suites"
+      }
+    ],
+    "interviewerExpectations": "A strong answer sizes the upscale segment opportunity with the actual numbers (77% occupancy, ADR math, market size), directly addresses the Homewood Suites cannibalization risk with a clear position on whether the segments are truly distinct, and includes a development economics view on franchisee appetite. A weak answer recommends launching the brand without assessing whether the cannibalization risk is real or whether franchisees would actually develop the properties.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "There are three questions embedded in this decision: Is the upscale extended stay segment genuinely underserved? Does a new Hilton brand capture incremental demand or cannibalize Homewood Suites? And can Hilton attract the franchisee investment to scale a new brand? I'll use the Market Entry Framework to work through these, then STP to define what the brand should look like. A quick question before I begin."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "What is Homewood Suites' current ADR — is it firmly mid-scale, say $120 to $140, or has it drifted toward $150? That positioning determines whether an upscale brand at $170 to $200 is addressing a true white space or cannibalizing the upper tier of Homewood. And have we had any franchise development conversations to gauge interest — because a new brand without franchisee appetite is just a strategy document. Thank you."
+      },
+      {
+        "label": "Step 1 — Market Attractiveness",
+        "script": "Starting with the opportunity: the $18B extended stay market growing at 6.2% reaches roughly $22B in 3 years. If the upscale tier is 25% of the market, that's a $5B segment. There are currently fewer than 800 properties in upscale extended stay nationally — that's genuinely underbuilt relative to demand, especially with 77% industry occupancy rates signaling that supply is tight. A new Hilton brand developing 200 properties at 150 rooms, 77% occupancy, $180 ADR generates approximately $1.5 billion in system-wide room revenue at scale. That's a real business. Competition from Marriott's TownePlace Suites is notable — they're adding 40 properties per year — but TownePlace is mid-scale. The true upscale tier above $150 ADR is competitively thin."
+      },
+      {
+        "label": "Step 2 — Cannibalization and STP",
+        "script": "The critical question is whether a new upscale brand cannibilizes Homewood Suites. My view is that it doesn't, if we position it correctly. Homewood Suites targets families and value-conscious business travelers at a mid-scale price point. The new brand should target corporate relocation program buyers — specifically HR departments and relocation management companies at mid-size firms doing multi-week employee relocations. This buyer cares about professional amenities, consistency, Hilton Honors integration for employee points, and a premium residential feel that Homewood doesn't fully deliver. The positioning: think of it as 'a premium residence with the Hilton reliability guarantee' — targeted at the corporate program buyer who currently books Marriott Residence Inn or Hyatt House because there's no Hilton option at that tier. That's incremental demand, not cannibalization."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is yes — launch the brand, but with a conversion-first development strategy. Rather than requiring franchisees to build greenfield upscale extended stay properties (high capital cost), identify existing hotel properties or corporate housing assets in the top corporate relocation markets — Dallas, Atlanta, Houston, Chicago — that can be converted to the new brand standard at lower capital investment. Target 20-30 converted properties in Year 1 as proof of concept. If those properties reach 75% occupancy and $170+ ADR within 18 months, you have the franchisee case study to attract full-scale development interest. The 77% industry occupancy and the premium-over-Homewood ADR make the unit economics compelling — franchisees will respond to proof, not projections."
+      }
+    ]
+  },
+  {
+    "id": "scenario_060",
+    "type": "New Market Entry",
+    "company": "Walmart",
+    "title": "Walmart Entry into Healthcare Clinics",
+    "prompt": "You are a VP of strategy at Walmart. Walmart is considering expanding its in-store health clinic pilot from 32 locations to 600 locations over 4 years, investing $1.2B. The US primary care market is $260B. CVS Health's MinuteClinics operate 1,100 locations. Should Walmart scale this initiative?",
+    "context": "Walmart's 32 pilot clinics average 38 patient visits per day vs. MinuteClinic's 22 visits per day. Walmart Health clinics offer primary care, labs, dental, and behavioral health — broader than most retail clinics. Average revenue per visit is $90. Fixed costs per clinic are $2.1M annually (staffing, equipment, lease). Variable cost is $61 per visit. Contribution margin per visit is $29. Walmart store traffic averages 18,000 visits per week. Walmart's core customer skews lower-income and more likely to be uninsured or on Medicaid.",
+    "correctFrameworks": ["Breakeven Analysis", "Market Entry Framework"],
+    "whyThisFramework": "Breakeven Analysis to determine whether the unit economics work at scale (visits needed per clinic to cover $2.1M fixed cost, contribution margin per visit), then Market Entry Framework to assess competitive dynamics (CVS, Amazon Clinic, telehealth), regulatory complexity, and Walmart's brand and operational fit for healthcare.",
+    "keyConsiderations": [
+      "How many daily visits does each clinic need to break even?",
+      "Is healthcare delivery consistent with Walmart's operational and brand capabilities?",
+      "How does Walmart navigate Medicaid reimbursement complexity across 50 states?",
+      "What is the strategic value of healthcare beyond clinic P&L — does it drive store traffic?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "The $90 average revenue per visit — is that actual collected revenue net of insurance adjustments and Medicaid reimbursement rates, or is it billed charges before payer negotiations?",
+      "Of the 38 patient visits per day at pilot clinics, what is the payer mix — percentage insured, Medicaid, uninsured paying cash — because reimbursement rates vary dramatically by payer?",
+      "Does the $1.2B investment over 4 years include only clinic buildout, or does it include technology infrastructure, EMR systems, and the operating losses during the ramp-up period?",
+      "What is the average time to reach steady-state utilization at a new pilot clinic — how long did it take the current 32 locations to reach 38 visits per day?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Unit Economics: Does Each Clinic Break Even?",
+        "subIssues": [
+          "With $2.1M in fixed costs and $29 contribution margin per visit, how many annual visits are needed to break even, and does the current 38 visits/day exceed that threshold?",
+          "What happens to the breakeven when payer mix shifts toward Medicaid (typically $50-60 per visit reimbursement vs. commercial insurance at $90+)?",
+          "How many years does a new clinic take to reach the 38 visits/day that pilot clinics are averaging, and what is the cumulative operating loss during ramp-up?"
+        ]
+      },
+      {
+        "block": "Strategic Value Beyond Clinic P&L",
+        "subIssues": [
+          "Does a Walmart Health clinic increase store visit frequency or basket size among patients — if so, what is the incremental retail revenue attributable to each clinic?",
+          "Does healthcare delivery strengthen Walmart's competitive position vs. Amazon and Target by creating a service moat that drives loyalty beyond price?",
+          "Is there a pharmacy prescription volume benefit — do clinic visits drive incremental Walmart pharmacy revenue, and if so, what is that halo value per clinic?"
+        ]
+      },
+      {
+        "block": "Operational and Regulatory Risks at Scale",
+        "subIssues": [
+          "Healthcare regulation — staffing requirements, Medicaid provider enrollment, state medical board rules — varies dramatically across 50 states; is Walmart prepared to manage this complexity across 600 locations?",
+          "CVS MinuteClinic has 1,100 locations but a narrower service model; does Walmart's broader service offering (dental, behavioral health) create proportionally greater staffing and compliance complexity?",
+          "What happens if one highly visible medical error occurs at a Walmart Health clinic — how does the reputational risk to the Walmart brand differ from the risk CVS faces?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Run the breakeven calculation",
+        "detail": "Fixed cost per clinic: $2.1M annually. Contribution margin per visit: $29 (revenue $90 - variable cost $61). Breakeven visits = $2,100,000 / $29 = 72,414 visits per year, or approximately 198 visits per day. Wait — that doesn't match pilot data of 38 visits/day. Let me recalculate: 38 visits/day × 365 days = 13,870 visits/year × $29 = $402,000 contribution — far short of $2.1M fixed costs. This means the pilot clinics are NOT profitable at 38 visits/day — the breakeven is actually 198 daily visits. This is the critical finding: the pilot clinics are losing roughly $1.7M per year per location. Confirm this math and if correct, it fundamentally changes the recommendation."
+      },
+      {
+        "step": 2,
+        "title": "Reconcile the math or identify missing revenue",
+        "detail": "The gap between 38 daily visits and 198 daily breakeven visits is enormous. Before concluding this is a bad business, identify whether there are revenue streams not captured in the $90/visit average: pharmacy referral revenue, lab revenue, Walmart+ membership upsells, or retail basket uplift from clinic patients. Request the fully-loaded P&L for pilot clinics, not just the visit-based contribution calculation. If pharmacy halo and basket uplift add $50,000+ per clinic per year, the breakeven may be more achievable — but even so, 38 visits vs. 198 needed is a very large gap."
+      },
+      {
+        "step": 3,
+        "title": "Apply Market Entry Framework",
+        "detail": "Demand: 60% of US counties are medically underserved and Walmart's lower-income customer base has acute primary care access needs — real, structural demand. Competition: CVS MinuteClinic, Amazon Clinic (telehealth), and retail competitors are all moving into this space. Capability: healthcare delivery is fundamentally different from retail — hiring physicians, managing medical liability, navigating Medicaid reimbursement across 50 states, and ensuring consistent quality at 600 locations requires capabilities Walmart doesn't currently have at scale. Brand risk: a medical error at a Walmart clinic has reputational consequences that exceed financial losses."
+      },
+      {
+        "step": 4,
+        "title": "Evaluate strategic alternatives to full rollout",
+        "detail": "Rather than committing $1.2B to 600 locations, consider three alternatives: (A) Scale more slowly to 100 locations over 2 years, test the breakeven model in diverse geographies and payer mixes. (B) Partner with an established healthcare provider (e.g., Humana, which Walmart explored) to manage clinical operations while Walmart provides real estate and traffic. (C) Narrow the model to focus on Walmart's highest-traffic stores in medically underserved markets where the mission and economics align most clearly."
+      },
+      {
+        "step": 5,
+        "title": "Make a recommendation with risk-adjusted framing",
+        "detail": "Recommendation: Do not commit to 600 locations and $1.2B until the unit economics are reconciled. The 38 visits/day pilot data implies significant losses at the clinic level if the $29 contribution margin math is correct. Commission a full-P&L audit of the pilot clinics including all revenue streams. If pilot clinics are actually near breakeven when pharmacy and basket uplift are included, recommend scaling to 100 high-traffic, medically-underserved locations with a partnership model. If clinics are losing $1.5M+ per location annually, pause the expansion and redesign the model."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Contribution margin",
+        "definition": "Revenue minus variable costs per unit — here $90 revenue minus $61 variable cost = $29 per visit, which must cover the $2.1M annual fixed cost across all visits"
+      },
+      {
+        "term": "Breakeven analysis",
+        "definition": "The calculation of volume (visits) needed to cover all costs — at $29 contribution margin and $2.1M fixed costs, breakeven requires ~72,000 visits per year or ~198 per day"
+      },
+      {
+        "term": "Payer mix",
+        "definition": "The distribution of patients by insurance type — commercial insurance, Medicaid, and uninsured — with Medicaid reimbursing significantly less than commercial insurance per visit"
+      },
+      {
+        "term": "Medically underserved area",
+        "definition": "A geographic region with insufficient primary care access relative to population need, as designated by the US government — 60% of US counties qualify, representing Walmart's strongest strategic rationale"
+      },
+      {
+        "term": "Halo revenue",
+        "definition": "Indirect revenue generated by an adjacent business — in this case, the incremental pharmacy prescriptions and retail basket spend driven by patients visiting a Walmart Health clinic"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately runs the breakeven math and catches the critical discrepancy — 38 visits/day vs. ~198 visits/day needed to cover $2.1M in fixed costs — and treats this as the central analytical finding rather than accepting the pilot as successful. Recommending a pause or scaled-back rollout pending unit economics clarity demonstrates the kind of financial rigor interviewers want. A weak answer accepts the 38 visits/day pilot as evidence of success and recommends full rollout without checking whether the clinic contribution covers fixed costs.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "I want to start with the unit economics before making any recommendation, because the numbers in this case have a critical implication I want to work through. I'll use Breakeven Analysis first, then Market Entry Framework to assess the strategic picture. Can I ask one quick clarifying question?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "The $90 average revenue per visit — is that net collected revenue after Medicaid and insurance adjustments, or is it billed charges before payer discounts? And is the $2.1M annual fixed cost per clinic fully loaded including the allocated lease cost, or is that being subsidized by Walmart's existing store lease? The answer to both significantly changes the breakeven calculation. I'll proceed on the assumption that $90 is net revenue and $2.1M is the fully-loaded cost."
+      },
+      {
+        "label": "Step 1 — Breakeven Math (The Critical Finding)",
+        "script": "Let me run the breakeven. Fixed cost per clinic: $2.1 million per year. Contribution margin per visit: $90 revenue minus $61 variable cost equals $29 per visit. Breakeven visits equals $2.1 million divided by $29, which is approximately 72,400 visits per year — or about 198 visits per day. The pilot clinics are averaging 38 visits per day. That's 38 versus 198 — the pilot clinics are generating about $402,000 in contribution margin against $2.1 million in fixed costs, implying a loss of roughly $1.7 million per clinic per year. Before I recommend scaling to 600 locations and investing $1.2 billion, I have to ask: is the pilot clinic P&L actually showing losses of $1.7 million each? If yes, this is a troubled model, not a proven concept. If no, there are revenue streams — pharmacy halo, basket uplift, Walmart+ memberships — that aren't captured in the $90 per visit number, and I need to understand those before recommending expansion."
+      },
+      {
+        "label": "Step 2 — Market Entry Framework",
+        "script": "Setting the unit economics question aside temporarily, let me assess the strategic picture with Market Entry Framework. On Demand: the case for need is real — 60% of US counties are medically underserved, Walmart's core customers are lower-income and more likely to be uninsured or on Medicaid, and Walmart pilots are generating 38 visits per day versus MinuteClinic's 22. There is genuine demand. On Competition: CVS has 1,100 locations but with a narrower model. Amazon Clinic is growing in telehealth. The space is competitive but not yet consolidated at scale. On Capability: this is my biggest concern. Healthcare delivery at scale requires physician credentialing, medical liability management, Medicaid provider enrollment in 50 states with different rules, and consistent clinical quality across 600 locations. This is categorically different from Walmart's retail operational competency. On Brand Risk: a medical error at a Walmart clinic carries reputational consequences that a CVS or hospital system can absorb more readily."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: do not commit to $1.2 billion and 600 locations today. The unit economics as presented don't support it — 38 daily visits against a 198-visit breakeven is a $1.7 million annual loss per clinic. Before scaling, commission a complete P&L audit of the 32 pilot clinics that captures all revenue streams including pharmacy referrals and retail basket uplift. If that audit reveals the actual fully-loaded economics are near breakeven or better, then I'd recommend a staged scale to 100 locations over 2 years — concentrated in medically underserved high-traffic markets — with a healthcare operations partner to manage clinical and regulatory complexity. If the economics remain as stated — deep losses per location — then Walmart should redesign the model: narrower scope, higher visit volume through telemedicine integration, or a joint venture where a healthcare operator carries the clinical risk. The mission case is compelling. The financial case, as presented, is not."
+      }
+    ]
+  }
+]

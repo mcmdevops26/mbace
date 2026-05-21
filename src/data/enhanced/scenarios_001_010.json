@@ -1,0 +1,1264 @@
+[
+  {
+    "id": "scenario_001",
+    "type": "Private Label Competition",
+    "company": "Tide (P&G)",
+    "title": "Tide vs. Store Brand Detergent",
+    "prompt": "You are the brand manager for Tide. In the last 18 months, Costco's Kirkland laundry detergent has grown from 8% to 14% category share, primarily by pricing 40% below Tide. Tide's volume is down 6% though revenue is roughly flat due to a price increase last year. What would you do?",
+    "context": "The US laundry detergent market is $8B annually. Tide holds 38% share. Kirkland is rated comparably to Tide in consumer tests. Tide's primary differentiators have been its scent technology and brand equity built over 70+ years. The category's heaviest buyers are households with children.",
+    "correctFrameworks": ["3C's", "4P's"],
+    "whyThisFramework": "3C's to diagnose the competitive threat and consumer shift, then 4P's to develop the tactical response — specifically differentiating on Product and Promotion since Price is a losing battle against private label.",
+    "keyConsiderations": [
+      "Differentiation is the magic word — you cannot beat private label on price",
+      "What do consumers value beyond low price? What drives loyalty?",
+      "Where can Tide go that Kirkland can't (specialty retail, premium formats)?",
+      "Is the brand equity still resonating with younger buyers?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Has the 6% volume decline been uniform across all retail channels, or is it concentrated at Costco specifically — i.e., are we losing share at Costco while holding elsewhere?",
+      "What does our consumer research show about who is switching to Kirkland — are these long-time Tide loyalists or more price-sensitive occasional buyers?",
+      "Is Tide's margin per unit currently healthy enough to fund increased marketing investment, or is P&G expecting this brand to be a cash cow right now?",
+      "Are there any planned product innovations in the pipeline — new scent technologies, eco-formats, or pod/sheet formats — that could create a non-comparable SKU?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Consumer Dynamics",
+        "subIssues": [
+          "Which consumer segments are switching to Kirkland and why?",
+          "Is the Tide brand still generating purchase intent among households with children — our highest-value segment?",
+          "What emotional and functional drivers still anchor loyalty among Tide's core buyers?"
+        ]
+      },
+      {
+        "block": "Competitive Positioning",
+        "subIssues": [
+          "In what product attributes can Tide demonstrably outperform Kirkland (scent, stain performance, specialty formats)?",
+          "Can Tide create formats or SKUs that Costco's private label cannot credibly replicate?",
+          "Where in the retail landscape does Tide have distribution advantages Kirkland lacks?"
+        ]
+      },
+      {
+        "block": "Commercial Response Options",
+        "subIssues": [
+          "Should Tide respond with a value-tier fighter brand, or double down on premium differentiation?",
+          "How should Tide's marketing mix shift — more toward digital and in-store vs. broadcast — to defend at the moment of purchase?",
+          "What promotional mechanics (loyalty programs, larger pack formats) can increase switching cost without a direct price cut?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the Business Impact",
+        "detail": "Establish the financial stakes: Tide holds 38% of an $8B market, roughly $3B in revenue. A 6% volume decline at flat revenue means we traded volume for price — calculate what a continued 6% annual volume loss means in 3 years versus the margin benefit of the price increase. This frames whether the current strategy is sustainable."
+      },
+      {
+        "step": 2,
+        "title": "Diagnose the Consumer Segment Losing",
+        "detail": "Using the 3C's Consumer lens, determine who is defecting: are switchers price-sensitive occasional buyers or formerly loyal heavy users (households with children)? If it's the latter, that is an existential threat. Request segmented volume data by household type and purchase frequency."
+      },
+      {
+        "step": 3,
+        "title": "Assess Kirkland's True Competitive Threat",
+        "detail": "Apply the 3C's Competitor lens: Kirkland is rated comparably in consumer tests, priced 40% below, and only available at Costco. That means Tide's threat is channel-specific (bulk-buying households). Kirkland cannot replicate Tide's scent innovation, specialty SKUs (Pods, HE formulas, free-and-gentle), or its presence in drug and grocery channels."
+      },
+      {
+        "step": 4,
+        "title": "Design the 4P Response — Lead with Product and Promotion",
+        "detail": "Price is the wrong battleground. Instead: Product — accelerate launch of differentiated formats like Tide Pods or a next-gen scent technology that Kirkland cannot copy. Promotion — rebuild emotional brand equity through campaigns targeting the household-with-children segment, emphasizing the 'confidence every wash' message that generic brands cannot credibly own."
+      },
+      {
+        "step": 5,
+        "title": "Evaluate a Fighter Brand vs. Premium Defense",
+        "detail": "Assess whether P&G should launch a value-tier detergent under a different brand name to compete on price without diluting Tide's premium equity. This protects Tide's positioning while giving price-sensitive buyers a P&G option. Recommendation: pursue premium defense for Tide while evaluating a fighter SKU in Costco-specific pack sizes."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Private Label",
+        "definition": "Store-brand products manufactured for and sold exclusively by a specific retailer (e.g., Costco's Kirkland), typically priced 20-40% below national brands with comparable quality."
+      },
+      {
+        "term": "3C's Framework",
+        "definition": "A strategic analysis tool examining Company (internal capabilities), Customers (consumer needs and behavior), and Competitors (competitive landscape) to diagnose a business situation."
+      },
+      {
+        "term": "Fighter Brand",
+        "definition": "A lower-priced sub-brand launched by a premium brand owner to compete against private label or value competitors without diluting the flagship brand's premium positioning."
+      },
+      {
+        "term": "Category Share",
+        "definition": "A brand's percentage of total category sales (by volume or dollar), used to track competitive position — Kirkland grew from 8% to 14% category share in 18 months."
+      },
+      {
+        "term": "HE Formula",
+        "definition": "High-Efficiency detergent formulation designed for front-loading washing machines, a product innovation that generics were slower to develop — an example of format-based differentiation."
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately frames this as a differentiation problem — not a price problem — and structures the response around the 3C's before moving to a 4P's action plan, leading with Product and Promotion rather than Price. A weak answer jumps straight to 'Tide should lower its price' or offers generic recommendations without connecting to the specific numbers (38% share, $8B market, 40% price gap).",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Thanks for this case. Before I dive in, I want to make sure I understand the situation. We have Tide, holding 38% of an $8B market — so roughly $3 billion in revenue — and Kirkland has doubled its share from 8% to 14% in just 18 months, priced 40% below us. Tide's volume is down 6%, but revenue is roughly flat because of a price increase. So we've traded volume for price. My instinct is that the core question here is not 'how do we compete on price' — it's 'how do we justify the premium and stop the share bleed.' I'd like to use the 3C's to diagnose the situation, then move into the 4P's to design the response. Is that a reasonable approach?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I structure this, a few quick questions. First, is the volume decline concentrated at Costco specifically, or are we seeing defection across all channels? Second, do we have data on who's switching — are these heavy-user households with children, or more occasional buyers? And third, does Tide have any differentiated innovation in the pipeline — next-gen scent technology, new pod formats — that isn't yet in market?"
+      },
+      {
+        "label": "Step 1 — Consumer Analysis",
+        "script": "Let me start with the consumer. The context tells us the heaviest buyers are households with children — that's our highest lifetime-value segment. If those households are the ones switching to Kirkland, that's an existential threat. If it's more occasional buyers, we can afford to let some of them go. I'd want to segment the volume loss to know exactly who we're losing. What Kirkland can't replicate is the emotional trust Tide has built over 70 years with parents who care deeply about getting their kids' clothes clean. That's a real insight we can build on."
+      },
+      {
+        "label": "Step 2 — Competitive Reality Check",
+        "script": "On the competitor side, Kirkland has two structural limitations Tide should exploit. One — it's only available at Costco. Tide is everywhere: grocery, drug, online. Two — Kirkland can copy a basic formula, but it cannot credibly launch a Tide Pods equivalent, a free-and-gentle hypoallergenic line, or a high-efficiency formula with the same speed. So our competitive moat is in format innovation and specialty SKUs that require the kind of R&D investment and brand credibility that Kirkland simply doesn't have."
+      },
+      {
+        "label": "Step 3 — 4P's Response",
+        "script": "Now for the action plan. On Product — we should accelerate any differentiated format in the pipeline. Tide Pods, a next-generation scent technology, or a premium concentrated formula that delivers better performance-per-load than Kirkland. On Price — I would not recommend cutting price. That destroys margin and signals that the premium was unjustified. On Place — Costco is actually a question: should Tide offer a Costco-exclusive large-format SKU that closes some of the price gap while keeping standard retail pricing intact? That's worth modeling. On Promotion — we need to rebuild the emotional connection. A campaign that speaks directly to parents — 'Tide gets it clean the first time, every time' — leans into the 70-year trust story that no private label can claim."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is a three-part response. First, defend premium positioning through product innovation — launch a non-comparable format like an advanced pod or scent-tech SKU within 12 months that Kirkland cannot replicate. Second, rebuild brand equity with a targeted Promotion campaign focused on the household-with-children segment, our highest-value buyers. Third, evaluate a Costco-specific large-format Tide SKU to partially close the price gap in that channel without disrupting broader retail pricing. I would explicitly not recommend cutting Tide's price — that's a race to the bottom against a retailer with structural cost advantages we can never match. The goal is to make Kirkland look like a compromise, not just a deal."
+      }
+    ]
+  },
+  {
+    "id": "scenario_002",
+    "type": "Private Label Competition",
+    "company": "Heinz (Kraft Heinz)",
+    "title": "Heinz Ketchup vs. Private Label Squeeze",
+    "prompt": "Heinz ketchup commands a 60% dollar share of the US ketchup market but private label ketchup at Walmart and Target has grown from 12% to 19% share over three years, driven by identical packaging design and pricing 35% below Heinz. Consumer research shows 42% of Heinz buyers say they 'can't tell the difference' in blind taste tests. What would you recommend?",
+    "context": "The US ketchup market is $1.2B. Heinz's average retail price is $4.49 for a 32oz bottle vs. $2.99 for store brand. Heinz's marketing spend has been declining 8% YoY for the past 3 years as the company focused on cost-cutting post-merger. The brand skews heavily toward households 35+.",
+    "correctFrameworks": ["3C's", "4P's", "Value Chain Analysis"],
+    "whyThisFramework": "3C's reveals the structural vulnerability (declining investment, aging consumer base, commodity perception). 4P's frames the response. Value Chain Analysis identifies where Heinz can rebuild differentiation — likely in sourcing, innovation, or distribution advantages the private label cannot replicate.",
+    "keyConsiderations": [
+      "If consumers can't taste a difference, the brand must create a reason to believe beyond taste",
+      "Declining marketing spend is the root cause — must rebuild brand equity investment",
+      "Packaging and in-store design must visually reinforce premium positioning",
+      "Consider whether a flanking fighter brand makes sense vs. defending core Heinz"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is the 42% 'can't tell the difference' figure from a true blind taste test, or does some packaging context remain — because that distinction matters a lot for how defensible the taste claim is?",
+      "Has Heinz's 8% annual marketing spend decline been uniform across all vehicles, or has it come disproportionately from brand advertising versus trade promotion?",
+      "What is the current gross margin spread between Heinz and the private label manufacturers — does Heinz have enough margin to invest in innovation without a pricing intervention?",
+      "Are there any product attributes — tomato sourcing quality, absence of high-fructose corn syrup, non-GMO — where Heinz genuinely outperforms store brand that we haven't communicated?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Brand Equity Deficit",
+        "subIssues": [
+          "How much brand equity has been eroded by three consecutive years of 8% marketing spend cuts?",
+          "Is the 'can't tell the difference' perception driven by genuine product parity or by lack of brand communication?",
+          "Can a targeted marketing reinvestment rebuild purchase intent among the 35+ core base and attract younger buyers?"
+        ]
+      },
+      {
+        "block": "Product & Sourcing Differentiation",
+        "subIssues": [
+          "Are there authentic ingredient or sourcing differences (vine-ripened tomatoes, specific suppliers) that Heinz can credibly own?",
+          "Can innovation in format, flavor, or packaging create a non-comparable product tier?",
+          "What does Value Chain Analysis reveal about upstream advantages that private label cannot replicate?"
+        ]
+      },
+      {
+        "block": "Commercial & Channel Strategy",
+        "subIssues": [
+          "Should Heinz launch a fighter brand at $3.49 to compete directly with Walmart and Target store brands?",
+          "Can Heinz improve its in-store positioning and shelf visibility to counteract identical packaging design mimicry?",
+          "What retailer partnership incentives could reduce the at-shelf price gap without a list-price reduction?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify Brand Equity Erosion",
+        "detail": "Heinz has $720M in revenue (60% of $1.2B market) and has cut marketing 8% per year for 3 years — that's a 22% cumulative marketing reduction. Estimate the gross dollars removed from brand investment and connect that to the 7-point share loss. The data almost certainly shows these are causally linked."
+      },
+      {
+        "step": 2,
+        "title": "Apply 3C's to Diagnose Root Cause",
+        "detail": "Consumer: 42% can't differentiate on taste — the product story has collapsed. Competitor: identical packaging design is a deliberate copycat strategy that is legally permissible but parasitic. Company: Heinz's response has been cost-cutting, not investment. The diagnosis is clear: Kraft Heinz starved the brand of investment, allowing private label to close the perceived quality gap."
+      },
+      {
+        "step": 3,
+        "title": "Run Value Chain Analysis for Real Differentiation",
+        "detail": "Map Heinz's value chain: does Heinz have exclusive tomato sourcing relationships (e.g., specific California or Portuguese suppliers), proprietary cooking processes, or unique flavor profiles in regional variants? These are the authentic differentiation points that can anchor a 'reason to believe' in marketing. If none exist, innovation is required."
+      },
+      {
+        "step": 4,
+        "title": "Design the 4P Response",
+        "detail": "Product: innovate into non-comparable forms (organic line, non-HFCS formula, limited-edition regional flavors). Promotion: reinvest in brand advertising — specifically reverse the 8% annual cut and commit to a 3-year brand reinvestment plan. Place: secure premium shelf placement and endcap positioning that physically separates Heinz from store-brand look-alikes. Price: do not cut — the $1.50 gap is defensible if the brand story is rebuilt."
+      },
+      {
+        "step": 5,
+        "title": "Recommend on Fighter Brand vs. Core Defense",
+        "detail": "Evaluate whether launching a Heinz-adjacent value brand makes sense. Given Heinz's 60% share and brand recognition, a fighter brand risks cannibalizing the core. Recommendation: defend the core through reinvestment and innovation, not a fighter brand — Heinz's scale in a $1.2B market means even a 5% share recovery is $60M in incremental revenue."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Dollar Share",
+        "definition": "Market share measured by revenue (dollars), not units — Heinz's 60% dollar share reflects its premium pricing premium, which means its unit share is lower than 60%."
+      },
+      {
+        "term": "Value Chain Analysis",
+        "definition": "A strategic framework that maps all activities in a company's operations (sourcing, production, marketing, distribution) to identify where unique value is created that competitors cannot easily replicate."
+      },
+      {
+        "term": "Trade Promotion",
+        "definition": "Marketing spend directed at retailers rather than consumers — slotting fees, co-op ads, display allowances — used to secure favorable shelf placement and retailer support."
+      },
+      {
+        "term": "Post-Merger Cost-Cutting",
+        "definition": "Refers to Kraft Heinz's aggressive cost reduction strategy following the 2015 merger engineered by 3G Capital, which included significant cuts to marketing budgets across major brands."
+      },
+      {
+        "term": "Blind Taste Test",
+        "definition": "A consumer research method where participants evaluate products without knowing the brand, used to assess whether perceived quality differences are real or brand-driven — 42% of Heinz buyers showed no preference in such a test."
+      }
+    ],
+    "interviewerExpectations": "A strong answer identifies the marketing spend decline as the root cause — not a product problem — and uses Value Chain Analysis to find authentic differentiation points before designing a 4P response anchored in brand reinvestment, not price cutting. A weak answer either recommends cutting Heinz's price or focuses entirely on product innovation without addressing the structural underinvestment in brand equity.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a really interesting situation because the surface-level read — Heinz is losing share to private label — could lead you to a price response, but I think the data is telling a more nuanced story. Let me structure my thinking around three frameworks: 3C's to diagnose what's actually happening, Value Chain Analysis to find where Heinz has defensible differentiation, and then 4P's to design the response. Does that work?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I go further, I have a few clarifying questions. First, I want to understand the 42% blind taste test figure — is that a pure blind test or does packaging context remain, because that distinction matters for how real the quality parity is? Second, has Heinz's 8% annual marketing cut come from brand advertising, trade promotion, or both? And third, are there any product attributes — sourcing quality, non-GMO, absence of high-fructose corn syrup — where Heinz genuinely outperforms store brand but hasn't communicated it?"
+      },
+      {
+        "label": "Step 1 — Diagnosing the Root Cause with 3C's",
+        "script": "Starting with the 3C's. On the Consumer side, 42% can't taste the difference — so the product differentiation story has collapsed, at least in the consumer's mind. On the Competitor side, the private label packaging is deliberately designed to mimic Heinz. That's a parasitic strategy that's legally permissible but highly effective at point of purchase. On the Company side, this is where I think the real story is: Heinz has cut marketing 8% per year for three years. That's a 22% cumulative reduction in brand investment. My hypothesis is that the private label share gain from 12% to 19% is directly causally linked to Kraft Heinz starving the brand of investment post-merger."
+      },
+      {
+        "label": "Step 2 — Value Chain Analysis for Differentiation",
+        "script": "Now let me run a quick Value Chain Analysis. Does Heinz have exclusive tomato sourcing relationships — specific farms in California or Portugal — that produce a genuinely superior raw material? Does Heinz have a proprietary cooking or concentration process? Are there regional flavor variants that store brands don't offer? Whatever we find there becomes the authentic 'reason to believe' that we can anchor the marketing reinvestment around. If Heinz genuinely uses vine-ripened tomatoes from specific suppliers that private label doesn't access, that's a story. If there's nothing there, then we need product innovation to create a non-comparable tier."
+      },
+      {
+        "label": "Step 3 — 4P's Response",
+        "script": "Here's my recommended response across the 4P's. On Product: innovate into non-comparable formats — an organic Heinz line, a non-HFCS formula, limited-edition regional recipes — things that store brands can't credibly replicate at scale. On Promotion: reverse the marketing decline immediately. I would recommend a three-year brand reinvestment commitment at meaningfully higher spend, focused on the 35-plus core base while creating cultural moments that attract younger buyers. On Place: work with retailers to secure shelf positioning that physically distances Heinz from look-alike packaging. And on Price: I would not cut price. The $1.50 gap between $4.49 and $2.99 is absolutely defensible if the brand story is rebuilt."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My overall recommendation is that this is a brand equity problem caused by underinvestment, not a product problem. The fix is not a price cut — it's a three-year plan to restore brand investment, innovate into formats private label can't follow, and leverage Heinz's authentic sourcing story in communication. Heinz holds 60% of a $1.2B market — that's $720M in revenue. Even recovering 3-4 points of the 7 points lost is worth $36-48M in revenue at premium pricing. That math justifies the marketing reinvestment clearly."
+      }
+    ]
+  },
+  {
+    "id": "scenario_003",
+    "type": "Private Label Competition",
+    "company": "Quaker Oats (PepsiCo)",
+    "title": "Quaker Oats vs. Generic Rolled Oats",
+    "prompt": "You are brand manager for Quaker Old Fashioned Oats. Kroger and Target private label oats now hold 28% of the hot cereal category, up from 18% five years ago. Both are priced at $3.49 for a 42oz canister vs. Quaker at $5.79. A new entrant, Bob's Red Mill, is also taking premium share at $7.99 by positioning on 'artisan' and 'non-GMO.' Quaker's share has dropped from 48% to 39%. What do you do?",
+    "context": "The US hot cereal market is $1.8B. Quaker's primary brand message has centered on 'heart health' for decades. The brand has strong household penetration (67%) but purchase frequency is falling. Millennials index 40% below average for hot cereal consumption but over-index on premium health foods generally.",
+    "correctFrameworks": ["3C's", "STP", "4P's"],
+    "whyThisFramework": "3C's diagnoses that Quaker is being squeezed from below (private label) and above (premium). STP is needed to decide which segment to defend or target — you cannot fight both threats the same way. 4P's then executes the chosen strategy, likely a portfolio play with different tier offerings.",
+    "keyConsiderations": [
+      "Squeezed from both sides — private label on value, artisan on premium",
+      "Heart health positioning may be dated; new health credentials needed for Millennials",
+      "Portfolio strategy: defend core with value pack, extend into premium with new SKU?",
+      "Quaker's scale advantage in distribution is a moat private label can't easily match"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Is the 9-point share loss (48% to 39%) concentrated in specific retail channels — e.g., heavier at Kroger versus Walmart versus natural food retailers?",
+      "What does the household penetration data tell us about frequency — are 67% of households still buying Quaker, just less often, or are we actually losing households entirely?",
+      "Does Quaker have any non-GMO or organic oat sourcing capability today, or would entering the premium tier require a new supply chain?",
+      "What is Quaker's profitability at current pricing — is there margin room to launch a premium SKU while also defending on value?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Competitive Squeeze Diagnosis",
+        "subIssues": [
+          "How much of the share loss is attributable to private label (value squeeze) versus Bob's Red Mill (premium squeeze)?",
+          "Is Quaker's 'heart health' positioning still resonating with its 35-plus core base, or is it perceived as generic?",
+          "What consumer segments does Quaker have a realistic chance of winning versus those it should deprioritize?"
+        ]
+      },
+      {
+        "block": "Segmentation & Target Choice",
+        "subIssues": [
+          "Should Quaker prioritize defending the value-conscious mainstream buyer against private label or pursue the health-premium Millennial?",
+          "Can a single Quaker brand credibly span the value and premium positioning, or is a portfolio approach required?",
+          "Which segment represents the highest lifetime value and is most winnable given Quaker's current assets?"
+        ]
+      },
+      {
+        "block": "Portfolio & Format Strategy",
+        "subIssues": [
+          "Can Quaker launch a premium non-GMO or ancient grain SKU under the Quaker name to compete with Bob's Red Mill?",
+          "Should Quaker create a larger-format value canister to narrow the price-per-ounce gap with Kroger and Target store brands?",
+          "What new consumption occasions or formats (overnight oats, oat cups, protein oats) can Quaker own that private label won't quickly follow?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Map the Competitive Squeeze",
+        "detail": "Quaker has lost 9 points of share (48% to 39%) in a $1.8B market — roughly $162M in revenue exposure. Identify the approximate split: if private label grew 10 points and Bob's Red Mill grew roughly 2-3 points, then private label is the larger immediate threat. This determines where to allocate defensive investment first."
+      },
+      {
+        "step": 2,
+        "title": "Apply STP to Choose the Battleground",
+        "detail": "Segment: value buyers (private label switchers), health-conscious mainstream buyers (current Quaker core), and premium health seekers (Millennial Bob's Red Mill buyers). Target: the health-conscious mainstream 35-plus buyer is Quaker's most defensible segment — already in the franchise, responsive to heart-health messaging, and not yet fully captured by private label. The Millennial segment is the growth opportunity but requires a different product and message."
+      },
+      {
+        "step": 3,
+        "title": "Design a Two-SKU Portfolio Response",
+        "detail": "4P's — Product: launch a Quaker Organic or Quaker Ancient Grains premium line at $6.99-7.49 to compete credibly with Bob's Red Mill and attract Millennials. Simultaneously, introduce a bulk-value canister (64oz) at a lower per-ounce price to narrow the gap with private label for value-conscious buyers. These two moves address both sides of the squeeze."
+      },
+      {
+        "step": 4,
+        "title": "Refresh the Brand Messaging",
+        "detail": "The 'heart health' message is 70 years old and resonates with 55+ consumers but not Millennials. Develop a new messaging layer around 'whole grain, real food' that connects to Millennial values — minimal processing, transparent sourcing. This does not abandon heart health but adds a modern layer relevant to a younger segment that over-indexes on premium health foods."
+      },
+      {
+        "step": 5,
+        "title": "Leverage Distribution Moat",
+        "detail": "Quaker's 67% household penetration and shelf presence in virtually every US grocery chain is a significant structural advantage. Recommend locking in premium shelf placement for the new SKUs and working with retailers to create a visible 'Quaker oat section' that encompasses the full portfolio — private label cannot buy its way into endcap positioning the way a Quaker national brand can."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "STP Framework",
+        "definition": "Segmentation, Targeting, Positioning — a marketing strategy framework that divides the market into segments, selects the most attractive target, and defines how to position the brand to that target."
+      },
+      {
+        "term": "Household Penetration",
+        "definition": "The percentage of households that have purchased a brand at least once in a defined period — Quaker's 67% penetration means two-thirds of US homes buy Quaker, but frequency is falling."
+      },
+      {
+        "term": "Purchase Frequency",
+        "definition": "How often a consumer buys a product within a period — distinct from penetration. Quaker's issue is that loyal households are buying less often, not that they've abandoned the brand entirely."
+      },
+      {
+        "term": "Non-GMO",
+        "definition": "Products made without genetically modified organisms, a premium health credential that commands a price premium among health-conscious consumers and is increasingly a table-stakes requirement in natural food retail."
+      },
+      {
+        "term": "SKU",
+        "definition": "Stock Keeping Unit — a distinct product variant (size, formula, packaging) that carries its own UPC code and shelf slot. Launching a premium SKU means creating a new Quaker product that sits alongside the existing core product."
+      }
+    ],
+    "interviewerExpectations": "A strong answer recognizes the two-front squeeze (not just the private label threat) and uses STP to make an explicit choice about which segment to prioritize before designing a portfolio response — not a one-size-fits-all fix. A weak answer either focuses only on private label and ignores Bob's Red Mill, or recommends Quaker simply cut prices without addressing the premium opportunity.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a classic two-front squeeze, and I want to be careful not to treat it as a simple private label defense problem. Quaker is losing share to generic oats from below on price and to Bob's Red Mill from above on premium health positioning. Those are two very different competitive dynamics requiring different responses. My framework: I'll start with 3C's to diagnose the situation, use STP to make an explicit choice about which consumer segment to prioritize, and then design the 4P's response. Does that structure make sense?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few quick questions before I build out the analysis. First, is the share loss concentrated in specific channels — is it worse at Kroger specifically, where their private label is strongest? Second, on the household penetration figure — 67% penetration is high, but purchase frequency is falling. Are we losing households entirely, or are loyal buyers just cooking oatmeal less often? And third, does Quaker have any organic or non-GMO oat sourcing today, or would a premium SKU require building a new supply chain?"
+      },
+      {
+        "label": "Step 1 — 3C's Diagnosis",
+        "script": "On the Consumer side: purchase frequency is falling even among Quaker's loyal base, and Millennials index 40% below average on hot cereal. But — and this is important — Millennials over-index on premium health foods. So there's an opportunity if we can reframe the product. On the Competitor side: private label is winning on value with a $2.30 price gap, and Bob's Red Mill is winning on 'artisan' and 'non-GMO' credentials. On the Company side: Quaker's 'heart health' positioning is legitimate but it's 70 years old and doesn't resonate with buyers under 40."
+      },
+      {
+        "label": "Step 2 — STP: Choosing the Target",
+        "script": "Now I need to make a targeting choice, because you can't fight a value threat and a premium threat with the same weapon. I see three segments: value-conscious mainstream buyers being poached by Kroger and Target private label; health-conscious mainstream buyers aged 35-plus who are Quaker's current core; and health-premium Millennials currently going to Bob's Red Mill. My recommendation is to defend the health-conscious mainstream buyer as the anchor and invest in penetrating the Millennial premium health segment as the growth play. I would not try to win on pure price against Kroger's store brand — that's a margin-destroying race to the bottom."
+      },
+      {
+        "label": "Step 3 — 4P's Response",
+        "script": "Here's how I'd execute across the 4P's. On Product: I'd launch two things — a Quaker Organic or Ancient Grains premium SKU at around $6.99, positioned directly against Bob's Red Mill for the Millennial segment. And I'd create a larger 64-ounce value canister at a lower per-ounce price to address the value buyers without cutting the core 42-ounce price. On Promotion: refresh the brand message to add a 'real food, whole grain' layer that resonates with Millennials while preserving the heart health equity for our core base. On Place: leverage our distribution scale to lock in premium shelf placement and endcap presence that private label can't buy. On Price: hold the core price — the $5.79 for 42oz is defensible if we're executing the other three P's."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize: Quaker's 9-point share loss across a $1.8B market is roughly $162M in revenue exposure. My recommendation is a portfolio strategy — not a single fix. Launch a premium organic SKU to compete for the Millennial health-premium segment that Bob's Red Mill currently owns; create a value large-format to narrow the per-ounce gap with private label without cutting price; and refresh brand communication to be relevant to buyers under 40. Quaker's structural advantage — 67% household penetration and distribution in virtually every US grocery chain — means we have the shelf presence to execute this portfolio play in a way that a startup like Bob's Red Mill and a private label simply cannot match."
+      }
+    ]
+  },
+  {
+    "id": "scenario_004",
+    "type": "Private Label Competition",
+    "company": "Energizer",
+    "title": "Energizer Batteries vs. Amazon Basics",
+    "prompt": "Energizer's US retail battery share has declined from 28% to 22% over four years. Amazon Basics batteries, priced 50% below Energizer on Amazon.com, now hold 14% of online battery sales. More critically, 60% of battery purchases have shifted online in the past five years, where Energizer has weak presence. Energizer's brick-and-mortar share remains relatively stable at 31%. What is your strategic recommendation?",
+    "context": "The US consumer battery market is $4.1B. Energizer and Duracell together held 65% of the market five years ago, now hold 52%. Amazon Basics batteries score within 5% of Energizer on independent performance tests. Energizer's brand awareness is 94% but purchase intent has declined 11 points over three years.",
+    "correctFrameworks": ["3C's", "4P's", "Porter's Five Forces"],
+    "whyThisFramework": "Porter's Five Forces reveals the structural shift: a new, powerful competitor (Amazon) with channel control, cost advantages, and buyer power. 3C's narrows the diagnosis. 4P's addresses the Place strategy — the channel shift is the core crisis, not just a product or price problem.",
+    "keyConsiderations": [
+      "The channel shift to online is the existential threat — where Energizer is weakest",
+      "Amazon is both a customer and a competitor — a uniquely dangerous position",
+      "Energizer's strength in brick-and-mortar (convenience, impulse purchase) must be leveraged",
+      "Performance differentiation is minimal — need to win on brand, availability, or occasion"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "When we say Energizer has 'weak presence' online — does that mean weak marketplace rankings on Amazon, weak direct-to-consumer capability, or both?",
+      "Is Amazon a meaningful retail customer for Energizer today in terms of first-party wholesale, or are we entirely dependent on third-party sellers on their platform?",
+      "What categories of devices are driving battery purchases — is the shift toward rechargeable batteries (smart home devices, AirPods) also reducing total battery market size?",
+      "What is Energizer's current gross margin profile and does the company have the financial capacity to invest aggressively in building an Amazon channel strategy?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Channel Structural Analysis",
+        "subIssues": [
+          "What is driving the 60% online channel shift and is it still accelerating or stabilizing?",
+          "In what specific online contexts does Energizer underperform — search placement, price competitiveness, subscription programs?",
+          "What brick-and-mortar strengths (impulse purchase, emergency need, convenience) can Energizer protect and deepen?"
+        ]
+      },
+      {
+        "block": "Amazon Competitive Dynamics",
+        "subIssues": [
+          "How does Amazon's dual role as Energizer's retail customer and private label competitor constrain Energizer's strategic options?",
+          "Can Energizer secure preferred placement on Amazon.com (Subscribe & Save, Amazon Choice badge) that narrows the algorithmic advantage Amazon Basics enjoys?",
+          "What is Energizer's realistic ability to build a DTC subscription model as an alternative to Amazon dependence?"
+        ]
+      },
+      {
+        "block": "Brand & Product Differentiation",
+        "subIssues": [
+          "Given only a 5% performance gap, where can Energizer build a credible superiority claim — shelf life, specific use cases, premium device compatibility?",
+          "Can Energizer launch a specialty or premium battery line for high-drain devices (photography, gaming peripherals) where performance differences matter most?",
+          "Does Energizer's 94% awareness translate into a searchable brand preference on Amazon that can be monetized?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Apply Porter's Five Forces to the Channel Shift",
+        "detail": "The core insight from Porter's Five Forces is that Amazon has restructured buyer power and channel control simultaneously. Amazon controls 60% of where batteries are purchased online AND competes directly with Energizer in that channel with a cost-advantaged private label. This is structural, not cyclical — Energizer cannot outspend this threat; it must outmaneuver it."
+      },
+      {
+        "step": 2,
+        "title": "Quantify the At-Risk Revenue",
+        "detail": "Energizer's total market share is 22% of $4.1B = approximately $900M in revenue. Of that, 60% of purchases are now online. If Energizer has weak online presence, the revenue at risk from continued channel shift is enormous. Calculate: if online grows to 70% of total market and Energizer captures only 15% online share vs. 31% brick-and-mortar, the blended share drops further — this math justifies urgent action."
+      },
+      {
+        "step": 3,
+        "title": "Diagnose Amazon Relationship and Options",
+        "detail": "Amazon is simultaneously Energizer's customer (wholesale buyer) and competitor (Amazon Basics). Request current Amazon wholesale revenue and shelf placement data. Determine whether Energizer can negotiate for Subscribe & Save default placement, Amazon Choice badges, or preferential search ranking — in exchange for exclusive or priority inventory. This is a commercial negotiation first, then a product strategy."
+      },
+      {
+        "step": 4,
+        "title": "Develop a DTC and Retail Channel Defense",
+        "detail": "Launch Energizer's own direct-to-consumer subscription model (Energizer.com) at a price point between Amazon Basics and current retail — capturing value-conscious online buyers without fully conceding to Amazon. Simultaneously, deepen the brick-and-mortar moat by investing in convenience channel presence (checkout lanes, pharmacy counter placement) where Amazon Basics is not available."
+      },
+      {
+        "step": 5,
+        "title": "Launch a Premium Specialty Battery Line",
+        "detail": "Identify high-drain device categories (digital cameras, gaming controllers, smart home sensors) where the 5% performance gap matters to a subset of consumers. Launch a premium Energizer 'Max Pro' or 'Ultimate Lithium' line at a significant premium, priced to create a credible performance tier. Amazon Basics cannot credibly occupy this space — it's a value brand by definition."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Porter's Five Forces",
+        "definition": "A strategic framework analyzing five competitive forces: threat of new entrants, bargaining power of suppliers, bargaining power of buyers, threat of substitutes, and competitive rivalry — used to assess structural industry attractiveness."
+      },
+      {
+        "term": "Dual Role Competitor",
+        "definition": "When a company's retail customer also competes directly with its products — Amazon is both Energizer's retail distribution channel and the manufacturer of Amazon Basics batteries, creating a uniquely dangerous competitive dynamic."
+      },
+      {
+        "term": "Subscribe & Save",
+        "definition": "Amazon's subscription delivery program that locks in recurring purchases at a discount. Brands with Subscribe & Save default placement capture loyal repeat buyers — Amazon Basics has structural advantages here."
+      },
+      {
+        "term": "First-Party vs. Third-Party Seller",
+        "definition": "On Amazon, first-party means Energizer sells wholesale directly to Amazon (Amazon resells); third-party means independent sellers list Energizer products. First-party relationships typically get better placement and pricing control."
+      },
+      {
+        "term": "Brand Awareness vs. Purchase Intent",
+        "definition": "Awareness measures whether consumers know a brand exists (Energizer at 94%); purchase intent measures whether they plan to buy it next. An 11-point intent decline despite high awareness signals brand equity erosion."
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately identifies the channel shift — not the price gap — as the central strategic problem, uses Porter's Five Forces to explain why Amazon's dual role is structurally dangerous, and develops a Place-led 4P's response that includes both Amazon channel negotiation and brick-and-mortar defense. A weak answer focuses on price matching Amazon Basics or product innovation without addressing the channel crisis.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "The instinct here might be to frame this as a price problem — Amazon Basics is 50% cheaper, so Energizer needs to compete on price. But I think that would be a mistake. The real story is that 60% of battery purchases have moved online in five years, and that's where Energizer is weakest. This is a channel disruption problem more than a product or price problem. I'd like to use Porter's Five Forces to explain the structural dynamic, 3C's to narrow the diagnosis, and then 4P's — with Place as the lead lever — to design the response. Sound good?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I go further, a few important questions. When we say Energizer has weak online presence — does that mean poor search rankings and placements on Amazon, or does it also mean we have no direct-to-consumer capability? Second, is Amazon currently a meaningful first-party wholesale customer for Energizer, or are we mostly sold through third-party sellers on the platform? And third, I want to understand the competitive trajectory — is the 60% online shift still accelerating, or is it stabilizing?"
+      },
+      {
+        "label": "Step 1 — Porter's Five Forces: Amazon's Structural Advantage",
+        "script": "Let me use Porter's Five Forces to explain why this situation is structurally dangerous. The critical insight is that Amazon has simultaneously gained control over the distribution channel — they're where 60% of batteries are bought — AND entered the product category with Amazon Basics. So Amazon has both buyer power as a retail customer and competitive power as a product rival. That's a uniquely difficult position. Energizer cannot price or innovate its way out of this without first addressing the channel dynamic. No matter how good our batteries are, if Amazon's algorithm defaults to showing Amazon Basics first in search, we lose."
+      },
+      {
+        "label": "Step 2 — Quantifying the Risk",
+        "script": "Quick math: Energizer holds 22% of a $4.1 billion market — roughly $900 million in revenue. If 60% of purchases are online and our share online is much weaker than our brick-and-mortar 31%, and if online grows to 70% over the next three years, our blended share could fall below 20% without intervention. That's a significant revenue risk that justifies urgent investment in fixing our channel strategy."
+      },
+      {
+        "label": "Step 3 — Amazon Negotiation and Channel Strategy",
+        "script": "My first strategic move is a commercial negotiation with Amazon. We need to secure preferential placement — the Amazon Choice badge, Subscribe & Save default enrollment, and better search ranking — in exchange for inventory commitments or exclusive product variants. This is a negotiation, and Energizer's 94% brand awareness is leverage. Consumers searching for batteries do search for 'Energizer' by name, and Amazon knows that brand-searched items drive higher basket values than generic searches. We have more negotiating leverage than we might think."
+      },
+      {
+        "label": "Step 4 — DTC and Brick-and-Mortar Defense",
+        "script": "Second move: build a direct-to-consumer subscription model on Energizer.com, priced between Amazon Basics and our retail price. This gives us an online channel that Amazon doesn't control. Third: double down on brick-and-mortar. Energizer's 31% share there is strong, and Amazon Basics is basically unavailable at the pharmacy checkout, the convenience store, or the hardware store endcap. Emergency battery needs — remote batteries die during a movie, smoke detector beeps at midnight — are won in physical retail, and Amazon Basics can't compete there."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is a three-part plan. One: immediately negotiate with Amazon for better placement — our brand awareness is leverage and we need to use it. Two: build a DTC subscription model to establish an online channel we control. Three: deepen our convenience and brick-and-mortar presence as a differentiated physical channel where emergency purchase behavior favors national brands. And fourth — which I'd evaluate as a longer-term play — launch a premium specialty battery line for high-drain devices like digital cameras and gaming controllers where a 5% performance advantage actually matters to consumers. That's a space Amazon Basics, as a pure value brand, cannot credibly occupy."
+      }
+    ]
+  },
+  {
+    "id": "scenario_005",
+    "type": "Private Label Competition",
+    "company": "Reynolds Wrap (Reynolds Consumer Products)",
+    "title": "Reynolds Wrap vs. Store Brand Foil",
+    "prompt": "Reynolds Wrap holds 58% of the US aluminum foil market but Walmart's Great Value foil and Amazon's private label have collectively grown to 27% share, up from 17% four years ago. Reynolds raised prices 18% in 2022 due to aluminum commodity costs and has not reversed that increase. Private label did not match the price increase and now sits 42% below Reynolds. Volume for Reynolds is down 11% YoY. What do you recommend?",
+    "context": "The US aluminum foil market is $900M. Reynolds Wrap's primary brand message emphasizes 'strength' and 'tear resistance.' Consumer research shows most buyers view foil as a commodity. Heavy users (families who cook frequently) represent 65% of Reynolds volume. Heavy users who cook frequently.",
+    "correctFrameworks": ["3C's", "Profitability Tree", "4P's"],
+    "whyThisFramework": "Profitability Tree first — the price increase solved a cost problem but created a volume problem. The tree reveals whether the revenue math works. 3C's then assesses if this is a temporary price-elastic response or a permanent share loss. 4P's designs the fix, which likely includes a pack-size or format innovation to reframe price-per-use.",
+    "keyConsiderations": [
+      "Price-per-use framing can blunt the sticker price gap — thicker foil = fewer sheets used",
+      "Commodity perception is the enemy; innovation in format (pre-cut sheets, non-stick coating) can rebrand",
+      "Heavy users are the core — retention of these households is critical",
+      "Rolling back the price increase may signal weakness; format innovation is cleaner"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Has the 11% volume decline been concentrated among heavy users (families who cook frequently) or casual occasional users — because those two groups require very different responses?",
+      "What is Reynolds Wrap's current gross margin after the 18% price increase — has profitability actually improved despite the volume loss, or are fixed cost absorption issues making the P&L worse?",
+      "Has aluminum commodity pricing stabilized, increased further, or decreased since the 2022 price increase — is there room to reverse even a partial price reduction?",
+      "Does Reynolds have an innovation pipeline — non-stick coatings, pre-cut sheets, heavy-duty formats — that could create a non-comparable premium product?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Profitability Impact of Price Increase",
+        "subIssues": [
+          "Did the 18% price increase fully offset the aluminum cost increase, and what was the net margin improvement versus the volume loss?",
+          "Is total operating profit better or worse today than pre-price-increase despite the 11% volume decline?",
+          "What does the break-even analysis show — how much volume can Reynolds afford to lose before profitability is worse than before the price increase?"
+        ]
+      },
+      {
+        "block": "Consumer Defection Analysis",
+        "subIssues": [
+          "Are heavy users (65% of volume) or light users defecting to private label, and what drives each group's price sensitivity?",
+          "Is the commodity perception of foil permanent, or can format innovation (non-stick, pre-cut, heavy-duty) create a credible premium tier?",
+          "What is the elasticity of Reynolds buyers — at what price gap does switching to private label feel justified?"
+        ]
+      },
+      {
+        "block": "Format & Pricing Response",
+        "subIssues": [
+          "Can a price-per-use reframing (heavier gauge foil requiring fewer sheets) reduce the apparent price gap without cutting the list price?",
+          "Should Reynolds launch a premium non-stick or heavy-duty format at $7.99+ to anchor the premium end while the core holds at current pricing?",
+          "Is a fighter brand or value Reynolds SKU the right tool to compete at the value end without diluting the core brand?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Run the Profitability Tree",
+        "detail": "Start with the P&L math: Reynolds holds 58% of $900M = roughly $522M in revenue. The 18% price increase on 11% lower volume means revenue may be approximately flat or slightly up — but operating profit depends on whether the price increase covered the aluminum cost increase and absorbed fixed costs on lower volume. Request the before-and-after gross margin data. This determines whether the price increase was financially successful or not."
+      },
+      {
+        "step": 2,
+        "title": "Assess Whether Volume Loss is Temporary or Permanent",
+        "detail": "Using 3C's Consumer lens: is the 11% volume loss price-elastic (buyers temporarily cutting back but will return if the gap narrows) or has a habit change occurred (consumers now satisficed with store brand foil and seeing no reason to return)? The answer determines whether a partial price rollback would recover volume or simply give away margin permanently."
+      },
+      {
+        "step": 3,
+        "title": "Reframe Price-Per-Use",
+        "detail": "Reynolds Wrap's 'strength and tear resistance' positioning is the key to a price-per-use reframe. A heavier gauge Reynolds sheet may require 30% fewer sheets than a thinner store-brand sheet for the same cooking task. If Reynolds can credibly quantify this (e.g., '40% more foil per sheet'), the effective cost-per-use gap narrows significantly. Commission consumer research to validate and quantify this claim."
+      },
+      {
+        "step": 4,
+        "title": "Launch Non-Comparable Premium Format",
+        "detail": "Introduce Reynolds Non-Stick or Reynolds Pre-Cut Sheets at a premium price point ($8.99+) that creates a distinct product tier. This serves two purposes: it gives heavy-user households a product innovation worth paying for, and it anchors the price ladder so the core Reynolds Wrap looks like the 'value' option relative to a premium Reynolds line — reducing the psychological gap with store brands."
+      },
+      {
+        "step": 5,
+        "title": "Decide on Price Rollback vs. Pack Resizing",
+        "detail": "Do not roll back the price increase outright — that signals the 2022 increase was unjustified and erodes brand pricing credibility. Instead, introduce a larger format (e.g., 200 sq ft box) at a lower price-per-foot to give price-sensitive buyers a Reynolds option at better value without changing the core SKU price. This captures value-seekers without brand dilution."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Profitability Tree",
+        "definition": "A diagnostic framework that decomposes profit into its constituent drivers (revenue = price × volume; costs = fixed + variable) to identify which driver is creating the problem and what lever to pull."
+      },
+      {
+        "term": "Price Elasticity",
+        "definition": "The degree to which consumer demand changes in response to a price change. A highly elastic product sees large volume drops with small price increases — relevant here given Reynolds' 11% volume loss from an 18% price increase."
+      },
+      {
+        "term": "Price-Per-Use",
+        "definition": "A reframing of sticker price by calculating the cost per individual use occasion — relevant for Reynolds because a stronger, thicker foil may require fewer sheets per cooking task, narrowing the apparent cost gap with store brands."
+      },
+      {
+        "term": "Commodity Perception",
+        "definition": "When consumers view a product as interchangeable with any competing product, making price the primary purchase driver. Reynolds' challenge is that most buyers see foil as a commodity, undermining its premium pricing."
+      },
+      {
+        "term": "SKU Architecture",
+        "definition": "The strategic structure of a brand's product lineup across price tiers and formats — Reynolds needs a 'good, better, best' SKU architecture to address multiple consumer price points without cutting the core product price."
+      }
+    ],
+    "interviewerExpectations": "A strong answer starts with the Profitability Tree to assess whether the 2022 price increase was actually net positive before recommending any change, then uses a price-per-use reframe and format innovation rather than a direct price rollback. A weak answer recommends either rolling back the price increase immediately (destroying margin credibility) or ignores the financial mechanics and jumps straight to marketing recommendations.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "The instinct when you see 11% volume decline and a 42% price gap versus private label is to say Reynolds needs to cut its price. But I want to resist that instinct and start with the Profitability Tree, because we need to know whether the 2022 price increase was actually a smart financial decision before recommending we reverse it. Then I'll use 3C's to diagnose the consumer behavior, and 4P's to design the response — with format innovation as the likely centerpiece rather than price. Does that work?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few questions to ground the analysis. First, what does the P&L actually show post-price-increase — is Reynolds' operating profit better or worse today than before the 2022 increase? Second, is the 11% volume decline concentrated among heavy users — the families who cook frequently and represent 65% of our volume — or is it mostly casual users? Those two groups require very different responses. And third, has aluminum commodity pricing stabilized since 2022, or is there room to consider a partial price reversal?"
+      },
+      {
+        "label": "Step 1 — Profitability Tree",
+        "script": "Let me start with the financial mechanics. Reynolds holds 58% of a $900 million market — roughly $522 million in revenue. The 18% price increase on 11% lower volume means revenue is roughly flat to slightly up. The question is whether operating profit improved. If the aluminum cost increase was, say, 20-25%, and Reynolds raised prices 18%, the increase may not have fully covered costs — and now we're absorbing those costs on lower volume. I'd want the gross margin before and after to know if the price increase was actually profitable. This is the first decision point: if the math worked, we defend the price. If not, we have more flexibility."
+      },
+      {
+        "label": "Step 2 — Consumer Diagnosis",
+        "script": "On the consumer side, the critical question is whether this is price-elastic switching or habit change. Price-elastic means buyers know Reynolds is better but temporarily buy store brand while the price gap is wide — and would come back if the gap narrowed. Habit change means they've tried store brand foil, found it acceptable, and see no reason to pay more. Consumer research shows most buyers already view foil as a commodity, so I suspect there's real habit change risk, especially among casual users. Heavy users who cook frequently are a different story — they likely notice performance differences like tear resistance."
+      },
+      {
+        "label": "Step 3 — Price-Per-Use Reframing and Format Innovation",
+        "script": "Here's the centerpiece of my recommendation. Reynolds' 'strength and tear resistance' positioning gives us a price-per-use reframe. If a Reynolds sheet requires 30% fewer sheets than store brand for the same cooking task because it's stronger — Reynolds' effective cost-per-use may be much closer to store brand than the sticker price suggests. I'd commission consumer research to quantify and validate that claim, then build it into packaging and marketing. The message: 'Reynolds does more with less.' Beyond that, I'd launch a premium non-stick or pre-cut format at $8.99 to create a product tier above the core Reynolds Wrap — this makes Reynolds look like the 'value' option relative to a premium Reynolds line, psychologically narrowing the gap with store brands."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation has three parts and explicitly does not include a price rollback. First, validate the Profitability Tree — if the 2022 price increase was net positive even with volume loss, we hold the price and fight on innovation. Second, execute a price-per-use reframing campaign — 'more coverage per sheet' — backed by consumer data, targeting heavy users who care about performance. Third, launch a premium non-stick Reynolds format at a premium price to create a credible premium tier and make the core Reynolds look like the responsible value choice. Rolling back the price increase outright would be a mistake — it signals the increase was unjustified and permanently undermines Reynolds' pricing credibility. Innovation and reframing are the cleaner path."
+      }
+    ]
+  },
+  {
+    "id": "scenario_006",
+    "type": "Private Label Competition",
+    "company": "Advil (Haleon)",
+    "title": "Advil vs. Store Brand Ibuprofen",
+    "prompt": "Advil holds 31% of the US OTC pain relief market. Ibuprofen store brands — CVS Health, Walgreens, and Walmart's Equate — now collectively hold 38% of the ibuprofen subcategory, up from 29% six years ago. Consumers consistently see FDA-required labeling that identifies generic ibuprofen as 'compare to Advil.' Advil is priced at $12.99 for 100ct vs. store brand at $5.99. What strategic options should Advil consider?",
+    "context": "The US OTC pain reliever market is $4.5B. Pharmacists frequently recommend generic equivalents. Advil's loyal users cite 'trust' and 'reliability' as purchase drivers, but 54% of lapsed Advil buyers say they switched because 'the generic is the same thing.' The brand has launched Advil Dual Action (with acetaminophen) and Advil PM as premium extensions.",
+    "correctFrameworks": ["3C's", "STP", "4P's"],
+    "whyThisFramework": "The generic comparison labeling creates a structural problem 4P's alone can't solve. STP is critical — Advil must identify which consumer segments still respond to brand equity (parents, brand loyalists) vs. those who are lost to generic. Then 4P's defends with premium innovation that generics legally cannot replicate.",
+    "keyConsiderations": [
+      "FDA 'compare to Advil' labeling is a permanent structural disadvantage — cannot be avoided",
+      "Premium innovation (combination formulas, delivery formats) creates non-comparable products",
+      "Pharmacy recommendation channel is critical — need to re-win pharmacist advocacy",
+      "Segment the loyalist consumer base and concentrate marketing investment there"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Are there specific consumer segments — elderly patients, parents buying for children, chronic pain sufferers — where Advil's brand trust measurably drives conversion over generic despite the price gap?",
+      "What is the pharmacist recommendation split today — what percentage of pharmacists actively recommend the generic ibuprofen over Advil, and is there a pharmacist engagement program currently in place?",
+      "How is Advil Dual Action performing commercially relative to expectations — is it successfully creating a non-comparable product tier that resists generic competition?",
+      "Does Haleon have any pipeline formulations — faster-acting liquid gels, coated tablets, sustained-release formats — that are clinically differentiated from basic generic ibuprofen?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Structural Competitive Disadvantage",
+        "subIssues": [
+          "How permanent and pervasive is the FDA 'compare to Advil' labeling — does it appear on every generic ibuprofen package across all retailers?",
+          "Can Advil create combination formulations (Dual Action, PM, Migraine) that generics cannot legally label as 'compare to Advil'?",
+          "What is the realistic cap on Advil's core ibuprofen market share given the structural generic labeling requirement?"
+        ]
+      },
+      {
+        "block": "Consumer Segmentation",
+        "subIssues": [
+          "Which consumer segments demonstrate durable brand loyalty to Advil despite the price premium — parents, elderly, brand-trustful health consumers?",
+          "What is the lifetime value and size of Advil's loyalist segment, and is it sufficient to sustain the brand at profitable scale?",
+          "Can Advil attract health-conscious consumers who view the brand as a trusted medical decision rather than a commodity purchase?"
+        ]
+      },
+      {
+        "block": "Premium Portfolio and Channel Defense",
+        "subIssues": [
+          "Can Advil build a premium product portfolio (Dual Action, PM, Migraine, Liquid Gel) that collectively resists generic comparison and justifies the price premium?",
+          "How can Advil re-engage pharmacists as brand advocates given their current tendency to recommend generics?",
+          "What in-store placement and HCP marketing can Advil use to intercept consumers before they reach the generic shelf?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Acknowledge the Structural Constraint",
+        "detail": "FDA 'compare to Advil' labeling is not going away. This is a permanent structural disadvantage that no marketing campaign can overcome for price-sensitive consumers. The strategic response must work within this constraint rather than fight it. The implication: Advil's core ibuprofen SKU will continue to lose share to generics, and the strategic investment should shift toward premium extensions."
+      },
+      {
+        "step": 2,
+        "title": "Apply STP to Find the Defensible Segment",
+        "detail": "Segment: price-sensitive generic buyers (lost, not worth fighting for), Advil loyalists driven by trust (parents, elderly, chronic pain patients), and health-conscious brand seekers open to premium formulations. Target: concentrate Advil's marketing investment on the loyalist and premium seeker segments. These consumers are either not moving (loyalists) or are willing to trade up (premium seekers). The price-sensitive segment is effectively lost to generic labeling."
+      },
+      {
+        "step": 3,
+        "title": "Build a Premium Portfolio That Generics Cannot Label",
+        "detail": "Advil Dual Action (ibuprofen + acetaminophen) and Advil PM are smart moves. Generic manufacturers cannot legally label Advil Dual Action as 'compare to Advil' because the formulation is different. Expand this portfolio: Advil Fast-Acting Liquid Gels, Advil Migraine (licensed), Advil for Arthritis. Each new formulation creates a product that cannot be directly compared to a generic, rebuilding a defensible premium tier."
+      },
+      {
+        "step": 4,
+        "title": "Recapture the Pharmacist Recommendation Channel",
+        "detail": "Pharmacists are the most trusted source for OTC medication recommendations and currently drive consumers toward generics. Develop a pharmacist education and engagement program: provide clinical data on Advil's absorption profile vs. generics, offer pharmacist-directed CME materials, and create a professional sampling program. This is a B2B channel play within the OTC space."
+      },
+      {
+        "step": 5,
+        "title": "Invest in the Consumer Trust Story",
+        "detail": "Advil's 54% of lapsed buyers left because 'the generic is the same thing' — meaning the brand story wasn't compelling enough to justify the premium. Develop communications that go beyond pain relief efficacy to brand trust narratives: 'The brand doctors trust,' 'Precision-formulated, not just copied.' Focus these on the loyalist segment — parents, caregivers, chronic pain patients — who are emotionally invested in the reliability of their pain reliever."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "OTC (Over-The-Counter)",
+        "definition": "Medications sold directly to consumers without a prescription — the Advil competitive dynamic exists entirely in this retail-driven, consumer-choice environment."
+      },
+      {
+        "term": "FDA Generic Labeling Requirement",
+        "definition": "The FDA requires generic medications to clearly state they are equivalent to the branded drug — the 'compare to Advil' label on generic ibuprofen is a regulatory requirement, not a voluntary retail choice."
+      },
+      {
+        "term": "Combination Formulation",
+        "definition": "A drug product containing two or more active ingredients (e.g., Advil Dual Action combines ibuprofen and acetaminophen) — these cannot be generically labeled as equivalent to single-ingredient Advil, creating a legally distinct product tier."
+      },
+      {
+        "term": "CME (Continuing Medical Education)",
+        "definition": "Ongoing education required for healthcare professionals, including pharmacists, to maintain licensure — a channel Advil can use to educate pharmacists on brand differentiation and clinical data."
+      },
+      {
+        "term": "Brand Loyalist",
+        "definition": "A consumer who consistently repurchases a specific brand despite the availability of cheaper alternatives — often driven by trust, habit, or emotional connection rather than rational price analysis."
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately acknowledges the FDA labeling as a permanent structural constraint rather than a problem to be solved through marketing, and builds a strategy around the segments that are still winnable (loyalists, premium seekers) plus a premium portfolio expansion that is legally non-comparable to generics. A weak answer proposes a marketing campaign to convince consumers that Advil is better than the generic, ignoring that FDA-mandated labeling has already told those consumers the active ingredient is identical.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This case has a structural element that makes it different from a typical private label defense: the FDA requires generic ibuprofen to be labeled 'compare to Advil.' That is permanent. No marketing campaign makes that label disappear. So my starting point is acknowledging that Advil's core ibuprofen SKU will continue to face this labeling disadvantage and designing a strategy that works within that constraint rather than pretending it doesn't exist. I'll use 3C's to diagnose the situation, STP to identify which segments are actually winnable, and 4P's to design the response — with premium portfolio expansion as the centerpiece."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few questions before I build this out. First, which consumer segments show durable loyalty to Advil despite the price premium — specifically, are parents buying for their children, elderly consumers, or chronic pain patients over-indexing on brand loyalty? Second, what is the pharmacist recommendation behavior today — are most pharmacists actively steering patients to generic? And third, how is Advil Dual Action performing commercially — is it successfully creating a non-comparable premium tier that resists generic competition?"
+      },
+      {
+        "label": "Step 1 — 3C's: Diagnosing the Structural Problem",
+        "script": "On the Consumer side: 54% of lapsed Advil buyers said the generic 'is the same thing.' But Advil still has loyal users who cite trust and reliability — that's a real segment. On the Competitor side: CVS, Walgreens, and Walmart's Equate collectively hold 38% of the ibuprofen subcategory and are growing. More importantly, pharmacists — who are the trusted gatekeepers in this category — are recommending generics. On the Company side: Advil has already done the right instinctual move by launching Dual Action and PM, but these may not yet be scaled sufficiently to shift the portfolio story."
+      },
+      {
+        "label": "Step 2 — STP: Choosing the Winnable Segments",
+        "script": "This is the critical strategic choice. I segment the Advil market into three groups. Price-sensitive generic buyers — these consumers see the 'compare to Advil' label and make a rational economic choice. They are effectively lost, and trying to win them back with marketing is expensive and unlikely to work. Advil loyalists — parents, elderly consumers, brand-trustful health buyers — who pay the premium for trust. This is the segment to defend and deepen loyalty with. And premium formulation seekers — consumers who want more than basic ibuprofen and will pay for combination or specialty formulas. That's the growth segment. My recommendation is to concentrate investment on segments two and three and stop trying to compete on price for segment one."
+      },
+      {
+        "label": "Step 3 — 4P's: Premium Portfolio and Pharmacist Channel",
+        "script": "Here's the action plan. On Product: aggressively expand the premium extension portfolio. Advil Dual Action, PM, Migraine, and a fast-acting liquid gel line are all formulations that generic manufacturers cannot legally label as 'compare to Advil.' This is the only sustainable way to build a price-defensible Advil portfolio. On Promotion: develop a pharmacist engagement program — clinical data, CME materials, professional sampling — to re-educate pharmacists on Advil's differentiated formulations. Pharmacists are the most trusted OTC recommenders and currently driving consumers toward generics. That channel is recoverable with investment. On Place: negotiate premium shelf placement adjacent to the pharmacy counter, not buried in the general OTC aisle. On Price: hold the premium for the core and price the extensions even higher — $16.99 to $19.99 — to establish a credible premium tier."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is that Advil's core ibuprofen SKU is a managed-decline business — it will lose ground to generics and there's no point spending disproportionately to defend it. The growth strategy is the premium extension portfolio: Dual Action, PM, Migraine, Fast-Acting Liquid Gels. These products cannot be generically labeled as equivalent to Advil, they carry higher margins, and they appeal to the segments — loyalists and premium health seekers — that are actually winnable. Simultaneously, invest in pharmacist engagement to recapture the professional recommendation channel. Advil holds 31% of a $4.5 billion market — that's nearly $1.4 billion in revenue. Even holding the loyalist base and growing the extensions by a few share points is worth hundreds of millions in retained and new revenue."
+      }
+    ]
+  },
+  {
+    "id": "scenario_007",
+    "type": "Private Label Competition",
+    "company": "Starbucks (packaged coffee)",
+    "title": "Starbucks Packaged Coffee vs. Grocery Store Brands",
+    "prompt": "Starbucks packaged coffee (sold at grocery through a partnership with Nestlé) holds 14% of the $8B US retail coffee market. Premium private label coffee at Trader Joe's (Trader Joe's brand) and Costco (Kirkland) has grown from 6% to 11% of the retail market in three years. Both are positioned on 'single-origin' and 'fair trade' credentials — attributes previously exclusive to premium national brands. Starbucks retail coffee volume is flat while the category grows 4% annually. What would you do?",
+    "context": "Starbucks' retail coffee average price is $11.99 per 12oz bag vs. $8.49 for Kirkland equivalent and $7.99 for Trader Joe's. Starbucks' retail coffee draws heavily on the halo of the café brand. However, consumer research shows 38% of retail coffee buyers have never been to a Starbucks café in the past year. The Nestlé partnership limits Starbucks' flexibility in retail channel strategy.",
+    "correctFrameworks": ["3C's", "4P's", "Value Chain Analysis"],
+    "whyThisFramework": "Value Chain Analysis reveals Starbucks' genuine advantages in sourcing relationships, roasting expertise, and café ecosystem — and which of these the retail channel can actually communicate. 3C's assesses the competitive dynamic. 4P's designs a response that leverages the café halo more aggressively in the retail product experience.",
+    "keyConsiderations": [
+      "The café halo is the main moat — must find ways to extend café experience into at-home ritual",
+      "Nestlé partnership constrains retail strategy but also provides global distribution",
+      "Single-origin and fair trade are table stakes now — Starbucks needs next-level credentialing",
+      "Reserve and premium SKUs can create a tier private label cannot credibly occupy"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Does the Nestlé partnership agreement restrict Starbucks from launching direct-to-consumer coffee or selling packaged coffee through channels other than grocery retail?",
+      "What is Starbucks' actual sourcing differentiation — does it have exclusive farmer relationships or proprietary varietals that Kirkland and Trader Joe's genuinely cannot access?",
+      "What does consumer research show about the 38% of retail buyers who haven't visited a café — are they core at-home coffee consumers who simply don't know they're buying a café brand, or are they intentional home coffee enthusiasts?",
+      "Has Starbucks tested any Reserve or ultra-premium SKU extensions in grocery retail — and if so, what were the velocity results?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Café Halo Transferability",
+        "subIssues": [
+          "Among the 38% of retail coffee buyers who haven't visited a Starbucks café in the past year, is brand awareness still present and does it influence purchase?",
+          "What specific café experience elements — seasonal flavors, Reserve roasts, barista credentialing — can be translated into at-home packaged formats?",
+          "Can Starbucks create a product experience that makes the at-home coffee ritual feel connected to the café brand in a way private label cannot replicate?"
+        ]
+      },
+      {
+        "block": "Sourcing & Roasting Differentiation",
+        "subIssues": [
+          "Does Starbucks have exclusive or preferential access to coffee varietals, farms, or regions that Kirkland and Trader Joe's cannot credibly claim?",
+          "Is Starbucks' roasting expertise and quality control demonstrably superior in ways a consumer can taste or verify?",
+          "Can Starbucks develop a credentialing system (Reserve, Roaster's Choice) that private label cannot replicate even if they match single-origin and fair trade claims?"
+        ]
+      },
+      {
+        "block": "Nestlé Partnership Constraints & Opportunities",
+        "subIssues": [
+          "What does the Nestlé partnership restrict in terms of new product launches, channel entry, and promotional flexibility?",
+          "How can Starbucks leverage Nestlé's global distribution and category expertise while working within partnership constraints?",
+          "Are there partnership renegotiation opportunities to unlock retail flexibility in exchange for other concessions?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Run Value Chain Analysis for True Differentiation",
+        "detail": "Map Starbucks' sourcing value chain: Starbucks is one of the world's largest green coffee buyers and has direct relationships with farmers through its Coffee and Farmer Equity (C.A.F.E.) Practices program. This is not just fair trade — it's vertically integrated farmer development that private label cannot replicate without decades of investment. This is the authentic differentiation story."
+      },
+      {
+        "step": 2,
+        "title": "Quantify the Growth Gap",
+        "detail": "Starbucks holds 14% of an $8B market = $1.12B in retail revenue. The category grows 4% annually (adding roughly $320M in new dollars) and Starbucks is capturing none of it — flat volume while the market adds revenue. Meanwhile premium private label has captured 5 points in three years. The math shows Starbucks has missed approximately $150M in category growth it should have captured at its share rate."
+      },
+      {
+        "step": 3,
+        "title": "Apply 3C's to the Competitive Threat",
+        "detail": "On Competitor: Kirkland and Trader Joe's have commoditized single-origin and fair trade as credentials — these are now table stakes, not differentiators. Starbucks must identify next-level credentialing. On Consumer: 38% of retail coffee buyers aren't café visitors — for them, Starbucks is 'just a coffee brand' without the café halo. Product experience must communicate the café story. On Company: Nestlé partnership is both a constraint and an asset — global distribution and coffee expertise."
+      },
+      {
+        "step": 4,
+        "title": "Design the 4P Response",
+        "detail": "Product: launch Starbucks Reserve grocery SKUs — ultra-premium single-farm coffees at $18-22 per 12oz that private label cannot credibly occupy. This anchors a true premium tier. Also develop seasonal limited editions (Pumpkin Spice whole bean, Holiday Blend) that leverage the café seasonal ritual in the grocery aisle. Promotion: build marketing that extends the café ritual into the home — 'Your Starbucks, your kitchen.' Place: within Nestlé partnership constraints, negotiate for premium shelf positioning and display."
+      },
+      {
+        "step": 5,
+        "title": "Leverage the Café Ecosystem",
+        "detail": "The 62% of retail buyers who are also café customers represent an under-leveraged channel. Create a Starbucks Rewards program benefit that rewards at-home coffee purchases — connecting retail and café purchase data. This is a CRM and loyalty play that private label literally cannot execute, and it creates switching costs for loyal Starbucks consumers."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Café Halo Effect",
+        "definition": "The brand equity transferred from Starbucks' café business to its packaged consumer products — consumers associate retail Starbucks coffee with the premium café experience even when buying at a grocery store."
+      },
+      {
+        "term": "C.A.F.E. Practices",
+        "definition": "Starbucks' Coffee and Farmer Equity Practices — a comprehensive ethical sourcing program that goes beyond fair trade certification to include direct farmer relationships, community investments, and environmental standards."
+      },
+      {
+        "term": "Nestlé Global Coffee Alliance",
+        "definition": "The 2018 agreement in which Nestlé paid Starbucks $7.15B for the rights to sell Starbucks-branded packaged coffee and tea products globally through retail channels, while Starbucks retained the licensing rights and brand control."
+      },
+      {
+        "term": "Single-Origin Coffee",
+        "definition": "Coffee sourced from a single geographic location (country, region, or farm), associated with premium quality and traceability — previously a differentiator for premium brands but now increasingly adopted by private label as table stakes."
+      },
+      {
+        "term": "Table Stakes",
+        "definition": "Features or attributes that have become the minimum required to compete in a market, no longer providing differentiation because all competitors offer them — single-origin and fair trade credentials have become table stakes in the premium coffee segment."
+      }
+    ],
+    "interviewerExpectations": "A strong answer uses Value Chain Analysis to identify Starbucks' authentic sourcing and farmer relationship advantages — which are genuinely defensible — and recognizes that single-origin and fair trade are now table stakes requiring next-level credentialing. A weak answer focuses on lowering Starbucks' price or treats the Nestlé partnership as a simple distribution asset without acknowledging its constraints on strategic flexibility.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "The interesting strategic tension here is that Starbucks' primary competitive advantage in retail coffee — the café brand halo — is something 38% of retail coffee buyers aren't directly experiencing. And the credentials that used to make premium packaged coffee special — single-origin, fair trade — are now being replicated by Kirkland and Trader Joe's at a $3-4 lower price point. So this is really a question about what genuine differentiation Starbucks actually has that private label cannot replicate. I'd like to start with Value Chain Analysis to find that real differentiation, use 3C's to assess the competitive dynamics, and then 4P's to design the response."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few questions. First, on the Nestlé partnership — what does the agreement restrict in terms of new product launches or direct-to-consumer channel entry? That constraint shapes what's possible. Second, does Starbucks have exclusive sourcing relationships — specific farms or varietals — that Kirkland genuinely cannot access? And third, does consumer research tell us anything about the 38% of retail buyers who haven't been to a café — do they still have brand awareness, or is Starbucks essentially just a premium label to them?"
+      },
+      {
+        "label": "Step 1 — Value Chain Analysis",
+        "script": "Let me start with Value Chain Analysis because I want to understand where Starbucks has authentic differentiation. Starbucks is one of the world's largest green coffee buyers. Through its C.A.F.E. Practices program — Coffee and Farmer Equity — it has direct, longstanding relationships with farmers, not just a fair trade certification. Starbucks has invested in community infrastructure in growing regions, roasting expertise developed over decades, and a pipeline of single-farm and micro-lot coffees through the Reserve program. That sourcing depth is not something Kirkland or Trader Joe's can replicate quickly. That's the authentic story."
+      },
+      {
+        "label": "Step 2 — 3C's Competitive Assessment",
+        "script": "On the Competitor side: both Kirkland and Trader Joe's have recognized that single-origin and fair trade credentials attract premium consumers, so they've adopted those credentials. That's the threat — they've closed the perceived quality gap on dimensions that used to be exclusive to national premium brands. On the Consumer side: the 38% of retail buyers who haven't been to a Starbucks café in the past year don't have the café experience to anchor their premium perception of the brand. For them, Starbucks is competing on product experience alone — and that's where we need to invest. On the Company side: the Nestlé partnership is both a global distribution asset and a constraint on channel flexibility."
+      },
+      {
+        "label": "Step 3 — 4P's Response",
+        "script": "Here's the 4P's response. On Product: first, launch Starbucks Reserve grocery SKUs — ultra-premium micro-lot coffees at $18-22 per 12oz with detailed farmer provenance on the package. Private label cannot credibly occupy this tier. Second, accelerate seasonal limited editions — Pumpkin Spice whole bean, Holiday Blend, spring seasonal roasts — that extend the café's seasonal ritual into the grocery aisle. Those products have enormous brand equity and Kirkland cannot match the cultural moment. On Promotion: build campaigns that explicitly connect the at-home brewing experience to the café experience — 'Your Starbucks, your kitchen.' On Place: negotiate for premium shelf positioning within the Nestlé partnership constraints and explore Starbucks Rewards program integration to drive retail purchase loyalty."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is a two-track strategy. Track one: defend the core Starbucks grocery SKU by communicating the C.A.F.E. Practices sourcing story more aggressively — this is genuinely differentiating compared to private label and we're not communicating it effectively. Track two: grow the premium tier with Starbucks Reserve grocery SKUs and expanded seasonal limited editions that create products private label cannot replicate. Starbucks holds 14% of an $8 billion market — $1.1 billion in retail revenue — and is growing flat while the category adds 4% annually. Getting back to category growth capture, even at current share, means recovering roughly $40-50 million in annual revenue growth. The Reserve expansion and seasonal acceleration can drive incremental share points beyond that."
+      }
+    ]
+  },
+  {
+    "id": "scenario_008",
+    "type": "Shrinking Category / Market Share",
+    "company": "Campbell's Soup",
+    "title": "Campbell's in a Declining Soup Category",
+    "prompt": "You are the VP of Marketing for Campbell's condensed soup. The US canned condensed soup category has declined 3% annually for seven consecutive years. Campbell's holds 58% share of a shrinking pie. Millennials are the primary driver of decline — they index 60% below average for canned soup consumption and cite 'too much sodium,' 'processed feel,' and 'inconvenient to prepare' as top barriers. Campbell's total soup revenue is down 14% over the period. What is your recommendation?",
+    "context": "The US canned soup market (all types) is $4.8B but was $5.8B a decade ago. Campbell's has responded with reduced-sodium lines that have underperformed expectations. Competitors Progresso and private label follow the category trend. The 55+ age cohort, Campbell's heaviest buyer, is aging out. Fresh and refrigerated soups (Panera at-home, Pacific Foods) are growing 12% annually.",
+    "correctFrameworks": ["3C's", "STP", "4P's", "Market Share Matrix"],
+    "whyThisFramework": "Market Share Matrix first — Campbell's has stable share in a declining market, which means the category itself is the problem. STP is then essential to determine whether to defend the existing buyer (older, loyal) or acquire new ones (Millennials, premium seekers). This determines whether to fix the core or innovate into adjacencies.",
+    "keyConsiderations": [
+      "Category decline vs. share loss are different problems requiring different solutions",
+      "Defending an aging consumer base is not a growth strategy — must attract new entrants",
+      "The condensed format is a liability with Millennials; ready-to-eat or refrigerated may be the answer",
+      "Brand extensions into growth segments (refrigerated, organic) can reinvent relevance"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is the 3% annual category decline accelerating or stable — and is it consistent across all soup formats, or is condensed declining faster than ready-to-eat?",
+      "What is the financial profile of Campbell's adjacent businesses — does the company have existing refrigerated or organic capabilities it could scale under the Campbell's brand?",
+      "Among the 55-plus age cohort that skews toward Campbell's, what is the purchase frequency trend — are loyal elderly consumers buying the same amount, or are even they buying less often?",
+      "Has Campbell's tested any premium or refrigerated format extensions under the Campbell's brand, and what were the consumer research results on brand permission?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Category vs. Brand Problem",
+        "subIssues": [
+          "Is Campbell's revenue decline primarily driven by category decline or is there a share loss dynamic occurring simultaneously?",
+          "Are Progresso and private label declining at the same rate as Campbell's, confirming this is a category problem?",
+          "If Campbell's held share perfectly, what would revenue look like — and is that a sustainable business?"
+        ]
+      },
+      {
+        "block": "Consumer Segment Strategy",
+        "subIssues": [
+          "Should Campbell's prioritize defending its aging 55-plus loyal base or investing to attract Millennial buyers through format and formula innovation?",
+          "What is the lifetime value of a new Millennial soup buyer versus the retention cost of an aging loyal buyer?",
+          "Which consumer segments are most likely to be won with a refrigerated or ready-to-eat format versus the condensed product?"
+        ]
+      },
+      {
+        "block": "Portfolio & Adjacency Strategy",
+        "subIssues": [
+          "Should Campbell's invest in growing the condensed format (sodium reduction, convenience packaging) or pivot investment toward growing refrigerated/premium formats?",
+          "Can the Campbell's brand stretch into refrigerated fresh soups, or does a separate brand or acquisition make more sense (Pacific Foods, Panera licensed)?",
+          "What is the capital investment required to build or acquire refrigerated soup capability, and does it clear the hurdle rate?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Apply Market Share Matrix to Diagnose the Problem Type",
+        "detail": "Campbell's has 58% share of a shrinking $4.8B market (was $5.8B). The Market Share Matrix says this is a 'stable share in a declining market' problem — meaning the category itself is the issue, not competitive weakness. The business logic changes: this is not a marketing problem to fix with better advertising — it is a portfolio and innovation problem requiring investment reallocation toward growing formats."
+      },
+      {
+        "step": 2,
+        "title": "Quantify the Burning Platform",
+        "detail": "Campbell's condensed soup revenue at 58% of $4.8B is roughly $2.8B. At 3% annual decline, the category shrinks by approximately $144M per year. Over seven years, revenue has declined $1B from $5.8B to $4.8B at the category level — and Campbell's revenue is down 14%, roughly in line with category. The path is clear: the category has a finite life cycle in its current form."
+      },
+      {
+        "step": 3,
+        "title": "Apply STP to Define the Strategic Choice",
+        "detail": "Two segments: aging loyal buyers (55+, heavy condensed soup consumers) and potential new buyers (Millennials, premium health-conscious). Targeting the aging loyal base is a managed-decline strategy — defend while the base shrinks. Targeting Millennials with a different format is a category reinvention strategy. Recommendation: do both, but allocate growth investment toward Millennial-relevant formats, not the condensed core."
+      },
+      {
+        "step": 4,
+        "title": "Design the Format Innovation Response",
+        "detail": "Millennials cite three barriers: sodium, processed feel, and inconvenience. Address all three with a single strategic move: launch Campbell's Well Yes or Campbell's Pacific Foods premium refrigerated soups under the Campbell's masterbrand. This simultaneously answers 'too processed' (refrigerated reads as fresh) and 'inconvenient to prepare' (ready-to-eat). Campbell's already owns Pacific Foods — leverage this asset at scale."
+      },
+      {
+        "step": 5,
+        "title": "Manage the Core Condensed Business",
+        "detail": "The condensed core is a cash cow, not a growth engine. Manage it for profitability: reduce SKU complexity, eliminate underperforming flavors, optimize production for margin. The generated cash funds the refrigerated expansion. Maintain loyalty investment with the 55+ core (they are still buying) but do not invest in acquisition marketing for the condensed format — that money is better spent on the adjacency."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Market Share Matrix",
+        "definition": "A framework that distinguishes between declining share in a growing market (brand problem) versus stable share in a declining market (category problem), which require fundamentally different strategic responses."
+      },
+      {
+        "term": "Category Decline",
+        "definition": "A reduction in total consumer demand for an entire product category — distinct from brand-specific share loss. Canned condensed soup is in secular category decline driven by changing consumer preferences."
+      },
+      {
+        "term": "Cash Cow",
+        "definition": "A BCG Matrix term for a business with high market share in a low-growth market that generates strong cash flow with minimal investment required — Campbell's condensed soup fits this profile."
+      },
+      {
+        "term": "Masterbrand",
+        "definition": "A parent brand name applied across multiple product lines to transfer brand equity — the question of whether 'Campbell's' can extend into refrigerated, premium formats is a masterbrand architecture decision."
+      },
+      {
+        "term": "Adjacent Category",
+        "definition": "A related product market where a brand can expand by leveraging existing equity — refrigerated and fresh soups are an adjacency for Campbell's because they share the soup occasion but meet different consumer needs."
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately diagnoses this as a category problem rather than a brand problem using the Market Share Matrix, then uses STP to recommend a dual strategy: manage the condensed core as a cash cow while investing in a refrigerated or premium adjacency to capture the growing format. A weak answer focuses on improving the condensed formula or cutting price — neither of which addresses the fundamental behavioral shift away from canned condensed soup.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "The first thing I notice here is that Campbell's holds 58% share — and total revenue is still down 14%. That tells me immediately this is not a brand problem, it's a category problem. If Campbell's were losing share, I'd be designing a competitive defense. But holding share in a declining market means the category itself is what needs to be addressed. I'd like to start with the Market Share Matrix to confirm that diagnosis, then STP to define the strategic choice, and 4P's to execute. Does that structure work?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few questions before I go deeper. First, is the 3% annual decline consistent across all soup formats, or is condensed declining faster than ready-to-eat — because that would tell me whether there's a format within the category that's growing. Second, Campbell's already owns Pacific Foods, which is in the refrigerated premium soup space. What is Pacific Foods' current scale and growth trajectory? And third, among the 55-plus age cohort that represents Campbell's heaviest buyers, are they buying the same amount per household or even they reducing consumption?"
+      },
+      {
+        "label": "Step 1 — Market Share Matrix Diagnosis",
+        "script": "The Market Share Matrix clearly puts Campbell's in the 'stable share, declining market' quadrant. That means this is a category reinvention problem, not a marketing effectiveness problem. The question isn't 'how do we win more of the canned condensed soup market' — it's 'should we be investing in canned condensed soup at all, or should we redirect investment toward growing formats?' The US canned soup market has lost $1 billion in revenue over a decade — from $5.8B to $4.8B — and there's no sign of reversal. The category math is not on our side."
+      },
+      {
+        "label": "Step 2 — STP: Making the Strategic Choice",
+        "script": "Using STP, I see two fundamentally different strategic choices. Option A: defend the aging 55-plus loyal consumer base that currently buys condensed soup. This is a managed-decline strategy — you maintain cash flow as long as that cohort buys, but there's no growth because that demographic is literally aging out of the market. Option B: invest to attract Millennial buyers, who index 60% below average on canned soup consumption but — importantly — do eat soup. They just eat it in different forms. My recommendation is to pursue Option B as the growth investment, while running Option A as a cash-management strategy for the core."
+      },
+      {
+        "label": "Step 3 — 4P's: Format Innovation for Growth",
+        "script": "Millennials have given us a clear brief: too much sodium, processed feel, inconvenient to prepare. Let me design a product response to each. The format answer is refrigerated ready-to-eat soup — it reads as fresh, not processed; it's zero prep time; and sodium can be managed more credibly in a premium fresh format. The good news is Campbell's already owns Pacific Foods, which is a premium refrigerated soup brand growing 12% annually. The strategic move is to invest behind Pacific Foods at scale and consider whether to connect it more explicitly to the Campbell's masterbrand. On Promotion: develop a 'soup is back, just different' campaign that speaks to the soup occasion — warmth, comfort, convenience — in a format that doesn't carry the canned soup baggage."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is a deliberate portfolio shift. First, designate the condensed soup business as a cash cow: reduce SKU complexity to the highest-margin flavors, optimize manufacturing for profitability, maintain basic loyalty marketing to retain the 55-plus base, but stop investing in acquisition marketing for new condensed soup buyers. Second, take the freed-up cash and invest aggressively behind the Pacific Foods refrigerated platform — scale distribution, launch new varieties, and test whether the Campbell's masterbrand can lend its consumer trust to a fresh format. Third, evaluate whether a Campbell's-branded refrigerated line — separate from Pacific Foods — would create incremental retail shelf presence. The category is declining, but the soup occasion is not. Campbell's job is to follow consumers to where soup is going, not defend where it's been."
+      }
+    ]
+  },
+  {
+    "id": "scenario_009",
+    "type": "Shrinking Category / Market Share",
+    "company": "Gillette (P&G)",
+    "title": "Gillette's Share Collapse in Razors",
+    "prompt": "Gillette held 70% of the US men's razor market in 2010. Today it holds 49%. Dollar Shave Club and Harry's entered on price and DTC convenience, together capturing 18% of the market. Premium and subscription models have changed consumer purchasing habits fundamentally. Gillette's average revenue per razor system has declined 9% despite launching the Gillette Labs system at $14.99/blade. How do you rebuild share?",
+    "context": "The US men's shaving market (razors + blades) is $2.1B. DTC subscriptions (Dollar Shave Club, Harry's, Billie) now account for 24% of all razor purchases by volume. Gillette's research shows its loyal buyers are 45+; men under 35 show 22% lower brand affinity than they did a decade ago. Unilever acquired Dollar Shave Club for $1B in 2016. Beards remain culturally prevalent, reducing shaving frequency.",
+    "correctFrameworks": ["3C's", "4P's", "Porter's Five Forces"],
+    "whyThisFramework": "Porter's Five Forces maps the structural disruption: new entrants with lower barriers (DTC eliminates retail gatekeeping), buyer power (subscription = locked-in relationships for competitors), and substitutes (beards). 3C's narrows the consumer insight. 4P's — especially Place (DTC channel build) — is the critical response lever.",
+    "keyConsiderations": [
+      "The DTC model eliminates Gillette's retail shelf advantage — must build own subscription channel",
+      "Younger men are the lost generation — must establish relevance before the category shrinks further",
+      "Premium innovation is a double-edged sword if the core product loses price credibility",
+      "P&G scale in manufacturing and retail relationships is a moat DTC brands lack"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Has Gillette built any DTC subscription capability to date — is there a Gillette.com subscription program, and what is its current scale relative to Dollar Shave Club and Harry's?",
+      "What is the primary driver of the 21-point share loss — is it price (DTC is cheaper), convenience (subscription delivery), or perception (DTC brands feel more relevant to younger men)?",
+      "Is the beard trend genuinely reducing total market size (fewer shavers) or just reducing shaving frequency among existing shavers?",
+      "Does P&G have any constraints — channel conflict considerations with retail partners like Walmart and Target — that would limit how aggressively Gillette can build DTC?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Structural Disruption Analysis",
+        "subIssues": [
+          "How have DTC brands changed the economics of razor acquisition — specifically, what is the cost structure advantage DSC and Harry's have versus Gillette's retail model?",
+          "Is the subscription model a durable competitive moat, or can Gillette's retail relationships provide equal or better consumer convenience?",
+          "What is the structural impact of beard culture on total category size — is the market itself shrinking, compounding the share loss?"
+        ]
+      },
+      {
+        "block": "Consumer Generational Gap",
+        "subIssues": [
+          "Why do men under 35 show 22% lower brand affinity — is it a communication problem, a relevance problem, or a product problem?",
+          "What does the DTC brand communication resonate on with younger men that Gillette's current marketing does not?",
+          "What is the revenue opportunity of winning back even 5 percentage points of the under-35 segment versus the cost of that acquisition?"
+        ]
+      },
+      {
+        "block": "Channel & Business Model Response",
+        "subIssues": [
+          "Can Gillette build a subscription DTC program that competes effectively with Dollar Shave Club on price and with Harry's on brand experience?",
+          "How does Gillette balance DTC investment with protecting the retail relationships (Walmart, Target, CVS) that represent the majority of current revenue?",
+          "What unique advantages can Gillette's P&G scale (manufacturing, retail relationships, R&D) provide that DTC brands structurally cannot match?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Apply Porter's Five Forces to Map the Disruption",
+        "detail": "DTC brands reduced barriers to entry by eliminating the need for retail shelf presence — they went direct to consumers with viral marketing (Dollar Shave Club's $1M YouTube launch). Buyer power has shifted because subscription models lock consumers into competitor ecosystems for months or years. The substitute threat (beards) reduces total market frequency. Together these forces explain the 21-point share loss more than any single product or price failure."
+      },
+      {
+        "step": 2,
+        "title": "Quantify the Revenue and Share Losses",
+        "detail": "Gillette held 70% of $2.1B = $1.47B at peak. Today at 49% of $2.1B = $1.03B. That's roughly $440M in lost annual revenue over 10+ years. DTC subscriptions at 24% of market by volume represent approximately $504M in category volume that Gillette is largely absent from. This is the 'burning platform' that justifies urgent DTC investment."
+      },
+      {
+        "step": 3,
+        "title": "Launch Gillette DTC Subscription",
+        "detail": "Build a Gillette.com subscription program — blade refills delivered monthly at competitive pricing. P&G's scale means Gillette can manufacture at lower cost than DSC or Harry's; the issue is the business model, not the economics. Price the subscription at $9.99/month for a 4-pack of Gillette Fusion refills — directly competitive with DSC's pricing, but with superior blade quality. This recovers the channel without abandoning retail."
+      },
+      {
+        "step": 4,
+        "title": "Win the Under-35 Consumer",
+        "detail": "The 22% lower brand affinity among men under 35 is a communication and cultural relevance problem as much as a product problem. Dollar Shave Club and Harry's used humor, directness, and authenticity to build millennial brand resonance that Gillette's traditional 'best a man can get' advertising missed. Develop a new creative platform for the under-35 audience — partnerships with gaming, sports, and entertainment — not shaving performance claims, but brand personality and values."
+      },
+      {
+        "step": 5,
+        "title": "Defend Retail with Exclusive Product Tiers",
+        "detail": "Gillette Labs at $14.99/blade and Gillette Fusion ProGlide create retail exclusive premium tiers that DTC brands cannot match on product innovation or shelf presence. Invest in retail end-cap and display programs with Walmart and Target to maintain physical retail dominance. The physical retail channel still represents 76% of razor purchases by volume — protect and invest in it while building DTC as the incremental channel."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "DTC (Direct-to-Consumer)",
+        "definition": "A business model where a brand sells directly to end consumers without retail intermediaries — Dollar Shave Club's DTC subscription model eliminated Gillette's retail shelf advantage by creating a direct consumer relationship."
+      },
+      {
+        "term": "Subscription Model",
+        "definition": "A recurring purchase arrangement where consumers pay regularly (monthly, quarterly) for continued product delivery — creates switching costs and customer lifetime value that are structurally advantageous versus one-time retail purchase."
+      },
+      {
+        "term": "Channel Conflict",
+        "definition": "Tension created when a brand competes in multiple channels that serve the same consumers at different prices or terms — Gillette risks channel conflict with Walmart and Target if it builds a lower-priced DTC subscription."
+      },
+      {
+        "term": "Brand Affinity",
+        "definition": "The emotional connection and positive association consumers have with a brand, measured through surveys — Gillette's 22% lower brand affinity among under-35 men reflects cultural and relevance gaps, not just product issues."
+      },
+      {
+        "term": "Category Frequency",
+        "definition": "How often consumers make purchases in a category — beard culture has reduced shaving frequency among men, directly reducing the volume opportunity for all razor brands regardless of share."
+      }
+    ],
+    "interviewerExpectations": "A strong answer uses Porter's Five Forces to explain the structural nature of the DTC disruption — not just a price war — and designs a Place-led response that builds Gillette's own DTC subscription while protecting retail relationships. A weak answer focuses on product innovation or price cuts without addressing the channel and business model disruption that is the root cause of the 21-point share loss.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "A 21-point share loss — from 70% to 49% — is not a product problem or a price problem in isolation. It's a structural disruption. Dollar Shave Club and Harry's didn't out-engineer Gillette. They out-distributed it by bypassing the retail shelf entirely and building direct consumer relationships through subscription. So my framework starts with Porter's Five Forces to explain the structural dynamic, then 3C's to narrow the consumer insight, and 4P's with Place as the critical lever. I want to make sure I'm designing a business model response, not just a marketing response."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few questions. First, does Gillette have any DTC subscription capability today — a Gillette.com program — and if so, what is its current scale? Second, on the under-35 brand affinity gap — what does research show is driving the 22% decline? Is it a product issue, a price issue, or a cultural/relevance issue? And third, does P&G have channel conflict concerns with Walmart and Target that would constrain how aggressively we can build a lower-priced DTC subscription?"
+      },
+      {
+        "label": "Step 1 — Porter's Five Forces Analysis",
+        "script": "Let me use Porter's Five Forces to explain why this happened. The key insight is that DTC eliminated the barrier to entry that protected Gillette for decades — namely, retail shelf access. Getting a product into Walmart or Target required capital, relationships, and distribution infrastructure. Dollar Shave Club bypassed all of that with a $4,500 YouTube video and a subscription model. Once they had direct consumer relationships, they created switching costs — subscribers don't actively shop for razors anymore, they just receive them. Buyer power shifted to DTC brands because they own the consumer relationship. And the beard trend is a genuine substitute reducing total shaving frequency. Those three forces together explain the share collapse."
+      },
+      {
+        "label": "Step 2 — Quantifying the Stakes",
+        "script": "Quick math: Gillette at 70% of $2.1 billion was roughly $1.47 billion in revenue. Today at 49%, that's about $1.03 billion — $440 million in lost annual revenue. DTC subscriptions represent 24% of the market by volume — roughly $500 million in category dollars that Gillette is largely absent from. That's the gap. Building into the DTC channel isn't an optional strategic initiative; it's recovering a channel that competitors have colonized."
+      },
+      {
+        "label": "Step 3 — DTC Subscription and Channel Strategy",
+        "script": "Here's my Place-led response. Launch a Gillette.com subscription program — Gillette Fusion blade refills delivered monthly at $9.99 per four-pack, directly competitive with Dollar Shave Club's pricing. P&G's manufacturing scale means Gillette can make blades more cheaply than DSC; the historical problem was the business model, not the cost structure. Pricing the subscription at DSC-parity puts Gillette in that DTC consideration set for the first time. I'd structure this carefully to minimize channel conflict — work with Walmart and Target on exclusive premium SKUs and guarantee minimum shelf assortment, while positioning DTC as a convenience add-on, not a retail replacement."
+      },
+      {
+        "label": "Step 4 — Winning Back the Under-35 Consumer",
+        "script": "On the consumer side, the 22% lower brand affinity among men under 35 is a cultural relevance problem. Dollar Shave Club's advertising spoke to young men with humor and irreverence. Gillette's 'best a man can get' campaign felt aspirational but also disconnected from how younger men see themselves. I'd develop a new brand voice for the under-35 consumer — not built on shaving performance, but on brand personality. Partnerships with gaming creators, sports properties that skew young, and digital-first distribution of content that makes Gillette feel like a brand that gets them, not a brand their father uses."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "Three priorities. One: launch Gillette DTC subscription at DSC-competitive pricing within 12 months — this is the highest-urgency move because every month we delay is another month of subscriber lock-in for competitors. Two: develop a new creative and cultural marketing platform targeting men under 35, built on brand personality rather than product performance claims. Three: protect and invest in retail as the dominant channel — 76% of razors still sell in physical stores, and Gillette's retail relationships and premium Gillette Labs innovation are a genuine moat. Gillette doesn't need to become Dollar Shave Club. It needs to offer a DTC option that captures the subscription habit while using P&G's scale in retail and R&D to stay ahead on product innovation."
+      }
+    ]
+  },
+  {
+    "id": "scenario_010",
+    "type": "Shrinking Category / Market Share",
+    "company": "Tropicana (PepsiCo)",
+    "title": "Tropicana in a Declining OJ Market",
+    "prompt": "The US orange juice market has declined 28% in volume over the past decade. Tropicana, the category leader with 33% share, has seen unit volume fall 19% over the same period. Health concerns (sugar content), competition from other morning beverages (cold brew coffee, smoothies, sparkling water), and commodity price volatility from Florida citrus disease have created a structural headwind. Tropicana was spun off from PepsiCo in 2021 and now operates as a standalone company. What should Tropicana do?",
+    "context": "The US orange juice market is now $4.3B (down from $6.1B in 2013). Tropicana's most loyal buyers are 50+ consumers who grew up with OJ as a morning ritual. 18-34 year olds drink 40% less OJ than the same age group did in 2005. Florida citrus greening disease has increased raw material costs 35% over five years. Tropicana Pure Premium is priced at $5.49 for 52oz vs. private label at $3.79.",
+    "correctFrameworks": ["3C's", "STP", "Profitability Tree"],
+    "whyThisFramework": "Profitability Tree reveals whether this is a revenue or volume problem (it's both). STP is critical — the category is in secular decline, so Tropicana must decide which segments to defend vs. exit and whether to stretch the brand into adjacent beverages. 3C's maps the competitive landscape of the broader morning beverage occasion.",
+    "keyConsiderations": [
+      "Structural category decline requires brand extension, not just defending the shrinking core",
+      "The 'morning occasion' is the real battleground — OJ is one solution, not the only one",
+      "Cost structure from citrus disease is a real P&L pressure alongside volume decline",
+      "Repositioning to functional (vitamin C, immunity) could attract younger health-conscious consumers"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Since the PepsiCo spin-off in 2021, does Tropicana still have access to PepsiCo's distribution network and retail relationships, or is it now building standalone distribution capability?",
+      "What is Tropicana's current P&L situation — is the company profitable at current scale given the 35% increase in raw material costs from citrus greening, or is it in a financially stressed position?",
+      "Has Tropicana done any consumer research on brand permission — do loyal OJ buyers see Tropicana as a 'juice brand' or a 'morning health brand,' and would they consider Tropicana smoothies, sparkling juice, or functional drinks?",
+      "Is there any indication that younger consumers who currently under-index on OJ would consider Tropicana if the product addressed their sugar and health concerns through a reformulated lower-sugar or fortified format?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Financial Viability of Core Business",
+        "subIssues": [
+          "Can Tropicana remain profitable as a standalone company if OJ volume continues to decline 2-3% annually while raw material costs continue rising from citrus disease?",
+          "What is the break-even volume for Tropicana's current cost structure — at what market size does the business become unviable?",
+          "Are there cost reduction opportunities (supply chain optimization, alternative sourcing) that improve the P&L without compromising product quality?"
+        ]
+      },
+      {
+        "block": "Core OJ Defense Strategy",
+        "subIssues": [
+          "Can functional repositioning (vitamin C, immunity, no sugar added formats) attract health-conscious younger consumers to the OJ category?",
+          "Is the 50-plus loyal consumer base large enough and purchase-frequent enough to sustain Tropicana's core OJ business profitably for the next decade?",
+          "What is the price gap management strategy given Tropicana's $1.70 premium over private label in a volume-declining market?"
+        ]
+      },
+      {
+        "block": "Morning Beverage Adjacent Expansion",
+        "subIssues": [
+          "Does the Tropicana brand have sufficient permission to enter morning beverage adjacencies — smoothies, sparkling juice, cold-pressed, functional beverages?",
+          "Which adjacent beverage occasions are growing fastest and most accessible to Tropicana's existing manufacturing and distribution capabilities?",
+          "Should Tropicana acquire or partner with an existing brand in adjacent morning beverages rather than building organically?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Run the Profitability Tree",
+        "detail": "Tropicana holds 33% of $4.3B = $1.42B in revenue (down from 33% of $6.1B = $2.01B). Revenue has declined approximately $590M — both volume decline and the structural cost increase from citrus greening (35% raw material cost increase) are squeezing P&L simultaneously. As a standalone company post-PepsiCo spin-off, Tropicana has less financial cushion to absorb these twin pressures. The Profitability Tree reveals whether the company is in financial stress or has adequate margin to invest in adjacencies."
+      },
+      {
+        "step": 2,
+        "title": "Apply 3C's to the Morning Beverage Occasion",
+        "detail": "Reframe the competitive lens from 'OJ market' to 'morning beverage occasion.' In this broader frame, Tropicana competes against cold brew coffee, smoothies, sparkling water, protein drinks, and green juice — all of which are growing. The Consumer insight: 18-34 year olds are not anti-beverage, they're anti-OJ specifically due to sugar content and 'not as healthy as I want' perception. The Company asset: Tropicana's 'pure, natural, not from concentrate' positioning is relevant to morning beverage occasions broadly — not just OJ."
+      },
+      {
+        "step": 3,
+        "title": "Apply STP to Define the Strategic Priority",
+        "detail": "Segment: aging OJ loyalists (50+), lapsed OJ buyers who moved to other morning beverages, and health-conscious younger consumers (18-34) who never developed an OJ habit. Target: primary target is the lapsed buyer — they have existing beverage occasion and familiarity with Tropicana, reducing trial risk. Secondary target is the health-conscious younger consumer through functional innovation. The aging loyalist is the base to protect, not the growth target."
+      },
+      {
+        "step": 4,
+        "title": "Reformulate Core OJ for Modern Health Credentials",
+        "detail": "Launch Tropicana Zero Sugar (fortified with vitamins) and Tropicana Immunity Boost as core portfolio extensions that address the primary purchase barriers among younger consumers — sugar and health efficacy. These are not substitutes for Pure Premium but additions that expand the portfolio's health positioning. Zero Sugar addresses the 'too much sugar' barrier directly and has precedent in the juice category."
+      },
+      {
+        "step": 5,
+        "title": "Evaluate Morning Beverage Brand Extension",
+        "detail": "Conduct a brand permission study: would lapsed Tropicana buyers purchase a Tropicana smoothie or sparkling juice? If yes (hypothesis: yes, brand equity in 'natural, fruit-based' is transferable), develop a Tropicana Smoothie or Tropicana Sparkling line in 2-3 SKUs. Prioritize flavors that compete in the fastest-growing morning beverage segments. This leverages the Tropicana brand's distribution infrastructure without requiring a new category entry from scratch."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Citrus Greening Disease",
+        "definition": "A bacterial disease (Huanglongbing) that has devastated Florida orange groves since the 2000s, destroying trees and significantly reducing US orange production — the primary driver of Tropicana's 35% raw material cost increase."
+      },
+      {
+        "term": "Secular Decline",
+        "definition": "A long-term, structural decrease in demand driven by fundamental behavioral or demographic shifts — distinct from cyclical decline. OJ's 28% volume decline is secular because it reflects permanently changing consumer preferences, not a temporary downturn."
+      },
+      {
+        "term": "Brand Permission",
+        "definition": "The degree to which consumers believe a brand has the credibility and authority to enter a new product category — Tropicana's brand permission to sell smoothies or sparkling juice must be validated before extension investment."
+      },
+      {
+        "term": "Spin-Off",
+        "definition": "A corporate action where a parent company separates a business unit into an independent publicly traded company — Tropicana's 2021 spin-off from PepsiCo means it no longer has automatic access to PepsiCo's distribution and financial resources."
+      },
+      {
+        "term": "Functional Beverage",
+        "definition": "A drink marketed for health benefits beyond basic nutrition — enhanced with vitamins, probiotics, adaptogens, or immunity boosters — the fastest-growing segment of the morning beverage occasion among younger consumers."
+      }
+    ],
+    "interviewerExpectations": "A strong answer starts with the Profitability Tree to assess Tropicana's financial stability as a standalone company before recommending investments, and recognizes that the morning beverage occasion — not just the OJ subcategory — is the real competitive battleground. A weak answer focuses on defending the OJ share position without acknowledging the structural category decline, or ignores the cost pressure from citrus greening disease that makes the financial situation doubly acute.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This case is more structurally challenging than a typical market share defense because Tropicana faces two problems simultaneously: category decline of 28% and raw material cost inflation of 35% from citrus disease. As a standalone company since the PepsiCo spin-off, it has less financial cushion to absorb both. So I want to start with the Profitability Tree to understand whether Tropicana is financially stable enough to invest in any of the options I'm about to outline — because a company under financial stress has different strategic options than one with margin room. Then I'll use 3C's to reframe the competitive landscape, and STP to make the targeting choice. Does that approach work?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few questions before I go further. First, since the 2021 spin-off, does Tropicana still have access to PepsiCo's distribution network, or is it operating on standalone distribution — because that changes the feasibility of brand extensions significantly. Second, what is Tropicana's current operating margin — is the company profitable today given the raw material cost increases, or is the P&L under meaningful stress? And third, has Tropicana tested consumer brand permission for adjacent products — do loyal OJ buyers see Tropicana as a 'juice brand' or a broader 'morning health brand' that could credibly sell smoothies or sparkling juice?"
+      },
+      {
+        "label": "Step 1 — Profitability Tree",
+        "script": "Let me establish the financial baseline first. Tropicana holds 33% of a $4.3 billion market — roughly $1.42 billion in revenue today. A decade ago, that same 33% of a $6.1 billion market was about $2 billion. So revenue is down approximately $580 million — driven by both the 28% category volume decline and raw material cost pressure of 35% from citrus greening. This is a dual-threat P&L squeeze: revenue is falling and costs are rising. As a standalone company, Tropicana doesn't have PepsiCo's balance sheet as a backstop. The financial health of the core business determines how much we can invest in adjacencies. I'd need to see the current gross margin to assess this fully."
+      },
+      {
+        "label": "Step 2 — 3C's: Reframing the Competitive Landscape",
+        "script": "I want to reframe the competitive lens here. If we define the market as 'orange juice,' Tropicana has 33% of a declining category and the options look limited. But if we define the market as 'morning beverage occasion,' the competitive set expands — cold brew coffee, smoothies, sparkling water, protein shakes, green juice — and the growth opportunity expands with it. On the Consumer side: 18-34 year olds drink 40% less OJ than their cohort did in 2005, but they haven't stopped having a morning beverage habit. They've switched to other things. The question is whether Tropicana can follow them. On the Company side: Tropicana's equity in 'pure, natural, not from concentrate' is relevant to the morning beverage occasion broadly — not just OJ specifically."
+      },
+      {
+        "label": "Step 3 — STP: Strategic Targeting",
+        "script": "Three consumer segments: the aging 50-plus OJ loyalist, the lapsed buyer who has migrated to other morning beverages, and the health-conscious under-35 consumer who never developed an OJ habit. I'd prioritize the lapsed buyer as the primary target — they have an existing morning beverage occasion, brand familiarity with Tropicana, and are reachable through product innovation that addresses why they left (sugar content, health efficacy). The younger consumer who never had an OJ habit is harder to win. The aging loyalist is the base to protect, not the growth engine. This segmentation logic suggests two distinct strategies: innovation to win back lapsed buyers, and core defense for the loyalist."
+      },
+      {
+        "label": "Step 4 — 4P's: Innovation and Extension",
+        "script": "For the lapsed buyer: launch Tropicana Zero Sugar and Tropicana Immunity Boost as core portfolio extensions. Zero Sugar addresses the 'too much sugar' barrier directly. Immunity Boost adds a functional health benefit — vitamin C, elderberry, zinc — that competes with the functional beverage segment on health efficacy. These reformulations keep the consumer in the Tropicana OJ franchise. For the broader morning beverage opportunity: conduct a brand permission study for a Tropicana Smoothie or Tropicana Sparkling line. If the brand extends credibly, launch two or three SKUs leveraging existing distribution infrastructure. This is the lower-capital path versus acquiring a new brand."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is a three-horizon strategy. Horizon one — immediate: stabilize the financial profile. Identify any cost reduction in the supply chain that doesn't compromise quality, and manage the OJ portfolio for profitability by reducing SKU complexity to the highest-margin formats. Horizon two — 12-18 months: launch Tropicana Zero Sugar and Immunity Boost to address the primary purchase barriers among lapsed and younger buyers, keeping them in the Tropicana OJ franchise. Horizon three — 18-36 months: evaluate and potentially execute a morning beverage extension — Tropicana Smoothies or Tropicana Sparkling — based on brand permission research and financial capacity. The overarching strategic principle is that Tropicana is not an OJ brand — it's a morning health and refreshment brand that has historically expressed itself through orange juice. Reframing that identity is what creates the growth path."
+      }
+    ]
+  }
+]

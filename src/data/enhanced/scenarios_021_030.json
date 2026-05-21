@@ -1,0 +1,1109 @@
+[
+  {
+    "id": "scenario_021",
+    "type": "Pricing",
+    "company": "Netflix",
+    "title": "Netflix Ad-Supported Tier Pricing",
+    "prompt": "Netflix is launching an ad-supported tier and must set the price point. The standard ad-free plan is $15.49/month. The ad-supported plan must be priced to: (1) attract price-sensitive users who have not subscribed, (2) not cannibalize standard plan subscribers, and (3) generate equivalent or greater revenue per user when including ad revenue. Netflix estimates it will earn $6-8 per subscriber per month from advertising. What price should they set and why?",
+    "context": "Netflix has 75M US subscribers at an average of $14 per month. Research shows 40M US households are aware of Netflix but are 'price-sensitive non-subscribers.' HBO Max launched its ad-supported tier at $9.99. Hulu's ad-supported tier is $7.99. Netflix's average cost to serve a subscriber (content + infrastructure) is approximately $9 per month. The risk of downgrade: if 20% of standard subscribers downgrade, that's significant revenue loss.",
+    "correctFrameworks": ["Pricing Framework", "Breakeven Analysis", "Profitability Tree"],
+    "whyThisFramework": "Profitability Tree models the revenue equation: (subscribers × subscription price) + (ad-supported subscribers × ad revenue). Breakeven Analysis calculates the maximum cannibalization rate before the ad tier destroys more value than it creates. Pricing Framework uses competitive benchmarking and value-based anchoring to set the $9.99 price hypothesis.",
+    "keyConsiderations": [
+      "Ad revenue of $6-8/month means even a $6.99 plan can match standard plan economics if ad rates hold",
+      "Cannibalization risk: the price gap between tiers must be large enough to discourage downgrade",
+      "Competitive benchmarking: pricing below HBO Max and Hulu positions Netflix as the value leader",
+      "Content restrictions on ad-supported tier (no downloads, some titles excluded) can protect standard tier"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "What is the assumed ad load per hour — how many minutes of ads does Netflix plan to run, and how does that affect the $6-8 ad revenue estimate?",
+      "Is the $6-8 ad revenue per subscriber guaranteed at launch, or is it a ramp — and what's the floor in year one?",
+      "How many of the 40M price-sensitive non-subscribers are already on a competitor's ad-supported plan at $7.99-$9.99?",
+      "Are there content licensing restrictions that would require withholding certain titles from the ad tier, and how material is that to perceived value?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Revenue Per Ad-Supported Subscriber",
+        "subIssues": [
+          "What subscription price maximizes uptake from the 40M non-subscribers?",
+          "At what price point does total revenue (subscription + $7 ad revenue) exceed the $14 standard subscriber average?",
+          "What ad load and CPM assumptions are needed to sustain $6-8/month in ad revenue?"
+        ]
+      },
+      {
+        "block": "Cannibalization & Downgrade Risk",
+        "subIssues": [
+          "How large must the price gap be to discourage the 75M existing standard subscribers from downgrading?",
+          "What percentage downgrade is tolerable before the ad tier destroys net revenue?",
+          "Which content or feature restrictions (no downloads, ads on new releases) reduce downgrade incentive?"
+        ]
+      },
+      {
+        "block": "Competitive Positioning",
+        "subIssues": [
+          "Does pricing below Hulu ($7.99) or HBO Max ($9.99) create a meaningful perception of value leadership?",
+          "How does Netflix's content library depth justify a premium over Hulu's ad-supported tier?",
+          "What is the risk that a $6.99 price signals lower quality and undermines brand equity?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Anchor on Total Revenue Per User",
+        "detail": "Calculate target ARPU for the ad tier. At $7 mid-point ad revenue, a $7.99 price yields $14.99 total — above the $14 standard average. A $9.99 price yields $16.99, expanding ARPU. This math sets the floor: any price above $6 is accretive if ad revenue holds."
+      },
+      {
+        "step": 2,
+        "title": "Model Cannibalization Breakeven",
+        "detail": "If 20% of 75M standard subscribers downgrade from $14 to $9.99+$7 = $16.99, revenue per downgrader actually increases. But if ad revenue falls below $5, the math reverses. Request: what is the contractual floor on ad revenue in year one?"
+      },
+      {
+        "step": 3,
+        "title": "Competitive Benchmarking",
+        "detail": "Hulu ad tier: $7.99. HBO Max ad tier: $9.99. Netflix content library is widely perceived as superior. Pricing at $9.99 matches HBO Max but signals Netflix does not compete on price — it competes on content quality. Pricing at $6.99 undercuts both but risks a race to the bottom."
+      },
+      {
+        "step": 4,
+        "title": "Tier Separation via Feature Restrictions",
+        "detail": "To widen the effective gap between $9.99 ad and $15.49 standard: remove offline downloads, exclude new releases for 90 days on ad tier. This reduces downgrade incentive independent of price, protecting the $14 average."
+      },
+      {
+        "step": 5,
+        "title": "Recommendation",
+        "detail": "Price at $9.99 with feature restrictions. Total ARPU = $16.99, above current $14 standard. The $5.50 gap from $15.49 is enough to attract price-sensitive non-subscribers while the feature gap discourages downgrade. Revisit in 12 months once ad revenue actuals are known."
+      }
+    ],
+    "keyTerms": [
+      { "term": "ARPU", "definition": "Average Revenue Per User — the total revenue Netflix earns per subscriber per month, combining subscription fees and ad revenue" },
+      { "term": "CPM", "definition": "Cost Per Mille — the price advertisers pay Netflix per 1,000 ad impressions; higher CPM means more ad revenue per subscriber" },
+      { "term": "Cannibalization Rate", "definition": "The percentage of existing paid subscribers who downgrade from a higher-priced tier to a lower-priced one, reducing net revenue" },
+      { "term": "ACV (Ad-Supported Content Value)", "definition": "The portion of Netflix's content library available on the ad tier; licensing restrictions may exclude premium titles, affecting subscriber perceived value" },
+      { "term": "Tier Separation", "definition": "Using feature differences (no downloads, ad load, content exclusions) rather than price alone to discourage downgrade from premium tiers" }
+    ],
+    "interviewerExpectations": "A strong answer leads with the revenue math — showing that ad revenue changes the pricing calculus fundamentally — before moving to cannibalization risk and competitive benchmarking. A weak answer jumps straight to 'price it at $9.99 to match HBO Max' without building the arithmetic case or addressing the downgrade scenario.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Great question. Before I give a price recommendation, I want to make sure I'm solving the right problem. Netflix needs to set a price that does three things simultaneously: attracts the 40 million price-sensitive non-subscribers, doesn't trigger mass downgrade from the 75 million existing standard subscribers, and generates equal or better revenue per user once ad income is included. I'll use a Profitability Tree to model the revenue equation, a quick Breakeven Analysis on cannibalization, and competitive benchmarking to sanity-check the number. May I have a moment to structure my thinking?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few quick questions before I dive in. First, is the $6 to $8 per subscriber per month in ad revenue a guaranteed floor or a projection — and does it ramp over the first 12 months? Second, how many of those 40 million non-subscribers are already on Hulu's $7.99 or HBO Max's $9.99 ad tier — meaning they've already revealed a willingness to pay? And third, are there content licensing restrictions that would limit which titles appear on the ad tier, like new releases being excluded for a window?"
+      },
+      {
+        "label": "Step 1 — Revenue Math: Setting the Floor",
+        "script": "Let me start with the math. Netflix's current standard subscriber generates $14 per month on average. The ad tier needs to match or exceed that on a total revenue basis. If I take the midpoint of the ad revenue estimate — call it $7 per month — then a subscription price of $7 gets me to $14 total ARPU, which just breaks even. At $9.99, total ARPU is $16.99, which is actually $3 above the standard plan average. So the math says: any price above $7 is immediately accretive if ad revenue holds. That's the floor."
+      },
+      {
+        "label": "Step 2 — Cannibalization Breakeven",
+        "script": "Now the cannibalization question. If 20% of 75 million standard subscribers — that's 15 million people — downgrade from $15.49 to $9.99, Netflix loses about $5.50 per subscriber in subscription revenue per month. That's $82.5 million per month. BUT — if those downgraders now generate $7 in ad revenue, the net loss per downgrader is only $5.50 minus $7, which is actually a gain of $1.50 per user. So paradoxically, if ad rates hold, downgrade is not the disaster it appears. The risk is if ad revenue comes in at $4 or lower — then the math reverses. This is why I'd want to know the year-one floor on ad CPMs."
+      },
+      {
+        "label": "Step 3 — Competitive Benchmarking",
+        "script": "Competitively: Hulu's ad tier is at $7.99, HBO Max is at $9.99. Netflix's content library — especially original series — is broadly perceived as deeper than either. Pricing at $9.99 signals that Netflix does not compete on price; it competes on content quality. Pricing at $6.99 undercuts both but could trigger a price war and signals desperation, which risks brand perception. I'd argue Netflix should match HBO Max at $9.99 rather than undercut Hulu."
+      },
+      {
+        "label": "Step 4 — Tier Protection via Feature Restrictions",
+        "script": "To further reduce downgrade risk from the $15.49 tier, I'd recommend layering in feature restrictions on the ad tier: no offline downloads, a 90-day window before new releases hit the ad tier, and a 4 to 5 minute-per-hour ad load. This widens the effective gap between tiers beyond just the $5.50 price difference and reduces the incentive for existing premium subscribers to downgrade even if the price looks attractive."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is to price the ad-supported tier at $9.99 per month. At $7 in mid-range ad revenue, total ARPU is $16.99 — which is $3 above the current standard average and accretive from day one. The $5.50 gap from the $15.49 standard plan is wide enough to attract price-sensitive non-subscribers while feature restrictions — no downloads, delayed new releases — discourage mass downgrade. I'd revisit the price at the 12-month mark once actual CPM data is in, with a contingency to adjust the ad load if revenue per user falls short of $6."
+      }
+    ]
+  },
+  {
+    "id": "scenario_022",
+    "type": "Pricing",
+    "company": "Starbucks",
+    "title": "Starbucks Latte Price Increase in Competitive Markets",
+    "prompt": "Starbucks is evaluating a $0.50 price increase on its Grande Latte from $5.45 to $5.95 across all US stores. The increase would help offset rising dairy and labor costs. Starbucks serves 8M Grande Lattes in the US daily. A test in Phoenix showed a 6% volume decline after the increase. Dutch Bros and local independent cafés are priced $0.50-$1.00 below Starbucks in most markets. Should Starbucks raise the price universally?",
+    "context": "Starbucks Rewards members (55% of transactions) have shown lower price sensitivity in tests — only 3% volume decline vs. 9% for non-members. Starbucks' gross margin on beverages is approximately 62%. The $0.50 cost increase from dairy and labor affects all drinks, not just lattes. Starbucks has raised prices 7 times in the past 4 years, accumulating a 28% total price increase.",
+    "correctFrameworks": ["Pricing Framework", "Breakeven Analysis", "3C's"],
+    "whyThisFramework": "Breakeven Analysis calculates whether the revenue gain from the price increase offsets the volume loss. 3C's examines competitive elasticity — in markets with strong Dutch Bros presence, the price increase risk is higher. Pricing Framework tests whether Starbucks has sufficient brand equity and customer lock-in (Rewards) to absorb another increase.",
+    "keyConsiderations": [
+      "Rewards members are less price-sensitive — differentiated pricing strategy by channel/member status",
+      "Cumulative 28% increase over 4 years is compounding consumer resentment",
+      "Market-level analysis needed — a universal price increase ignores local competitive dynamics",
+      "Breakeven: at 8M daily lattes, even 1% volume decline = 80K units × $5.45 = $436K daily revenue lost"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is the Phoenix test representative of the national store mix — specifically, does Phoenix have above-average Dutch Bros density, which might make the 6% decline an overestimate for other markets?",
+      "Does the $0.50 cost increase affect all beverages equally, or is it concentrated in dairy-heavy drinks like lattes and mochas?",
+      "What is the current split between Rewards member transactions and non-member transactions, and can Starbucks price differently through the app vs. in-store?",
+      "Has consumer research been done on the cumulative price perception — is there a threshold above which customers actively switch rather than grumble?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Revenue & Margin Impact of the Increase",
+        "subIssues": [
+          "Does the $0.50 price increase on 8M daily lattes generate enough revenue to offset the cost increase?",
+          "At what volume decline does the price increase become net negative for revenue?",
+          "How does the 62% gross margin change at the new price point vs. the new cost base?"
+        ]
+      },
+      {
+        "block": "Differential Customer Price Sensitivity",
+        "subIssues": [
+          "Should Rewards members (3% decline) and non-members (9% decline) be treated differently in the pricing strategy?",
+          "Which customer segments are most likely to switch to Dutch Bros or independents at $5.95?",
+          "Can the Starbucks app be used to offer Rewards members a price offset (e.g., bonus stars) rather than a lower list price?"
+        ]
+      },
+      {
+        "block": "Market-by-Market Competitive Dynamics",
+        "subIssues": [
+          "In high-Dutch-Bros markets, is the risk of a 9%+ non-member decline enough to warrant a different price?",
+          "Does a universal price increase damage Starbucks more in drive-thru-heavy suburban markets vs. urban captive-audience locations?",
+          "What is the competitive response risk — will Dutch Bros hold prices to widen the gap further?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Run the Breakeven Math",
+        "detail": "At 8M lattes/day × $5.45 = $43.6M daily revenue. A $0.50 increase with zero volume loss = $47.6M. The breakeven volume decline: revenue must stay at $43.6M, so $43.6M ÷ $5.95 = 7.33M units — a 8.4% decline. Phoenix showed 6%, which is below breakeven. But 9% non-member decline exceeds it."
+      },
+      {
+        "step": 2,
+        "title": "Segment by Rewards vs. Non-Member",
+        "detail": "55% of 8M = 4.4M Rewards transactions. At 3% decline: lose 132K units. 45% = 3.6M non-members. At 9% decline: lose 324K units. Total volume loss = 456K units, or 5.7% — below the 8.4% breakeven. Net revenue impact is positive, but barely."
+      },
+      {
+        "step": 3,
+        "title": "Assess Cumulative Perception Risk",
+        "detail": "Twenty-eight percent cumulative increase over 4 years is approaching the consumer tolerance threshold. Request brand health tracking data: is NPS or purchase intent declining? If so, the 6% Phoenix test may understate long-run elasticity as consumer sentiment continues to erode."
+      },
+      {
+        "step": 4,
+        "title": "Market Segmentation Recommendation",
+        "detail": "Rather than a universal increase, recommend a tiered approach: raise prices in urban/captive markets (airports, office districts) and Rewards member pricing holds flat via app-based star bonuses. In high-competition suburban markets with Dutch Bros, delay the increase or offset with a limited-time Rewards bonus."
+      },
+      {
+        "step": 5,
+        "title": "Recommendation",
+        "detail": "Implement the $0.50 increase selectively: yes in captive and low-competition markets, no or delayed in Dutch Bros overlap markets. Protect Rewards members with a star-bonus offset rather than a price exception. Monitor non-member volume weekly — if decline exceeds 9%, pause the rollout."
+      }
+    ],
+    "keyTerms": [
+      { "term": "Price Elasticity", "definition": "The percentage change in volume sold for every 1% change in price; Starbucks Rewards members have lower elasticity (3% volume drop) than non-members (9%)" },
+      { "term": "Breakeven Volume Decline", "definition": "The maximum percentage drop in units sold before a price increase becomes net revenue-negative; calculated as the price increase divided by the new price" },
+      { "term": "ACV (All Commodity Volume)", "definition": "Not applicable here — in this context, 'captive market' refers to locations like airports where competitive alternatives are limited and elasticity is lower" },
+      { "term": "Cumulative Price Elasticity", "definition": "The compounding effect of repeated price increases on consumer perception and switching behavior — 28% over 4 years creates a perception threshold risk beyond what any single increase tests" },
+      { "term": "Rewards Lever", "definition": "Using Starbucks' loyalty program (bonus stars, free drinks) to soften price increases for high-frequency members without changing the menu price" }
+    ],
+    "interviewerExpectations": "Interviewers want to see the breakeven math done quickly and correctly — the 8.4% threshold is the crux. Strong answers then layer in the Rewards vs. non-member segmentation and argue against a universal increase in favor of a market-differentiated approach. Weak answers recommend raising or not raising universally without running the numbers or addressing the cumulative perception risk.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is fundamentally a breakeven problem layered on top of a competitive dynamics question. I want to start with the math — does the $0.50 increase generate more revenue than the volume it loses? — then I'll look at competitive risk by market, and close with a recommendation on whether to raise universally or selectively. I'll use a Breakeven Analysis and the 3C's to structure this."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A couple of quick questions. First, is the Phoenix test representative nationally — does Phoenix have higher Dutch Bros density than average, which might make the 6% volume decline an overestimate elsewhere? Second, can Starbucks price differently for Rewards members through the app versus non-members at the register? That distinction matters a lot for my recommendation."
+      },
+      {
+        "label": "Step 1 — Breakeven Math",
+        "script": "Let me run the math first. Starbucks serves 8 million Grande Lattes per day in the US. At the current $5.45, that's $43.6 million in daily latte revenue. With a $0.50 increase to $5.95, I need to find the volume decline at which revenue stays flat. That's $43.6 million divided by $5.95 — which gives me about 7.33 million units, or a decline of 8.4%. So as long as volume falls less than 8.4%, the price increase is net positive for revenue."
+      },
+      {
+        "label": "Step 2 — Segmenting Rewards vs. Non-Members",
+        "script": "Now let me use the member data. Rewards members are 55% of transactions — call it 4.4 million lattes — and they show only a 3% volume decline. That's about 132,000 lost units. Non-members are 3.6 million transactions with a 9% decline — 324,000 lost units. Total: 456,000 units lost, or roughly 5.7%. That's below the 8.4% breakeven, so the price increase is still net positive. But — and this is important — the non-member segment alone is declining at 9%, which is close to the threshold. And that's before accounting for the cumulative effect of a 28% price increase over four years."
+      },
+      {
+        "label": "Step 3 — Competitive & Cumulative Risk",
+        "script": "On the competitive side: Dutch Bros is $0.50 to $1.00 cheaper than Starbucks today. At $5.95, Starbucks widens that gap further in Dutch Bros markets. The Phoenix test may actually be optimistic if Phoenix has lower Dutch Bros density than, say, the Pacific Northwest or Texas. The cumulative 28% increase is a brand risk that the single-test elasticity doesn't capture — consumer resentment compounds, and at some point a meaningful cohort of non-members makes a permanent switch rather than a one-time reduction."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is: do not raise prices universally. Instead, implement the $0.50 increase selectively. Raise prices in urban, captive, and low-competition markets — airports, office district locations, cities without significant Dutch Bros presence — where elasticity is low and customers have no real alternative. In high-competition suburban markets, delay the increase by two quarters and use Rewards program levers — bonus stars, a free drink after five purchases — to offset the cost pressure without widening the price gap against Dutch Bros. Monitor non-member volume weekly in rollout markets; if decline exceeds 9%, pause. The Rewards program is Starbucks' best pricing tool here — use it to protect the 55% of transactions that have already shown they'll tolerate the increase."
+      }
+    ]
+  },
+  {
+    "id": "scenario_023",
+    "type": "Pricing",
+    "company": "Apple",
+    "title": "Apple AirPods Pro Pricing Decision",
+    "prompt": "Apple is releasing the third generation of AirPods Pro. The current model is priced at $249. Manufacturing and component costs have increased $18 due to new H3 chip and upgraded ANC hardware. Apple's research shows consumers perceive 'significant improvement' in sound quality and noise cancellation. Sony's WF-1000XM5, the leading Android equivalent, is priced at $279. Samsung Galaxy Buds Pro 2 are $179. What should Apple price the new AirPods Pro?",
+    "context": "AirPods Pro sells approximately 22M units annually worldwide. Apple's ecosystem lock-in (Spatial Audio, Siri integration, seamless Apple device switching) creates significant switching costs. Consumer research shows iPhone users rate AirPods Pro at a $30-40 premium to Sony on 'convenience and integration' alone. The prior $249 price has held for two generations despite cost inflation.",
+    "correctFrameworks": ["Pricing Framework", "Breakeven Analysis"],
+    "whyThisFramework": "Pricing Framework — specifically value-based pricing — is the primary lens. Apple's competitive advantage is ecosystem integration, not component specs, meaning value to iPhone users exceeds cost-based pricing. Breakeven Analysis validates whether a price hold ($249, absorbing cost) or price increase ($279, following Sony) maximizes long-term margin and volume.",
+    "keyConsiderations": [
+      "Value-based pricing: the ecosystem premium justifies pricing at or above Sony",
+      "Pricing at $249 (hold) absorbs margin compression but maintains consumer goodwill",
+      "Pricing at $279 matches Sony and captures cost recovery — iPhone user loyalty supports it",
+      "Apple almost never prices down relative to competitors; $249 hold signals accessibility strategy"
+    ],
+    "difficulty": "easy",
+    "clarifyingQuestions": [
+      "What is Apple's current gross margin on AirPods Pro at $249, and how does the $18 cost increase affect margin percentage?",
+      "Is the consumer research showing 'significant improvement' specific to iPhone users, or does it include Android users who are unlikely to buy regardless?",
+      "Has Apple done price sensitivity testing at $269 and $279 specifically, or is the research directional?",
+      "What is the split between first-time AirPods Pro buyers and upgrade buyers — and do upgraders show higher price insensitivity?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Value-Based Price Ceiling",
+        "subIssues": [
+          "What is the maximum price iPhone users will pay given the $30-40 ecosystem premium they assign to AirPods vs. Sony?",
+          "Does 'significant improvement' in ANC and sound quality expand the value ceiling beyond the prior $249 anchor?",
+          "How does the $279 Sony price create a reference point that makes $249 or $269 feel like a value?"
+        ]
+      },
+      {
+        "block": "Cost & Margin Recovery",
+        "subIssues": [
+          "At $249, how much margin compression does the $18 cost increase create across 22M annual units?",
+          "At $279, does Apple fully recover cost and expand margin, or does volume loss offset the gain?",
+          "Is there a $269 middle option that splits the difference and avoids the psychological threshold at $279?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Establish the Value-Based Ceiling",
+        "detail": "Sony WF-1000XM5 is the best Android equivalent at $279. iPhone users value AirPods Pro at a $30-40 premium over Sony due to ecosystem integration alone — that implies a value ceiling of $309-$319 for iPhone users. Apple is pricing well below the value ceiling at any option between $249-$279."
+      },
+      {
+        "step": 2,
+        "title": "Cost Pressure Math",
+        "detail": "At $249 with an $18 cost increase, if current gross margin is ~50%, that's approximately $124.50 in margin. The $18 increase reduces margin to ~$106.50, an 8.5 point compression. Across 22M units, that's $396M in lost gross profit annually — material enough to justify a price response."
+      },
+      {
+        "step": 3,
+        "title": "Test Three Price Points",
+        "detail": "Option A: Hold at $249 — preserves goodwill, absorbs $396M margin compression. Option B: $269 — recovers half the cost increase, stays below Sony, minimal perception impact. Option C: $279 — matches Sony, fully recovers cost, signals premium parity. Consumer research showing 'significant improvement' supports Option B or C."
+      },
+      {
+        "step": 4,
+        "title": "Recommendation",
+        "detail": "Price at $279. The Sony benchmark provides cover; the $30-40 ecosystem premium means Apple is still perceived as a value versus Sony for iPhone users. The 'significant improvement' framing justifies a generational price step-up, and Apple's historical pattern is to price at the competitive quality leader, not below it."
+      }
+    ],
+    "keyTerms": [
+      { "term": "Value-Based Pricing", "definition": "Setting a price based on the perceived value to the customer rather than cost — for AirPods, the ecosystem integration premium ($30-40 over Sony) anchors the value calculation" },
+      { "term": "Price Anchor", "definition": "A reference price that shapes consumer perception; Sony at $279 makes Apple at $249 feel like a deal, even if Apple's cost structure is different" },
+      { "term": "ANC (Active Noise Cancellation)", "definition": "Hardware/software feature that filters out ambient sound; a key differentiation driver for premium earbuds and a primary upgrade justification" },
+      { "term": "Margin Compression", "definition": "The reduction in gross profit percentage caused by rising input costs without a corresponding price increase; the $18 cost increase compresses AirPods Pro margin by approximately 8-9 points at $249" },
+      { "term": "Ecosystem Lock-In", "definition": "The switching cost created by Apple's interconnected product suite (Spatial Audio, Siri, seamless device switching) that makes AirPods significantly less valuable on Android devices" }
+    ],
+    "interviewerExpectations": "This is an 'easy' case, so the bar is high for speed and confidence. Interviewers expect a quick value-based pricing structure, a clean reference to the Sony benchmark, and a decisive recommendation with one sentence of math support. Weak answers spend too long debating $249 vs. $279 without using the consumer research data ($30-40 ecosystem premium) to anchor the argument.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Apple's pricing decisions almost always come down to value-based pricing rather than cost-plus — so I want to start by establishing what iPhone users are willing to pay, then use the competitive benchmarks to sanity-check the number. I'll run a quick margin check to see if holding at $249 is even viable given the cost increase. Three minutes and I'll have a recommendation."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two quick questions. First, the consumer research showing 'significant improvement' — is that iPhone users specifically, or the general population? It matters because Android users aren't really the target buyer. Second, does Apple have sensitivity data at $269 and $279, or is this more directional research?"
+      },
+      {
+        "label": "Step 1 — Value Ceiling from Ecosystem Premium",
+        "script": "Let me start with what iPhone users are actually willing to pay. Sony's WF-1000XM5 is the top Android equivalent at $279. Apple's own research shows iPhone users value AirPods Pro at a $30 to $40 premium over Sony due to ecosystem features alone — Spatial Audio, Siri, seamless switching between iPhone, iPad, and Mac. That puts the value ceiling for iPhone users somewhere between $309 and $319. Apple is pricing well below the ceiling at any point between $249 and $279."
+      },
+      {
+        "label": "Step 2 — Cost Compression Math",
+        "script": "Now the cost question. If Apple's gross margin at $249 is roughly 50% — call it $124 in margin per unit — the $18 cost increase drops that to about $106, which is an 8.5 point compression. Across 22 million units annually, that's nearly $400 million in lost gross profit. That's not trivial. Holding at $249 is a deliberate choice to absorb that hit, and Apple should make it deliberately, not by default."
+      },
+      {
+        "label": "Step 3 — Testing the Price Options",
+        "script": "There are three logical options. Hold at $249 — preserves consumer goodwill, signals accessibility, but absorbs the full margin compression. Move to $269 — recovers about half the cost increase, stays $10 below Sony, likely passes without consumer backlash given the generational upgrade framing. Or move to $279 — matches Sony, fully recovers cost, uses Sony as the reference price anchor. The consumer research showing 'significant improvement' in sound and ANC is the key unlock here — it gives Apple the upgrade narrative to justify a step-up in price."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "I recommend pricing the third-generation AirPods Pro at $279. Here's the logic: Sony provides a direct $279 benchmark, and iPhone users value AirPods Pro at a $30 to $40 premium over Sony — which means $279 already feels like a deal to the core buyer. The 'significant improvement' in ANC and sound quality justifies a generational price increase from $249, and Apple's pattern is to price at the quality leader level, not below it. At $279, Apple recovers the $18 cost increase and then some, across 22 million units that's about $660 million in recovered gross profit annually. I'd communicate the price as part of the upgrade story — new H3 chip, improved ANC — not as a cost pass-through."
+      }
+    ]
+  },
+  {
+    "id": "scenario_024",
+    "type": "Pricing",
+    "company": "Whole Foods (Amazon)",
+    "title": "Whole Foods 365 Brand Pricing Strategy",
+    "prompt": "Amazon is evaluating whether to lower prices on Whole Foods' 365 store brand by 15% across 800+ SKUs to drive traffic and grow basket size. Currently, 365 is priced 10-20% above conventional grocery store brands (Kroger Private Selection, Wegmans organic). Amazon Prime members get an additional 10% off at Whole Foods. The goal is to close the perceived 'Whole Foods is expensive' gap without repositioning the brand downmarket. Is this the right move?",
+    "context": "Whole Foods' average basket is $43 vs. $31 at Kroger. The 'Whole Paycheck' reputation drives away approximately 28% of potential shoppers who research Whole Foods but choose not to shop there. 365 brand accounts for 18% of Whole Foods' revenue. Amazon Prime membership provides data showing that Prime members who shop Whole Foods spend 2.4x more at Amazon overall.",
+    "correctFrameworks": ["Pricing Framework", "3C's", "Profitability Tree"],
+    "whyThisFramework": "Profitability Tree models the revenue impact: margin compression on 365 items vs. traffic lift and basket size increase. 3C's examines whether the price gap vs. conventional stores is the actual barrier (vs. location, assortment). Pricing Framework asks whether price reduction changes the brand's value-based positioning — the risk of undermining the premium ecosystem.",
+    "keyConsiderations": [
+      "Selective price reduction on 365 (not national brands) targets the cost perception problem specifically",
+      "Prime member data shows halo spending — Whole Foods is a customer acquisition tool for Amazon",
+      "Risk: lowering 365 prices may communicate 'the quality went down,' not 'we got cheaper'",
+      "Traffic lift math: if 28% of shoppers are deterred by price, even 10% conversion = massive revenue impact"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Is the 28% of deterred shoppers held back primarily by price perception, or are other factors like location and product assortment equally significant?",
+      "What is the current gross margin on 365 brand items, and how much margin does a 15% price cut eliminate?",
+      "Has Whole Foods tested price cuts on a subset of 365 SKUs — and if so, did traffic or basket size change measurably?",
+      "Does Amazon plan to communicate the price reduction actively, or will it simply happen — because the signal matters as much as the price itself?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Revenue Impact of Price Cut",
+        "subIssues": [
+          "How much gross profit does a 15% cut on 365 items eliminate, given 365 is 18% of Whole Foods revenue?",
+          "What traffic lift percentage is needed to offset the margin compression on 365 SKUs?",
+          "Does a lower 365 price increase basket size (more 365 items per visit) or substitute into lower-margin items?"
+        ]
+      },
+      {
+        "block": "Effectiveness at Addressing the Perception Gap",
+        "subIssues": [
+          "Is 'price' the primary reason the 28% of deterred shoppers don't convert, or is it location, assortment, or checkout friction?",
+          "Will consumers notice and attribute a 15% cut in 365 store brand prices to a changed Whole Foods perception?",
+          "Does the Prime 10% discount already address price-sensitive Prime members, making a 365 cut redundant for them?"
+        ]
+      },
+      {
+        "block": "Brand Positioning Risk",
+        "subIssues": [
+          "Does cutting 365 prices signal lower quality in a category where premium positioning is the core value proposition?",
+          "How does the 365 price cut affect national brand vendors at Whole Foods who now face more competition from a cheaper private label?",
+          "Is there a way to lower perceived price (smaller pack sizes, introductory offers) without permanently resetting the price architecture?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the Margin Sacrifice",
+        "detail": "365 brand = 18% of Whole Foods revenue. If Whole Foods generates roughly $20B annually, that's ~$3.6B in 365 revenue. A 15% price cut on all 365 SKUs reduces revenue by $540M before any volume lift. If 365 margins are ~35%, the current gross profit is $1.26B — the cut removes $189M in gross profit that volume must offset."
+      },
+      {
+        "step": 2,
+        "title": "Model the Traffic Lift Required",
+        "detail": "To recover $189M in lost gross profit through new traffic: average basket is $43, of which ~$7.74 is 365 items (18%). If new visitors have the same basket mix, each new visitor contributes approximately $2.71 in 365 gross profit (at 35% margin). Need 70M+ incremental visits to break even — that's aggressive. But if the halo effect on national brand sales is included, the math improves."
+      },
+      {
+        "step": 3,
+        "title": "Evaluate Whether Price Is the Real Barrier",
+        "detail": "The 28% deterrence rate needs to be decomposed: how much is price vs. location inconvenience vs. product assortment? If only half (14%) are deterred by price, the addressable opportunity is smaller. Request: survey data breaking down the deterrence reasons by rank."
+      },
+      {
+        "step": 4,
+        "title": "Assess Brand Signal Risk",
+        "detail": "A blanket 15% cut risks signaling that 365 quality declined rather than that Whole Foods became more accessible. A more surgical approach: cut prices on commodity 365 items (pasta, olive oil, canned goods) where price sensitivity is high and quality differentiation is low, while holding prices on specialty and prepared items where the premium is justified."
+      },
+      {
+        "step": 5,
+        "title": "Recommendation",
+        "detail": "Do not cut all 800+ SKUs by 15%. Instead, selectively reduce commodity-category 365 items (~200 SKUs) by 15-20%, announce it as 'Everyday Value,' and use Prime membership as the amplifier (additional 10% off these items). This targets price-sensitive Prime members, generates PR, and tests the traffic impact before a full rollout."
+      }
+    ],
+    "keyTerms": [
+      { "term": "Private Label / Store Brand", "definition": "Products manufactured for and sold under the retailer's own brand (365 by Whole Foods Market) rather than a national brand; typically higher margin but require quality credibility" },
+      { "term": "Basket Size", "definition": "The total dollar value of products purchased per shopping trip; Whole Foods' $43 average vs. Kroger's $31 reflects premium positioning, not just price" },
+      { "term": "Price Elasticity of Traffic", "definition": "How much a price reduction on store brands increases the number of shopper visits — the key unknown in the Whole Foods analysis" },
+      { "term": "Halo Effect", "definition": "The positive revenue impact on Amazon overall from Prime members who shop Whole Foods; members who shop Whole Foods spend 2.4x more on Amazon, making each Whole Foods visit worth more than the basket value alone" },
+      { "term": "Price Architecture", "definition": "The deliberate structure of prices across a product range — cutting 365 by 15% resets the architecture and may be difficult to reverse without further brand damage" }
+    ],
+    "interviewerExpectations": "Strong candidates recognize immediately that a blanket 15% cut is blunt and potentially brand-damaging, and pivot to a surgical approach. They quantify the margin sacrifice before recommending, and they challenge the assumption that price is the primary deterrent for the 28%. Weak answers either endorse or reject the cut wholesale without running the revenue math or exploring whether price is actually the barrier.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I answer whether to cut 365 prices by 15%, I want to make sure we're solving the right problem. The goal is closing the 'Whole Paycheck' perception gap — but I need to check whether price is actually the primary driver of the 28% deterrence rate, and then model whether a 15% cut generates enough traffic lift to offset the margin compression. I'll use a Profitability Tree on the margin math, 3C's to look at the competitive dynamics, and a Pricing Framework to evaluate the brand signal risk."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few quick things I want to understand. First, do we have data on why the 28% of deterred shoppers don't convert — is it price specifically, or is location or assortment also a significant factor? Second, what's the current gross margin on 365 brand items? And third, is the intent to actively communicate this price reduction to consumers, or will it just happen quietly — because the marketing signal is as important as the price itself."
+      },
+      {
+        "label": "Step 1 — Margin Sacrifice Math",
+        "script": "Let me start with the financial impact. If Whole Foods generates roughly $20 billion in annual revenue and 365 brand accounts for 18%, that's about $3.6 billion in 365 revenue. A blanket 15% price cut immediately reduces that by $540 million before any volume lifts. If 365 margins are around 35%, the current 365 gross profit is roughly $1.26 billion. The cut eliminates about $189 million of that. So the question becomes: can incremental traffic and basket growth recover $189 million in gross profit? That's the breakeven test."
+      },
+      {
+        "label": "Step 2 — Is Price the Real Barrier?",
+        "script": "Before we accept that the 15% cut will convert the 28% of deterred shoppers, we need to know why they're deterred. If half of them are deterred by location inconvenience or assortment gaps — 'Whole Foods doesn't carry the brands my family uses' — then a 365 price cut doesn't move the needle for them at all. A 15% cut on store brand pasta doesn't fix a location or assortment problem. I'd want to see the consumer research decomposed by deterrence reason before committing to this."
+      },
+      {
+        "label": "Step 3 — Brand Signal Risk",
+        "script": "There's a real brand risk here that I want to flag. In premium grocery, consumers interpret price cuts as quality signals, not value signals. A 15% cut across all 800 SKUs risks communicating 'the 365 brand got cheaper' rather than 'Whole Foods became more accessible.' The 'Whole Paycheck' problem is a perception issue, and perception can be worsened by a broad price cut that feels desperate. The safer signal is a curated reduction on commodity items — pasta, olive oil, canned goods — where quality differentiation is low and price sensitivity is high."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is: do not do a blanket 15% cut on all 800-plus 365 SKUs. Instead, implement a targeted 'Everyday Value' price reduction on roughly 150 to 200 commodity-category 365 items — staples where quality parity with Kroger is easiest to establish and price sensitivity is highest. Pair it with a Prime member amplifier — an additional 10% off these items — to drive the perception change among the exact shopper Whole Foods wants to convert. This limits the gross profit sacrifice, creates a PR moment, and lets Amazon test the traffic and basket impact before committing to a full rollout. Revisit in one quarter with store-level traffic and basket data to decide whether to expand."
+      }
+    ]
+  },
+  {
+    "id": "scenario_025",
+    "type": "Pricing",
+    "company": "Peloton",
+    "title": "Peloton Bike Price Cut Decision",
+    "prompt": "Peloton is considering cutting the price of its original Bike from $1,745 to $1,195 to drive hardware sales and grow the subscription base. The Bike's bill of materials is $680. Each subscriber generates $44/month in subscription revenue with 95% gross margins. The average subscriber stays for 26 months. The price cut would be permanent, not a promotion. Peloton estimates this could increase hardware sell-through by 60%. Should Peloton cut the price?",
+    "context": "Peloton has 3.1M subscribers but subscriber growth has stalled since the pandemic boom. The company's strategy is a 'razor-razor blade' model — hardware at low margin, subscription at high margin. At-home fitness competitors (NordicTrack, Echelon) now offer bikes at $600-$899. The Peloton brand still commands premium perception in consumer surveys but purchase intent has declined with price sensitivity.",
+    "correctFrameworks": ["Pricing Framework", "Breakeven Analysis", "Profitability Tree"],
+    "whyThisFramework": "This is a classic razor-blade pricing model analysis. Profitability Tree models lifetime customer value (LTV) across both hardware and subscription revenue streams. Breakeven Analysis calculates how many incremental subscribers are needed to offset the margin reduction on hardware. Pricing Framework examines the signal a permanent price cut sends vs. temporary promotion.",
+    "keyConsiderations": [
+      "LTV math: each new subscriber generates $44/mo × 26mo × 95% margin = $1,086 subscription value",
+      "Hardware margin at $1,195 with $680 COGS = $515 margin vs. current $1,065 — a $550 per unit reduction",
+      "Break-even: need approximately 0.5 incremental subscribers per unit sold to offset hardware margin loss",
+      "Permanent price cut signals real reduction in brand premium — harder to reverse than a promotion"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Is the 60% increase in hardware sell-through an estimate, and what is the confidence level — is it based on actual price sensitivity research or a management assumption?",
+      "Does the 26-month average subscriber lifetime change at lower price points — i.e., do lower-price-entry subscribers churn faster because they are less committed?",
+      "Is the $44/month subscription the current price, or is Peloton also considering a pricing change to the subscription?",
+      "Has Peloton modeled a time-limited promotion at $1,195 vs. a permanent price cut, and are there brand positioning reasons to prefer one over the other?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Lifetime Value (LTV) Per New Subscriber",
+        "subIssues": [
+          "What is the total hardware + subscription LTV at the new $1,195 price vs. the current $1,745?",
+          "Does the 60% increase in unit volume generate enough incremental subscription LTV to offset hardware margin compression?",
+          "What happens to LTV if lower-price-entry subscribers churn faster than the 26-month average?"
+        ]
+      },
+      {
+        "block": "Hardware Economics",
+        "subIssues": [
+          "At $1,195 with $680 COGS, what is the absolute and percentage margin per unit, and how does it compare to current?",
+          "How many incremental units must Peloton sell at $1,195 to match the total gross profit from current $1,745 unit sales?",
+          "Does the price cut risk triggering a race to the bottom with Echelon and NordicTrack who can undercut at $600-$899?"
+        ]
+      },
+      {
+        "block": "Brand & Permanent Price Signal",
+        "subIssues": [
+          "Does a permanent $550 price cut signal to current $1,745 owners that they overpaid — creating goodwill risk and return requests?",
+          "Would a promotional price (e.g., $1,195 for 90 days) achieve the same sell-through lift without permanently resetting the price anchor?",
+          "How does the price cut affect the perceived quality gap between Peloton and Echelon at $800?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Calculate LTV at Current vs. New Price",
+        "detail": "Current LTV: Hardware margin ($1,745 - $680 = $1,065) + Subscription LTV ($44 × 26 × 95% = $1,086) = $2,151 total. New LTV: Hardware margin ($1,195 - $680 = $515) + same Subscription LTV ($1,086) = $1,601 total. The cut reduces LTV per customer by $550."
+      },
+      {
+        "step": 2,
+        "title": "Model the 60% Volume Lift",
+        "detail": "If Peloton currently sells X bikes at $1,745, at 60% more volume they sell 1.6X at $1,195. Revenue comparison: Current = X × $1,065 hardware margin. New = 1.6X × $515 hardware margin = 0.824X × original margin per unit. Hardware gross profit DECLINES by 17.6% even with 60% more volume. But subscription LTV on 0.6X new subscribers is 0.6X × $1,086 = $651.6 per incremental unit sold — which partially offsets."
+      },
+      {
+        "step": 3,
+        "title": "Net Revenue Impact Over Subscriber Lifetime",
+        "detail": "At current: X units × $2,151 LTV. At new: 1.6X × $1,601 = 2.562X LTV equivalent. The cut is net positive — generates 19% more total LTV on a per-cohort basis — but only if the 26-month retention holds for new, lower-price entrants. This is the critical assumption to stress-test."
+      },
+      {
+        "step": 4,
+        "title": "Evaluate Permanent vs. Promotional",
+        "detail": "A permanent cut at $1,195 resets the price anchor permanently and risks alienating the 3.1M existing subscribers who paid $1,745. A 90-day promotional offer achieves the sell-through spike without permanently compressing hardware margin or signaling that the $1,745 price was unjustified."
+      },
+      {
+        "step": 5,
+        "title": "Recommendation",
+        "detail": "Support the price cut, but execute it as a permanent price reset framed as a product line restructuring — position the $1,195 Bike as the entry-level tier and introduce Bike+ or a new premium model at $1,745+. This preserves the price architecture, avoids alienating existing owners, and captures the volume lift through clear tiering rather than a brand-damaging across-the-board cut."
+      }
+    ],
+    "keyTerms": [
+      { "term": "LTV (Lifetime Value)", "definition": "The total gross profit Peloton earns from a single customer across hardware purchase and all subscription months — the sum of hardware margin plus monthly subscription margin over the retention period" },
+      { "term": "Razor-Blade Model", "definition": "A pricing strategy where hardware (razor) is sold at low or negative margin to build a subscriber base that generates recurring high-margin revenue (blades = subscription); Peloton's core business model" },
+      { "term": "Price Anchor", "definition": "The reference price consumers use to evaluate value; dropping from $1,745 to $1,195 permanently resets the anchor and may be difficult to raise back without perception of gouging" },
+      { "term": "COGS (Cost of Goods Sold)", "definition": "The direct manufacturing and component cost of a product — for Peloton Bike, $680 per unit — used to calculate hardware gross margin" },
+      { "term": "Churn Rate", "definition": "The percentage of subscribers who cancel in a given month; the 26-month average lifetime implies a monthly churn of roughly 3.8% — if lower-price entrants churn faster, subscription LTV falls and changes the math" }
+    ],
+    "interviewerExpectations": "Interviewers expect candidates to build the full LTV math — hardware margin plus subscription margin — not just the hardware price cut in isolation. Strong answers recognize that the razor-blade model makes the cut potentially positive on a lifetime basis, but stress-test the churn assumption and raise the permanent vs. promotional distinction. Weak answers treat this as a simple margin compression problem without modeling the subscription economics.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a razor-blade pricing question — I can't evaluate the price cut on hardware economics alone. I need to model the full lifetime value of a subscriber, which includes both the hardware margin and the subscription revenue stream. Then I'll stress-test the 60% volume assumption and ask whether this should be permanent or promotional. I'll structure this with a Profitability Tree on the LTV math and a Breakeven Analysis on the volume lift."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few questions before I dive in. First, is the 60% increase in sell-through a research-based estimate or an internal assumption — and has Peloton tested any price sensitivity at $1,195 in a limited market? Second, does Peloton have data on whether subscribers who enter at a lower price point churn faster — because if the 26-month average doesn't hold for new entrants, the subscription LTV math changes significantly. And third, is this being considered as a permanent reset or has a time-limited promotion been modeled?"
+      },
+      {
+        "label": "Step 1 — LTV at Current vs. New Price",
+        "script": "Let me build the LTV math first. At the current $1,745 price with $680 COGS, Peloton earns $1,065 in hardware margin per unit. On top of that, each subscriber generates $44 per month at 95% gross margins for an average of 26 months — that's $44 times 26 times 95%, which is approximately $1,086 in subscription gross profit. So total LTV at $1,745 is $1,065 plus $1,086, which equals $2,151 per customer. Now at $1,195, hardware margin falls to $515 — a $550 reduction. Subscription LTV stays at $1,086 if retention holds. New LTV equals $1,601 per customer."
+      },
+      {
+        "label": "Step 2 — Does 60% Volume Lift Make the Math Work?",
+        "script": "Now let's see if the 60% volume lift offsets the per-unit LTV reduction. Say Peloton currently sells 100 units in a period, generating $215,100 in total LTV. At 60% more volume — 160 units — each at $1,601, total LTV is $256,160. That's actually 19% higher than the current scenario. So on a pure LTV math basis, if the 60% volume estimate is correct and the 26-month retention holds for new subscribers, the price cut is net positive. The key word is 'if.'"
+      },
+      {
+        "label": "Step 3 — Stress-Testing the Assumptions",
+        "script": "Here's where I'd push back. The 60% sell-through increase is an assumption — not tested data. And more importantly, subscribers who enter at $1,195 may be less committed than subscribers who paid $1,745. If lower-price entrants churn at, say, 20 months instead of 26, the subscription LTV falls from $1,086 to $836. Now total LTV is $1,351, and the 60% volume lift only generates $216,160 in total LTV — barely above the current baseline. The retention assumption is load-bearing."
+      },
+      {
+        "label": "Step 4 — Permanent vs. Promotional",
+        "script": "There's also a brand signal question. A permanent cut from $1,745 to $1,195 tells 3.1 million existing subscribers they overpaid by $550 — that creates goodwill risk and potentially fuels returns or social backlash. A 90-day promotional offer at $1,195 achieves the sell-through spike without permanently resetting the price anchor. I'd want to know if Peloton considered the promotional route and why they're leaning permanent."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is: support the economics of the price cut, but execute it as a product line restructuring rather than a simple across-the-board discount. Introduce the $1,195 Bike as the permanent entry-level tier and launch a new Bike+ or premium model at $1,895 or above. This way, you capture the volume lift and new subscriber growth at $1,195 without sending a signal that the old price was wrong. You preserve the premium architecture, protect existing owner goodwill, and give the brand a reason to communicate upward rather than downward. Monitor month-6 retention for the new cohort closely — if churn is elevated versus the 26-month baseline, revisit subscription pricing or add engagement features to drive retention."
+      }
+    ]
+  },
+  {
+    "id": "scenario_026",
+    "type": "New Product Launch",
+    "company": "Coca-Cola",
+    "title": "Coca-Cola Simply Pop Hard Seltzer Launch",
+    "prompt": "Coca-Cola is preparing to launch Simply Pop, a prebiotic soda under the Simply juice brand umbrella, targeting health-conscious consumers seeking functional beverages. The product is priced at $2.29 per 12oz can (vs. Poppi at $2.49 and Olipop at $2.49). The launch is planned for national distribution in Q1. What framework would you use to evaluate this launch plan, and what are the key risks?",
+    "context": "The functional/prebiotic soda market grew from $200M to $620M in three years. Poppi and Olipop together hold 76% of the category. Simply is one of Coca-Cola's strongest brand equities — it carries 'natural' and 'fruit-forward' associations. Coca-Cola's distribution network can achieve 90% ACV in 90 days, an advantage no indie brand can match. Target and Walmart have already confirmed shelf placement.",
+    "correctFrameworks": ["STP", "4P's", "3C's"],
+    "whyThisFramework": "STP designs the launch: which specific health-conscious segment (gut health believers, soda reducers, natural juice drinkers) is the primary target and how Simply is positioned vs. Poppi/Olipop. 4P's executes the marketing mix. 3C's validates competitive dynamics — Coca-Cola's distribution advantage changes the competitive calculus dramatically.",
+    "keyConsiderations": [
+      "Simply brand equity (natural, fruit) is a credible bridge to prebiotic positioning",
+      "Distribution speed is the unique weapon — Poppi and Olipop cannot match 90% ACV",
+      "Price slightly below competitors ($0.20) signals accessible health, not luxury health",
+      "Key risk: Simply is a juice brand, not a soda brand — brand stretch into carbonated functional is a leap"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Who is the primary target consumer — someone currently buying Poppi or Olipop, or a non-consumer of functional soda who might be converted by the Simply brand name?",
+      "Has Coca-Cola done clinical or consumer validation of the prebiotic health claims, and how do they compare to Poppi's and Olipop's claims?",
+      "What is the planned marketing budget and channel split — social/influencer vs. in-store vs. traditional — relative to Poppi's DTC-heavy model?",
+      "Is there a flavor strategy — will Simply Pop lead with juice-adjacent flavors (orange, strawberry) that leverage the Simply equity, or will they try to match Poppi's trendy flavor profiles (grape, cherry vanilla)?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Target Segment & Positioning",
+        "subIssues": [
+          "Which consumer segment — gut health enthusiasts, soda reducers, or Simply juice loyalists — is the highest-value first beachhead?",
+          "How does Simply Pop position against Poppi (trendy, DTC, Gen Z) vs. Olipop (nostalgic, wellness-science) — is there a white space between them?",
+          "Does the Simply brand carry enough health-functional credibility to support a prebiotic claim, or does it need a clinical endorsement?"
+        ]
+      },
+      {
+        "block": "Go-To-Market Execution",
+        "subIssues": [
+          "Does Coca-Cola use its distribution advantage to saturate mainstream retail immediately, or does it seed health/natural channels first to build credibility?",
+          "At $2.29 vs. $2.49 for Poppi, is the $0.20 discount meaningful enough to drive trial, or does it signal lower quality in a premium health category?",
+          "What is the in-store placement strategy — functional soda shelf, juice aisle (near Simply OJ), or wellness section?"
+        ]
+      },
+      {
+        "block": "Competitive Response Risk",
+        "subIssues": [
+          "How will Poppi and Olipop respond to Coca-Cola's national distribution — price cuts, retailer exclusivity deals, or accelerated innovation?",
+          "Does Coca-Cola's mainstream mass-market distribution actually help or hurt in a category driven by 'indie credibility' and health-conscious consumers who distrust big CPG?",
+          "What is the risk that Coca-Cola's entry legitimizes the category further and benefits Poppi more than it takes share?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Define the Target Segment (STP — Segmenting)",
+        "detail": "Three candidate segments: (1) Current Poppi/Olipop buyers — highly health-motivated, brand-loyal, skeptical of big CPG; (2) Soda reducers — former Coke drinkers seeking a healthier alternative; (3) Simply juice loyalists — existing Simply OJ/Lemonade buyers who trust the brand. Segment 2 and 3 are the highest-probability converts for Simply Pop."
+      },
+      {
+        "step": 2,
+        "title": "Define the Positioning (STP — Positioning)",
+        "detail": "Position Simply Pop not as a Poppi alternative but as 'the natural soda for people who already love Simply' — fruit-forward, clean-label prebiotic. This avoids a direct fight with Poppi's Gen Z influencer credibility and instead leverages the existing Simple brand trust with 25-45 year-old millennial women."
+      },
+      {
+        "step": 3,
+        "title": "4P's — Product & Price",
+        "detail": "Lead with juice-adjacent flavors (Strawberry Raspberry, Citrus Punch) to reinforce Simply's fruit equity. Price at $2.29 — $0.20 below Poppi — as accessible health positioning. Confirm the prebiotic fiber source is clinically validated and clearly labeled."
+      },
+      {
+        "step": 4,
+        "title": "4P's — Place & Promotion",
+        "detail": "Use Coca-Cola's 90% ACV distribution to place in juice aisle alongside Simply OJ (not the functional soda shelf) — this reinforces the brand adjacency rather than forcing a direct comparison with Poppi. Promote via mom-influencer channels and Walmart/Target in-store sampling, not Gen Z TikTok (that's Poppi's turf)."
+      },
+      {
+        "step": 5,
+        "title": "Key Risk: Big CPG Credibility Gap",
+        "detail": "The highest risk: health-conscious consumers distrust Coca-Cola as the maker. Simply's independently-perceived brand equity helps buffer this, but Coca-Cola should avoid prominently featuring 'A Coca-Cola Company' branding on front-of-pack at launch. Let Simply lead."
+      }
+    ],
+    "keyTerms": [
+      { "term": "ACV (All Commodity Volume)", "definition": "A retail distribution metric representing the percentage of total store sales volume where a product is available — Coca-Cola can achieve 90% ACV in 90 days, meaning Simply Pop is available in stores representing 90% of all US grocery sales" },
+      { "term": "Prebiotic", "definition": "Dietary fiber that feeds beneficial gut bacteria; the functional ingredient claim behind Simply Pop, Poppi, and Olipop — the health benefit that differentiates functional sodas from regular carbonated drinks" },
+      { "term": "STP (Segmentation, Targeting, Positioning)", "definition": "A marketing framework for identifying which consumer group to serve (segment), focusing resources on that group (targeting), and defining how the brand should be perceived relative to competitors (positioning)" },
+      { "term": "Indie Credibility Gap", "definition": "The disadvantage large CPG companies face in health-conscious categories where consumers specifically prefer brands perceived as independent, authentic, and not beholden to mass-market profit motives" },
+      { "term": "Category Legitimization Risk", "definition": "The paradox where a large brand's entry into a growing category increases consumer awareness and total category sales — but the indie incumbents (Poppi, Olipop) capture the growth because they are already trusted by the converted consumer" }
+    ],
+    "interviewerExpectations": "Strong answers use STP to identify that Simply Pop's best beachhead is NOT current Poppi/Olipop buyers but rather soda reducers and Simply loyalists — a segment Poppi can't easily defend. They also raise the big-CPG credibility risk proactively. Weak answers treat this as a generic 4P's execution exercise without identifying the targeting nuance or the distribution-as-moat angle.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a new product launch in an existing and rapidly growing category. The first question isn't 'how do we execute' — it's 'who specifically is Simply Pop for, and why would they buy it instead of Poppi or Olipop?' I'll use STP to define the target and positioning, then 4P's to evaluate the specific launch plan, and 3C's to map the competitive response risk. Can I take a minute to structure before I walk through it?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few things I want to understand. First, who is Coca-Cola's primary target — someone who's already buying Poppi, or someone who drinks Simply Orange Juice and wants a healthier soda alternative? That distinction changes the entire positioning and channel strategy. Second, what is the planned marketing channel mix — is this primarily an in-store play through Walmart and Target, or does Coca-Cola plan a social/influencer investment to compete with Poppi on digital? And third, what flavors are leading the launch — are they juice-adjacent flavors that reinforce the Simply brand, or are they trying to match Poppi's trendy profile?"
+      },
+      {
+        "label": "Step 1 — Segmentation & Target",
+        "script": "Let me start with who this product is really for. There are three candidate segments. First, current Poppi and Olipop buyers — they're already converted to functional soda, but they're brand-loyal and highly skeptical of big CPG brands. Second, soda reducers — former Coke or Diet Coke drinkers who want something that feels healthier, more natural. Third, Simply juice loyalists — people who already buy Simply Orange Juice or Simply Lemonade and trust the brand's natural positioning. My view is that Simply Pop's highest-probability target is the second and third segments. Trying to steal Poppi buyers head-on is a tough fight. Converting soda reducers and Simply loyalists plays to Coca-Cola's strengths: mass distribution, brand familiarity, and fruit-forward flavor credibility."
+      },
+      {
+        "label": "Step 2 — Positioning",
+        "script": "Given that target, the positioning should not try to out-Poppi Poppi. Poppi owns 'trendy gut health soda for Gen Z' with TikTok virality and influencer credibility that Coca-Cola can't authentically replicate. Instead, Simply Pop should position as 'the natural soda for people who already love Simply' — fruit-forward, clean-label prebiotic, accessible. That's a white space between Poppi's Gen Z health influencer vibe and conventional soda. It also lets Simply lead the branding, which is critical because the minute consumers see 'A Coca-Cola Company' prominently on pack, a subset of health-conscious buyers will distrust the product."
+      },
+      {
+        "label": "Step 3 — 4P's Evaluation",
+        "script": "On the four P's. Product: lead with juice-adjacent flavors — Strawberry Raspberry, Citrus Punch — that reinforce Simply's existing fruit equity, not flavors trying to copy Poppi's trendy profiles. Price: $2.29 is $0.20 below Poppi and Olipop, which signals accessible health rather than premium health. That's the right call for a mass-market play. Place: this is Coca-Cola's biggest weapon — 90% ACV in 90 days is something Poppi and Olipop cannot match. But critically, I'd place Simply Pop in the juice aisle next to Simply Orange Juice, not the functional soda shelf. That reinforces the brand adjacency and avoids a shelf-level showdown with Poppi where it has home turf advantage. Promotion: invest in mom-influencer channels, in-store sampling at Walmart and Target, and recipe content — not Gen Z TikTok, which is Poppi's territory."
+      },
+      {
+        "label": "Step 4 — Key Risks",
+        "script": "The biggest risk I see is the big-CPG credibility gap. The functional soda category is driven by consumers who specifically distrust mass-market brands. Coca-Cola's entry could trigger backlash — 'they're just trying to cash in on the health trend' — and reinforce Poppi's indie authenticity by contrast. The second risk is category legitimization: Coca-Cola's national distribution and marketing spend will grow the total prebiotic soda category, but the converted consumers may stay with Poppi and Olipop while new entrants to the category try Simply once and then graduate to the indie brands. So Coca-Cola may end up growing the market for Poppi more than it takes share."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My overall assessment: the launch plan is strategically sound but the positioning needs sharper targeting. Simply Pop's best first consumer is a soda reducer or Simply loyalist, not a current Poppi buyer. Lead with juice-adjacent flavors, place in the juice aisle not the functional soda shelf, let the Simply brand lead the packaging without Coca-Cola front-and-center, and use in-store sampling and mom-influencer channels rather than Gen Z social. Coca-Cola's distribution moat is the decisive advantage — use it to build velocity quickly before Poppi can respond with retailer exclusivity deals. Success metric in year one: trial rate and repeat purchase, not share against Poppi. If 20% of trial buyers repeat, the category conversion story is working."
+      }
+    ]
+  },
+  {
+    "id": "scenario_027",
+    "type": "New Product Launch",
+    "company": "Colgate-Palmolive",
+    "title": "Colgate Entering the Whitening Pen Market",
+    "prompt": "Colgate is evaluating a launch of an at-home teeth whitening pen priced at $24.99 for a 30-day supply. The whitening pen market is $380M annually and growing 18% YoY, currently dominated by Crest 3D Whitestrips (P&G) at 54% share and HiSmile (DTC) at 18%. Colgate's dentist recommendation index is 3.2x higher than Crest. Should Colgate enter, and if so, how?",
+    "context": "Colgate currently has whitening toothpaste but no standalone whitening treatment product. The whitening category is heavily driven by 18-34 year olds (62% of category buyers). HiSmile's social media strategy (influencer partnerships, Instagram-native content) has driven rapid DTC growth without retail presence. Crest 3D Whitestrips commands $15.99-$44.99 at retail with strong checkout aisle placement. Colgate's research shows consumers trust Colgate for 'dental health' more than 'cosmetic beauty.'",
+    "correctFrameworks": ["3C's", "STP", "4P's", "Market Entry Framework"],
+    "whyThisFramework": "Market Entry Framework evaluates whether this is a new product (yes) entering an existing market (yes) — a classic 'new product, existing category' play. 3C's assesses competitive dynamics. STP determines whether Colgate targets the mainstream retail channel (vs. Crest) or digital/DTC (vs. HiSmile). 4P's designs the specific launch mix.",
+    "keyConsiderations": [
+      "Colgate's dentist trust is a differentiator in a category perceived as cosmetic — can reframe as dental health",
+      "Two very different competitive battles: retail vs. Crest, DTC vs. HiSmile — cannot fight both at once",
+      "18-34 year olds are the target but Colgate's brand skews older — creative execution must bridge the gap",
+      "Pricing at $24.99 positions between Crest strips and premium HiSmile — logical but not distinctive"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is the pen format already in clinical trials or ready for launch, and how does the whitening efficacy compare to Crest strips in Colgate's testing?",
+      "Is Colgate's goal to compete at retail against Crest, online against HiSmile, or primarily to fill a channel gap in whitening treatments not yet served by Colgate?",
+      "Does Colgate have existing relationships with dental professionals who could recommend or distribute the whitening pen through dental offices?",
+      "What is the planned marketing budget and is there flexibility to invest in influencer content at the scale HiSmile uses?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Market Attractiveness & Entry Rationale",
+        "subIssues": [
+          "Is the $380M whitening pen market large and growing fast enough to justify a standalone Colgate entry versus a whitening upgrade to existing toothpaste?",
+          "Does Colgate have a meaningful competitive advantage (dentist trust, clinical efficacy, distribution) that changes the competitive calculus versus Crest and HiSmile?",
+          "What is the cost of NOT entering — does Crest's 54% whitening treatment share eventually bleed into Colgate's toothpaste share?"
+        ]
+      },
+      {
+        "block": "Competitive Battle Selection",
+        "subIssues": [
+          "Should Colgate fight in retail (vs. Crest) or DTC (vs. HiSmile) — and is there a third channel (dental offices) where Colgate is uniquely positioned?",
+          "Can Colgate's dentist recommendation 3.2x advantage be converted into a credible 'dentist-recommended whitening pen' claim that neither Crest nor HiSmile can match?",
+          "Is a $24.99 price point competitive at retail vs. Crest strips ($15.99-$44.99) or does it fall into an undifferentiated middle?"
+        ]
+      },
+      {
+        "block": "Target Consumer & Positioning",
+        "subIssues": [
+          "Can Colgate credibly target the 18-34 core whitening buyer when the brand skews older and is associated with dental health rather than cosmetic beauty?",
+          "Is there a 25-40 year old 'dental-health-motivated whiter' who wants clinical credibility from their whitening product — a segment neither Crest nor HiSmile owns?",
+          "What positioning — 'dentist trusted whitening' — would create enough differentiation to earn trial without requiring Colgate to out-influencer HiSmile?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Evaluate Market Attractiveness",
+        "detail": "$380M growing at 18% YoY — in 3 years this is a $620M+ market. Colgate has zero standalone whitening treatment revenue despite being the #1 dental brand by dentist recommendation. The category opportunity is real and not entering is a strategic omission, especially as Crest uses whitening to build cross-category loyalty."
+      },
+      {
+        "step": 2,
+        "title": "Choose One Competitive Battle",
+        "detail": "Colgate cannot win retail against Crest's 54% share and checkout aisle dominance in year one, and cannot win DTC influencer wars against HiSmile without a major social investment. The asymmetric opportunity: dental office distribution. Colgate's 3.2x dentist recommendation advantage can translate to dentist-dispensed whitening pens — a channel where Crest and HiSmile have minimal presence."
+      },
+      {
+        "step": 3,
+        "title": "Define the Target Segment",
+        "detail": "Target: 28-45 year old adults who see their dentist regularly and prioritize clinical credibility over cosmetic trendiness. This is NOT the 18-24 HiSmile buyer. It's the person who asks their hygienist 'what whitening product should I use?' — and Colgate can own that moment."
+      },
+      {
+        "step": 4,
+        "title": "Design the 4P's Around Dentist Channel",
+        "detail": "Product: a pen with clinical whitening data, clearly differentiated from cosmetic-first competitors. Price: $34.99 through dental offices (premium channel premium), $24.99 at retail as secondary channel. Place: launch in dental offices first, then expand to pharmacy. Promotion: dentist recommendation as the hero message — 'The whitening pen dentists recommend' — backed by Colgate's 3.2x index."
+      },
+      {
+        "step": 5,
+        "title": "Recommendation",
+        "detail": "Enter the market, but own the dental professional channel rather than fighting on retail shelves or social media. Launch via dentist and dental office distribution first, build clinical recommendation momentum, then expand to pharmacy shelf with the 'dentist recommended' claim as the retail differentiator. This gives Colgate a defensible moat that Crest and HiSmile cannot easily replicate."
+      }
+    ],
+    "keyTerms": [
+      { "term": "Dentist Recommendation Index", "definition": "A measure of how frequently dental professionals recommend a brand over competitors; Colgate's 3.2x index vs. Crest is a significant clinical credibility asset in the whitening entry strategy" },
+      { "term": "DTC (Direct-to-Consumer)", "definition": "A distribution model where brands sell directly to end consumers online without a retail intermediary; HiSmile built its 18% share entirely through DTC e-commerce and influencer marketing" },
+      { "term": "Market Entry Framework", "definition": "A structured approach to evaluating whether to enter a market, asking: Is the market attractive? Do we have a competitive advantage? What is the entry strategy (build, buy, partner)? What is the risk of not entering?" },
+      { "term": "Channel Conflict", "definition": "The tension that arises when a brand sells through multiple channels at different price points; Colgate pricing the pen at $34.99 in dental offices and $24.99 at retail risks undermining the dental channel partnership" },
+      { "term": "Claim Differentiation", "definition": "The ability to make a marketing claim that competitors cannot — 'dentist recommended' is Colgate's potential claim differentiator in whitening, since neither Crest nor HiSmile can match the 3.2x recommendation index" }
+    ],
+    "interviewerExpectations": "Strong answers identify the asymmetric opportunity in the dental office channel rather than recommending a generic retail or DTC launch. They use the 3.2x dentist recommendation advantage proactively and acknowledge that Colgate cannot simultaneously compete with Crest at retail and HiSmile online — forcing a channel choice. Weak answers recommend entering retail with a $24.99 pen and a '4P's' plan without identifying what makes Colgate's entry defensible.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I say yes or no to entering, I want to answer three questions: Is this market worth entering? Does Colgate have an advantage that changes the competitive math? And which of the two existing competitors — Crest at retail or HiSmile online — should Colgate target first? I'll use a Market Entry Framework to structure this, with STP to define the target and 4P's to design the go-to-market."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Quick questions. First, does Colgate have existing dental office distribution relationships — through dental hygiene supply chains — or would that need to be built from scratch? Second, has the whitening pen been clinically validated against Crest strips, and can Colgate claim superior efficacy or just parity? And third, is this a fight for market share against Crest, or is the primary goal to ensure Colgate has a whitening treatment in its portfolio so it doesn't lose consumers entirely when they upgrade from toothpaste to whitening treatments?"
+      },
+      {
+        "label": "Step 1 — Is the Market Worth Entering?",
+        "script": "Let me start with the market opportunity. The whitening pen market is $380 million today, growing 18% per year — in three years it's over $600 million. Colgate currently has zero standalone whitening treatment revenue despite being the number one recommended dental brand by dentists at 3.2 times Crest's recommendation rate. That's a significant gap in the portfolio. There's also a strategic risk to not entering: Crest uses its 54% whitening share to build cross-category loyalty — a consumer who becomes loyal to Crest Whitestrips is more likely to buy Crest toothpaste, putting Colgate's core business under indirect pressure. So yes, the market is worth entering."
+      },
+      {
+        "label": "Step 2 — What Is Colgate's Advantage?",
+        "script": "Now the key question: does Colgate have a real advantage here, or is it just a late follower? The dentist recommendation index is the answer. Colgate is recommended by dentists at 3.2 times the rate of Crest. In a market where 62% of buyers are 18 to 34 year olds who might trust Instagram influencers, there's also a meaningful segment — let's call them 28 to 45 year old dental-health-motivated consumers — who ask their hygienist what whitening product to use. Neither Crest nor HiSmile has a strong presence in the dental office channel. That's Colgate's asymmetric opportunity."
+      },
+      {
+        "label": "Step 3 — Channel & Positioning Strategy",
+        "script": "Here's where I'd push back on the default plan. Colgate cannot win on retail shelf against Crest's 54% share and checkout aisle dominance in year one, and it cannot out-influencer HiSmile on Instagram without a massive social budget and cultural credibility it doesn't have with 18 to 24 year olds. Fighting both battles simultaneously is a recipe for being mediocre in both channels. Instead, I'd recommend owning the dental professional channel first. Launch the whitening pen through dental offices and dental supply distributors — at a $34.99 price point that signals clinical premium. The positioning: 'the whitening pen your dentist recommends,' backed by a clinical efficacy study and Colgate's 3.2x recommendation index. This is a channel where neither Crest nor HiSmile has a foothold."
+      },
+      {
+        "label": "Step 4 — Retail Expansion as Phase 2",
+        "script": "After 12 to 18 months of dental office seeding, expand to pharmacy retail at $24.99 carrying the 'dentist recommended' claim. That claim is a credible retail differentiator that neither Crest nor HiSmile can easily replicate. On the creative side, Colgate should resist trying to replicate HiSmile's influencer aesthetic — the positioning is clinical and credible, not cosmetic and trendy. Target in-store placement in the dental health aisle, not the beauty aisle, to reinforce that positioning."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: yes, enter the whitening pen market — but own the dental professional channel rather than fighting Crest on shelf or HiSmile online. Launch through dental offices and hygiene supply chains first at $34.99, build clinical momentum and the dentist-recommended claim, then expand to pharmacy retail at $24.99 in year two. The defensible moat is the 3.2x dentist recommendation index — that's an asset neither competitor can quickly replicate. Success metric in year one is not market share — it's dental professional adoption rate. If 15% of dental offices carry and recommend the pen by end of year one, the retail expansion has a credible launch platform."
+      }
+    ]
+  },
+  {
+    "id": "scenario_028",
+    "type": "New Product Launch",
+    "company": "General Mills",
+    "title": "General Mills Launching a Protein Cereal",
+    "prompt": "General Mills is preparing to launch a new high-protein cereal line ('Wheaties Protein') containing 20g of protein per serving, priced at $6.99 for a 12oz box. The target consumer is active adults 25-45 seeking convenient high-protein breakfast options. The protein cereal segment (Magic Spoon, Premier Protein Cereal) is growing 28% annually but is currently only $180M in total. How should General Mills approach this launch?",
+    "context": "Wheaties has strong brand equity among sports enthusiasts (the 'Breakfast of Champions' positioning). Magic Spoon, a DTC-first brand, charges $13.99 per box and has built a loyal following among fitness-oriented Millennials via Instagram. General Mills has mass retail distribution (92% ACV) and established relationships with Walmart, Target, and Kroger. Current protein-forward breakfast options (Greek yogurt, eggs) are the primary competitive set in consumer minds.",
+    "correctFrameworks": ["STP", "4P's", "3C's"],
+    "whyThisFramework": "STP is essential — the active adult 25-45 segment with protein goals is distinct from the current Wheaties brand user (sports fans). The positioning decision (functional protein vs. sports performance) determines the entire creative and channel strategy. 3C's maps the competitive landscape. 4P's executes with a price and distribution strategy that leverages General Mills' mass retail advantage.",
+    "keyConsiderations": [
+      "Wheaties 'Breakfast of Champions' equity is a natural bridge to high-performance protein positioning",
+      "Mass retail at $6.99 vs. DTC Magic Spoon at $13.99 — accessible protein is the differentiation",
+      "Key risk: 20g protein per serving may require a larger serving size that increases calorie count",
+      "Trial driver: free sample at gyms, sports events, or Wheaties packaging integration needed"
+    ],
+    "difficulty": "easy",
+    "clarifyingQuestions": [
+      "What is the taste profile of Wheaties Protein — does it taste like traditional Wheaties, or is it a reformulation? Taste is the primary repeat purchase driver in cereal.",
+      "Is the 20g of protein per serving achieved with a standard serving size (around 1 cup, ~1oz) or does it require a larger serving that increases calories?",
+      "Is this a Wheaties brand extension (using the existing Wheaties box and equity) or a new product line that happens to carry the Wheaties name?",
+      "What is the planned retail shelf placement — cereal aisle or protein/nutrition section — and has General Mills secured specific placement agreements with key retailers?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Target Segment & Brand Fit",
+        "subIssues": [
+          "Is the active adult 25-45 protein seeker the same consumer who currently buys Wheaties, or is this a new consumer requiring new acquisition?",
+          "Does the 'Breakfast of Champions' brand equity translate credibly to the functional protein positioning, or does Wheaties connote 'old sports nostalgia' rather than 'performance nutrition'?",
+          "Who is the primary purchase decision-maker — the individual athlete, or the household grocery buyer who sees $6.99 as a reasonable premium over $3.99 regular cereal?"
+        ]
+      },
+      {
+        "block": "Competitive Positioning vs. Magic Spoon",
+        "subIssues": [
+          "At $6.99 vs. Magic Spoon's $13.99, does General Mills own 'accessible protein' convincingly, or does the halved price raise quality questions?",
+          "Is Magic Spoon's DTC/Instagram-loyal buyer the right target, or is there a broader 'casual protein seeker' who shops Walmart that Magic Spoon doesn't reach?",
+          "What is the primary competitive set in the consumer's mind — is Wheaties Protein competing against Magic Spoon, or against Greek yogurt and eggs as the 'quick high-protein breakfast'?"
+        ]
+      },
+      {
+        "block": "Trial & Repeat Mechanics",
+        "subIssues": [
+          "What drives initial trial — price, Wheaties brand recognition, in-store placement, or sampling at fitness venues?",
+          "What drives repeat purchase — taste, protein content confirmation (20g feeling like a real benefit), or convenience vs. alternatives?",
+          "Is there a risk that consumers buy once, notice the serving size or taste, and don't repeat — making trial metrics look good but repeat metrics fail?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Validate the Segmentation Assumption",
+        "detail": "The 'active adults 25-45 seeking convenient high-protein breakfast' segment needs to be tested against Wheaties' existing brand associations. Consumer research: does the target consumer see Wheaties as a performance nutrition brand or a nostalgia brand? If nostalgia, the brand stretch needs additional credibility markers (athlete endorsement, clinical protein claim)."
+      },
+      {
+        "step": 2,
+        "title": "Sharpen the Positioning vs. Magic Spoon",
+        "detail": "Magic Spoon is DTC, $13.99, Instagram-oriented, and primarily reaching fitness enthusiasts who are already on high-protein diets. Wheaties Protein's white space: 'mainstream performance' — the casual gym-goer or active parent who wants more protein but shops Walmart or Target, not DTC. Position as the accessible performance cereal, not a premium niche alternative."
+      },
+      {
+        "step": 3,
+        "title": "4P's — Product Validation",
+        "detail": "Confirm the 20g protein claim is achievable at a standard cereal serving size (~1oz or 28g). If 20g requires a 2-3oz serving, the calorie count balloons and the product fails health-conscious consumers. Taste testing is critical — protein cereals frequently sacrifice taste, which kills repeat purchase."
+      },
+      {
+        "step": 4,
+        "title": "4P's — Place & Trial Strategy",
+        "detail": "Lead with cereal aisle placement at eye level, not the protein/nutrition section — this drives impulse trial from the existing cereal buyer. Sampling at gyms, sports events, and stadiums (Wheaties' natural home) should be a significant line item. A partnership with a major athletic event (marathon, Tough Mudder) amplifies the 'Breakfast of Champions' positioning."
+      },
+      {
+        "step": 5,
+        "title": "Recommendation",
+        "detail": "Launch Wheaties Protein targeting the mainstream active adult — not the Magic Spoon DTC buyer. Price at $6.99 to signal accessible performance at Walmart and Target scale. Lead promotional messaging with an athlete partnership (a current Olympian on the box), sample at athletic events, and place in the cereal aisle. Year-one success metric: 25% of buyers purchasing a second box within 60 days."
+      }
+    ],
+    "keyTerms": [
+      { "term": "ACV (All Commodity Volume)", "definition": "Retail distribution coverage metric — General Mills' 92% ACV means Wheaties Protein is available in stores representing 92% of all grocery sales in the US, a massive advantage over Magic Spoon's DTC-only reach" },
+      { "term": "Repeat Rate", "definition": "The percentage of first-time buyers who purchase the product again; in cereal, a repeat rate below 20% at 60 days typically signals a taste or value-perception problem" },
+      { "term": "Brand Extension", "definition": "Launching a new product under an existing brand name to leverage its equity; Wheaties Protein is a brand extension that borrows the 'Breakfast of Champions' equity to enter the protein cereal segment" },
+      { "term": "Protein per Serving (g)", "definition": "The key functional product claim; 20g of protein per serving is the threshold that signals 'meaningful' protein content to fitness-oriented consumers who typically target 25-30g per meal" },
+      { "term": "Accessible Premium", "definition": "A positioning strategy where a product is priced above the commodity category but well below the premium DTC leader — Wheaties Protein at $6.99 vs. Magic Spoon at $13.99 occupies this middle ground" }
+    ],
+    "interviewerExpectations": "This is an 'easy' case, so the bar is a clean, well-structured STP with a specific positioning decision and a direct recommendation. Interviewers want to see the Magic Spoon comparison handled explicitly and the distribution advantage called out as the key strategic lever. Weak answers are generic ('target health-conscious consumers, use social media') without identifying the mainstream-vs-DTC segmentation distinction or quantifying the price gap.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a new product launch in a fast-growing but still relatively small segment. I want to make sure Wheaties Protein has a distinct reason to exist — not just '20 grams of protein in a cereal box.' I'll use STP to define the specific target and positioning, 3C's to map the competitive landscape, and 4P's to design the execution. Two minutes to structure, then I'll walk through it."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A couple of quick questions. First, taste validation — has Wheaties Protein been taste-tested against Magic Spoon and against regular Wheaties, and where does it land? Taste drives repeat purchase in cereal more than anything. Second, is the 20 grams of protein achievable at a standard one-ounce serving size, or does it require a larger serving that increases calorie count significantly? That's a common issue with high-protein cereals."
+      },
+      {
+        "label": "Step 1 — Target Segment",
+        "script": "Let me start with who this is actually for. The protein cereal market is driven by fitness-oriented adults who are already on high-protein diets — Magic Spoon has captured a lot of that consumer with Instagram and DTC. But that's a relatively small, premium-skewing group. General Mills' real opportunity is the much larger 'mainstream active adult' — the 30-year-old who goes to the gym three times a week, shops at Walmart or Target, wants more protein in their diet but isn't going to pay $13.99 for a box of cereal online. Magic Spoon doesn't reach this consumer. Wheaties Protein, at $6.99 in the cereal aisle, does."
+      },
+      {
+        "label": "Step 2 — Positioning",
+        "script": "The Wheaties brand's 'Breakfast of Champions' positioning is the biggest asset here. It already signals sports and performance — but it skews nostalgic and slightly older. The positioning for Wheaties Protein should be 'accessible performance nutrition' — the high-protein breakfast for the everyday athlete, not the elite or the Instagram fitness influencer. This is a white space between Magic Spoon's premium niche and regular Wheaties' sports nostalgia. I'd also put a current Olympian or mainstream athlete on the box — not a social media fitness personality, which is Magic Spoon's territory."
+      },
+      {
+        "label": "Step 3 — 4P's Execution",
+        "script": "On the four P's. Product: confirm 20 grams of protein is deliverable at standard serving size — if the calorie count balloons, the health-conscious buyer will notice and repeat purchase will suffer. Price: $6.99 is the right call — it's $7 cheaper than Magic Spoon and signals accessible performance rather than premium niche. Place: this is General Mills' decisive advantage. Ninety-two percent ACV means Wheaties Protein hits Walmart, Target, and Kroger shelves simultaneously in a way Magic Spoon can never match. Place it in the cereal aisle at eye level, not in the specialty protein section — drive impulse trial from existing cereal shoppers, not just protein seekers. Promotion: sampling at gyms, marathons, and athletic events is the trial driver. The Wheaties heritage makes sponsoring sporting events natural and credible."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: launch Wheaties Protein targeting the mainstream active adult at Walmart and Target scale, priced at $6.99. Do not try to out-Magic Spoon Magic Spoon on Instagram or DTC — that's a fight General Mills cannot win authentically. Win instead on mass distribution, accessible pricing, and the Wheaties performance heritage. Put a current Olympian on the box, sample at athletic events, and place in the cereal aisle. Year-one success metric: a 60-day repeat rate of at least 25%, which would confirm that the taste and protein experience lives up to the packaging promise. If repeat is below 20%, investigate taste first before expanding distribution further."
+      }
+    ]
+  },
+  {
+    "id": "scenario_029",
+    "type": "New Product Launch",
+    "company": "Unilever",
+    "title": "Dove Men+Care Entering the Body Wash for Kids Market",
+    "prompt": "Unilever is evaluating whether to launch a Dove Kids Care body wash and shampoo line for children ages 3-12, priced at $7.99 for 18oz (vs. Johnson's Baby at $5.99 and Suave Kids at $3.99). The children's bath products market is $1.8B growing 5% annually. Dove's equity in 'gentle' and 'moisturizing' has strong resonance with mothers. What launch framework should be applied, and what are the biggest risks?",
+    "context": "The Dove brand is currently adult-focused. Johnson's Baby (J&J) holds 38% of the children's bath category and is entrenched from birth. Suave Kids holds 22% on value positioning with licensed characters. The 'clean ingredient' segment for kids (Mustela, Babyganics) is growing 19% annually. Consumer research shows 71% of mothers say they research ingredients 'very carefully' for children's products. Dove's existing consumer base (women 25-45) heavily overlaps with the mother target for this launch.",
+    "correctFrameworks": ["STP", "4P's", "Market Entry Framework"],
+    "whyThisFramework": "Market Entry Framework frames this as a new product (kids' formulation) entering an existing market — a product line extension. STP targets 'ingredient-aware millennial mothers' as the primary segment, distinct from Johnson's heritage users and Suave's value buyers. 4P's executes with premium-but-not-luxury pricing and marketing through mom-influencer channels.",
+    "keyConsiderations": [
+      "Dove's 'gentleness' equity is directly transferable to children's care — credible brand stretch",
+      "Johnson's 'from birth' trust is almost unassailable — target the 3-7 age cohort instead",
+      "Ingredient transparency (no parabens, no sulfates) is table stakes for millennial mothers",
+      "Licensing characters (Marvel, Disney) could accelerate trial in a category where kids influence the purchase"
+    ],
+    "difficulty": "easy",
+    "clarifyingQuestions": [
+      "Is Dove Kids Care formulated with specific child-safe ingredients that Dove can claim are distinct from its adult line — specifically sulfate-free and paraben-free?",
+      "Is the target the 3-12 age range broadly, or does Unilever plan to sub-segment — for example, a 3-7 toddler line and a 7-12 'big kids' line?",
+      "What is the planned retail channel — mass (Walmart/Target) only, or also specialty baby retailers like Buy Buy Baby or health stores like Whole Foods?",
+      "Has Dove tested the brand extension with mothers in focus groups — specifically, do mothers perceive Dove as credible for children, or do they associate Dove solely with adult personal care?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Brand Credibility & Consumer Receptivity",
+        "subIssues": [
+          "Does Dove's 'gentle and moisturizing' equity transfer credibly to children's care in consumer perception, or does the adult positioning create a barrier?",
+          "Is there a meaningful segment of millennial mothers who trust Dove as a brand and would switch their children from Johnson's or Suave if Dove offered a clean-ingredient alternative?",
+          "What ingredient claim can Dove make that Johnson's and Suave cannot — sulfate-free, paraben-free, dermatologist-tested for kids?"
+        ]
+      },
+      {
+        "block": "Competitive Positioning",
+        "subIssues": [
+          "Can Dove occupy the 'premium clean' space between Johnson's mid-market and Mustela's $14.99 luxury, without getting squeezed from both sides?",
+          "Is the 3-7 year old cohort — where parents are transitioning away from Johnson's Baby — the most accessible entry point given Johnson's 'from birth' entrenchment?",
+          "How does Dove attract kids' influence over the purchase when Suave Kids uses Disney and Marvel character licensing that Dove does not have?"
+        ]
+      },
+      {
+        "block": "Launch Execution",
+        "subIssues": [
+          "What is the right channel mix — mass retail for volume, specialty baby for credibility, or Target specifically given its overlap with Dove's core demographic?",
+          "Is $7.99 the right price point — it's $2 above Johnson's and $4 above Suave, but $7 below Mustela — and will the clean-ingredient positioning justify the premium for the median millennial mother?",
+          "How does Unilever drive trial — in-store sampling, mom-influencer seeding, or pediatric dermatologist endorsement?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Validate Brand Extension Credibility",
+        "detail": "Consumer research must confirm that Dove's 'gentle' and 'moisturizing' equity transfers to children's care perception. The Dove brand is adult-associated — request focus group data specifically testing mother receptivity. If mothers see Dove as credible for children, proceed. If not, consider a sub-brand architecture (Dove Baby Care by Dove) to bridge the gap."
+      },
+      {
+        "step": 2,
+        "title": "Target the Right Age Cohort",
+        "detail": "Johnson's Baby has 38% share and is entrenched from birth through infancy. Do not compete there. The 3-7 age cohort is the natural transition point where parents begin moving away from Johnson's Baby formulas. Target this cohort with an 'ages 3+, gentle and clean' positioning that acknowledges the child is past infancy without requiring a full brand relaunch."
+      },
+      {
+        "step": 3,
+        "title": "Establish the Ingredient Differentiator",
+        "detail": "Seventy-one percent of mothers research ingredients carefully. Dove Kids Care must be sulfate-free, paraben-free, and dermatologist-tested for children. This is table stakes against Mustela but a meaningful upgrade vs. Johnson's and Suave. Feature the ingredient list prominently on the front panel — ingredient transparency is marketing in this category."
+      },
+      {
+        "step": 4,
+        "title": "4P's — Price, Place, Promotion",
+        "detail": "Price: $7.99 at mass retail is correct — it's the 'affordable premium' that separates Dove from the value players without crossing into Mustela luxury. Place: lead with Target (overlaps directly with Dove's 25-45 female core demographic) and Walmart. Promotion: mom-influencer partnerships on Instagram and TikTok, with pediatric dermatologist seeding as credibility anchor. Kids influence: colorful packaging and appealing scents without requiring character licensing."
+      },
+      {
+        "step": 5,
+        "title": "Recommendation",
+        "detail": "Launch Dove Kids Care targeting mothers of 3-7 year olds, positioned as the clean-ingredient gentle alternative to Johnson's. Lead with Target distribution, mom-influencer partnerships, and front-of-pack ingredient transparency. Price at $7.99. Avoid competing directly with Johnson's in the infant segment — own the 'transition to clean' moment at ages 3-4."
+      }
+    ],
+    "keyTerms": [
+      { "term": "Brand Extension", "definition": "Launching a new product under an existing brand name — Dove Kids Care extends the Dove adult personal care brand into children's bath products, borrowing its 'gentle and moisturizing' equity" },
+      { "term": "Sub-Brand Architecture", "definition": "Creating a named variation under the parent brand (e.g., 'Dove Baby Care') to signal a distinct formulation or target while maintaining parent brand equity — useful when the parent brand's adult associations might create credibility questions" },
+      { "term": "Ingredient Transparency", "definition": "Prominently disclosing what a product does and does not contain (sulfate-free, paraben-free, dermatologist-tested); a purchase decision driver for 71% of millennial mothers in the children's bath category" },
+      { "term": "Purchase Influence Dynamics", "definition": "In children's products, both the parent (primary buyer) and the child (influencer) affect the purchase — mothers evaluate safety and ingredients while children respond to packaging, scent, and character association" },
+      { "term": "Accessible Premium", "definition": "Positioned above mass market (Johnson's $5.99, Suave $3.99) but below luxury (Mustela $14.99) — Dove's $7.99 targets mothers who want cleaner ingredients but won't pay European skincare prices for bath wash" }
+    ],
+    "interviewerExpectations": "Strong answers recognize immediately that Johnson's Baby cannot be beaten head-on in the infant segment and pivot to the 3-7 age cohort as the entry point. They identify ingredient transparency as the category differentiator and Target as the strategic retail partner. Weak answers propose a generic kids' bath launch without segmenting by age cohort or identifying which specific mothers Dove can realistically convert.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a product line extension — a new kids formulation entering an established market. Before recommending a launch plan, I need to identify which specific segment of mothers Dove can realistically win, because Johnson's and Suave have very different and entrenched positions. I'll use a Market Entry Framework to evaluate the opportunity, STP to pick the right target and positioning, and 4P's to design the launch. A quick moment to structure."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few quick questions. First, has Dove validated with mother focus groups that the brand feels credible for children — specifically, do mothers see 'Dove' and think 'gentle for my kid' or do they think 'that's my body wash'? Second, is the formulation sulfate-free and paraben-free — because ingredient transparency is non-negotiable for the millennial mother segment? And third, is the Target partnership already confirmed, or is this general mass retail?"
+      },
+      {
+        "label": "Step 1 — Market Entry Assessment",
+        "script": "Let me start with the strategic question: can Dove win in this market? Johnson's Baby holds 38% share and is entrenched from birth — parents choose Johnson's for their first child, use it through infancy, and the habit sticks. Dove is not going to displace that in the zero-to-two age group. But the 3-to-7 year old cohort is where parents begin to reconsider — they're past the baby stage, and a growing segment of millennial mothers is actively looking for cleaner-ingredient alternatives. The 'clean ingredient' segment — Mustela, Babyganics — is growing 19% per year. That's the beachhead. Dove doesn't need to fight Johnson's on its home turf. It needs to own the transition moment."
+      },
+      {
+        "label": "Step 2 — Target & Positioning",
+        "script": "The target is millennial mothers of 3 to 7 year olds who are ingredient-aware. Seventy-one percent of mothers research ingredients carefully for their children's products. This consumer wants clean — sulfate-free, paraben-free — but she's not going to spend $14.99 for Mustela. She's shopping Target, looking for something that feels premium but is priced reasonably. Dove's 'gentle and moisturizing' brand equity is a direct credibility transfer to this use case. The positioning: 'The clean-ingredient bath care for kids, from a brand mothers already trust.' Dove is the bridge between Johnson's mass familiarity and Mustela's expensive clean-label positioning."
+      },
+      {
+        "label": "Step 3 — 4P's Execution",
+        "script": "On the four P's. Product: the formulation must be sulfate-free, paraben-free, and dermatologist-tested for children — these are table stakes for the ingredient-aware mother, not differentiators. Feature them prominently on the front of the pack. Price: $7.99 is the right call. It's $2 above Johnson's, which signals 'cleaner and better,' and $7 below Mustela, which signals 'accessible premium, not indulgent.' Place: lead with Target, which over-indexes with Dove's core 25-45 female demographic and already carries the adult Dove line — the in-store adjacency helps. Add Walmart for volume coverage. Promotion: invest in mom-influencer partnerships on Instagram and TikTok — this is where the ingredient-aware millennial mother gets her product recommendations. Seed with pediatric dermatologists for clinical credibility. Colorful, fun packaging that kids respond to without requiring character licensing."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: yes, launch Dove Kids Care, targeting mothers of 3 to 7 year olds who are ingredient-aware and actively transitioning away from Johnson's Baby. Do not compete in the infant segment — that's Johnson's fortress. Own the 'transition to clean' moment at age three. Lead with Target distribution and mom-influencer marketing, front the ingredient story prominently on pack, price at $7.99, and ensure the formulation is sulfate-free and paraben-free before launch — that's the baseline expectation for the target consumer. Year-one success metric: trial rate at Target locations in the first 90 days, and a 60-day repeat rate above 30%, which would confirm that ingredient-aware mothers are making it a household staple rather than a one-time experiment."
+      }
+    ]
+  },
+  {
+    "id": "scenario_030",
+    "type": "New Product Launch",
+    "company": "Anheuser-Busch InBev",
+    "title": "Bud Light Launching a Non-Alcoholic Beer",
+    "prompt": "AB InBev is evaluating the launch of Bud Light Zero, a 0% ABV beer priced at $9.99 for a 6-pack (vs. $10.99 for Bud Light regular). The non-alcoholic beer category is growing 35% annually and reached $510M in the US in the prior year. Athletic Brewing Co. holds 35% of the NA beer market and is growing 50% YoY. Heineken 0.0 holds 18%. How would you approach the launch strategy?",
+    "context": "Bud Light is the #1 volume beer in the US. The non-alcoholic beer buyer skews toward health-conscious adults 25-40 who are 'sober curious' or 'mindful drinkers.' Bud Light's core demographic is sports fans 21-35. Athletic Brewing positions on craft/performance ('Brew Free or Die'). The social occasion of drinking — holding a beer at a party or game — is a key purchase driver for NA beer. Bud Light's distribution is nearly universal.",
+    "correctFrameworks": ["STP", "4P's", "3C's"],
+    "whyThisFramework": "STP determines whether Bud Light Zero targets existing Bud Light drinkers (who want to drink less) or NA beer adopters (who may not drink Bud Light). This changes everything about the positioning and creative. 3C's maps Athletic Brewing as a differentiated craft competitor. 4P's executes with Bud Light's distribution advantage and sports occasion marketing.",
+    "keyConsiderations": [
+      "Bud Light's mass distribution is a massive advantage — Athletic Brewing cannot match shelf presence",
+      "Social occasion is the key insight: NA beer is about being included, not being excluded",
+      "Pricing below regular Bud Light ($0.00 premium for NA) is counterintuitive — most NA brands carry a premium",
+      "Athletic Brewing's craft positioning is a different segment than Bud Light's mass positioning — don't fight directly"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Who is the primary target for Bud Light Zero — existing Bud Light drinkers who want a no-alcohol option for some occasions, or consumers who have already converted to NA beer and are currently buying Athletic Brewing or Heineken 0.0?",
+      "Is the $9.99 price point firm, or is there flexibility to price at parity with regular Bud Light ($10.99) to avoid signaling lower quality?",
+      "Is the plan to place Bud Light Zero in the existing beer aisle alongside regular Bud Light, or in the NA section — and does this vary by retailer?",
+      "Has Bud Light done taste testing against Athletic Brewing's Run Wild IPA and Heineken 0.0, and how does it score on taste and drinkability?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Target Segment & Occasion",
+        "subIssues": [
+          "Is the core buyer a Bud Light loyalist who wants a zero-alcohol option for driving nights, mornings after, or dry months — or a new-to-Bud-Light consumer who has already adopted NA?",
+          "Is the primary purchase occasion social (sporting events, parties where NA beer allows inclusion) or individual (personal health or dry month goals)?",
+          "Does the 'sober curious' movement represent a temporary wellness trend or a sustained behavioral shift that justifies long-term SKU investment?"
+        ]
+      },
+      {
+        "block": "Competitive Positioning",
+        "subIssues": [
+          "Is Athletic Brewing's 'craft performance' consumer the same as Bud Light's sports-fan mass consumer — and if not, is there actually direct competition?",
+          "Does Heineken 0.0's established retail presence make it a more direct competitor than Athletic Brewing in the mass grocery channel?",
+          "Can Bud Light Zero credibly occupy the 'inclusive social beverage' positioning — being the beer you hold at the game when you're not drinking — without craft credibility?"
+        ]
+      },
+      {
+        "block": "Distribution & Execution Advantage",
+        "subIssues": [
+          "Does Bud Light's near-universal distribution translate to shelf placement alongside its regular beer — and can it command prime fridge space in the NA section?",
+          "At $9.99 vs. $10.99 for regular Bud Light, is the pricing counter-positioning clear ('NA costs less, try it') or confusing ('why is it cheaper — is it lower quality')?",
+          "What is the in-venue (stadium, bar, restaurant) distribution strategy — draft handles for NA are rare but represent a significant social occasion opportunity?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Define the Core Target (STP)",
+        "detail": "Primary target: existing Bud Light drinkers, 22-38 year old sports fans, who want a zero-alcohol option for specific occasions — driving nights, morning events, or moderating during a night out. This is NOT Athletic Brewing's target (fitness-first, craft-curious 28-40 year old). These are two different people with different needs. Bud Light Zero should not try to win the Athletic Brewing consumer."
+      },
+      {
+        "step": 2,
+        "title": "Identify the Occasion",
+        "detail": "The primary purchase driver for NA beer is social inclusion — holding a beer at a party or game without drinking alcohol. For Bud Light drinkers, the occasion is 'I'm at the Super Bowl party, I'm driving, I still want to hold a Bud Light.' This occasion-based positioning frames Bud Light Zero as 'the same, minus the alcohol' — not a compromise, but a choice."
+      },
+      {
+        "step": 3,
+        "title": "Competitive Separation from Athletic Brewing",
+        "detail": "Athletic Brewing targets craft beer lovers and fitness enthusiasts with 'performance sobriety' messaging. Do not fight there — Bud Light has no craft credibility. Bud Light Zero's positioning is the opposite: mass-market, social, accessible. The tagline concept: 'Same great taste. Zero percent.' Not performance, not craft — just Bud Light without the alcohol."
+      },
+      {
+        "step": 4,
+        "title": "4P's — Price, Place, Promotion",
+        "detail": "Price: $9.99 is fine, though the $1 below regular Bud Light risks a quality signal. Consider matching at $10.99 or framing as 'same price for a lighter choice.' Place: stock Bud Light Zero on the shelf immediately next to regular Bud Light — not just in the NA section. This reinforces 'same choice, different occasion' rather than relegating it to a specialty shelf. Promotion: sports occasion marketing — NFL, March Madness, sporting event sponsorships. The creative: Bud Light drinkers making the choice to go zero on specific occasions without missing out."
+      },
+      {
+        "step": 5,
+        "title": "Recommendation",
+        "detail": "Launch Bud Light Zero targeting existing Bud Light drinkers for social occasions, positioned as 'the same Bud Light experience, zero alcohol.' Distribute alongside regular Bud Light — not only in the NA section. Lead promotion with sports occasion marketing and in-venue (stadium) distribution. Do not try to compete with Athletic Brewing's craft/performance positioning — own the mass social occasion instead. Pricing at $10.99 matching regular Bud Light avoids the quality signal issue and normalizes the choice."
+      }
+    ],
+    "keyTerms": [
+      { "term": "ABV (Alcohol by Volume)", "definition": "The percentage of alcohol in a beverage — Bud Light Zero is 0% ABV, making it legally non-alcoholic; this is the defining product characteristic for NA beer positioning and retail placement" },
+      { "term": "Sober Curious", "definition": "A consumer movement of adults who choose to reduce or eliminate alcohol consumption for health or lifestyle reasons without fully identifying as sober; the primary driver of NA beer category growth" },
+      { "term": "Occasion-Based Segmentation", "definition": "Targeting consumers not by demographics but by the specific use moment — NA beer's key occasion is 'social drinking situations where the consumer wants to participate without drinking alcohol'" },
+      { "term": "Distribution Moat", "definition": "The competitive advantage created by Bud Light's near-universal retail presence — Athletic Brewing and Heineken 0.0 cannot match Bud Light's ability to place Bud Light Zero on shelves next to the regular product at mass scale" },
+      { "term": "SKU (Stock Keeping Unit)", "definition": "A unique product variant tracked in retail inventory — Bud Light Zero is a new SKU requiring shelf space, retail buyer approval, and warehouse logistics separate from regular Bud Light" }
+    ],
+    "interviewerExpectations": "Strong answers identify that Bud Light Zero's primary target is existing Bud Light drinkers on specific social occasions — not the Athletic Brewing craft consumer — and use that insight to drive a completely different positioning and channel strategy. They call out the distribution moat as the decisive competitive advantage and the pricing signal risk at $9.99. Weak answers treat this as a generic NA beer launch without identifying the Bud Light loyalist vs. Athletic Brewing consumer distinction.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "The most important strategic decision here isn't the product or the price — it's who Bud Light Zero is actually for. If it's for existing Bud Light drinkers who want a zero-alcohol option on certain occasions, that's a completely different launch than if it's trying to win Athletic Brewing's craft-performance consumer. I'll use STP to answer that question first, 3C's to map the competitive dynamics, and 4P's to design the execution. Can I have a minute to organize my thinking?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A couple of quick questions. First, is the intent to target existing Bud Light drinkers — people who already love Bud Light and want a zero option for specific nights — or to attract new-to-Bud-Light consumers who have already adopted the NA category through Athletic Brewing or Heineken 0.0? These are very different people with different needs. Second, is the plan to shelve Bud Light Zero next to regular Bud Light in the beer aisle, or primarily in the dedicated non-alcoholic section? That placement decision signals who the product is for."
+      },
+      {
+        "label": "Step 1 — Target Segment",
+        "script": "Let me start with the target. Bud Light's core consumer is a sports fan, 21 to 35, who drinks Bud Light at games, parties, and tailgates. The NA beer category overall skews health-conscious adults 25 to 40 — some of whom are 'sober curious,' some are athletes, some are just moderating. Athletic Brewing has captured the craft-performance end of that spectrum — the person who does triathlons and wants a beer that fits their lifestyle identity. That is not Bud Light's consumer. Bud Light's consumer is the person at the Super Bowl party who is driving home, or who is on a dry January, or who just doesn't want to drink tonight but absolutely wants to hold a Bud Light and feel like part of the game. That's the target. Social inclusion is the job to be done — not performance, not craft credibility."
+      },
+      {
+        "label": "Step 2 — Positioning vs. Competitors",
+        "script": "Given that target, Bud Light Zero should not try to compete with Athletic Brewing's 'Brew Free or Die' performance sobriety positioning. Bud Light has no craft credibility to lend. Instead, the positioning is completely different: 'Same great taste. Zero percent.' Not a compromise — a choice. The creative concept: Bud Light drinkers at a tailgate, at a game, at a backyard party, choosing Zero for the occasion and not missing out on anything. This is about inclusion, not deprivation. Heineken 0.0 is a closer direct competitor in the mass grocery channel — but Heineken's awareness is lower among Bud Light's core sports-fan demographic, which gives Bud Light Zero a real opening."
+      },
+      {
+        "label": "Step 3 — Distribution as the Decisive Advantage",
+        "script": "Bud Light's near-universal distribution is the moat. Athletic Brewing cannot match it. Heineken 0.0 has good distribution but not Bud Light's presence. The key execution decision: place Bud Light Zero directly next to regular Bud Light on the shelf, in the main beer aisle, not just in the specialty NA section. This placement communicates 'same choice, different occasion' — a Bud Light drinker browsing the beer aisle sees Zero right next to their regular pack and makes the switch naturally. If it's only in the NA section, it becomes a specialty product for people who have already decided to go NA, which is a smaller audience."
+      },
+      {
+        "label": "Step 4 — Price & Promotion",
+        "script": "On price: I'd actually push back on the $9.99 versus $10.99 regular Bud Light framing. One dollar cheaper for the zero-alcohol version risks signaling lower quality — 'they removed the alcohol and a dollar.' I'd recommend matching at $10.99 or pricing at parity, framing the choice as an equal but different option. Promotion: sports occasion marketing is the natural channel. NFL sponsorships, March Madness, stadium distribution where fans who are driving still want to hold something that looks and feels like a Bud Light. The creative hook: 'Zero never felt so cold.' Normalize the occasion without making it about sacrifice."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: launch Bud Light Zero targeting existing Bud Light drinkers for social occasions where they want to participate without drinking alcohol. Position it as 'the same Bud Light, zero percent' — not craft, not performance, just inclusion. Place it next to regular Bud Light in the beer aisle as the priority, with secondary placement in the NA section. Price it at $10.99, matching regular Bud Light to avoid a quality signal issue. Lead promotion with sports occasion marketing — NFL, college football, stadium distribution — where Bud Light's brand equity is strongest. Do not try to compete with Athletic Brewing on craft or performance; own the mass social occasion instead. Year-one success metric: trial rate among existing Bud Light household buyers and sell-through velocity at sporting event venues, which are the proving ground for the social occasion positioning."
+      }
+    ]
+  }
+]

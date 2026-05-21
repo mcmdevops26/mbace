@@ -1,0 +1,502 @@
+[
+  {
+    "id": "scenario_071",
+    "type": "Profitability",
+    "company": "Chevron",
+    "title": "Chevron Downstream Refining Margin Collapse",
+    "prompt": "You are a VP of refining strategy at Chevron. Chevron's downstream refining operations processed 900,000 barrels per day last year but refining margins (crack spreads) compressed from $24/barrel to $14/barrel due to new refinery capacity coming online in the Middle East and Asia. Downstream operating costs are $9/barrel. How does Chevron manage this profitability challenge?",
+    "context": "Chevron operates 5 refineries in the US and 2 internationally. Saudi Aramco's Jazan refinery added 400,000 barrels/day of global capacity. Renewable diesel margins are currently $18/barrel — $4 higher than conventional refining. Chevron's El Segundo refinery in California is permitted for renewable feedstock processing. Renewable diesel feedstocks (used cooking oil, animal fats) are supply-constrained, with spot prices up 62% in 18 months. Complex refineries (Chevron's) average 12% higher operating cost than simpler configurations but produce higher-value products.",
+    "correctFrameworks": ["Profitability Tree", "Value Chain Analysis"],
+    "whyThisFramework": "Profitability Tree to quantify the impact of crack spread compression on EBIT (900K bpd × $10/barrel margin decline = $3.3B annual impact) and compare against cost reduction levers, then Value Chain Analysis to identify where Chevron's complex refinery configuration creates differentiated value (higher-value products, renewable diesel conversion) vs. simpler commodity competitors.",
+    "keyConsiderations": [
+      "What is the breakeven crack spread for each Chevron refinery given its cost structure?",
+      "Should Chevron accelerate conversion of El Segundo to renewable diesel?",
+      "Which refineries should be idled or divested given the structural capacity overhang?",
+      "How does Chevron hedge feedstock and product prices to protect against further margin compression?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Are the $9/barrel operating costs fixed or variable — specifically, how much of that is fixed overhead that persists even if we idle capacity?",
+      "What is the expected duration of the capacity overhang from Jazan and other new Middle East/Asia refineries — is this a 2-year cycle or a structural shift?",
+      "What capital investment would El Segundo's renewable diesel conversion require, and what is the current permitting timeline?",
+      "Is Chevron's crack spread compression uniform across all 7 refineries, or are certain configurations or geographies more insulated?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Revenue per Barrel (Crack Spread Recovery)",
+        "subIssues": [
+          "Can Chevron shift product mix toward higher-value distillates (jet fuel, diesel) to widen spreads vs. gasoline-heavy peers?",
+          "What is the realistic timeline and margin uplift for converting El Segundo to renewable diesel at $18/barrel?",
+          "Are there spot trading or hedging strategies to lock in current spreads against further compression?"
+        ]
+      },
+      {
+        "block": "Cost per Barrel (Operating Cost Reduction)",
+        "subIssues": [
+          "Which of Chevron's 7 refineries are below the $14/barrel crack spread breakeven and should be idled or divested?",
+          "What fixed cost elimination is achievable through refinery consolidation without sacrificing strategic capacity?",
+          "Can energy efficiency or feedstock optimization reduce the $9/barrel operating cost by 10-15%?"
+        ]
+      },
+      {
+        "block": "Portfolio Restructuring (Capital Reallocation)",
+        "subIssues": [
+          "Is downstream refining a business Chevron should scale back in favor of upstream or renewable energy?",
+          "What divestiture value can Chevron realize for underperforming refineries given current M&A market for refining assets?",
+          "Should Chevron acquire renewable feedstock supply (used cooking oil processors) to secure the $18/barrel renewable diesel margin?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the Profit Impact",
+        "detail": "Calculate total EBIT impact: 900,000 bpd × $10/barrel margin decline × 365 days = $3.285B annual profit loss. Current margin is $14 - $9 cost = $5/barrel contribution vs. prior $24 - $9 = $15/barrel. This frames the urgency and sizes the problem."
+      },
+      {
+        "step": 2,
+        "title": "Identify Breakeven Refineries",
+        "detail": "Request refinery-by-refinery cost breakdown to identify which of the 7 facilities operate below breakeven at $14/barrel crack spread. Complex refineries cost 12% more but produce higher-value products — calculate whether complexity premium offsets the cost disadvantage at current spreads."
+      },
+      {
+        "step": 3,
+        "title": "Evaluate Renewable Diesel Conversion at El Segundo",
+        "detail": "Model the El Segundo conversion: renewable diesel earns $18/barrel vs. $14 conventional, a $4/barrel uplift. Request capacity at El Segundo (likely 250-300K bpd) and conversion capex. Assess feedstock supply risk given used cooking oil prices up 62% — secure long-term supply contracts before committing capital."
+      },
+      {
+        "step": 4,
+        "title": "Assess Idle or Divest Decision for Underperformers",
+        "detail": "For refineries below breakeven, model the NPV of idling (saves variable costs, retains optionality) vs. divestiture (captures asset value now, eliminates fixed costs). Request current refinery book values and market comparable transactions to determine divestiture pricing."
+      },
+      {
+        "step": 5,
+        "title": "Recommend Integrated Action Plan",
+        "detail": "Synthesize into three actions: (1) idle or divest the 1-2 highest-cost refineries below breakeven, (2) fast-track El Segundo renewable diesel conversion if capex payback is under 5 years, (3) implement product-mix optimization across remaining refineries to shift toward distillates. Hedge 40-50% of crack spread exposure to protect downside."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Crack Spread",
+        "definition": "The difference between the price of crude oil and the petroleum products refined from it (gasoline, diesel, jet fuel); the core profitability metric for refining operations"
+      },
+      {
+        "term": "Renewable Diesel (RD)",
+        "definition": "A drop-in diesel fuel made from biological feedstocks (used cooking oil, animal fats) that is chemically identical to petroleum diesel but earns higher margins due to regulatory credits (LCFS, RINs)"
+      },
+      {
+        "term": "LCFS / RIN",
+        "definition": "Low Carbon Fuel Standard credits (California) and Renewable Identification Numbers (federal); tradeable credits that boost renewable diesel economics by $3-6/barrel above conventional diesel"
+      },
+      {
+        "term": "Capacity Overhang",
+        "definition": "Excess global refining capacity relative to demand, which structurally depresses crack spreads as refineries compete for crude throughput"
+      },
+      {
+        "term": "Complex Refinery",
+        "definition": "A refinery with coking, hydrocracking, or fluid catalytic cracking units that can process heavier crude into higher-value light products; costs more to operate but earns a margin premium in normal markets"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately quantifies the $3.285B EBIT impact, then structures the response around both cost-side and revenue-side levers before recommending the renewable diesel pivot — weak answers describe the problem without doing math or recommend vague cost-cutting without assessing which specific refineries to address.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I dive in, I want to make sure I understand the structure of the problem. I'll use a Profitability Tree to size the full EBIT impact of the crack spread compression, then Value Chain Analysis to identify where Chevron's complex refinery configuration creates differentiated leverage points — either on cost reduction or product mix. May I take 30 seconds to structure my thinking?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "A few questions before I proceed. First, are Chevron's $9 per barrel operating costs primarily fixed or variable — specifically, how much of that persists if we idle a refinery? Second, is this crack spread compression viewed as a 2-to-3-year cycle tied to the Jazan ramp-up, or is management treating it as a structural shift? And third, what is the rough capital requirement to convert El Segundo to renewable diesel processing?"
+      },
+      {
+        "label": "Step 1 — Profit Impact Quantification",
+        "script": "Let me size the problem first. Chevron processes 900,000 barrels per day. The crack spread has fallen from $24 to $14 per barrel — a $10 decline. At $9 per barrel in operating costs, Chevron's contribution margin has fallen from $15 to $5 per barrel. That's a $10 per barrel decline across 900,000 barrels per day — roughly $3.3 billion in annualized EBIT impact. That's the number we need to close, partially or fully, through the actions I'll recommend."
+      },
+      {
+        "label": "Step 2 — Revenue Levers: Renewable Diesel & Product Mix",
+        "script": "On the revenue side, the most compelling lever is El Segundo's renewable diesel conversion. Renewable diesel currently earns $18 per barrel versus $14 for conventional — a $4 uplift. If El Segundo processes, say, 250,000 barrels per day, that's an incremental $365 million annually at full conversion. The risk is feedstock: used cooking oil prices are up 62% in 18 months, so we need to secure long-term supply agreements before committing conversion capex. I'd also shift product mix at other refineries toward distillates — jet fuel and diesel earn wider spreads than gasoline in the current environment."
+      },
+      {
+        "label": "Step 3 — Cost Levers: Refinery Portfolio Rationalization",
+        "script": "On the cost side, at a $14 crack spread and $9 operating cost, Chevron's $5 per barrel margin is thin. Complex refineries cost 12% more to operate — approximately $10 per barrel all-in — which means some of Chevron's 7 facilities may actually be operating at or near breakeven. I'd request a refinery-by-refinery P&L to identify the 1 or 2 highest-cost facilities and model whether idling saves more in fixed costs than it loses in throughput contribution, or whether a divestiture makes sense if asset values are supportive."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation has three parts. First, fast-track the El Segundo renewable diesel conversion — subject to confirming the capex payback is under 5 years and securing feedstock supply contracts. That addresses the structural margin gap at our largest California refinery. Second, idle or divest the 1-2 highest-cost refineries that are at or below breakeven at $14 per barrel — this reduces fixed cost exposure and returns capital. Third, hedge 40 to 50 percent of crack spread exposure on the remaining portfolio to protect against further compression while the renewable diesel transition matures. Combined, these actions target recovering $1.5 to $2 billion of the $3.3 billion EBIT impact within 24 months."
+      }
+    ]
+  },
+  {
+    "id": "scenario_072",
+    "type": "Acquisition",
+    "company": "Nike",
+    "title": "Nike Acquisition of a Running App",
+    "prompt": "You are VP of corporate development at Nike. Strava, the social fitness app with 120 million users and $200M in annual subscription revenue, is exploring strategic options and is available for acquisition at a reported $1.5B valuation. Nike's Nike Run Club app has 35 million users but poor retention after 90 days. Should Nike acquire Strava?",
+    "context": "Strava's 120 million users include 68 million active monthly users. Strava's premium subscription converts at 14% of registered users ($7.99/month). Strava data shows Nike footwear and apparel mentioned in 3.4 million activity posts annually. Under Armour previously acquired MyFitnessPal for $475M and later sold it for $345M — a cautionary tale. Apple Fitness+ and Garmin Connect are growing as competitive data platforms. Nike's NRC has best-in-class training plans but lacks the social community layer.",
+    "correctFrameworks": ["3C's", "Breakeven Analysis"],
+    "whyThisFramework": "3C's to evaluate whether Strava's community and data assets address Nike's NRC retention problem (consumer), how the acquisition would affect Adidas and Garmin who also integrate with Strava (competition), and whether Nike can integrate a software business into its operations (company), then Breakeven Analysis to determine what revenue synergies are needed to justify the $1.5B acquisition premium.",
+    "keyConsiderations": [
+      "Does Strava's community model translate into Nike product revenue — can Nike prove the link?",
+      "What happens to Strava's 68M active users if Nike makes it Nike-exclusive?",
+      "What revenue synergies are needed to achieve a reasonable return on $1.5B?",
+      "Can Nike manage a software subscription business given Under Armour's MyFitnessPal experience?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Is Nike's intention to keep Strava as a multi-brand open platform or to integrate it exclusively into the Nike ecosystem — because that changes the user retention risk entirely?",
+      "What is Nike's current cost of capital or acquisition hurdle rate, and what synergy timeline are we underwriting — 3 years or 5 years?",
+      "Does Nike have data on whether Strava users who mention Nike products have higher Nike purchase rates than non-Strava Nike customers?",
+      "What is the current NRC 90-day retention rate versus Strava's, and has Nike diagnosed whether the gap is product quality or community absence?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Strategic Fit (Does Strava Fix What's Broken at NRC?)",
+        "subIssues": [
+          "Does Strava's social community layer directly address NRC's 90-day retention drop-off, or is retention driven by other factors like content quality?",
+          "Can Nike leverage Strava's 68 million active users to create measurable incremental product revenue without exclusivity that kills the platform?",
+          "Does Nike have the software product and data science capability to maintain and grow a standalone subscription app post-acquisition?"
+        ]
+      },
+      {
+        "block": "Competitive Dynamics (What Does This Do to the Market?)",
+        "subIssues": [
+          "How do Adidas, Garmin, and Apple respond if Nike acquires Strava — do they build competing platforms or accelerate partnerships with Garmin Connect?",
+          "Does Strava's value collapse if non-Nike brands defect from the platform, reducing network effects?",
+          "Is this acquisition primarily defensive (blocking competitors from acquiring Strava) or offensive (generating synergy revenue)?"
+        ]
+      },
+      {
+        "block": "Financial Return (Does $1.5B Make Sense?)",
+        "subIssues": [
+          "At $200M revenue and 48% growth implied by the valuation multiple, what NPV of synergies does Nike need to generate above standalone Strava value to justify the premium?",
+          "What is the realistic risk-adjusted revenue synergy from 3.4 million annual Nike product mentions converting to incremental sales?",
+          "What integration costs (tech, org, brand) should be modeled against synergy upside?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Frame the Strategic Question",
+        "detail": "Establish whether this acquisition is primarily about fixing NRC retention, acquiring Strava's 68M user data asset, or blocking a competitor. Each objective implies a different integration strategy (open platform vs. Nike-exclusive) and different synergy math."
+      },
+      {
+        "step": 2,
+        "title": "Assess User & Community Value",
+        "detail": "Strava has 68M active monthly users vs. NRC's 35M total. The key question is whether Strava's social layer drives retention — request NRC cohort data showing 30/60/90-day retention and whether users who engage with social features (challenges, segments, clubs) retain at higher rates."
+      },
+      {
+        "step": 3,
+        "title": "Model the Synergy Case",
+        "detail": "Strava data shows 3.4M annual posts mentioning Nike products. If even 10% of those represent incremental Nike purchases at $120 average order value, that's $40.8M in incremental revenue. At Nike's ~44% gross margin, that's $18M gross profit annually — far short of justifying $1.5B. The real synergy case must be broader: improved NRC retention driving Nike Direct revenue, and Strava subscription revenue growth under Nike's brand."
+      },
+      {
+        "step": 4,
+        "title": "Stress Test the Under Armour Parallel",
+        "detail": "Under Armour bought MyFitnessPal for $475M and sold for $345M — a $130M loss. The failure modes: platform users resisted UA exclusivity, integration was complex, and the software business culture clashed with a product company. Assess whether Nike's Digital Sport team has the capability to avoid these failure modes."
+      },
+      {
+        "step": 5,
+        "title": "Deliver a Conditional Recommendation",
+        "detail": "Recommend acquire only if Nike commits to keeping Strava as an open multi-brand platform (to protect network effects and the 68M user base), and can demonstrate a credible $150M+ annual synergy case within 3 years. If exclusivity is the plan, recommend against — the UA parallel is too clear."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "MAU (Monthly Active Users)",
+        "definition": "The number of unique users who engage with a platform at least once per month; Strava's 68M MAU out of 120M registered users is the relevant engagement metric for valuing the platform"
+      },
+      {
+        "term": "Network Effects",
+        "definition": "The phenomenon where a platform becomes more valuable as more users join; Strava's value depends on runners being able to compare segments and share activities with other Strava users — Nike exclusivity would destroy this"
+      },
+      {
+        "term": "Synergy",
+        "definition": "Revenue or cost benefits that only exist because two companies combined — in this case, incremental Nike product sales driven by Strava data and community, or cost savings from merging NRC and Strava infrastructure"
+      },
+      {
+        "term": "Acquisition Premium",
+        "definition": "The price paid above the standalone value of the target company; at $1.5B vs. Strava's ~$200M revenue, Nike is paying a ~7.5x revenue multiple that must be justified by synergies or strategic option value"
+      },
+      {
+        "term": "Churn / Retention",
+        "definition": "The rate at which users stop using a platform; NRC's poor 90-day retention is the core problem Nike is trying to solve, and is the key test of whether Strava's community layer is actually the fix"
+      }
+    ],
+    "interviewerExpectations": "Strong answers recognize the open-platform vs. exclusivity tension immediately and do synergy math using the 3.4M post figure and NRC retention data — weak answers recommend the acquisition without quantifying synergies or without referencing the Under Armour cautionary tale the case explicitly provides.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is an acquisition decision, so I want to use a 3C's framework first to test strategic fit — whether Strava addresses Nike's consumer problem, how competitors respond, and whether Nike can operate this business — and then I'll do Breakeven Analysis to determine what synergies need to be true for $1.5 billion to make sense. Before I start, a couple of clarifying questions."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two questions. First — is Nike's intention to keep Strava as an open, multi-brand platform, or to make it Nike-exclusive? That is the single biggest variable in this decision. Second — does Nike have NRC retention data by engagement type? Specifically, do NRC users who complete social challenges retain at higher rates than solo runners? That tells us whether community is actually the fix."
+      },
+      {
+        "label": "Step 1 — Consumer & Strategic Fit",
+        "script": "Starting with consumers. Strava has 68 million monthly active users versus NRC's 35 million total users — and critically, Strava has the social community layer that NRC lacks. If NRC's 90-day retention problem is driven by lack of community, Strava is a real solution. But here's the risk: Strava's 68 million users chose it precisely because it works across Garmin, Apple Watch, Adidas — it's device and brand agnostic. If Nike makes Strava Nike-exclusive post-acquisition, we could see significant user defection, destroying the very asset we paid $1.5 billion for."
+      },
+      {
+        "label": "Step 2 — Competitive Response",
+        "script": "On competition: Adidas, Garmin, and Apple all integrate with Strava today. The moment Nike acquires Strava, they face a strategic choice — accept Nike's data advantage or build or partner around it. I'd expect Garmin Connect and Apple Fitness Plus to aggressively position as the open alternative, potentially pulling serious runners away from Strava. This matters because serious runners are Strava's highest-value subscribers — the 14 percent who pay $7.99 per month."
+      },
+      {
+        "label": "Step 3 — Synergy Math",
+        "script": "Now the financial test. Strava generates $200 million in subscription revenue — 68 million MAU at 14 percent conversion at $7.99 per month. At $1.5 billion, Nike is paying roughly 7.5 times revenue. For that to generate a 10 percent return, Nike needs to generate approximately $150 million in annual synergies within 3 to 5 years. The case tells us Strava sees 3.4 million annual posts mentioning Nike products. If 10 percent of those represent incremental Nike purchases at $120 average order value, that's only $40 million in revenue — $18 million in gross profit at Nike's 44 percent margin. That's not enough alone. The real synergy story has to be: improved NRC retention drives Nike Direct revenue and reduces dependence on wholesale, plus Strava subscription growth under Nike's brand and marketing muscle."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is: acquire Strava, conditionally. The condition is that Nike commits to keeping it as an open, multi-brand platform — not a Nike exclusive. The Under Armour playbook of buying MyFitnessPal and integrating it into a brand silo is exactly what killed $130 million in shareholder value. Nike's best outcome is a Strava that remains the dominant running social graph, generates $300 million-plus in subscription revenue in three years, and gives Nike a data and community advantage without alienating the platform's users. If the board insists on exclusivity, I'd recommend against the acquisition — the network effect destruction risk outweighs the strategic benefit."
+      }
+    ]
+  },
+  {
+    "id": "scenario_073",
+    "type": "Acquisition",
+    "company": "Walmart",
+    "title": "Walmart Acquisition of a Last-Mile Delivery Company",
+    "prompt": "You are VP of corporate strategy at Walmart. GoLocal, Walmart's in-house last-mile delivery service, handles 18% of Walmart's delivery volume. A regional last-mile logistics company with 4,200 drivers, $380M in annual revenue, and operations in 22 US markets is available for $900M. Should Walmart acquire it?",
+    "context": "Walmart's total delivery volume is $6.8B annually. Third-party last-mile providers charge Walmart an average of $8.40 per delivery. In-house delivery via GoLocal costs $6.10 per delivery. The acquisition target handles 14 million deliveries per year across its 22 markets. Walmart currently delivers to 93% of US households but same-day delivery coverage is only 67%. Amazon has 250,000 last-mile delivery drivers in its DSP network. The acquisition target's net margin is 3.2% and it has contracted delivery agreements with 8 other major retailers.",
+    "correctFrameworks": ["Breakeven Analysis", "Value Chain Analysis"],
+    "whyThisFramework": "Breakeven Analysis to determine if the $900M acquisition price is justified by delivery cost savings ($8.40 vs. $6.10 × additional volume) and coverage expansion revenue, then Value Chain Analysis to assess whether last-mile delivery is a core competency Walmart should own vs. a commodity service it can buy more cheaply externally.",
+    "keyConsiderations": [
+      "What annual savings does acquiring vs. contracting last-mile generate, and at what payback period?",
+      "Does owning a last-mile network create competitive advantage or lock Walmart into fixed costs?",
+      "What happens to the acquisition target's 8 other retail clients — do they defect to competitors?",
+      "Is $900M better deployed in last-mile acquisition or in expanding GoLocal's own driver network?"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Of the target's 14 million annual deliveries, how many are currently serving Walmart versus the 8 other retail clients — and do those client contracts survive an acquisition by Walmart?",
+      "What is the geographic overlap between the target's 22 markets and the 33% of US households where Walmart lacks same-day delivery coverage?",
+      "What is Walmart's cost of capital, and is there a target payback period for acquisitions of this type?",
+      "Can Walmart organically expand GoLocal at a lower cost per driver than the $900M acquisition implies per driver?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Cost Savings from Bringing Volume In-House",
+        "subIssues": [
+          "How much of the target's 14 million deliveries currently serve Walmart, and what is the savings per delivery if converted from $8.40 third-party to $6.10 in-house?",
+          "What fixed cost infrastructure (warehouses, routing tech, fleet) comes with the acquisition that reduces Walmart's marginal cost of expanding GoLocal?",
+          "What is the realistic ramp timeline to integrate 4,200 drivers into GoLocal operations without service disruption?"
+        ]
+      },
+      {
+        "block": "Revenue Upside from Coverage Expansion",
+        "subIssues": [
+          "Do the target's 22 markets close the same-day delivery gap from 67% to meaningfully higher US household coverage?",
+          "What incremental Walmart eCommerce revenue is unlocked by same-day delivery coverage expansion?",
+          "What is the risk of losing the target's 8 other retail client contracts post-acquisition, and does that kill the network density economics?"
+        ]
+      },
+      {
+        "block": "Build vs. Buy: GoLocal Organic Expansion Alternative",
+        "subIssues": [
+          "What would it cost to hire 4,200 drivers organically through GoLocal vs. paying $900M — implied cost per driver is $214K which is very high?",
+          "How long would organic expansion take versus acquiring an operating business with existing client relationships and routing technology?",
+          "Does the acquisition target's technology platform provide capabilities GoLocal would otherwise need to build?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Calculate the Annual Cost Savings",
+        "detail": "Walmart pays $8.40 per delivery to third parties vs. $6.10 via GoLocal — a $2.30 per delivery savings. Request what share of the target's 14 million deliveries are currently Walmart volume. If Walmart converts all 14 million to in-house at $2.30 savings, that's $32.2M annually. If GoLocal currently handles 18% of $6.8B at some average delivery count, model how much additional volume the acquisition adds at the $2.30 saving rate."
+      },
+      {
+        "step": 2,
+        "title": "Assess Coverage Expansion Value",
+        "detail": "Walmart's same-day coverage is only 67% of US households. Request whether the target's 22 markets are concentrated in the 33% gap. Each percentage point of same-day coverage added can be modeled as incremental eCommerce conversion — Walmart's delivery business is $6.8B, so even 1% coverage-driven lift = $68M in incremental delivery revenue."
+      },
+      {
+        "step": 3,
+        "title": "Model the Payback Period",
+        "detail": "At $32.2M in annual cost savings (conservative, Walmart-only volume scenario) plus say $50-100M in incremental eCommerce revenue from coverage expansion, total annual benefit is $80-130M. At $900M acquisition price, payback is 7-11 years — likely too long for a logistics asset. Identify what assumptions need to be true to hit a 5-year payback."
+      },
+      {
+        "step": 4,
+        "title": "Stress Test Client Retention Risk",
+        "detail": "The target has contracted delivery agreements with 8 other major retailers. If Walmart acquires the company, those retailers may terminate contracts to avoid handing Walmart their delivery data and route density. Request what percentage of the $380M revenue those 8 clients represent — if it's 50%+, the acquisition economics collapse without Walmart fully substituting that volume."
+      },
+      {
+        "step": 5,
+        "title": "Compare to GoLocal Organic Build",
+        "detail": "The implied cost per driver is $900M / 4,200 = $214K per driver. GoLocal's cost to hire and equip a driver organically is likely $20-40K. Unless the $900M is buying technology, market position, and client relationships — not just drivers — organic expansion via GoLocal may generate equivalent capacity for $84-168M. Recommend the acquisition only if the geographic coverage gap and technology platform justify the premium."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Last-Mile Delivery",
+        "definition": "The final leg of the supply chain from a distribution center to the customer's door; the most expensive and operationally complex part of eCommerce fulfillment, typically $5-10 per delivery"
+      },
+      {
+        "term": "DSP (Delivery Service Partner)",
+        "definition": "Amazon's network of independent delivery companies that operate Amazon-branded vans under contract; Walmart's GoLocal is a similar model where third-party drivers deliver Walmart orders"
+      },
+      {
+        "term": "Network Density",
+        "definition": "The concentration of delivery stops per route; higher density lowers cost per delivery because drivers cover more stops per mile — the key economics variable in last-mile logistics"
+      },
+      {
+        "term": "Payback Period",
+        "definition": "The time required for cumulative cost savings or revenue gains from an acquisition to equal the acquisition price; a common acquisition screening metric, with 5-7 years typical for strategic assets"
+      },
+      {
+        "term": "Same-Day Coverage",
+        "definition": "The percentage of US households that can receive delivery within the same day an order is placed; Walmart's 67% same-day coverage vs. Amazon's broader network is a competitive gap"
+      }
+    ],
+    "interviewerExpectations": "Strong answers immediately calculate the $2.30/delivery savings and model a payback period, then probe the client defection risk as the key bear case — weak answers discuss strategic rationale without doing the math or miss that the 8 other retail clients are a major acquisition risk.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "I'll approach this as a Breakeven Analysis to test whether the $900 million acquisition price is justified by cost savings and revenue upside, and then use Value Chain Analysis to assess whether last-mile delivery is a capability Walmart should own or continue to buy. Before I structure, a couple of clarifying questions."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two questions. First — of the target's 14 million annual deliveries, what share is currently Walmart volume, and do the contracts with the 8 other retail clients survive if Walmart acquires the company? Second — do the target's 22 markets overlap with the 33 percent of US households where Walmart currently lacks same-day delivery coverage? Those two data points drive the entire financial model."
+      },
+      {
+        "label": "Step 1 — Cost Savings Math",
+        "script": "Let me start with the cost savings case. Walmart pays third-party providers $8.40 per delivery versus $6.10 via GoLocal — a $2.30 per delivery savings. If Walmart converts all 14 million of the target's deliveries to in-house, that's $32.2 million in annual savings. That's the floor scenario — Walmart volume only. If the target's 8 other retail clients stay post-acquisition, route density improves and GoLocal's per-delivery cost could decline below $6.10, improving the math further."
+      },
+      {
+        "label": "Step 2 — Client Defection Risk",
+        "script": "Here's the critical risk: the target has contracted delivery agreements with 8 other major retailers. The moment those retailers learn Walmart is their logistics provider, many will terminate — they're not going to share delivery data and route information with their biggest competitor. If those clients represent half of the $380 million in revenue, the route density collapses and Walmart is left with a $900 million asset built for 14 million deliveries that's now handling 7 million. I'd want to see contract terms before proceeding — specifically, do those contracts have change-of-control clauses?"
+      },
+      {
+        "label": "Step 3 — Payback Period",
+        "script": "Even in the optimistic scenario — $32 million in cost savings plus $70 million in incremental eCommerce revenue from closing the same-day delivery gap — total annual benefit is around $100 million. At $900 million acquisition price, that's a 9-year payback. That's too long for a logistics asset. I'd need to understand whether the acquisition also buys routing technology and software capabilities that GoLocal would otherwise spend $200-plus million to build. If the technology is proprietary and defensible, the strategic premium may be justified."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is: do not acquire at $900 million under current terms. The payback period is 9-plus years on conservative estimates, the client defection risk is real and could significantly degrade the acquired asset's economics, and Walmart can expand GoLocal organically at $20,000 to $40,000 per driver versus the $214,000 per driver implied by this acquisition price. The better use of $900 million is accelerating GoLocal expansion in the 22 markets where same-day coverage is weakest. The exception would be if the acquisition target's routing and dispatch technology is genuinely defensible and would cost $400-plus million to build internally — in that case, a renegotiated price of $500-600 million might make sense."
+      }
+    ]
+  },
+  {
+    "id": "scenario_074",
+    "type": "Acquisition",
+    "company": "Hilton",
+    "title": "Hilton Acquisition of a Boutique Hotel Brand",
+    "prompt": "You are VP of corporate development at Hilton. A boutique lifestyle hotel brand with 48 urban properties, $280M in annual revenue, and RevPAR (revenue per available room) of $210 — 40% above the Hilton brand average — is for sale at $1.1B. The brand has a cult following among millennial business travelers. Should Hilton acquire it?",
+    "context": "Hilton's lifestyle brand Canopy has 130 properties but underperforms boutique independents on RevPAR by 18%. Marriott's Moxy and Autograph Collection have collectively added 300 properties in the past 5 years. Airbnb's boutique category grew 29% last year. The target brand has 72% brand loyalty among its guests — highest in the boutique segment. Hilton's cost of capital is 8.2%. The acquisition would be funded 60% debt / 40% equity. Integration of brand into Hilton Honors would expose the brand to 173 million loyalty members.",
+    "correctFrameworks": ["3C's", "Breakeven Analysis"],
+    "whyThisFramework": "3C's to evaluate whether the target's boutique guest (consumer) will remain loyal post-acquisition, how Marriott's lifestyle brands would respond (competition), and whether Hilton has the operating model to maintain boutique authenticity at scale (company), then Breakeven Analysis to evaluate whether the $1.1B price generates sufficient returns at 8.2% cost of capital.",
+    "keyConsiderations": [
+      "Does the cult following survive integration into a large hotel conglomerate?",
+      "What is the RevPAR premium value and does it justify an $1.1B price at Hilton's cost of capital?",
+      "Can Hilton Honors exposure drive occupancy lift without diluting boutique brand positioning?",
+      "How does Marriott's Autograph Collection respond to protect its competitive position?"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Is Hilton's intention to keep the brand fully independent under its portfolio or to integrate it operationally into Hilton's systems — because guest loyalty is tied directly to how much the brand changes?",
+      "What is the average room count per property and occupancy rate, so I can build a RevPAR-based revenue model to test the acquisition math?",
+      "Does the $1.1B include just the brand and management contracts, or does it include real estate — given Hilton's asset-light model, are we buying properties or a franchise?",
+      "What has driven Canopy's 18% RevPAR underperformance vs. boutique independents — is it product quality, brand perception, or operational standardization?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Brand & Guest Loyalty Preservation",
+        "subIssues": [
+          "Does Hilton's operational standardization destroy the boutique authenticity that drives 72% brand loyalty among the target's guests?",
+          "Does integration into Hilton Honors expand the addressable guest base or dilute the brand by attracting points-seekers who undervalue the boutique experience?",
+          "What is the historical precedent — do acquired boutique brands maintain RevPAR premium post-acquisition by large hotel groups?"
+        ]
+      },
+      {
+        "block": "Financial Return at 8.2% Cost of Capital",
+        "subIssues": [
+          "What EBITDA does the target generate at $280M revenue, and does the implied acquisition multiple make sense at Hilton's cost of capital?",
+          "What RevPAR uplift or occupancy improvement must Hilton drive to generate an 8.2% return on $1.1B?",
+          "What is the revenue synergy value of exposing 48 properties to 173 million Hilton Honors members?"
+        ]
+      },
+      {
+        "block": "Competitive Positioning vs. Marriott",
+        "subIssues": [
+          "Does this acquisition close the lifestyle/boutique gap with Marriott's Autograph Collection and Moxy, or does Canopy already serve that role adequately?",
+          "How does Marriott respond — do they counter-acquire boutique brands or accelerate Autograph Collection expansion?",
+          "Is the boutique travel segment large enough to justify $1.1B, or does Airbnb's 29% boutique growth suggest the segment's premium will erode?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Model the Acquisition Multiple",
+        "detail": "At $280M in revenue, request EBITDA margin (boutique hotels typically run 25-35% EBITDA margins). At 30% EBITDA = $84M. $1.1B / $84M = 13x EBITDA. Compare to Hilton's typical acquisition multiple of 12-15x for branded hotel assets. Assess whether 13x is fair given the 72% loyalty and $210 RevPAR premium."
+      },
+      {
+        "step": 2,
+        "title": "Calculate Required Return",
+        "detail": "At 8.2% cost of capital, $1.1B acquisition requires approximately $90M in annual EBITDA contribution to break even. If the target generates $84M standalone, Hilton needs $6M in synergies minimum — but realistically needs $30-40M to generate acceptable returns above cost of capital. Identify specifically where those synergies come from."
+      },
+      {
+        "step": 3,
+        "title": "Assess Honors Integration Revenue Lift",
+        "detail": "173 million Hilton Honors members represent a massive distribution channel. If even 0.1% of Honors members book one stay at target properties annually (173K incremental stays), at $210 RevPAR × 2-night average = $73M incremental revenue. At 30% EBITDA margin, that's $22M — a meaningful synergy that is realistic without requiring brand dilution."
+      },
+      {
+        "step": 4,
+        "title": "Stress Test Brand Dilution Risk",
+        "detail": "The key bear case is that the 72% brand loyalty depends on the brand remaining independent and intimate. Review Marriott's Autograph Collection model — it maintains brand independence while providing distribution. Structure the acquisition similarly: the target brand remains fully independent operationally, with Hilton providing only distribution (Honors) and back-office (procurement, finance) benefits."
+      },
+      {
+        "step": 5,
+        "title": "Competitive Response Assessment",
+        "detail": "Marriott's Moxy and Autograph Collection have added 300 properties in 5 years. If Hilton doesn't acquire a credible boutique brand, it cedes the millennial business traveler segment. Assess whether Canopy can be revamped to close the 18% RevPAR gap vs. spending $1.1B on an acquisition — if Canopy's underperformance is fixable, acquisition may not be necessary."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "RevPAR (Revenue Per Available Room)",
+        "definition": "The primary hotel performance metric: occupancy rate multiplied by average daily rate; the target's $210 RevPAR vs. Hilton's $150 average represents a 40% premium that drives the acquisition rationale"
+      },
+      {
+        "term": "Asset-Light Model",
+        "definition": "Hilton's business model where it owns the brand and management contracts but not the physical real estate; this affects the acquisition — Hilton may be buying brand rights and management fees, not buildings"
+      },
+      {
+        "term": "EBITDA Multiple",
+        "definition": "Acquisition price divided by annual earnings before interest, taxes, depreciation, and amortization; the standard valuation metric for hotel acquisitions, typically 12-15x for branded lifestyle hotels"
+      },
+      {
+        "term": "Brand Loyalty / Repeat Rate",
+        "definition": "The percentage of guests who actively choose to return to the same brand; the target's 72% loyalty rate is the highest in the boutique segment and is the primary asset being acquired"
+      },
+      {
+        "term": "Cost of Capital (WACC)",
+        "definition": "The minimum return an acquisition must generate to create shareholder value; Hilton's 8.2% cost of capital means the acquired asset must earn at least $90M annually on the $1.1B price"
+      }
+    ],
+    "interviewerExpectations": "Strong answers build the EBITDA multiple and required return math explicitly, then identify the brand-dilution risk as the central strategic tension and propose a solution (Autograph Collection-style independence) — weak answers recommend for or against without quantifying the return requirement or addressing how Hilton maintains the 72% loyalty post-acquisition.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is an acquisition decision, and I'll use 3C's to evaluate strategic fit and then Breakeven Analysis to test the financial return at Hilton's 8.2% cost of capital. Before I start, a few quick clarifying questions."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Three questions. First — is Hilton buying the brand and management contracts only, consistent with its asset-light model, or does this include real estate? Second — what is the target's EBITDA margin? Boutique hotels typically run 25 to 35 percent — I'll need that to build the return model. Third — what specifically has caused Canopy's 18 percent RevPAR underperformance versus boutique independents? Understanding that tells me whether this acquisition is necessary or whether Canopy can be fixed."
+      },
+      {
+        "label": "Step 1 — Valuation Math",
+        "script": "Let me start with the financial test. At $280 million in revenue and a 30 percent EBITDA margin — a reasonable assumption for a premium boutique brand — the target generates roughly $84 million in EBITDA. At $1.1 billion, Hilton is paying approximately 13 times EBITDA. That's within the typical range of 12 to 15 times for branded lifestyle hotel assets, so the starting valuation is not obviously wrong. But at Hilton's 8.2 percent cost of capital, Hilton needs this asset to generate roughly $90 million in annual EBITDA — meaning Hilton needs $6 million in synergies at minimum, and likely $30 to $40 million to generate any return above cost of capital."
+      },
+      {
+        "label": "Step 2 — Honors Distribution Synergy",
+        "script": "The most concrete synergy is Hilton Honors distribution. 173 million Honors members represent a massive channel that the target's 48 properties currently don't have access to. If even 0.1 percent of Honors members book one stay annually — that's 173,000 incremental stays. At $210 RevPAR over a 2-night average, that's approximately $73 million in incremental revenue. At a 30 percent EBITDA margin, that's $22 million — a meaningful and realistic synergy without requiring any brand dilution."
+      },
+      {
+        "label": "Step 3 — Brand Dilution Risk & Mitigation",
+        "script": "Now the central strategic risk: the target's 72 percent brand loyalty — the highest in the boutique segment — almost certainly depends on the brand feeling independent, intimate, and not corporate. The moment guests perceive it as a Hilton property, that loyalty is at risk. Marriott has solved this problem with the Autograph Collection model: acquired boutique brands remain fully operationally independent, with Marriott providing only distribution through Bonvoy and back-office procurement savings. Hilton should structure this acquisition identically — the brand keeps its own identity, its own design standards, and its own management culture. Hilton provides Honors booking and shared services only."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is to acquire, conditionally on two things. First, the brand must be structured like Marriott's Autograph Collection — fully operationally independent with Hilton providing distribution only. That protects the 72 percent loyalty that is the core asset. Second, Hilton should confirm that Canopy cannot close the RevPAR gap — if Canopy's underperformance is fixable at lower cost, spend the capital there instead. If Canopy's problem is structural — brand perception rather than product quality — then this acquisition fills a genuine portfolio gap and the Honors distribution synergy of $20-plus million annually makes the 13 times multiple defensible. I'd recommend proceeding at the $1.1 billion price with the independence structure."
+      }
+    ]
+  }
+]

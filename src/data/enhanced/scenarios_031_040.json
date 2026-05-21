@@ -1,0 +1,1314 @@
+[
+  {
+    "id": "scenario_031",
+    "type": "New Product Launch",
+    "company": "Procter & Gamble",
+    "title": "P&G Launching a Direct-to-Consumer Subscription Service",
+    "prompt": "P&G is evaluating the launch of 'P&G Good Everyday,' a DTC subscription service where consumers can bundle P&G products (Tide Pods, Pampers, Gillette, Oral-B) and receive 15% off retail with home delivery. The service would compete directly with Amazon Subscribe & Save. P&G's brand managers fear this cannibalizes retail relationships with Walmart and Target. Should P&G launch, and how should they structure it?",
+    "context": "Amazon Subscribe & Save holds approximately 31% of all household consumables auto-replenishment. P&G's retail partners generate 78% of P&G's US revenue. Consumer research shows 44% of P&G's top quartile buyers (heavy users) already use Subscribe & Save. P&G's direct retail margins are 40% higher than through third-party retailers but require massive upfront investment in fulfillment infrastructure.",
+    "correctFrameworks": [
+      "3C's",
+      "4P's",
+      "Porter's Five Forces",
+      "Market Entry Framework"
+    ],
+    "whyThisFramework": "Porter's Five Forces examines the channel power dynamic — P&G's retailers hold enormous buyer power and a DTC launch risks retaliation (delistings, reduced shelf space). Market Entry Framework evaluates the new channel as a new market. 3C's examines whether this is truly a competitive response or a channel conflict. 4P's — specifically Place — is the central strategic question.",
+    "keyConsiderations": [
+      "Retailer retaliation risk is existential — Walmart could reduce shelf space for P&G brands",
+      "Amazon, not retailers, is the true enemy here — P&G needs data and direct relationships",
+      "A 'softer' entry (DTC only for direct-to-consumer exclusive SKUs) avoids direct channel conflict",
+      "The data from DTC relationships is as valuable as the direct margin — consumer insight is the real prize"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Which product categories would be included in the initial DTC bundle — all four brands or a subset, and are any categories already sold DTC?",
+      "Has P&G received any signals from Walmart or Target that they would retaliate if a DTC service launched?",
+      "What is P&G's current fulfillment capability — do they have warehouse infrastructure, or would this require a third-party logistics partner?",
+      "Is the primary goal incremental revenue, defensive data collection against Amazon, or margin improvement — and how does leadership prioritize these?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Strategic Rationale & Objectives",
+        "subIssues": [
+          "Is DTC primarily offensive (margin capture) or defensive (protecting against Amazon's data moat)?",
+          "Can P&G realistically compete with Amazon's Subscribe & Save on logistics cost and convenience?",
+          "What first-party consumer data does P&G gain, and how does it change brand investment decisions?"
+        ]
+      },
+      {
+        "block": "Channel Conflict & Retailer Risk",
+        "subIssues": [
+          "Would Walmart and Target reduce P&G shelf space or co-op advertising in retaliation?",
+          "Can P&G structure the DTC offer (exclusive SKUs, bundle-only products) to minimize overlap with retail assortment?",
+          "What is the revenue-at-risk if one major retailer reduces P&G's share of shelf by 10-15%?"
+        ]
+      },
+      {
+        "block": "Operational Feasibility & Economics",
+        "subIssues": [
+          "What is the upfront fulfillment infrastructure investment required, and what is the payback period?",
+          "At what subscription volume does the DTC margin premium (40% higher) offset the investment and any retail revenue loss?",
+          "What is the realistic addressable market — the 44% of heavy P&G buyers already on Subscribe & Save who might switch?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Clarify Strategic Intent",
+        "detail": "Establish whether this is a margin play, a data play, or a competitive defense against Amazon. The answer changes the entire evaluation — a data play tolerates lower margins; a margin play demands breakeven on fulfillment investment within 3 years."
+      },
+      {
+        "step": 2,
+        "title": "Quantify Retailer Retaliation Risk",
+        "detail": "Calculate the revenue-at-risk: P&G's US retail revenue is roughly 78% of its ~$50B US business = ~$39B. Even a 5% shelf reduction from Walmart/Target = ~$2B revenue at risk. Compare this to the DTC upside to frame whether the launch math works."
+      },
+      {
+        "step": 3,
+        "title": "Model DTC Economics",
+        "detail": "Use the 44% heavy-buyer Subscribe & Save stat as the addressable switcher pool. Estimate that 10-15% of those might switch to P&G's own DTC service. Model unit economics: 40% higher margins on DTC vs. retail, offset by fulfillment cost (typically $8-12 per order for household goods)."
+      },
+      {
+        "step": 4,
+        "title": "Evaluate Structural Options",
+        "detail": "Present three paths: (1) Full DTC launch competing head-to-head with Amazon, (2) Exclusive-SKU DTC (bundles and sizes not available in retail, reducing conflict), (3) White-label fulfillment partnership with a third-party grocer or logistics player. Recommend Option 2 as the lowest-risk entry."
+      },
+      {
+        "step": 5,
+        "title": "Recommend with Conditions",
+        "detail": "Recommend launching DTC with exclusive bundle SKUs not available at retail. Set a 24-month pilot target of 500K subscribers to validate unit economics before full build-out. Proactively communicate the limited-conflict approach to Walmart and Target before launch."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "DTC",
+        "definition": "Direct-to-Consumer — selling products directly to end buyers without going through a retailer like Walmart or Amazon, capturing the retail margin yourself"
+      },
+      {
+        "term": "Subscribe & Save",
+        "definition": "Amazon's auto-replenishment program offering discounts for recurring orders — P&G's main DTC competitor, controlling 31% of household consumables auto-replenishment"
+      },
+      {
+        "term": "Channel Conflict",
+        "definition": "When a manufacturer's DTC channel competes directly with the retailers who also carry its products, risking retailer retaliation (reduced shelf space, lost co-op funding)"
+      },
+      {
+        "term": "Co-op Advertising",
+        "definition": "Shared marketing spend where a brand pays a retailer to feature its products in circulars, end-caps, or promotions — a lever retailers can pull to punish brands"
+      },
+      {
+        "term": "First-Party Data",
+        "definition": "Consumer behavior data P&G collects directly from DTC customers (purchase frequency, brand switching, household composition) — currently owned by Amazon and retailers, not P&G"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately flags retailer retaliation as an existential risk before endorsing the launch, then quantifies the retailer revenue-at-risk versus the DTC upside. A weak answer recommends launching without addressing the Walmart/Target relationship risk, or treats this purely as a margin optimization without discussing the data and competitive defense rationale.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a channel strategy question with a significant competitive defense dimension. Before I recommend whether P&G should launch, I want to make sure I understand the strategic intent — is this primarily about capturing the 40% higher direct margins, defending against Amazon's growing data advantage, or both? I'll assume both matter, and I'll structure my analysis around three areas: first, the strategic rationale; second, the channel conflict and retailer retaliation risk — which I think is the critical constraint here; and third, the operating economics and how to structure the launch to make the math work."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Before I go further, a few questions. First, has P&G received any signals from Walmart or Target about how they'd respond to a DTC launch? Second, are any P&G categories already sold DTC — like Gillette's direct razor subscription — and what did retailers say then? Third, does P&G have fulfillment infrastructure, or would this require a third-party logistics buildout? And fourth, what is leadership's timeline — are we evaluating a pilot, or a full national launch?"
+      },
+      {
+        "label": "Step 1 — Retailer Retaliation Risk",
+        "script": "The most important number in this case is that retail partners generate 78% of P&G's US revenue. If we assume P&G's US business is roughly $50 billion, that's about $39 billion coming through Walmart, Target, Kroger, and similar retailers. Even if just Walmart, who represents roughly 20% of P&G's US revenue, reduced shelf space by 10% in retaliation, that's approximately $780 million in revenue at risk. That dwarfs the DTC upside in the near term. So the question becomes: can we structure the DTC launch in a way that doesn't trigger that retaliation?"
+      },
+      {
+        "label": "Step 2 — Addressable DTC Market",
+        "script": "The good news is the data gives us a natural starting point. Forty-four percent of P&G's top-quartile buyers already use Amazon Subscribe & Save. These are P&G's most valuable customers, and Amazon is already monetizing the relationship. If we can convert even 15% of those heavy users to a P&G-direct subscription — let's say that's roughly 2 to 3 million subscribers at an average basket of $60 per month — that's $1.4 to $2.2 billion in annualized DTC revenue. At 40% higher margins than retail, the incremental profit is meaningful. But we need the fulfillment economics to work."
+      },
+      {
+        "label": "Step 3 — Structural Recommendation",
+        "script": "Rather than launching a full competitive DTC store that mirrors the retail assortment, I'd recommend P&G launch with exclusive bundle SKUs — sizes and bundles that are not available at Walmart or Target. This is how Apple managed iTunes without losing Best Buy. The exclusive-bundle approach lets P&G build the DTC muscle and data flywheel without giving retailers a legitimate argument for retaliation, because P&G isn't cannibalizing the exact same products on retail shelves."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is yes, P&G should launch P&G Good Everyday — but structured as an exclusive-bundle DTC service, not a direct price-match to retail. Set a 24-month pilot target of 500,000 subscribers to validate the fulfillment unit economics before committing to full infrastructure investment. Proactively communicate the exclusive-SKU approach to Walmart and Target before the public announcement to manage the relationship. The real prize here isn't the 40% margin differential — it's the first-party consumer data P&G currently has zero access to, which will compound in value as digital advertising becomes more dependent on owned data. The launch is strategically necessary; the structure determines whether it's existentially risky or manageable."
+      }
+    ]
+  },
+  {
+    "id": "scenario_032",
+    "type": "New Product Launch",
+    "company": "Spotify",
+    "title": "Spotify Launching an Audiobook Subscription Tier",
+    "prompt": "Spotify is launching a standalone audiobook subscription at $9.99/month (or bundled with Spotify Premium at $1 extra = $11.99/month). The US audiobook market is $1.8B growing 22% annually. Audible (Amazon) holds 63% of the market at $14.95/month. Spotify's existing 240M free users and 120M paid subscribers represent a massive existing base for cross-sell. How should Spotify approach this launch?",
+    "context": "Spotify's average podcast listener spends 4.2 hours/week on the platform. Audiobook listeners in the US average 17 books per year and are willing to pay a premium for unlimited access. Audible's credit system (1 book/month) frustrates heavy listeners. Scribd ($10.99/month, unlimited books) is an undermarketed competitor. Spotify's brand is associated with music and podcast — audiobooks require repositioning as an 'audio destination.'",
+    "correctFrameworks": [
+      "STP",
+      "4P's",
+      "3C's"
+    ],
+    "whyThisFramework": "STP identifies the primary target: existing Spotify podcast listeners who are adjacent book readers — the 'audio content enthusiast' segment. 3C's examines the Audible competitive moat (Amazon ecosystem, credit system, content exclusives). 4P's executes the launch, including pricing strategy that undercuts Audible while offering better unlimited access value.",
+    "keyConsiderations": [
+      "Unlimited model at $9.99 vs. Audible's 1-credit model directly attacks Audible's pain point",
+      "Spotify's existing 240M users are a free distribution channel — no customer acquisition cost",
+      "Audiobook requires publisher licensing — P&L dependent on content costs",
+      "The 'audio destination' positioning unlocks long-term platform expansion (podcasts + music + books)"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Has Spotify already secured publisher licensing agreements, and what is the content cost structure — per-listen royalty or flat licensing fee?",
+      "What is the primary success metric for this launch — subscriber count, incremental ARPU, or platform engagement minutes?",
+      "Are we targeting existing Spotify Premium subscribers first, or also trying to convert free users and non-Spotify users simultaneously?",
+      "Has Spotify done consumer research on how many of its 120M paid subscribers also currently pay for Audible — quantifying the overlap and potential switchers?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Target Segment & Demand",
+        "subIssues": [
+          "What share of Spotify's 120M paid subscribers are active podcast listeners who are also book readers — the highest-propensity switchers from Audible?",
+          "Is the primary growth opportunity converting existing Spotify users or acquiring net-new audiobook listeners from outside Spotify?",
+          "What is the willingness-to-pay ceiling, and does the $9.99 standalone or $11.99 bundle create more value perception versus Audible at $14.95?"
+        ]
+      },
+      {
+        "block": "Competitive Positioning Against Audible",
+        "subIssues": [
+          "Can Spotify's unlimited model sustainably undercut Audible's credit system given publisher royalty costs per listen?",
+          "What is Audible's switching cost — do users lose purchased audiobooks if they leave, and does Spotify need a credits/purchase option to match?",
+          "Is Scribd's failure to scale an indication of content licensing economics being unfavorable for unlimited models?"
+        ]
+      },
+      {
+        "block": "Launch Execution & Content Economics",
+        "subIssues": [
+          "What is the minimum catalog size (number of titles) needed to generate meaningful usage from a Spotify listener base?",
+          "How does Spotify's per-listen royalty cost compare to Audible's, and at what average books-per-user-per-month does the unlimited model become unprofitable?",
+          "What is the launch sequencing — bundle first to monetize existing base, or standalone first to signal market commitment?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Define the Target Segment",
+        "detail": "Use STP to identify the highest-propensity buyer: Spotify podcast listeners who spend 4.2 hrs/week on platform AND read books. Estimate this as 20-30% of the 120M paid base = 24-36M high-propensity users. These are warm leads requiring no acquisition cost — this is Spotify's unfair advantage."
+      },
+      {
+        "step": 2,
+        "title": "Analyze the Audible Competitive Gap",
+        "detail": "Audible's credit model (1 book/month) frustrates heavy listeners averaging 17 books/year. That's 1.4 books/month vs. 1 Audible credit. An unlimited model at $9.99 is a direct attack on the pain point. Use 3C's to confirm: Audible's Amazon ecosystem lock-in is the moat, but content is largely non-exclusive, making switching feasible."
+      },
+      {
+        "step": 3,
+        "title": "Stress-Test the Content Economics",
+        "detail": "The critical unknown: at what average books-per-user-per-month does unlimited become loss-making? If average royalty is $3-5 per book listen and users average 2 books/month, content cost is $6-10/user at a $9.99 price. Model the breakeven; consider a 'soft unlimited' (15 books/month cap) to manage cost."
+      },
+      {
+        "step": 4,
+        "title": "Recommend Launch Sequencing with 4P's",
+        "detail": "Product: launch with 300K+ title catalog. Price: $11.99 bundle as primary SKU (higher attach value, incremental $1 to existing subscribers). Place: in-app upsell to 120M paid subscribers first — zero acquisition cost. Promotion: emphasize the unlimited vs. Audible's 1-credit framing in all messaging."
+      },
+      {
+        "step": 5,
+        "title": "Address Brand Repositioning",
+        "detail": "Spotify must shift from 'music and podcasts' to 'audio destination.' Recommend a campaign framing Spotify as the place for all audio — music you love, podcasts you think with, books you lose yourself in. This repositioning has long-term platform value beyond just audiobooks."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ARPU",
+        "definition": "Average Revenue Per User — total subscription revenue divided by number of users; Spotify needs audiobooks to raise ARPU from the current ~$10/month Premium baseline"
+      },
+      {
+        "term": "Credit Model",
+        "definition": "Audible's system where subscribers receive one credit per month redeemable for one audiobook, regardless of price — frustrating for users who read more than one book monthly"
+      },
+      {
+        "term": "STP",
+        "definition": "Segmentation, Targeting, Positioning — a marketing framework to identify which customer segment to pursue, how to reach them, and how to position the product against alternatives"
+      },
+      {
+        "term": "Publisher Royalty",
+        "definition": "Per-listen fee Spotify must pay to publishers and authors each time a user plays an audiobook — the primary variable cost that determines whether an unlimited model is profitable"
+      },
+      {
+        "term": "Switching Cost",
+        "definition": "The friction a user experiences leaving a platform — Audible users 'own' purchased audiobooks, creating an exit barrier; Spotify's unlimited rental model does not create the same library lock-in"
+      }
+    ],
+    "interviewerExpectations": "A strong answer identifies Spotify's existing subscriber base as a zero-cost distribution channel and stress-tests the unlimited content economics to flag the royalty risk. A weak answer simply recommends launching because the market is growing, without addressing whether the unlimited model is financially sustainable or how to handle the Audible ecosystem switching cost.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a new product launch question with a meaningful competitive and unit economics dimension. I want to structure my thinking around three areas: first, who exactly is the target segment within Spotify's existing base; second, how Spotify's unlimited model stacks up against Audible's credit system and whether the content economics are sustainable; and third, how to sequence and execute the 4P's of the launch. Let me start with a couple of quick clarifying questions."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two things I want to confirm. First, has Spotify already secured publisher licensing, and is it structured as a per-listen royalty or a flat catalog fee? That changes the unit economics dramatically. Second, is the primary success metric subscriber conversion from the existing base, or are we also trying to pull Audible subscribers to Spotify? Those are different go-to-market motions."
+      },
+      {
+        "label": "Step 1 — Target Segment",
+        "script": "Starting with STP: Spotify's highest-propensity audiobook buyers are podcast listeners who also read. Spotify's own data shows the average podcast listener spends 4.2 hours per week on platform — that's a deeply engaged audio consumer. I'd estimate 20 to 30 percent of Spotify's 120 million paid subscribers fit this profile, which is 24 to 36 million potential audiobook buyers Spotify can reach with an in-app notification at zero customer acquisition cost. That's the core advantage — Audible has to spend to acquire; Spotify can cross-sell."
+      },
+      {
+        "label": "Step 2 — Competitive Positioning",
+        "script": "On the competitive side: Audible holds 63% of the US market at $14.95 per month, but their credit model — one book per month — frustrates heavy listeners. The average audiobook listener in the US reads 17 books per year, which is 1.4 per month. At one credit per month, Audible listeners are either buying additional credits at $10 to $15 each, or going without. Spotify's unlimited model at $9.99 is a direct attack on that pain point. The messaging writes itself: 'Audible gives you one book a month. Spotify gives you every book.' Scribd tried this positioning at $10.99 but never had Spotify's distribution — that's the difference."
+      },
+      {
+        "label": "Step 3 — Content Economics Risk",
+        "script": "The critical risk I want to flag is content economics. If publishers charge a per-listen royalty of roughly $3 to $5 per book, and heavy users average 2 books per month, Spotify's content cost could run $6 to $10 per user against a $9.99 price point — leaving almost no margin before operating costs. I'd recommend stress-testing whether a soft usage cap — say, 15 books per month — is needed to protect unit economics, similar to what Scribd implemented. Alternatively, a hybrid model with unlimited access to a curated catalog and pay-per-listen for premium titles could manage cost while preserving the 'unlimited' brand promise."
+      },
+      {
+        "label": "Step 4 — Launch Recommendation via 4P's",
+        "script": "For the launch itself: Product — launch with a minimum of 300,000 titles to signal credibility; the catalog gap versus Audible is the first objection users will raise. Price — lead with the $11.99 bundle as the primary SKU; asking existing Premium subscribers to add $1 for audiobooks is a much easier ask than selling a standalone $9.99 subscription to someone who doesn't use Spotify. Place — in-app upsell to the existing 120 million paid subscribers first, then expand to free users and non-Spotify acquisition. Promotion — the unlimited versus one-credit framing should be front and center in all advertising."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is to launch, but lead with the bundle and validate unit economics on a cohort of existing subscribers before scaling. The $1.8 billion US audiobook market growing at 22% annually is too large to ignore, especially when Spotify can reach its highest-propensity buyers at zero acquisition cost. The biggest risk is not Audible's competitive response — it's whether the unlimited model is financially sustainable. I'd run a 90-day pilot with 5 million existing subscribers, measure average books consumed per user per month, and confirm the content cost stays below $6 per user before committing to a full national campaign. If the economics hold, Spotify's 'audio destination' positioning becomes defensible in a way that neither pure music streaming nor pure podcasting alone can achieve."
+      }
+    ]
+  },
+  {
+    "id": "scenario_033",
+    "type": "Profit Growth / Decline",
+    "company": "Keurig Dr Pepper",
+    "title": "Keurig K-Cup Profit Decline Investigation",
+    "prompt": "Keurig's K-Cup pod business has seen operating profit decline from $1.4B to $1.1B over three years despite revenue growing from $4.2B to $4.6B. The CEO wants to understand: Is this a revenue problem, a cost problem, or a mix problem? Walk me through your analysis.",
+    "context": "K-Cup average selling price per pod has declined from $0.71 to $0.65 as Walmart and Costco have pressured pricing on Keurig's biggest accounts. Unit volume has grown 9% over the period. Licensed partner pods (Dunkin', Starbucks, Green Mountain) carry a 22% lower gross margin than Keurig's own-brand pods. Licensed partner pods have grown from 44% to 58% of pod volume. Keurig's COGS per pod has increased 12% due to commodity cost (coffee, aluminum) inflation.",
+    "correctFrameworks": [
+      "Profitability Tree",
+      "3C's"
+    ],
+    "whyThisFramework": "Profitability Tree is the primary framework — deconstruct revenue (price × volume) and costs (COGS, overhead) to isolate the driver. The data reveals both a price and a mix problem simultaneously: average selling price is down AND the mix has shifted to lower-margin licensed pods. 3C's then asks whether the pricing pressure is competitive or retailer-driven.",
+    "keyConsiderations": [
+      "Revenue is up but profit is down — classic mix/margin story",
+      "Two simultaneous problems: ASP compression AND unfavorable product mix toward licensed pods",
+      "Retailer pricing pressure is structural — must negotiate better terms or invest in own-brand volume",
+      "Fix the mix: own-brand pod marketing investment to shift consumers away from licensed pods"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Are the licensed partner pods (Dunkin', Starbucks) growing because consumers prefer them, or because retailers are giving them more shelf space and promotional support?",
+      "Has Keurig attempted to renegotiate licensing terms with Dunkin' and Starbucks, and what leverage does Keurig have in those conversations?",
+      "What is the split of overhead costs — are fixed costs flat, or have they grown alongside the volume increase?",
+      "Is the 12% COGS increase from commodity inflation expected to reverse, or is it structural given coffee and aluminum market dynamics?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Revenue Drivers",
+        "subIssues": [
+          "Is the average selling price decline ($0.71 to $0.65) driven by retailer price pressure, competitive private-label pods, or promotional investment?",
+          "Has the 9% unit volume growth been sufficient to offset the 8.5% ASP decline, and which channels drove volume?",
+          "Is the licensed pod mix shift (44% to 58%) consumer-driven or retailer-driven assortment decisions?"
+        ]
+      },
+      {
+        "block": "Cost Drivers",
+        "subIssues": [
+          "Is the 12% COGS per pod increase concentrated in coffee commodity costs, aluminum packaging, or manufacturing labor?",
+          "Are fixed overhead costs (SG&A, manufacturing overhead) growing in line with volume, or are they increasing faster?",
+          "What is the margin differential on a per-pod basis between own-brand ($X per pod profit) and licensed partner pods ($X minus 22%)?"
+        ]
+      },
+      {
+        "block": "Strategic Fix",
+        "subIssues": [
+          "Can Keurig negotiate better retailer pricing terms to protect ASP, or is the power dynamic with Walmart and Costco unfavorable?",
+          "What marketing investment would be required to shift 5 percentage points of pod volume back toward own-brand pods?",
+          "Are there supply chain levers — hedging on coffee, aluminum contracts — to reduce the COGS inflation impact?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Confirm the Profit Math",
+        "detail": "Start by verifying: revenue grew $400M (from $4.2B to $4.6B) but operating profit fell $300M (from $1.4B to $1.1B). That means costs grew by $700M against $400M of revenue growth — the cost side is clearly outpacing revenue. This frames the diagnostic: we need to decompose the $700M cost increase."
+      },
+      {
+        "step": 2,
+        "title": "Decompose Revenue via Profitability Tree",
+        "detail": "Revenue = price × volume. Price per pod fell from $0.71 to $0.65 = an 8.5% decline. Volume grew 9%. Net revenue effect: volume gain partially offset price compression, explaining the modest $400M revenue increase. Confirm: if price had held at $0.71 with the same volume growth, revenue would have been ~$4.9B, not $4.6B — meaning $300M of revenue was lost to price compression alone."
+      },
+      {
+        "step": 3,
+        "title": "Decompose Costs — COGS and Mix",
+        "detail": "Two cost problems are running simultaneously. First, COGS per pod increased 12% from commodity inflation — on a volume base growing 9%, this compounds. Second, the licensed pod mix shift from 44% to 58% of volume means more pods are carrying 22% lower gross margins. Quantify: if licensed pods are 58% of ~6.5B pods sold, that's ~3.8B lower-margin pods. Even a $0.02/pod margin difference = $76M of annual profit lost to mix shift."
+      },
+      {
+        "step": 4,
+        "title": "Apply 3C's to Identify Root Cause",
+        "detail": "3C's: Company (mix shift, cost inflation), Customer (prefer Dunkin'/Starbucks brands on K-Cups), Competitor (private-label pods from Amazon and store brands pressuring Walmart/Costco pricing). The pricing pressure is retailer-driven (Walmart/Costco) in response to private-label competition — this is structural and hard to reverse without own-brand investment."
+      },
+      {
+        "step": 5,
+        "title": "Recommend Three Actions",
+        "detail": "Recommend: (1) Renegotiate licensed partner royalty terms — Dunkin' and Starbucks need Keurig's platform, giving Keurig leverage to close the 22% margin gap; (2) Invest in own-brand pod marketing to shift 5-7 points of volume back to Keurig's own Green Mountain and other brands; (3) Hedge commodity exposure on coffee and aluminum to reduce COGS volatility."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ASP",
+        "definition": "Average Selling Price — the revenue per unit sold; K-Cup ASP declined from $0.71 to $0.65 per pod due to retailer pricing pressure from Walmart and Costco"
+      },
+      {
+        "term": "Profitability Tree",
+        "definition": "A framework that decomposes profit into revenue (price × volume) and costs (variable COGS + fixed overhead), then traces which branch is driving the profit change"
+      },
+      {
+        "term": "Mix Shift",
+        "definition": "A change in the proportion of high-margin vs. low-margin products sold; Keurig's mix shifted toward lower-margin licensed pods (Dunkin', Starbucks) from 44% to 58% of volume"
+      },
+      {
+        "term": "Licensed Pod",
+        "definition": "A K-Cup pod branded with a third-party brand (Dunkin', Starbucks) that Keurig manufactures under a licensing agreement, sharing revenue with the brand and carrying 22% lower gross margin than Keurig's own-brand pods"
+      },
+      {
+        "term": "COGS",
+        "definition": "Cost of Goods Sold — the direct cost to manufacture each K-Cup pod, including coffee commodity, aluminum packaging, and manufacturing labor; increased 12% due to inflation"
+      }
+    ],
+    "interviewerExpectations": "A strong answer identifies both the ASP compression AND the mix shift as simultaneous profit drivers — not just one. The best candidates also quantify the impact of each driver (price compression = ~$300M, mix shift = $50-100M, COGS inflation = $200-300M) rather than listing them qualitatively. A weak answer says 'costs went up' without decomposing which costs, or misses the mix shift entirely.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a classic profitability decline case where revenue is growing but profit is falling — which immediately tells me this is a margin problem, not a volume problem. I want to use a Profitability Tree to decompose what's happening on both the revenue side and the cost side, and then use 3C's to understand whether the pricing pressure is something Keurig can fix or something structural in the competitive environment. Before I dive in, a quick clarifying question: is the overhead cost base — SG&A and manufacturing overhead — growing in line with volume, or has it grown faster?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two things I want to understand: First, is the licensed pod mix shift — from 44% to 58% of volume — consumer-driven, meaning people are choosing Dunkin' and Starbucks branded pods, or is it retailer assortment decisions giving those SKUs more shelf space? Second, has Keurig attempted to renegotiate the licensing terms with those partners, since the 22% margin discount seems like a large concession? Those answers will shape whether the fix is a marketing problem or a negotiation problem."
+      },
+      {
+        "label": "Step 1 — Revenue Decomposition",
+        "script": "Let me start with the revenue side. Revenue equals price times volume. The average selling price per pod declined from $0.71 to $0.65 — that's an 8.5% decline. Meanwhile, volume grew 9%. So we have roughly offsetting forces: volume growth of 9% versus price compression of 8.5%. The net result is a modest $400 million revenue increase from $4.2 billion to $4.6 billion. But here's the key insight: if Keurig had held price at $0.71 with the same volume increase, revenue would have been approximately $4.9 billion — meaning $300 million of revenue was destroyed by price compression alone. That's the first driver."
+      },
+      {
+        "label": "Step 2 — Cost and Mix Decomposition",
+        "script": "Now the cost side, and this is where two problems are running simultaneously. First, COGS per pod increased 12% from commodity inflation — coffee prices and aluminum packaging. On a volume base that's also growing 9%, this compounds into a substantial cost increase. Second — and this is the mix problem — licensed partner pods have grown from 44% to 58% of total volume. Those pods carry 22% lower gross margin than Keurig's own brands. If I estimate Keurig is selling roughly 6.5 billion pods annually, 58% licensed is about 3.8 billion pods at a margin discount. Even if the per-pod margin difference is $0.02, that's $76 million of annual profit lost just to the mix shift. Both problems are real, and both are material."
+      },
+      {
+        "label": "Step 3 — Root Cause via 3C's",
+        "script": "Using 3C's to understand the pricing pressure: the competitive context matters here. Walmart and Costco are pressuring K-Cup pricing because private-label pods from Amazon and store brands have given them an alternative to threaten Keurig with. This is structural retailer buyer power — Keurig has limited ability to resist. The licensed pod mix shift is likely consumer-driven: Dunkin' and Starbucks brand equity pulls consumers toward those SKUs over Keurig's own Green Mountain. Both dynamics are real and require different responses."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is three actions. First, renegotiate the licensed partner royalty terms with Dunkin' and Starbucks. Keurig's platform is the distribution channel these brands depend on — Keurig has leverage to close the 22% margin gap, even partially. Second, invest in own-brand pod marketing to shift 5 to 7 percentage points of volume back toward Green Mountain and Keurig's own brands. Even a 5-point shift back — from 58% to 53% licensed — recovers roughly $40 million in gross profit annually. Third, implement commodity hedging on coffee and aluminum to reduce COGS volatility. Combined, these three actions could recover $150 to $200 million of the $300 million profit decline within two years. The remaining gap likely requires accepting the structural nature of retailer pricing pressure while building the brand equity case with consumers to resist it."
+      }
+    ]
+  },
+  {
+    "id": "scenario_034",
+    "type": "Profit Growth / Decline",
+    "company": "McDonald's",
+    "title": "McDonald's US Restaurant Profit Decline",
+    "prompt": "McDonald's US company-owned restaurant average unit volume has grown from $2.9M to $3.2M annually. However, average unit operating profit has declined from $420K to $380K. McDonald's CFO says 'revenue is going in the right direction but profit isn't following.' Diagnose the problem and recommend solutions.",
+    "context": "McDonald's US labor costs have increased from 27% to 32% of revenue over three years, driven by minimum wage increases in California, New York, and Illinois. Food and paper costs are up 14% due to commodity inflation. McDonald's average check has increased 18% through price increases. Customer count (traffic) is down 6% despite higher average check. The restaurant industry is seeing 9% labor inflation annually.",
+    "correctFrameworks": [
+      "Profitability Tree",
+      "4P's"
+    ],
+    "whyThisFramework": "Profitability Tree decomposes the problem: revenue is growing (price × transactions — but transactions are falling). Cost increase (labor + COGS) is outpacing revenue growth. 4P's then asks: what can be done with Price (already used), Product (simplify menu = labor savings), Place (automation investment), Promotion (value messaging to restore traffic).",
+    "keyConsiderations": [
+      "Volume (traffic) decline is the hidden problem inside the revenue growth story",
+      "Labor is the structural driver — minimum wage increases are not reversible",
+      "Automation (kiosks, AI drive-thru) is the medium-term labor cost fix",
+      "Menu simplification reduces complexity and labor cost simultaneously"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Is the 6% traffic decline concentrated in specific dayparts — breakfast, lunch, or late night — or is it broad-based across all visits?",
+      "What is the split of the labor cost increase between mandated minimum wage increases versus voluntary wage investments to reduce turnover?",
+      "Are company-owned restaurants performing worse than franchised locations on traffic — suggesting an operational issue specific to corporate units?",
+      "What is McDonald's current level of kiosk and digital ordering adoption, and what is the labor cost at fully-kiosk-enabled restaurants versus traditional?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Revenue Drivers",
+        "subIssues": [
+          "Is average unit volume growth ($2.9M to $3.2M) driven entirely by the 18% price increase, and how much volume would be lost if pricing is softened?",
+          "Is the 6% customer count decline structural (value perception lost) or cyclical (macroeconomic consumer pressure)?",
+          "Which customer segments are defecting — value-seekers moving to Taco Bell or Burger King, or all income cohorts?"
+        ]
+      },
+      {
+        "block": "Cost Drivers",
+        "subIssues": [
+          "How much of the labor cost increase (27% to 32% of revenue) is mandatory minimum wage versus McDonald's own wage investments, and what is controllable?",
+          "Is food and paper cost inflation (14%) driven by beef, packaging, or chicken — and what hedging or menu mix levers exist?",
+          "Are there fixed cost increases (rent, utilities) that are also adding pressure beyond the variable COGS?"
+        ]
+      },
+      {
+        "block": "Structural Fix Options",
+        "subIssues": [
+          "What is the ROI on kiosk deployment — upfront cost per location versus labor hours saved per day at current wage rates?",
+          "Would menu simplification (reducing SKU count by 20%) generate meaningful labor efficiency, and what is the revenue risk from removing items?",
+          "Can a value platform (McValue bundles) restore traffic without further margin erosion?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Establish the Profit Gap",
+        "detail": "Revenue per unit grew from $2.9M to $3.2M (+$300K), but profit fell from $420K to $380K (-$40K). This means costs grew by approximately $340K per restaurant — more than the entire revenue increase. Frame the core question: which cost lines grew faster than revenue?"
+      },
+      {
+        "step": 2,
+        "title": "Decompose Revenue — Price vs. Traffic",
+        "detail": "Revenue = average check × customer count. Average check is up 18%; customer count is down 6%. Net revenue growth = ~11% (roughly matching $2.9M to $3.2M). But the traffic decline is a leading warning: McDonald's is growing revenue by charging more per visit to fewer customers — a dangerous trajectory if price increases continue to drive traffic away."
+      },
+      {
+        "step": 3,
+        "title": "Decompose Costs — Labor is the Dominant Driver",
+        "detail": "Labor went from 27% to 32% of revenue. On $3.2M AUV, that's $1.024M versus $783K at the prior rate — a $241K per-restaurant annual increase just from labor rate inflation. Food and paper costs up 14% add another ~$70-80K per unit. Combined, these two lines account for $310-320K of the $340K cost increase — making labor the dominant driver."
+      },
+      {
+        "step": 4,
+        "title": "Apply 4P's to Identify Levers",
+        "detail": "Price: limited — further price increases risk accelerating traffic loss. Product: simplify the menu to reduce labor complexity (McDonald's simplified during COVID and maintained throughput). Place: accelerate kiosk and digital ordering — kiosk-enabled restaurants show 15-20% labor hour reduction at peak. Promotion: launch a value platform (e.g., $5 bundle) to win back price-sensitive traffic without across-the-board price cuts."
+      },
+      {
+        "step": 5,
+        "title": "Recommend Prioritized Actions",
+        "detail": "Recommend three actions in priority order: (1) Kiosk acceleration at all company-owned units — highest ROI on labor cost; (2) Introduce a value bundle to arrest the 6% traffic decline before it becomes 10%; (3) Menu rationalization — eliminate bottom 15% of SKUs by volume to reduce kitchen complexity and labor hours at peak."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "AUV",
+        "definition": "Average Unit Volume — the average annual revenue per restaurant location; McDonald's AUV grew from $2.9M to $3.2M, masking the traffic decline with higher average checks"
+      },
+      {
+        "term": "Restaurant-Level Operating Profit",
+        "definition": "Revenue minus food, labor, and occupancy costs at the individual restaurant level — the unit economics measure that declined from $420K to $380K per location"
+      },
+      {
+        "term": "Traffic / Customer Count",
+        "definition": "The number of customer visits to a restaurant; McDonald's customer count fell 6% even as revenue grew, because higher prices per visit more than offset the lost visits"
+      },
+      {
+        "term": "Minimum Wage Inflation",
+        "definition": "Mandated increases in the state minimum wage — California, New York, and Illinois increases are the primary structural driver of McDonald's labor cost increase from 27% to 32% of revenue"
+      },
+      {
+        "term": "Kiosk ROI",
+        "definition": "The return on investment from deploying self-order kiosks — upfront hardware/software cost per restaurant versus ongoing labor hours saved per day at current wage rates"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately separates the revenue story (check up 18%, traffic down 6%) from the cost story, and correctly identifies labor as the dominant driver with specific numbers. A weak answer says 'costs are going up' without distinguishing the mandated minimum wage increase from other costs, or misses the traffic decline as a separate strategic problem from the profit decline.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Revenue is growing but profit is falling — this is a classic margin compression story, and I want to use a Profitability Tree to precisely identify whether the problem is on the revenue side, the cost side, or both. I'll also use 4P's at the end to map what levers McDonald's actually has to fix it. A quick clarifying question before I start: is the 6% traffic decline concentrated in a specific daypart like breakfast or late night, or is it broad-based across all meals?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two more things: First, what is McDonald's current kiosk deployment — are most company-owned restaurants already kiosk-enabled, or is this still a rollout? That tells me how much labor efficiency upside remains. Second, is there competitive context — are we losing traffic specifically to Taco Bell or Burger King on value, or is this overall QSR category traffic softness?"
+      },
+      {
+        "label": "Step 1 — Revenue Decomposition",
+        "script": "Let me start with revenue. Revenue equals average check times customer count. McDonald's average check is up 18% from price increases. Customer count is down 6%. Net, revenue is growing roughly 11%, which tracks with the $2.9 million to $3.2 million AUV increase. But here's what concerns me: McDonald's is growing revenue by charging more per visit to fewer customers. That is a fragile growth model. If customer count declines continue — and there's evidence consumers are price-fatigued — the price lever runs out before traffic recovers. The traffic decline is as important to fix as the margin problem."
+      },
+      {
+        "label": "Step 2 — Cost Decomposition",
+        "script": "Now the cost side, and this is where the story becomes clear. Labor costs moved from 27% to 32% of revenue. On an AUV of $3.2 million, 32% of revenue is approximately $1.02 million in annual labor per restaurant. At the prior 27% rate, that would have been $783,000. That's a $241,000 increase per restaurant per year from labor rate inflation alone — and that increase is largely mandated. California, New York, and Illinois minimum wage increases are not reversible through negotiation. Food and paper costs up 14% add roughly $70,000 to $80,000 per restaurant annually. Combined, those two cost lines account for over $300,000 of the $340,000 gap between revenue growth and profit. Labor is the dominant driver, and it is structural."
+      },
+      {
+        "label": "Step 3 — 4P's Levers",
+        "script": "Using 4P's to identify what McDonald's can actually do. Price: we've already taken 18% in price increases, and traffic is already down 6% — further price increases accelerate the traffic problem. Product: menu simplification. During COVID, McDonald's cut the menu significantly and actually improved throughput and margin. Removing the bottom 15% of SKUs by volume reduces kitchen complexity, speeds service, and reduces labor hours at peak. Place: kiosk and digital ordering acceleration. Restaurants with full kiosk deployment are seeing 15 to 20% labor hour reduction at peak — this is the medium-term labor cost fix. Promotion: introduce a value bundle — a five-dollar meal deal — to win back price-sensitive customers without across-the-board price cuts."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is three prioritized actions. First, accelerate kiosk deployment at all company-owned restaurants. The upfront cost is real, but at current California minimum wages, a restaurant needs to save fewer than 1,000 labor hours per year to generate payback in under three years — kiosks typically save far more. Second, launch a value bundle immediately to arrest the 6% traffic decline. A $5 or $6 bundled meal communicates value without requiring menu price rollbacks. Third, rationalize the menu — eliminate the bottom 15% of SKUs by velocity to reduce kitchen complexity and improve throughput. These three actions together could recover 100 to 150 basis points of restaurant-level operating margin within 18 months, getting back toward the $420,000 per unit profit target while addressing the underlying traffic problem before it compounds further."
+      }
+    ]
+  },
+  {
+    "id": "scenario_035",
+    "type": "Profit Growth / Decline",
+    "company": "Procter & Gamble",
+    "title": "P&G Beauty Division Profit Improvement",
+    "prompt": "P&G's Beauty division (Pantene, Head & Shoulders, Olay) saw operating margin decline from 19% to 14% over two years despite flat revenue of $6.1B. P&G's CEO has tasked you with identifying the root cause and recommending a path to restoring 18%+ operating margin within three years. What is your analysis?",
+    "context": "P&G's Beauty division COGS increased from 52% to 58% of revenue, while SG&A held flat at 22%. Within COGS, raw material and packaging costs increased 18% due to petrochemical and resin inflation. The division's revenue mix has shifted toward mass-market (Walmart, drug chains) and away from premium specialty (Sephora, Ulta) — which carries higher margins. Olay's revenue has declined 9% as the brand struggles with relevance vs. Korean beauty brands and DTC skincare.",
+    "correctFrameworks": [
+      "Profitability Tree",
+      "3C's",
+      "Value Chain Analysis"
+    ],
+    "whyThisFramework": "Profitability Tree isolates the problem: COGS inflation is the primary driver, compounded by unfavorable mix shift toward lower-margin mass channels. Value Chain Analysis identifies where in the supply chain cost reduction is possible. 3C's examines the Olay competitive dynamic that is eroding the highest-margin product's revenue.",
+    "keyConsiderations": [
+      "COGS inflation is partially structural (petrochemicals) and partially fixable (supplier diversification, formulation)",
+      "Channel mix shift toward mass is a margin dilution problem — must restore premium channel presence",
+      "Olay decline is a brand equity problem requiring 3C's and STP analysis as a sub-problem",
+      "SG&A is flat — the fix is not cutting marketing, it's fixing revenue mix and COGS"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Is the COGS increase from petrochemical inflation expected to partially reverse as commodity markets normalize, or is P&G locked into long-term contracts at current rates?",
+      "Has P&G done any reformulation analysis — are there ingredient substitutions that maintain product efficacy while reducing petrochemical dependence?",
+      "What is the specific margin differential between Sephora/Ulta channel and Walmart/drug chain — is the channel mix shift diluting margin by 2 points or 5 points?",
+      "On Olay: is the brand declining primarily in the skincare category to Korean beauty, or is it declining across all hair and skin products?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "COGS Inflation — Root Cause and Fixability",
+        "subIssues": [
+          "What percentage of the 18% raw material inflation is petrochemical-driven (temporary) versus structural cost increases in packaging or specialty ingredients?",
+          "Has P&G evaluated reformulation to reduce high-cost petrochemical inputs while maintaining brand performance standards?",
+          "Can P&G leverage its global purchasing scale to negotiate better supplier terms or diversify to lower-cost regions?"
+        ]
+      },
+      {
+        "block": "Revenue Mix and Channel Strategy",
+        "subIssues": [
+          "What is the gross margin differential between premium specialty channels (Sephora, Ulta) and mass-market channels (Walmart, drug chains) for P&G Beauty products?",
+          "Why is P&G Beauty losing premium channel presence — are Sephora and Ulta de-prioritizing P&G for Korean beauty and DTC brands?",
+          "Can P&G reintroduce premium or exclusive SKUs designed specifically for Sephora/Ulta to rebuild that channel's revenue share?"
+        ]
+      },
+      {
+        "block": "Olay Brand Recovery",
+        "subIssues": [
+          "Is Olay's 9% revenue decline share loss to Korean beauty competitors (e.g., Tatcha, COSRX), or is the entire mass-market skincare category declining?",
+          "What is Olay's brand perception gap versus Korean beauty on 'efficacy,' 'ingredients transparency,' and 'skin of color' inclusivity?",
+          "Can Olay reposition — via reformulation, ingredient storytelling, or DTC launch — to capture the consumer shift toward ingredient-conscious skincare?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Isolate the Margin Gap",
+        "detail": "Operating margin fell from 19% to 14% on flat revenue of $6.1B. That's a 5-point margin decline = $305M of operating profit lost. COGS went from 52% to 58% of revenue = 6 points = $366M of gross profit lost. SG&A is flat at 22%. Conclusion: this is entirely a COGS problem — gross margin erosion is larger than the operating margin decline, implying COGS is the only material driver."
+      },
+      {
+        "step": 2,
+        "title": "Decompose COGS — Inflation vs. Mix",
+        "detail": "Two simultaneous COGS drivers: (1) Raw material inflation of 18% from petrochemicals — this is the primary driver. Estimate: if raw materials are 60% of COGS, 18% inflation on 60% of COGS = roughly 10.8% COGS increase, translating to ~6 points of gross margin. (2) Channel mix shift from premium Sephora (higher margin) to mass Walmart (lower margin) further dilutes effective gross margin — even if the product costs the same to make, lower retail price from mass channels compresses the margin."
+      },
+      {
+        "step": 3,
+        "title": "Apply Value Chain Analysis to COGS",
+        "detail": "Identify three cost levers: (1) Reformulation — reduce petrochemical inputs without sacrificing efficacy; P&G's R&D capability is a core asset. (2) Supplier diversification — reduce dependence on single-region resin suppliers by qualifying Asian or South American alternatives. (3) Packaging lightweighting — aluminum and plastic packaging innovations can reduce material cost 5-8% without consumer-facing changes."
+      },
+      {
+        "step": 4,
+        "title": "Address Channel Mix via 3C's",
+        "detail": "3C's on the channel problem: Competitors (Korean beauty, DTC skincare brands like Drunk Elephant) are winning Sephora shelf. Consumer preference is shifting toward ingredient transparency and skin-care science storytelling. P&G's mass-market positioning with Walmart and drug chains is appropriate for Pantene and Head & Shoulders, but Olay's aspirational positioning requires premium channel presence. Recommend Olay premium exclusive SKUs for Sephora to rebuild channel credibility."
+      },
+      {
+        "step": 5,
+        "title": "Recommend Path to 18%+ Margin",
+        "detail": "Three-year path: Year 1 — implement reformulation and supplier diversification to recover 2-3 COGS points ($120-180M gross profit). Year 2 — launch Olay Sephora-exclusive line to begin premium channel recovery and arrest revenue decline. Year 3 — fully restored COGS to 53-54% of revenue via structural supply chain changes, combined with premium mix shift, to reach 18% operating margin target."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Petrochemical Inflation",
+        "definition": "Increases in the cost of petroleum-derived raw materials (surfactants, polymers, resins) used in beauty and personal care formulations — the primary driver of P&G Beauty's COGS increase"
+      },
+      {
+        "term": "Channel Mix",
+        "definition": "The proportion of revenue coming from different retail channels; a shift from premium specialty (Sephora, Ulta at higher margins) to mass market (Walmart, drug chains at lower margins) dilutes blended gross margin"
+      },
+      {
+        "term": "Value Chain Analysis",
+        "definition": "A framework examining each step from raw materials to consumer to identify where cost reduction is possible — applied here to find reformulation, supplier, and packaging savings"
+      },
+      {
+        "term": "SG&A",
+        "definition": "Selling, General & Administrative expenses — marketing, sales force, and overhead costs; flat at 22% of revenue for P&G Beauty, confirming COGS — not marketing cuts — is the fix"
+      },
+      {
+        "term": "Brand Equity",
+        "definition": "The value consumers assign to a brand beyond its functional attributes — Olay's brand equity is declining relative to Korean beauty brands, reducing pricing power and channel access"
+      }
+    ],
+    "interviewerExpectations": "A strong answer quantifies the COGS impact in dollar terms ($366M gross profit erosion), distinguishes between the structural petrochemical inflation and the fixable channel mix problem, and proposes concrete supply chain actions via Value Chain Analysis. A weak answer vaguely recommends 'cutting costs' or 'fixing marketing' without identifying that SG&A is flat and the problem is entirely in COGS.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a profitability improvement case with flat revenue, so the entire problem lives on the cost or margin side. I'll use a Profitability Tree to precisely identify the driver, then Value Chain Analysis to find the COGS fix, and 3C's to understand the Olay brand challenge separately. Let me start with a clarifying question: is the petrochemical inflation expected to partially reverse as commodity markets normalize, or are these locked-in pricing structures?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "One more question: what is the specific margin differential between Sephora and Walmart for P&G Beauty? If premium channels carry 5 points more margin than mass, the channel mix shift is a meaningful contributor. If it's only 2 points, the COGS inflation story dominates almost entirely and that's where to focus recovery effort."
+      },
+      {
+        "label": "Step 1 — Isolate the Margin Gap",
+        "script": "Let me start with the math. Operating margin declined from 19% to 14% on flat revenue of $6.1 billion. That's a 5-percentage-point decline, which equals $305 million of operating profit lost. Now I look at the P&L structure: COGS went from 52% to 58% of revenue — a 6-point increase, which is $366 million of gross profit erosion. SG&A is flat at 22%. The math is unambiguous: this is entirely a COGS problem. Marketing is not the issue. Overhead is not the issue. The fix lives in gross margin — either reducing COGS or restoring the revenue mix toward higher-margin products and channels."
+      },
+      {
+        "label": "Step 2 — COGS Decomposition",
+        "script": "Within COGS, two things are happening simultaneously. First, raw material and packaging inflation of 18% from petrochemicals and resins. If raw materials represent roughly 60% of COGS — a typical personal care benchmark — then 18% inflation on 60% of COGS translates to approximately 10.8% total COGS increase, which maps almost exactly to the 6-point gross margin decline. Second, the channel mix shift from premium Sephora and Ulta to mass-market Walmart and drug chains dilutes effective gross margin even without any change in formulation cost — because mass channels carry lower retail prices and margin structures. Both drivers are real, but the raw material inflation is the dominant one."
+      },
+      {
+        "label": "Step 3 — Value Chain Fix for COGS",
+        "script": "Using Value Chain Analysis: three cost levers exist. First, reformulation — P&G's R&D organization can evaluate reducing petrochemical inputs while maintaining consumer-perceivable efficacy. Korean beauty brands have already shown that biologically-derived ingredients can replace petroleum derivatives at comparable performance. Second, supplier diversification — if P&G is concentrated with a few resin suppliers in one region, qualifying alternative suppliers in Asia or Latin America creates negotiating leverage and reduces concentration risk. Third, packaging lightweighting — material science innovations in bottles and tubes can reduce packaging material cost 5 to 8% with no consumer-facing change. Combined, I'd target recovering 2 to 3 COGS percentage points within 18 months."
+      },
+      {
+        "label": "Step 4 — Olay and Channel Recovery",
+        "script": "On the channel mix and Olay situation — this requires 3C's. The competitor landscape has shifted: Korean beauty brands, Drunk Elephant, and DTC skincare brands are capturing Sephora shelf space with ingredient-forward storytelling that resonates with ingredient-conscious consumers. Olay's 9% revenue decline is not just a price or distribution problem — it's a brand relevance problem. My recommendation: launch a curated Olay line specifically for Sephora with premium ingredients, clinical claims, and transparent ingredient labeling. This rebuilds premium channel presence and addresses the relevance gap versus Korean beauty."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommended three-year path to 18% operating margin. Year one: implement reformulation and supplier diversification to recover 2 to 3 COGS percentage points — that's $120 to $180 million of gross profit recovery. Year two: launch the Olay Sephora-exclusive premium line to begin arresting the 9% revenue decline and restore premium channel mix. Year three: with structural supply chain changes delivering sustained COGS improvement and premium channel recovery underway, I'd project reaching 17 to 18% operating margin by the end of year three — meeting the CEO's target. The critical watchout is the petrochemical commodity cycle: if prices reverse naturally, the timeline accelerates. If they remain elevated, the reformulation investment becomes existentially important rather than merely helpful."
+      }
+    ]
+  },
+  {
+    "id": "scenario_036",
+    "type": "Profit Growth / Decline",
+    "company": "Chipotle",
+    "title": "Chipotle Restaurant-Level Margin Improvement",
+    "prompt": "Chipotle's restaurant-level operating margin is 26.2%, its highest in five years. The CEO wants to push toward 28% over the next two years without raising menu prices (which have already increased 10% in the past 18 months). How would you structure an analysis of where the additional margin can come from?",
+    "context": "Chipotle's food costs are 30% of revenue, labor 25%, occupancy and other 19%. Digital orders (app and web) represent 38% of transactions, up from 19% three years ago. Digital orders average 12% higher check size than in-store. New Chipotlane drive-through locations are generating 15-20% higher revenue per unit than traditional locations. The company is opening 250 new units annually.",
+    "correctFrameworks": [
+      "Profitability Tree",
+      "4P's"
+    ],
+    "whyThisFramework": "Profitability Tree structures the margin expansion analysis: revenue optimization (digital mix, check size) vs. cost reduction (food, labor, occupancy). 4P's — specifically Place (Chipotlane expansion) and Promotion (driving digital order shift) — are the highest-leverage margin expansion tools available without price increases.",
+    "keyConsiderations": [
+      "Digital mix increase drives higher check size without touching menu prices",
+      "Chipotlane locations generate higher revenue per unit — accelerate this format's build-out",
+      "Labor optimization at peak hours through improved throughput is the cost lever",
+      "Food cost is 30% of revenue — even 1% reduction (waste, portion optimization) = significant dollar impact"
+    ],
+    "difficulty": "easy",
+    "clarifyingQuestions": [
+      "What is the current Chipotlane penetration as a percentage of all locations, and what share of new unit openings are planned as Chipotlane format?",
+      "Is there a meaningful food waste or portion variance issue — and what does Chipotle's internal data show about portioning consistency across locations?",
+      "What is the labor efficiency difference between a fully staffed peak hour versus an off-peak hour — and where is the greatest scheduling inefficiency?",
+      "Has Chipotle modeled the incremental digital order penetration achievable through targeted app promotions, and what does each 1-point increase in digital mix contribute to average check?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Revenue Optimization (Without Price Increases)",
+        "subIssues": [
+          "Can increasing digital order mix from 38% toward 50% meaningfully expand revenue per transaction given the 12% higher average check on digital?",
+          "What is the revenue uplift from accelerating Chipotlane openings, and how quickly can the new format represent 40%+ of the portfolio?",
+          "Are there upsell or add-on strategies (guacamole attachment rate, drink attach) that increase average check without menu price increases?"
+        ]
+      },
+      {
+        "block": "Food Cost Reduction",
+        "subIssues": [
+          "What is Chipotle's current food waste rate as a percentage of food cost, and what is the opportunity from portioning AI/technology tools?",
+          "Are there ingredient hedging or supplier renegotiation opportunities given Chipotle's scale at 3,000+ locations?",
+          "Can menu mix optimization — promoting higher-margin items like bowls versus burritos — shift the effective food cost percentage without menu changes?"
+        ]
+      },
+      {
+        "block": "Labor Cost Optimization",
+        "subIssues": [
+          "Is there meaningful scheduling inefficiency at non-peak hours — and what is the labor cost per transaction during the 2pm-5pm trough versus the 12pm-1pm peak?",
+          "Does throughput improvement (a key Chipotle operational metric) translate directly to labor cost reduction, and what is the current throughput gap versus best-in-class locations?",
+          "Can digital order volume allow Chipotle to better predict demand and reduce labor hours at low-traffic periods?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the Margin Gap",
+        "detail": "Current restaurant-level margin is 26.2%. Target is 28%. Gap is 1.8 percentage points. On Chipotle's current annual system revenue of approximately $10B, 1.8 points = $180M of incremental restaurant-level profit. Frame the analysis: which of the three cost lines (food at 30%, labor at 25%, occupancy at 19%) offers the fastest path to 1.8 points of improvement?"
+      },
+      {
+        "step": 2,
+        "title": "Revenue Without Price Increases",
+        "detail": "Identify two revenue levers: (1) Digital mix growth — digital is at 38% of transactions with 12% higher average check. If digital grows to 48%, the blended check increases without any menu price change. Estimate: 10-point digital shift × 12% check premium on those transactions = approximately 1.2% revenue lift per unit. (2) Chipotlane format expansion — 15-20% higher AUV means new Chipotlane units contribute meaningfully to system-average revenue per unit."
+      },
+      {
+        "step": 3,
+        "title": "Food Cost Reduction Analysis",
+        "detail": "Food cost at 30% of revenue is the largest single cost line. A 1-point reduction = $100M system-wide. Identify levers: (1) Portioning consistency — Chipotle's known variability in portion sizes creates food cost variance; AI portioning tools or weight-based portioning stations can close 0.3-0.5 points. (2) Waste reduction via demand forecasting — digital order data improves prep accuracy, reducing end-of-day waste. (3) Menu mix — pushing bowls (lower food cost ratio than burritos due to tortilla cost) through digital upsell."
+      },
+      {
+        "step": 4,
+        "title": "Labor Cost Optimization",
+        "detail": "Labor at 25% of revenue. Target: reduce to 24%. Primary lever is throughput improvement at peak. Chipotle's speed of service has improved but remains below its own best-in-class standard. Each additional 10 customers served per peak hour with the same labor headcount reduces labor cost per transaction. Scheduling optimization using digital order volume data allows more precise staffing for predicted demand, reducing idle labor hours."
+      },
+      {
+        "step": 5,
+        "title": "Prioritize and Build the Case",
+        "detail": "Rank by feasibility and impact: (1) Digital mix growth to 48%: 0.5-0.7 points of margin via higher check (implementation: in-app promotions and loyalty push). (2) Food cost via portioning and waste: 0.5-0.8 points (implementation: AI portioning tools at highest-variance locations). (3) Labor optimization via throughput: 0.4-0.6 points (implementation: scheduling software update). Combined: 1.4-2.1 points — enough to reach the 28% target."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Restaurant-Level Operating Margin",
+        "definition": "Revenue minus food, labor, and occupancy costs at the individual restaurant — Chipotle's was 26.2%, targeting 28%; excludes corporate overhead and D&A"
+      },
+      {
+        "term": "Chipotlane",
+        "definition": "Chipotle's drive-through digital pickup format — customers order via app and pick up in a dedicated drive-through lane; generates 15-20% higher AUV than traditional locations"
+      },
+      {
+        "term": "Digital Mix",
+        "definition": "The percentage of transactions placed through Chipotle's app or website versus in-store; currently 38%, and digital orders carry 12% higher average check size"
+      },
+      {
+        "term": "Throughput",
+        "definition": "The number of customers served per hour at peak periods — Chipotle's key operational metric; improving throughput serves more customers with the same labor, directly reducing labor cost per transaction"
+      },
+      {
+        "term": "AUV",
+        "definition": "Average Unit Volume — annual revenue per restaurant location; Chipotlane locations deliver 15-20% higher AUV than traditional Chipotle restaurants"
+      }
+    ],
+    "interviewerExpectations": "A strong answer uses Profitability Tree to identify that all three cost lines (food, labor, occupancy) offer levers, but correctly prioritizes digital mix and food cost as the highest-impact near-term moves. A weak answer either recommends raising prices (explicitly prohibited) or focuses only on cutting labor without identifying the revenue-side opportunities from digital mix growth.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This is a margin improvement case with a specific constraint: no menu price increases. That's actually helpful framing because it focuses the analysis entirely on cost optimization and revenue mix improvement. I'll use a Profitability Tree to work through each cost line and identify which levers are most accessible, then use 4P's to identify the execution path — particularly Place and Promotion, which I think are the highest-leverage tools available here. Let me start with a quick clarifying question: what share of new Chipotle openings are already planned as Chipotlane format — and what is the current Chipotlane percentage of total locations?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "One more: what does Chipotle's internal data show about portioning consistency across locations? I'd like to know whether food waste and portioning variance is a material food cost driver, or whether the 30% food cost is already well-controlled and the opportunity is primarily in revenue mix and digital."
+      },
+      {
+        "label": "Step 1 — Quantify the Gap",
+        "script": "Let me establish the target first. Current margin is 26.2%, target is 28%. The gap is 1.8 percentage points. On a restaurant system revenue base of approximately $10 billion, 1.8 points equals $180 million of incremental restaurant-level profit. That's the prize. Now let me look at where it can come from — starting with revenue, then working through each cost line."
+      },
+      {
+        "label": "Step 2 — Revenue Optimization Without Price Increases",
+        "script": "Even without price increases, Chipotle has two meaningful revenue levers. First, digital mix. Digital orders are already at 38% of transactions with a 12% higher average check than in-store. If Chipotle can push digital to 48% through app promotions and loyalty — a 10-point increase — the blended check rises approximately 1.2% without touching the menu. On an average unit volume of roughly $3 million, that's $36,000 per restaurant per year in incremental revenue with the same food and labor cost. Second, Chipotlane acceleration. New Chipotlane units are generating 15 to 20% higher AUV than traditional locations. As more of the 250 annual new units open as Chipotlane format, the system-average AUV improves. Both levers contribute margin without raising a single price."
+      },
+      {
+        "label": "Step 3 — Food Cost Reduction",
+        "script": "Food is 30% of revenue — the largest cost line. A 1-point reduction is $100 million system-wide. Three levers here: portioning consistency, which I know is a known variance issue at Chipotle — AI-assisted portioning tools can reduce the gap between the heaviest and lightest servers, potentially saving 0.3 to 0.5 food cost points. Demand forecasting using digital order data allows better prep accuracy and reduces end-of-day waste. And menu mix optimization — pushing bowls over burritos through digital upsell, since a tortilla adds cost without significant revenue difference. Combined, I'd estimate 0.5 to 0.8 points of food cost improvement is achievable within 18 months."
+      },
+      {
+        "label": "Step 4 — Labor Optimization",
+        "script": "Labor is 25% of revenue. The primary lever here is throughput — serving more customers per peak hour with the same headcount. Chipotle's best-performing locations already demonstrate what's possible, and the gap to system average is meaningful. Better scheduling using digital order volume as a demand signal allows more precise staffing — reducing idle labor hours in the 2pm-to-5pm trough while ensuring peak hours are fully staffed. I'd estimate 0.4 to 0.6 labor cost points are recoverable through scheduling optimization and throughput improvement."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "Pulling it together: digital mix growth to 48% contributes approximately 0.5 to 0.7 points of margin via higher blended check. Food cost reduction through portioning and waste contributes 0.5 to 0.8 points. Labor optimization through throughput and scheduling contributes 0.4 to 0.6 points. Combined, that's 1.4 to 2.1 percentage points of margin improvement — squarely in range of the 28% target. My recommended sequence: prioritize digital mix first because it requires no capital, just in-app promotion investment. Then deploy AI portioning tools at the highest-variance locations as a food cost fix. Then update scheduling software to optimize labor against digital demand forecasts. Chipotlane acceleration should continue in parallel as the long-term AUV driver. All four initiatives together position Chipotle to reach 28% restaurant-level margin within two years, as targeted."
+      }
+    ]
+  },
+  {
+    "id": "scenario_037",
+    "type": "Profit Growth / Decline",
+    "company": "Snap Inc.",
+    "title": "Snapchat Advertising Revenue Decline",
+    "prompt": "Snapchat's quarterly advertising revenue has declined 7% YoY from $1.1B to $1.02B. Daily active users grew 12% over the same period. The CFO's summary: 'More users, less revenue.' Diagnose the profit and revenue problem and recommend a path forward.",
+    "context": "Snapchat's revenue per daily active user (ARPU) has declined from $3.82 to $3.19 quarter-over-quarter. The primary driver: iOS privacy changes (Apple ATT) have reduced ad targeting precision, causing advertiser CPMs to fall 22%. Brand advertisers (top 200 accounts) have maintained spend, but performance advertisers (small-to-mid size) have reduced spend by 18%. Snapchat's AR advertising products have grown 41% but represent only 8% of total ad revenue.",
+    "correctFrameworks": [
+      "Profitability Tree",
+      "3C's"
+    ],
+    "whyThisFramework": "Profitability Tree decomposes the revenue equation: users × ARPU, and ARPU = (ad impressions × CPM). The CPM decline from iOS changes is the structural driver. 3C's then examines whether this is a Snapchat-specific problem or an industry problem (it affects all mobile advertisers), which changes the strategic response — Snapchat needs privacy-resilient ad products.",
+    "keyConsiderations": [
+      "More users + less ARPU = iOS ATT destroyed targeting precision, not a demand problem",
+      "AR advertising and brand safety tools are the differentiation from iOS-affected performance ads",
+      "Competing with TikTok for younger users is a separate user growth question from the revenue problem",
+      "First-party data strategy (encouraging users to link other accounts) can partially restore targeting"
+    ],
+    "difficulty": "hard",
+    "clarifyingQuestions": [
+      "Is the CPM decline affecting Snapchat more severely than Meta or TikTok — or is this a proportional industry impact from Apple ATT, and Snapchat is simply less diversified?",
+      "What percentage of Snapchat's advertiser base are performance advertisers (ROAS-dependent) versus brand advertisers — since these two segments are responding very differently?",
+      "Has Snapchat launched any privacy-resilient measurement tools (like aggregated event measurement or modeled conversions) to offer performance advertisers an ATT workaround?",
+      "What is the AR advertising product's current revenue trajectory — is the 41% growth rate accelerating or decelerating?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Revenue Decomposition — Users vs. ARPU",
+        "subIssues": [
+          "Is the 12% DAU growth concentrated in lower-ARPU geographies (international) or higher-ARPU markets (North America, Europe)?",
+          "What drove the ARPU decline from $3.82 to $3.19 — CPM compression, fewer ad impressions per user, or reduced fill rates?",
+          "Can Snapchat grow ARPU through non-advertising revenue streams (Snapchat+, creator monetization) to reduce advertiser dependence?"
+        ]
+      },
+      {
+        "block": "iOS ATT Impact — Structural vs. Snapchat-Specific",
+        "subIssues": [
+          "Is the 22% CPM decline proportional to what Meta and TikTok experienced, or is Snapchat disproportionately affected due to audience demographics?",
+          "Can privacy-resilient ad products — contextual targeting, first-party data matching, or AR engagement metrics — partially replace the targeting precision lost from ATT?",
+          "What is the timeline for Snap's internal measurement tools (Pixel+, Conversions API) to restore advertiser confidence in performance measurement?"
+        ]
+      },
+      {
+        "block": "Advertiser Mix — Brand vs. Performance",
+        "subIssues": [
+          "Since brand advertisers maintained spend while performance advertisers cut 18%, what would it take to convert more of the spend base toward brand-objective campaigns?",
+          "Is the AR advertising product ($41% growth) primarily brand-oriented, and can it become a significant revenue source to buffer performance ad volatility?",
+          "What is the concentration risk — do the top 200 brand advertisers represent 30% or 60% of Snapchat's total revenue, and how dependent is the business on those relationships?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Decompose Revenue via Profitability Tree",
+        "detail": "Revenue = DAUs × ARPU. DAUs grew 12%, ARPU fell from $3.82 to $3.19 (a 16.5% decline). Net: the ARPU decline more than offset the user growth, producing the 7% revenue decline. Frame the diagnostic: this is an ARPU problem, not a user growth problem. Now decompose ARPU: ARPU = ad impressions per user × CPM. The 22% CPM decline is the dominant driver."
+      },
+      {
+        "step": 2,
+        "title": "Identify the Root Cause — iOS ATT",
+        "detail": "Apple's App Tracking Transparency (ATT) framework requires apps to ask for explicit opt-in to track users across apps. Industry opt-in rates are approximately 20-25%, meaning 75-80% of iOS users are essentially untrackable for performance ad targeting. Performance advertisers (who bid on ROAS) reduced spend 18% because they can no longer close the attribution loop — they can't prove Snap ads drove purchases."
+      },
+      {
+        "step": 3,
+        "title": "Apply 3C's — Industry or Snap-Specific?",
+        "detail": "3C's: Competitor context is critical — Meta, YouTube, and TikTok all faced the same iOS ATT headwind. If Snapchat's revenue decline is proportional to Meta's, this is an industry problem and the strategic response is about differentiation. If Snapchat's decline is larger, Snap has an additional platform-specific problem. Research suggests Snap was disproportionately impacted because its audience skews younger (Gen Z iPhone users with higher ATT opt-out rates) and its ad product was more dependent on performance than brand."
+      },
+      {
+        "step": 4,
+        "title": "Identify Revenue Recovery Levers",
+        "detail": "Three levers: (1) Privacy-resilient performance measurement — Snap's Conversions API allows advertisers to share first-party data server-side, bypassing ATT. Accelerate adoption among the 18%-spending-down performance advertiser base. (2) AR advertising at scale — AR try-on and immersive units are un-commoditized, high-CPM, and immune to ATT because engagement is on-platform. Growing from 8% to 20% of ad revenue is a multi-quarter journey but the differentiation is real. (3) Snap+ subscription expansion — non-ad revenue reduces volatility."
+      },
+      {
+        "step": 5,
+        "title": "Recommend Prioritized Actions",
+        "detail": "Immediate: launch a Conversions API adoption program with the top 500 performance advertisers who cut spend. Mid-term: invest in AR advertising creative tools and case studies to shift brand budget toward AR units. Long-term: build first-party data infrastructure (Snap account linking, Snapchat login with partner apps) to restore targeting precision without relying on third-party tracking."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ATT",
+        "definition": "App Tracking Transparency — Apple's iOS 14.5+ framework requiring apps to ask users for explicit permission to track them across other apps and websites; approximately 75-80% of users decline, destroying cross-app targeting for advertisers"
+      },
+      {
+        "term": "CPM",
+        "definition": "Cost Per Thousand Impressions — the price advertisers pay per 1,000 ad views; Snapchat's CPM fell 22% because reduced targeting precision made its ads less effective and advertisers bid less"
+      },
+      {
+        "term": "ARPU",
+        "definition": "Average Revenue Per User — total advertising revenue divided by daily active users; Snapchat's ARPU declined from $3.82 to $3.19 despite 12% DAU growth, driving the overall revenue decline"
+      },
+      {
+        "term": "Conversions API",
+        "definition": "A server-to-server data sharing tool that allows advertisers to send their first-party conversion data directly to Snap, partially restoring attribution measurement without relying on device-level tracking blocked by ATT"
+      },
+      {
+        "term": "Performance vs. Brand Advertiser",
+        "definition": "Performance advertisers measure direct ROI (ROAS, cost-per-install) and depend on targeting precision; brand advertisers measure awareness and sentiment and are less impacted by ATT. Snapchat's performance advertisers cut spend 18% while brand advertisers held steady."
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately frames this as an ARPU problem (not a user problem) and connects the CPM decline directly to iOS ATT as a structural industry force. The best candidates also note that this affects Meta and TikTok similarly, meaning the strategic response should be about differentiation (AR ads, Conversions API) rather than just recovering what was lost. A weak answer blames TikTok competition without identifying the iOS ATT mechanism as the specific driver.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "The CFO's framing — 'more users, less revenue' — is actually a very precise diagnostic clue. This is an ARPU problem, not a user growth problem. I'll use a Profitability Tree to decompose the revenue equation and isolate exactly what's driving the ARPU decline, then 3C's to determine whether this is Snap-specific or an industry-wide dynamic — which changes the strategic response significantly. Quick clarifying question: is the CPM decline Snap-specific or proportional to what Meta and TikTok experienced from the same iOS privacy changes?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Two more: First, what percentage of Snapchat's advertiser base are performance advertisers versus brand advertisers? That ratio determines how much of the 7% revenue decline can be recovered through privacy-resilient tools versus requiring a full product pivot. Second, has Snap launched a Conversions API — server-to-server attribution — and what is current advertiser adoption? That tool is the near-term fix for performance advertisers, and I want to know if it's already available or still in development."
+      },
+      {
+        "label": "Step 1 — Revenue Decomposition",
+        "script": "Let me build the revenue tree. Revenue equals DAUs times ARPU. DAUs grew 12% — that's genuinely good user momentum. But ARPU fell from $3.82 to $3.19, a decline of about 16.5%. The math: 12% user growth minus 16.5% ARPU decline gives approximately negative 7% revenue, which matches exactly. The entire problem is in ARPU, not users. Now I go one level deeper: ARPU equals ad impressions per user times CPM. CPM fell 22%. Even if impressions per user held flat, that CPM decline alone would produce a 22% ARPU drop — more than explaining the observed 16.5%. This means CPMs falling from iOS targeting loss is the dominant driver."
+      },
+      {
+        "label": "Step 2 — iOS ATT Root Cause",
+        "script": "Apple's App Tracking Transparency framework, launched in iOS 14.5, requires apps to ask users for explicit permission to track them across other apps. Industry data shows approximately 75 to 80% of iOS users decline. For performance advertisers — who depend on tracking a user from a Snap ad to a purchase in another app to prove ROAS — ATT essentially broke their measurement. If they can't close the attribution loop, they can't justify the spend, which is exactly why Snapchat's performance advertisers cut spend by 18% while brand advertisers — who measure awareness, not conversions — held steady. ATT didn't destroy demand for advertising; it destroyed the measurement infrastructure that performance advertisers use to justify their bids."
+      },
+      {
+        "label": "Step 3 — 3C's Context",
+        "script": "Using 3C's: the competitor context is critical here. Meta, TikTok, and YouTube all faced the same iOS ATT headwind simultaneously. Meta lost approximately $10 billion in revenue in 2022 attributed to ATT. So this is an industry problem, not just a Snapchat problem. But Snapchat appears to be disproportionately impacted because its audience skews heavily toward Gen Z iPhone users, who have higher ATT opt-out rates and whose privacy settings tend to be more restrictive. Snap's ad product was also more performance-weighted than Meta's, meaning it had less brand budget to cushion the blow. That context matters: the strategic response isn't about competing with TikTok on user growth — it's about building ad products that work in a privacy-first environment, because that problem isn't going away."
+      },
+      {
+        "label": "Step 4 — Recovery Levers",
+        "script": "Three recovery levers, in priority order. First, Conversions API adoption — this allows performance advertisers to share first-party conversion data server-side, bypassing device-level tracking restrictions. Snap needs to run a white-glove adoption program with the 500 performance advertisers who cut spend, proving the tool works before they migrate budget back. Second, AR advertising at scale — AR try-on and immersive units are on-platform experiences unaffected by ATT, and they're growing 41% from a small base. I'd invest aggressively in AR creative tools and case studies to shift brand budgets toward AR units, differentiating from Meta and TikTok where AR advertising is less developed. Third, Snap+ subscriber growth — non-advertising revenue reduces quarterly volatility and creates a second growth vector that doesn't depend on CPMs."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation is three sequential priorities. In the next 90 days: run a Conversions API adoption sprint with the top 500 performance advertisers who reduced spend, with Snap's own engineering team providing white-glove integration support. In 6 to 12 months: launch an AR advertising product line with dedicated creative tools and measurement benchmarks, targeting the brand advertising segment that maintained spend and is willing to experiment. Long-term: build first-party data infrastructure — encouraging users to link partner accounts or use Snap login — to restore targeting precision without relying on ATT-blocked tracking. The 12% DAU growth is a genuine asset; the challenge is converting that engagement into revenue in an iOS world. The answer is not to wait for ATT to reverse — it won't. The answer is to build the ad products that work within it."
+      }
+    ]
+  },
+  {
+    "id": "scenario_038",
+    "type": "Profit Growth / Decline",
+    "company": "Target",
+    "title": "Target Private Label Margin Expansion",
+    "prompt": "Target's CFO has noted that its owned brands (Good & Gather, Threshold, A New Day) generate 40% gross margins vs. 29% for national brands. However, owned brands represent only 33% of Target's revenue. If Target can shift 5 more percentage points of revenue to owned brands (from 33% to 38%), what is the profit impact and what are the risks? How would you structure this analysis?",
+    "context": "Target's total revenue is $110B. Gross margin on total company is currently 30.2%. Target's owned brand lineup is strongest in food (Good & Gather), home (Threshold), and apparel (A New Day). National brand vendors (P&G, Unilever, Kraft Heinz) account for 67% of revenue and have existing promotional investment agreements. A 5-point owned brand shift equals approximately $5.5B in revenue reclassification.",
+    "correctFrameworks": [
+      "Profitability Tree",
+      "3C's"
+    ],
+    "whyThisFramework": "Profitability Tree quantifies the margin improvement: 5% × $110B = $5.5B shifted from 29% to 40% margin = approximately $605M gross profit improvement. 3C's examines the risk: national brand vendors may reduce co-op advertising, promotional support, or even threaten to de-prioritize Target vs. Walmart if owned brands cannibalize their volume.",
+    "keyConsiderations": [
+      "The math is compelling: $605M gross profit improvement from the shift alone",
+      "Vendor relationship risk is the countervailing force — P&G and Unilever have leverage",
+      "Consumer pull-through: owned brands must win on quality and value, not just margin engineering",
+      "Category-by-category analysis needed — owned brands stronger in food and home than electronics or beauty"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Which categories have the highest owned-brand penetration today — and where is the gap between current owned-brand share and what consumers in that category would accept?",
+      "What is the co-op advertising revenue Target receives from national brand vendors — and how much of that would be at risk if owned brand penetration increases?",
+      "Has Target done consumer research on quality perception of its owned brands versus national brands in the target categories for expansion?",
+      "Is the 5-point shift target driven by a specific category strategy, or is it an aggregate target that could be achieved multiple ways?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Profit Impact Quantification",
+        "subIssues": [
+          "What is the precise gross profit improvement from shifting $5.5B of revenue from 29% to 40% margin — and how does that translate to operating margin?",
+          "Does the owned brand shift also change SG&A — more product development investment, less co-op advertising income from national brands?",
+          "What is the cannibalization dynamic: does owned brand growth reduce national brand unit sales 1:1 or do some consumers trade down from higher-priced national brands, growing the category?"
+        ]
+      },
+      {
+        "block": "Vendor Relationship Risk",
+        "subIssues": [
+          "What is Target's dependence on national brand co-op advertising and promotional investment — and what share of Target's marketing budget comes from vendor funding?",
+          "Could P&G or Unilever retaliate by prioritizing promotional investment at Walmart, reducing Target's competitiveness in high-traffic national brand categories?",
+          "Is there a threshold of owned brand penetration beyond which national brands begin renegotiating shelf space terms — and where is Target relative to that threshold?"
+        ]
+      },
+      {
+        "block": "Consumer Acceptance by Category",
+        "subIssues": [
+          "In which categories will consumers substitute owned brands for national brands at comparable quality (food, home basics) versus categories with strong brand loyalty (beauty, personal care, packaged goods)?",
+          "What quality investment is needed in each target category to close the quality perception gap against national brands?",
+          "Does Target have the supplier and product development capability to scale owned brand revenue by $5.5B without quality degradation?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "Quantify the Gross Profit Improvement",
+        "detail": "The math: 5% × $110B revenue = $5.5B shifted to owned brands. Gross margin change: $5.5B at 40% owned brand margin generates $2.2B in gross profit. The same $5.5B at 29% national brand margin generated $1.595B. Improvement = $2.2B minus $1.595B = $605M incremental gross profit annually. On a $110B revenue base with current 30.2% gross margin ($33.2B gross profit), $605M improvement = approximately 55 basis points of margin improvement. This is material."
+      },
+      {
+        "step": 2,
+        "title": "Identify the Co-op Advertising Offset",
+        "detail": "National brand vendors pay Target co-op advertising — promotional fees for end-caps, circular features, and in-store displays. This is significant at Target's scale, often representing 1-3% of the national brand vendor's revenue with Target. If the 5-point shift reduces national brand revenue by $5.5B, co-op income at 2% = roughly $110M reduction in vendor marketing contributions. The net profit improvement is $605M gross profit minus $110M co-op reduction = approximately $495M. Still highly material."
+      },
+      {
+        "step": 3,
+        "title": "Apply 3C's to Vendor Relationship Risk",
+        "detail": "3C's: Company (Target gains margin), Customer (consumers need to accept the substitution), Competitor (Walmart). The critical 3C's question: if P&G, Unilever, and Kraft Heinz see Target aggressively growing owned brands against their categories, they may increase promotional investment at Walmart to shift consumer traffic. Walmart generates ~4x Target's revenue, so it has more leverage to resist this. Target needs to manage the vendor relationship carefully to avoid a coordinated response."
+      },
+      {
+        "step": 4,
+        "title": "Category-by-Category Feasibility",
+        "detail": "Not all categories offer equal opportunity. Food (Good & Gather): high feasibility — consumer acceptance of premium store-brand food has increased dramatically; Target's food-at-home category is where owned brands compete most effectively on quality. Home (Threshold): high feasibility — design-led private label in home décor has strong consumer acceptance and limited national brand loyalty. Apparel (A New Day): medium feasibility — fashion differentiation is achievable but requires design investment. Beauty and personal care: low feasibility — brand loyalty is high and national brands (L'Oréal, P&G Beauty) have strong consumer pull-through."
+      },
+      {
+        "step": 5,
+        "title": "Recommend a Phased Approach",
+        "detail": "Recommend a category-sequenced approach: Phase 1 (Year 1) — concentrate owned brand expansion in food and home where consumer acceptance is highest and vendor retaliation risk is lowest. Phase 2 (Year 2) — expand into apparel and accessories where Target's design capability is a competitive advantage. Phase 3 (Year 3) — evaluate beauty and personal care with research-backed quality investment before challenging national brand loyalty in that category."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Owned Brand / Private Label",
+        "definition": "Products manufactured for and sold exclusively by a specific retailer under the retailer's own brand name — Good & Gather, Threshold, and A New Day are Target's owned brands, generating 40% gross margin vs. 29% for national brands"
+      },
+      {
+        "term": "Co-op Advertising",
+        "definition": "Promotional payments made by national brand vendors (P&G, Unilever) to retailers in exchange for preferred shelf placement, circular features, or end-cap displays — a revenue stream Target would partially lose if owned brands cannibalize national brand volume"
+      },
+      {
+        "term": "Gross Margin",
+        "definition": "Revenue minus cost of goods sold, expressed as a percentage of revenue — Target's national brands generate 29% gross margin; owned brands generate 40%; the 11-point difference is the financial case for the shift"
+      },
+      {
+        "term": "Channel Retaliation",
+        "definition": "The risk that national brand vendors (P&G, Unilever) respond to Target's owned brand expansion by increasing promotional investment at competing retailers (Walmart), drawing consumer traffic away from Target"
+      },
+      {
+        "term": "Revenue Mix",
+        "definition": "The composition of total revenue across product types or brands — Target's current mix is 33% owned brands and 67% national brands; a 5-point shift to 38% owned changes blended gross margin"
+      }
+    ],
+    "interviewerExpectations": "A strong answer immediately calculates the $605M gross profit improvement precisely, then proactively raises the co-op advertising offset and vendor retaliation risk as countervailing forces — without being asked. A weak answer confirms the math is 'good' and recommends the shift without addressing what P&G and Unilever might do in response, or without acknowledging that consumer acceptance varies sharply by category.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "This case has two parts: first, quantify the profit impact of the 5-point owned brand shift; and second, identify the risks and constraints that might prevent Target from capturing that profit. I'll use a Profitability Tree to nail the math quickly, then 3C's to examine the vendor relationship risk — which I think is the most important strategic constraint here. Before I start, a quick question: what is Target's co-op advertising income from national brand vendors today — the amount P&G and Unilever pay Target for shelf placement and promotional features? That's the revenue at risk on the other side of the margin improvement."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "Also: in which categories does Target have the highest existing owned-brand penetration, and where is the largest gap? My hypothesis is food and home are the most accessible categories, and beauty and personal care are the most resistant due to brand loyalty — but I want to confirm that before recommending the sequencing."
+      },
+      {
+        "label": "Step 1 — Quantify the Gross Profit Improvement",
+        "script": "Let me do the math. Five percentage points of $110 billion revenue equals $5.5 billion of revenue shifting from national brands to owned brands. At 40% owned brand gross margin, that $5.5 billion generates $2.2 billion in gross profit. At the prior 29% national brand margin, that same $5.5 billion generated $1.595 billion. The improvement is $2.2 billion minus $1.595 billion — approximately $605 million of incremental gross profit annually. On a $110 billion revenue base with current gross margin of 30.2%, this shift adds roughly 55 basis points of gross margin. That is a very meaningful improvement — more than half a percentage point from a single strategic initiative."
+      },
+      {
+        "label": "Step 2 — The Co-op Offset",
+        "script": "But I want to flag an important offset that the $605 million figure doesn't capture. National brand vendors pay Target co-op advertising — promotional fees for circular features, end-cap placements, and in-store advertising. At Target's scale, I'd estimate vendor co-op income at roughly 1.5 to 2% of national brand revenue. If $5.5 billion shifts away from national brands, Target loses co-op income of approximately $80 to $110 million annually. The net incremental profit from the shift is $605 million minus $110 million — approximately $495 million. Still highly compelling, but the gross figure overstates the actual capture."
+      },
+      {
+        "label": "Step 3 — Vendor Retaliation Risk via 3C's",
+        "script": "The bigger risk, which I want to flag before recommending the shift, is vendor retaliation. Using 3C's: P&G, Unilever, and Kraft Heinz collectively account for a significant share of the 67% national brand revenue. If they see Target aggressively building owned brands directly against their categories — Good & Gather competing with Tide, Threshold competing with Bounty — they have a lever: shift promotional investment toward Walmart. Walmart generates roughly four times Target's revenue, so Walmart has far more leverage to resist owned brand expansion. If P&G runs a Walmart-exclusive promotion or concentrates its circular investment there, it pulls consumer traffic away from Target. That's the existential risk in this strategy — it's not the direct margin math, it's the indirect traffic and co-op impact."
+      },
+      {
+        "label": "Step 4 — Category Prioritization",
+        "script": "The third dimension of the analysis is consumer acceptance, which varies sharply by category. Food is the highest-opportunity category — consumer acceptance of premium store-brand food has increased dramatically; Good & Gather already competes favorably with national brands on quality. Home décor is the second-highest — Threshold has design credibility and there's limited national brand loyalty in home basics. Apparel has medium feasibility — design differentiation is achievable. Beauty and personal care are the hardest — L'Oréal and P&G Beauty have strong brand loyalty and influencer pull-through that owned brands haven't matched. A category-sequenced approach concentrating the initial 5-point shift in food and home while avoiding beauty significantly reduces both consumer acceptance risk and vendor retaliation risk."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "My recommendation: pursue the 5-point owned brand shift, but sequence it carefully. Capture the first 3 points in food and home — highest consumer acceptance, lowest retaliation risk — within 18 months. Capture the remaining 2 points in apparel and accessories where Target's design capability is a genuine competitive advantage. Avoid aggressive owned brand expansion in beauty and personal care until Target can demonstrate quality parity with national brands. Proactively communicate the category-specific strategy to key national brand partners to preserve the co-op relationship — making clear that Target is not building owned brands in their highest-volume, highest-loyalty categories. The net profit impact over three years, conservatively estimated, is $400 to $500 million annually after accounting for the co-op offset and sequencing constraints. The risk is manageable if the category strategy is disciplined."
+      }
+    ]
+  },
+  {
+    "id": "scenario_039",
+    "type": "Market Sizing",
+    "company": "DoorDash",
+    "title": "Sizing the US Grocery Delivery Market",
+    "prompt": "DoorDash is evaluating entering the grocery delivery market and needs to size the total addressable market. The investment team needs a bottom-up estimate of how many US households use or would use grocery delivery, at what frequency and average order value. How would you structure this estimate?",
+    "context": "US population is approximately 335M people. Average household size is 2.5 people. The US grocery market is approximately $800B annually. Grocery delivery currently has approximately 11% household penetration. The primary barrier to non-adoption is delivery fees and minimum order requirements. COVID accelerated adoption from 4% to 11% penetration between 2019 and 2022, but growth has slowed.",
+    "correctFrameworks": [
+      "SPEAK",
+      "Market Sizing"
+    ],
+    "whyThisFramework": "SPEAK structures the market sizing: State assumptions (household size, income, geography), Pick metrics (households vs. individuals, frequency vs. annual spend), Estimate quickly (top-down from $800B market or bottom-up from household behavior), Assess reasonableness, Keep exceptions (rural areas, low-income barriers). Both top-down ($800B × penetration rate) and bottom-up (households × frequency × basket) should converge.",
+    "keyConsiderations": [
+      "US has approximately 134M households (335M ÷ 2.5)",
+      "At 11% current penetration = 14.7M active grocery delivery households",
+      "TAM vs. SAM: DoorDash can realistically reach urban/suburban households, not rural (maybe 80%)",
+      "Average grocery delivery basket: $85-110; frequency: 1.5-2x per month for active users"
+    ],
+    "difficulty": "easy",
+    "clarifyingQuestions": [
+      "Are we sizing the current market (actual 2024 grocery delivery spend) or the total addressable market at full potential penetration — these could differ by 3-4x?",
+      "Should we include same-day delivery from grocery chains (Instacart at Kroger, Walmart+) as well as third-party delivery platforms like DoorDash and Shipt?",
+      "Are we building a top-down estimate (starting from the $800B grocery market), a bottom-up estimate (from household behavior), or both to cross-check?",
+      "Is there a geographic constraint — is DoorDash evaluating only urban and suburban markets, or also rural areas?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Bottom-Up Household Estimate",
+        "subIssues": [
+          "How many US households exist, and what share are realistically addressable for grocery delivery (urban/suburban vs. rural)?",
+          "Of addressable households, what is the realistic penetration ceiling given current 11% penetration and barriers like delivery fees?",
+          "What is the average annual spend per active grocery delivery household (frequency × average basket)?"
+        ]
+      },
+      {
+        "block": "Top-Down Market Check",
+        "subIssues": [
+          "What percentage of the $800B US grocery market realistically shifts to delivery — current 11% penetration suggests $88B is the current TAM baseline",
+          "At what penetration rate does grocery delivery saturate — and how does that compare to restaurant delivery (which topped out around 14-15% of restaurant spend)?",
+          "Do the bottom-up and top-down estimates converge, and if not, which assumption is driving the gap?"
+        ]
+      },
+      {
+        "block": "DoorDash-Specific Addressable Market",
+        "subIssues": [
+          "Of the total grocery delivery market, what share can DoorDash realistically capture given Instacart's first-mover advantage and Walmart+'s integrated offering?",
+          "Does DoorDash's existing restaurant delivery infrastructure (Dashers, app) provide a meaningful cost advantage in grocery delivery?",
+          "What is the average delivery fee and order minimum DoorDash would need to charge to be profitable in grocery delivery — and does that limit the addressable market?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "State Key Assumptions",
+        "detail": "US population: 335M. Household size: 2.5 people. Total households: 134M. Urban/suburban households (addressable for delivery): approximately 80% = 107M households. Current grocery delivery penetration: 11%. Realistic ceiling penetration: 20-25% (analogous to restaurant delivery). Average grocery delivery basket: $95. Average order frequency for active users: 1.8 orders/month = 21.6 orders/year."
+      },
+      {
+        "step": 2,
+        "title": "Bottom-Up Calculation",
+        "detail": "Addressable households: 107M (urban/suburban). At 11% current penetration: 11.8M active users currently. At 20% realistic ceiling penetration: 21.4M active households. Annual spend per active household: $95 basket × 21.6 orders/year = $2,052/year. TAM at 20% penetration: 21.4M × $2,052 = approximately $43.9B annually."
+      },
+      {
+        "step": 3,
+        "title": "Top-Down Cross-Check",
+        "detail": "US grocery market: $800B. Realistic delivery penetration ceiling: 20%. Top-down TAM: $800B × 20% = $160B. Reconcile: the bottom-up figure ($44B) is much lower because it only includes actual delivery spend (order value × delivery frequency), not total grocery wallet. The top-down figure includes ALL grocery spend by households that use delivery — many still also shop in-store. The 'delivery-specific' TAM is closer to $44B; the 'households that use delivery' TAM is $160B (relevant for platform share calculations)."
+      },
+      {
+        "step": 4,
+        "title": "Sanity Check the Numbers",
+        "detail": "Cross-check: Instacart reported approximately $30B in gross transaction value in 2023, at roughly 12% household penetration. Our model projects $44B at 20% penetration — scaling from $30B at 12% to $44B at 20% is directionally consistent (+47% revenue on +67% penetration, implying some intensity decline as later adopters order less frequently). The numbers are in the right ballpark."
+      },
+      {
+        "step": 5,
+        "title": "State the Answer with Precision",
+        "detail": "Deliver a clear conclusion: The current US grocery delivery market is approximately $25-30B in annual transaction value. At realistic full-penetration (20% of addressable households), the TAM is approximately $40-45B. DoorDash's serviceable addressable market — given Instacart's dominance and its own existing delivery infrastructure — is perhaps 15-20% share = $6-9B. Clearly state that this is the SAM, not the TAM."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "TAM",
+        "definition": "Total Addressable Market — the total revenue opportunity if DoorDash captured 100% of US grocery delivery; approximately $40-45B at 20% household penetration"
+      },
+      {
+        "term": "SAM",
+        "definition": "Serviceable Addressable Market — the portion of TAM that DoorDash can realistically reach given its capabilities, geography, and competition from Instacart and Walmart+; approximately $6-9B"
+      },
+      {
+        "term": "SPEAK",
+        "definition": "A market sizing framework: State assumptions, Pick the right metric, Estimate with math, Assess reasonableness, Keep exceptions and outliers — used to structure a disciplined, transparent market sizing"
+      },
+      {
+        "term": "Household Penetration",
+        "definition": "The percentage of US households that have used grocery delivery at least once in a given time period — currently 11%, up from 4% pre-COVID; the penetration ceiling is the key assumption driving TAM"
+      },
+      {
+        "term": "Average Basket Size",
+        "definition": "The average dollar value of a single grocery delivery order — assumed at $95 for this analysis; higher than in-store because delivery users tend to do larger, less frequent shops to justify the delivery fee"
+      }
+    ],
+    "interviewerExpectations": "A strong answer uses both bottom-up and top-down approaches and reconciles why they produce different numbers — explaining that the bottom-up captures delivery-specific spend while top-down captures total grocery wallet of delivery users. A weak answer picks one method, arrives at a number, and doesn't explain the key assumptions or check whether the result is reasonable against known benchmarks like Instacart's reported GTV.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "I'll use a SPEAK framework to structure this: first stating my key assumptions explicitly, then building both a bottom-up estimate from household behavior and a top-down check from the $800 billion grocery market, and then reconciling them and delivering a clear final number. Before I start — one important clarification: are we sizing the current market in 2024, or the total addressable market at realistic full penetration? Those could differ by a factor of three or four, so it matters for which number we lead with."
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "I'll also assume we want to size the delivery-specific transaction value — not the total grocery spend of households that use delivery. Those are different numbers, and I'll explain why when I reconcile the two approaches. And I'll assume DoorDash is evaluating urban and suburban markets only — I'll note rural as an exception I'm setting aside."
+      },
+      {
+        "label": "Step 1 — Key Assumptions",
+        "script": "Let me state my assumptions explicitly so you can push back on any of them. US population: 335 million. Average household size: 2.5 people, giving us approximately 134 million total households. I'll define addressable as urban and suburban — roughly 80% of households, or about 107 million. Current grocery delivery penetration: 11%, which the case data confirms. I'll assume a realistic ceiling penetration of 20% — comparable to where restaurant delivery has stabilized. Average grocery delivery basket: $95 per order. Average order frequency for active users: roughly 1.8 orders per month, or about 21 orders per year. Heavy delivery users order more frequently, but the average across the full user base is around there."
+      },
+      {
+        "label": "Step 2 — Bottom-Up Estimate",
+        "script": "Bottom-up calculation. At 20% penetration of 107 million addressable households, I get 21.4 million active grocery delivery households. Annual spend per household: $95 per order times 21 orders per year equals $1,995 — call it $2,000 per year. Total market: 21.4 million households times $2,000 annually equals approximately $43 billion in annual grocery delivery transaction value at realistic full penetration. The current market at 11% penetration is roughly half that — around $23 to $25 billion — which aligns with Instacart's reported GTV of around $30 billion, a reasonable check."
+      },
+      {
+        "label": "Step 3 — Top-Down Check and Reconciliation",
+        "script": "Now the top-down check. Total US grocery market is $800 billion. At 20% penetration ceiling, $800 billion times 20% equals $160 billion — that's much larger than my bottom-up figure of $43 billion. Let me explain why: the top-down figure captures the total grocery spending of households that use delivery — meaning it includes their in-store purchases too. Many delivery users still shop in-store for some items and use delivery for convenience shops. The delivery-specific spend per household — the $2,000 I used — is only the portion that flows through a delivery platform. If I apply 25% delivery capture of each delivery household's total grocery wallet, $160 billion times 25% equals $40 billion, which converges on my bottom-up figure. The two methods agree when the assumptions are aligned — which gives me confidence in the $40-45 billion TAM range."
+      },
+      {
+        "label": "Step 4 — DoorDash Serviceable Market",
+        "script": "The TAM of $40-45 billion is the total delivery platform opportunity. DoorDash's serviceable addressable market is smaller. Instacart has first-mover advantage and deep retailer partnerships. Walmart+ has an integrated grocery delivery offering for Walmart's massive shopper base. DoorDash's advantage is its existing Dasher network and app infrastructure. I'd estimate DoorDash could realistically capture 15 to 20% of the grocery delivery market — a $6 to $9 billion SAM — which would meaningfully grow its platform beyond restaurant delivery."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize: the current US grocery delivery market is approximately $25 to $30 billion in annual transaction value. At realistic full penetration of 20% of addressable households, the TAM grows to $40 to $45 billion. DoorDash's serviceable market — given competitive dynamics with Instacart and Walmart+ — is approximately $6 to $9 billion, or roughly 15 to 20% market share. The most important assumptions I'd want to pressure-test are the penetration ceiling — 20% is analogous to restaurant delivery, but grocery has stronger convenience barriers — and the average basket size, since smaller baskets make delivery fees harder to justify and could suppress active order frequency. If either of those moves materially, the TAM estimate moves with them, and I'd flag that as the key sensitivity in this analysis."
+      }
+    ]
+  },
+  {
+    "id": "scenario_040",
+    "type": "Market Sizing",
+    "company": "Peloton",
+    "title": "Sizing the US Connected Fitness Market",
+    "prompt": "You are advising a PE firm evaluating Peloton. Estimate the total addressable market for connected fitness equipment (smart bikes, treadmills, rowing machines with subscription content) in the United States. Be specific about your methodology and key assumptions.",
+    "context": "US gym membership penetration is approximately 21% of adults (about 53M people). Connected fitness average equipment price is $1,200-$2,000 with a $39-44/month subscription. Home exercise equipment is used primarily by households with income $75K+. The COVID home fitness boom saw 3.4M Peloton units sold in 2020-2021. Market research estimates 8-12% of households are 'likely connected fitness buyers.'",
+    "correctFrameworks": [
+      "SPEAK",
+      "Market Sizing"
+    ],
+    "whyThisFramework": "SPEAK structures the estimate: assume the target consumer is households $75K+ income, estimate how many such households exist, apply a penetration rate based on gym behavior, calculate hardware revenue (one-time) and subscription revenue (recurring). The recurring subscription makes this a two-part market size (hardware TAM and subscription ARR).",
+    "keyConsiderations": [
+      "US households with $75K+ income: approximately 56M households (about 42% of 134M households)",
+      "Apply 8-10% penetration assumption = 4.5-5.6M potential connected fitness households",
+      "Hardware revenue: 5M households × $1,500 average = $7.5B (one-time replacement cycle ~7 years)",
+      "Subscription revenue: 5M subscribers × $480/year = $2.4B annually — this is the recurring TAM"
+    ],
+    "difficulty": "medium",
+    "clarifyingQuestions": [
+      "Are we sizing the hardware TAM (total unit sales potential) or the subscription TAM (recurring annual revenue) — or both, since connected fitness is a two-part business model?",
+      "Should we include all connected fitness equipment (bikes, treadmills, rowing machines, mirrors) or just the Peloton-category of premium large-format equipment?",
+      "Are we sizing the current market or the potential market at full maturation — Peloton's post-COVID trajectory suggests the current market may be at or near saturation for the premium segment?",
+      "What is the average replacement cycle for connected fitness equipment — 5 years, 7 years, or longer — since this determines annual hardware demand from an installed base?"
+    ],
+    "meceBlocks": [
+      {
+        "block": "Addressable Household Base",
+        "subIssues": [
+          "How many US households have the income ($75K+), space (dedicated exercise room or living area), and lifestyle profile (exercise-oriented) to be realistic connected fitness buyers?",
+          "Of those households, how do we adjust for those who already own connected fitness equipment (the installed base) versus those who are new prospects?",
+          "Is gym membership a proxy for connected fitness propensity — and how do gym members' income distribution and home ownership rates compare to the connected fitness buyer profile?"
+        ]
+      },
+      {
+        "block": "Hardware TAM",
+        "subIssues": [
+          "At what price point ($1,200, $1,500, or $2,000) should we model the average equipment transaction, and does the product mix (bikes vs. treadmills vs. rowing) affect the average?",
+          "What is the annual hardware demand from the installed base replacing equipment versus new buyers entering the category for the first time?",
+          "Is the TAM one-time (the total number of potential units times price) or annualized over a replacement cycle?"
+        ]
+      },
+      {
+        "block": "Subscription TAM",
+        "subIssues": [
+          "What is the annual recurring revenue per subscriber ($480 at $40/month), and what is the realistic subscriber total based on installed equipment base?",
+          "What is the churn rate for connected fitness subscriptions, and how does it affect the sustainable ARR of the market?",
+          "Can subscription revenue expand beyond equipment owners — to hotels, corporate wellness, non-owners who want content without hardware?"
+        ]
+      }
+    ],
+    "stepByStep": [
+      {
+        "step": 1,
+        "title": "State Assumptions Explicitly",
+        "detail": "US households: 134M total. Households with $75K+ income (the core connected fitness buyer): approximately 42% = 56M households. Connected fitness propensity rate (8-12% from market research): use 10% as midpoint. Target connected fitness household universe: 56M × 10% = 5.6M households. Average equipment price: $1,500 (midpoint of $1,200-$2,000 range). Monthly subscription: $42 (midpoint of $39-44)."
+      },
+      {
+        "step": 2,
+        "title": "Calculate Hardware TAM — Two Ways",
+        "detail": "Total potential units: 5.6M households × 1 equipment unit = 5.6M units. At $1,500 average: 5.6M × $1,500 = $8.4B total hardware opportunity. This is a one-time TAM. To annualize: divide by a 7-year replacement cycle = $1.2B annual hardware demand at full penetration. Current annual demand (installed base of ~4M units replacing at 7-year cycle): ~570K units per year = ~$855M — consistent with Peloton's hardware revenue trajectory post-peak."
+      },
+      {
+        "step": 3,
+        "title": "Calculate Subscription TAM",
+        "detail": "Active subscribers at full penetration: 5.6M × 70% subscription attach rate (some owners don't subscribe) = 3.9M subscribers. Annual subscription revenue per subscriber: $42/month × 12 = $504/year. Subscription TAM: 3.9M × $504 = $1.97B annually — call it approximately $2B. Note: this is the more attractive part of the TAM from a PE perspective because it is recurring, high-margin, and predictable."
+      },
+      {
+        "step": 4,
+        "title": "Sanity Check Against Known Data",
+        "detail": "Peloton reported 2.97M connected fitness subscribers in Q3 2024 with annual subscription revenue of approximately $1.5B — consistent with our 3.9M total market estimate (Peloton has ~75% market share in premium connected fitness). Our hardware TAM of $1.2B annualized compares favorably to Peloton's current hardware revenue of ~$400-500M (Peloton at ~40% of potential annual demand, consistent with post-COVID normalization). The numbers are coherent."
+      },
+      {
+        "step": 5,
+        "title": "Deliver the Two-Part TAM",
+        "detail": "Summarize as a PE-ready view: (1) Hardware TAM: $8.4B total potential units × $1,500 = $8.4B one-time, or $1.2B annually at replacement cycle steady-state. (2) Subscription TAM: approximately $2B in annual recurring revenue at full penetration. Total annual market value at maturity: approximately $3.2B ($1.2B hardware + $2B subscription). Peloton's current revenue is approximately $900M-$1B — implying significant headroom if penetration grows from current ~50% of TAM to the ceiling."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Connected Fitness",
+        "definition": "Exercise equipment integrated with a digital platform delivering live and on-demand workout classes — the hardware (bike, treadmill) and software subscription (Peloton content) are bundled into one product ecosystem"
+      },
+      {
+        "term": "Subscription ARR",
+        "definition": "Annual Recurring Revenue from subscriptions — the most valuable part of Peloton's business model; approximately $504/year per subscriber, higher-margin and more predictable than hardware sales"
+      },
+      {
+        "term": "Hardware Replacement Cycle",
+        "definition": "The average number of years between a consumer purchasing a new connected fitness unit — estimated at 7 years; determines the annual hardware demand from an installed base at steady state"
+      },
+      {
+        "term": "Penetration Rate",
+        "definition": "The percentage of the target household universe that adopts connected fitness; market research suggests 8-12% of households are likely buyers; the difference between 8% and 12% drives a $2-3B swing in TAM"
+      },
+      {
+        "term": "Attach Rate",
+        "definition": "The percentage of hardware buyers who also subscribe to the content subscription; estimated at 70% — meaning roughly 30% of equipment owners don't pay for the subscription (they use other content or no digital classes)"
+      }
+    ],
+    "interviewerExpectations": "A strong answer explicitly structures this as a two-part TAM — hardware (one-time) and subscription (recurring) — and proactively notes that for a PE firm, the subscription ARR is more strategically important. A weak answer treats this as a single market size without separating hardware from subscription economics, or fails to sanity-check against Peloton's reported revenue figures to validate the estimates.",
+    "sampleResponse": [
+      {
+        "label": "Opening & Framework Choice",
+        "script": "Before I size this market, I want to flag something important for a PE context: connected fitness is a two-part market with very different economics. Hardware is one-time revenue with a long replacement cycle. Subscription is recurring, high-margin, and is the real value driver in a PE evaluation. I'll build both estimates separately using SPEAK — starting with a bottom-up household analysis, then sanity-checking against Peloton's reported financials to make sure my assumptions are grounded. Quick clarifying question: are we sizing the current 2024 market, or the potential market at realistic full penetration?"
+      },
+      {
+        "label": "Clarifying Questions",
+        "script": "I'll also ask: what does 'connected fitness equipment' include — are we limiting this to premium large-format equipment like Peloton bikes and treadmills at $1,200 to $2,000, or do we include smaller connected fitness products like Mirror-style screens or Apple Fitness+ which don't require proprietary hardware? I'll assume the premium large-format category only, since that's the Peloton competitive set, and I'll flag the broader market as an extension."
+      },
+      {
+        "label": "Step 1 — State Assumptions",
+        "script": "My key assumptions. US total households: 134 million. Households with income $75,000 or above — the connected fitness buyer profile based on average price point of $1,500 for a bike: approximately 42% of households, or 56 million. Connected fitness purchase propensity: the case gives us 8 to 12% from market research — I'll use 10% as my working midpoint. Target household universe: 56 million times 10% equals 5.6 million households. Average equipment price: $1,500, the midpoint of the $1,200 to $2,000 range. Monthly subscription: $42, the midpoint of $39 to $44. I'll note explicitly that changing the propensity rate from 8% to 12% swings the subscriber count from 4.5 million to 6.7 million — that's the most sensitive assumption in this model."
+      },
+      {
+        "label": "Step 2 — Hardware TAM",
+        "script": "Hardware TAM: 5.6 million addressable households times $1,500 average equipment price equals $8.4 billion in total potential hardware opportunity. But this is one-time — a household only buys one connected bike. To annualize it, I assume a 7-year replacement cycle: $8.4 billion divided by 7 years equals $1.2 billion in annual hardware demand at steady-state full penetration. Today, with an installed base of roughly 4 million units and a 7-year cycle, annual replacement demand is approximately 570,000 units per year — about $855 million. That maps reasonably well to Peloton's current hardware revenue in the $400 to $500 million range, since Peloton has roughly 60 to 70% market share in the premium connected fitness category."
+      },
+      {
+        "label": "Step 3 — Subscription TAM",
+        "script": "Subscription TAM is the more important number for a PE analysis. Of the 5.6 million addressable equipment owners, I'll apply a 70% subscription attach rate — meaning 30% of owners either don't subscribe or use a competitor's content. That gives 3.9 million potential subscribers. At $42 per month, annual revenue per subscriber is $504. Total subscription TAM: 3.9 million times $504 equals approximately $1.97 billion in annual recurring revenue — call it $2 billion. Peloton currently reports roughly 2.97 million connected fitness subscribers generating approximately $1.5 billion in subscription revenue. Our model implies Peloton has about 75% of the subscriber market, which is consistent with their reported share. The sanity check holds."
+      },
+      {
+        "label": "Step 4 — PE-Relevant Framing",
+        "script": "For a PE evaluation, here's how I'd frame the two-part market. The hardware TAM at steady-state is $1.2 billion annually — mature, cyclical, and dependent on new household formation and replacement demand. The subscription TAM is $2 billion annually at full penetration, growing as new users onboard. The subscription business is 60 to 70% gross margin; hardware is 15 to 25%. In a PE context, you're essentially buying the subscription flywheel, not the hardware business. The question is whether the installed base of 4 million units is enough to sustain $1.5 billion in subscription revenue and grow it — or whether subscriber churn and competitive pressures from Apple Fitness+, Hydrow, and NordicTrack erode the base."
+      },
+      {
+        "label": "Conclusion & Recommendation",
+        "script": "To summarize: the total addressable market for US connected fitness has two parts. The hardware TAM is $8.4 billion in total potential units, or approximately $1.2 billion annually at replacement-cycle steady-state. The subscription TAM is approximately $2 billion in annual recurring revenue at realistic full penetration of 10% of income-qualified households. Combined annual market value at maturity: approximately $3.2 billion. Peloton's current revenue of roughly $900 million to $1 billion implies the company is at approximately 30% of the combined TAM — suggesting meaningful headroom if penetration continues to grow, but also significant execution risk given the post-COVID subscriber plateau. For the PE evaluation, I'd focus the diligence on subscriber churn rate and the sustainability of the subscription attach rate — those two metrics determine whether the $2 billion subscription TAM is a ceiling Peloton can approach or one it's already begun retreating from."
+      }
+    ]
+  }
+]

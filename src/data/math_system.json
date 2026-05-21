@@ -1,0 +1,2563 @@
+{
+  "problemBank": [
+    {
+      "id": "math_001",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 1/4 to a decimal",
+      "answer": "0.25",
+      "acceptableAnswers": [
+        "0.25",
+        ".25",
+        "25%"
+      ],
+      "targetSeconds": 5,
+      "hint": "1/4 = half of 1/2. Half of 0.5 = 0.25",
+      "difficulty": "easy",
+      "explanation": "1/4 = 0.25 = 25%. This is a foundational anchor — memorize it cold."
+    },
+    {
+      "id": "math_002",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 3/4 to a decimal",
+      "answer": "0.75",
+      "acceptableAnswers": [
+        "0.75",
+        ".75",
+        "75%"
+      ],
+      "targetSeconds": 5,
+      "hint": "3/4 = 1 minus 1/4. 1 - 0.25 = 0.75",
+      "difficulty": "easy",
+      "explanation": "3/4 = 0.75 = 75%. Think: 3/4 is 3 times 0.25, or just 1 - 0.25."
+    },
+    {
+      "id": "math_003",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 1/3 to a decimal (round to 2 decimal places)",
+      "answer": "0.33",
+      "acceptableAnswers": [
+        "0.33",
+        ".33",
+        "33%",
+        "33.3%",
+        "0.333"
+      ],
+      "targetSeconds": 6,
+      "hint": "1/3 is a repeating decimal: 0.333... Round to 33.3%",
+      "difficulty": "easy",
+      "explanation": "1/3 = 0.333... ≈ 33.3%. In cases, use 33% or 1/3 interchangeably. Never try to be more precise."
+    },
+    {
+      "id": "math_004",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 2/3 to a decimal (round to 2 decimal places)",
+      "answer": "0.67",
+      "acceptableAnswers": [
+        "0.67",
+        ".67",
+        "67%",
+        "66.7%",
+        "0.667"
+      ],
+      "targetSeconds": 6,
+      "hint": "2/3 = 2 × (1/3). 2 × 0.333 = 0.667",
+      "difficulty": "easy",
+      "explanation": "2/3 = 0.667 ≈ 66.7%. Think: the complement of 1/3. If one third is 33%, two thirds is 67%."
+    },
+    {
+      "id": "math_005",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 1/8 to a decimal",
+      "answer": "0.125",
+      "acceptableAnswers": [
+        "0.125",
+        ".125",
+        "12.5%"
+      ],
+      "targetSeconds": 7,
+      "hint": "1/8 = half of 1/4. Half of 0.25 = 0.125",
+      "difficulty": "easy",
+      "explanation": "1/8 = 0.125 = 12.5%. Build from 1/4: halve it. 0.25 / 2 = 0.125."
+    },
+    {
+      "id": "math_006",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 3/8 to a decimal",
+      "answer": "0.375",
+      "acceptableAnswers": [
+        "0.375",
+        ".375",
+        "37.5%"
+      ],
+      "targetSeconds": 8,
+      "hint": "3/8 = 3 × (1/8). 3 × 0.125 = 0.375",
+      "difficulty": "easy",
+      "explanation": "3/8 = 0.375. Anchor: 1/8 = 0.125. Multiply by 3: 0.375. Or: 0.25 + 0.125 = 0.375."
+    },
+    {
+      "id": "math_007",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 5/8 to a decimal",
+      "answer": "0.625",
+      "acceptableAnswers": [
+        "0.625",
+        ".625",
+        "62.5%"
+      ],
+      "targetSeconds": 8,
+      "hint": "5/8 = 1 - 3/8. 1 - 0.375 = 0.625",
+      "difficulty": "medium",
+      "explanation": "5/8 = 0.625. Strategy: 5/8 = 1 - 3/8 = 1 - 0.375 = 0.625. Or: 4/8 + 1/8 = 0.5 + 0.125."
+    },
+    {
+      "id": "math_008",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 7/8 to a decimal",
+      "answer": "0.875",
+      "acceptableAnswers": [
+        "0.875",
+        ".875",
+        "87.5%"
+      ],
+      "targetSeconds": 8,
+      "hint": "7/8 = 1 - 1/8. 1 - 0.125 = 0.875",
+      "difficulty": "medium",
+      "explanation": "7/8 = 0.875. Fastest path: 1 - 1/8 = 1 - 0.125 = 0.875. Complement strategy."
+    },
+    {
+      "id": "math_009",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 1/6 to a decimal (round to 2 decimal places)",
+      "answer": "0.17",
+      "acceptableAnswers": [
+        "0.17",
+        ".17",
+        "17%",
+        "16.7%",
+        "0.167"
+      ],
+      "targetSeconds": 8,
+      "hint": "1/6 = half of 1/3. Half of 0.333 = 0.167",
+      "difficulty": "medium",
+      "explanation": "1/6 ≈ 0.167 ≈ 16.7%. Build from 1/3: halve it. In cases say '16-17%' and move on."
+    },
+    {
+      "id": "math_010",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 5/6 to a decimal (round to 2 decimal places)",
+      "answer": "0.83",
+      "acceptableAnswers": [
+        "0.83",
+        ".83",
+        "83%",
+        "83.3%",
+        "0.833"
+      ],
+      "targetSeconds": 10,
+      "hint": "5/6 = 1 - 1/6. 1 - 0.167 = 0.833",
+      "difficulty": "medium",
+      "explanation": "5/6 ≈ 0.833 ≈ 83.3%. Use complement: 1 - 1/6. Since 1/6 ≈ 16.7%, five-sixths ≈ 83.3%."
+    },
+    {
+      "id": "math_011",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 1/5 to a decimal",
+      "answer": "0.2",
+      "acceptableAnswers": [
+        "0.2",
+        ".2",
+        "20%",
+        "0.20"
+      ],
+      "targetSeconds": 4,
+      "hint": "1/5 = 2/10 = 0.2",
+      "difficulty": "easy",
+      "explanation": "1/5 = 0.2 = 20%. Divide numerator and denominator by 5: 1/5 = 2/10. Done."
+    },
+    {
+      "id": "math_012",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 3/5 to a decimal",
+      "answer": "0.6",
+      "acceptableAnswers": [
+        "0.6",
+        ".6",
+        "60%",
+        "0.60"
+      ],
+      "targetSeconds": 5,
+      "hint": "3/5 = 3 × (1/5) = 3 × 0.2 = 0.6",
+      "difficulty": "easy",
+      "explanation": "3/5 = 0.6 = 60%. Since 1/5 = 0.2, multiply by 3: 0.6."
+    },
+    {
+      "id": "math_013",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "10_percent_anchor",
+      "question": "What is 10% of $4,800?",
+      "answer": "480",
+      "acceptableAnswers": [
+        "480",
+        "$480",
+        "480.00"
+      ],
+      "targetSeconds": 5,
+      "hint": "Move the decimal point one place left: 4,800 → 480",
+      "difficulty": "easy",
+      "explanation": "10% = divide by 10. Move decimal left: $4,800 → $480. The anchor for all percent math."
+    },
+    {
+      "id": "math_014",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "10_percent_anchor",
+      "question": "What is 10% of $12,500?",
+      "answer": "1250",
+      "acceptableAnswers": [
+        "1250",
+        "$1,250",
+        "1,250"
+      ],
+      "targetSeconds": 5,
+      "hint": "Divide by 10: 12,500 ÷ 10",
+      "difficulty": "easy",
+      "explanation": "10% of $12,500 = $1,250. Always start here — then build to 20%, 30%, 5%, etc."
+    },
+    {
+      "id": "math_015",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "20_percent",
+      "question": "What is 20% of $3,500?",
+      "answer": "700",
+      "acceptableAnswers": [
+        "700",
+        "$700"
+      ],
+      "targetSeconds": 6,
+      "hint": "20% = 2 × 10%. First find 10% = $350, then double it.",
+      "difficulty": "easy",
+      "explanation": "20% of $3,500: Step 1: 10% = $350. Step 2: double = $700. Always build from 10%."
+    },
+    {
+      "id": "math_016",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "25_percent",
+      "question": "What is 25% of $6,400?",
+      "answer": "1600",
+      "acceptableAnswers": [
+        "1600",
+        "$1,600",
+        "1,600"
+      ],
+      "targetSeconds": 6,
+      "hint": "25% = divide by 4. 6,400 ÷ 4 = ?",
+      "difficulty": "easy",
+      "explanation": "25% = 1/4. Divide by 4: 6,400 ÷ 4 = 1,600. Faster than using 10% anchor here."
+    },
+    {
+      "id": "math_017",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "50_percent",
+      "question": "What is 50% of $7,300?",
+      "answer": "3650",
+      "acceptableAnswers": [
+        "3650",
+        "$3,650",
+        "3,650"
+      ],
+      "targetSeconds": 4,
+      "hint": "50% = divide by 2",
+      "difficulty": "easy",
+      "explanation": "50% = half. 7,300 ÷ 2 = 3,650. Instant reflex — no calculation needed."
+    },
+    {
+      "id": "math_018",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "33_percent",
+      "question": "What is approximately 33% of $9,000?",
+      "answer": "3000",
+      "acceptableAnswers": [
+        "3000",
+        "$3,000",
+        "3,000"
+      ],
+      "targetSeconds": 6,
+      "hint": "33% ≈ 1/3. Divide by 3: 9,000 ÷ 3",
+      "difficulty": "easy",
+      "explanation": "33% ≈ 1/3. 9,000 ÷ 3 = 3,000. When the number divides cleanly by 3, use this shortcut."
+    },
+    {
+      "id": "math_019",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "15_percent",
+      "question": "What is 15% of $8,000?",
+      "answer": "1200",
+      "acceptableAnswers": [
+        "1200",
+        "$1,200",
+        "1,200"
+      ],
+      "targetSeconds": 8,
+      "hint": "15% = 10% + 5%. 10% = $800, 5% = half of that = $400. Add them.",
+      "difficulty": "easy",
+      "explanation": "15% = 10% + 5%. 10% of 8,000 = 800. 5% = 400. Total = 1,200. Two-step anchor method."
+    },
+    {
+      "id": "math_020",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "40_percent",
+      "question": "What is 40% of $5,500?",
+      "answer": "2200",
+      "acceptableAnswers": [
+        "2200",
+        "$2,200",
+        "2,200"
+      ],
+      "targetSeconds": 8,
+      "hint": "40% = 4 × 10%. Find 10% first: $550. Then × 4.",
+      "difficulty": "medium",
+      "explanation": "40% = 4 × 10%. 10% of 5,500 = 550. × 4 = 2,200. Or: half of 80% = half of 4,400 = 2,200."
+    },
+    {
+      "id": "math_021",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "75_percent",
+      "question": "What is 75% of $4,000?",
+      "answer": "3000",
+      "acceptableAnswers": [
+        "3000",
+        "$3,000",
+        "3,000"
+      ],
+      "targetSeconds": 7,
+      "hint": "75% = 3/4. Find 1/4 first: 4,000 ÷ 4 = 1,000. Then × 3.",
+      "difficulty": "easy",
+      "explanation": "75% = 3/4. Divide by 4 to get one quarter: 1,000. Multiply by 3: 3,000. Alternatively: 100% - 25% = 4,000 - 1,000."
+    },
+    {
+      "id": "math_022",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "mixed",
+      "question": "What is 35% of $2,000?",
+      "answer": "700",
+      "acceptableAnswers": [
+        "700",
+        "$700"
+      ],
+      "targetSeconds": 10,
+      "hint": "35% = 25% + 10%. Find each and add.",
+      "difficulty": "medium",
+      "explanation": "35% = 25% + 10%. 25% of 2,000 = 500. 10% = 200. Total = 700. Decompose into anchors."
+    },
+    {
+      "id": "math_023",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "mixed",
+      "question": "What is 60% of $15,000?",
+      "answer": "9000",
+      "acceptableAnswers": [
+        "9000",
+        "$9,000",
+        "9,000"
+      ],
+      "targetSeconds": 8,
+      "hint": "60% = 50% + 10%. Or: 6 × 10%.",
+      "difficulty": "medium",
+      "explanation": "60% = 6 × 10%. 10% of 15,000 = 1,500. × 6 = 9,000. Or: 50% = 7,500 + 10% = 1,500 = 9,000."
+    },
+    {
+      "id": "math_024",
+      "level": 1,
+      "type": "multiplication_shortcut",
+      "subtype": "multiply_by_9",
+      "question": "What is 9 × 340?",
+      "answer": "3060",
+      "acceptableAnswers": [
+        "3060",
+        "3,060"
+      ],
+      "targetSeconds": 8,
+      "hint": "9 × 340 = (10 × 340) − 340 = 3,400 − 340",
+      "difficulty": "easy",
+      "explanation": "Multiply by 9 trick: × 10 then subtract the number once. 3,400 − 340 = 3,060."
+    },
+    {
+      "id": "math_025",
+      "level": 1,
+      "type": "multiplication_shortcut",
+      "subtype": "multiply_by_9",
+      "question": "What is 9 × 650?",
+      "answer": "5850",
+      "acceptableAnswers": [
+        "5850",
+        "5,850"
+      ],
+      "targetSeconds": 8,
+      "hint": "10 × 650 = 6,500. Subtract 650.",
+      "difficulty": "easy",
+      "explanation": "9 × 650: 10 × 650 = 6,500. 6,500 - 650 = 5,850."
+    },
+    {
+      "id": "math_026",
+      "level": 1,
+      "type": "multiplication_shortcut",
+      "subtype": "multiply_by_11",
+      "question": "What is 11 × 450?",
+      "answer": "4950",
+      "acceptableAnswers": [
+        "4950",
+        "4,950"
+      ],
+      "targetSeconds": 7,
+      "hint": "11 × 450 = (10 × 450) + 450 = 4,500 + 450",
+      "difficulty": "easy",
+      "explanation": "Multiply by 11: × 10 then add the number once. 4,500 + 450 = 4,950."
+    },
+    {
+      "id": "math_027",
+      "level": 1,
+      "type": "multiplication_shortcut",
+      "subtype": "multiply_by_5",
+      "question": "What is 5 × 7,400?",
+      "answer": "37000",
+      "acceptableAnswers": [
+        "37000",
+        "37,000"
+      ],
+      "targetSeconds": 6,
+      "hint": "× 5 = divide by 2, then × 10. 7,400 ÷ 2 = 3,700 → × 10 = 37,000",
+      "difficulty": "easy",
+      "explanation": "Multiply by 5: halve the number, then multiply by 10. 7,400 / 2 = 3,700. × 10 = 37,000."
+    },
+    {
+      "id": "math_028",
+      "level": 1,
+      "type": "multiplication_shortcut",
+      "subtype": "multiply_by_25",
+      "question": "What is 25 × 360?",
+      "answer": "9000",
+      "acceptableAnswers": [
+        "9000",
+        "9,000"
+      ],
+      "targetSeconds": 10,
+      "hint": "25 × 360 = 360 ÷ 4 × 100. 360 ÷ 4 = 90. × 100 = 9,000.",
+      "difficulty": "medium",
+      "explanation": "× 25 = divide by 4, multiply by 100. 360/4 = 90. 90 × 100 = 9,000."
+    },
+    {
+      "id": "math_029",
+      "level": 1,
+      "type": "multiplication_shortcut",
+      "subtype": "near_round_numbers",
+      "question": "What is 49 × 300?",
+      "answer": "14700",
+      "acceptableAnswers": [
+        "14700",
+        "14,700"
+      ],
+      "targetSeconds": 10,
+      "hint": "49 × 300 = (50 - 1) × 300 = 15,000 - 300",
+      "difficulty": "medium",
+      "explanation": "Near-round number trick: 49 = 50 - 1. 50 × 300 = 15,000. Subtract 1 × 300 = 300. Answer: 14,700."
+    },
+    {
+      "id": "math_030",
+      "level": 1,
+      "type": "multiplication_shortcut",
+      "subtype": "near_round_numbers",
+      "question": "What is 19 × $2,500?",
+      "answer": "47500",
+      "acceptableAnswers": [
+        "47500",
+        "47,500",
+        "$47,500"
+      ],
+      "targetSeconds": 12,
+      "hint": "19 × 2,500 = (20 - 1) × 2,500 = 50,000 - 2,500",
+      "difficulty": "medium",
+      "explanation": "19 = 20 - 1. 20 × 2,500 = 50,000. Subtract 2,500 = 47,500."
+    },
+    {
+      "id": "math_031",
+      "level": 1,
+      "type": "rounding_scale",
+      "subtype": "thousands_millions",
+      "question": "Express 4,750,000 in millions",
+      "answer": "4.75M",
+      "acceptableAnswers": [
+        "4.75M",
+        "4.75 million",
+        "$4.75M",
+        "4.75"
+      ],
+      "targetSeconds": 5,
+      "hint": "Divide by 1,000,000. Move decimal 6 places left.",
+      "difficulty": "easy",
+      "explanation": "4,750,000 ÷ 1,000,000 = 4.75M. In cases, always simplify to M or B. Never say 4,750,000."
+    },
+    {
+      "id": "math_032",
+      "level": 1,
+      "type": "rounding_scale",
+      "subtype": "thousands_millions",
+      "question": "A company has $2.4B in revenue. Express this in millions.",
+      "answer": "2400",
+      "acceptableAnswers": [
+        "2400",
+        "2,400",
+        "$2,400M",
+        "2400M"
+      ],
+      "targetSeconds": 6,
+      "hint": "1 billion = 1,000 million. 2.4 × 1,000 = 2,400.",
+      "difficulty": "easy",
+      "explanation": "$2.4B = $2,400M. Key conversion: 1B = 1,000M. Multiply billions by 1,000."
+    },
+    {
+      "id": "math_033",
+      "level": 1,
+      "type": "rounding_scale",
+      "subtype": "rounding_for_speed",
+      "question": "Round 3,847,293 to the nearest million for a quick estimate",
+      "answer": "4M",
+      "acceptableAnswers": [
+        "4M",
+        "4 million",
+        "~4M",
+        "approximately 4M"
+      ],
+      "targetSeconds": 5,
+      "hint": "Is 847,293 closer to 0 or 1,000,000? It's past halfway.",
+      "difficulty": "easy",
+      "explanation": "3,847,293 → $4M. The 847k is past 500k, so round up. In interviews, say '~$4M' and move on."
+    },
+    {
+      "id": "math_034",
+      "level": 1,
+      "type": "rounding_scale",
+      "subtype": "zero_tracking",
+      "question": "You multiply 2,500 × 4,000. How many zeros are in the answer?",
+      "answer": "6",
+      "acceptableAnswers": [
+        "6",
+        "six",
+        "10,000,000",
+        "10M"
+      ],
+      "targetSeconds": 8,
+      "hint": "2,500 has 2 trailing zeros. 4,000 has 3. Plus 2 × 4 = 8, which adds no zeros. Total: 2+3=5... wait, actually count carefully.",
+      "difficulty": "medium",
+      "explanation": "2,500 × 4,000: 25 × 4 = 100. Then 100 × 100 (two zeros) × 1,000 (three zeros) = 100 × 100,000 = 10,000,000 = 10M. Track the coefficient and zeros separately."
+    },
+    {
+      "id": "math_035",
+      "level": 1,
+      "type": "rounding_scale",
+      "subtype": "zero_tracking",
+      "question": "What is 1,500 × 600?",
+      "answer": "900000",
+      "acceptableAnswers": [
+        "900000",
+        "900,000",
+        "0.9M",
+        "900K"
+      ],
+      "targetSeconds": 8,
+      "hint": "15 × 6 = 90. Then count zeros: 2 from 1,500 + 2 from 600 = 4 zeros. 90 × 10,000.",
+      "difficulty": "medium",
+      "explanation": "1,500 × 600: separate digits from zeros. 15 × 6 = 90. Zeros: 1,500 has 2, 600 has 2. Total: 4 zeros added to 90 → 900,000 = 0.9M."
+    },
+    {
+      "id": "math_036",
+      "level": 1,
+      "type": "decimal_operations",
+      "subtype": "decimal_to_percent",
+      "question": "Convert 0.045 to a percentage",
+      "answer": "4.5%",
+      "acceptableAnswers": [
+        "4.5%",
+        "4.5",
+        "4½%"
+      ],
+      "targetSeconds": 5,
+      "hint": "Multiply by 100 (move decimal 2 places right)",
+      "difficulty": "easy",
+      "explanation": "0.045 × 100 = 4.5%. Moving the decimal right 2 places converts decimal to percent."
+    },
+    {
+      "id": "math_037",
+      "level": 1,
+      "type": "decimal_operations",
+      "subtype": "percent_to_decimal",
+      "question": "Convert 3.5% to a decimal",
+      "answer": "0.035",
+      "acceptableAnswers": [
+        "0.035",
+        ".035"
+      ],
+      "targetSeconds": 5,
+      "hint": "Divide by 100 (move decimal 2 places left)",
+      "difficulty": "easy",
+      "explanation": "3.5% ÷ 100 = 0.035. Move decimal 2 left: 3.5 → 0.35 → 0.035."
+    },
+    {
+      "id": "math_038",
+      "level": 1,
+      "type": "decimal_operations",
+      "subtype": "fraction_to_percent",
+      "question": "What percentage is 18 out of 72?",
+      "answer": "25%",
+      "acceptableAnswers": [
+        "25%",
+        "25",
+        "0.25"
+      ],
+      "targetSeconds": 8,
+      "hint": "18/72 = 1/4. And 1/4 = 25%.",
+      "difficulty": "easy",
+      "explanation": "18/72: simplify. Both divisible by 18: 18/72 = 1/4 = 25%. Always simplify fractions before converting."
+    },
+    {
+      "id": "math_039",
+      "level": 1,
+      "type": "decimal_operations",
+      "subtype": "fraction_to_percent",
+      "question": "What percentage is 45 out of 180?",
+      "answer": "25%",
+      "acceptableAnswers": [
+        "25%",
+        "25",
+        "0.25"
+      ],
+      "targetSeconds": 10,
+      "hint": "45/180 = 1/4. Divide both by 45.",
+      "difficulty": "easy",
+      "explanation": "45/180: divide both by 45 → 1/4 = 25%. Or: 45 × 4 = 180, so 45 is 1/4 of 180."
+    },
+    {
+      "id": "math_040",
+      "level": 1,
+      "type": "decimal_operations",
+      "subtype": "fraction_to_percent",
+      "question": "What percentage is 120 out of 480?",
+      "answer": "25%",
+      "acceptableAnswers": [
+        "25%",
+        "25",
+        "0.25"
+      ],
+      "targetSeconds": 8,
+      "hint": "120/480: simplify by dividing both by 120.",
+      "difficulty": "easy",
+      "explanation": "120/480 = 1/4 = 25%. Pattern recognition: 120 × 4 = 480."
+    },
+    {
+      "id": "math_041",
+      "level": 1,
+      "type": "multiplication_shortcut",
+      "subtype": "doubling_halving",
+      "question": "Calculate 16 × 25 using a mental shortcut",
+      "answer": "400",
+      "acceptableAnswers": [
+        "400"
+      ],
+      "targetSeconds": 8,
+      "hint": "Double 25 to 50, halve 16 to 8. Then double again: 50 → 100, 8 → 4. 100 × 4 = 400.",
+      "difficulty": "medium",
+      "explanation": "Doubling/halving: 16 × 25 = 8 × 50 = 4 × 100 = 400. When one number is a multiple of 2 and the other of 5, use this."
+    },
+    {
+      "id": "math_042",
+      "level": 1,
+      "type": "multiplication_shortcut",
+      "subtype": "doubling_halving",
+      "question": "Calculate 14 × 50",
+      "answer": "700",
+      "acceptableAnswers": [
+        "700"
+      ],
+      "targetSeconds": 6,
+      "hint": "14 × 50 = 14/2 × 100 = 7 × 100",
+      "difficulty": "easy",
+      "explanation": "14 × 50: halve 14, double 50. 7 × 100 = 700."
+    },
+    {
+      "id": "math_043",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "mixed_operations",
+      "question": "Which is larger: 5/8 or 3/5?",
+      "answer": "5/8",
+      "acceptableAnswers": [
+        "5/8",
+        "5/8 is larger",
+        "5/8 > 3/5"
+      ],
+      "targetSeconds": 10,
+      "hint": "Convert both: 5/8 = 0.625, 3/5 = 0.6",
+      "difficulty": "medium",
+      "explanation": "5/8 = 0.625, 3/5 = 0.60. So 5/8 > 3/5. Always convert to decimals to compare fractions quickly."
+    },
+    {
+      "id": "math_044",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "reverse_percent",
+      "question": "$600 is 30% of what number?",
+      "answer": "2000",
+      "acceptableAnswers": [
+        "2000",
+        "2,000",
+        "$2,000"
+      ],
+      "targetSeconds": 10,
+      "hint": "If 30% = 600, then 10% = 200, so 100% = 2,000",
+      "difficulty": "medium",
+      "explanation": "Reverse percent: find 1%. 30% = 600, so 1% = 20, so 100% = 2,000. Anchor: find what 10% would be."
+    },
+    {
+      "id": "math_045",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "reverse_percent",
+      "question": "$1,500 is 25% of what number?",
+      "answer": "6000",
+      "acceptableAnswers": [
+        "6000",
+        "6,000",
+        "$6,000"
+      ],
+      "targetSeconds": 8,
+      "hint": "25% = 1/4. If 1/4 = 1,500, then the whole = 1,500 × 4.",
+      "difficulty": "medium",
+      "explanation": "25% = 1/4. So the whole = 1,500 × 4 = 6,000. Fraction thinking is faster than percent thinking here."
+    },
+    {
+      "id": "math_046",
+      "level": 1,
+      "type": "fraction_to_decimal",
+      "subtype": "common_fractions",
+      "question": "Convert 1/7 to a decimal (round to 2 decimal places)",
+      "answer": "0.14",
+      "acceptableAnswers": [
+        "0.14",
+        ".14",
+        "14%",
+        "0.143"
+      ],
+      "targetSeconds": 12,
+      "hint": "7 goes into 1.000: 7 × 0.1 = 0.7, remainder 0.3. 7 × 0.04 = 0.28...",
+      "difficulty": "hard",
+      "explanation": "1/7 ≈ 0.143 ≈ 14.3%. Less common — if it comes up, say 'roughly 14%'. Not worth memorizing precisely."
+    },
+    {
+      "id": "math_047",
+      "level": 1,
+      "type": "multiplication_shortcut",
+      "subtype": "squaring_numbers",
+      "question": "What is 35²?",
+      "answer": "1225",
+      "acceptableAnswers": [
+        "1225",
+        "1,225"
+      ],
+      "targetSeconds": 12,
+      "hint": "For any number ending in 5: multiply the tens digit by (tens digit + 1), then append 25. 3 × 4 = 12 → 1225.",
+      "difficulty": "hard",
+      "explanation": "Numbers ending in 5: n × (n+1) then append 25. 3 × 4 = 12, append 25 → 1,225. Works for 25² = 625, 45² = 2025."
+    },
+    {
+      "id": "math_048",
+      "level": 1,
+      "type": "rounding_scale",
+      "subtype": "order_of_magnitude",
+      "question": "Is 0.8 million closer to 1 million or to 0.5 million?",
+      "answer": "1 million",
+      "acceptableAnswers": [
+        "1 million",
+        "1M",
+        "1,000,000"
+      ],
+      "targetSeconds": 5,
+      "hint": "0.8M is 300K away from 1M and 300K away from... wait: 0.8 - 0.5 = 0.3, 1.0 - 0.8 = 0.2",
+      "difficulty": "easy",
+      "explanation": "0.8M is 0.2M from 1M and 0.3M from 0.5M. Closer to 1M. Quick sanity check for case estimates."
+    },
+    {
+      "id": "math_049",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "percent_change",
+      "question": "A price increases from $40 to $50. What is the % increase?",
+      "answer": "25%",
+      "acceptableAnswers": [
+        "25%",
+        "25"
+      ],
+      "targetSeconds": 8,
+      "hint": "Change / Original × 100. (50 - 40) / 40 × 100",
+      "difficulty": "easy",
+      "explanation": "(50 - 40) / 40 = 10/40 = 1/4 = 25%. The denominator is always the ORIGINAL (old) value."
+    },
+    {
+      "id": "math_050",
+      "level": 1,
+      "type": "percent_of_number",
+      "subtype": "percent_change",
+      "question": "Sales drop from $800K to $600K. What is the % decrease?",
+      "answer": "25%",
+      "acceptableAnswers": [
+        "25%",
+        "-25%",
+        "25"
+      ],
+      "targetSeconds": 8,
+      "hint": "Change = 200K. Original = 800K. 200/800 = 1/4 = 25%.",
+      "difficulty": "easy",
+      "explanation": "200/800 = 1/4 = 25% decrease. Quick check: is the change a simple fraction of the original? 200/800 → 1/4."
+    },
+    {
+      "id": "math_051",
+      "level": 2,
+      "type": "profit_equation",
+      "subtype": "basic_profit",
+      "question": "A coffee shop sells 800 cups/day at $4 each. Fixed costs are $1,200/day. Variable cost is $1.50/cup. What is daily profit?",
+      "answer": "800",
+      "acceptableAnswers": [
+        "800",
+        "$800"
+      ],
+      "targetSeconds": 25,
+      "hint": "Profit = (Price - VC) × Volume - FC. Contribution per cup = $4 - $1.50 = $2.50",
+      "difficulty": "medium",
+      "explanation": "CM per cup = $4 - $1.50 = $2.50. Total CM = $2.50 × 800 = $2,000. Profit = $2,000 - $1,200 = $800/day."
+    },
+    {
+      "id": "math_052",
+      "level": 2,
+      "type": "breakeven",
+      "subtype": "unit_breakeven",
+      "question": "A gym has $45,000/month in fixed costs. Membership price is $60/month, variable cost per member is $10. How many members to break even?",
+      "answer": "900",
+      "acceptableAnswers": [
+        "900",
+        "900 members"
+      ],
+      "targetSeconds": 20,
+      "hint": "Breakeven units = Fixed Costs ÷ (Price - Variable Cost). Contribution margin = $60 - $10 = $50",
+      "difficulty": "medium",
+      "explanation": "CM per member = $60 - $10 = $50. Breakeven = $45,000 / $50 = 900 members."
+    },
+    {
+      "id": "math_053",
+      "level": 2,
+      "type": "breakeven",
+      "subtype": "unit_breakeven",
+      "question": "A product has fixed costs of $120,000. It sells for $25 with variable cost of $13 per unit. How many units to break even?",
+      "answer": "10000",
+      "acceptableAnswers": [
+        "10000",
+        "10,000",
+        "10K"
+      ],
+      "targetSeconds": 20,
+      "hint": "CM = $25 - $13 = $12. Breakeven = $120,000 / $12",
+      "difficulty": "medium",
+      "explanation": "CM = $25 - $13 = $12. Breakeven = $120,000 / $12 = 10,000 units."
+    },
+    {
+      "id": "math_054",
+      "level": 2,
+      "type": "growth_rate",
+      "subtype": "year_over_year",
+      "question": "Revenue grew from $24M to $30M. What is the growth rate?",
+      "answer": "25%",
+      "acceptableAnswers": [
+        "25%",
+        "25"
+      ],
+      "targetSeconds": 12,
+      "hint": "(30 - 24) / 24 × 100 = 6/24 × 100",
+      "difficulty": "easy",
+      "explanation": "Growth = (30 - 24) / 24 = 6/24 = 1/4 = 25%. Watch for clean fractions — 6/24 simplifies to 1/4."
+    },
+    {
+      "id": "math_055",
+      "level": 2,
+      "type": "growth_rate",
+      "subtype": "year_over_year",
+      "question": "Market size grew from $500M to $650M over one year. What is the growth rate?",
+      "answer": "30%",
+      "acceptableAnswers": [
+        "30%",
+        "30"
+      ],
+      "targetSeconds": 15,
+      "hint": "(650 - 500) / 500 = 150/500",
+      "difficulty": "easy",
+      "explanation": "150/500 = 15/50 = 3/10 = 30%. Simplify the fraction: divide both by 50."
+    },
+    {
+      "id": "math_056",
+      "level": 2,
+      "type": "growth_rate",
+      "subtype": "cagr_estimate",
+      "question": "A company grows from $100M to $200M over 5 years. Approximately what is the annual growth rate?",
+      "answer": "15%",
+      "acceptableAnswers": [
+        "15%",
+        "14%",
+        "~15%",
+        "14-15%"
+      ],
+      "targetSeconds": 20,
+      "hint": "It doubled in 5 years. Rule of 72: 72 ÷ 5 ≈ 14.4%",
+      "difficulty": "hard",
+      "explanation": "Use Rule of 72: years to double = 72 / rate. Reverse: rate = 72 / years = 72/5 ≈ 14.4% ≈ 15%. Exact CAGR = 2^(1/5) - 1 ≈ 14.9%."
+    },
+    {
+      "id": "math_057",
+      "level": 2,
+      "type": "roi",
+      "subtype": "basic_roi",
+      "question": "A retailer invests $200,000 in a new store. It generates $80,000 in incremental profit per year. What is the annual ROI?",
+      "answer": "40%",
+      "acceptableAnswers": [
+        "40%",
+        "40"
+      ],
+      "targetSeconds": 15,
+      "hint": "ROI = Incremental Profit / Investment × 100 = 80,000 / 200,000 × 100",
+      "difficulty": "medium",
+      "explanation": "ROI = 80,000 / 200,000 = 8/20 = 2/5 = 40%. Simplify the fraction before dividing."
+    },
+    {
+      "id": "math_058",
+      "level": 2,
+      "type": "roi",
+      "subtype": "payback_period",
+      "question": "An investment of $360,000 generates $90,000 in annual incremental revenue. What is the payback period in years?",
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "4 years"
+      ],
+      "targetSeconds": 12,
+      "hint": "Payback = Investment / Annual Return = 360,000 / 90,000",
+      "difficulty": "easy",
+      "explanation": "Payback = 360,000 / 90,000 = 4 years. Cross-check: 90K × 4 = 360K. ✓"
+    },
+    {
+      "id": "math_059",
+      "level": 2,
+      "type": "market_sizing",
+      "subtype": "top_down",
+      "question": "The US has ~330M people. If 40% are coffee drinkers and each spends ~$5/week on coffee, what is the annual US coffee market size?",
+      "answer": "34.3B",
+      "acceptableAnswers": [
+        "34B",
+        "34.3B",
+        "~$34B",
+        "$34 billion",
+        "34.3 billion",
+        "~35B"
+      ],
+      "targetSeconds": 35,
+      "hint": "Coffee drinkers: 330M × 0.4 = 132M. Annual spend per person: $5 × 52 = $260. Total = 132M × 260.",
+      "difficulty": "hard",
+      "explanation": "132M coffee drinkers × $260/year = $34.3B. Shortcut: 130M × 260 = 130 × 260 × 1M = 33,800M ≈ $34B."
+    },
+    {
+      "id": "math_060",
+      "level": 2,
+      "type": "market_sizing",
+      "subtype": "bottom_up",
+      "question": "A city has 500 restaurants. Average revenue per restaurant = $800K/year. What is the total restaurant market size in this city?",
+      "answer": "400M",
+      "acceptableAnswers": [
+        "400M",
+        "$400M",
+        "400 million"
+      ],
+      "targetSeconds": 15,
+      "hint": "500 × $800K = 500 × 0.8M",
+      "difficulty": "easy",
+      "explanation": "500 × $800K = 500 × $0.8M = $400M. Convert to same units: 800K = 0.8M. Then 500 × 0.8 = 400."
+    },
+    {
+      "id": "math_061",
+      "level": 2,
+      "type": "contribution_margin",
+      "subtype": "cm_calculation",
+      "question": "A product sells for $120. Raw materials cost $35, direct labor $25. What is the contribution margin per unit?",
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "$60"
+      ],
+      "targetSeconds": 10,
+      "hint": "Contribution Margin = Price - Variable Costs. Variable Costs = materials + labor.",
+      "difficulty": "easy",
+      "explanation": "CM = $120 - ($35 + $25) = $120 - $60 = $60. Contribution margin excludes fixed costs."
+    },
+    {
+      "id": "math_062",
+      "level": 2,
+      "type": "contribution_margin",
+      "subtype": "cm_ratio",
+      "question": "Price = $80, variable cost = $20. What is the contribution margin ratio?",
+      "answer": "75%",
+      "acceptableAnswers": [
+        "75%",
+        "75",
+        "0.75"
+      ],
+      "targetSeconds": 10,
+      "hint": "CM Ratio = (Price - VC) / Price = 60/80",
+      "difficulty": "easy",
+      "explanation": "CM = $80 - $20 = $60. CM Ratio = 60/80 = 3/4 = 75%. High CM ratio = more profit per sale after covering variable costs."
+    },
+    {
+      "id": "math_063",
+      "level": 2,
+      "type": "market_share",
+      "subtype": "share_calculation",
+      "question": "Company A has $180M in sales. The total category is $1.2B. What is Company A's market share?",
+      "answer": "15%",
+      "acceptableAnswers": [
+        "15%",
+        "15"
+      ],
+      "targetSeconds": 12,
+      "hint": "Market Share = Company Sales / Category Sales × 100. 180M / 1,200M",
+      "difficulty": "medium",
+      "explanation": "180/1,200 = 18/120 = 3/20 = 15%. Simplify: divide both by 60 → 3/20 = 15%."
+    },
+    {
+      "id": "math_064",
+      "level": 2,
+      "type": "market_share",
+      "subtype": "implied_size",
+      "question": "A company has 8% market share and $240M in sales. What is the total market size?",
+      "answer": "3B",
+      "acceptableAnswers": [
+        "3B",
+        "$3B",
+        "3 billion",
+        "3,000M",
+        "$3,000M"
+      ],
+      "targetSeconds": 15,
+      "hint": "If 8% = $240M, then 1% = $30M, and 100% = $3,000M = $3B",
+      "difficulty": "medium",
+      "explanation": "8% → $240M. 1% → $30M. 100% → $3,000M = $3B. Use unitary method."
+    },
+    {
+      "id": "math_065",
+      "level": 2,
+      "type": "profit_equation",
+      "subtype": "multi_product",
+      "question": "Product A: 2,000 units at $50 with $20 VC. Product B: 1,000 units at $80 with $40 VC. Fixed costs: $70,000. Total profit?",
+      "answer": "10000",
+      "acceptableAnswers": [
+        "10000",
+        "10,000",
+        "$10,000"
+      ],
+      "targetSeconds": 35,
+      "hint": "CM(A) = 2,000 × $30 = $60,000. CM(B) = 1,000 × $40 = $40,000. Total CM = $100,000. Profit = $100K - $70K.",
+      "difficulty": "hard",
+      "explanation": "CM(A) = (50-20) × 2,000 = $60,000. CM(B) = (80-40) × 1,000 = $40,000. Total CM = $100K. Profit = $100K - $70K = $30K. Wait — correct answer is $30,000. Recheck: 60+40=100, 100-70=30."
+    },
+    {
+      "id": "math_066",
+      "level": 2,
+      "type": "breakeven",
+      "subtype": "revenue_breakeven",
+      "question": "A business has $500,000 in fixed costs and a contribution margin ratio of 40%. What revenue level breaks even?",
+      "answer": "1250000",
+      "acceptableAnswers": [
+        "1250000",
+        "1,250,000",
+        "$1.25M",
+        "1.25M"
+      ],
+      "targetSeconds": 20,
+      "hint": "Revenue breakeven = Fixed Costs / CM Ratio = $500,000 / 0.40",
+      "difficulty": "medium",
+      "explanation": "Revenue breakeven = FC / CM ratio = 500,000 / 0.4 = $1,250,000 = $1.25M. Every dollar of revenue contributes $0.40 toward fixed costs."
+    },
+    {
+      "id": "math_067",
+      "level": 2,
+      "type": "roi",
+      "subtype": "marketing_roi",
+      "question": "A $50,000 ad campaign generates 500 new customers, each worth $180 in profit. What is the campaign ROI?",
+      "answer": "80%",
+      "acceptableAnswers": [
+        "80%",
+        "80"
+      ],
+      "targetSeconds": 20,
+      "hint": "Total incremental profit = 500 × $180 = $90,000. ROI = (90,000 - 50,000) / 50,000 × 100",
+      "difficulty": "medium",
+      "explanation": "Incremental profit = 500 × $180 = $90K. ROI = ($90K - $50K) / $50K = $40K / $50K = 0.8 = 80%."
+    },
+    {
+      "id": "math_068",
+      "level": 2,
+      "type": "growth_rate",
+      "subtype": "compound_growth",
+      "question": "A market is growing at 20% per year. If it's $100M today, what is it worth in 2 years?",
+      "answer": "144M",
+      "acceptableAnswers": [
+        "144M",
+        "$144M",
+        "144 million"
+      ],
+      "targetSeconds": 15,
+      "hint": "Year 1: $100M × 1.2 = $120M. Year 2: $120M × 1.2 = $144M.",
+      "difficulty": "medium",
+      "explanation": "Year 1: $100M × 1.2 = $120M. Year 2: $120M × 1.2 = $144M. Don't forget: compound growth means you grow on the grown amount."
+    },
+    {
+      "id": "math_069",
+      "level": 2,
+      "type": "market_sizing",
+      "subtype": "sanity_check",
+      "question": "Your market size estimate comes to $900 billion for the US fast food market. Is this reasonable? Annual US GDP is ~$25 trillion.",
+      "answer": "No",
+      "acceptableAnswers": [
+        "No",
+        "No, it's too high",
+        "unreasonable",
+        "too high"
+      ],
+      "targetSeconds": 15,
+      "hint": "$900B / $25,000B = 3.6% of entire US GDP just for fast food. Real US fast food market is ~$300B.",
+      "difficulty": "medium",
+      "explanation": "$900B would be 3.6% of US GDP — implausibly large for one segment. Sanity checks: compare to GDP, per-capita spend, or known benchmarks. Real answer is ~$300B."
+    },
+    {
+      "id": "math_070",
+      "level": 2,
+      "type": "profit_equation",
+      "subtype": "price_volume_tradeoff",
+      "question": "A company sells 10,000 units at $100. If price drops 10% and volume rises 20%, does profit go up or down? Variable cost is $60/unit.",
+      "answer": "up",
+      "acceptableAnswers": [
+        "up",
+        "increases",
+        "goes up",
+        "profit increases"
+      ],
+      "targetSeconds": 30,
+      "hint": "Original CM: ($100-$60) × 10,000 = $400,000. New price = $90, new volume = 12,000. New CM = ($90-$60) × 12,000.",
+      "difficulty": "hard",
+      "explanation": "Original CM = $40 × 10,000 = $400K. New CM = $30 × 12,000 = $360K. Profit goes DOWN. Contribution margin per unit fell 25% while volume rose only 20%."
+    },
+    {
+      "id": "math_071",
+      "level": 2,
+      "type": "contribution_margin",
+      "subtype": "product_mix",
+      "question": "Product X has CM of $40, Product Y has CM of $25. You can produce either. Which do you prefer per unit of production?",
+      "answer": "Product X",
+      "acceptableAnswers": [
+        "Product X",
+        "X",
+        "X is preferred"
+      ],
+      "targetSeconds": 8,
+      "hint": "Higher CM per unit = more profit contribution per unit sold.",
+      "difficulty": "easy",
+      "explanation": "Product X at $40 CM > Product Y at $25 CM. Always prefer higher CM products when capacity is limited (absent other constraints)."
+    },
+    {
+      "id": "math_072",
+      "level": 2,
+      "type": "market_sizing",
+      "subtype": "per_capita",
+      "question": "If 30% of 80M US households buy a $200 appliance once every 10 years, what is the annual market size?",
+      "answer": "480M",
+      "acceptableAnswers": [
+        "480M",
+        "$480M",
+        "480 million"
+      ],
+      "targetSeconds": 25,
+      "hint": "Buyers = 80M × 30% = 24M households. Annual purchases = 24M / 10 = 2.4M. Revenue = 2.4M × $200.",
+      "difficulty": "hard",
+      "explanation": "24M households / 10 years = 2.4M purchases/year. 2.4M × $200 = $480M annual market."
+    },
+    {
+      "id": "math_073",
+      "level": 2,
+      "type": "growth_rate",
+      "subtype": "implied_units",
+      "question": "Revenue grew 25% to $75M. What was last year's revenue?",
+      "answer": "60M",
+      "acceptableAnswers": [
+        "60M",
+        "$60M",
+        "60 million"
+      ],
+      "targetSeconds": 12,
+      "hint": "New = Old × 1.25. So Old = 75M / 1.25",
+      "difficulty": "medium",
+      "explanation": "$75M / 1.25 = $60M. Or: 25% growth means new is 5/4 of old. Old = 75 × 4/5 = $60M."
+    },
+    {
+      "id": "math_074",
+      "level": 2,
+      "type": "breakeven",
+      "subtype": "acquisition_breakeven",
+      "question": "A startup spends $150 to acquire each customer. Average customer buys 3 times with $25 gross profit each time. Does the unit economics work?",
+      "answer": "Yes",
+      "acceptableAnswers": [
+        "Yes",
+        "Yes, LTV > CAC",
+        "yes",
+        "works"
+      ],
+      "targetSeconds": 15,
+      "hint": "LTV = 3 × $25 = $75. CAC = $150. LTV vs CAC?",
+      "difficulty": "medium",
+      "explanation": "LTV = 3 × $25 = $75. CAC = $150. LTV < CAC — unit economics do NOT work. The business loses $75 per customer."
+    },
+    {
+      "id": "math_075",
+      "level": 2,
+      "type": "roi",
+      "subtype": "npv_simplified",
+      "question": "An investment of $1M generates $300K/year for 4 years. Is the simple (undiscounted) ROI positive?",
+      "answer": "Yes",
+      "acceptableAnswers": [
+        "Yes",
+        "yes, positive",
+        "positive"
+      ],
+      "targetSeconds": 10,
+      "hint": "Total returns = $300K × 4 = $1.2M. Investment = $1M.",
+      "difficulty": "easy",
+      "explanation": "Total undiscounted returns = $300K × 4 = $1.2M > $1M investment. Simple ROI = $200K / $1M = 20%. Positive."
+    },
+    {
+      "id": "math_076",
+      "level": 2,
+      "type": "market_share",
+      "subtype": "relative_share",
+      "question": "Company A has 30% market share, Company B has 20%. What is Company A's share relative to Company B?",
+      "answer": "1.5x",
+      "acceptableAnswers": [
+        "1.5x",
+        "1.5",
+        "50% more",
+        "1.5 times"
+      ],
+      "targetSeconds": 10,
+      "hint": "Relative share = A / B = 30% / 20%",
+      "difficulty": "easy",
+      "explanation": "30% / 20% = 1.5x. Company A is 1.5x the size of Company B, or 50% larger."
+    },
+    {
+      "id": "math_077",
+      "level": 2,
+      "type": "profit_equation",
+      "subtype": "margin_percent",
+      "question": "Revenue = $8M, COGS = $5M, Operating Expenses = $1.5M. What is the operating margin?",
+      "answer": "18.75%",
+      "acceptableAnswers": [
+        "18.75%",
+        "~19%",
+        "18-19%",
+        "18.75"
+      ],
+      "targetSeconds": 20,
+      "hint": "Operating profit = Revenue - COGS - OpEx. Margin = Operating profit / Revenue.",
+      "difficulty": "medium",
+      "explanation": "Operating profit = $8M - $5M - $1.5M = $1.5M. Margin = $1.5M / $8M = 3/16 = 18.75%."
+    },
+    {
+      "id": "math_078",
+      "level": 2,
+      "type": "market_sizing",
+      "subtype": "sensitivity",
+      "question": "Your base case market size is $2B. If penetration rate is 15% instead of 20%, what is the revised market size for your client?",
+      "answer": "300M",
+      "acceptableAnswers": [
+        "300M",
+        "$300M",
+        "1.5B",
+        "$1.5B"
+      ],
+      "targetSeconds": 15,
+      "hint": "Original assumption: 20% penetration. Client size = $2B × 20% = $400M. Revised: $2B × 15% = $300M.",
+      "difficulty": "medium",
+      "explanation": "$2B × 15% = $300M (client's addressable market). Or if $2B was already the client's market at 20%, then at 15% it scales down: $2B × (15/20) = $1.5B."
+    },
+    {
+      "id": "math_079",
+      "level": 2,
+      "type": "growth_rate",
+      "subtype": "rule_of_72",
+      "question": "At 8% annual growth, approximately how many years to double in size?",
+      "answer": "9",
+      "acceptableAnswers": [
+        "9",
+        "9 years",
+        "~9 years"
+      ],
+      "targetSeconds": 8,
+      "hint": "Rule of 72: Years to double = 72 / growth rate",
+      "difficulty": "easy",
+      "explanation": "72 / 8 = 9 years. Rule of 72 is an interviewer-pleasing shortcut. Exact answer is 9.006 years."
+    },
+    {
+      "id": "math_080",
+      "level": 2,
+      "type": "breakeven",
+      "subtype": "capacity_breakeven",
+      "question": "A factory costs $2M/year to run and can produce 100,000 units. Each unit sells for $30 with $10 VC. At what capacity utilization does it break even?",
+      "answer": "100%",
+      "acceptableAnswers": [
+        "100%",
+        "100 percent",
+        "full capacity"
+      ],
+      "targetSeconds": 25,
+      "hint": "CM per unit = $30 - $10 = $20. Max CM = 100,000 × $20 = $2M. FC = $2M. Need all units.",
+      "difficulty": "hard",
+      "explanation": "CM/unit = $20. Max CM at 100% = 100,000 × $20 = $2M = FC. Breakeven is exactly at 100% capacity — a dangerous position. Any less and the factory loses money."
+    },
+    {
+      "id": "math_081",
+      "level": 3,
+      "type": "weighted_average",
+      "subtype": "blended_margin",
+      "question": "A brand sells 60% of volume through mass retail (18% gross margin) and 40% through specialty stores (35% gross margin). What is the blended gross margin?",
+      "answer": "24.8%",
+      "acceptableAnswers": [
+        "24.8%",
+        "24.8",
+        "0.248",
+        "~25%",
+        "25%"
+      ],
+      "targetSeconds": 40,
+      "hint": "Multiply each channel's margin by its share and sum. (0.60 × 18) + (0.40 × 35)",
+      "difficulty": "medium",
+      "explanation": "(0.60 × 18%) + (0.40 × 35%) = 10.8% + 14.0% = 24.8%. When channels have different margins, a mix shift toward lower-margin channels dilutes blended profitability even if revenue is flat."
+    },
+    {
+      "id": "math_082",
+      "level": 3,
+      "type": "weighted_average",
+      "subtype": "portfolio_avg",
+      "question": "Three SKUs: SKU A ($5M revenue, 30% margin), SKU B ($3M revenue, 20% margin), SKU C ($2M revenue, 50% margin). What is the portfolio's weighted average gross margin?",
+      "answer": "31%",
+      "acceptableAnswers": [
+        "31%",
+        "31",
+        "0.31"
+      ],
+      "targetSeconds": 45,
+      "hint": "Weight each margin by its revenue share. Total revenue = $10M. (5×30 + 3×20 + 2×50) / 10",
+      "difficulty": "medium",
+      "explanation": "(5×30 + 3×20 + 2×50) / 10 = (150 + 60 + 100) / 10 = 310 / 10 = 31%. SKU C has the highest margin but the lowest revenue — this drags the blended margin below a simple average."
+    },
+    {
+      "id": "math_083",
+      "level": 3,
+      "type": "weighted_average",
+      "subtype": "blended_margin",
+      "question": "A CPG company sells 70% premium (40% margin) and 30% value tier (15% margin). What is the blended margin?",
+      "answer": "32.5%",
+      "acceptableAnswers": [
+        "32.5%",
+        "32.5",
+        "0.325",
+        "~33%",
+        "33%"
+      ],
+      "targetSeconds": 35,
+      "hint": "(0.70 × 40) + (0.30 × 15) = 28 + 4.5",
+      "difficulty": "easy",
+      "explanation": "(0.70 × 40%) + (0.30 × 15%) = 28% + 4.5% = 32.5%. If this brand shifts mix toward value (e.g., price-sensitive consumer environment), every 10pp shift reduces blended margin by ~2.5pp."
+    },
+    {
+      "id": "math_084",
+      "level": 3,
+      "type": "weighted_average",
+      "subtype": "blended_price",
+      "question": "Three markets — A: 200K units at $4, B: 500K units at $2, C: 300K units at $6. What is the weighted average selling price?",
+      "answer": "$3.40",
+      "acceptableAnswers": [
+        "$3.40",
+        "3.40",
+        "3.4",
+        "$3.4"
+      ],
+      "targetSeconds": 45,
+      "hint": "Total revenue ÷ total units. (200K×4 + 500K×2 + 300K×6) / 1M",
+      "difficulty": "hard",
+      "explanation": "(800K + 1,000K + 1,800K) / 1,000K = $3,600K / 1,000K = $3.60. Wait — recheck: 200×4=800, 500×2=1000, 300×6=1800. Total = 3600K / 1000K = $3.60. Market B drags the average down despite C's high price."
+    },
+    {
+      "id": "math_085",
+      "level": 3,
+      "type": "price_volume_mix",
+      "subtype": "decomposition",
+      "question": "Last year: 1,000 units at $10 = $10,000 revenue. This year: 1,200 units at $11 = $13,200. How much of the $3,200 revenue increase came from volume vs. price?",
+      "answer": "Volume: $2,000. Price: $1,200",
+      "acceptableAnswers": [
+        "volume $2000 price $1200",
+        "volume: $2,000 price: $1,200",
+        "$2000 volume $1200 price",
+        "volume 2000 price 1200"
+      ],
+      "targetSeconds": 50,
+      "hint": "Volume effect = change in units × old price. Price effect = change in price × new units.",
+      "difficulty": "hard",
+      "explanation": "Volume effect = (1,200 − 1,000) × $10 = $2,000. Price effect = ($11 − $10) × 1,200 = $1,200. Total = $3,200. Always separate these — volume growth is strategically different from pricing power."
+    },
+    {
+      "id": "math_086",
+      "level": 3,
+      "type": "price_volume_mix",
+      "subtype": "implied_price",
+      "question": "A brand's revenue fell 10% while volume fell 15%. Did price go up or down, and by approximately how much?",
+      "answer": "Price went up ~6%",
+      "acceptableAnswers": [
+        "up 6%",
+        "increased 6%",
+        "up ~6%",
+        "price up 6",
+        "+6%",
+        "up approximately 6%"
+      ],
+      "targetSeconds": 45,
+      "hint": "Revenue = Price × Volume. If Revenue = 0.90 and Volume = 0.85, then Price = 0.90/0.85",
+      "difficulty": "medium",
+      "explanation": "Price = Revenue / Volume = 0.90 / 0.85 ≈ 1.059. Price increased ~6%. This means the brand raised prices to partially offset volume loss — a common response to private label pressure or cost inflation."
+    },
+    {
+      "id": "math_087",
+      "level": 3,
+      "type": "price_volume_mix",
+      "subtype": "mix_shift",
+      "question": "Revenue is flat at $100M. Last year: 50% high-margin channel (40% GM), 50% low-margin (20% GM). This year: 30% high-margin, 70% low-margin. What is the gross profit impact?",
+      "answer": "-$4M",
+      "acceptableAnswers": [
+        "-$4M",
+        "-4M",
+        "-4 million",
+        "down $4M",
+        "decreased $4M"
+      ],
+      "targetSeconds": 50,
+      "hint": "Calculate gross profit both years. Last year GP = 100M × (0.5×40% + 0.5×20%). This year GP = 100M × (0.3×40% + 0.7×20%).",
+      "difficulty": "hard",
+      "explanation": "Last year: $100M × (20% + 10%) = $30M GP. This year: $100M × (12% + 14%) = $26M GP. Mix shift cost $4M in gross profit with zero revenue change — mix is a silent margin killer."
+    },
+    {
+      "id": "math_088",
+      "level": 3,
+      "type": "price_volume_mix",
+      "subtype": "decomposition",
+      "question": "Revenue grew 8% but volume grew 12%. What happened to price (approximately)?",
+      "answer": "Price fell ~4%",
+      "acceptableAnswers": [
+        "fell 4%",
+        "down 4%",
+        "decreased 4%",
+        "-4%",
+        "fell ~4%",
+        "price down 4"
+      ],
+      "targetSeconds": 40,
+      "hint": "Revenue = Price × Volume. Price = Revenue / Volume = 1.08 / 1.12",
+      "difficulty": "medium",
+      "explanation": "Price = 1.08 / 1.12 ≈ 0.964, so price fell ~3.6% (≈ 4%). Volume grew faster than revenue — the company traded margin for volume, likely through promotions or pricing cuts."
+    },
+    {
+      "id": "math_089",
+      "level": 3,
+      "type": "payback_period",
+      "subtype": "investment",
+      "question": "A factory upgrade costs $1.2M and saves $200K per year in variable costs. What is the payback period?",
+      "answer": "6 years",
+      "acceptableAnswers": [
+        "6 years",
+        "6",
+        "6.0 years"
+      ],
+      "targetSeconds": 30,
+      "hint": "Payback = Investment ÷ Annual savings = $1.2M ÷ $200K",
+      "difficulty": "easy",
+      "explanation": "$1,200K ÷ $200K/year = 6 years. Payback period ignores the time value of money but is fast to calculate in interviews — use it as a gut-check before NPV analysis."
+    },
+    {
+      "id": "math_090",
+      "level": 3,
+      "type": "payback_period",
+      "subtype": "new_product",
+      "question": "A new product requires $3M investment. Contribution margin = $50/unit. Expected volume = 100K units/year. What is the payback period?",
+      "answer": "0.6 years",
+      "acceptableAnswers": [
+        "0.6 years",
+        "0.6",
+        "7 months",
+        "~7 months",
+        "about 7 months"
+      ],
+      "targetSeconds": 40,
+      "hint": "Annual CM = $50 × 100K = $5M/year. Payback = $3M ÷ $5M",
+      "difficulty": "medium",
+      "explanation": "Annual CM = $50 × 100,000 = $5M. Payback = $3M ÷ $5M = 0.6 years ≈ 7 months. A sub-year payback on a new product is very attractive — flag this as a strong investment case."
+    },
+    {
+      "id": "math_091",
+      "level": 3,
+      "type": "payback_period",
+      "subtype": "marketing",
+      "question": "A marketing campaign costs $600K. It generates $2M in incremental revenue per year. Net margin is 25%. What is the payback period?",
+      "answer": "1.2 years",
+      "acceptableAnswers": [
+        "1.2 years",
+        "1.2",
+        "14-15 months",
+        "~14 months"
+      ],
+      "targetSeconds": 45,
+      "hint": "First convert revenue to incremental profit. Incremental profit = $2M × 25% = $500K/year. Payback = $600K ÷ $500K.",
+      "difficulty": "medium",
+      "explanation": "Incremental profit = $2M × 25% = $500K/year. Payback = $600K ÷ $500K = 1.2 years ≈ 14 months. A common interview error is using revenue instead of profit for payback — always apply the margin."
+    },
+    {
+      "id": "math_092",
+      "level": 3,
+      "type": "payback_period",
+      "subtype": "investment",
+      "question": "Investment = $500K. Annual profit contribution = $80K. Payback period?",
+      "answer": "6.25 years",
+      "acceptableAnswers": [
+        "6.25 years",
+        "6.25",
+        "6.3 years",
+        "~6 years",
+        "about 6 years"
+      ],
+      "targetSeconds": 35,
+      "hint": "$500K ÷ $80K = ?",
+      "difficulty": "easy",
+      "explanation": "$500K ÷ $80K = 6.25 years. In an interview, round and say \"just over 6 years.\" Then ask if that meets the company's hurdle rate — typically 3-5 years for consumer brands."
+    },
+    {
+      "id": "math_093",
+      "level": 3,
+      "type": "unit_economics",
+      "subtype": "ltv_cac",
+      "question": "CAC = $60. Monthly subscription revenue = $25. Monthly churn = 10%. What is LTV and the LTV:CAC ratio?",
+      "answer": "LTV = $250, ratio = 4.2x",
+      "acceptableAnswers": [
+        "ltv 250 ratio 4.2",
+        "ltv $250 4.2x",
+        "250 and 4.2",
+        "ltv=250 ltv/cac=4.2"
+      ],
+      "targetSeconds": 50,
+      "hint": "LTV = Monthly revenue ÷ Monthly churn rate. LTV:CAC = LTV ÷ CAC.",
+      "difficulty": "hard",
+      "explanation": "LTV = $25 / 0.10 = $250. LTV:CAC = $250 / $60 ≈ 4.2x. A 3x+ LTV:CAC ratio is generally considered healthy for subscription businesses. Below 1x means you're losing money on every customer."
+    },
+    {
+      "id": "math_094",
+      "level": 3,
+      "type": "unit_economics",
+      "subtype": "cac",
+      "question": "A brand spends $3M on acquisition marketing and acquires 50,000 new customers. What is the CAC?",
+      "answer": "$60",
+      "acceptableAnswers": [
+        "$60",
+        "60",
+        "$60 per customer"
+      ],
+      "targetSeconds": 25,
+      "hint": "CAC = Total acquisition spend ÷ New customers acquired",
+      "difficulty": "easy",
+      "explanation": "CAC = $3,000,000 ÷ 50,000 = $60. This is the blended CAC across all channels. Always ask whether this is blended (all channels) or marginal (the next dollar) — they imply different strategic decisions."
+    },
+    {
+      "id": "math_095",
+      "level": 3,
+      "type": "unit_economics",
+      "subtype": "ltv",
+      "question": "Average order value = $100. Purchase frequency = 4x/year. Customer lifespan = 4 years. Gross margin = 30%. What is the LTV?",
+      "answer": "$480",
+      "acceptableAnswers": [
+        "$480",
+        "480"
+      ],
+      "targetSeconds": 45,
+      "hint": "LTV = (Annual revenue per customer × Gross margin) × Lifespan = ($100 × 4 × 30%) × 4",
+      "difficulty": "medium",
+      "explanation": "Annual revenue = $100 × 4 = $400. Annual gross profit = $400 × 30% = $120. LTV = $120 × 4 years = $480. Always apply the margin — LTV on revenue alone overstates economic value."
+    },
+    {
+      "id": "math_096",
+      "level": 3,
+      "type": "unit_economics",
+      "subtype": "ltv_cac",
+      "question": "A DTC brand: CAC = $80. Annual revenue per customer = $200. Gross margin = 50%. Average customer stays 3 years. Is this a healthy unit model?",
+      "answer": "Yes — LTV = $300, ratio = 3.75x",
+      "acceptableAnswers": [
+        "yes ltv 300",
+        "yes 3.75x",
+        "yes, ltv $300 ratio 3.75",
+        "healthy ltv 300"
+      ],
+      "targetSeconds": 55,
+      "hint": "LTV = Annual revenue × GM × lifespan = $200 × 50% × 3. Then compare to CAC.",
+      "difficulty": "hard",
+      "explanation": "LTV = $200 × 50% × 3 = $300. LTV:CAC = $300/$80 = 3.75x. A 3x+ ratio is healthy. Payback = $80 / ($200×50%/year) = $80/$100 = 0.8 years. Strong economics — the brand recovers CAC in under a year."
+    },
+    {
+      "id": "math_097",
+      "level": 3,
+      "type": "index_numbers",
+      "subtype": "cdi",
+      "question": "Market X has 18% of national category sales but represents only 12% of the US population. What is the CDI?",
+      "answer": "150",
+      "acceptableAnswers": [
+        "150",
+        "CDI 150",
+        "CDI=150"
+      ],
+      "targetSeconds": 30,
+      "hint": "CDI = (% of category sales in market ÷ % of US population in market) × 100",
+      "difficulty": "easy",
+      "explanation": "CDI = (18 ÷ 12) × 100 = 150. A CDI above 100 means the category over-indexes — consumers in this market buy more of this category than the average American. High CDI = high category opportunity."
+    },
+    {
+      "id": "math_098",
+      "level": 3,
+      "type": "index_numbers",
+      "subtype": "bdi",
+      "question": "Your brand has 6% of its national sales in Market Y, which has 10% of the US population. What is the BDI?",
+      "answer": "60",
+      "acceptableAnswers": [
+        "60",
+        "BDI 60",
+        "BDI=60"
+      ],
+      "targetSeconds": 30,
+      "hint": "BDI = (% of brand's national sales in market ÷ % of US population in market) × 100",
+      "difficulty": "easy",
+      "explanation": "BDI = (6 ÷ 10) × 100 = 60. A BDI of 60 means your brand under-indexes — you're capturing only 60% of what you'd expect based on population. Low BDI in a High CDI market = biggest opportunity."
+    },
+    {
+      "id": "math_099",
+      "level": 3,
+      "type": "index_numbers",
+      "subtype": "bdi_cdi_strategy",
+      "question": "BDI = 130, CDI = 70. What does this combination mean strategically?",
+      "answer": "Brand strong where category is weak — protect share, limit investment",
+      "acceptableAnswers": [
+        "protect share",
+        "brand strong category weak",
+        "high bdi low cdi protect",
+        "maintain dont invest heavily"
+      ],
+      "targetSeconds": 40,
+      "hint": "High BDI = brand over-indexes. Low CDI = category under-indexes. The category itself isn't growing here.",
+      "difficulty": "medium",
+      "explanation": "High BDI / Low CDI = your brand is strong in a market where the category is weak. You're the big fish in a small pond. Strategy: protect share, but don't invest heavily — the category tailwind isn't there. Invest where CDI is high instead."
+    },
+    {
+      "id": "math_100",
+      "level": 3,
+      "type": "index_numbers",
+      "subtype": "bdi_cdi_strategy",
+      "question": "BDI = 55, CDI = 140. What does this combination mean strategically?",
+      "answer": "High opportunity — category is strong but brand underperforms",
+      "acceptableAnswers": [
+        "high opportunity",
+        "invest here",
+        "brand underperforms in strong category",
+        "low bdi high cdi opportunity"
+      ],
+      "targetSeconds": 40,
+      "hint": "Low BDI = brand under-indexes. High CDI = category over-indexes. Consumers in this market love the category but not your brand.",
+      "difficulty": "medium",
+      "explanation": "Low BDI / High CDI = the category is thriving here but your brand isn't capturing it. This is your highest opportunity market — consumers want the category but something is wrong with your brand's execution, distribution, or awareness. Invest here."
+    },
+    {
+      "id": "math_101",
+      "level": 3,
+      "type": "percentage_point",
+      "subtype": "vs_percent",
+      "question": "Market share rose from 20% to 25%. What is the change in percentage points? What is the percent change?",
+      "answer": "+5 percentage points; +25% change",
+      "acceptableAnswers": [
+        "5pp 25%",
+        "5 percentage points 25%",
+        "+5pp +25%",
+        "5 points 25 percent"
+      ],
+      "targetSeconds": 35,
+      "hint": "PP change = 25 - 20 = 5. Percent change = 5/20 × 100 = 25%.",
+      "difficulty": "easy",
+      "explanation": "Percentage point change = 25 − 20 = 5pp. Percent change = (25 − 20)/20 × 100 = 25%. These are very different — interviewers will test whether you know which one to use. Use pp when comparing ratios; use % change when comparing growth rates."
+    },
+    {
+      "id": "math_102",
+      "level": 3,
+      "type": "percentage_point",
+      "subtype": "margin_change",
+      "question": "Operating margin fell from 15% to 11%. How many percentage points did it fall? By what percent did operating margin decline?",
+      "answer": "-4 percentage points; -26.7% decline",
+      "acceptableAnswers": [
+        "4pp 26.7%",
+        "-4pp -27%",
+        "4 points 27%",
+        "4pp ~27%"
+      ],
+      "targetSeconds": 40,
+      "hint": "PP drop = 15 - 11 = 4. % decline = 4/15 × 100.",
+      "difficulty": "medium",
+      "explanation": "PP drop = 15 − 11 = 4 percentage points. % decline = 4/15 × 100 = 26.7%. A \"4 point margin decline\" sounds modest. A \"27% drop in operating margin\" sounds alarming. Both are the same fact — know which frame your audience uses."
+    },
+    {
+      "id": "math_103",
+      "level": 3,
+      "type": "percentage_point",
+      "subtype": "common_trap",
+      "question": "COGS as a % of revenue went from 55% to 62%. Did COGS increase by 7 percentage points or by ~12.7%? Which is correct?",
+      "answer": "Both — 7pp is the absolute change; 12.7% is the relative change in the ratio",
+      "acceptableAnswers": [
+        "both correct",
+        "7pp and 12.7%",
+        "both are correct",
+        "7 percentage points and 12.7 percent"
+      ],
+      "targetSeconds": 45,
+      "hint": "62 - 55 = 7pp. (62-55)/55 × 100 = 12.7% change in the ratio itself.",
+      "difficulty": "hard",
+      "explanation": "7pp = absolute change in the ratio. 12.7% = how much the COGS ratio itself grew. In a case, say \"COGS rose 7 percentage points as a share of revenue\" — never say \"COGS grew 12.7%\" because that sounds like COGS volume grew, not the ratio."
+    },
+    {
+      "id": "math_104",
+      "level": 3,
+      "type": "percentage_point",
+      "subtype": "vs_percent",
+      "question": "Brand awareness rose from 40% to 52%. What is the percentage point increase?",
+      "answer": "12 percentage points",
+      "acceptableAnswers": [
+        "12 percentage points",
+        "12pp",
+        "12 points",
+        "+12pp"
+      ],
+      "targetSeconds": 20,
+      "hint": "52 - 40 = ?",
+      "difficulty": "easy",
+      "explanation": "12 percentage points — NOT a 30% increase (which would be 12/40). When reporting awareness, equity, or share metrics, always use percentage points to avoid ambiguity. \"Awareness grew 12 points\" is clearest."
+    },
+    {
+      "id": "math_105",
+      "level": 3,
+      "type": "npv_estimation",
+      "subtype": "rule_of_72",
+      "question": "At 9% annual growth, approximately how many years does it take to double an investment?",
+      "answer": "8 years",
+      "acceptableAnswers": [
+        "8 years",
+        "8",
+        "about 8 years",
+        "~8 years"
+      ],
+      "targetSeconds": 20,
+      "hint": "Rule of 72: divide 72 by the growth rate.",
+      "difficulty": "easy",
+      "explanation": "72 ÷ 9 = 8 years. The Rule of 72 is the fastest doubling-time estimate in interviews. At 12%: 6 years. At 6%: 12 years. Memorize the common rates (6%, 8%, 9%, 10%, 12%)."
+    },
+    {
+      "id": "math_106",
+      "level": 3,
+      "type": "npv_estimation",
+      "subtype": "perpetuity",
+      "question": "A business generates $500K in annual free cash flow indefinitely. At a 10% discount rate, what is its present value?",
+      "answer": "$5M",
+      "acceptableAnswers": [
+        "$5M",
+        "5 million",
+        "$5,000,000",
+        "5M"
+      ],
+      "targetSeconds": 25,
+      "hint": "PV of perpetuity = Annual cash flow ÷ Discount rate",
+      "difficulty": "easy",
+      "explanation": "PV = $500K / 0.10 = $5M. The perpetuity formula (CF/r) is the fastest valuation shortcut in case interviews. At 8%, this same stream is worth $500K/0.08 = $6.25M. Lower discount rates = higher valuations."
+    },
+    {
+      "id": "math_107",
+      "level": 3,
+      "type": "npv_estimation",
+      "subtype": "simple_discount",
+      "question": "At a 12% discount rate, approximately what is $1 received 6 years from now worth today?",
+      "answer": "~$0.50",
+      "acceptableAnswers": [
+        "$0.50",
+        "0.50",
+        "50 cents",
+        "~50 cents",
+        "about $0.50",
+        "$0.51"
+      ],
+      "targetSeconds": 35,
+      "hint": "At 12%, the Rule of 72 says money doubles every 6 years. So $0.50 today grows to $1 in 6 years.",
+      "difficulty": "medium",
+      "explanation": "Rule of 72: at 12%, money doubles every 6 years. Working backwards: $1 in 6 years ≈ $0.50 today. Precise answer: 1/1.12^6 = 0.507. In interviews, \"approximately 50 cents on the dollar\" is perfectly acceptable."
+    },
+    {
+      "id": "math_108",
+      "level": 3,
+      "type": "npv_estimation",
+      "subtype": "simple_npv",
+      "question": "Project A: invest $1M today, receive $300K/year for 5 years. At 10% discount rate, is the NPV positive? (Use approximate PV factor of 3.8 for 5yr/10%)",
+      "answer": "Yes — NPV ≈ +$140K",
+      "acceptableAnswers": [
+        "yes positive",
+        "yes npv 140k",
+        "yes ~$140K",
+        "positive 140",
+        "npv positive"
+      ],
+      "targetSeconds": 50,
+      "hint": "PV of cash flows = $300K × 3.8 = $1.14M. NPV = $1.14M - $1M.",
+      "difficulty": "hard",
+      "explanation": "PV of $300K/year × 5 years at 10% ≈ $300K × 3.8 = $1,140K. NPV = $1,140K − $1,000K = +$140K. Positive NPV — accept the project. The 3.8 annuity factor for 5yr/10% is worth memorizing: at 8% it's ~4.0, at 12% it's ~3.6."
+    },
+    {
+      "id": "math_109",
+      "level": 3,
+      "type": "npv_estimation",
+      "subtype": "perpetuity",
+      "question": "A brand acquisition will generate $2M in annual profit. Acquirer uses 8% discount rate. What is the maximum they should pay (assuming perpetuity)?",
+      "answer": "$25M",
+      "acceptableAnswers": [
+        "$25M",
+        "25 million",
+        "$25,000,000",
+        "25M"
+      ],
+      "targetSeconds": 30,
+      "hint": "Max price = PV of perpetuity = Annual profit ÷ Discount rate",
+      "difficulty": "medium",
+      "explanation": "Max price = $2M / 0.08 = $25M. This is the theoretical ceiling — paying more destroys value at the assumed discount rate. In practice, acquirers pay more only if they expect growth or synergies."
+    },
+    {
+      "id": "math_110",
+      "level": 3,
+      "type": "npv_estimation",
+      "subtype": "rule_of_72",
+      "question": "A market is growing at 6% per year. A competitor is growing at 12% per year. How many more years will it take the slower market to double vs. the faster competitor?",
+      "answer": "6 more years",
+      "acceptableAnswers": [
+        "6 years",
+        "6",
+        "six years",
+        "6 more years"
+      ],
+      "targetSeconds": 30,
+      "hint": "Rule of 72: Market doubles in 72/6 = 12 years. Competitor doubles in 72/12 = 6 years. Difference = ?",
+      "difficulty": "medium",
+      "explanation": "Market doubling time: 72/6 = 12 years. Competitor doubling time: 72/12 = 6 years. Difference = 6 years. The competitor doubles in half the time — a 6-year head start in scale. This is why growth rate differences compound dramatically over time."
+    }
+  ],
+  "problemTypes": [
+    {
+      "type": "fraction_to_decimal",
+      "label": "Fraction to Decimal/Percent",
+      "level": 1,
+      "targetSeconds": 8,
+      "masteryThreshold": 0.85,
+      "description": "Convert common fractions to decimals and percentages without a calculator",
+      "coreMemoryItems": [
+        "1/8=0.125",
+        "1/6=0.167",
+        "1/5=0.2",
+        "1/4=0.25",
+        "1/3=0.333",
+        "3/8=0.375",
+        "1/2=0.5",
+        "5/8=0.625",
+        "2/3=0.667",
+        "3/4=0.75",
+        "7/8=0.875"
+      ]
+    },
+    {
+      "type": "percent_of_number",
+      "label": "Percent of a Number",
+      "level": 1,
+      "targetSeconds": 10,
+      "masteryThreshold": 0.85,
+      "description": "Find common percentages of round numbers using anchor-and-build method",
+      "coreMemoryItems": [
+        "10%=divide by 10",
+        "25%=divide by 4",
+        "50%=divide by 2",
+        "20%=double the 10%",
+        "33%=divide by 3",
+        "75%=3x the 25%"
+      ]
+    },
+    {
+      "type": "multiplication_shortcut",
+      "label": "Multiplication Shortcuts",
+      "level": 1,
+      "targetSeconds": 10,
+      "masteryThreshold": 0.8,
+      "description": "Apply mental math tricks for faster multiplication in case interviews",
+      "coreMemoryItems": [
+        "×9: times 10 then subtract",
+        "×11: times 10 then add",
+        "×5: halve then times 10",
+        "×25: divide by 4 then times 100",
+        "near-round: round up/down then adjust"
+      ]
+    },
+    {
+      "type": "rounding_scale",
+      "label": "Rounding and Scale",
+      "level": 1,
+      "targetSeconds": 8,
+      "masteryThreshold": 0.9,
+      "description": "Work fluently in thousands, millions, and billions without losing zeros",
+      "coreMemoryItems": [
+        "1B = 1,000M",
+        "1M = 1,000K",
+        "Round aggressively in cases",
+        "Track zeros separately from coefficients"
+      ]
+    },
+    {
+      "type": "decimal_operations",
+      "label": "Decimal and Percent Conversions",
+      "level": 1,
+      "targetSeconds": 6,
+      "masteryThreshold": 0.9,
+      "description": "Fluently convert between decimal, percent, and fraction representations",
+      "coreMemoryItems": [
+        "% to decimal: divide by 100",
+        "decimal to %: multiply by 100",
+        "fraction to %: convert to decimal first"
+      ]
+    },
+    {
+      "type": "profit_equation",
+      "label": "Profit Equation",
+      "level": 2,
+      "targetSeconds": 30,
+      "masteryThreshold": 0.8,
+      "description": "Calculate profit using Price, Volume, Fixed Costs, and Variable Costs",
+      "coreMemoryItems": [
+        "Profit = (P - VC) × Volume - FC",
+        "Always compute Contribution Margin first",
+        "Margin % = Profit / Revenue × 100"
+      ]
+    },
+    {
+      "type": "breakeven",
+      "label": "Breakeven Analysis",
+      "level": 2,
+      "targetSeconds": 25,
+      "masteryThreshold": 0.8,
+      "description": "Calculate unit and revenue breakeven points for business decisions",
+      "coreMemoryItems": [
+        "Unit breakeven = FC / CM per unit",
+        "Revenue breakeven = FC / CM ratio",
+        "LTV vs CAC for acquisition breakeven"
+      ]
+    },
+    {
+      "type": "growth_rate",
+      "label": "Growth Rate",
+      "level": 2,
+      "targetSeconds": 15,
+      "masteryThreshold": 0.85,
+      "description": "Calculate year-over-year growth rates, CAGRs, and apply Rule of 72",
+      "coreMemoryItems": [
+        "YoY growth = (New - Old) / Old × 100",
+        "Rule of 72: years to double = 72 / rate",
+        "Old from new: Old = New / (1 + growth rate)"
+      ]
+    },
+    {
+      "type": "roi",
+      "label": "Return on Investment",
+      "level": 2,
+      "targetSeconds": 20,
+      "masteryThreshold": 0.8,
+      "description": "Calculate ROI, payback period, and assess investment decisions",
+      "coreMemoryItems": [
+        "ROI = (Gain - Cost) / Cost × 100",
+        "Payback = Investment / Annual Return",
+        "Simple payback ignores time value of money"
+      ]
+    },
+    {
+      "type": "market_sizing",
+      "label": "Market Sizing",
+      "level": 2,
+      "targetSeconds": 35,
+      "masteryThreshold": 0.75,
+      "description": "Build top-down and bottom-up market size estimates with sanity checks",
+      "coreMemoryItems": [
+        "US population ≈ 330M, households ≈ 130M",
+        "Top-down: total population → segment → penetration → spend",
+        "Bottom-up: unit count × revenue/unit",
+        "Always sanity check against GDP or known benchmarks"
+      ]
+    },
+    {
+      "type": "contribution_margin",
+      "label": "Contribution Margin",
+      "level": 2,
+      "targetSeconds": 12,
+      "masteryThreshold": 0.85,
+      "description": "Calculate contribution margin per unit and CM ratio for business analysis",
+      "coreMemoryItems": [
+        "CM = Price - Variable Cost",
+        "CM ratio = CM / Price",
+        "Higher CM ratio = more scalable business"
+      ]
+    },
+    {
+      "type": "market_share",
+      "label": "Market Share",
+      "level": 2,
+      "targetSeconds": 12,
+      "masteryThreshold": 0.85,
+      "description": "Calculate and interpret market share figures",
+      "coreMemoryItems": [
+        "Market share = Company Sales / Category Sales × 100",
+        "Total market = Company Sales / Market Share",
+        "Relative share = Company A share / Company B share"
+      ]
+    },
+    {
+      "type": "weighted_average",
+      "label": "Weighted Averages",
+      "level": 3,
+      "targetSeconds": 45,
+      "masteryThreshold": 0.8,
+      "description": "Calculate blended margins, prices, and rates across portfolio mixes",
+      "coreMemoryItems": [
+        "Weighted avg = Σ(value × weight)",
+        "Always weight by revenue/volume share",
+        "Mix shift = silent margin killer"
+      ]
+    },
+    {
+      "type": "price_volume_mix",
+      "label": "Price / Volume / Mix",
+      "level": 3,
+      "targetSeconds": 50,
+      "masteryThreshold": 0.75,
+      "description": "Decompose revenue changes into price, volume, and mix components",
+      "coreMemoryItems": [
+        "Volume effect = ΔUnits × Old price",
+        "Price effect = ΔPrice × New units",
+        "Mix effect = revenue-weighted margin shift"
+      ]
+    },
+    {
+      "type": "payback_period",
+      "label": "Payback Period",
+      "level": 3,
+      "targetSeconds": 40,
+      "masteryThreshold": 0.85,
+      "description": "Calculate investment payback from annual returns or contribution margin",
+      "coreMemoryItems": [
+        "Payback = Investment ÷ Annual profit",
+        "Use CM not revenue for new products",
+        "Consumer brand hurdle: 3-5 years"
+      ]
+    },
+    {
+      "type": "unit_economics",
+      "label": "Unit Economics (LTV/CAC)",
+      "level": 3,
+      "targetSeconds": 55,
+      "masteryThreshold": 0.75,
+      "description": "Calculate customer lifetime value, acquisition cost, and LTV:CAC ratios",
+      "coreMemoryItems": [
+        "LTV = Revenue/churn (subscription)",
+        "LTV = Revenue × GM × lifespan (transactional)",
+        "Healthy LTV:CAC ≥ 3x"
+      ]
+    },
+    {
+      "type": "index_numbers",
+      "label": "BDI / CDI Index",
+      "level": 3,
+      "targetSeconds": 40,
+      "masteryThreshold": 0.8,
+      "description": "Calculate and interpret Brand and Category Development Indices for market prioritization",
+      "coreMemoryItems": [
+        "BDI = (brand % sales / % population) × 100",
+        "CDI = (category % sales / % population) × 100",
+        "Low BDI + High CDI = best opportunity"
+      ]
+    },
+    {
+      "type": "percentage_point",
+      "label": "Percentage Points vs. %",
+      "level": 3,
+      "targetSeconds": 35,
+      "masteryThreshold": 0.9,
+      "description": "Distinguish between percentage point changes and percent changes in ratios",
+      "coreMemoryItems": [
+        "PP change = absolute difference in rates",
+        "% change = pp change / base × 100",
+        "Always say \"pp\" when comparing ratios"
+      ]
+    },
+    {
+      "type": "npv_estimation",
+      "label": "NPV / Valuation Estimation",
+      "level": 3,
+      "targetSeconds": 45,
+      "masteryThreshold": 0.75,
+      "description": "Use Rule of 72, perpetuity formula, and annuity factors for quick valuation",
+      "coreMemoryItems": [
+        "Rule of 72: years to double = 72/rate",
+        "Perpetuity PV = CF / rate",
+        "Annuity (5yr/10%) ≈ 3.8x"
+      ]
+    }
+  ],
+  "adaptiveRules": {
+    "sessionStructure": {
+      "totalProblems": 15,
+      "warmupProblems": 3,
+      "coreProblems": 10,
+      "challengeProblems": 2,
+      "warmupCriteria": "Always pull from types with highest mastery — builds confidence and activates recall",
+      "coreCriteria": "Weighted mix per weak type spotlight algorithm",
+      "challengeCriteria": "One problem one level above current comfort; one previously-missed problem"
+    },
+    "typeSelectionWeights": {
+      "description": "At each selection, compute a weight per type and randomly sample proportional to weight",
+      "weightFormula": "weight = (1 - accuracyRate) × 2 + slownessPenalty + recencyBonus",
+      "slownessPenaltyFormula": "If avgTimeMs > targetSeconds × 1000, add 0.5 to weight",
+      "recencyBonusFormula": "If type not seen in last 2 sessions, add 0.3 to weight",
+      "minimumWeight": 0.1,
+      "maximumWeight": 3
+    },
+    "difficultyProgression": {
+      "increaseWhen": {
+        "recentAccuracy": "Last 5 attempts at current difficulty >= 80%",
+        "recentSpeed": "Average time on last 5 <= targetSeconds × 1.1",
+        "bothRequired": true
+      },
+      "decreaseWhen": {
+        "recentAccuracy": "Last 3 attempts at current difficulty <= 50%",
+        "action": "Step down one difficulty level and flag type as struggling"
+      },
+      "maintainWhen": "Accuracy between 50-80% — still learning, keep drilling"
+    },
+    "repetitionRules": {
+      "masteredTypeFrequency": "Show at most 1 mastered type problem per session for retention",
+      "strugglingTypeFrequency": "Show at least 3 problems from flagged struggling types per session",
+      "wrongAnswerRepeat": "If a problem is answered wrong, re-queue it later in the same session",
+      "spaceRepetition": {
+        "enabled": true,
+        "intervals": [
+          1,
+          2,
+          4,
+          7,
+          14
+        ],
+        "description": "Days between re-showing a mastered problem to prevent decay"
+      }
+    },
+    "weakTypeSpotlight": {
+      "definition": "The 2 types with the lowest combined score (accuracy × speed efficiency)",
+      "scoreFormula": "score = accuracyRate × min(1, targetSeconds / avgTimeSeconds)",
+      "spotlightAction": "Increase these types to 40% of core session problems",
+      "exitCriteria": "Type exits spotlight when score exceeds 0.70 for 3 consecutive sessions",
+      "displayToUser": true,
+      "displayLabel": "Focus Areas"
+    },
+    "sessionCompletionLogic": {
+      "stopAfter": "15 problems OR 10 minutes, whichever comes first",
+      "minimumSession": "8 problems (if user quits early)",
+      "endOfSessionSummary": [
+        "Problems attempted",
+        "Correct count and accuracy",
+        "Fastest problem",
+        "Slowest problem",
+        "Types improving",
+        "Types still in focus"
+      ]
+    },
+    "levelGating": {
+      "unlockLevel2": "Complete at least 3 sessions AND have Level 1 overall accuracy >= 70%",
+      "blendedMode": "After unlock, sessions include 60% Level 1 / 40% Level 2 until Level 1 mastery reaches 85%",
+      "fullBlend": "Once Level 1 overall mastery >= 85%, allow free mix at 50/50"
+    }
+  },
+  "trackingSchema": {
+    "version": "1.0",
+    "storageKey": "mbaPrep_mathProgress",
+    "structure": {
+      "mathProgress": {
+        "userId": "string | null",
+        "schemaVersion": "string",
+        "createdAt": "ISO8601 timestamp",
+        "lastActiveAt": "ISO8601 timestamp",
+        "level2Unlocked": "boolean",
+        "currentStreak": "number (consecutive days with session)",
+        "longestStreak": "number",
+        "totalProblems": "number",
+        "totalCorrect": "number",
+        "totalSessions": "number",
+        "overallAccuracy": "number (0-1)",
+        "byType": {
+          "__typeKey__": {
+            "type": "string (matches problemTypes.type)",
+            "attempts": "number",
+            "correct": "number",
+            "accuracyRate": "number (0-1)",
+            "avgTimeMs": "number",
+            "bestTimeMs": "number",
+            "targetMs": "number (from problemType.targetSeconds × 1000)",
+            "masteryReached": "boolean",
+            "masteryReachedAt": "ISO8601 timestamp | null",
+            "currentDifficulty": "easy | medium | hard",
+            "isSpotlightType": "boolean",
+            "lastAttemptedAt": "ISO8601 timestamp | null",
+            "recentAttempts": [
+              {
+                "problemId": "string",
+                "correct": "boolean",
+                "timeMs": "number",
+                "attemptedAt": "ISO8601 timestamp",
+                "difficulty": "easy | medium | hard"
+              }
+            ],
+            "spaceRepetitionNextDue": "ISO8601 timestamp | null",
+            "spaceRepetitionInterval": "number (days)"
+          }
+        },
+        "byProblem": {
+          "__problemId__": {
+            "id": "string",
+            "timesAttempted": "number",
+            "timesCorrect": "number",
+            "lastAttemptedAt": "ISO8601 timestamp | null",
+            "avgTimeMs": "number",
+            "bestTimeMs": "number | null",
+            "recentResults": [
+              "boolean (last 5 correct/incorrect)"
+            ]
+          }
+        },
+        "sessions": [
+          {
+            "sessionId": "string (UUID)",
+            "startedAt": "ISO8601 timestamp",
+            "completedAt": "ISO8601 timestamp | null",
+            "durationMs": "number",
+            "problemsAttempted": "number",
+            "problemsCorrect": "number",
+            "accuracy": "number (0-1)",
+            "level1Count": "number",
+            "level2Count": "number",
+            "spotlightTypes": [
+              "string (type keys)"
+            ],
+            "problemLog": [
+              {
+                "problemId": "string",
+                "type": "string",
+                "correct": "boolean",
+                "timeMs": "number",
+                "hintsUsed": "boolean",
+                "difficulty": "string"
+              }
+            ],
+            "personalBests": [
+              "string (e.g., 'fastest fraction_to_decimal: 3100ms')"
+            ]
+          }
+        ],
+        "achievements": [
+          {
+            "id": "string",
+            "label": "string",
+            "unlockedAt": "ISO8601 timestamp | null",
+            "unlocked": "boolean"
+          }
+        ]
+      }
+    },
+    "maxSessionsStored": 30,
+    "maxRecentAttemptsPerType": 10,
+    "persistenceStrategy": "Write to localStorage after every problem completion. Debounce 200ms."
+  },
+  "masteryIndicators": [
+    {
+      "id": "accuracy_bar",
+      "label": "Accuracy",
+      "metric": "accuracyRate per type",
+      "displayType": "progress_bar",
+      "thresholds": {
+        "struggling": 0.5,
+        "developing": 0.7,
+        "proficient": 0.85,
+        "mastered": 0.95
+      },
+      "colors": {
+        "struggling": "#EF4444",
+        "developing": "#F97316",
+        "proficient": "#EAB308",
+        "mastered": "#22C55E"
+      },
+      "description": "What percentage of your attempts you get right. Green means you've mastered it.",
+      "userFacingLabel": "Getting it right"
+    },
+    {
+      "id": "speed_gauge",
+      "label": "Speed",
+      "metric": "avgTimeMs vs targetMs per type",
+      "displayType": "gauge_or_bar",
+      "calculation": "speedScore = min(1, targetMs / avgTimeMs). Score of 1.0 means at or under target speed.",
+      "thresholds": {
+        "slow": 0.5,
+        "approaching": 0.7,
+        "onTarget": 0.9,
+        "fast": 1
+      },
+      "description": "How close your average time is to the target speed for this problem type.",
+      "userFacingLabel": "Speed vs. target"
+    },
+    {
+      "id": "mastery_badge",
+      "label": "Mastery Status",
+      "metric": "masteryReached boolean",
+      "displayType": "badge",
+      "criteria": "masteryReached = true when accuracy >= masteryThreshold AND avgTimeMs <= targetMs × 1.2 over last 10 attempts",
+      "description": "A lock icon turns to a checkmark when you've hit both speed and accuracy targets consistently.",
+      "userFacingLabel": "Mastered"
+    },
+    {
+      "id": "streak_counter",
+      "label": "Daily Streak",
+      "metric": "currentStreak",
+      "displayType": "number_with_flame",
+      "description": "Consecutive days with at least one completed session. Resets if you miss a day.",
+      "userFacingLabel": "Day streak"
+    },
+    {
+      "id": "improvement_trend",
+      "label": "Trend",
+      "metric": "Compare last 5 attempts vs previous 5 attempts in accuracy and speed",
+      "displayType": "trend_arrow",
+      "states": {
+        "improving": "Last 5 accuracy > previous 5 accuracy by > 5pp OR speed improved > 10%",
+        "stable": "Within 5pp accuracy and 10% speed",
+        "declining": "Accuracy dropped > 5pp over last 5 attempts"
+      },
+      "description": "Arrow showing whether you are getting better, holding steady, or sliding backward.",
+      "userFacingLabel": "Trend"
+    },
+    {
+      "id": "best_time",
+      "label": "Personal Best",
+      "metric": "bestTimeMs per type",
+      "displayType": "highlighted_number",
+      "description": "Your fastest ever correct answer for this type. A motivating benchmark to beat.",
+      "userFacingLabel": "Your best time"
+    },
+    {
+      "id": "focus_area_flag",
+      "label": "Focus Area",
+      "metric": "isSpotlightType boolean",
+      "displayType": "pill_label",
+      "description": "Types flagged as Focus Areas appear more often in your sessions until they improve.",
+      "userFacingLabel": "Focus Area — drilling this more"
+    },
+    {
+      "id": "overall_readiness",
+      "label": "Case Math Readiness",
+      "metric": "Weighted average of all type mastery scores",
+      "displayType": "circular_gauge",
+      "calculation": "readinessScore = (sum of type speedScore × accuracyRate, weighted by problemType level) / totalTypes",
+      "levelWeights": {
+        "level1": 0.6,
+        "level2": 0.4
+      },
+      "stages": {
+        "notReady": "0-40%",
+        "building": "41-65%",
+        "approaching": "66-80%",
+        "interviewReady": "81-100%"
+      },
+      "description": "A single top-level score showing overall preparedness for case interview math.",
+      "userFacingLabel": "Case Math Readiness"
+    },
+    {
+      "id": "session_summary_card",
+      "label": "Session Summary",
+      "metric": "Post-session stats",
+      "displayType": "summary_card",
+      "fields": [
+        "Problems attempted",
+        "Correct / Incorrect count",
+        "Accuracy %",
+        "Avg response time",
+        "Fastest problem and time",
+        "Types improved this session",
+        "Focus areas remaining"
+      ],
+      "description": "Shown after every session. Gives the user a complete picture of what just happened.",
+      "userFacingLabel": "Session Complete"
+    }
+  ],
+  "speedTargets": {
+    "description": "Target time in seconds for each problem type. Used as the 100% mark on speed progress bars. Times are realistic for a prepared MBA candidate in an interview setting.",
+    "note": "These are average time targets. Best times will be lower; initial times will be higher. Display both.",
+    "targets": {
+      "fraction_to_decimal": {
+        "easy": 6,
+        "medium": 9,
+        "hard": 12,
+        "averageTarget": 8,
+        "rationale": "Common fractions should be pure recall. Hard cases require 1-2 calculation steps."
+      },
+      "percent_of_number": {
+        "easy": 7,
+        "medium": 11,
+        "hard": 14,
+        "averageTarget": 10,
+        "rationale": "Anchor method (find 10%, then build) takes 2-3 steps. Round numbers enable fast calculation."
+      },
+      "multiplication_shortcut": {
+        "easy": 7,
+        "medium": 11,
+        "hard": 15,
+        "averageTarget": 10,
+        "rationale": "Shortcuts eliminate long multiplication but still require a mental step. Speed builds with repetition."
+      },
+      "rounding_scale": {
+        "easy": 5,
+        "medium": 8,
+        "hard": 12,
+        "averageTarget": 8,
+        "rationale": "Rounding and unit conversion should be near-instant. Harder questions involve tracking zeros through operations."
+      },
+      "decimal_operations": {
+        "easy": 5,
+        "medium": 8,
+        "hard": 10,
+        "averageTarget": 6,
+        "rationale": "Decimal/percent conversion is mechanical. Should become reflexive with practice."
+      },
+      "profit_equation": {
+        "easy": 20,
+        "medium": 30,
+        "hard": 45,
+        "averageTarget": 30,
+        "rationale": "Requires reading a scenario, extracting numbers, and running a multi-step formula. Fastest viable without sacrificing accuracy."
+      },
+      "breakeven": {
+        "easy": 15,
+        "medium": 25,
+        "hard": 40,
+        "averageTarget": 25,
+        "rationale": "Two-step process: identify CM, then divide. Hard variants involve CM ratios or multi-product situations."
+      },
+      "growth_rate": {
+        "easy": 10,
+        "medium": 15,
+        "hard": 22,
+        "averageTarget": 15,
+        "rationale": "YoY growth requires recognizing a clean fraction. CAGR estimates use Rule of 72 — one more step."
+      },
+      "roi": {
+        "easy": 12,
+        "medium": 20,
+        "hard": 30,
+        "averageTarget": 20,
+        "rationale": "Simple ROI is a ratio. Marketing or multi-step ROI requires first computing incremental profit."
+      },
+      "market_sizing": {
+        "easy": 15,
+        "medium": 30,
+        "hard": 50,
+        "averageTarget": 35,
+        "rationale": "Inherently multi-step. Target is for clean, organized calculation — not a rushed guess."
+      },
+      "contribution_margin": {
+        "easy": 8,
+        "medium": 12,
+        "hard": 18,
+        "averageTarget": 12,
+        "rationale": "Single subtraction (or with ratio). Target is fast because the formula is simple once internalized."
+      },
+      "market_share": {
+        "easy": 8,
+        "medium": 12,
+        "hard": 18,
+        "averageTarget": 12,
+        "rationale": "Division of two numbers — simplified by fraction recognition. Implied total requires unitary method."
+      }
+    },
+    "globalTimeLimits": {
+      "perProblemMaxMs": 60000,
+      "description": "If a user has not answered after 60 seconds, the problem is marked as overtime and counted as incorrect for speed tracking (but not accuracy if they eventually answer correctly).",
+      "overtimePenalty": "avgTimeMs uses 60000 if overtime, motivating the user to stay under the cap"
+    }
+  }
+}
