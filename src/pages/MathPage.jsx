@@ -251,6 +251,19 @@ export default function MathPage() {
     track('math_problem_answered', { correct: isCorrect, problem_type: problem.type, level: problem.level, time_seconds: Math.round(timeMs / 1000) })
   }
 
+  const skip = () => {
+    if (phase !== 'answering' || !problem) return
+    clearInterval(timerRef.current)
+    const timeMs = Math.min(Date.now() - startTimeRef.current, targetSecRef.current * 1000)
+    setFinalMs(timeMs)
+    setCorrect(false)
+    setPhase('result')
+    setSessionCount(c => c + 1)
+    recentIds.current = [...recentIds.current.slice(-7), problem.id]
+    recordMathResult({ problemId: problem.id, type: problem.type, correct: false, timeMs })
+    track('math_problem_answered', { correct: false, problem_type: problem.type, level: problem.level, time_seconds: Math.round(timeMs / 1000), skipped: true })
+  }
+
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       if (phase === 'answering') submit()
@@ -520,6 +533,16 @@ export default function MathPage() {
                         💡 Hint
                       </button>
                     </div>
+                    <button
+                      onClick={skip}
+                      style={{
+                        width: '100%', marginTop: 8, padding: '10px', borderRadius: 12,
+                        border: '1px solid #334155', background: 'none',
+                        color: '#475569', fontSize: 13, fontWeight: 600, cursor: 'pointer',
+                      }}
+                    >
+                      I don't know — show answer
+                    </button>
                     {showHint && (
                       <div style={{
                         marginTop: 10, background: '#0f172a', borderRadius: 10,

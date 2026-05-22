@@ -572,17 +572,17 @@
       "type": "rounding_scale",
       "subtype": "zero_tracking",
       "question": "You multiply 2,500 × 4,000. How many zeros are in the answer?",
-      "answer": "6",
+      "answer": "7",
       "acceptableAnswers": [
-        "6",
-        "six",
+        "7",
+        "seven",
         "10,000,000",
         "10M"
       ],
       "targetSeconds": 8,
-      "hint": "2,500 has 2 trailing zeros. 4,000 has 3. Plus 2 × 4 = 8, which adds no zeros. Total: 2+3=5... wait, actually count carefully.",
+      "hint": "25 × 4 = 100. Then add trailing zeros: 2 from 2,500 + 3 from 4,000 = 5 more. 100 × 100,000 = 10,000,000. Count the zeros: 7.",
       "difficulty": "medium",
-      "explanation": "2,500 × 4,000: 25 × 4 = 100. Then 100 × 100 (two zeros) × 1,000 (three zeros) = 100 × 100,000 = 10,000,000 = 10M. Track the coefficient and zeros separately."
+      "explanation": "2,500 × 4,000: strip the zeros first. 25 × 4 = 100. Add back 2 zeros (from 2,500) + 3 zeros (from 4,000) = 5 zeros. 100 × 100,000 = 10,000,000 — which has 7 zeros."
     },
     {
       "id": "math_035",
@@ -814,7 +814,7 @@
         "1,000,000"
       ],
       "targetSeconds": 5,
-      "hint": "0.8M is 300K away from 1M and 300K away from... wait: 0.8 - 0.5 = 0.3, 1.0 - 0.8 = 0.2",
+      "hint": "0.8M - 0.5M = 0.3M (300K from 0.5M). 1M - 0.8M = 0.2M (200K from 1M). 200K < 300K, so closer to 1M.",
       "difficulty": "easy",
       "explanation": "0.8M is 0.2M from 1M and 0.3M from 0.5M. Closer to 1M. Quick sanity check for case estimates."
     },
@@ -1093,16 +1093,18 @@
       "type": "profit_equation",
       "subtype": "multi_product",
       "question": "Product A: 2,000 units at $50 with $20 VC. Product B: 1,000 units at $80 with $40 VC. Fixed costs: $70,000. Total profit?",
-      "answer": "10000",
+      "answer": "30000",
       "acceptableAnswers": [
-        "10000",
-        "10,000",
-        "$10,000"
+        "30000",
+        "30,000",
+        "$30,000",
+        "$30K",
+        "30K"
       ],
       "targetSeconds": 35,
-      "hint": "CM(A) = 2,000 × $30 = $60,000. CM(B) = 1,000 × $40 = $40,000. Total CM = $100,000. Profit = $100K - $70K.",
+      "hint": "CM(A) = 2,000 × $30 = $60,000. CM(B) = 1,000 × $40 = $40,000. Total CM = $100,000. Profit = $100K - $70K FC = $30K.",
       "difficulty": "hard",
-      "explanation": "CM(A) = (50-20) × 2,000 = $60,000. CM(B) = (80-40) × 1,000 = $40,000. Total CM = $100K. Profit = $100K - $70K = $30K. Wait — correct answer is $30,000. Recheck: 60+40=100, 100-70=30."
+      "explanation": "CM(A) = ($50−$20) × 2,000 = $60,000. CM(B) = ($80−$40) × 1,000 = $40,000. Total contribution margin = $100,000. Subtract fixed costs: $100K − $70K = $30,000 profit."
     },
     {
       "id": "math_066",
@@ -1179,17 +1181,17 @@
       "type": "profit_equation",
       "subtype": "price_volume_tradeoff",
       "question": "A company sells 10,000 units at $100. If price drops 10% and volume rises 20%, does profit go up or down? Variable cost is $60/unit.",
-      "answer": "up",
+      "answer": "down",
       "acceptableAnswers": [
-        "up",
-        "increases",
-        "goes up",
-        "profit increases"
+        "down",
+        "decreases",
+        "goes down",
+        "profit decreases"
       ],
       "targetSeconds": 30,
-      "hint": "Original CM: ($100-$60) × 10,000 = $400,000. New price = $90, new volume = 12,000. New CM = ($90-$60) × 12,000.",
+      "hint": "Original CM: ($100−$60) × 10,000 = $400,000. New price = $90, new volume = 12,000. New CM = ($90−$60) × 12,000 = $360,000.",
       "difficulty": "hard",
-      "explanation": "Original CM = $40 × 10,000 = $400K. New CM = $30 × 12,000 = $360K. Profit goes DOWN. Contribution margin per unit fell 25% while volume rose only 20%."
+      "explanation": "Original CM = $40 × 10,000 = $400K. New CM = $30 × 12,000 = $360K. Profit goes DOWN by $40K. The unit margin fell 25% ($40→$30) while volume only grew 20% — the price cut more than erased the volume gain."
     },
     {
       "id": "math_071",
@@ -1248,17 +1250,18 @@
       "type": "breakeven",
       "subtype": "acquisition_breakeven",
       "question": "A startup spends $150 to acquire each customer. Average customer buys 3 times with $25 gross profit each time. Does the unit economics work?",
-      "answer": "Yes",
+      "answer": "No",
       "acceptableAnswers": [
-        "Yes",
-        "Yes, LTV > CAC",
-        "yes",
-        "works"
+        "No",
+        "No, LTV < CAC",
+        "no",
+        "does not work",
+        "doesn't work"
       ],
       "targetSeconds": 15,
-      "hint": "LTV = 3 × $25 = $75. CAC = $150. LTV vs CAC?",
+      "hint": "LTV = 3 × $25 = $75. CAC = $150. Is LTV > CAC?",
       "difficulty": "medium",
-      "explanation": "LTV = 3 × $25 = $75. CAC = $150. LTV < CAC — unit economics do NOT work. The business loses $75 per customer."
+      "explanation": "LTV = 3 × $25 = $75. CAC = $150. LTV ($75) < CAC ($150) — unit economics do NOT work. The business loses $75 per customer acquired. You need LTV ≥ 3× CAC as a healthy benchmark; here the ratio is 0.5×."
     },
     {
       "id": "math_075",
@@ -1426,17 +1429,17 @@
       "type": "weighted_average",
       "subtype": "blended_price",
       "question": "Three markets — A: 200K units at $4, B: 500K units at $2, C: 300K units at $6. What is the weighted average selling price?",
-      "answer": "$3.40",
+      "answer": "$3.60",
       "acceptableAnswers": [
-        "$3.40",
-        "3.40",
-        "3.4",
-        "$3.4"
+        "$3.60",
+        "3.60",
+        "3.6",
+        "$3.6"
       ],
       "targetSeconds": 45,
-      "hint": "Total revenue ÷ total units. (200K×4 + 500K×2 + 300K×6) / 1M",
+      "hint": "Total revenue ÷ total units. (200K×$4) + (500K×$2) + (300K×$6) = $800K + $1,000K + $1,800K = $3,600K. Divide by 1,000K units.",
       "difficulty": "hard",
-      "explanation": "(800K + 1,000K + 1,800K) / 1,000K = $3,600K / 1,000K = $3.60. Wait — recheck: 200×4=800, 500×2=1000, 300×6=1800. Total = 3600K / 1000K = $3.60. Market B drags the average down despite C's high price."
+      "explanation": "A: 200K × $4 = $800K. B: 500K × $2 = $1,000K. C: 300K × $6 = $1,800K. Total revenue = $3,600K. Total units = 1,000K. Weighted avg price = $3,600K ÷ 1,000K = $3.60. Market B's large volume drags the average below the simple mean of $4."
     },
     {
       "id": "math_085",
