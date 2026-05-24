@@ -4,11 +4,57 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#0f172a" />
+    <meta name="theme-color" content="#fcf8ff" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="MBAce" />
     <title>MBAce — The Marketing Case</title>
+
+    <!-- Fonts: Outfit (display) + Plus Jakarta Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols (icons) -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background: #fcf8ff;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-size: 22px;
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+        user-select: none;
+      }
+
+      /* Recording pulse animation */
+      @keyframes recording-pulse {
+        0%   { box-shadow: 0 0 0 0 rgba(132,204,22,0.5); }
+        70%  { box-shadow: 0 0 0 10px rgba(132,204,22,0); }
+        100% { box-shadow: 0 0 0 0 rgba(132,204,22,0); }
+      }
+      .recording-pulse { animation: recording-pulse 1.5s ease-out infinite; }
+
+      /* Tap feedback */
+      .bouncy:active { transform: scale(0.96); transition: transform 0.1s; }
+
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #c7c4d7; border-radius: 9999px; }
+
+      .hide-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQPTH05WX2"></script>
     <script>

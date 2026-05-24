@@ -2,8 +2,9 @@ import { useState, useRef, useEffect } from 'react'
 import SCENARIOS from '../data/scenarios.json'
 import { useProgress } from '../hooks/useProgress'
 import { track } from '../utils/analytics'
+import { T } from '../theme'
 
-const DIFFICULTY_COLOR = { easy: '#22c55e', medium: '#f59e0b', hard: '#ef4444' }
+const DIFFICULTY_COLOR = { easy: '#84CC16', medium: '#F59E0B', hard: '#F43F5E' }
 
 const LEVELS = [
   { key: 'easy',   label: 'Beginner',     emoji: '🟢', desc: 'Core frameworks, clean data', color: '#22c55e' },
@@ -194,16 +195,25 @@ function AudioRecorder({ scenarioId, scenarioTitle }) {
   const fmt = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`
 
   return (
-    <div style={{ background: '#0f172a', borderRadius: 12, padding: '12px 14px', marginTop: 14 }}>
-      <div style={{ fontSize: 11, fontWeight: 700, color: '#64748b', letterSpacing: 1, marginBottom: 10 }}>
+    <div style={{
+      background: 'rgba(255,255,255,0.80)',
+      backdropFilter: 'blur(16px)',
+      WebkitBackdropFilter: 'blur(16px)',
+      border: '1px solid rgba(255,255,255,0.55)',
+      boxShadow: '0 4px 20px rgba(70,72,212,0.10)',
+      borderRadius: T.r.lg,
+      padding: '12px 14px',
+      marginTop: 12,
+    }}>
+      <div style={{ fontSize: 11, fontWeight: 700, color: T.primary, letterSpacing: 1, marginBottom: 10, fontFamily: T.fontBody }}>
         🎙 PRACTICE RECORDING
       </div>
 
       {recState === 'idle' && (
         <button onClick={startRecording} style={{
           width: '100%', padding: '10px', borderRadius: 10,
-          border: '2px solid #3b82f6', background: '#3b82f622',
-          color: '#3b82f6', fontSize: 13, fontWeight: 700, cursor: 'pointer',
+          border: `2px solid ${T.primary}`, background: T.primaryLight,
+          color: T.primary, fontSize: 13, fontWeight: 700, cursor: 'pointer',
         }}>
           Start Recording
         </button>
@@ -211,11 +221,14 @@ function AudioRecorder({ scenarioId, scenarioTitle }) {
 
       {recState === 'recording' && (
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#ef4444', animation: 'pulse 1s infinite' }} />
-          <span style={{ color: '#ef4444', fontWeight: 700, fontSize: 13, flex: 1 }}>Recording {fmt(seconds)}</span>
+          <div
+            className="recording-pulse"
+            style={{ background: T.green, borderRadius: '50%', width: 12, height: 12 }}
+          />
+          <span style={{ color: T.pink, fontWeight: 700, fontSize: 13, flex: 1 }}>Recording {fmt(seconds)}</span>
           <button onClick={stopRecording} style={{
             padding: '8px 16px', borderRadius: 8, border: 'none',
-            background: '#ef4444', color: '#fff', fontSize: 13, fontWeight: 700, cursor: 'pointer',
+            background: T.pink, color: '#fff', fontSize: 13, fontWeight: 700, cursor: 'pointer',
           }}>Stop</button>
         </div>
       )}
@@ -223,26 +236,28 @@ function AudioRecorder({ scenarioId, scenarioTitle }) {
       {recState === 'stopped' && audioUrl && (
         <div>
           {hasSaved && (
-            <div style={{ fontSize: 10, color: '#22c55e', marginBottom: 6, fontWeight: 600 }}>
+            <div style={{ fontSize: 10, color: T.green, marginBottom: 6, fontWeight: 600 }}>
               ✓ Saved to this device
             </div>
           )}
-          <audio controls playsInline src={audioUrl} style={{ width: '100%', marginBottom: 8 }} />
+          <div style={{ background: T.surfaceContainer, borderRadius: T.r.md, padding: '6px', marginBottom: 8 }}>
+            <audio controls playsInline src={audioUrl} style={{ width: '100%' }} />
+          </div>
           <div style={{ display: 'flex', gap: 8 }}>
             <button onClick={shareRecording} style={{
               flex: 1, padding: '8px', borderRadius: 8,
-              border: '1px solid #3b82f6', background: '#3b82f622',
-              color: '#3b82f6', fontSize: 12, fontWeight: 700, cursor: 'pointer',
+              border: `1px solid ${T.primary}`, background: T.primaryLight,
+              color: T.primary, fontSize: 12, fontWeight: 700, cursor: 'pointer',
             }}>⬆ Share</button>
             <button onClick={startRecording} style={{
               flex: 1, padding: '8px', borderRadius: 8,
-              border: '1px solid #334155', background: 'none',
-              color: '#94a3b8', fontSize: 12, cursor: 'pointer',
+              border: `1px solid ${T.border}`, background: T.surfaceContainer,
+              color: T.textSub, fontSize: 12, cursor: 'pointer',
             }}>Re-record</button>
             <button onClick={deleteRecording} style={{
               padding: '8px 12px', borderRadius: 8,
-              border: '1px solid #334155', background: 'none',
-              color: '#475569', fontSize: 12, cursor: 'pointer',
+              border: `1px solid ${T.border}`, background: T.surfaceContainer,
+              color: T.textMuted, fontSize: 12, cursor: 'pointer',
             }}>🗑</button>
           </div>
         </div>
@@ -250,7 +265,7 @@ function AudioRecorder({ scenarioId, scenarioTitle }) {
 
       {/* Notes */}
       <div style={{ marginTop: 12 }}>
-        <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: 1, marginBottom: 6 }}>
+        <div style={{ fontSize: 10, fontWeight: 700, color: T.textMuted, letterSpacing: 1, marginBottom: 6 }}>
           📝 NOTES
         </div>
         <textarea
@@ -261,9 +276,9 @@ function AudioRecorder({ scenarioId, scenarioTitle }) {
           rows={3}
           style={{
             width: '100%', boxSizing: 'border-box',
-            background: '#1e293b', border: '1px solid #334155',
-            borderRadius: 8, padding: '8px 10px',
-            color: '#f1f5f9', fontSize: 12, lineHeight: 1.5,
+            background: T.softGrey, border: `1px solid ${T.border}`,
+            borderRadius: T.r.md, padding: '8px 10px',
+            color: T.text, fontSize: 12, lineHeight: 1.5,
             resize: 'vertical', outline: 'none', fontFamily: 'inherit',
           }}
         />
@@ -287,14 +302,14 @@ function CSAIRating({ scenarioId, existing, onRate }) {
 
   return (
     <div style={{ marginTop: 14 }}>
-      <div style={{ fontSize: 11, fontWeight: 700, color: '#64748b', letterSpacing: 1, marginBottom: 10 }}>
+      <div style={{ fontSize: 11, fontWeight: 700, color: T.textMuted, letterSpacing: 1, marginBottom: 10 }}>
         CSAI SELF-RATING
       </div>
 
       {Object.entries(CSAI_LABELS).map(([key, label]) => (
         <div key={key} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-          <div style={{ width: 80, fontSize: 12, color: '#94a3b8' }}>
-            <span style={{ fontWeight: 700, color: '#60a5fa' }}>{key}</span> {label}
+          <div style={{ width: 80, fontSize: 12, color: T.textSub }}>
+            <span style={{ fontWeight: 700, color: T.primary }}>{key}</span> {label}
           </div>
           <div style={{ display: 'flex', gap: 4 }}>
             {[1, 2, 3].map(v => (
@@ -303,9 +318,9 @@ function CSAIRating({ scenarioId, existing, onRate }) {
                 onClick={() => { setRatings(r => ({ ...r, [key]: v })); setSaved(false) }}
                 style={{
                   width: 30, height: 30, borderRadius: 8,
-                  border: ratings[key] === v ? '2px solid #60a5fa' : '2px solid #334155',
-                  background: ratings[key] === v ? '#60a5fa22' : 'transparent',
-                  color: ratings[key] === v ? '#60a5fa' : '#475569',
+                  border: ratings[key] === v ? `2px solid ${T.primary}` : `2px solid ${T.border}`,
+                  background: ratings[key] === v ? T.primaryLight : 'transparent',
+                  color: ratings[key] === v ? T.primary : T.textMuted,
                   fontSize: 13, fontWeight: 700, cursor: 'pointer',
                 }}
               >
@@ -317,21 +332,21 @@ function CSAIRating({ scenarioId, existing, onRate }) {
       ))}
 
       <div style={{ marginTop: 12, marginBottom: 10 }}>
-        <div style={{ fontSize: 12, color: '#94a3b8', marginBottom: 6 }}>Overall confidence</div>
+        <div style={{ fontSize: 12, color: T.textSub, marginBottom: 6 }}>Overall confidence</div>
         <div style={{ display: 'flex', gap: 8 }}>
           {[
-            { v: 1, label: 'Struggled', color: '#ef4444' },
-            { v: 2, label: 'OK', color: '#f59e0b' },
-            { v: 3, label: 'Nailed It', color: '#22c55e' },
+            { v: 1, label: 'Struggled', color: T.pink },
+            { v: 2, label: 'OK', color: T.amber },
+            { v: 3, label: 'Nailed It', color: T.green },
           ].map(({ v, label, color }) => (
             <button
               key={v}
               onClick={() => { setOverall(v); setSaved(false) }}
               style={{
                 flex: 1, padding: '8px 4px', borderRadius: 10,
-                border: overall === v ? `2px solid ${color}` : '2px solid #334155',
+                border: overall === v ? `2px solid ${color}` : `2px solid ${T.border}`,
                 background: overall === v ? color + '22' : 'transparent',
-                color: overall === v ? color : '#475569',
+                color: overall === v ? color : T.textMuted,
                 fontSize: 12, fontWeight: 700, cursor: 'pointer',
               }}
             >
@@ -348,8 +363,8 @@ function CSAIRating({ scenarioId, existing, onRate }) {
           style={{
             width: '100%', padding: '10px', borderRadius: 10,
             border: 'none',
-            background: overall ? '#22c55e' : '#1e293b',
-            color: overall ? '#fff' : '#475569',
+            background: overall ? T.green : T.surfaceContainer,
+            color: overall ? '#fff' : T.textMuted,
             fontSize: 13, fontWeight: 700, cursor: overall ? 'pointer' : 'default',
           }}
         >
@@ -357,7 +372,7 @@ function CSAIRating({ scenarioId, existing, onRate }) {
         </button>
       )}
       {saved && (
-        <div style={{ textAlign: 'center', fontSize: 13, color: '#22c55e', fontWeight: 700 }}>
+        <div style={{ textAlign: 'center', fontSize: 13, color: T.green, fontWeight: 700 }}>
           ✓ Saved
         </div>
       )}
@@ -371,11 +386,14 @@ function SampleResponse({ response, color }) {
 
   return (
     <div style={{
-      background: '#0f172a',
+      background: 'rgba(255,255,255,0.80)',
+      backdropFilter: 'blur(16px)',
+      WebkitBackdropFilter: 'blur(16px)',
+      border: `1px solid ${color}33`,
+      boxShadow: '0 4px 20px rgba(70,72,212,0.10)',
       borderRadius: 12,
       marginBottom: 12,
       overflow: 'hidden',
-      border: `1px solid ${color}33`,
     }}>
       <button
         onClick={() => setExpanded(e => !e)}
@@ -390,7 +408,7 @@ function SampleResponse({ response, color }) {
             SAMPLE VERBAL RESPONSE
           </span>
         </div>
-        <span style={{ fontSize: 12, color: '#475569' }}>{expanded ? '▲ collapse' : '▼ show'}</span>
+        <span style={{ fontSize: 12, color: T.textMuted }}>{expanded ? '▲ collapse' : '▼ show'}</span>
       </button>
 
       {expanded && (
@@ -399,7 +417,7 @@ function SampleResponse({ response, color }) {
             <div key={i} style={{
               marginBottom: i < response.length - 1 ? 16 : 0,
               paddingBottom: i < response.length - 1 ? 16 : 0,
-              borderBottom: i < response.length - 1 ? '1px solid #1e293b' : 'none',
+              borderBottom: i < response.length - 1 ? `1px solid ${T.border}` : 'none',
             }}>
               <div style={{
                 fontSize: 10, fontWeight: 800, color, letterSpacing: 1,
@@ -408,7 +426,7 @@ function SampleResponse({ response, color }) {
                 {section.label}
               </div>
               <div style={{
-                fontSize: 13, color: '#e2e8f0', lineHeight: 1.7,
+                fontSize: 13, color: T.textSub, lineHeight: 1.7,
                 fontStyle: 'italic',
                 paddingLeft: 12,
                 borderLeft: `2px solid ${color}55`,
@@ -443,9 +461,9 @@ function SectionToggle({ sectionKey, label, emoji, color, open, onToggle, hasCon
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         width: '100%', padding: '11px 14px',
         borderRadius: 12,
-        border: open ? `1.5px solid ${color}` : '1.5px solid #334155',
-        background: open ? color + '18' : '#0f172a',
-        color: open ? color : '#64748b',
+        border: open ? `1.5px solid ${color}` : `1.5px solid ${T.border}`,
+        background: open ? color + '18' : T.softGrey,
+        color: open ? color : T.textMuted,
         fontSize: 13, fontWeight: 700, cursor: 'pointer',
         marginBottom: 8,
         transition: 'all 0.15s',
@@ -490,15 +508,20 @@ function CaseCard({ scenario, viewed, selfRating, onView, onRate }) {
     sample:     !!(scenario.sampleResponse?.length > 0),
   }
 
+  const cardBorder = selfRating
+    ? `1.5px solid ${selfRating.overall === 3 ? T.green + '55' : selfRating.overall === 2 ? T.amber + '55' : T.pink + '55'}`
+    : '1.5px solid transparent'
+
   return (
     <div style={{
-      background: '#1e293b',
-      borderRadius: 16,
+      background: 'rgba(255,255,255,0.80)',
+      backdropFilter: 'blur(16px)',
+      WebkitBackdropFilter: 'blur(16px)',
+      border: cardBorder,
+      boxShadow: '0 4px 20px rgba(70,72,212,0.10)',
+      borderRadius: T.r.lg,
       marginBottom: 12,
       overflow: 'hidden',
-      border: selfRating
-        ? `1.5px solid ${selfRating.overall === 3 ? '#22c55e33' : selfRating.overall === 2 ? '#f59e0b33' : '#ef444433'}`
-        : '1.5px solid transparent',
     }}>
       {/* Header */}
       <button
@@ -521,26 +544,26 @@ function CaseCard({ scenario, viewed, selfRating, onView, onRate }) {
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginBottom: 3 }}>
             <span style={{
-              fontSize: 10, fontWeight: 700, color,
-              background: color + '22', borderRadius: 4, padding: '2px 6px',
+              fontSize: 10, fontWeight: 700, color: '#fff',
+              background: color, borderRadius: 4, padding: '2px 6px',
             }}>
               {scenario.type}
             </span>
             <span style={{ fontSize: 10, color: diffColor, fontWeight: 700 }}>
               {scenario.difficulty}
             </span>
-            {viewed && <span style={{ fontSize: 10, color: '#475569' }}>viewed</span>}
+            {viewed && <span style={{ fontSize: 10, color: T.textMuted }}>viewed</span>}
             {selfRating && (
-              <span style={{ fontSize: 10, fontWeight: 700, color: selfRating.overall === 3 ? '#22c55e' : selfRating.overall === 2 ? '#f59e0b' : '#ef4444' }}>
+              <span style={{ fontSize: 10, fontWeight: 700, color: selfRating.overall === 3 ? T.green : selfRating.overall === 2 ? T.amber : T.pink }}>
                 {selfRating.overall === 3 ? '✅' : selfRating.overall === 2 ? '🤔' : '🔁'}
               </span>
             )}
           </div>
-          <div style={{ fontSize: 14, fontWeight: 700, color: '#f1f5f9', lineHeight: 1.3 }}>{scenario.title}</div>
-          <div style={{ fontSize: 12, color: '#64748b', marginTop: 2 }}>{scenario.company}</div>
+          <div style={{ fontSize: 15, fontWeight: 700, color: T.text, lineHeight: 1.3, fontFamily: T.fontDisplay }}>{scenario.title}</div>
+          <div style={{ fontSize: 12, color: T.textMuted, marginTop: 2 }}>{scenario.company}</div>
         </div>
 
-        <div style={{ color: '#475569', fontSize: 16, flexShrink: 0, paddingTop: 4 }}>
+        <div style={{ color: T.textMuted, fontSize: 16, flexShrink: 0, paddingTop: 4 }}>
           {isOpen ? '▲' : '▼'}
         </div>
       </button>
@@ -551,187 +574,194 @@ function CaseCard({ scenario, viewed, selfRating, onView, onRate }) {
 
           {/* Prompt */}
           <div style={{
-            background: color + '18', border: `1px solid ${color}44`,
+            background: color + '15', border: `1px solid ${color}30`,
             borderRadius: 12, padding: '12px 14px', marginBottom: 12,
           }}>
             <div style={{ fontSize: 10, fontWeight: 700, color, letterSpacing: 1, marginBottom: 6 }}>THE PROMPT</div>
-            <div style={{ fontSize: 13, color: '#e2e8f0', lineHeight: 1.6 }}>{scenario.prompt}</div>
+            <div style={{ fontSize: 13, color: T.text, lineHeight: 1.6 }}>{scenario.prompt}</div>
           </div>
 
           {/* Context */}
           <div style={{
-            background: '#0f172a', borderRadius: 10,
+            background: T.surfaceContainer, borderRadius: 10,
             padding: '10px 14px', marginBottom: 16,
           }}>
-            <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: 1, marginBottom: 4 }}>CONTEXT</div>
-            <div style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6 }}>{scenario.context}</div>
+            <div style={{ fontSize: 10, fontWeight: 700, color: T.textMuted, letterSpacing: 1, marginBottom: 4 }}>CONTEXT</div>
+            <div style={{ fontSize: 12, color: T.textSub, lineHeight: 1.6 }}>{scenario.context}</div>
           </div>
 
           {/* Practice Recording — above coaching so it's the first action */}
           <AudioRecorder scenarioId={scenario.id} scenarioTitle={scenario.title} />
 
           {/* ── 7 coaching toggle buttons + content ── */}
-          {COACHING_SECTIONS.map(({ key, label, emoji, color: sColor }) => (
-            <div key={key}>
-              <SectionToggle
-                sectionKey={key}
-                label={label}
-                emoji={emoji}
-                color={sColor}
-                open={!!openSections[key]}
-                onToggle={() => toggleSection(key)}
-                hasContent={hasSection[key]}
-              />
+          <div style={{ marginTop: 14 }}>
+            {COACHING_SECTIONS.map(({ key, label, emoji, color: sColor }) => (
+              <div key={key}>
+                <SectionToggle
+                  sectionKey={key}
+                  label={label}
+                  emoji={emoji}
+                  color={sColor}
+                  open={!!openSections[key]}
+                  onToggle={() => toggleSection(key)}
+                  hasContent={hasSection[key]}
+                />
 
-              {/* Section content */}
-              {openSections[key] && (
-                <div style={{
-                  background: '#0f172a', borderRadius: 12,
-                  padding: '14px', marginBottom: 12, marginTop: -4,
-                  border: `1px solid ${sColor}33`,
-                }}>
-                  {/* CLARIFICATION */}
-                  {key === 'clarify' && scenario.clarifyingQuestions?.map((q, i) => (
-                    <div key={i} style={{ display: 'flex', gap: 8, marginBottom: i < scenario.clarifyingQuestions.length - 1 ? 10 : 0 }}>
-                      <span style={{ color: sColor, fontWeight: 800, fontSize: 13, flexShrink: 0 }}>{i + 1}.</span>
-                      <span style={{ fontSize: 13, color: '#c7d2fe', lineHeight: 1.5 }}>{q}</span>
-                    </div>
-                  ))}
+                {/* Section content */}
+                {openSections[key] && (
+                  <div style={{
+                    background: '#ffffff', borderRadius: 12,
+                    padding: '14px', marginBottom: 12, marginTop: -4,
+                    borderLeft: `3px solid ${sColor}`,
+                    border: `1px solid ${T.border}`,
+                    borderLeftWidth: 3,
+                    borderLeftColor: sColor,
+                  }}>
+                    {/* CLARIFICATION */}
+                    {key === 'clarify' && scenario.clarifyingQuestions?.map((q, i) => (
+                      <div key={i} style={{ display: 'flex', gap: 8, marginBottom: i < scenario.clarifyingQuestions.length - 1 ? 10 : 0 }}>
+                        <span style={{ color: sColor, fontWeight: 800, fontSize: 13, flexShrink: 0 }}>{i + 1}.</span>
+                        <span style={{ fontSize: 13, color: T.textSub, lineHeight: 1.5 }}>{q}</span>
+                      </div>
+                    ))}
 
-                  {/* MECE */}
-                  {key === 'mece' && scenario.meceBlocks?.map((block, i) => (
-                    <div key={i} style={{ marginBottom: i < scenario.meceBlocks.length - 1 ? 14 : 0 }}>
-                      <div style={{
-                        fontSize: 12, fontWeight: 700, color: sColor,
-                        marginBottom: 6, display: 'flex', alignItems: 'center', gap: 6,
-                      }}>
-                        <span style={{
-                          width: 20, height: 20, borderRadius: 6, background: sColor + '22',
-                          border: `1px solid ${sColor}66`, display: 'flex', alignItems: 'center',
-                          justifyContent: 'center', fontSize: 10, fontWeight: 800, flexShrink: 0,
+                    {/* MECE */}
+                    {key === 'mece' && scenario.meceBlocks?.map((block, i) => (
+                      <div key={i} style={{ marginBottom: i < scenario.meceBlocks.length - 1 ? 14 : 0 }}>
+                        <div style={{
+                          fontSize: 12, fontWeight: 700, color: sColor,
+                          marginBottom: 6, display: 'flex', alignItems: 'center', gap: 6,
                         }}>
-                          {i + 1}
-                        </span>
-                        {block.block}
-                      </div>
-                      <ul style={{ margin: 0, paddingLeft: 26 }}>
-                        {block.subIssues.map((sub, j) => (
-                          <li key={j} style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6, marginBottom: 2 }}>{sub}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-
-                  {/* STEP BY STEP */}
-                  {key === 'stepByStep' && scenario.stepByStep?.map((s, i) => (
-                    <div key={i} style={{ display: 'flex', gap: 10, marginBottom: i < scenario.stepByStep.length - 1 ? 14 : 0 }}>
-                      <div style={{
-                        width: 22, height: 22, borderRadius: 999, background: sColor + '22',
-                        border: `1px solid ${sColor}66`, display: 'flex', alignItems: 'center',
-                        justifyContent: 'center', fontSize: 10, fontWeight: 800,
-                        color: sColor, flexShrink: 0, marginTop: 1,
-                      }}>
-                        {s.step}
-                      </div>
-                      <div>
-                        <div style={{ fontSize: 12, fontWeight: 700, color: '#e2e8f0', marginBottom: 3 }}>{s.title}</div>
-                        <div style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6 }}>{s.detail}</div>
-                      </div>
-                    </div>
-                  ))}
-
-                  {/* KEY TERMS */}
-                  {key === 'keyTerms' && scenario.keyTerms?.map((kt, i) => (
-                    <div key={i} style={{ marginBottom: i < scenario.keyTerms.length - 1 ? 10 : 0 }}>
-                      <span style={{ fontSize: 12, fontWeight: 700, color: '#fbbf24' }}>{kt.term}: </span>
-                      <span style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.5 }}>{kt.definition}</span>
-                    </div>
-                  ))}
-
-                  {/* FRAMEWORKS */}
-                  {key === 'frameworks' && (
-                    <>
-                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 10 }}>
-                        {scenario.correctFrameworks?.map(fw => (
-                          <span key={fw} style={{
-                            fontSize: 12, fontWeight: 700, color: sColor,
-                            background: sColor + '22', borderRadius: 6, padding: '3px 8px',
+                          <span style={{
+                            width: 20, height: 20, borderRadius: 6, background: sColor + '22',
+                            border: `1px solid ${sColor}66`, display: 'flex', alignItems: 'center',
+                            justifyContent: 'center', fontSize: 10, fontWeight: 800, flexShrink: 0,
                           }}>
-                            {fw}
+                            {i + 1}
                           </span>
-                        ))}
-                      </div>
-                      {scenario.whyThisFramework && (
-                        <div style={{ fontSize: 13, color: '#94a3b8', lineHeight: 1.6 }}>
-                          {scenario.whyThisFramework}
+                          {block.block}
                         </div>
-                      )}
-                    </>
-                  )}
-
-                  {/* NORTH STAR */}
-                  {key === 'northStar' && (
-                    <div style={{ fontSize: 13, color: '#94a3b8', lineHeight: 1.6, fontStyle: 'italic' }}>
-                      {scenario.interviewerExpectations}
-                    </div>
-                  )}
-
-                  {/* SAMPLE RESPONSE */}
-                  {key === 'sample' && scenario.sampleResponse?.map((section, i) => (
-                    <div key={i} style={{
-                      marginBottom: i < scenario.sampleResponse.length - 1 ? 16 : 0,
-                      paddingBottom: i < scenario.sampleResponse.length - 1 ? 16 : 0,
-                      borderBottom: i < scenario.sampleResponse.length - 1 ? '1px solid #1e293b' : 'none',
-                    }}>
-                      <div style={{
-                        fontSize: 10, fontWeight: 800, color: sColor, letterSpacing: 1,
-                        marginBottom: 6, textTransform: 'uppercase',
-                      }}>
-                        {section.label}
+                        <ul style={{ margin: 0, paddingLeft: 26 }}>
+                          {block.subIssues.map((sub, j) => (
+                            <li key={j} style={{ fontSize: 12, color: T.textSub, lineHeight: 1.6, marginBottom: 2 }}>{sub}</li>
+                          ))}
+                        </ul>
                       </div>
-                      <div style={{
-                        fontSize: 13, color: '#e2e8f0', lineHeight: 1.7,
-                        fontStyle: 'italic',
-                        paddingLeft: 12,
-                        borderLeft: `2px solid ${sColor}55`,
-                      }}>
-                        "{section.script}"
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
+                    ))}
 
-          {/* Key Considerations (always available as a section) */}
-          {scenario.keyConsiderations?.length > 0 && (
-            <div>
-              <SectionToggle
-                sectionKey="considerations"
-                label="Key Considerations"
-                emoji="💡"
-                color="#f59e0b"
-                open={!!openSections['considerations']}
-                onToggle={() => toggleSection('considerations')}
-                hasContent={true}
-              />
-              {openSections['considerations'] && (
-                <div style={{
-                  background: '#0f172a', borderRadius: 12,
-                  padding: '14px', marginBottom: 12, marginTop: -4,
-                  border: '1px solid #f59e0b33',
-                }}>
-                  {scenario.keyConsiderations.map((c, i) => (
-                    <div key={i} style={{ display: 'flex', gap: 8, marginBottom: i < scenario.keyConsiderations.length - 1 ? 8 : 0 }}>
-                      <span style={{ color: '#f59e0b', fontWeight: 700, fontSize: 13, flexShrink: 0 }}>•</span>
-                      <span style={{ fontSize: 13, color: '#cbd5e1', lineHeight: 1.5 }}>{c}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
+                    {/* STEP BY STEP */}
+                    {key === 'stepByStep' && scenario.stepByStep?.map((s, i) => (
+                      <div key={i} style={{ display: 'flex', gap: 10, marginBottom: i < scenario.stepByStep.length - 1 ? 14 : 0 }}>
+                        <div style={{
+                          width: 22, height: 22, borderRadius: 999, background: sColor + '22',
+                          border: `1px solid ${sColor}66`, display: 'flex', alignItems: 'center',
+                          justifyContent: 'center', fontSize: 10, fontWeight: 800,
+                          color: sColor, flexShrink: 0, marginTop: 1,
+                        }}>
+                          {s.step}
+                        </div>
+                        <div>
+                          <div style={{ fontSize: 12, fontWeight: 700, color: T.text, marginBottom: 3 }}>{s.title}</div>
+                          <div style={{ fontSize: 12, color: T.textSub, lineHeight: 1.6 }}>{s.detail}</div>
+                        </div>
+                      </div>
+                    ))}
+
+                    {/* KEY TERMS */}
+                    {key === 'keyTerms' && scenario.keyTerms?.map((kt, i) => (
+                      <div key={i} style={{ marginBottom: i < scenario.keyTerms.length - 1 ? 10 : 0 }}>
+                        <span style={{ fontSize: 12, fontWeight: 700, color: '#fbbf24' }}>{kt.term}: </span>
+                        <span style={{ fontSize: 12, color: T.textSub, lineHeight: 1.5 }}>{kt.definition}</span>
+                      </div>
+                    ))}
+
+                    {/* FRAMEWORKS */}
+                    {key === 'frameworks' && (
+                      <>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 10 }}>
+                          {scenario.correctFrameworks?.map(fw => (
+                            <span key={fw} style={{
+                              fontSize: 12, fontWeight: 700, color: sColor,
+                              background: sColor + '22', borderRadius: 6, padding: '3px 8px',
+                            }}>
+                              {fw}
+                            </span>
+                          ))}
+                        </div>
+                        {scenario.whyThisFramework && (
+                          <div style={{ fontSize: 13, color: T.textSub, lineHeight: 1.6 }}>
+                            {scenario.whyThisFramework}
+                          </div>
+                        )}
+                      </>
+                    )}
+
+                    {/* NORTH STAR */}
+                    {key === 'northStar' && (
+                      <div style={{ fontSize: 13, color: T.textSub, lineHeight: 1.6, fontStyle: 'italic' }}>
+                        {scenario.interviewerExpectations}
+                      </div>
+                    )}
+
+                    {/* SAMPLE RESPONSE */}
+                    {key === 'sample' && scenario.sampleResponse?.map((section, i) => (
+                      <div key={i} style={{
+                        marginBottom: i < scenario.sampleResponse.length - 1 ? 16 : 0,
+                        paddingBottom: i < scenario.sampleResponse.length - 1 ? 16 : 0,
+                        borderBottom: i < scenario.sampleResponse.length - 1 ? `1px solid ${T.border}` : 'none',
+                      }}>
+                        <div style={{
+                          fontSize: 10, fontWeight: 800, color: sColor, letterSpacing: 1,
+                          marginBottom: 6, textTransform: 'uppercase',
+                        }}>
+                          {section.label}
+                        </div>
+                        <div style={{
+                          fontSize: 13, color: T.textSub, lineHeight: 1.7,
+                          fontStyle: 'italic',
+                          paddingLeft: 12,
+                          borderLeft: `2px solid ${sColor}55`,
+                        }}>
+                          "{section.script}"
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+
+            {/* Key Considerations (always available as a section) */}
+            {scenario.keyConsiderations?.length > 0 && (
+              <div>
+                <SectionToggle
+                  sectionKey="considerations"
+                  label="Key Considerations"
+                  emoji="💡"
+                  color={T.amber}
+                  open={!!openSections['considerations']}
+                  onToggle={() => toggleSection('considerations')}
+                  hasContent={true}
+                />
+                {openSections['considerations'] && (
+                  <div style={{
+                    background: '#ffffff', borderRadius: 12,
+                    padding: '14px', marginBottom: 12, marginTop: -4,
+                    border: `1px solid ${T.border}`,
+                    borderLeftWidth: 3,
+                    borderLeftColor: T.amber,
+                  }}>
+                    {scenario.keyConsiderations.map((c, i) => (
+                      <div key={i} style={{ display: 'flex', gap: 8, marginBottom: i < scenario.keyConsiderations.length - 1 ? 8 : 0 }}>
+                        <span style={{ color: T.amber, fontWeight: 700, fontSize: 13, flexShrink: 0 }}>•</span>
+                        <span style={{ fontSize: 13, color: T.textSub, lineHeight: 1.5 }}>{c}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
 
           {/* CSAI self-rating at bottom */}
           <CSAIRating scenarioId={scenario.id} existing={selfRating} onRate={onRate} />
@@ -773,40 +803,49 @@ export default function CasesPage() {
 
   const currentLevel = LEVELS.find(l => l.key === selectedLevel)
 
+  const glassCard = {
+    background: 'rgba(255,255,255,0.80)',
+    backdropFilter: 'blur(16px)',
+    WebkitBackdropFilter: 'blur(16px)',
+    border: '1px solid rgba(255,255,255,0.55)',
+    boxShadow: '0 4px 20px rgba(70,72,212,0.10)',
+  }
+
   return (
-    <div style={{ padding: '16px 16px 24px', maxWidth: 520, margin: '0 auto' }}>
+    <div style={{ padding: '16px 20px 24px', maxWidth: 520, margin: '0 auto' }}>
 
       {/* Stats bar — always visible */}
       <div style={{
-        background: '#1e293b', borderRadius: 16, padding: '12px 16px',
+        ...glassCard,
+        borderRadius: T.r.lg, padding: '12px 16px',
         marginBottom: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center',
       }}>
         <div>
-          <div style={{ fontSize: 11, color: '#64748b', marginBottom: 1 }}>Cases studied</div>
-          <div style={{ fontSize: 20, fontWeight: 800, color: '#f1f5f9' }}>
-            {viewedCount} <span style={{ fontSize: 13, color: '#64748b', fontWeight: 400 }}>/ {SCENARIOS.length}</span>
+          <div style={{ fontSize: 11, color: T.textMuted, marginBottom: 1 }}>Cases studied</div>
+          <div style={{ fontSize: 20, fontWeight: 800, color: T.text }}>
+            {viewedCount} <span style={{ fontSize: 13, color: T.textMuted, fontWeight: 400 }}>/ {SCENARIOS.length}</span>
           </div>
         </div>
         <div style={{ display: 'flex', gap: 12 }}>
           {LEVELS.map(l => (
             <div key={l.key} style={{ textAlign: 'center' }}>
               <div style={{ fontSize: 15, fontWeight: 700, color: l.color }}>{viewedByLevel(l.key)}</div>
-              <div style={{ fontSize: 9, color: '#64748b' }}>{l.label}</div>
+              <div style={{ fontSize: 9, color: T.textMuted }}>{l.label}</div>
             </div>
           ))}
           <div style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: 15, fontWeight: 700, color: '#22c55e' }}>{nailedCount}</div>
-            <div style={{ fontSize: 9, color: '#64748b' }}>Nailed</div>
+            <div style={{ fontSize: 15, fontWeight: 700, color: T.green }}>{nailedCount}</div>
+            <div style={{ fontSize: 9, color: T.textMuted }}>Nailed</div>
           </div>
         </div>
       </div>
 
       {/* Progress bar */}
-      <div style={{ background: '#1e293b', borderRadius: 999, height: 5, marginBottom: 20, overflow: 'hidden' }}>
+      <div style={{ background: T.border, borderRadius: 999, height: 5, marginBottom: 20, overflow: 'hidden' }}>
         <div style={{
           height: '100%', borderRadius: 999,
           width: `${(viewedCount / SCENARIOS.length) * 100}%`,
-          background: 'linear-gradient(90deg, #6366f1, #22c55e)',
+          background: T.primaryContainer,
           transition: 'width 0.4s ease',
         }} />
       </div>
@@ -814,7 +853,7 @@ export default function CasesPage() {
       {/* ── STEP 1: Level picker ── */}
       {!selectedLevel && (
         <>
-          <div style={{ fontSize: 11, fontWeight: 700, color: '#475569', letterSpacing: 1, marginBottom: 12 }}>
+          <div style={{ fontSize: 11, fontWeight: 700, color: T.textMuted, letterSpacing: 1, marginBottom: 12, fontFamily: T.fontBody }}>
             CHOOSE YOUR LEVEL
           </div>
           {LEVELS.map(level => {
@@ -827,8 +866,10 @@ export default function CasesPage() {
                 onClick={() => { setSelectedLevel(level.key); setSelectedType(null) }}
                 style={{
                   width: '100%', display: 'flex', alignItems: 'center', gap: 14,
-                  background: '#1e293b', borderRadius: 16, padding: '16px 18px',
-                  border: `1.5px solid ${level.color}33`, marginBottom: 10,
+                  ...glassCard,
+                  borderRadius: T.r.lg, padding: '16px 18px',
+                  borderColor: level.color + '44',
+                  marginBottom: 10,
                   cursor: 'pointer', textAlign: 'left',
                 }}
               >
@@ -841,11 +882,11 @@ export default function CasesPage() {
                   {level.emoji}
                 </div>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: 16, fontWeight: 800, color: '#f1f5f9', marginBottom: 2 }}>
+                  <div style={{ fontSize: 16, fontWeight: 800, color: T.text, marginBottom: 2, fontFamily: T.fontDisplay }}>
                     {level.label}
                   </div>
-                  <div style={{ fontSize: 12, color: '#64748b', marginBottom: 6 }}>{level.desc}</div>
-                  <div style={{ background: '#0f172a', borderRadius: 999, height: 4, overflow: 'hidden' }}>
+                  <div style={{ fontSize: 12, color: T.textMuted, marginBottom: 6 }}>{level.desc}</div>
+                  <div style={{ background: T.border, borderRadius: 999, height: 4, overflow: 'hidden' }}>
                     <div style={{
                       height: '100%', borderRadius: 999, width: `${pct}%`,
                       background: level.color, transition: 'width 0.4s',
@@ -854,7 +895,7 @@ export default function CasesPage() {
                 </div>
                 <div style={{ textAlign: 'right', flexShrink: 0 }}>
                   <div style={{ fontSize: 18, fontWeight: 800, color: level.color }}>{studied}</div>
-                  <div style={{ fontSize: 10, color: '#475569' }}>/ {total}</div>
+                  <div style={{ fontSize: 10, color: T.textMuted }}>/ {total}</div>
                 </div>
               </button>
             )
@@ -871,7 +912,7 @@ export default function CasesPage() {
               onClick={() => setSelectedLevel(null)}
               style={{
                 padding: '6px 12px', borderRadius: 999, border: 'none',
-                background: '#1e293b', color: '#94a3b8', fontSize: 12, fontWeight: 600, cursor: 'pointer',
+                background: T.surfaceContainer, color: T.textSub, fontSize: 12, fontWeight: 600, cursor: 'pointer',
               }}
             >
               ← Back
@@ -884,7 +925,7 @@ export default function CasesPage() {
             </div>
           </div>
 
-          <div style={{ fontSize: 11, fontWeight: 700, color: '#475569', letterSpacing: 1, marginBottom: 10 }}>
+          <div style={{ fontSize: 11, fontWeight: 700, color: T.textMuted, letterSpacing: 1, marginBottom: 10, fontFamily: T.fontBody }}>
             CHOOSE A CASE TYPE
           </div>
 
@@ -892,9 +933,9 @@ export default function CasesPage() {
           <button
             onClick={() => setSelectedType('all')}
             style={{
-              width: '100%', padding: '12px 16px', borderRadius: 14, marginBottom: 14,
-              border: '1.5px solid #334155', background: '#1e293b',
-              color: '#f1f5f9', fontSize: 13, fontWeight: 700, cursor: 'pointer', textAlign: 'left',
+              width: '100%', padding: '12px 16px', borderRadius: T.r.md, marginBottom: 14,
+              ...glassCard,
+              color: T.text, fontSize: 13, fontWeight: 700, cursor: 'pointer', textAlign: 'left',
             }}
           >
             📋 All {currentLevel.label} Cases ({countByLevel(selectedLevel)})
@@ -903,7 +944,7 @@ export default function CasesPage() {
           {/* Core case categories */}
           {coreTypesForLevel.length > 0 && (
             <>
-              <div style={{ fontSize: 10, fontWeight: 700, color: '#3b82f6', letterSpacing: 1, marginBottom: 8 }}>
+              <div style={{ fontSize: 10, fontWeight: 700, color: T.primary, letterSpacing: 1, marginBottom: 8 }}>
                 ⭐ CORE MARKETING CASE CATEGORIES
               </div>
               {coreTypesForLevel.map(type => {
@@ -916,13 +957,17 @@ export default function CasesPage() {
                     onClick={() => setSelectedType(type)}
                     style={{
                       width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                      padding: '12px 16px', borderRadius: 14, marginBottom: 8,
-                      border: `1.5px solid ${color}44`, background: color + '12',
-                      color: '#f1f5f9', fontSize: 13, fontWeight: 600, cursor: 'pointer', textAlign: 'left',
+                      padding: '12px 16px', borderRadius: T.r.md, marginBottom: 8,
+                      background: 'rgba(255,255,255,0.80)',
+                      backdropFilter: 'blur(16px)',
+                      WebkitBackdropFilter: 'blur(16px)',
+                      border: `1.5px solid ${color}44`,
+                      boxShadow: '0 4px 20px rgba(70,72,212,0.10)',
+                      color: T.text, fontSize: 13, fontWeight: 600, cursor: 'pointer', textAlign: 'left',
                     }}
                   >
                     <span style={{ color }}>{type}</span>
-                    <span style={{ fontSize: 11, color: '#64748b' }}>{done}/{count}</span>
+                    <span style={{ fontSize: 11, color: T.textMuted }}>{done}/{count}</span>
                   </button>
                 )
               })}
@@ -932,7 +977,7 @@ export default function CasesPage() {
           {/* Other types */}
           {otherTypesForLevel.length > 0 && (
             <>
-              <div style={{ fontSize: 10, fontWeight: 700, color: '#475569', letterSpacing: 1, marginBottom: 8, marginTop: 14 }}>
+              <div style={{ fontSize: 10, fontWeight: 700, color: T.textMuted, letterSpacing: 1, marginBottom: 8, marginTop: 14 }}>
                 OTHER TYPES
               </div>
               {otherTypesForLevel.map(type => {
@@ -945,13 +990,13 @@ export default function CasesPage() {
                     onClick={() => setSelectedType(type)}
                     style={{
                       width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                      padding: '11px 16px', borderRadius: 14, marginBottom: 8,
-                      border: '1.5px solid #334155', background: '#1e293b',
-                      color: '#f1f5f9', fontSize: 13, fontWeight: 600, cursor: 'pointer', textAlign: 'left',
+                      padding: '11px 16px', borderRadius: T.r.md, marginBottom: 8,
+                      ...glassCard,
+                      color: T.text, fontSize: 13, fontWeight: 600, cursor: 'pointer', textAlign: 'left',
                     }}
                   >
-                    <span style={{ color: '#94a3b8' }}>{type}</span>
-                    <span style={{ fontSize: 11, color: '#475569' }}>{done}/{count}</span>
+                    <span style={{ color: T.textSub }}>{type}</span>
+                    <span style={{ fontSize: 11, color: T.textMuted }}>{done}/{count}</span>
                   </button>
                 )
               })}
@@ -969,7 +1014,7 @@ export default function CasesPage() {
               onClick={() => { setSelectedLevel(null); setSelectedType(null) }}
               style={{
                 padding: '5px 10px', borderRadius: 999, border: 'none',
-                background: '#1e293b', color: '#94a3b8', fontSize: 11, fontWeight: 600, cursor: 'pointer',
+                background: T.surfaceContainer, color: T.textSub, fontSize: 11, fontWeight: 600, cursor: 'pointer',
               }}
             >
               ← Levels
@@ -984,21 +1029,21 @@ export default function CasesPage() {
             >
               {currentLevel.emoji} {currentLevel.label}
             </button>
-            <span style={{ color: '#334155', fontSize: 11 }}>›</span>
+            <span style={{ color: T.border, fontSize: 11 }}>›</span>
             <span style={{
               fontSize: 11, fontWeight: 700, color: getTypeColor(selectedType),
               background: getTypeColor(selectedType) + '22', borderRadius: 999, padding: '5px 10px',
             }}>
               {selectedType === 'all' ? 'All Cases' : selectedType}
             </span>
-            <span style={{ fontSize: 11, color: '#475569', marginLeft: 'auto' }}>
+            <span style={{ fontSize: 11, color: T.textMuted, marginLeft: 'auto' }}>
               {filtered.length} case{filtered.length !== 1 ? 's' : ''}
             </span>
           </div>
 
           {/* Cases */}
           {filtered.length === 0 ? (
-            <div style={{ textAlign: 'center', color: '#475569', padding: 40, fontSize: 14 }}>
+            <div style={{ textAlign: 'center', color: T.textMuted, padding: 40, fontSize: 14 }}>
               No cases match this filter.
             </div>
           ) : (

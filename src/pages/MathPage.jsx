@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import MATH_DATA from '../data/math_system.json'
 import { useProgress } from '../hooks/useProgress'
 import { track } from '../utils/analytics'
+import { T } from '../theme'
 
 const { problemBank, speedTargets } = MATH_DATA
 
@@ -105,20 +106,29 @@ function selectProblem(level, typeFilter, byType, recentIds) {
 function TimerBar({ elapsedMs, targetSeconds }) {
   const elapsed = elapsedMs / 1000
   const pct = Math.min((elapsed / targetSeconds) * 100, 100)
-  const color = pct < 60 ? '#22c55e' : pct < 90 ? '#f59e0b' : '#ef4444'
+  const color = pct < 60 ? T.green : pct < 90 ? T.amber : T.pink
+  const glow = pct < 60
+    ? '0 0 8px rgba(132,204,22,0.5)'
+    : pct < 90
+    ? '0 0 8px rgba(245,158,11,0.5)'
+    : '0 0 8px rgba(244,63,94,0.5)'
   const secs = Math.floor(elapsed)
 
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
-        <span style={{ fontSize: 12, color: '#64748b' }}>Time</span>
-        <span style={{ fontSize: 13, fontWeight: 700, color }}>{secs}s <span style={{ color: '#475569', fontWeight: 400 }}>/ {targetSeconds}s target</span></span>
+        <span style={{ fontSize: 12, color: T.textMuted, fontFamily: T.fontBody }}>Time</span>
+        <span style={{ fontSize: 13, fontWeight: 700, color, fontFamily: T.fontBody }}>
+          {secs}s{' '}
+          <span style={{ color: T.textMuted, fontWeight: 400 }}>/ {targetSeconds}s target</span>
+        </span>
       </div>
-      <div style={{ background: '#0f172a', borderRadius: 999, height: 5, overflow: 'hidden' }}>
+      <div style={{ background: T.border, borderRadius: 999, height: 8, overflow: 'hidden' }}>
         <div style={{
           height: '100%', borderRadius: 999,
           width: `${pct}%`,
           background: color,
+          boxShadow: glow,
           transition: 'width 0.1s linear, background 0.3s',
         }} />
       </div>
@@ -128,41 +138,42 @@ function TimerBar({ elapsedMs, targetSeconds }) {
 
 // ── Stats for one type ─────────────────────────────────────────────────────
 function TypeStat({ type, stat, targetSeconds }) {
-  const color = TYPE_COLOR[type] || '#475569'
+  const color = TYPE_COLOR[type] || T.textMuted
   const label = TYPE_LABELS[type] || type
   const accuracy = stat.attempts > 0 ? Math.round((stat.correct / stat.attempts) * 100) : null
   const avgSec = stat.avgTimeMs ? (stat.avgTimeMs / 1000).toFixed(1) : null
   const bestSec = stat.bestTimeMs ? (stat.bestTimeMs / 1000).toFixed(1) : null
-  const accColor = accuracy == null ? '#475569' : accuracy >= 80 ? '#22c55e' : accuracy >= 60 ? '#f59e0b' : '#ef4444'
+  const accColor = accuracy == null ? T.textMuted : accuracy >= 80 ? T.green : accuracy >= 60 ? T.amber : T.pink
 
   return (
     <div style={{
-      background: '#1e293b', borderRadius: 12, padding: '12px 14px', marginBottom: 8,
+      ...T.glass,
+      borderRadius: 12, padding: '12px 14px', marginBottom: 8,
       borderLeft: `3px solid ${color}`,
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
         <div>
-          <div style={{ fontSize: 13, fontWeight: 700, color: '#f1f5f9' }}>{label}</div>
-          <div style={{ fontSize: 11, color: '#475569', marginTop: 1 }}>{stat.attempts} attempts</div>
+          <div style={{ fontSize: 13, fontWeight: 700, color: T.text, fontFamily: T.fontBody }}>{label}</div>
+          <div style={{ fontSize: 11, color: T.textMuted, marginTop: 1, fontFamily: T.fontBody }}>{stat.attempts} attempts</div>
         </div>
         {accuracy != null && (
-          <div style={{ fontSize: 18, fontWeight: 800, color: accColor }}>{accuracy}%</div>
+          <div style={{ fontSize: 18, fontWeight: 800, color: accColor, fontFamily: T.fontDisplay }}>{accuracy}%</div>
         )}
       </div>
 
       {stat.attempts > 0 && (
         <div style={{ display: 'flex', gap: 16 }}>
           <div>
-            <div style={{ fontSize: 10, color: '#475569' }}>Avg time</div>
-            <div style={{ fontSize: 13, fontWeight: 700, color: avgSec && parseFloat(avgSec) <= targetSeconds ? '#22c55e' : '#f59e0b' }}>
+            <div style={{ fontSize: 10, color: T.textMuted, fontFamily: T.fontBody }}>Avg time</div>
+            <div style={{ fontSize: 13, fontWeight: 700, color: avgSec && parseFloat(avgSec) <= targetSeconds ? T.green : T.amber, fontFamily: T.fontBody }}>
               {avgSec ? `${avgSec}s` : '—'}
-              <span style={{ fontSize: 10, color: '#475569', fontWeight: 400 }}> / {targetSeconds}s</span>
+              <span style={{ fontSize: 10, color: T.textMuted, fontWeight: 400 }}> / {targetSeconds}s</span>
             </div>
           </div>
           {bestSec && (
             <div>
-              <div style={{ fontSize: 10, color: '#475569' }}>Best</div>
-              <div style={{ fontSize: 13, fontWeight: 700, color: '#60a5fa' }}>{bestSec}s</div>
+              <div style={{ fontSize: 10, color: T.textMuted, fontFamily: T.fontBody }}>Best</div>
+              <div style={{ fontSize: 13, fontWeight: 700, color: T.primary, fontFamily: T.fontBody }}>{bestSec}s</div>
             </div>
           )}
         </div>
@@ -271,11 +282,14 @@ export default function MathPage() {
     }
   }
 
-  const color = problem ? (TYPE_COLOR[problem.type] || '#475569') : '#475569'
+  const color = problem ? (TYPE_COLOR[problem.type] || T.textMuted) : T.textMuted
   const activeTypes = level === 1 ? LEVEL1_TYPES : level === 2 ? LEVEL2_TYPES : LEVEL3_TYPES
 
+  const levelColors = { 1: '#6366f1', 2: '#f59e0b', 3: '#f43f5e' }
+  const levelColor = levelColors[level]
+
   return (
-    <div style={{ padding: '16px 16px 24px', maxWidth: 520, margin: '0 auto' }}>
+    <div style={{ padding: '16px 20px 24px', maxWidth: 520, margin: '0 auto' }}>
 
       {/* View toggle */}
       <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
@@ -284,10 +298,11 @@ export default function MathPage() {
             key={t.key}
             onClick={() => setView(t.key)}
             style={{
-              flex: 1, padding: '10px', borderRadius: 12, border: 'none',
-              background: view === t.key ? '#3b82f6' : '#1e293b',
-              color: view === t.key ? '#fff' : '#64748b',
-              fontSize: 14, fontWeight: 700, cursor: 'pointer',
+              flex: 1, padding: '10px', borderRadius: 12, cursor: 'pointer',
+              ...(view === t.key
+                ? { background: T.primary, color: '#fff', border: 'none' }
+                : { ...T.glass, color: T.textSub, border: T.glass.border }),
+              fontSize: 14, fontWeight: 700, fontFamily: T.fontBody,
             }}
           >
             {t.label}
@@ -299,16 +314,17 @@ export default function MathPage() {
       {view === 'stats' && (
         <div>
           <div style={{
-            background: '#1e293b', borderRadius: 16, padding: '14px 16px',
+            ...T.glass,
+            borderRadius: 16, padding: '14px 16px',
             marginBottom: 16, display: 'flex', justifyContent: 'space-between',
           }}>
             <div>
-              <div style={{ fontSize: 13, color: '#64748b', marginBottom: 2 }}>Problems solved</div>
-              <div style={{ fontSize: 22, fontWeight: 800, color: '#f1f5f9' }}>{progress.math.totalProblems || 0}</div>
+              <div style={{ fontSize: 13, color: T.textMuted, marginBottom: 2, fontFamily: T.fontBody }}>Problems solved</div>
+              <div style={{ fontSize: 22, fontWeight: 800, color: T.text, fontFamily: T.fontDisplay }}>{progress.math.totalProblems || 0}</div>
             </div>
             <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: 18, fontWeight: 700, color: '#f59e0b' }}>{progress.math.streakDays || 0}</div>
-              <div style={{ fontSize: 10, color: '#64748b' }}>Day streak</div>
+              <div style={{ fontSize: 18, fontWeight: 700, color: T.amber, fontFamily: T.fontDisplay }}>{progress.math.streakDays || 0}</div>
+              <div style={{ fontSize: 10, color: T.textMuted, fontFamily: T.fontBody }}>Day streak</div>
             </div>
           </div>
 
@@ -317,15 +333,15 @@ export default function MathPage() {
               { l: 1, label: 'L1: Mental', color: '#6366f1' },
               { l: 2, label: 'L2: Business', color: '#f59e0b' },
               { l: 3, label: 'L3: Advanced', color: '#f43f5e' },
-            ].map(({ l, label, color }) => (
+            ].map(({ l, label, color: lc }) => (
               <button
                 key={l}
                 onClick={() => setLevel(l)}
                 style={{
                   flex: 1, padding: '8px 4px', borderRadius: 10, border: 'none',
-                  background: level === l ? color : '#1e293b',
-                  color: level === l ? '#fff' : '#64748b',
-                  fontSize: 11, fontWeight: 700, cursor: 'pointer',
+                  background: level === l ? lc : T.surfaceContainer,
+                  color: level === l ? '#fff' : T.textMuted,
+                  fontSize: 11, fontWeight: 700, cursor: 'pointer', fontFamily: T.fontBody,
                 }}
               >
                 {label}
@@ -345,15 +361,15 @@ export default function MathPage() {
         <div>
           {/* Level selector */}
           <div style={{ display: 'flex', gap: 6, marginBottom: 10 }}>
-            {[{ l: 1, label: 'L1: Mental Math', color: '#6366f1' }, { l: 2, label: 'L2: Business', color: '#f59e0b' }, { l: 3, label: 'L3: Advanced', color: '#f43f5e' }].map(({ l, label, color }) => (
+            {[{ l: 1, label: 'L1: Mental Math', color: '#6366f1' }, { l: 2, label: 'L2: Business', color: '#f59e0b' }, { l: 3, label: 'L3: Advanced', color: '#f43f5e' }].map(({ l, label, color: lc }) => (
               <button
                 key={l}
                 onClick={() => { setLevel(l); setTypeFilter('all') }}
                 style={{
                   flex: 1, padding: '8px 4px', borderRadius: 10, border: 'none',
-                  background: level === l ? color : '#1e293b',
-                  color: level === l ? '#fff' : '#64748b',
-                  fontSize: 11, fontWeight: 700, cursor: 'pointer',
+                  background: level === l ? lc : T.surfaceContainer,
+                  color: level === l ? '#fff' : T.textMuted,
+                  fontSize: 11, fontWeight: 700, cursor: 'pointer', fontFamily: T.fontBody,
                 }}
               >
                 {label}
@@ -362,14 +378,14 @@ export default function MathPage() {
           </div>
 
           {/* Type filter */}
-          <div style={{ display: 'flex', gap: 6, marginBottom: 16, overflowX: 'auto', paddingBottom: 4 }}>
+          <div style={{ display: 'flex', gap: 6, marginBottom: 16, overflowX: 'auto', paddingBottom: 4, scrollbarWidth: 'none', msOverflowStyle: 'none' }} className="hide-scrollbar">
             <button
               onClick={() => setTypeFilter('all')}
               style={{
                 padding: '5px 10px', borderRadius: 999, border: 'none', flexShrink: 0,
-                background: typeFilter === 'all' ? '#475569' : '#1e293b',
-                color: typeFilter === 'all' ? '#fff' : '#64748b',
-                fontSize: 11, fontWeight: 600, cursor: 'pointer',
+                background: typeFilter === 'all' ? T.textSub : T.surfaceContainer,
+                color: typeFilter === 'all' ? '#fff' : T.textMuted,
+                fontSize: 11, fontWeight: 600, cursor: 'pointer', fontFamily: T.fontBody,
               }}
             >
               All
@@ -383,9 +399,9 @@ export default function MathPage() {
                   onClick={() => setTypeFilter(active ? 'all' : type)}
                   style={{
                     padding: '5px 10px', borderRadius: 999, border: 'none', flexShrink: 0,
-                    background: active ? c : '#1e293b',
+                    background: active ? c : T.surfaceContainer,
                     color: active ? '#fff' : c,
-                    fontSize: 11, fontWeight: 600, cursor: 'pointer', whiteSpace: 'nowrap',
+                    fontSize: 11, fontWeight: 600, cursor: 'pointer', whiteSpace: 'nowrap', fontFamily: T.fontBody,
                   }}
                 >
                   {TYPE_LABELS[type]}
@@ -397,24 +413,25 @@ export default function MathPage() {
           {/* ── START SCREEN ── */}
           {!started && (
             <div style={{
-              background: '#1e293b', borderRadius: 20, padding: 28, textAlign: 'center',
+              ...T.glass,
+              borderRadius: 20, padding: 28, textAlign: 'center',
             }}>
               <div style={{ fontSize: 40, marginBottom: 12 }}>🧮</div>
-              <div style={{ fontSize: 18, fontWeight: 800, color: '#f1f5f9', marginBottom: 6 }}>
-                {level === 1 ? 'Level 1: Mental Math' : 'Level 2: Business Math'}
+              <div style={{ fontSize: 18, fontWeight: 800, color: T.text, marginBottom: 6, fontFamily: T.fontDisplay }}>
+                {level === 1 ? 'Level 1: Mental Math' : level === 2 ? 'Level 2: Business Math' : 'Level 3: Advanced'}
               </div>
-              <div style={{ fontSize: 13, color: '#64748b', marginBottom: 6 }}>
+              <div style={{ fontSize: 13, color: T.textSub, marginBottom: 6, fontFamily: T.fontBody }}>
                 {typeFilter === 'all' ? 'All problem types' : TYPE_LABELS[typeFilter]}
               </div>
               <div style={{
-                display: 'inline-block', fontSize: 12, color: level === 1 ? '#6366f1' : '#f59e0b',
-                background: (level === 1 ? '#6366f1' : '#f59e0b') + '22',
-                borderRadius: 8, padding: '4px 10px', marginBottom: 20,
+                display: 'inline-block', fontSize: 12, color: levelColor,
+                background: levelColor + '22',
+                borderRadius: 8, padding: '4px 10px', marginBottom: 20, fontFamily: T.fontBody,
               }}>
                 {targetSec}s per question
               </div>
               {sessionCount > 0 && (
-                <div style={{ fontSize: 13, color: '#475569', marginBottom: 16 }}>
+                <div style={{ fontSize: 13, color: T.textMuted, marginBottom: 16, fontFamily: T.fontBody }}>
                   Session so far: {sessionCorrect}/{sessionCount} correct
                 </div>
               )}
@@ -422,8 +439,8 @@ export default function MathPage() {
                 onClick={() => { track('math_drill_started', { level, type_filter: typeFilter }); setStarted(true); loadNextProblem() }}
                 style={{
                   width: '100%', padding: '16px', borderRadius: 14, border: 'none',
-                  background: level === 1 ? '#6366f1' : '#f59e0b',
-                  color: '#fff', fontSize: 16, fontWeight: 800, cursor: 'pointer',
+                  background: `linear-gradient(135deg, ${levelColor}, ${T.primaryContainer})`,
+                  color: '#fff', fontSize: 16, fontWeight: 800, cursor: 'pointer', fontFamily: T.fontDisplay,
                 }}
               >
                 Start Drill →
@@ -437,40 +454,42 @@ export default function MathPage() {
               {/* Session score */}
               {sessionCount > 0 && (
                 <div style={{
-                  background: '#1e293b', borderRadius: 12, padding: '8px 14px',
+                  ...T.glass,
+                  borderRadius: 12, padding: '8px 14px',
                   marginBottom: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                 }}>
-                  <span style={{ fontSize: 12, color: '#64748b' }}>Session</span>
-                  <span style={{ fontSize: 13, fontWeight: 700, color: '#f1f5f9' }}>
+                  <span style={{ fontSize: 12, color: T.textMuted, fontFamily: T.fontBody }}>Session</span>
+                  <span style={{ fontSize: 13, fontWeight: 700, color: T.text, fontFamily: T.fontBody }}>
                     {sessionCorrect}/{sessionCount}
-                    <span style={{ color: '#64748b', fontWeight: 400, fontSize: 11 }}> correct</span>
+                    <span style={{ color: T.textMuted, fontWeight: 400, fontSize: 11 }}> correct</span>
                   </span>
                 </div>
               )}
 
               <div style={{
-                background: '#1e293b', borderRadius: 20, padding: 20, marginBottom: 12,
+                ...T.glass,
+                borderRadius: 20, padding: 20, marginBottom: 12,
                 border: phase === 'result'
-                  ? `2px solid ${correct ? '#22c55e' : '#ef4444'}`
-                  : `2px solid ${color}33`,
+                  ? `2px solid ${correct ? T.green : T.pink}`
+                  : `2px solid ${T.primaryBorder}`,
               }}>
                 {/* Header */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
                   <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
                     <span style={{
                       fontSize: 11, fontWeight: 700, color,
-                      background: color + '22', borderRadius: 6, padding: '3px 8px',
+                      background: color + '22', borderRadius: 6, padding: '3px 8px', fontFamily: T.fontBody,
                     }}>
                       {TYPE_LABELS[problem.type]}
                     </span>
                     <span style={{
-                      fontSize: 10, fontWeight: 700,
-                      color: problem.difficulty === 'easy' ? '#22c55e' : problem.difficulty === 'medium' ? '#f59e0b' : '#ef4444',
+                      fontSize: 10, fontWeight: 700, fontFamily: T.fontBody,
+                      color: problem.difficulty === 'easy' ? T.green : problem.difficulty === 'medium' ? T.amber : T.pink,
                     }}>
                       {problem.difficulty}
                     </span>
                   </div>
-                  <span style={{ fontSize: 11, color: '#475569' }}>L{problem.level}</span>
+                  <span style={{ fontSize: 11, color: T.textMuted, fontFamily: T.fontBody }}>L{problem.level}</span>
                 </div>
 
                 {/* Timer */}
@@ -482,8 +501,8 @@ export default function MathPage() {
 
                 {/* Question */}
                 <div style={{
-                  fontSize: 18, fontWeight: 700, color: '#f1f5f9',
-                  lineHeight: 1.4, marginBottom: 20, minHeight: 52,
+                  fontSize: 18, fontWeight: 700, color: T.text,
+                  lineHeight: 1.4, marginBottom: 20, minHeight: 52, fontFamily: T.fontDisplay,
                 }}>
                   {problem.question}
                 </div>
@@ -501,10 +520,10 @@ export default function MathPage() {
                       placeholder="Your answer..."
                       style={{
                         width: '100%', padding: '12px 14px', borderRadius: 12,
-                        border: `2px solid ${color}44`,
-                        background: '#0f172a', color: '#f1f5f9',
+                        border: `2px solid ${T.primaryBorder}`,
+                        background: T.surfaceContainerLow, color: T.text,
                         fontSize: 16, fontWeight: 600, outline: 'none',
-                        boxSizing: 'border-box', marginBottom: 10,
+                        boxSizing: 'border-box', marginBottom: 10, fontFamily: T.fontBody,
                       }}
                     />
                     <div style={{ display: 'flex', gap: 8 }}>
@@ -513,9 +532,11 @@ export default function MathPage() {
                         disabled={!userAnswer.trim()}
                         style={{
                           flex: 1, padding: '12px', borderRadius: 12, border: 'none',
-                          background: userAnswer.trim() ? color : '#1e293b',
-                          color: userAnswer.trim() ? '#fff' : '#475569',
-                          fontSize: 14, fontWeight: 700, cursor: userAnswer.trim() ? 'pointer' : 'default',
+                          background: userAnswer.trim()
+                            ? `linear-gradient(135deg, ${color}, ${T.primaryContainer})`
+                            : T.surfaceContainer,
+                          color: userAnswer.trim() ? '#fff' : T.textMuted,
+                          fontSize: 14, fontWeight: 700, cursor: userAnswer.trim() ? 'pointer' : 'default', fontFamily: T.fontBody,
                         }}
                       >
                         Submit
@@ -524,10 +545,10 @@ export default function MathPage() {
                         onClick={() => { if (!showHint) track('math_hint_used', { problem_type: problem.type, level: problem.level }); setShowHint(h => !h) }}
                         style={{
                           padding: '12px 16px', borderRadius: 12,
-                          border: showHint ? `1px solid #f59e0b` : '1px solid #334155',
-                          background: showHint ? '#f59e0b18' : 'none',
-                          color: showHint ? '#f59e0b' : '#64748b',
-                          fontSize: 13, cursor: 'pointer',
+                          border: showHint ? `1px solid ${T.amberBorder}` : `1px solid ${T.border}`,
+                          background: showHint ? T.amberLight : 'transparent',
+                          color: showHint ? T.amber : T.textMuted,
+                          fontSize: 13, cursor: 'pointer', fontFamily: T.fontBody,
                         }}
                       >
                         💡 Hint
@@ -537,18 +558,18 @@ export default function MathPage() {
                       onClick={skip}
                       style={{
                         width: '100%', marginTop: 8, padding: '10px', borderRadius: 12,
-                        border: '1px solid #334155', background: 'none',
-                        color: '#475569', fontSize: 13, fontWeight: 600, cursor: 'pointer',
+                        border: `1px solid ${T.border}`, background: T.surfaceContainer,
+                        color: T.textMuted, fontSize: 13, fontWeight: 600, cursor: 'pointer', fontFamily: T.fontBody,
                       }}
                     >
                       I don't know — show answer
                     </button>
                     {showHint && (
                       <div style={{
-                        marginTop: 10, background: '#0f172a', borderRadius: 10,
-                        padding: '10px 12px', fontSize: 13, color: '#94a3b8', lineHeight: 1.5,
+                        marginTop: 10, background: T.amberLight, borderRadius: 10,
+                        padding: '10px 12px', fontSize: 13, color: T.textSub, lineHeight: 1.5, fontFamily: T.fontBody,
                       }}>
-                        <span style={{ fontWeight: 700, color: '#f59e0b' }}>Hint: </span>
+                        <span style={{ fontWeight: 700, color: T.amber }}>Hint: </span>
                         {problem.hint}
                       </div>
                     )}
@@ -559,38 +580,38 @@ export default function MathPage() {
                 {phase === 'result' && (
                   <div>
                     <div style={{
-                      background: correct ? '#22c55e18' : '#ef444418',
-                      border: `1px solid ${correct ? '#22c55e44' : '#ef444444'}`,
+                      background: correct ? 'rgba(132,204,22,0.12)' : 'rgba(244,63,94,0.10)',
+                      border: `1px solid ${correct ? 'rgba(132,204,22,0.3)' : 'rgba(244,63,94,0.25)'}`,
                       borderRadius: 12, padding: '12px 14px', marginBottom: 12,
                       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                     }}>
                       <div>
-                        <div style={{ fontSize: 14, fontWeight: 800, color: correct ? '#22c55e' : '#ef4444' }}>
+                        <div style={{ fontSize: 14, fontWeight: 800, color: correct ? T.green : T.pink, fontFamily: T.fontBody }}>
                           {correct ? '✅ Correct!' : '❌ Not quite'}
                         </div>
                         {!correct && (
-                          <div style={{ fontSize: 13, color: '#94a3b8', marginTop: 2 }}>
-                            Answer: <span style={{ color: '#f1f5f9', fontWeight: 700 }}>{problem.answer}</span>
+                          <div style={{ fontSize: 13, color: T.textSub, marginTop: 2, fontFamily: T.fontBody }}>
+                            Answer: <span style={{ color: T.text, fontWeight: 700 }}>{problem.answer}</span>
                           </div>
                         )}
                       </div>
                       <div style={{ textAlign: 'right' }}>
                         <div style={{
-                          fontSize: 16, fontWeight: 800,
-                          color: finalMs / 1000 <= targetSec ? '#22c55e' : '#f59e0b',
+                          fontSize: 16, fontWeight: 800, fontFamily: T.fontDisplay,
+                          color: finalMs / 1000 <= targetSec ? T.green : T.amber,
                         }}>
                           {(finalMs / 1000).toFixed(1)}s
                         </div>
-                        <div style={{ fontSize: 10, color: '#475569' }}>target {targetSec}s</div>
+                        <div style={{ fontSize: 10, color: T.textMuted, fontFamily: T.fontBody }}>target {targetSec}s</div>
                       </div>
                     </div>
 
                     {/* Quick explanation */}
                     <div style={{
-                      background: '#0f172a', borderRadius: 10, padding: '10px 14px',
-                      fontSize: 13, color: '#94a3b8', lineHeight: 1.6, marginBottom: 10,
+                      background: T.surfaceContainer, borderRadius: 10, padding: '10px 14px',
+                      fontSize: 13, color: T.textSub, lineHeight: 1.6, marginBottom: 10, fontFamily: T.fontBody,
                     }}>
-                      <span style={{ fontWeight: 700, color: '#60a5fa' }}>How to think about it: </span>
+                      <span style={{ fontWeight: 700, color: T.primary }}>How to think about it: </span>
                       {problem.hint}
                     </div>
 
@@ -599,10 +620,10 @@ export default function MathPage() {
                       onClick={() => setShowBreakdown(b => !b)}
                       style={{
                         width: '100%', padding: '9px', borderRadius: 10, marginBottom: 10,
-                        border: showBreakdown ? '1px solid #6366f1' : '1px solid #334155',
-                        background: showBreakdown ? '#6366f118' : 'none',
-                        color: showBreakdown ? '#818cf8' : '#64748b',
-                        fontSize: 13, fontWeight: 600, cursor: 'pointer',
+                        border: showBreakdown ? `1px solid ${T.primaryBorder}` : `1px solid ${T.border}`,
+                        background: showBreakdown ? T.primaryLight : 'transparent',
+                        color: showBreakdown ? T.primary : T.textMuted,
+                        fontSize: 13, fontWeight: 600, cursor: 'pointer', fontFamily: T.fontBody,
                       }}
                     >
                       {showBreakdown ? '▲ Hide breakdown' : '▼ Further breakdown'}
@@ -610,11 +631,11 @@ export default function MathPage() {
 
                     {showBreakdown && (
                       <div style={{
-                        background: '#0f172a', borderRadius: 10, padding: '12px 14px',
-                        fontSize: 13, color: '#94a3b8', lineHeight: 1.7, marginBottom: 10,
-                        borderLeft: '3px solid #6366f1',
+                        background: T.surfaceContainer, borderRadius: 10, padding: '12px 14px',
+                        fontSize: 13, color: T.textSub, lineHeight: 1.7, marginBottom: 10,
+                        borderLeft: `3px solid ${T.primary}`, fontFamily: T.fontBody,
                       }}>
-                        <div style={{ fontWeight: 700, color: '#818cf8', marginBottom: 6 }}>Full explanation:</div>
+                        <div style={{ fontWeight: 700, color: T.primary, marginBottom: 6 }}>Full explanation:</div>
                         {problem.explanation}
                       </div>
                     )}
@@ -624,8 +645,8 @@ export default function MathPage() {
                         onClick={() => { setStarted(false); clearInterval(timerRef.current) }}
                         style={{
                           padding: '12px 16px', borderRadius: 12,
-                          border: '1px solid #334155', background: 'none',
-                          color: '#64748b', fontSize: 13, cursor: 'pointer',
+                          border: `1px solid ${T.border}`, background: T.surfaceContainer,
+                          color: T.textSub, fontSize: 13, cursor: 'pointer', fontFamily: T.fontBody,
                         }}
                       >
                         ← Menu
@@ -634,8 +655,9 @@ export default function MathPage() {
                         onClick={loadNextProblem}
                         style={{
                           flex: 1, padding: '12px', borderRadius: 12, border: 'none',
-                          background: '#3b82f6', color: '#fff',
-                          fontSize: 14, fontWeight: 700, cursor: 'pointer',
+                          background: `linear-gradient(135deg, ${T.primary}, ${T.primaryContainer})`,
+                          color: '#fff',
+                          fontSize: 14, fontWeight: 700, cursor: 'pointer', fontFamily: T.fontBody,
                         }}
                       >
                         Next Problem →
