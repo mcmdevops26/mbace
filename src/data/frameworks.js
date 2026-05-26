@@ -1,10 +1,11 @@
 export const FRAMEWORKS = [
   {
     id: '3cs',
+    category: 'framework',
     name: "3C's",
     subtitle: 'Assessing the business situation',
     whenToUse: 'Any case where you need to understand the full competitive landscape before recommending action.',
-    source: 'Cornell / Beena',
+    source: 'MBA Core Curriculum',
     color: '#3b82f6',
     components: [
       {
@@ -33,10 +34,11 @@ export const FRAMEWORKS = [
   },
   {
     id: '4cs-cpg',
+    category: 'framework',
     name: "4C's (CPG)",
     subtitle: "CPG variant of 3C's — adds retail channel layer",
     whenToUse: "CPG/consumer goods cases where the retailer (Walmart, Target, etc.) is a key stakeholder separate from the end consumer.",
-    source: 'Beena / MLT',
+    source: 'MLT',
     color: '#8b5cf6',
     components: [
       { label: 'Consumer', points: ['End user needs, behaviors, purchase drivers'] },
@@ -59,10 +61,11 @@ export const FRAMEWORKS = [
   },
   {
     id: '4ps',
+    category: 'framework',
     name: "4P's",
     subtitle: 'Go-to-market tactics & marketing mix',
     whenToUse: "New product launches, competitive response, brand repositioning — any question about HOW to take something to market.",
-    source: 'Cornell / Beena',
+    source: 'MBA Core Curriculum',
     color: '#10b981',
     components: [
       {
@@ -95,10 +98,11 @@ export const FRAMEWORKS = [
   },
   {
     id: 'stp',
+    category: 'framework',
     name: 'STP',
     subtitle: 'Segmentation → Targeting → Positioning',
     whenToUse: 'New product launch, brand extension, or entering a new market — any time you need to define WHO you are serving and HOW to win with them.',
-    source: 'Cornell / Beena',
+    source: 'MBA Core Curriculum',
     color: '#f59e0b',
     components: [
       {
@@ -127,10 +131,11 @@ export const FRAMEWORKS = [
   },
   {
     id: 'porters5',
+    category: 'framework',
     name: "Porter's Five Forces",
     subtitle: 'Industry attractiveness & competitive intensity',
     whenToUse: 'New market entry or acquisition — is this industry worth entering? How hard will it be to compete?',
-    source: 'Cornell',
+    source: 'MBA Core Curriculum',
     color: '#ef4444',
     components: [
       { label: 'Threat of New Entrants', points: ['Economies of scale', 'Capital requirements', 'Brand switching costs', 'Access to channels', 'Government policy'] },
@@ -152,10 +157,11 @@ export const FRAMEWORKS = [
   },
   {
     id: 'market-entry',
+    category: 'framework',
     name: 'Market Entry Framework',
     subtitle: 'New product × new market decision matrix',
     whenToUse: 'Should we enter this market? Should we launch this product? Structures the decision by product and market newness.',
-    source: 'Cornell',
+    source: 'MBA Core Curriculum',
     color: '#6366f1',
     components: [
       {
@@ -188,10 +194,11 @@ export const FRAMEWORKS = [
   },
   {
     id: 'profitability',
+    category: 'model',
     name: 'Profitability Tree',
     subtitle: 'Diagnosing profit problems — Revenue minus Costs',
     whenToUse: 'Any time profit, revenue, or margins are declining or need to grow. Start with the equation, then drill into the driver.',
-    source: 'Cornell / Beena',
+    source: 'MBA Core Curriculum',
     color: '#14b8a6',
     components: [
       {
@@ -224,10 +231,11 @@ export const FRAMEWORKS = [
   },
   {
     id: 'market-share',
+    category: 'model',
     name: 'Market Share Matrix',
     subtitle: 'Diagnosing market share problems',
     whenToUse: 'When sales and/or market share are moving in unexpected directions — cross-reference both to diagnose root cause.',
-    source: 'Cornell',
+    source: 'MBA Core Curriculum',
     color: '#f97316',
     components: [
       {
@@ -264,10 +272,11 @@ export const FRAMEWORKS = [
   },
   {
     id: 'value-chain',
+    category: 'framework',
     name: 'Value Chain Analysis',
     subtitle: 'Sources of differentiation and cost advantage',
     whenToUse: 'Identifying WHERE a company creates value and WHERE competitors can be beaten on cost or differentiation.',
-    source: 'Cornell',
+    source: 'MBA Core Curriculum',
     color: '#ec4899',
     components: [
       {
@@ -301,10 +310,11 @@ export const FRAMEWORKS = [
   },
   {
     id: 'breakeven',
+    category: 'formula',
     name: 'Breakeven Analysis',
     subtitle: 'How many units to cover fixed costs?',
     whenToUse: 'Pricing decisions, investment decisions, new product launches — any time you need to know if/when a venture becomes profitable.',
-    source: 'Cornell / CTC',
+    source: 'Crack the Case',
     color: '#84cc16',
     components: [
       {
@@ -337,6 +347,7 @@ export const FRAMEWORKS = [
   },
   {
     id: 'csai',
+    category: 'approach',
     name: 'CSAI Framework',
     subtitle: 'The 4 skills interviewers score you on',
     whenToUse: 'Self-assessment after every case practice. Marketing/CPG roles weight Communication highest.',
@@ -361,6 +372,7 @@ export const FRAMEWORKS = [
   },
   {
     id: 'block-break-ask',
+    category: 'approach',
     name: 'Block, Break & Ask',
     subtitle: 'CTC structuring method for any case',
     whenToUse: 'Opening structure for any case. Use it to create your initial framework before diving into analysis.',
@@ -384,6 +396,7 @@ export const FRAMEWORKS = [
   },
   {
     id: 'speak',
+    category: 'approach',
     name: 'SPEAK',
     subtitle: 'Market sizing framework',
     whenToUse: 'Any market sizing question — "How big is X market?" or "How many Y in Z?"',
@@ -409,10 +422,11 @@ export const FRAMEWORKS = [
   },
   {
     id: 'pricing-framework',
+    category: 'framework',
     name: 'Pricing Framework',
     subtitle: '4 lenses for setting price',
     whenToUse: 'Any pricing question — new product launch price, should we raise price, price war response.',
-    source: 'Beena / MLT',
+    source: 'MLT',
     color: '#06b6d4',
     components: [
       { label: 'Positioning', points: ["Is the price consistent with brand & product positioning?", 'Premium, value, or parity vs. competition?', 'Price signals quality — does that matter here?'] },
@@ -433,10 +447,11 @@ export const FRAMEWORKS = [
   },
   {
     id: 'ad-evaluation',
+    category: 'framework',
     name: 'Ad Evaluation Framework',
     subtitle: 'Evaluate any ad or campaign',
     whenToUse: '"Tell me about a well/poorly marketed product" or "Evaluate this ad." Common marketing-specific case type.',
-    source: 'Beena / MLT',
+    source: 'MLT',
     color: '#f43f5e',
     components: [
       {
@@ -465,6 +480,7 @@ export const FRAMEWORKS = [
   },
   {
     id: 'special-t',
+    category: 'approach',
     name: 'SPECIAL-T / MVM',
     subtitle: 'Macro environment & integrated business model',
     whenToUse: 'General strategy cases, broad strategic direction questions, or when you need to assess macro forces on a business.',

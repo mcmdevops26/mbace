@@ -4,6 +4,13 @@ import { useProgress } from '../hooks/useProgress'
 import { track } from '../utils/analytics'
 import { T } from '../theme'
 
+const CATEGORIES = [
+  { key: 'framework', label: 'Frameworks' },
+  { key: 'model',     label: 'Models' },
+  { key: 'formula',   label: 'Formulas' },
+  { key: 'approach',  label: 'Interview Approaches' },
+]
+
 const RATINGS = [
   { key: 'know',   label: 'Know It',  emoji: '✅', color: '#84CC16' },
   { key: 'unsure', label: 'Unsure',   emoji: '🤔', color: '#F59E0B' },
@@ -137,7 +144,7 @@ function FlashCard({ framework, onClose, onRate, currentRating }) {
   )
 }
 
-function FrameworkCard({ framework, rating, onExpand, onFlashcard }) {
+function FrameworkCard({ framework, rating, onExpand, onFlashcard, onRate, showBadge = false }) {
   const [expanded, setExpanded] = useState(false)
 
   const ratingColor = rating === 'know' ? '#84CC16' : rating === 'unsure' ? '#F59E0B' : rating === 'again' ? '#F43F5E' : null
@@ -184,6 +191,21 @@ function FrameworkCard({ framework, rating, onExpand, onFlashcard }) {
             )}
           </div>
           <div style={{ fontSize: 12, color: T.textMuted, marginTop: 2, fontFamily: T.fontBody }}>{framework.subtitle}</div>
+          {showBadge && framework.category && (
+            <span style={{
+              fontSize: 9, fontWeight: 700, letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              color: T.textMuted,
+              background: T.surfaceContainer,
+              borderRadius: 999,
+              padding: '2px 7px',
+              marginTop: 3,
+              display: 'inline-block',
+              fontFamily: T.fontBody,
+            }}>
+              {CATEGORIES.find(c => c.key === framework.category)?.label}
+            </span>
+          )}
         </div>
 
         <div style={{ color: T.textMuted, fontSize: 18, flexShrink: 0 }}>
@@ -381,7 +403,36 @@ export default function FrameworksPage() {
         <div style={{ textAlign: 'center', color: T.textMuted, padding: 40, fontSize: 14, fontFamily: T.fontBody }}>
           No frameworks in this filter.
         </div>
+      ) : filter === 'all' ? (
+        // Grouped by category with section headers
+        CATEGORIES.map(cat => {
+          const group = filtered.filter(fw => fw.category === cat.key)
+          if (group.length === 0) return null
+          return (
+            <div key={cat.key}>
+              <div style={{
+                fontSize: 10, fontWeight: 800, letterSpacing: '0.12em',
+                textTransform: 'uppercase', color: T.primary,
+                fontFamily: T.fontBody,
+                marginBottom: 10, marginTop: 8,
+                paddingLeft: 4,
+              }}>
+                {cat.label}
+              </div>
+              {group.map(fw => (
+                <FrameworkCard
+                  key={fw.id}
+                  framework={fw}
+                  rating={cardProgress[fw.id]}
+                  onFlashcard={setFlashcard}
+                  onRate={rateFrameworkCard}
+                />
+              ))}
+            </div>
+          )
+        })
       ) : (
+        // Flat list with category badge
         filtered.map(fw => (
           <FrameworkCard
             key={fw.id}
@@ -389,6 +440,7 @@ export default function FrameworksPage() {
             rating={cardProgress[fw.id]}
             onFlashcard={setFlashcard}
             onRate={rateFrameworkCard}
+            showBadge
           />
         ))
       )}
